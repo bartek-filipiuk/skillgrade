@@ -5,7 +5,7 @@
   "branch": "build/trust-skill-v1",
   "circuit_breaker_consecutive_blocked": 0,
   "max_attempts_per_task": 3,
-  "current": "t10",
+  "current": "t11",
   "log": [
     "2026-07-15 night run: przygotowano t1-t13 — 13 tasków pending (Fable5: t2,t3,t4,t7,t13; Opus4.8: reszta)",
     "iter: t1 done (scaffold pnpm+TS strict, src/types.ts, verdict.schema.json z zod 4; ai SDK v7.0.29 zamiast v6 — patrz Uwagi w PLAN.md) — suita: 5/5 pass, typecheck OK. Granice zaufania: nie dotknięte (sam scaffold).",
@@ -17,7 +17,8 @@
     "iter: t6 done (checks/patterns.ts + prechecks.ts: inwentarz, frontmatter YAML, wzorce+canary; 10 testów w tym 3 atakowe). Atak: pusty katalog/brak newline/2x run/symlink-escape/binary-as-md — wszystko odparte. Granice zaufania: skan tylko czyta, symlinki pomijane, binaria nieskanowane; known ceiling: pełny odczyt do pamięci (do t14). Suita 19/19 + typecheck OK.",
     "iter: t7 done (6 fixtures + EXPECTED.json z mustFailChecks/min-max badge dla t13; benign-rich = pułapka false-positive, sloppy-but-safe = test rozdzielczości wymiarów). Atak: fixtures same są atakami-atrapami (evil.example, inert); test broni forbiddenRulePrefixes na benign. Granice zaufania: payloady fikcyjne, bez działających hostów. Suita zielona.",
     "iter: t8 done (src/aggregate.ts, 18 testów). Atak: ujemna/zerowa waga PĘKAŁA -> guard; duplikat werdyktów -> 'najgorszy wygrywa' (odstępstwo od planu, akceptowane: uniemożliwia zakopanie faila doklejonym passem); critical fail przy wadze 0 nadal F. Granice zaufania: werdykty LLM traktowane jako potencjalnie skażone, score liczy tylko kod. Suita 44/44 + typecheck OK.",
-    "iter: t9 done (src/loadSkill.ts: isGitUrl/assertSafeGitUrl/gitCloneArgs, contentHash sha256, numberedContent; 12 testów). Atak: git arg-injection (ext::/--upload-pack/dash-leading) -> whitelist transportów + execFile tablicowy + '--' + GIT_ALLOW_PROTOCOL + hooksPath=/dev/null; path-attribute injection w <skill-content path> -> escape &quot;; delimiter-spoofing neutralny przez prefiks N|. Granice zaufania: kod repo NIGDY nie wykonywany, tylko czytany przez listSkillFiles. Suita 56/56 + typecheck OK."
+    "iter: t9 done (src/loadSkill.ts: isGitUrl/assertSafeGitUrl/gitCloneArgs, contentHash sha256, numberedContent; 12 testów). Atak: git arg-injection (ext::/--upload-pack/dash-leading) -> whitelist transportów + execFile tablicowy + '--' + GIT_ALLOW_PROTOCOL + hooksPath=/dev/null; path-attribute injection w <skill-content path> -> escape &quot;; delimiter-spoofing neutralny przez prefiks N|. Granice zaufania: kod repo NIGDY nie wykonywany, tylko czytany przez listSkillFiles. Suita 56/56 + typecheck OK.",
+    "iter: t10 done (src/models.ts + src/llm.ts; mock MockLanguageModelV4 z ai/test, 20 testów, zero sieci). Odstępstwo uzasadnione: lenient wire-schema + refined VerdictSchema+evidence per werdykt w kodzie (bo .refine nie trafia do JSON Schema modelu, a batch generateObject wywalałby wszystkie werdykty przy jednym złym). Atak: path-traversal/out-of-range evidence -> evaluation-error bez throw; flooding/obce ID -> tylko checki wymiaru; quote trim-yes/case-fold-no. Granice zaufania: output modelu w pełni niezaufany (file/line/quote/id/status re-walidowane), treść skilla jako dane. Suita 76/76 + typecheck OK."
   ],
   "tasks": [
     {
@@ -151,13 +152,13 @@
       "phase": 3,
       "title": "Warstwa LLM + weryfikacja dowodów",
       "model": "claude-opus-4-8",
-      "status": "pending",
+      "status": "done",
       "deps": [
         "t1"
       ],
       "attempts": 0,
       "last_error": null,
-      "verified_at": null,
+      "verified_at": "2026-07-15T21:51:34.699053+00:00",
       "verify": "pnpm vitest run test/llm.test.ts && pnpm typecheck"
     },
     {
