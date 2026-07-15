@@ -1,4 +1,4 @@
-import { aggregate } from './aggregate.js'
+import { aggregate, STATUS_RANK } from './aggregate.js'
 import type { CheckStatus, Dimension, PreCheckReport, Report, ReportVerdict } from './types.js'
 
 export interface EvaluatedDimension {
@@ -65,16 +65,6 @@ export function exitCodeForReport(report: Report): 0 | 2 {
 }
 
 // Worst-first rank; tie-breaks resolve to the WORSE status. Kept consistent with
-// aggregate.ts STATUS_RANK (fail > evaluation-error > warning > pass > not-applicable)
-// so a run-majority tie can never bury a fail under a pass.
-const STATUS_RANK: Record<CheckStatus, number> = {
-  fail: 0,
-  'evaluation-error': 1,
-  warning: 2,
-  pass: 3,
-  'not-applicable': 4,
-}
-
 // Majority vote per check across N runs. On a count tie, the worse status wins
 // (STATUS_RANK). Output preserves first-run (rubric) order. Evidence/note are
 // taken from a run-verdict that carries the chosen status.

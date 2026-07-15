@@ -6,8 +6,10 @@ const VALUE: Record<string, number> = { pass: 1, warning: 0.5, fail: 0, 'evaluat
 // verdicts for the same check. This is a trust boundary: verdicts come from an
 // LLM classifying UNTRUSTED skill content, so a duplicate verdict must never be
 // able to UPGRADE an earlier one (a trailing `pass` cannot bury a `fail`).
-// Consistent with the CLI runs tiebreak (fail > warning > pass > not-applicable).
-const STATUS_RANK: Record<string, number> = {
+// Single source of truth for status severity ordering: lower = worse. Shared
+// with report.ts's run-majority tiebreak so dedup and majority vote can never
+// disagree about which status wins.
+export const STATUS_RANK: Record<CheckStatus, number> = {
   fail: 0,
   'evaluation-error': 1,
   warning: 2,
