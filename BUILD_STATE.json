@@ -5,7 +5,7 @@
   "branch": "build/trust-skill-v1",
   "circuit_breaker_consecutive_blocked": 0,
   "max_attempts_per_task": 3,
-  "current": "t7",
+  "current": "t8",
   "log": [
     "2026-07-15 night run: przygotowano t1-t13 — 13 tasków pending (Fable5: t2,t3,t4,t7,t13; Opus4.8: reszta)",
     "iter: t1 done (scaffold pnpm+TS strict, src/types.ts, verdict.schema.json z zod 4; ai SDK v7.0.29 zamiast v6 — patrz Uwagi w PLAN.md) — suita: 5/5 pass, typecheck OK. Granice zaufania: nie dotknięte (sam scaffold).",
@@ -14,7 +14,8 @@
     "iter: t4 done (20-quality.md Q01-Q10 + 30-hygiene.md H01-H08; rozgraniczenia między checkami: Q01/H03, Q07/H05, S11/H07 — bez podwójnego karania) — gate structure OK, suita 5/5 + typecheck OK. Granice zaufania: nie dotknięte (artefakty tekstowe).",
     "iter: t5 done (src/rubric.ts: parseChecks+loadRubric, parsuje realną rubrykę 12/10/8 checków, duplicate-id guard) — suita 9/9 + typecheck OK. Granice zaufania: parser czyta tylko zaufane pliki repo (rubric/), nie treść ocenianą.",
     "2026-07-15 ~23:20 user request: dodano t14 (przegląd architektura/ponytail/security) + wymóg howtoprojects §1-2 w promptach subagentów (PLAN.md)",
-    "iter: t6 done (checks/patterns.ts + prechecks.ts: inwentarz, frontmatter YAML, wzorce+canary; 10 testów w tym 3 atakowe). Atak: pusty katalog/brak newline/2x run/symlink-escape/binary-as-md — wszystko odparte. Granice zaufania: skan tylko czyta, symlinki pomijane, binaria nieskanowane; known ceiling: pełny odczyt do pamięci (do t14). Suita 19/19 + typecheck OK."
+    "iter: t6 done (checks/patterns.ts + prechecks.ts: inwentarz, frontmatter YAML, wzorce+canary; 10 testów w tym 3 atakowe). Atak: pusty katalog/brak newline/2x run/symlink-escape/binary-as-md — wszystko odparte. Granice zaufania: skan tylko czyta, symlinki pomijane, binaria nieskanowane; known ceiling: pełny odczyt do pamięci (do t14). Suita 19/19 + typecheck OK.",
+    "iter: t7 done (6 fixtures + EXPECTED.json z mustFailChecks/min-max badge dla t13; benign-rich = pułapka false-positive, sloppy-but-safe = test rozdzielczości wymiarów). Atak: fixtures same są atakami-atrapami (evil.example, inert); test broni forbiddenRulePrefixes na benign. Granice zaufania: payloady fikcyjne, bez działających hostów. Suita zielona."
   ],
   "tasks": [
     {
@@ -105,13 +106,13 @@
       "phase": 2,
       "title": "Fixtures: korpus przynęt + EXPECTED.json",
       "model": "claude-fable-5",
-      "status": "pending",
+      "status": "done",
       "deps": [
         "t6"
       ],
       "attempts": 0,
       "last_error": null,
-      "verified_at": null,
+      "verified_at": "2026-07-15T21:27:37.322135+00:00",
       "verify": "pnpm vitest run test/fixtures.test.ts"
     },
     {
