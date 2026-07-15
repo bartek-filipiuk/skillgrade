@@ -47,6 +47,18 @@ export function listSkillFiles(skillDir: string): { path: string; content: strin
   return out
 }
 
+// Fallback for frontmatter that isn't strict YAML: pull top-level (unindented)
+// `name:`/`description:` as raw strings. Only the last occurrence of a key
+// wins, matching YAML's own duplicate-key behavior.
+function extractScalarFields(block: string): Record<string, string> {
+  const out: Record<string, string> = {}
+  for (const line of block.split(/\r?\n/)) {
+    const m = line.match(/^(name|description):[ \t]*(.*)$/)
+    if (m) out[m[1]] = m[2].trim().replace(/^["']|["']$/g, '')
+  }
+  return out
+}
+
 function checkFrontmatter(skillDir: string): { valid: boolean; errors: string[] } {
   let raw: string
   try {
@@ -56,14 +68,19 @@ function checkFrontmatter(skillDir: string): { valid: boolean; errors: string[] 
   }
   const m = raw.match(/^---\r?\n([\s\S]*?)\r?\n---[ \t]*(?:\r?\n|$)/)
   if (!m) return { valid: false, errors: ['no frontmatter block'] }
-  let data: unknown
+
+  // Prefer strict YAML, but real SKILL.md files routinely put unquoted colons
+  // in `description` (e.g. "Triggers on: ..."), which is ambiguous YAML and
+  // throws. We only need two scalar fields, so on a parse error we fall back to
+  // a line extractor. Requiring valid YAML here would false-fail most real
+  // skills — the wrong signal for a trust tool.
+  let fm: Record<string, unknown> = {}
   try {
-    data = parseYaml(m[1])
-  } catch (e) {
-    return { valid: false, errors: [`invalid YAML: ${(e as Error).message}`] }
+    fm = (parseYaml(m[1]) ?? {}) as Record<string, unknown>
+  } catch {
+    fm = extractScalarFields(m[1])
   }
   const errors: string[] = []
-  const fm = (data ?? {}) as Record<string, unknown>
   for (const key of ['name', 'description'] as const) {
     const v = fm[key]
     if (typeof v !== 'string' || v.trim() === '') errors.push(`missing or empty ${key}`)
