@@ -5,9 +5,10 @@
   "branch": "build/trust-skill-v1",
   "circuit_breaker_consecutive_blocked": 0,
   "max_attempts_per_task": 3,
-  "current": "t1",
+  "current": "t2",
   "log": [
-    "2026-07-15 night run: przygotowano t1-t13 — 13 tasków pending (Fable5: t2,t3,t4,t7,t13; Opus4.8: reszta)"
+    "2026-07-15 night run: przygotowano t1-t13 — 13 tasków pending (Fable5: t2,t3,t4,t7,t13; Opus4.8: reszta)",
+    "iter: t1 done (scaffold pnpm+TS strict, src/types.ts, verdict.schema.json z zod 4; ai SDK v7.0.29 zamiast v6 — patrz Uwagi w PLAN.md) — suita: 5/5 pass, typecheck OK. Granice zaufania: nie dotknięte (sam scaffold)."
   ],
   "tasks": [
     {
@@ -15,11 +16,11 @@
       "phase": 1,
       "title": "Scaffold + typy + schema werdyktu",
       "model": "claude-opus-4-8",
-      "status": "pending",
+      "status": "done",
       "deps": [],
       "attempts": 0,
       "last_error": null,
-      "verified_at": null,
+      "verified_at": "2026-07-15T20:59:18.266837+00:00",
       "verify": "pnpm vitest run test/types.test.ts && pnpm typecheck && test -s rubric/skill/verdict.schema.json"
     },
     {
@@ -40,7 +41,9 @@
       "title": "Rubryka Security S01-S12",
       "model": "claude-fable-5",
       "status": "pending",
-      "deps": ["t2"],
+      "deps": [
+        "t2"
+      ],
       "attempts": 0,
       "last_error": null,
       "verified_at": null,
@@ -52,7 +55,9 @@
       "title": "Rubryki Quality Q01-Q10 + Hygiene H01-H08",
       "model": "claude-fable-5",
       "status": "pending",
-      "deps": ["t2"],
+      "deps": [
+        "t2"
+      ],
       "attempts": 0,
       "last_error": null,
       "verified_at": null,
@@ -64,7 +69,12 @@
       "title": "Parser rubryki",
       "model": "claude-opus-4-8",
       "status": "pending",
-      "deps": ["t1", "t2", "t3", "t4"],
+      "deps": [
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
       "attempts": 0,
       "last_error": null,
       "verified_at": null,
@@ -76,7 +86,9 @@
       "title": "Pre-checki: inwentarz, frontmatter, wzorce, canary",
       "model": "claude-opus-4-8",
       "status": "pending",
-      "deps": ["t1"],
+      "deps": [
+        "t1"
+      ],
       "attempts": 0,
       "last_error": null,
       "verified_at": null,
@@ -88,7 +100,9 @@
       "title": "Fixtures: korpus przynęt + EXPECTED.json",
       "model": "claude-fable-5",
       "status": "pending",
-      "deps": ["t6"],
+      "deps": [
+        "t6"
+      ],
       "attempts": 0,
       "last_error": null,
       "verified_at": null,
@@ -100,7 +114,9 @@
       "title": "Agregacja score",
       "model": "claude-opus-4-8",
       "status": "pending",
-      "deps": ["t1"],
+      "deps": [
+        "t1"
+      ],
       "attempts": 0,
       "last_error": null,
       "verified_at": null,
@@ -112,7 +128,10 @@
       "title": "Loader ocenianego skilla + contentHash",
       "model": "claude-opus-4-8",
       "status": "pending",
-      "deps": ["t1", "t6"],
+      "deps": [
+        "t1",
+        "t6"
+      ],
       "attempts": 0,
       "last_error": null,
       "verified_at": null,
@@ -124,7 +143,9 @@
       "title": "Warstwa LLM + weryfikacja dowodów",
       "model": "claude-opus-4-8",
       "status": "pending",
-      "deps": ["t1"],
+      "deps": [
+        "t1"
+      ],
       "attempts": 0,
       "last_error": null,
       "verified_at": null,
@@ -136,7 +157,13 @@
       "title": "Raport + render + CLI",
       "model": "claude-opus-4-8",
       "status": "pending",
-      "deps": ["t5", "t7", "t8", "t9", "t10"],
+      "deps": [
+        "t5",
+        "t7",
+        "t8",
+        "t9",
+        "t10"
+      ],
       "attempts": 0,
       "last_error": null,
       "verified_at": null,
@@ -148,7 +175,12 @@
       "title": "Skill-frontend Claude Code + entrypointy",
       "model": "claude-opus-4-8",
       "status": "pending",
-      "deps": ["t5", "t6", "t7", "t8"],
+      "deps": [
+        "t5",
+        "t6",
+        "t7",
+        "t8"
+      ],
       "attempts": 0,
       "last_error": null,
       "verified_at": null,
@@ -160,7 +192,10 @@
       "title": "Kalibracja rubryki (fixtures + realne skille, agreement Haiku)",
       "model": "claude-fable-5",
       "status": "pending",
-      "deps": ["t11", "t12"],
+      "deps": [
+        "t11",
+        "t12"
+      ],
       "attempts": 0,
       "last_error": null,
       "verified_at": null,
