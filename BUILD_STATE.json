@@ -5,7 +5,7 @@
   "branch": "build/trust-skill-v1",
   "circuit_breaker_consecutive_blocked": 0,
   "max_attempts_per_task": 3,
-  "current": "t12",
+  "current": "t13",
   "log": [
     "2026-07-15 night run: przygotowano t1-t13 — 13 tasków pending (Fable5: t2,t3,t4,t7,t13; Opus4.8: reszta)",
     "iter: t1 done (scaffold pnpm+TS strict, src/types.ts, verdict.schema.json z zod 4; ai SDK v7.0.29 zamiast v6 — patrz Uwagi w PLAN.md) — suita: 5/5 pass, typecheck OK. Granice zaufania: nie dotknięte (sam scaffold).",
@@ -19,7 +19,8 @@
     "iter: t8 done (src/aggregate.ts, 18 testów). Atak: ujemna/zerowa waga PĘKAŁA -> guard; duplikat werdyktów -> 'najgorszy wygrywa' (odstępstwo od planu, akceptowane: uniemożliwia zakopanie faila doklejonym passem); critical fail przy wadze 0 nadal F. Granice zaufania: werdykty LLM traktowane jako potencjalnie skażone, score liczy tylko kod. Suita 44/44 + typecheck OK.",
     "iter: t9 done (src/loadSkill.ts: isGitUrl/assertSafeGitUrl/gitCloneArgs, contentHash sha256, numberedContent; 12 testów). Atak: git arg-injection (ext::/--upload-pack/dash-leading) -> whitelist transportów + execFile tablicowy + '--' + GIT_ALLOW_PROTOCOL + hooksPath=/dev/null; path-attribute injection w <skill-content path> -> escape &quot;; delimiter-spoofing neutralny przez prefiks N|. Granice zaufania: kod repo NIGDY nie wykonywany, tylko czytany przez listSkillFiles. Suita 56/56 + typecheck OK.",
     "iter: t10 done (src/models.ts + src/llm.ts; mock MockLanguageModelV4 z ai/test, 20 testów, zero sieci). Odstępstwo uzasadnione: lenient wire-schema + refined VerdictSchema+evidence per werdykt w kodzie (bo .refine nie trafia do JSON Schema modelu, a batch generateObject wywalałby wszystkie werdykty przy jednym złym). Atak: path-traversal/out-of-range evidence -> evaluation-error bez throw; flooding/obce ID -> tylko checki wymiaru; quote trim-yes/case-fold-no. Granice zaufania: output modelu w pełni niezaufany (file/line/quote/id/status re-walidowane), treść skilla jako dane. Suita 76/76 + typecheck OK.",
-    "iter: t11 done (src/report.ts buildReport/renderMarkdown/exitCodeForReport/majorityVerdict + src/cli.ts + bin + tsconfig.build.json; 23 testy, deps wstrzykiwane). Exit codes: 0=ok, 2=odrzucony (security F w trybie pełnym / flaga critical|major w --no-llm), 1=błąd użycia/wyjątek. Odstępstwo udokum.: próg --no-llm rozszerzony critical->critical|major (canary fixtures dają major); benign-rich w --no-llm też da 2 = poprawna eskalacja darmowego filtra do pełnej oceny LLM. Atak: --out ENOENT->exit1 bez crasha; source injection nie trafia do shell (loadSkill); idempotencja modulo createdAt. Suita 99/99 + typecheck OK. Smoke: exfil->2, benign->0."
+    "iter: t11 done (src/report.ts buildReport/renderMarkdown/exitCodeForReport/majorityVerdict + src/cli.ts + bin + tsconfig.build.json; 23 testy, deps wstrzykiwane). Exit codes: 0=ok, 2=odrzucony (security F w trybie pełnym / flaga critical|major w --no-llm), 1=błąd użycia/wyjątek. Odstępstwo udokum.: próg --no-llm rozszerzony critical->critical|major (canary fixtures dają major); benign-rich w --no-llm też da 2 = poprawna eskalacja darmowego filtra do pełnej oceny LLM. Atak: --out ENOENT->exit1 bez crasha; source injection nie trafia do shell (loadSkill); idempotencja modulo createdAt. Suita 99/99 + typecheck OK. Smoke: exfil->2, benign->0.",
+    "iter: t12 done (checks/run.ts + src/aggregate-cli.ts entrypointy + skills/trust-skill/SKILL.md; gate PASS). Atak: brak argv/zły JSON stdin/dimension spoza zbioru -> czytelne błędy exit 1, nie stacktrace; entrypointy tylko czytają, litera liczona kodem. Granice zaufania: oceniany skill = dane, S06 utrwalony w SKILL.md. Suita 99/99 + typecheck OK."
   ],
   "tasks": [
     {
@@ -185,7 +186,7 @@
       "phase": 3,
       "title": "Skill-frontend Claude Code + entrypointy",
       "model": "claude-opus-4-8",
-      "status": "pending",
+      "status": "done",
       "deps": [
         "t5",
         "t6",
@@ -194,7 +195,7 @@
       ],
       "attempts": 0,
       "last_error": null,
-      "verified_at": null,
+      "verified_at": "2026-07-15T22:08:41.557095+00:00",
       "verify": "pnpm tsx checks/run.ts checks/fixtures/benign-minimal | python3 -c \"import json,sys; json.load(sys.stdin)\" && echo '{\"dimension\":\"hygiene\",\"verdicts\":[]}' | pnpm tsx src/aggregate-cli.ts | python3 -c \"import json,sys; assert json.load(sys.stdin)['letter']\" && grep -q 'name: trust-skill' skills/trust-skill/SKILL.md"
     },
     {
