@@ -5,7 +5,7 @@
   "branch": "build/trust-skill-v1",
   "circuit_breaker_consecutive_blocked": 0,
   "max_attempts_per_task": 3,
-  "current": "t9",
+  "current": "t10",
   "log": [
     "2026-07-15 night run: przygotowano t1-t13 — 13 tasków pending (Fable5: t2,t3,t4,t7,t13; Opus4.8: reszta)",
     "iter: t1 done (scaffold pnpm+TS strict, src/types.ts, verdict.schema.json z zod 4; ai SDK v7.0.29 zamiast v6 — patrz Uwagi w PLAN.md) — suita: 5/5 pass, typecheck OK. Granice zaufania: nie dotknięte (sam scaffold).",
@@ -16,7 +16,8 @@
     "2026-07-15 ~23:20 user request: dodano t14 (przegląd architektura/ponytail/security) + wymóg howtoprojects §1-2 w promptach subagentów (PLAN.md)",
     "iter: t6 done (checks/patterns.ts + prechecks.ts: inwentarz, frontmatter YAML, wzorce+canary; 10 testów w tym 3 atakowe). Atak: pusty katalog/brak newline/2x run/symlink-escape/binary-as-md — wszystko odparte. Granice zaufania: skan tylko czyta, symlinki pomijane, binaria nieskanowane; known ceiling: pełny odczyt do pamięci (do t14). Suita 19/19 + typecheck OK.",
     "iter: t7 done (6 fixtures + EXPECTED.json z mustFailChecks/min-max badge dla t13; benign-rich = pułapka false-positive, sloppy-but-safe = test rozdzielczości wymiarów). Atak: fixtures same są atakami-atrapami (evil.example, inert); test broni forbiddenRulePrefixes na benign. Granice zaufania: payloady fikcyjne, bez działających hostów. Suita zielona.",
-    "iter: t8 done (src/aggregate.ts, 18 testów). Atak: ujemna/zerowa waga PĘKAŁA -> guard; duplikat werdyktów -> 'najgorszy wygrywa' (odstępstwo od planu, akceptowane: uniemożliwia zakopanie faila doklejonym passem); critical fail przy wadze 0 nadal F. Granice zaufania: werdykty LLM traktowane jako potencjalnie skażone, score liczy tylko kod. Suita 44/44 + typecheck OK."
+    "iter: t8 done (src/aggregate.ts, 18 testów). Atak: ujemna/zerowa waga PĘKAŁA -> guard; duplikat werdyktów -> 'najgorszy wygrywa' (odstępstwo od planu, akceptowane: uniemożliwia zakopanie faila doklejonym passem); critical fail przy wadze 0 nadal F. Granice zaufania: werdykty LLM traktowane jako potencjalnie skażone, score liczy tylko kod. Suita 44/44 + typecheck OK.",
+    "iter: t9 done (src/loadSkill.ts: isGitUrl/assertSafeGitUrl/gitCloneArgs, contentHash sha256, numberedContent; 12 testów). Atak: git arg-injection (ext::/--upload-pack/dash-leading) -> whitelist transportów + execFile tablicowy + '--' + GIT_ALLOW_PROTOCOL + hooksPath=/dev/null; path-attribute injection w <skill-content path> -> escape &quot;; delimiter-spoofing neutralny przez prefiks N|. Granice zaufania: kod repo NIGDY nie wykonywany, tylko czytany przez listSkillFiles. Suita 56/56 + typecheck OK."
   ],
   "tasks": [
     {
@@ -135,14 +136,14 @@
       "phase": 2,
       "title": "Loader ocenianego skilla + contentHash",
       "model": "claude-opus-4-8",
-      "status": "pending",
+      "status": "done",
       "deps": [
         "t1",
         "t6"
       ],
       "attempts": 0,
       "last_error": null,
-      "verified_at": null,
+      "verified_at": "2026-07-15T21:40:49.435041+00:00",
       "verify": "pnpm vitest run test/loadSkill.test.ts && pnpm typecheck"
     },
     {
