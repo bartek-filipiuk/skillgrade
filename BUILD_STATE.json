@@ -12,7 +12,8 @@
     "iter: t2 done (meta.json 0.1.0 + 00-protocol.md: 7 sekcji, obrona przed delimiter-escape/fake-completion/role-hijack jako dowód S06) — suita 5/5 + typecheck OK. Granice zaufania: treść oceniana zdefiniowana jako niezaufane dane (§2).",
     "iter: t3 done (10-security.md: S01-S12, 12 checków z przykładami pass/fail+zaciemnionymi, sekcja Known gaps: multi-file assembly, semantic paraphrase, time-delayed creep) — gate structure OK, suita 5/5 + typecheck OK. Granice zaufania: rubryka rozróżnia frazy-ataki cytowane jako dane vs wymierzone w czytającego (S06).",
     "iter: t4 done (20-quality.md Q01-Q10 + 30-hygiene.md H01-H08; rozgraniczenia między checkami: Q01/H03, Q07/H05, S11/H07 — bez podwójnego karania) — gate structure OK, suita 5/5 + typecheck OK. Granice zaufania: nie dotknięte (artefakty tekstowe).",
-    "iter: t5 done (src/rubric.ts: parseChecks+loadRubric, parsuje realną rubrykę 12/10/8 checków, duplicate-id guard) — suita 9/9 + typecheck OK. Granice zaufania: parser czyta tylko zaufane pliki repo (rubric/), nie treść ocenianą."
+    "iter: t5 done (src/rubric.ts: parseChecks+loadRubric, parsuje realną rubrykę 12/10/8 checków, duplicate-id guard) — suita 9/9 + typecheck OK. Granice zaufania: parser czyta tylko zaufane pliki repo (rubric/), nie treść ocenianą.",
+    "2026-07-15 ~23:20 user request: dodano t14 (przegląd architektura/ponytail/security) + wymóg howtoprojects §1-2 w promptach subagentów (PLAN.md)"
   ],
   "tasks": [
     {
@@ -205,6 +206,21 @@
       "verified_at": null,
       "verify": "python3 -c \"t=open('docs/calibration/2026-07-16-run-01.md').read(); [t.index(s) for s in ('benign-minimal','benign-rich','malicious-exfil','malicious-injection','malicious-hidden','sloppy-but-safe','agreement')]\"",
       "note": "Nocą: ocena natywna (tryb skill) + agreement przez Agent model:haiku. Przebieg CLI z ANTHROPIC_API_KEY → checklist poranna."
+    },
+    {
+      "id": "t14",
+      "phase": 4,
+      "title": "Przegląd końcowy: architektura / ponytail / security",
+      "model": "claude-fable-5",
+      "status": "pending",
+      "deps": [
+        "t13"
+      ],
+      "attempts": 0,
+      "last_error": null,
+      "verified_at": null,
+      "verify": "python3 -c \"t=open('docs/review/2026-07-16-night-review.md').read(); [t.index(s) for s in ('## Architektura','## Ponytail','## Security','## Werdykt')]\" && pnpm test && pnpm typecheck",
+      "note": "Zbiorczy przegląd diffu nocy; krytyczne naprawiać od razu, reszta do sekcji Werdykt na rano. Pełny /security-audit = decyzja usera rano."
     }
   ]
 }

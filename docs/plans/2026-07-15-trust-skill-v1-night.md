@@ -122,3 +122,12 @@ Pole **Model** mówi, kto wykonuje task (patrz PLAN.md → "Twarde reguły"):
 **Test:** brak (dokument kalibracyjny — gate strukturalny)
 **Gate:** `python3 -c "t=open('docs/calibration/2026-07-16-run-01.md').read(); [t.index(s) for s in ('benign-minimal','benign-rich','malicious-exfil','malicious-injection','malicious-hidden','sloppy-but-safe','agreement')]"`
 **deps:** t11, t12
+
+### Task t14
+**Tytuł:** Przegląd końcowy nocy — architektura / ponytail / security
+**Model:** claude-fable-5
+**Files:** Create: `docs/review/2026-07-16-night-review.md`; Modify: dowolne pliki kodu (poprawki krytycznych znalezisk)
+**Podejście:** Przejrzyj CAŁY diff nocy (`git diff main..build/trust-skill-v1 -- src checks skills bin`) trzema soczewkami: (1) **Architektura** — drabina architect-first: kierunek zależności, zbędne warstwy, granice modułów; (2) **Ponytail** — co wyciąć: nieużywane abstrakcje, duplikacja, kod który mógł być stdlib/jedną linią; (3) **Security** — granice zaufania narzędzia: `loadSkill` na obcym git URL (symlinki, rozmiar repo, ścieżki wychodzące poza katalog), `listSkillFiles` (traversal, binaria), weryfikacja evidence (path escape w `evidence.file`), obsługa treści ocenianej we wszystkich promptach, fixtures (czy payloady są atrapami). Raport MUSI mieć sekcje: `## Architektura`, `## Ponytail`, `## Security`, `## Werdykt` (każde znalezisko: plik:linia, severity, status naprawiono/odłożone-rano). Znaleziska KRYTYCZNE napraw od razu (test + pełna suita przed commitem); resztę wypisz do sekcji Werdykt jako listę na rano.
+**Test:** pełna suita po ewentualnych poprawkach
+**Gate:** `python3 -c "t=open('docs/review/2026-07-16-night-review.md').read(); [t.index(s) for s in ('## Architektura','## Ponytail','## Security','## Werdykt')]" && pnpm test && pnpm typecheck`
+**deps:** t13
