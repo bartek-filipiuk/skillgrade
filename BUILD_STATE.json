@@ -5,13 +5,14 @@
   "branch": "build/trust-skill-v1",
   "circuit_breaker_consecutive_blocked": 0,
   "max_attempts_per_task": 3,
-  "current": "t5",
+  "current": "t6",
   "log": [
     "2026-07-15 night run: przygotowano t1-t13 — 13 tasków pending (Fable5: t2,t3,t4,t7,t13; Opus4.8: reszta)",
     "iter: t1 done (scaffold pnpm+TS strict, src/types.ts, verdict.schema.json z zod 4; ai SDK v7.0.29 zamiast v6 — patrz Uwagi w PLAN.md) — suita: 5/5 pass, typecheck OK. Granice zaufania: nie dotknięte (sam scaffold).",
     "iter: t2 done (meta.json 0.1.0 + 00-protocol.md: 7 sekcji, obrona przed delimiter-escape/fake-completion/role-hijack jako dowód S06) — suita 5/5 + typecheck OK. Granice zaufania: treść oceniana zdefiniowana jako niezaufane dane (§2).",
     "iter: t3 done (10-security.md: S01-S12, 12 checków z przykładami pass/fail+zaciemnionymi, sekcja Known gaps: multi-file assembly, semantic paraphrase, time-delayed creep) — gate structure OK, suita 5/5 + typecheck OK. Granice zaufania: rubryka rozróżnia frazy-ataki cytowane jako dane vs wymierzone w czytającego (S06).",
-    "iter: t4 done (20-quality.md Q01-Q10 + 30-hygiene.md H01-H08; rozgraniczenia między checkami: Q01/H03, Q07/H05, S11/H07 — bez podwójnego karania) — gate structure OK, suita 5/5 + typecheck OK. Granice zaufania: nie dotknięte (artefakty tekstowe)."
+    "iter: t4 done (20-quality.md Q01-Q10 + 30-hygiene.md H01-H08; rozgraniczenia między checkami: Q01/H03, Q07/H05, S11/H07 — bez podwójnego karania) — gate structure OK, suita 5/5 + typecheck OK. Granice zaufania: nie dotknięte (artefakty tekstowe).",
+    "iter: t5 done (src/rubric.ts: parseChecks+loadRubric, parsuje realną rubrykę 12/10/8 checków, duplicate-id guard) — suita 9/9 + typecheck OK. Granice zaufania: parser czyta tylko zaufane pliki repo (rubric/), nie treść ocenianą."
   ],
   "tasks": [
     {
@@ -71,7 +72,7 @@
       "phase": 2,
       "title": "Parser rubryki",
       "model": "claude-opus-4-8",
-      "status": "pending",
+      "status": "done",
       "deps": [
         "t1",
         "t2",
@@ -80,7 +81,7 @@
       ],
       "attempts": 0,
       "last_error": null,
-      "verified_at": null,
+      "verified_at": "2026-07-15T21:14:48.934601+00:00",
       "verify": "pnpm vitest run test/rubric.test.ts && pnpm typecheck"
     },
     {
