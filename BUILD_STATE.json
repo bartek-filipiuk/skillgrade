@@ -5,10 +5,11 @@
   "branch": "build/trust-skill-v1",
   "circuit_breaker_consecutive_blocked": 0,
   "max_attempts_per_task": 3,
-  "current": "t2",
+  "current": "t3",
   "log": [
     "2026-07-15 night run: przygotowano t1-t13 — 13 tasków pending (Fable5: t2,t3,t4,t7,t13; Opus4.8: reszta)",
-    "iter: t1 done (scaffold pnpm+TS strict, src/types.ts, verdict.schema.json z zod 4; ai SDK v7.0.29 zamiast v6 — patrz Uwagi w PLAN.md) — suita: 5/5 pass, typecheck OK. Granice zaufania: nie dotknięte (sam scaffold)."
+    "iter: t1 done (scaffold pnpm+TS strict, src/types.ts, verdict.schema.json z zod 4; ai SDK v7.0.29 zamiast v6 — patrz Uwagi w PLAN.md) — suita: 5/5 pass, typecheck OK. Granice zaufania: nie dotknięte (sam scaffold).",
+    "iter: t2 done (meta.json 0.1.0 + 00-protocol.md: 7 sekcji, obrona przed delimiter-escape/fake-completion/role-hijack jako dowód S06) — suita 5/5 + typecheck OK. Granice zaufania: treść oceniana zdefiniowana jako niezaufane dane (§2)."
   ],
   "tasks": [
     {
@@ -28,11 +29,11 @@
       "phase": 1,
       "title": "Meta rubryki + protokół oceny",
       "model": "claude-fable-5",
-      "status": "pending",
+      "status": "done",
       "deps": [],
       "attempts": 0,
       "last_error": null,
-      "verified_at": null,
+      "verified_at": "2026-07-15T21:02:54.868072+00:00",
       "verify": "python3 scripts/check_rubric.py protocol"
     },
     {
