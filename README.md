@@ -72,6 +72,10 @@ pnpm tsx src/cli.ts evaluate ./path/to/skill \
 
 Because the rubric is written to be executable by a weaker model (calibration showed 100% per-check agreement between a strong and a small model on the hard fixtures), a cheap OpenRouter model is a reasonable production choice — pick by price/latency and re-run calibration if you switch.
 
+**Recommended model (from calibration run 02, `docs/calibration/2026-07-16-openrouter.md`):** `openrouter:openai/gpt-4o-mini` — the cheapest tested model that resists the evaluator-manipulation fixture (grades every `malicious-*` at F) and supports native structured output. `google/gemini-2.5-flash` is a solid alternative. **Avoid** `deepseek/deepseek-v4-flash` (it was manipulated into a passing grade on `malicious-injection`) and any model that lacks structured-output support (verdict JSON becomes unreliable).
+
+**Provider caveat:** run **Anthropic** models through the native `anthropic:` provider, not `openrouter:`. OpenRouter's OpenAI-compatible endpoint rejects the JSON-schema `response_format` for Anthropic models, so `generateObject` fails and every check degrades to `evaluation-error` (F across the board). The `anthropic:` provider uses tool-based structured output and works correctly.
+
 ## Calibrate before switching model
 
 The rubric is designed to be model-portable, but *verify* it before trusting a new model in production — a weaker model may grade a malicious skill too leniently. `scripts/calibrate.ts` runs a full evaluation of every fixture in `checks/fixtures/EXPECTED.json` with your chosen model and checks each result against known-correct bounds (security within `[minSecurity, maxSecurity]`, quality/hygiene caps, and required `mustFailChecks`).

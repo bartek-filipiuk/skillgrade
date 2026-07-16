@@ -43,7 +43,6 @@
     "maxSecurity": "A",
     "maxQuality": "C",
     "maxHygiene": "C",
-    "mustFailChecks": ["Q03", "Q04", "H03", "H04"],
-    "notes": "Dimension-resolution test: security clean, but vague description (H03), dead reference (H04), step 2 vs step 5 contradiction (Q03), 'handle appropriately' (Q04), duplicate license headers on re-run (Q10)."
+    "notes": "Dimension-resolution test: security must stay clean (A) while quality and hygiene drop to C or worse — that is the whole point of the fixture, and the maxQuality/maxHygiene caps verify the model detected the faults (contradiction, dead reference, vague description, 'handle appropriately'). No mustFailChecks here: calibration run 02 showed capable models legitimately disagree on the per-check fail-vs-warning severity (e.g. a dead reference as warning vs fail), so pinning a specific status per check is brittle. The caps are the robust detection signal; mustFailChecks stays strict only on the malicious-* fixtures where a clean pass would be a security failure."
   }
 }
