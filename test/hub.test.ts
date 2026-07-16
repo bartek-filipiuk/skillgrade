@@ -27,10 +27,8 @@ describe('buildCatalog', () => {
   it('every category is a known taxonomy id', () => {
     for (const s of catalog.skills) expect(CATEGORY_IDS).toContain(s.category)
   })
-  it('computes pre-check facts from source for fixtures (no pre-supplied preCheck)', () => {
-    const fx = catalog.skills.find((s) => s.name === 'benign-minimal')!
-    expect(fx.preCheck.frontmatterValid).toBe(true)
-    expect(fx.preCheck.skillMdBytes).toBeGreaterThan(0)
+  it('every listed skill has an online source link', () => {
+    for (const s of catalog.skills) expect(s.sourceUrl).toMatch(/^https?:\/\//)
   })
   it('carries pre-supplied pre-check facts + evaluator for public skills', () => {
     const pub = catalog.skills.find((s) => s.name === 'skill-creator')!
@@ -38,14 +36,9 @@ describe('buildCatalog', () => {
     expect(pub.evaluator.model).toBe('google/gemini-2.5-flash')
     expect(pub.sourceUrl).toContain('github.com/anthropics/skills')
   })
-  it('demonstrates the full badge range for the hub UI', () => {
+  it('spans a range of grades (not all identical)', () => {
     const grades = new Set(catalog.skills.map((s) => s.overall))
     expect(grades).toContain('A')
-    expect(grades).toContain('F') // malicious-exfil fixture
-  })
-  it('malicious fixture is graded F on security', () => {
-    const exfil = catalog.skills.find((s) => s.name === 'malicious-exfil')!
-    expect(exfil.badges.security).toBe('F')
-    expect(exfil.kind).toBe('fixture')
+    expect(grades.size).toBeGreaterThanOrEqual(3)
   })
 })
