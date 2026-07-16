@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T15:42:13.531Z",
+  "generatedAt": "2026-07-16T16:15:20.358Z",
   "rubricVersion": "0.1.2",
   "taxonomy": [
     {
@@ -95,7 +95,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T15:42:13.531Z",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -140,7 +140,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T15:42:13.531Z",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -185,7 +185,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T15:42:13.531Z",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -230,7 +230,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T15:42:13.531Z",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -450,7 +450,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T15:42:13.531Z",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -495,7 +495,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T15:42:13.531Z",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -540,7 +540,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T15:42:13.531Z",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -585,7 +585,7 @@
         "majorFlags": 9
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T15:42:13.531Z",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -630,10 +630,2545 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T15:42:13.531Z",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
+      }
+    },
+    {
+      "name": "self-improving",
+      "source": "ClawHub · @ivangdavila/self-improving · 1.3k★",
+      "sourceUrl": "https://clawhub.ai/ivangdavila/skills/self-improving",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "ClawHub (1.3k★): Self-reflection + Self-criticism + Self-learning + Self-organizing memory. Agent evaluates its own work, catches mistakes,",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "H02",
+          "status": "fail",
+          "summary": "name field is not kebab-case (spaces, uppercase, plus sign); a separate slug field is kebab-case but the check judges name."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion / pointer-to-other-skill language appears anywhere in the file, despite closely related skills (memory, learning, decide, escalate) being listed, so misfir"
+        },
+        {
+          "check": "Q03",
+          "status": "fail",
+          "summary": "Contradicts the 'Scope' section's exhaustive 'This skill ONLY' list (lines 215-219), which enumerates four behaviors — none of which is writing to workspace AGENTS.md/SOUL.md/HEART"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 8581,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "proactive-agent",
+      "source": "ClawHub · @halthelobster/proactive-agent · 821★",
+      "sourceUrl": "https://clawhub.ai/halthelobster/skills/proactive-agent",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "ClawHub (821★): Transform AI agents from task-followers into proactive partners that anticipate needs and continuously improve. Now with WA",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "H07",
+          "status": "fail",
+          "summary": "Skill relies throughout on non-universal tools (memory_search, session_status, cron, trash) with no requirements/availability-check section anywhere; failures are only discovered a"
+        },
+        {
+          "check": "Q01",
+          "status": "fail",
+          "summary": "Description states what the skill is/does and lists feature names, but gives no 'use when' cue, task type, or example phrasing a dispatching agent could match against."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / 'out of scope' / pointer-to-other-skill language appears anywhere in the description or body, despite this being a broad, persistent behavioral overlay that could ea"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 20882,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "multi-search-engine",
+      "source": "ClawHub · @gpyangyoujun/multi-search-engine · 752★",
+      "sourceUrl": "https://clawhub.ai/gpyangyoujun/skills/multi-search-engine",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "ClawHub (752★): Multi search engine integration with 16 engines (7 CN + 9 Global). Supports advanced search operators, time filters, site s",
+      "badges": {
+        "security": "A",
+        "quality": "F",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "F",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "Neither the description nor the body contains any 'NOT for' / out-of-scope / pointer-to-other-skill language, despite this being a broad general-purpose search skill likely to over"
+        },
+        {
+          "check": "Q03",
+          "status": "fail",
+          "summary": "Directly contradicts the skill's own core workflow, which fetches 16 external search-engine URLs via web_fetch, e.g. line 16: 'Use web_fetch to execute search requests with rate li"
+        },
+        {
+          "check": "Q05",
+          "status": "fail",
+          "summary": "No format, location, or required sections are specified for the 'core search report' deliverable."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 6202,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "github",
+      "source": "ClawHub · @steipete/github · 652★",
+      "sourceUrl": "https://clawhub.ai/steipete/skills/github",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "ClawHub (652★): Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and adva",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / out-of-scope / pointer-to-other-skill language anywhere in the description or body; the skill's scope is broad enough (general GitHub interaction) that exclusions wo"
+        },
+        {
+          "check": "Q06",
+          "status": "fail",
+          "summary": "No mention anywhere of what to do if `gh` is missing, unauthenticated, or a command/API call fails — total silence across a multi-step external-tool-dependent flow."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 1112,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "free-ride",
+      "source": "ClawHub · @shaivpidadi/free-ride · 474★",
+      "sourceUrl": "https://clawhub.ai/shaivpidadi/skills/free-ride",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "ClawHub (474★): Manages free AI models from OpenRouter for OpenClaw. Automatically ranks models by quality, configures fallbacks for rate-l",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "H02",
+          "status": "fail",
+          "summary": "Skill directory is free-ride but frontmatter name is freeride (no hyphen) — mismatch per H02 rule."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion language anywhere in the file, despite broad triggers ('model switching', 'reduce AI costs') that could misfire on non-OpenRouter or non-OpenClaw cost/mode"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 4548,
+        "criticalFlags": 0,
+        "majorFlags": 1
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "agent-browser-clawdbot",
+      "source": "ClawHub · @matrixy/agent-browser-clawdbot · 446★",
+      "sourceUrl": "https://clawhub.ai/matrixy/skills/agent-browser-clawdbot",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "ClawHub (446★): Headless browser automation CLI optimized for AI agents with accessibility tree snapshots and ref-based element selection",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
+        },
+        {
+          "check": "Q06",
+          "status": "fail",
+          "summary": "The whole multi-step workflow (network navigation, external CLI tool, file-based state load/save, installation) has zero mention anywhere of what to do if a command fails, the tool"
+        },
+        {
+          "check": "Q01",
+          "status": "warning",
+          "summary": "States what the tool is but names no concrete trigger situations or example user phrasings in the description field itself; the 'when to use' guidance only appears in the body (## "
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 5547,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "obsidian",
+      "source": "ClawHub · @steipete/obsidian · 444★",
+      "sourceUrl": "https://clawhub.ai/steipete/skills/obsidian",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "ClawHub (444★): Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion / out-of-scope guidance appears anywhere in the description or body, despite the skill covering multiple distinct operations (search, create, move, delete)"
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "Only the create path gets any failure mention (URI handler must be working, may be refused for dot-folders); search, move, delete, and 'obsidian-cli not installed' are left with ze"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 2333,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "auto-updater",
+      "source": "ClawHub · @maximeprades/auto-updater · 441★",
+      "sourceUrl": "https://clawhub.ai/maximeprades/skills/auto-updater",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "ClawHub (441★): Automatically update Clawdbot and all installed skills once daily. Runs via cron, checks for updates, applies them, and mes",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion / out-of-scope guidance anywhere in description or body; skill has multiple sub-flows (setup, manual commands, troubleshooting) so misfire is not implausib"
+        },
+        {
+          "check": "Q10",
+          "status": "fail",
+          "summary": "Setup instructs adding a cron job by name with no check for an existing 'Daily Auto-Update' job first; re-running the Quick Start/manual setup would create duplicate cron entries."
+        },
+        {
+          "check": "Q01",
+          "status": "warning",
+          "summary": "Describes what the skill does in detail but never states a triggering phrase or 'use when' cue for a dispatching agent."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 3299,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "nano-banana-pro",
+      "source": "ClawHub · @steipete/nano-banana-pro · 415★",
+      "sourceUrl": "https://clawhub.ai/steipete/skills/nano-banana-pro",
+      "kind": "skill",
+      "category": "media",
+      "tagline": "ClawHub (415★): Generate/edit images with Nano Banana Pro (Gemini 3 Pro Image). Use for image create/modify requests incl. edits. Supports",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog, or dated revision notes anywhere in the file."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion / pointer-to-other-skill language anywhere in description or body."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 5700,
+        "criticalFlags": 0,
+        "majorFlags": 1
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "api-gateway",
+      "source": "ClawHub · @byungkyu/api-gateway · 392★",
+      "sourceUrl": "https://clawhub.ai/byungkyu/skills/api-gateway",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "ClawHub (392★): Connect to external services through Maton-managed API routes. Use this skill only after the user names the target app, acc",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "H05",
+          "status": "fail",
+          "summary": "File is 1555 lines / ~69KB, roughly 3x the ~500-line/25KB budget (bulk Supported Services table + duplicated per-provider reference link list inline)."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for'/out-of-scope/pointer-to-other-skill language appears anywhere in the description or body, despite the skill covering ~150 different services where misfire against dedi"
+        },
+        {
+          "check": "Q07",
+          "status": "fail",
+          "summary": "Beyond the 150+ row Supported Services table, a second ~150-line list duplicating the same providers with links follows this line, all inline in SKILL.md despite an obvious per-pro"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 69424,
+        "criticalFlags": 0,
+        "majorFlags": 3
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "desktop-control",
+      "source": "ClawHub · @matagul/desktop-control · 377★",
+      "sourceUrl": "https://clawhub.ai/matagul/skills/desktop-control",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "ClawHub (377★): Advanced desktop automation with mouse, keyboard, and screen control",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "F",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "F",
+      "highlights": [
+        {
+          "check": "H01",
+          "status": "fail",
+          "summary": "Frontmatter block (lines 1-3) contains only a `description` field; there is no `name` field at all, so the required non-empty name is absent."
+        },
+        {
+          "check": "H02",
+          "status": "fail",
+          "summary": "No `name` value exists in frontmatter to check against kebab-case or the directory name (`desktop-control/`) — naming requirement is violated by omission."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter, no changelog heading, and no dated revision notes anywhere in the document."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": false,
+        "fileCount": 1,
+        "skillMdBytes": 14084,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "word-docx",
+      "source": "ClawHub · @ivangdavila/word-docx · 352★",
+      "sourceUrl": "https://clawhub.ai/ivangdavila/skills/word-docx",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "ClawHub (352★): Create, inspect, and edit Microsoft Word documents and DOCX files with reliable styles, numbering, tracked changes, tables,",
+      "badges": {
+        "security": "B",
+        "quality": "D",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "D",
+      "highlights": [
+        {
+          "check": "H02",
+          "status": "fail",
+          "summary": "name is not kebab-case (spaces, slash, uppercase) against ^[a-z0-9]+(-[a-z0-9]+)*$; the separate `slug: word-docx` field matches the directory but the rubric judges the `name` fiel"
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "The 'Related Skills' list names adjacent skills to install alongside, but nowhere does the file say 'NOT for X, use Y instead' or otherwise state out-of-scope cases; no exclusion p"
+        },
+        {
+          "check": "Q04",
+          "status": "fail",
+          "summary": "The entire skill is conceptual guidance with no named commands, tools, or scripts anywhere — 'inspect the package layout', 'use OOXML-aware editing', 'extend the current style syst"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 7886,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "youtube-watcher",
+      "source": "ClawHub · @michaelgathara/youtube-watcher · 336★",
+      "sourceUrl": "https://clawhub.ai/michaelgathara/skills/youtube-watcher",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "ClawHub (336★): Fetch and read transcripts from YouTube videos. Use when you need to summarize a video, answer questions about its content,",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for'/exclusion language appears anywhere in the file; nothing distinguishes this from non-YouTube video/audio summarization requests."
+        },
+        {
+          "check": "Q05",
+          "status": "fail",
+          "summary": "No format, location, or shape is defined for either the script's output or the final deliverable — matches the rubric's own fail example almost verbatim."
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "One failure path (no captions) is covered, but the equally likely 'yt-dlp not installed/available' case is only declared as a requirement (line 46) with no stated fallback or stop-"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 1502,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "openai-whisper",
+      "source": "ClawHub · @steipete/openai-whisper · 334★",
+      "sourceUrl": "https://clawhub.ai/steipete/skills/openai-whisper",
+      "kind": "skill",
+      "category": "media",
+      "tagline": "ClawHub (334★): Local speech-to-text with the Whisper CLI (no API key).",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
+        },
+        {
+          "check": "Q01",
+          "status": "warning",
+          "summary": "States capability and technology (speech-to-text, Whisper CLI, no API key) but has no explicit 'use when' cue or example user phrasing — says what it does, not when to invoke it."
+        },
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Install source is the standard Homebrew registry with an exact, well-known formula name (no typosquat, no ad-hoc registry) but no version is pinned — matches the rubric's 'well-kno"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 724,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "skill-creator (@chindden)",
+      "source": "ClawHub · @chindden/skill-creator · 329★",
+      "sourceUrl": "https://clawhub.ai/chindden/skills/skill-creator",
+      "kind": "skill",
+      "category": "project-intel",
+      "tagline": "ClawHub (329★): Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog section, or dated revision notes anywhere in the file."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion / out-of-scope language anywhere in description or body."
+        },
+        {
+          "check": "H07",
+          "status": "warning",
+          "summary": "Invokes a bundled Python script (init_skill.py / package_skill.py) with no stated python3 requirement or availability check anywhere in the document."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 17836,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "automation-workflows",
+      "source": "ClawHub · @jk-0001/automation-workflows · 311★",
+      "sourceUrl": "https://clawhub.ai/jk-0001/skills/automation-workflows",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "ClawHub (311★): Design and implement automation workflows to save time and scale operations as a solopreneur. Use when identifying repetiti",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "Description and body list only positive triggers; nowhere does the skill say what it is NOT for or point to a better-suited skill for adjacent tasks (e.g. coded/CI automation, sing"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 10357,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "neosoul-decision-agent",
+      "source": "ClawHub · @0xneosoul/neosoul-decision-agent · 303★",
+      "sourceUrl": "https://clawhub.ai/0xneosoul/skills/neosoul-decision-agent",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "ClawHub (303★): Structured decision support with self-improving memory. Agent learns your decision style, risk profile, and framework prefe",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "H02",
+          "status": "fail",
+          "summary": "name is not kebab-case (spaces, capitals, a '+'); the separate slug field 'decision-making' (line 3) is kebab-case but does not match the bulk export directory name 'neosoul-decisi"
+        },
+        {
+          "check": "Q09",
+          "status": "fail",
+          "summary": "The bespoke retrospective log format and the Decision Stats format (156-172) are given only as bracket-placeholder templates; neither is ever shown filled in with a real, concrete "
+        },
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "The 'Scope > NEVER' block (lines 249-255) bounds what the skill itself will do, but the skill nowhere says 'NOT for X, use skill Y instead' or names adjacent misuse cases / better-"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 11470,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "clawddocs",
+      "source": "ClawHub · @nicholasspisak/clawddocs · 301★",
+      "sourceUrl": "https://clawhub.ai/nicholasspisak/skills/clawddocs",
+      "kind": "skill",
+      "category": "project-intel",
+      "tagline": "ClawHub (301★): Clawdbot documentation expert with decision tree navigation, search scripts, doc fetching, version tracking, and config sni",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter, no changelog section, no dated revision notes for the skill itself anywhere in the file (the 'Version Tracking' section tracks Clawdbot's own docs,"
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / out-of-scope / pointer-to-other-skill text appears anywhere in description or body."
+        },
+        {
+          "check": "Q06",
+          "status": "fail",
+          "summary": "Multiple network/tool-dependent steps (doc fetching, qmd-based indexing, cache refresh) with no mention anywhere of what to do if a fetch fails, qmd is missing, or a script errors."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 4952,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "admapix",
+      "source": "ClawHub · @fly0pants/admapix · 291★",
+      "sourceUrl": "https://clawhub.ai/fly0pants/skills/admapix",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "ClawHub (291★): AdMapix raw data layer for ad creatives, apps, rankings, downloads/revenue, and market metadata. Returns structured JSON fr",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter, no changelog section, no dated revision notes anywhere in the file."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 8925,
+        "criticalFlags": 0,
+        "majorFlags": 3
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "excel-xlsx",
+      "source": "ClawHub · @ivangdavila/excel-xlsx · 290★",
+      "sourceUrl": "https://clawhub.ai/ivangdavila/skills/excel-xlsx",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "ClawHub (290★): Create, inspect, and edit Microsoft Excel workbooks and XLSX files with reliable formulas, dates, types, formatting, recalc",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "H02",
+          "status": "fail",
+          "summary": "name field is not kebab-case (contains spaces, slash, uppercase); the separate slug field (excel-xlsx) is kebab-case but H02 judges the name field itself."
+        },
+        {
+          "check": "H07",
+          "status": "fail",
+          "summary": "pandas and openpyxl are invoked as core dependencies throughout the skill with no requirements section, install step, or availability check; metadata even declares requires.bins as"
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion / out-of-scope language anywhere in the skill; 'Related Skills' lists sibling install options but never states when this skill should be skipped in favor o"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 6959,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "nano-pdf",
+      "source": "ClawHub · @steipete/nano-pdf · 268★",
+      "sourceUrl": "https://clawhub.ai/steipete/skills/nano-pdf",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "ClawHub (268★): Edit PDFs with natural-language instructions using the nano-pdf CLI.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
+        },
+        {
+          "check": "Q05",
+          "status": "warning",
+          "summary": "An 'output PDF' is referenced as existing but the skill never states its filename/location or whether the edit is in-place vs a new file."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 764,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "notion",
+      "source": "ClawHub · @steipete/notion · 267★",
+      "sourceUrl": "https://clawhub.ai/steipete/skills/notion",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "ClawHub (267★): Notion API for creating and managing pages, databases, and blocks.",
+      "badges": {
+        "security": "A",
+        "quality": "D",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "D",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter and no changelog/dated revision notes anywhere in the file; the 'Notion-Version: 2025-09-03' header (line 34) is the wrapped API's version, not the "
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / out-of-scope / pointer-to-other-skill language appears anywhere in the description or body; the skill has multiple operations (search, CRUD on pages/data sources), s"
+        },
+        {
+          "check": "Q06",
+          "status": "fail",
+          "summary": "No check that the key file exists/is non-empty before use, and no guidance anywhere for handling curl failures, 401/403 auth errors, or the rate limit mentioned at line 155 — total"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 5038,
+        "criticalFlags": 0,
+        "majorFlags": 4
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "openclaw-tavily-search",
+      "source": "ClawHub · @jacky1n7/openclaw-tavily-search · 266★",
+      "sourceUrl": "https://clawhub.ai/jacky1n7/skills/openclaw-tavily-search",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "ClawHub (266★): Web search via Tavily API (alternative to Brave). Use when the user asks to search the web / look up sources / find links a",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter, no changelog section, no dated revision notes anywhere in the file."
+        },
+        {
+          "check": "Q06",
+          "status": "fail",
+          "summary": "The skill's entire flow depends on a working external API call, yet nowhere does it say what to do if the key is missing/invalid, the script errors, or the network/API call fails —"
+        },
+        {
+          "check": "H02",
+          "status": "warning",
+          "summary": "name is valid kebab-case, but the exposed path's directory is 'openclaw-tavily-search', not 'tavily-search'; this looks like a bulk-export naming artifact (prefixing the source app"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 1516,
+        "criticalFlags": 0,
+        "majorFlags": 1
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "stock-analysis",
+      "source": "ClawHub · @udiedrichsen/stock-analysis · 254★",
+      "sourceUrl": "https://clawhub.ai/udiedrichsen/skills/stock-analysis",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "ClawHub (254★): Analyze stocks and cryptocurrencies using Yahoo Finance data. Supports portfolio management, watchlists with alerts, divide",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion / out-of-scope language appears anywhere in the description or body."
+        },
+        {
+          "check": "Q06",
+          "status": "fail",
+          "summary": "Multiple external-dependency flows (Yahoo Finance, CoinGecko, Google News, Twitter auth, SEC EDGAR) have no stated behavior for missing tools, failed fetches, or absent auth anywhe"
+        },
+        {
+          "check": "Q10",
+          "status": "fail",
+          "summary": "Portfolio add and watchlist add are accumulating operations with no mention of checking for an existing identical entry before appending, so a second run would duplicate holdings/w"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 8229,
+        "criticalFlags": 0,
+        "majorFlags": 1
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "clawdhub",
+      "source": "ClawHub · @steipete/clawdhub · 249★",
+      "sourceUrl": "https://clawhub.ai/steipete/skills/clawdhub",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "ClawHub (249★): Use the ClawdHub CLI to search, install, update, and publish agent skills from clawdhub.com. Use when you need to fetch new",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter and no changelog/dated-revision section anywhere in the body; the --changelog flag shown is an argument for skills being published TO clawdhub, not "
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion / pointer-to-alternative language anywhere in description or body, despite the skill covering multiple overlapping actions (search/install/update/publish) "
+        },
+        {
+          "check": "Q06",
+          "status": "fail",
+          "summary": "Multi-step flow depends on npm install, an auth step (login), and repeated network calls to a registry, but nothing anywhere states what to do if install fails, login fails, or a n"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 1397,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "caldav-calendar",
+      "source": "ClawHub · @asleep123/caldav-calendar · 244★",
+      "sourceUrl": "https://clawhub.ai/asleep123/skills/caldav-calendar",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "ClawHub (244★): Sync and query CalDAV calendars (iCloud, Google, Fastmail, Nextcloud, etc.) using vdirsyncer + khal. Works on Linux.",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog, or dated revision notes anywhere in the file."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion text anywhere in description or body; skill covers multiple broad actions (sync/view/search/create/edit/delete) so misfire against other calendar tools is "
+        },
+        {
+          "check": "Q01",
+          "status": "warning",
+          "summary": "States what the skill does and lists providers, but never phrases a 'use when' trigger cue for a dispatching agent."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 3477,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "baidu-ai-map",
+      "source": "ClawHub · @baidu-maps/baidu-ai-map · 241★",
+      "sourceUrl": "https://clawhub.ai/baidu-maps/skills/baidu-ai-map",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "ClawHub (241★): 百度地图 Agent Plan ，无需成为百度地图开发者，立即接入百度地图为 Agent 场景原生设计的地图能力，例如 AI 地点检索、AI 路线规划、地理编码与逆地理编码、天气查询、地图展示等开箱即用的工具。",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / out-of-scope / exclusion guidance appears anywhere in the description or body."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 11653,
+        "criticalFlags": 0,
+        "majorFlags": 18
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "elite-longterm-memory",
+      "source": "ClawHub · @nextfrontierbuilds/elite-longterm-memory · 227★",
+      "sourceUrl": "https://clawhub.ai/nextfrontierbuilds/skills/elite-longterm-memory",
+      "kind": "skill",
+      "category": "project-intel",
+      "tagline": "ClawHub (227★): Ultimate AI agent memory system for Cursor, Claude, ChatGPT & Copilot. WAL protocol + vector search + git-notes + cloud bac",
+      "badges": {
+        "security": "F",
+        "quality": "D",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "F",
+      "highlights": [
+        {
+          "check": "H03",
+          "status": "fail",
+          "summary": "Description is marketing copy (\"Ultimate\", \"Never lose context again\", \"Vibe-coding ready\") rather than a plain, informative dispatch signal."
+        },
+        {
+          "check": "Q01",
+          "status": "fail",
+          "summary": "Description is a feature/product blurb; it never states concrete situations or phrasings that would tell a dispatching agent WHEN to invoke it."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No \"NOT for\" / out-of-scope / \"instead use\" language appears anywhere in the description or body."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 12722,
+        "criticalFlags": 1,
+        "majorFlags": 1
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "baidu-search",
+      "source": "ClawHub · @ide-rea/baidu-search · 218★",
+      "sourceUrl": "https://clawhub.ai/ide-rea/skills/baidu-search",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "ClawHub (218★): Search the web using Baidu AI Search Engine (BDSE). Use for live information, documentation, or research topics.",
+      "badges": {
+        "security": "A",
+        "quality": "D",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "D",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter, no changelog section, no dated revision notes anywhere; 'Current Status: Fully functional' is not a change-tracking signal."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion / pointer-to-better-skill text anywhere in description or body, despite plausible misfire against other search-engine skills."
+        },
+        {
+          "check": "Q03",
+          "status": "fail",
+          "summary": "Usage section states the script path as 'skills/baidu-search/scripts/search.py' (line 25), but every Examples entry (e.g. line 40: python3 scripts/search.py '{\"query\":\"人工智能\"}') dro"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 1793,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "mcporter",
+      "source": "ClawHub · @steipete/mcporter · 197★",
+      "sourceUrl": "https://clawhub.ai/steipete/skills/mcporter",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "ClawHub (197★): Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc server",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog section, or dated revision notes anywhere in the file."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion / pointer-to-other-skill language anywhere in description or body, despite covering multiple distinct subcommand areas where misfire against adjacent skill"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 1479,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "brave-search",
+      "source": "ClawHub · @steipete/brave-search · 189★",
+      "sourceUrl": "https://clawhub.ai/steipete/skills/brave-search",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "ClawHub (189★): Web search and content extraction via Brave Search API. Use for searching documentation, facts, or any web content. Lightwe",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog section, or dated revision notes anywhere in frontmatter or body."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No \"NOT for\" / exclusion / pointer-to-better-suited-skill text anywhere in description or body, and the skill is broad enough (general web search/content extraction) to plausibly m"
+        },
+        {
+          "check": "Q06",
+          "status": "fail",
+          "summary": "Multi-step external-dependency flow (npm ci, missing API key, network search/fetch calls) has zero guidance anywhere on what to do if any of these fail."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 1272,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "markdown-converter",
+      "source": "ClawHub · @steipete/markdown-converter · 186★",
+      "sourceUrl": "https://clawhub.ai/steipete/skills/markdown-converter",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "ClawHub (186★): Convert documents and files to Markdown using markitdown. Use when converting PDF, Word (.docx), PowerPoint (.pptx), Excel",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "H07",
+          "status": "fail",
+          "summary": "Assumes `uv`/`uvx` is already present with no requirements section, install hint, or availability check; the -d/-e Azure Document Intelligence path also needs a configured Azure re"
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter, no changelog section, no dated revision notes anywhere in the file."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / out-of-scope / pointer-to-other-skill text anywhere in description or body, despite the skill covering many distinct format-specific paths (Azure DI, plugins, transc"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 1967,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "answeroverflow",
+      "source": "ClawHub · @rhyssullivan/answeroverflow · 178★",
+      "sourceUrl": "https://clawhub.ai/rhyssullivan/skills/answeroverflow",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "ClawHub (178★): Search indexed Discord community discussions via Answer Overflow. Find solutions to coding problems, library issues, and co",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog, or dated revision notes anywhere in the file."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion / out-of-scope language anywhere in the skill, despite being a general-purpose search skill that could misfire on adjacent tasks."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 2956,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "ui-ux-pro-max",
+      "source": "ClawHub · @xobi667/ui-ux-pro-max · 168★",
+      "sourceUrl": "https://clawhub.ai/xobi667/skills/ui-ux-pro-max",
+      "kind": "skill",
+      "category": "build",
+      "tagline": "ClawHub (168★): UI/UX design intelligence and implementation guidance for building polished interfaces. Use when the user asks for UI desig",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "D",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "D",
+      "highlights": [
+        {
+          "check": "H03",
+          "status": "fail",
+          "summary": "Description is 573 characters, over the 500-char threshold, and reads as an enumerated feature list rather than a terse dispatch string."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter, no changelog section, no dated revision notes anywhere in the file."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion / out-of-scope language anywhere in description or body, despite the skill's broad scope overlapping adjacent skills (accessibility-only, frontend code rev"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 2634,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "marketing-mode",
+      "source": "ClawHub · @thesethrose/marketing-mode · 164★",
+      "sourceUrl": "https://clawhub.ai/thesethrose/skills/marketing-mode",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "ClawHub (164★): Marketing Mode combines 23 comprehensive marketing skills covering strategy, psychology, content, SEO, conversion optimizat",
+      "badges": {
+        "security": "A",
+        "quality": "D",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "D",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion / out-of-scope language anywhere in description or body despite an extremely broad topic surface where misfire (e.g. generic business-strategy or sales que"
+        },
+        {
+          "check": "Q05",
+          "status": "fail",
+          "summary": "No defined deliverable shape anywhere — no file, format, or required sections for the 'recommendation' output; the entire skill ends in unstructured advice."
+        },
+        {
+          "check": "Q07",
+          "status": "fail",
+          "summary": "A 692-line catalog (140+ ideas list, 20+ mental models, full SEO checklist, copywriting frameworks, etc.) is pasted entirely inline in SKILL.md; the 'Related Skills' section at the"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 18075,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "trello",
+      "source": "ClawHub · @steipete/trello · 163★",
+      "sourceUrl": "https://clawhub.ai/steipete/skills/trello",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "ClawHub (163★): Manage Trello boards, lists, and cards via the Trello REST API.",
+      "badges": {
+        "security": "A",
+        "quality": "D",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "D",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter, no changelog heading, no dated revision notes anywhere in the file."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion / out-of-scope text anywhere in frontmatter or body, and the skill covers enough surface (boards/lists/cards/comments) that misfire against adjacent PM-too"
+        },
+        {
+          "check": "Q06",
+          "status": "fail",
+          "summary": "The only failure-adjacent mention is stating the rate-limit numbers with no guidance on backoff/retry; auth errors, missing jq, invalid IDs, and API error responses are never addre"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 2650,
+        "criticalFlags": 0,
+        "majorFlags": 12
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "ecomseer",
+      "source": "ClawHub · @fly0pants/ecomseer · 160★",
+      "sourceUrl": "https://clawhub.ai/fly0pants/skills/ecomseer",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "ClawHub (160★): TikTok Shop e-commerce data assistant. Search products, find trending items, analyze influencers, explore shops, track vide",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / out-of-scope / pointer-to-other-skill language appears anywhere in the description or body; grep for 'not for', 'out of scope', 'instead use' finds nothing."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 17832,
+        "criticalFlags": 0,
+        "majorFlags": 6
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "slack",
+      "source": "ClawHub · @steipete/slack · 160★",
+      "sourceUrl": "https://clawhub.ai/steipete/skills/slack",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "ClawHub (160★): Use when you need to control Slack from Clawdbot via the slack tool, including reacting to messages or pinning/unpinning it",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / out-of-scope / pointer-to-other-skill language anywhere in description or body, despite the skill exposing ~10 distinct actions where misfire against adjacent messag"
+        },
+        {
+          "check": "Q06",
+          "status": "fail",
+          "summary": "Across all ten actions (invalid IDs, permission errors, missing message, rate limits, unauthenticated bot token) there is no mention anywhere of what to do on failure — total silen"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 2314,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "n8n-workflow-automation",
+      "source": "ClawHub · @kowl64/n8n-workflow-automation · 157★",
+      "sourceUrl": "https://clawhub.ai/kowl64/skills/n8n-workflow-automation",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "ClawHub (157★): Designs and outputs n8n workflow JSON with robust triggers, idempotency, error handling, logging, retries, and human-in-the",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 3975,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "playwright-mcp",
+      "source": "ClawHub · @spiceman161/playwright-mcp · 156★",
+      "sourceUrl": "https://clawhub.ai/spiceman161/skills/playwright-mcp",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "ClawHub (156★): Browser automation via Playwright MCP server. Navigate websites, click elements, fill forms, extract data, take screenshots",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter and no changelog/dated revision notes anywhere in the body."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / out-of-scope / pointer-to-other-skill language anywhere in description or body."
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "Troubleshooting section covers installation/runtime issues generically but never addresses step-level failures (e.g. selector not found, navigation timeout) within the actual autom"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 4112,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "stock-market-pro",
+      "source": "ClawHub · @kys42/stock-market-pro · 154★",
+      "sourceUrl": "https://clawhub.ai/kys42/skills/stock-market-pro",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "ClawHub (154★): Yahoo Finance (yfinance) powered stock analysis skill: quotes, fundamentals, ASCII trends, high-resolution charts (RSI/MACD",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion / out-of-scope language anywhere in description or body, despite the skill covering a broad, easily-confused surface (quotes, charts, news, options)."
+        },
+        {
+          "check": "Q01",
+          "status": "warning",
+          "summary": "Description enumerates capabilities thoroughly but never frames WHEN to invoke the skill (no 'use when the user asks about...' cue) — says what it does, not when."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 3437,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "powerpoint-pptx",
+      "source": "ClawHub · @ivangdavila/powerpoint-pptx · 143★",
+      "sourceUrl": "https://clawhub.ai/ivangdavila/skills/powerpoint-pptx",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "ClawHub (143★): Create, inspect, and edit Microsoft PowerPoint presentations and PPTX decks with reliable layouts, templates, placeholders,",
+      "badges": {
+        "security": "A",
+        "quality": "D",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "D",
+      "highlights": [
+        {
+          "check": "H02",
+          "status": "fail",
+          "summary": "name is not kebab-case (spaces, slash, mixed case) and does not match the directory/slug 'powerpoint-pptx'; a separate 'slug: powerpoint-pptx' field is kebab-case but 'name' itself"
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / 'out of scope' / 'instead use' language appears anywhere in the file. The 'Related Skills' section (documents, design, brief) lists complementary skills but never st"
+        },
+        {
+          "check": "Q04",
+          "status": "fail",
+          "summary": "The entire body is principle-level prose with zero concrete commands, tool names, file paths, or numeric criteria (e.g. no python-pptx/LibreOffice invocation, no specific placehold"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 7057,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "youtube-api-skill",
+      "source": "ClawHub · @byungkyu/youtube-api-skill · 142★",
+      "sourceUrl": "https://clawhub.ai/byungkyu/skills/youtube-api-skill",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "ClawHub (142★): YouTube Data API integration with managed OAuth. Search videos, manage playlists, access channel data, and interact with co",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q07",
+          "status": "fail",
+          "summary": "~450 lines of per-resource API catalog (Search/Videos/Channels/Playlists/PlaylistItems/Subscriptions/Comments, each with request+response examples) sit inline in SKILL.md with no s"
+        },
+        {
+          "check": "Q10",
+          "status": "fail",
+          "summary": "Write operations (Create Playlist, Subscribe to Channel, Add Comment, Add Video to Playlist) have no mention of checking for an existing equivalent resource before creating; re-run"
+        },
+        {
+          "check": "H05",
+          "status": "warning",
+          "summary": "File is 851 lines / ~18KB: over the ~500-line budget (about 1.7x) though under the 25KB byte ceiling; falls in the between-budget-and-2x warning band."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 18443,
+        "criticalFlags": 0,
+        "majorFlags": 3
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "larry",
+      "source": "ClawHub · @olliewazza/larry · 141★",
+      "sourceUrl": "https://clawhub.ai/olliewazza/skills/larry",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "ClawHub (141★): Automate TikTok slideshow marketing for any app or product. Researches competitors, generates AI images, adds text overlays",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "D",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "D",
+      "highlights": [
+        {
+          "check": "H03",
+          "status": "fail",
+          "summary": "Description content is ~744 chars, a paragraph-length wall closing in an enumerated feature list, well past the ~500-char budget the check flags as fail even though the content its"
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter, no Changelog heading, and no dated revision notes about the skill itself anywhere in the document (the dates that appear are example data inside JS"
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "Neither the description nor the body contains any 'NOT for' / 'out of scope' / pointer-to-other-skill language anywhere in the document; a broad marketing-automation skill like thi"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 47210,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "find-skills-skill",
+      "source": "ClawHub · @fangkelvin/find-skills-skill · 141★",
+      "sourceUrl": "https://clawhub.ai/fangkelvin/skills/find-skills-skill",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "ClawHub (141★): Search and discover OpenClaw skills from various sources. Use when: user wants to find available skills, search for specifi",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "H07",
+          "status": "fail",
+          "summary": "The skill repeatedly invokes the non-universal 'clawhub' CLI via npx with no requirements section, availability check, or install-hint step; frontmatter even declares metadata.open"
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter, no changelog heading, and no dated revision notes anywhere in the document."
+        },
+        {
+          "check": "Q05",
+          "status": "fail",
+          "summary": "Nowhere does the skill state what shape the final result to the user takes (e.g. a formatted list, required fields, ranking) — it only lists commands/sources with no defined delive"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 3283,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "tickdb-market-data",
+      "source": "ClawHub · @tickdb/tickdb-market-data · 139★",
+      "sourceUrl": "https://clawhub.ai/tickdb/skills/tickdb-market-data",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "ClawHub (139★): TickDB 统一实时行情数据 API。覆盖外汇、贵金属、指数、美股、港股、A股、加密货币，提供实时行情、K线、订单簿、资金流向、股票基本面等数据查询。 当用户提及价格、行情、K线、买卖盘、市值、市盈率、资金流向、分时走势、交易日历等金融数据相关",
+      "badges": {
+        "security": "B",
+        "quality": "C",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / out-of-scope / pointer-to-other-skill language appears anywhere in description or body despite the skill covering a broad multi-market domain where misfire on non-da"
+        },
+        {
+          "check": "Q03",
+          "status": "fail",
+          "summary": "Contradicts the total product count stated repeatedly elsewhere (line 69 '37,527+ 产品', line 102 breakdown summing to 37,527, lines 760/768/769/770 '37,527+ 产品覆盖 6 大市场') — one secti"
+        },
+        {
+          "check": "Q07",
+          "status": "fail",
+          "summary": "The ~480-line endpoint reference section (parameter tables, return-field tables, example curl/JSON per endpoint, clearly delimited by '---' and '##' per-endpoint headers) is bulk m"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 25807,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "x-search",
+      "source": "ClawHub · @jaaneek/x-search · 139★",
+      "sourceUrl": "https://clawhub.ai/jaaneek/skills/x-search",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "ClawHub (139★): Search X (Twitter) posts using the xAI API. Use when the user wants to find tweets, search X/Twitter, look up what people a",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog section, or dated revision notes anywhere in frontmatter or body."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / out-of-scope / pointer-to-other-skill language anywhere in description or body; skill has enough surface (multiple flags, general search framing) that misfire agains"
+        },
+        {
+          "check": "Q06",
+          "status": "fail",
+          "summary": "No mention anywhere of what to do if XAI_API_KEY is unset/invalid, the API call fails, or the search returns no results — silent happy-path throughout Setup and Usage."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 1930,
+        "criticalFlags": 0,
+        "majorFlags": 1
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "news-summary",
+      "source": "ClawHub · @joargp/news-summary · 138★",
+      "sourceUrl": "https://clawhub.ai/joargp/skills/news-summary",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "ClawHub (138★): This skill should be used when the user asks for news updates, daily briefings, or what's happening in the world. Fetches n",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "H07",
+          "status": "fail",
+          "summary": "The optional voice-summary path hard-depends on OPENAI_API_KEY being set, but there is no requirements section, prerequisite check, or guidance for a missing/unauthenticated key an"
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter and no changelog/dated revision notes anywhere in the body."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / out-of-scope / exclusion language appears anywhere in the description or body."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 2090,
+        "criticalFlags": 0,
+        "majorFlags": 2
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "video-frames",
+      "source": "ClawHub · @steipete/video-frames · 133★",
+      "sourceUrl": "https://clawhub.ai/steipete/skills/video-frames",
+      "kind": "skill",
+      "category": "media",
+      "tagline": "ClawHub (133★): Extract frames or short clips from videos using ffmpeg.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog, or dated revision notes anywhere in frontmatter or body."
+        },
+        {
+          "check": "Q01",
+          "status": "warning",
+          "summary": "States what the skill does but has no explicit 'use when' / trigger phrasing."
+        },
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Install source is the standard Homebrew formula for a well-known package (not a shady registry or typosquat), but no version is pinned — per rubric, a well-known package installed "
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 775,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "skill-finder-cn",
+      "source": "ClawHub · @guohongbin-git/skill-finder-cn · 129★",
+      "sourceUrl": "https://clawhub.ai/guohongbin-git/skills/skill-finder-cn",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "ClawHub (129★): Skill 查找器 | Skill Finder. 帮助发现和安装 ClawHub Skills | Discover and install ClawHub Skills. 回答'有什么技能可以X'、'找一个技能' | Answers 'wha",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion / out-of-scope text anywhere in description or body; skill is broad enough (generic skill-finding) that misfire on adjacent requests is plausible."
+        },
+        {
+          "check": "H07",
+          "status": "warning",
+          "summary": "metadata.requires.bins declares only clawhub; jq is used (line 43) but never declared or checked, a single borderline-common tool missed."
+        },
+        {
+          "check": "Q04",
+          "status": "warning",
+          "summary": "Most steps name exact commands, but the recommendation step ('recommend the most suitable skill') gives no stated criteria (e.g. by stars/downloads) for that decision."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 2683,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "memory-setup",
+      "source": "ClawHub · @jrbobbyhansen-pixel/memory-setup · 128★",
+      "sourceUrl": "https://clawhub.ai/jrbobbyhansen-pixel/skills/memory-setup",
+      "kind": "skill",
+      "category": "project-intel",
+      "tagline": "ClawHub (128★): Enable and configure Moltbot/Clawdbot memory search for persistent context. Use when setting up memory, fixing \"goldfish br",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "Nowhere in the description or body is there a 'NOT for' / out-of-scope statement, despite the skill covering several distinct sub-tasks (config, file scaffolding, AGENTS.md edits, "
+        },
+        {
+          "check": "Q10",
+          "status": "fail",
+          "summary": "This instructs appending a '## Memory Recall' section to AGENTS.md with no check for whether the section already exists, so a second run would duplicate it — the same accumulating-"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 4065,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "playwright",
+      "source": "ClawHub · @ivangdavila/playwright · 127★",
+      "sourceUrl": "https://clawhub.ai/ivangdavila/skills/playwright",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "ClawHub (127★): Browser automation via Playwright MCP. Navigate websites, click elements, fill forms, take screenshots, extract data, and d",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "H02",
+          "status": "fail",
+          "summary": "name field is not kebab-case (spaces, parentheses, uppercase, plus signs); a separate slug field is kebab-case but the rubric checks name specifically."
+        },
+        {
+          "check": "H07",
+          "status": "warning",
+          "summary": "The clawhub CLI is invoked (install/star/sync) but is not declared in metadata.requires.bins, which lists only node and npx; core Playwright tooling (node, npx, playwright, @playwr"
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "Flaky/CI test failures are addressed, but there is no guidance for what to do if node/npx, Playwright, or the MCP server are missing/unavailable despite being declared hard depende"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 10969,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "shop",
+      "source": "ClawHub · @shopify/shop · 126★",
+      "sourceUrl": "https://clawhub.ai/shopify/skills/shop",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "ClawHub (126★): Ultimate personal shopping assistant: find, compare, buy, gift, and reorder products across the Shop catalog containing mil",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion / out-of-scope language appears anywhere in the frontmatter description or body; the skill never points to a better-suited skill for adjacent tasks."
+        },
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Install/upgrade commands use @latest of a scoped, well-known publisher package (@shopify) from the standard npm registry with no version pin — per rubric, unpinned installs of well"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 16893,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "edgeone-clawscan",
+      "source": "ClawHub · @aigsec/edgeone-clawscan · 125★",
+      "sourceUrl": "https://clawhub.ai/aigsec/skills/edgeone-clawscan",
+      "kind": "skill",
+      "category": "security",
+      "tagline": "ClawHub (125★): The first security skill to install after setting up OpenClaw — powered by Tencent Zhuque Lab. Works like an antivirus for",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q07",
+          "status": "fail",
+          "summary": "Several large, mutually-exclusive-by-feature templates (Feature 1's ~120-line Chinese report template, Feature 2's three verdict templates, and this ~50-line embedded code-audit pr"
+        },
+        {
+          "check": "S11",
+          "status": "fail",
+          "summary": "Frontmatter description covers scanning/auditing only; the body's post-report step writes a persistent global-memory instruction that causes this skill to auto-invoke before every "
+        },
+        {
+          "check": "H03",
+          "status": "warning",
+          "summary": "Description is ~1037 chars / 6 sentences, well past the 'roughly one to five sentences' guideline and opens with promotional framing ('first skill to install', antivirus analogy); "
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 46355,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "data-analysis",
+      "source": "ClawHub · @ivangdavila/data-analysis · 125★",
+      "sourceUrl": "https://clawhub.ai/ivangdavila/skills/data-analysis",
+      "kind": "skill",
+      "category": "project-intel",
+      "tagline": "ClawHub (125★): Data analysis and visualization. Query databases, generate reports, automate spreadsheets, and turn raw data into clear, ac",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "H02",
+          "status": "fail",
+          "summary": "name is 'Data Analysis' (space, capital letters), failing the kebab-case regex and not matching the data-analysis directory/slug; the separate `slug: data-analysis` field is kebab-"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 7909,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "skill-compass",
+      "source": "ClawHub · @krishna-505/skill-compass · 124★",
+      "sourceUrl": "https://clawhub.ai/krishna-505/skills/skill-compass",
+      "kind": "skill",
+      "category": "build",
+      "tagline": "ClawHub (124★): Evaluate skill quality, find the weakest dimension, and apply directed improvements. Also tracks usage to spot idle or risk",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "Description ends here with no exclusion/'NOT for' clause; no out-of-scope guidance appears anywhere else in the file despite the skill's broad, easily-misfiring scope (any skill-qu"
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "Auto-rollback on eval regression is handled explicitly, but this file read/JSON.parse (and other external-tool invocations) has no stated fallback or error message if package.json "
+        },
+        {
+          "check": "S11",
+          "status": "warning",
+          "summary": "Editing the user's global ~/.claude/settings.json is a system-level side effect not mentioned in the frontmatter description ('Evaluate skill quality... tracks usage'); mitigated b"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 16019,
+        "criticalFlags": 0,
+        "majorFlags": 1
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "meitu-skills",
+      "source": "ClawHub · @meituskills/meitu-skills · 122★",
+      "sourceUrl": "https://clawhub.ai/meituskills/skills/meitu-skills",
+      "kind": "skill",
+      "category": "media",
+      "tagline": "ClawHub (122★): Comprehensive Meitu AI toolkit for image and video editing. Features include AI poster design, precise background cutout, v",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "F",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "F",
+      "highlights": [
+        {
+          "check": "H01",
+          "status": "fail",
+          "summary": "File opens directly with a markdown heading; there is no `---` YAML frontmatter block anywhere, so no name/description fields exist to parse."
+        },
+        {
+          "check": "H02",
+          "status": "fail",
+          "summary": "No frontmatter and therefore no `name` field exists to check for kebab-case or directory match."
+        },
+        {
+          "check": "H03",
+          "status": "fail",
+          "summary": "No `description` field exists anywhere in the file (no frontmatter block at all), so there is nothing to judge as a usable dispatch string."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": false,
+        "fileCount": 1,
+        "skillMdBytes": 6986,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      }
+    },
+    {
+      "name": "liang-tavily-search",
+      "source": "ClawHub · @matthew77/liang-tavily-search · 120★",
+      "sourceUrl": "https://clawhub.ai/matthew77/skills/liang-tavily-search",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "ClawHub (120★): Web search using Tavily's LLM-optimized API. Returns relevant results with content snippets, scores, and metadata.",
+      "badges": {
+        "security": "A",
+        "quality": "D",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "D",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter and no changelog/dated revision notes anywhere in the document."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion / out-of-scope language anywhere in description or body, despite multiple similar search skills plausibly existing."
+        },
+        {
+          "check": "Q03",
+          "status": "fail",
+          "summary": "Options table defines the flag as --depth, but Quick Start examples (lines 41 and 55) use --deep instead, e.g. 'node {baseDir}/scripts/search.mjs \"query\" --deep' — a direct naming "
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 2718,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T16:15:20.358Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
       }
     }
   ]
