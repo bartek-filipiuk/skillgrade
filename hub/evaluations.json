@@ -1,5 +1,21 @@
 [
   {
+    "name": "cv-master",
+    "source": "github.com/bartek-filipiuk/cv-master",
+    "sourceUrl": "https://github.com/bartek-filipiuk/cv-master",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Edits, translates, restyles or generates a CV/resume from a PDF, DOCX, link or raw data — outputs editable HTML + a verified PDF.",
+    "badges": { "security": "A", "quality": "A", "hygiene": "A", "effectiveness": "not-evaluated" },
+    "highlights": [
+      { "check": "S02", "status": "pass", "summary": "Bundled scripts are read-only (poppler PDF triage, tool probes); the only network call is a status-code-only ping to fonts.googleapis.com with no data sent — verified safe." },
+      { "check": "S12", "status": "warning", "summary": "Install hints (e.g. pip install pillow) are well-known default-registry packages but unpinned; user-run only." },
+      { "check": "H08", "status": "fail", "summary": "No version field, changelog, or dated revision notes in SKILL.md or README." }
+    ],
+    "preCheck": { "frontmatterValid": true, "fileCount": 7, "skillMdBytes": 8216, "criticalFlags": 0, "majorFlags": 0 },
+    "evaluator": { "mode": "claude-code-native", "model": "claude-fable-5" }
+  },
+  {
     "name": "self-improving-agent",
     "source": "ClawHub · @pskoett/self-improving-agent · 3.9k★",
     "sourceUrl": "https://clawhub.ai/pskoett/skills/self-improving-agent",

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SkillHub — trust grades for Claude Code skills</title>
+<title>SkillGrade — trust grades for Claude Code skills</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -38,7 +38,7 @@
   <header class="top">
     <div class="wrap" style="padding-top:18px;padding-bottom:18px;display:flex;align-items:baseline;justify-content:space-between;gap:24px">
       <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap">
-        <span class="serif" style="font-size:25px;letter-spacing:0.01em">SkillHub</span>
+        <span class="serif" style="font-size:25px;letter-spacing:0.01em">SkillGrade</span>
         <span class="mono" style="font-size:10.5px;letter-spacing:0.14em;color:#8a857b">TRUST GRADES FOR CLAUDE CODE SKILLS</span>
       </div>
       <nav style="display:flex;gap:26px;align-items:baseline">
@@ -52,7 +52,7 @@
   <section class="wrap" style="padding-top:104px">
     <p class="mono" style="font-size:11.5px;letter-spacing:0.18em;color:oklch(0.8 0.11 155);margin:0 0 22px;animation:rise 0.5s ease both">AUTOMATED EVALUATION &middot; EVIDENCE ATTACHED</p>
     <h1 class="serif" style="font-size:clamp(44px,6vw,76px);line-height:1.04;margin:0;max-width:14ch;animation:rise 0.5s 0.06s ease both">Every grade comes with <em style="font-style:italic;color:oklch(0.8 0.11 155)">evidence</em>.</h1>
-    <p style="font-size:17px;line-height:1.6;color:#9a948a;max-width:52ch;margin:26px 0 0;animation:rise 0.5s 0.12s ease both;text-wrap:pretty">SkillHub automatically evaluates Claude Code skills across security, quality and hygiene — and shows the concrete check verdicts behind every letter, so trust is auditable, not magic.</p>
+    <p style="font-size:17px;line-height:1.6;color:#9a948a;max-width:52ch;margin:26px 0 0;animation:rise 0.5s 0.12s ease both;text-wrap:pretty">SkillGrade automatically evaluates Claude Code skills across security, quality and hygiene — and shows the concrete check verdicts behind every letter, so trust is auditable, not magic.</p>
     <div style="display:flex;gap:14px;margin-top:36px;flex-wrap:wrap;animation:rise 0.5s 0.18s ease both">
       <a href="#browse" data-scroll="browse" class="cta-solid" style="background:#ece7dc;color:#171614;font-size:14.5px;font-weight:600;padding:12px 24px;border-radius:2px;cursor:pointer">Browse skills</a>
       <a href="#methodology" data-scroll="methodology" class="cta-ghost" style="border:1px solid rgba(232,226,214,0.22);color:#ece7dc;font-size:14.5px;font-weight:500;padding:12px 24px;border-radius:2px;cursor:pointer">How we grade</a>
@@ -151,7 +151,7 @@
   // --- static: rubric badges, stats, scale, dimension rows ---
   document.getElementById('nav-rubric').textContent = 'rubric v'+cat.rubricVersion;
   document.getElementById('foot-left').textContent =
-    'SkillHub · generated '+new Date(cat.generatedAt).toISOString().slice(0,10)+' · rubric v'+cat.rubricVersion+' · evaluated by '+
+    'SkillGrade · generated '+new Date(cat.generatedAt).toISOString().slice(0,10)+' · rubric v'+cat.rubricVersion+' · evaluated by '+
     (cat.skills[0]?cat.skills[0].evaluator.model+' · '+cat.skills[0].evaluator.mode:'—');
 
   var aCount = cat.skills.filter(function(s){return s.overall==='A';}).length;
