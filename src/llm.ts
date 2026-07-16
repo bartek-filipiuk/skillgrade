@@ -1,4 +1,4 @@
-import { generateObject, type LanguageModel } from 'ai'
+import { generateObject, generateText, type LanguageModel } from 'ai'
 import { z } from 'zod'
 import { EvidenceSchema, VerdictSchema } from './types.js'
 import type { Dimension, PreCheckReport, ReportVerdict, Verdict } from './types.js'
@@ -80,19 +80,54 @@ function buildPrompt(opts: EvaluateOpts): string {
   ].join('\n')
 }
 
-async function callModel(opts: EvaluateOpts, prompt: string): Promise<unknown[]> {
+const JSON_INSTRUCTION = [
+  '',
+  'Respond with ONLY a JSON object, no markdown fences and no prose around it:',
+  '{"verdicts":[{"check":"S01","status":"pass|fail|warning|not-applicable",',
+  '"evidence":{"file":"...","line":1,"quote":"..."},"note":"..."}]}',
+  'Include one verdict per check. `evidence` is required for fail/warning only.',
+].join('\n')
+
+// Pull a JSON object out of a free-text model reply: strip a ```json fence if
+// present, else parse the widest {...} span. Pure parsing — never executes the
+// content; a non-JSON reply yields null (→ the caller treats it as no verdicts).
+function extractJson(text: string): unknown {
+  const fence = text.match(/```(?:json)?\s*([\s\S]*?)```/i)
+  const body = (fence ? fence[1] : text).trim()
   try {
-    const { object } = await generateObject({
-      model: opts.model,
-      schema: WireSchema,
-      temperature: 0,
-      prompt,
-    })
+    return JSON.parse(body)
+  } catch {
+    const start = body.indexOf('{')
+    const end = body.lastIndexOf('}')
+    if (start >= 0 && end > start) {
+      try {
+        return JSON.parse(body.slice(start, end + 1))
+      } catch {
+        /* fall through */
+      }
+    }
+    return null
+  }
+}
+
+async function callModel(opts: EvaluateOpts, prompt: string): Promise<unknown[]> {
+  // Preferred path: provider-native structured output (OpenAI, Anthropic).
+  try {
+    const { object } = await generateObject({ model: opts.model, schema: WireSchema, temperature: 0, prompt })
     return object.verdicts
   } catch {
-    // Non-JSON / wrong-shape output is treated as "no verdicts": every check
-    // then falls through to evaluation-error rather than crashing the run.
-    return []
+    // Fallback: some providers (notably non-OpenAI models via OpenRouter) reject
+    // the JSON-schema response_format and throw, which would otherwise collapse
+    // the WHOLE dimension to evaluation-error. Ask for JSON as plain text and
+    // parse it ourselves. Per-verdict validation (accept/verifyEvidence) is
+    // unchanged downstream, so this loosens transport, never trust.
+    try {
+      const { text } = await generateText({ model: opts.model, temperature: 0, prompt: prompt + '\n' + JSON_INSTRUCTION })
+      const parsed = WireSchema.safeParse(extractJson(text))
+      return parsed.success ? parsed.data.verdicts : []
+    } catch {
+      return []
+    }
   }
 }
 

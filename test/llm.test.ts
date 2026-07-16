@@ -30,6 +30,20 @@ function scriptedModel(responses: string[]): MockLanguageModelV4 {
   })
 }
 
+// Simulates a provider (e.g. a non-OpenAI model via OpenRouter) that rejects the
+// JSON-schema response_format: the structured (generateObject) call throws, while
+// a plain-text (generateText) call returns the given text.
+function structuredFailsModel(textResponse: string): MockLanguageModelV4 {
+  return new MockLanguageModelV4({
+    doGenerate: async (options: { responseFormat?: { type?: string } }) => {
+      if (options.responseFormat && options.responseFormat.type === 'json') {
+        throw new Error('response_format json_schema not supported')
+      }
+      return genResult(textResponse)
+    },
+  })
+}
+
 const j = (verdicts: unknown[]) => JSON.stringify({ verdicts })
 
 // --- Fixtures ----------------------------------------------------------------
@@ -204,5 +218,38 @@ describe('evaluateDimension', () => {
     const model = scriptedModel([bad, bad])
     const out = await evaluateDimension({ model, ...base })
     expect(Object.fromEntries(out.map((v) => [v.check, v.status])).S01).toBe('evaluation-error')
+  })
+})
+
+describe('evaluateDimension — structured-output fallback', () => {
+  it('falls back to text+parse when the provider rejects response_format', async () => {
+    // Both checks pass; structured call throws, text call returns the JSON.
+    const model = structuredFailsModel(j([{ check: 'S01', status: 'pass' }, { check: 'S02', status: 'pass' }]))
+    const out = await evaluateDimension({ model, ...base })
+    expect(out.map((v) => v.status)).toEqual(['pass', 'pass'])
+  })
+
+  it('extracts JSON from a fenced/prose text response', async () => {
+    const wrapped = 'Sure, here are the verdicts:\n```json\n' +
+      j([{ check: 'S01', status: 'not-applicable' }, { check: 'S02', status: 'not-applicable' }]) +
+      '\n```\nHope that helps!'
+    const model = structuredFailsModel(wrapped)
+    const out = await evaluateDimension({ model, ...base })
+    expect(out.map((v) => v.status)).toEqual(['not-applicable', 'not-applicable'])
+  })
+
+  it('fallback still enforces evidence verification (bad quote -> evaluation-error)', async () => {
+    const model = structuredFailsModel(
+      j([{ check: 'S01', status: 'fail', evidence: { file: 'SKILL.md', line: 2, quote: 'NOT ON THIS LINE' } },
+         { check: 'S02', status: 'pass' }]),
+    )
+    const out = await evaluateDimension({ model, ...base })
+    expect(Object.fromEntries(out.map((v) => [v.check, v.status])).S01).toBe('evaluation-error')
+  })
+
+  it('unparseable text fallback -> evaluation-error, never throws', async () => {
+    const model = structuredFailsModel('I cannot produce JSON, sorry.')
+    const out = await evaluateDimension({ model, ...base })
+    expect(out.every((v) => v.status === 'evaluation-error')).toBe(true)
   })
 })
