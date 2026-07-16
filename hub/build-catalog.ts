@@ -68,9 +68,9 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const evals = JSON.parse(readFileSync(join(HERE, 'evaluations.json'), 'utf8')) as EvalInput[]
   const catalog = buildCatalog(evals, new Date().toISOString())
   writeFileSync(join(HERE, 'catalog.json'), JSON.stringify(catalog, null, 2) + '\n')
-  const template = readFileSync(join(HERE, 'preview.template.html'), 'utf8')
-  writeFileSync(join(HERE, 'preview.html'), renderPreview(catalog, template))
+  const template = readFileSync(join(HERE, 'index.template.html'), 'utf8')
+  writeFileSync(join(HERE, 'index.html'), renderPreview(catalog, template))
   const grades = catalog.skills.reduce<Record<string, number>>((a, s) => ((a[s.overall] = (a[s.overall] ?? 0) + 1), a), {})
   console.log(`catalog.json: ${catalog.skills.length} skills, overall grades ${JSON.stringify(grades)}`)
-  console.log('preview.html written')
+  console.log('index.html written')
 }

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SkillHub — trust grades for Claude Code skills</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  /* Ported 1:1 from the Claude Design SkillHub.dc.html into a self-contained,
+     runtime-free page wired to catalog.json. All skill-derived strings are
+     escaped before insertion — a trust hub must not be XSS-able by a listed skill. */
+  html,body{margin:0;padding:0;background:#171614;color:#ece7dc;font-family:'Instrument Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  *{box-sizing:border-box}
+  a{color:#ece7dc;text-decoration:none}
+  a:hover{color:oklch(0.8 0.11 155)}
+  ::selection{background:rgba(143,217,168,0.25)}
+  button{font-family:inherit}
+  h1,h2,h3{font-weight:400}
+  @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  @keyframes drawerIn{from{opacity:0;transform:translateX(20px)}to{opacity:1;transform:none}}
+  .serif{font-family:'Instrument Serif',serif}
+  .mono{font-family:'IBM Plex Mono',monospace}
+  .wrap{max-width:1280px;margin:0 auto;padding-left:40px;padding-right:40px}
+  header.top{border-bottom:1px solid rgba(232,226,214,0.08);position:sticky;top:0;background:rgba(23,22,20,0.92);backdrop-filter:blur(8px);z-index:20}
+  .hl-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;align-self:center}
+  .card:hover{border-color:rgba(232,226,214,0.3)!important;transform:translateY(-2px)}
+  .chip:hover,.seg:hover{color:#ece7dc}
+  .cta-solid:hover{background:#fff}
+  .cta-ghost:hover{border-color:rgba(232,226,214,0.5)!important}
+  @media(max-width:820px){.wrap{padding-left:22px;padding-right:22px}.method-grid{grid-template-columns:1fr!important;gap:40px!important}}
+</style>
+</head>
+<body>
+<div style="min-height:100vh;background:#171614">
+  <header class="top">
+    <div class="wrap" style="padding-top:18px;padding-bottom:18px;display:flex;align-items:baseline;justify-content:space-between;gap:24px">
+      <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap">
+        <span class="serif" style="font-size:25px;letter-spacing:0.01em">SkillHub</span>
+        <span class="mono" style="font-size:10.5px;letter-spacing:0.14em;color:#8a857b">TRUST GRADES FOR CLAUDE CODE SKILLS</span>
+      </div>
+      <nav style="display:flex;gap:26px;align-items:baseline">
+        <a href="#browse" data-scroll="browse" style="font-size:14px;color:#c9c3b8;cursor:pointer">Browse</a>
+        <a href="#methodology" data-scroll="methodology" style="font-size:14px;color:#c9c3b8;cursor:pointer">How we grade</a>
+        <span class="mono" id="nav-rubric" style="font-size:11px;color:#8a857b;border:1px solid rgba(232,226,214,0.14);border-radius:99px;padding:3px 10px">rubric v—</span>
+      </nav>
+    </div>
+  </header>
+
+  <section class="wrap" style="padding-top:104px">
+    <p class="mono" style="font-size:11.5px;letter-spacing:0.18em;color:oklch(0.8 0.11 155);margin:0 0 22px;animation:rise 0.5s ease both">AUTOMATED EVALUATION &middot; EVIDENCE ATTACHED</p>
+    <h1 class="serif" style="font-size:clamp(44px,6vw,76px);line-height:1.04;margin:0;max-width:14ch;animation:rise 0.5s 0.06s ease both">Every grade comes with <em style="font-style:italic;color:oklch(0.8 0.11 155)">evidence</em>.</h1>
+    <p style="font-size:17px;line-height:1.6;color:#9a948a;max-width:52ch;margin:26px 0 0;animation:rise 0.5s 0.12s ease both;text-wrap:pretty">SkillHub automatically evaluates Claude Code skills across security, quality and hygiene — and shows the concrete check verdicts behind every letter, so trust is auditable, not magic.</p>
+    <div style="display:flex;gap:14px;margin-top:36px;flex-wrap:wrap;animation:rise 0.5s 0.18s ease both">
+      <a href="#browse" data-scroll="browse" class="cta-solid" style="background:#ece7dc;color:#171614;font-size:14.5px;font-weight:600;padding:12px 24px;border-radius:2px;cursor:pointer">Browse skills</a>
+      <a href="#methodology" data-scroll="methodology" class="cta-ghost" style="border:1px solid rgba(232,226,214,0.22);color:#ece7dc;font-size:14.5px;font-weight:500;padding:12px 24px;border-radius:2px;cursor:pointer">How we grade</a>
+    </div>
+    <div id="stats" style="display:flex;border-top:1px solid rgba(232,226,214,0.1);border-bottom:1px solid rgba(232,226,214,0.1);border-right:1px solid rgba(232,226,214,0.1);margin:72px 0 0;flex-wrap:wrap;animation:rise 0.5s 0.24s ease both"></div>
+  </section>
+
+  <section id="methodology" style="margin-top:96px;border-top:1px solid rgba(232,226,214,0.08);background:#1a1917">
+    <div class="wrap method-grid" style="padding-top:80px;padding-bottom:80px;display:grid;grid-template-columns:minmax(260px,360px) 1fr;gap:72px">
+      <div>
+        <p class="mono" style="font-size:11px;letter-spacing:0.18em;color:#8a857b;margin:0 0 18px">HOW WE GRADE</p>
+        <h2 class="serif" style="font-size:38px;line-height:1.1;margin:0">Three dimensions. One letter each.</h2>
+        <p style="font-size:15px;line-height:1.65;color:#9a948a;margin:20px 0 0;text-wrap:pretty">A deterministic pre-check layer gathers facts — file counts, frontmatter, flagged patterns — then a model evaluation grades each dimension against the rubric. The overall grade is simply the worst graded dimension, so one letter can never hide another.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:36px">
+        <div id="scale" style="display:flex;gap:10px;flex-wrap:wrap"></div>
+        <div id="dim-rows" style="display:flex;flex-direction:column"></div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <p style="font-size:13.5px;color:#8a857b;margin:0"><span style="color:#c9c3b8">Not evaluated is not a bad grade.</span> A dash means missing data — it is never colored red or green.</p>
+          <p style="font-size:13.5px;color:#8a857b;margin:0"><span style="color:#c9c3b8">F means rejected.</span> Usually a critical security finding; it is information, not punishment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="browse" class="wrap" style="padding-top:80px;padding-bottom:40px">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;flex-wrap:wrap">
+      <h2 class="serif" style="font-size:38px;margin:0">Browse skills</h2>
+      <span class="mono" id="count-label" style="font-size:12px;color:#8a857b"></span>
+    </div>
+    <div id="chips" style="display:flex;flex-wrap:wrap;gap:8px;margin-top:28px"></div>
+    <div style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;margin-top:20px;padding:14px 0;border-top:1px solid rgba(232,226,214,0.08);border-bottom:1px solid rgba(232,226,214,0.08)">
+      <div style="display:flex;align-items:center;gap:10px">
+        <span class="mono" style="font-size:10.5px;letter-spacing:0.12em;color:#8a857b">MIN&nbsp;GRADE</span>
+        <div id="grade-opts" style="display:flex;gap:4px"></div>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px">
+        <span class="mono" style="font-size:10.5px;letter-spacing:0.12em;color:#8a857b">SORT</span>
+        <div id="sort-opts" style="display:flex;gap:4px"></div>
+      </div>
+      <button id="fixtures-toggle" style="display:flex;align-items:center;gap:10px;background:none;border:none;padding:6px 0;cursor:pointer;margin-left:auto">
+        <span id="fx-track"></span>
+        <span style="font-size:13px;color:#c9c3b8">Show fixtures <span class="mono" style="font-size:10px;color:#8a857b">(demo skills)</span></span>
+      </button>
+    </div>
+    <div id="grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:18px;margin-top:32px"></div>
+    <div id="empty" style="display:none;border:1px dashed rgba(232,226,214,0.16);border-radius:4px;padding:56px 24px;text-align:center;margin-top:32px">
+      <p class="serif" style="font-size:24px;margin:0">No skills in this category.</p>
+      <p style="font-size:13.5px;color:#8a857b;margin:10px 0 0">Try a different category, relax the minimum grade, or show fixtures.</p>
+    </div>
+  </section>
+
+  <footer style="border-top:1px solid rgba(232,226,214,0.08);margin-top:56px">
+    <div class="wrap" style="padding-top:24px;padding-bottom:24px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap">
+      <span class="mono" id="foot-left" style="font-size:11px;color:#8a857b"></span>
+      <span class="mono" style="font-size:11px;color:#8a857b">badges invalidate on content change</span>
+    </div>
+  </footer>
+
+  <div id="backdrop" style="display:none;position:fixed;inset:0;background:rgba(10,9,7,0.6);z-index:40"></div>
+  <aside id="drawer" style="display:none;position:fixed;top:0;right:0;bottom:0;width:min(580px,100vw);background:#1d1b18;border-left:1px solid rgba(232,226,214,0.12);z-index:41;overflow-y:auto;padding:36px 40px 56px"></aside>
+</div>
+
+<script id="catalog" type="application/json">/*CATALOG_JSON*/</script>
+<script>
+(function(){
+  var cat = JSON.parse(document.getElementById('catalog').textContent);
+  var esc = function(s){ return String(s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); };
+
+  var GRADE_ORDER = { A:0, B:1, C:2, D:3, F:4, 'not-evaluated':9 };
+  var GRADE_COLOR = { A:'oklch(0.8 0.11 155)', B:'oklch(0.8 0.11 125)', C:'oklch(0.8 0.11 95)', D:'oklch(0.77 0.12 60)', F:'oklch(0.68 0.16 25)', 'not-evaluated':'#8a857b' };
+  var tint = function(g,a){ return g==='not-evaluated' ? 'rgba(232,226,214,'+a+')' : GRADE_COLOR[g].replace(')',' / '+a+')'); };
+  var STATUS = {
+    pass:{label:'PASS',color:'oklch(0.8 0.11 155)',order:2},
+    warning:{label:'WARN',color:'oklch(0.8 0.11 95)',order:1},
+    fail:{label:'FAIL',color:'oklch(0.68 0.16 25)',order:0},
+    'not-applicable':{label:'N/A',color:'#8a857b',order:3},
+    'evaluation-error':{label:'ERR',color:'#8a857b',order:3}
+  };
+  var DIMS = [
+    { key:'security', k:'SEC', label:'SECURITY', desc:'Injection, exfiltration, destructive or concealed commands.' },
+    { key:'quality', k:'QUA', label:'QUALITY', desc:'Clarity, structure, instructions the agent can follow.' },
+    { key:'hygiene', k:'HYG', label:'HYGIENE', desc:'Frontmatter, file layout, maintenance signals.' },
+    { key:'effectiveness', k:'EFF', label:'EFFECTIVENESS', desc:'Coming soon — reserved slot in the rubric.' }
+  ];
+  var letterOf = function(g){ return g==='not-evaluated' ? '–' : g; };
+  var overallCircle = function(g,size,font){
+    return 'width:'+size+'px;height:'+size+'px;flex-shrink:0;border-radius:50%;display:flex;align-items:center;justify-content:center;'+
+      "font-family:'Instrument Serif',serif;font-size:"+font+'px;color:'+GRADE_COLOR[g]+';'+
+      'border:1px solid '+tint(g,0.4)+';background:'+tint(g,0.08);
+  };
+  var labelOf = function(id){ var t=cat.taxonomy.filter(function(x){return x.id===id;})[0]; return t?t.label:id; };
+
+  var state = { category:'all', minGrade:'all', sort:'grade', showFixtures:true, selected:null };
+
+  // --- static: rubric badges, stats, scale, dimension rows ---
+  document.getElementById('nav-rubric').textContent = 'rubric v'+cat.rubricVersion;
+  document.getElementById('foot-left').textContent =
+    'SkillHub · generated '+new Date(cat.generatedAt).toISOString().slice(0,10)+' · rubric v'+cat.rubricVersion+' · evaluated by '+
+    (cat.skills[0]?cat.skills[0].evaluator.model+' · '+cat.skills[0].evaluator.mode:'—');
+
+  var aCount = cat.skills.filter(function(s){return s.overall==='A';}).length;
+  var fCount = cat.skills.filter(function(s){return s.overall==='F';}).length;
+  var stats = [
+    { n:String(cat.skills.length), label:'skills evaluated' },
+    { n:String(cat.taxonomy.length), label:'categories' },
+    { n:String(aCount), label:'graded A overall' },
+    { n:String(fCount), label:'rejected (F)' },
+    { n:'v'+cat.rubricVersion, label:'rubric version' }
+  ];
+  document.getElementById('stats').innerHTML = stats.map(function(st){
+    return '<div style="flex:1;padding:22px 24px 24px;border-left:1px solid rgba(232,226,214,0.1);min-width:120px">'+
+      '<div class="serif" style="font-size:38px;line-height:1">'+esc(st.n)+'</div>'+
+      '<div class="mono" style="font-size:10.5px;letter-spacing:0.12em;color:#8a857b;margin-top:8px;text-transform:uppercase">'+esc(st.label)+'</div></div>';
+  }).join('');
+
+  var scale = [['A','BEST'],['B','GOOD'],['C','ACCEPTABLE'],['D','POOR'],['F','REJECTED']];
+  document.getElementById('scale').innerHTML = scale.map(function(p){
+    var g=p[0];
+    return '<div style="flex:1;min-width:88px;border:1px solid '+tint(g,0.35)+';background:'+tint(g,0.07)+';border-radius:3px;padding:14px 16px">'+
+      '<span class="serif" style="font-size:30px;color:'+GRADE_COLOR[g]+'">'+g+'</span>'+
+      '<div class="mono" style="font-size:10px;letter-spacing:0.1em;color:#8a857b;margin-top:6px">'+p[1]+'</div></div>';
+  }).join('') +
+    '<div style="flex:1;min-width:88px;border:1px dashed rgba(232,226,214,0.2);border-radius:3px;padding:14px 16px">'+
+    '<span class="serif" style="font-size:30px;color:#8a857b">–</span>'+
+    '<div class="mono" style="font-size:10px;letter-spacing:0.1em;color:#8a857b;margin-top:6px">NOT EVALUATED</div></div>';
+
+  document.getElementById('dim-rows').innerHTML = DIMS.map(function(d,i){
+    var soon = d.key==='effectiveness';
+    var kcol = soon ? '#8a857b' : 'oklch(0.8 0.11 155)';
+    return '<div style="display:grid;grid-template-columns:56px 200px 1fr;gap:20px;align-items:baseline;padding:16px 0;border-top:1px solid rgba(232,226,214,0.1)'+
+      (i===DIMS.length-1?';border-bottom:1px solid rgba(232,226,214,0.1);opacity:0.55':'')+'">'+
+      '<span class="mono" style="font-size:12px;color:'+kcol+'">'+d.k.charAt(0)+'&middot;&middot;</span>'+
+      '<span style="font-size:15px;font-weight:600">'+d.label.charAt(0)+d.label.slice(1).toLowerCase()+
+        (soon?' <span class="mono" style="font-size:9.5px;letter-spacing:0.1em;border:1px solid rgba(232,226,214,0.2);border-radius:99px;padding:2px 8px;vertical-align:2px;margin-left:6px">COMING SOON</span>':'')+'</span>'+
+      '<span style="font-size:14px;color:#9a948a">'+d.desc+'</span></div>';
+  }).join('');
+
+  // --- interactive controls ---
+  function segStyle(active){ return "font-family:'IBM Plex Mono',monospace;font-size:11px;padding:5px 10px;border-radius:3px;cursor:pointer;border:none;"+
+    (active?'background:rgba(232,226,214,0.14);color:#ece7dc':'background:none;color:#8a857b'); }
+  function chipStyle(active){ return 'font-size:13px;padding:7px 14px;border-radius:99px;cursor:pointer;'+
+    (active?'background:#ece7dc;color:#171614;border:1px solid #ece7dc;font-weight:600':'background:none;color:#c9c3b8;border:1px solid rgba(232,226,214,0.18)'); }
+
+  function renderControls(){
+    var chips = [{id:'all',label:'All'}].concat(cat.taxonomy.map(function(t){return {id:t.id,label:t.label};}));
+    document.getElementById('chips').innerHTML = chips.map(function(c){
+      return '<button class="chip" data-cat="'+esc(c.id)+'" style="'+chipStyle(state.category===c.id)+'">'+esc(c.label)+'</button>';
+    }).join('');
+    var grades=[{id:'all',label:'ANY'},{id:'A',label:'A'},{id:'B',label:'≥B'},{id:'C',label:'≥C'}];
+    document.getElementById('grade-opts').innerHTML = grades.map(function(g){
+      return '<button class="seg" data-grade="'+esc(g.id)+'" style="'+segStyle(state.minGrade===g.id)+'">'+esc(g.label)+'</button>';
+    }).join('');
+    var sorts=[{id:'grade',label:'GRADE'},{id:'name',label:'NAME'},{id:'category',label:'CATEGORY'}];
+    document.getElementById('sort-opts').innerHTML = sorts.map(function(s){
+      return '<button class="seg" data-sort="'+esc(s.id)+'" style="'+segStyle(state.sort===s.id)+'">'+esc(s.label)+'</button>';
+    }).join('');
+    document.getElementById('fx-track').style.cssText = 'width:34px;height:19px;border-radius:99px;position:relative;transition:background 0.15s;background:'+
+      (state.showFixtures?'oklch(0.8 0.11 155 / 0.5)':'rgba(232,226,214,0.15)');
+    document.getElementById('fx-track').innerHTML = '<span style="position:absolute;top:2px;left:'+(state.showFixtures?'17px':'2px')+
+      ';width:15px;height:15px;border-radius:50%;background:#ece7dc;transition:left 0.15s"></span>';
+  }
+
+  function filtered(){
+    var list = cat.skills.filter(function(s){
+      return (state.category==='all'||s.category===state.category) &&
+        (state.showFixtures||s.kind!=='fixture') &&
+        (state.minGrade==='all'||GRADE_ORDER[s.overall]<=GRADE_ORDER[state.minGrade]);
+    });
+    if(state.sort==='name') list.sort(function(a,b){return a.name.localeCompare(b.name);});
+    else if(state.sort==='category') list.sort(function(a,b){return a.category.localeCompare(b.category)||a.name.localeCompare(b.name);});
+    else list.sort(function(a,b){return GRADE_ORDER[a.overall]-GRADE_ORDER[b.overall]||a.name.localeCompare(b.name);});
+    return list;
+  }
+
+  function cardDims(s){
+    return DIMS.map(function(dm){
+      var g=s.badges[dm.key], ne=g==='not-evaluated';
+      var title = dm.label.charAt(0)+dm.label.slice(1).toLowerCase()+': '+(ne?(dm.key==='effectiveness'?'coming soon':'not evaluated'):g);
+      return '<span class="mono" title="'+esc(title)+'" style="font-size:10.5px;color:#8a857b;border:1px '+(ne?'dashed':'solid')+' '+(ne?'rgba(232,226,214,0.14)':tint(g,0.3))+
+        ';border-radius:3px;padding:4px 8px;background:'+(ne?'transparent':tint(g,0.05))+(dm.key==='effectiveness'?';opacity:0.6':'')+'">'+
+        '<span style="letter-spacing:0.1em">'+dm.k+'</span>&nbsp;<span style="color:'+GRADE_COLOR[g]+';font-weight:500">'+letterOf(g)+'</span></span>';
+    }).join('');
+  }
+
+  function renderGrid(){
+    var list = filtered();
+    document.getElementById('count-label').textContent = list.length+(list.length===1?' SKILL':' SKILLS')+' SHOWN';
+    document.getElementById('empty').style.display = list.length? 'none':'block';
+    var nHl = 2;
+    document.getElementById('grid').innerHTML = list.map(function(s,idx){
+      var hs = s.highlights.slice().sort(function(a,b){return STATUS[a.status].order-STATUS[b.status].order;}).slice(0,nHl);
+      return '<article class="card" data-idx="'+idx+'" style="border:1px '+(s.kind==='fixture'?'dashed':'solid')+' rgba(232,226,214,0.13);border-radius:5px;background:#1c1a17;padding:24px 24px 20px;cursor:pointer;transition:border-color 0.15s,transform 0.15s">'+
+        '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:18px">'+
+          '<div style="min-width:0">'+
+            '<div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap">'+
+              '<span class="mono" style="font-size:10.5px;letter-spacing:0.14em;color:#8a857b;text-transform:uppercase">'+esc(labelOf(s.category))+'</span>'+
+              (s.kind==='fixture'?'<span class="mono" style="font-size:9.5px;letter-spacing:0.1em;color:#b0aa9e;border:1px dashed rgba(232,226,214,0.3);border-radius:99px;padding:2px 8px">EXAMPLE</span>':'')+
+            '</div>'+
+            '<h3 class="serif" style="font-size:27px;margin:0;line-height:1.1">'+esc(s.name)+'</h3>'+
+            '<p style="font-size:14px;line-height:1.55;color:#9a948a;margin:10px 0 0;text-wrap:pretty">'+esc(s.tagline)+'</p>'+
+          '</div>'+
+          '<div style="'+overallCircle(s.overall,52,27)+'">'+letterOf(s.overall)+'</div>'+
+        '</div>'+
+        '<div style="display:flex;gap:8px;margin-top:20px;flex-wrap:wrap">'+cardDims(s)+'</div>'+
+        '<div style="margin-top:18px;border-top:1px solid rgba(232,226,214,0.08);display:flex;flex-direction:column">'+
+          hs.map(function(h){
+            return '<div style="display:flex;gap:10px;align-items:baseline;padding:10px 0 0">'+
+              '<span class="hl-dot" style="background:'+STATUS[h.status].color+'"></span>'+
+              '<span class="mono" style="font-size:11px;color:#c9c3b8;flex-shrink:0">'+esc(h.check)+'</span>'+
+              '<span style="font-size:12.5px;line-height:1.5;color:#8a857b">'+esc(h.summary)+'</span></div>';
+          }).join('')+
+        '</div></article>';
+    }).join('');
+    var listRef = list;
+    Array.prototype.forEach.call(document.querySelectorAll('#grid .card'), function(el){
+      el.onclick = function(){ openDetail(listRef[+el.getAttribute('data-idx')]); };
+    });
+  }
+
+  function openDetail(s){
+    var catLabel = labelOf(s.category);
+    var kb = (s.preCheck.skillMdBytes/1024).toFixed(1)+' KB';
+    var dims = DIMS.map(function(d){
+      var g=s.badges[d.key], ne=g==='not-evaluated';
+      return '<div style="padding:16px 18px;border-radius:4px;border:1px '+(ne?'dashed':'solid')+' '+(ne?'rgba(232,226,214,0.16)':tint(g,0.3))+
+        ';background:'+(ne?'transparent':tint(g,0.05))+(d.key==='effectiveness'?';opacity:0.6':'')+'">'+
+        '<div style="display:flex;justify-content:space-between;align-items:baseline">'+
+          '<span class="mono" style="font-size:10.5px;letter-spacing:0.12em;color:#8a857b">'+d.label+(d.key==='effectiveness'?' · SOON':'')+'</span>'+
+          '<span class="serif" style="font-size:32px;line-height:1;color:'+GRADE_COLOR[g]+'">'+letterOf(g)+'</span></div>'+
+        '<div style="font-size:12px;line-height:1.5;color:#8a857b;margin-top:8px">'+d.desc+'</div></div>';
+    }).join('');
+    var hs = s.highlights.slice().sort(function(a,b){return STATUS[a.status].order-STATUS[b.status].order;}).map(function(h){
+      var col=STATUS[h.status].color;
+      var border = col.charAt(0)==='#' ? 'rgba(232,226,214,0.2)' : col.replace(')',' / 0.4)');
+      return '<div style="display:flex;gap:14px;align-items:baseline;padding:14px 0;border-bottom:1px solid rgba(232,226,214,0.08)">'+
+        '<span class="mono" style="font-size:9.5px;letter-spacing:0.1em;flex-shrink:0;border-radius:99px;padding:3px 9px;color:'+col+';border:1px solid '+border+'">'+STATUS[h.status].label+'</span>'+
+        '<span class="mono" style="font-size:12px;color:#c9c3b8;flex-shrink:0">'+esc(h.check)+'</span>'+
+        '<span style="font-size:13.5px;line-height:1.55;color:#b0aa9e">'+esc(h.summary)+'</span></div>';
+    }).join('');
+    var facts = [['Frontmatter', s.preCheck.frontmatterValid?'valid':'invalid'],['Files',String(s.preCheck.fileCount)],
+      ['SKILL.md size',kb],['Critical flags',String(s.preCheck.criticalFlags)],['Major flags',String(s.preCheck.majorFlags)]]
+      .map(function(f){ return '<div style="display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid rgba(232,226,214,0.08)">'+
+        '<span style="font-size:12.5px;color:#8a857b">'+f[0]+'</span><span class="mono" style="font-size:12px;color:#ece7dc">'+esc(f[1])+'</span></div>'; }).join('');
+    var meta = [['SOURCE',s.source],['EVALUATED',s.evaluatedAt],['EVALUATOR',s.evaluator.model+' · '+s.evaluator.mode],
+      ['RUBRIC','v'+s.rubricVersion],['CONTENT HASH','— (planned: invalidates badge on change)']]
+      .map(function(m){ return '<div style="display:flex;gap:16px;padding:9px 0;border-bottom:1px solid rgba(232,226,214,0.08)">'+
+        '<span class="mono" style="font-size:11px;letter-spacing:0.08em;color:#8a857b;width:120px;flex-shrink:0">'+m[0]+'</span>'+
+        '<span class="mono" style="font-size:12px;color:#b0aa9e;word-break:break-all">'+esc(m[1])+'</span></div>'; }).join('');
+
+    var d = document.getElementById('drawer');
+    d.style.animation = 'drawerIn 0.22s ease both';
+    d.innerHTML =
+      '<div style="display:flex;justify-content:space-between;align-items:center;gap:16px">'+
+        '<div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">'+
+          '<span class="mono" style="font-size:10.5px;letter-spacing:0.14em;color:#8a857b;text-transform:uppercase">'+esc(catLabel)+'</span>'+
+          (s.kind==='fixture'?'<span class="mono" style="font-size:9.5px;letter-spacing:0.1em;color:#b0aa9e;border:1px dashed rgba(232,226,214,0.3);border-radius:99px;padding:2px 8px">EXAMPLE — NOT A REAL SKILL</span>':'')+
+        '</div>'+
+        '<button id="drawer-close" style="background:none;border:1px solid rgba(232,226,214,0.18);border-radius:99px;color:#c9c3b8;width:32px;height:32px;cursor:pointer;font-size:14px;line-height:1;flex-shrink:0">✕</button>'+
+      '</div>'+
+      '<h2 class="serif" style="font-size:38px;margin:18px 0 0;line-height:1.05">'+esc(s.name)+'</h2>'+
+      '<p style="font-size:15px;line-height:1.6;color:#9a948a;margin:12px 0 0;text-wrap:pretty">'+esc(s.tagline)+'</p>'+
+      '<div style="display:flex;align-items:center;gap:16px;margin-top:26px;padding:18px;border:1px solid rgba(232,226,214,0.1);border-radius:4px;background:#191815">'+
+        '<div style="'+overallCircle(s.overall,64,34)+'">'+letterOf(s.overall)+'</div>'+
+        '<div><div class="mono" style="font-size:10.5px;letter-spacing:0.12em;color:#8a857b">OVERALL</div>'+
+        '<div style="font-size:13px;color:#9a948a;margin-top:4px">Worst of the graded dimensions — one letter never hides another.</div></div></div>'+
+      '<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px">'+dims+'</div>'+
+      '<h3 class="mono" style="font-size:11px;letter-spacing:0.16em;color:#8a857b;font-weight:500;margin:36px 0 4px">EVIDENCE — CHECK VERDICTS</h3>'+
+      '<div style="display:flex;flex-direction:column">'+hs+'</div>'+
+      '<h3 class="mono" style="font-size:11px;letter-spacing:0.16em;color:#8a857b;font-weight:500;margin:36px 0 4px">PRE-CHECK FACTS — DETERMINISTIC LAYER</h3>'+
+      '<div style="display:grid;grid-template-columns:1fr 1fr;column-gap:24px">'+facts+'</div>'+
+      '<h3 class="mono" style="font-size:11px;letter-spacing:0.16em;color:#8a857b;font-weight:500;margin:36px 0 4px">EVALUATION METADATA</h3>'+
+      '<div style="display:flex;flex-direction:column">'+meta+'</div>';
+    document.getElementById('backdrop').style.display='block';
+    d.style.display='block';
+    document.getElementById('drawer-close').onclick = closeDetail;
+  }
+  function closeDetail(){ document.getElementById('drawer').style.display='none'; document.getElementById('backdrop').style.display='none'; }
+
+  // --- wiring ---
+  document.getElementById('chips').onclick = function(e){ var b=e.target.closest('[data-cat]'); if(!b)return; state.category=b.getAttribute('data-cat'); renderControls(); renderGrid(); };
+  document.getElementById('grade-opts').onclick = function(e){ var b=e.target.closest('[data-grade]'); if(!b)return; state.minGrade=b.getAttribute('data-grade'); renderControls(); renderGrid(); };
+  document.getElementById('sort-opts').onclick = function(e){ var b=e.target.closest('[data-sort]'); if(!b)return; state.sort=b.getAttribute('data-sort'); renderControls(); renderGrid(); };
+  document.getElementById('fixtures-toggle').onclick = function(){ state.showFixtures=!state.showFixtures; renderControls(); renderGrid(); };
+  document.getElementById('backdrop').onclick = closeDetail;
+  window.addEventListener('keydown', function(e){ if(e.key==='Escape') closeDetail(); });
+  Array.prototype.forEach.call(document.querySelectorAll('[data-scroll]'), function(a){
+    a.onclick = function(e){ e.preventDefault(); var el=document.getElementById(a.getAttribute('data-scroll'));
+      if(el) window.scrollTo({top:el.getBoundingClientRect().top+window.scrollY-64,behavior:'smooth'}); };
+  });
+
+  renderControls();
+  renderGrid();
+})();
+</script>
+</body>
+</html>

@@ -2,7 +2,7 @@
 
 Goal: a hub page presenting Claude Code skills (and, later, MCP servers) with a trust rating/badge assigned automatically by the **trust-skill** tool. A visitor discovers skills, filters by category and quality, and sees *why* a skill got its grade — with evidence, not just a number.
 
-You'll do the design in Claude Design. This document describes **what** we present and **which elements** exist in the data; the look (typography, color, layout) is yours. Data source: `hub/catalog.json` (contract below). Scaffolding preview: `hub/preview.html`. **Language: English.**
+You'll do the design in Claude Design. This document describes **what** we present and **which elements** exist in the data; the look (typography, color, layout) is yours. Data source: `hub/catalog.json` (contract below). Runnable hub: `hub/index.html` (built from `hub/index.template.html`). **Language: English.**
 
 ---
 
@@ -140,7 +140,7 @@ All letters are limited to `A|B|C|D|F|not-evaluated`. Highlight `status`: `pass|
 - Don't color `not-evaluated` red/green — it's missing data, not a grade.
 - Don't present fixtures as recommended skills.
 - Don't hide the evidence (highlights) — without it the badge is un-auditable and loses its "trust" meaning.
-- **Don't insert skill-derived strings into the DOM unescaped.** `name` comes from the evaluated skill's frontmatter (attacker-controlled); `tagline` and highlight `summary` come from an LLM reading untrusted skill content. Escape them (or use text nodes / a framework that escapes by default) — a trust hub must not be XSS-able by a malicious skill it lists. The scaffolding `preview.html` escapes via a helper; the production build must do the same.
+- **Don't insert skill-derived strings into the DOM unescaped.** `name` comes from the evaluated skill's frontmatter (attacker-controlled); `tagline` and highlight `summary` come from an LLM reading untrusted skill content. Escape them (or use text nodes / a framework that escapes by default) — a trust hub must not be XSS-able by a malicious skill it lists. The runnable `index.html` escapes via a helper; the production build must do the same.
 
 ---
 
