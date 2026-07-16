@@ -68,6 +68,12 @@ describe('resolveModel', () => {
     const m = resolveModel('ollama:llama3:8b')
     expect((m as { modelId: string }).modelId).toBe('llama3:8b')
   })
+  it('resolves openrouter and keeps the slash + variant in the model id', () => {
+    const m = resolveModel('openrouter:anthropic/claude-3.5-sonnet')
+    expect((m as { modelId: string }).modelId).toBe('anthropic/claude-3.5-sonnet')
+    const free = resolveModel('openrouter:meta-llama/llama-3.1-8b-instruct:free')
+    expect((free as { modelId: string }).modelId).toBe('meta-llama/llama-3.1-8b-instruct:free')
+  })
   it('throws on unknown provider', () => {
     expect(() => resolveModel('bogus:x')).toThrow(/unknown provider/i)
   })

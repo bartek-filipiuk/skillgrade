@@ -33,7 +33,16 @@ export function resolveModel(spec: string): LanguageModel {
         baseURL: process.env.OLLAMA_BASE_URL ?? 'http://localhost:11434/v1',
         apiKey: process.env.OLLAMA_API_KEY ?? 'ollama',
       })(modelId)
+    case 'openrouter':
+      // OpenAI-compatible gateway to many models. Model ids carry a slash
+      // (e.g. "anthropic/claude-3.5-sonnet", "google/gemini-flash-1.5:free");
+      // splitting on the first colon keeps the whole id intact.
+      return createOpenAICompatible({
+        name: 'openrouter',
+        baseURL: process.env.OPENROUTER_BASE_URL ?? 'https://openrouter.ai/api/v1',
+        apiKey: process.env.OPENROUTER_API_KEY,
+      })(modelId)
     default:
-      throw new Error(`unknown provider ${JSON.stringify(provider)}: expected anthropic|openai|ollama`)
+      throw new Error(`unknown provider ${JSON.stringify(provider)}: expected anthropic|openai|ollama|openrouter`)
   }
 }

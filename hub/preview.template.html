@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SkillHub — podgląd (scaffolding)</title>
+<title>SkillHub — data preview (scaffolding)</title>
 <style>
   /* Scaffolding only — the real design is produced in Claude Design from CLAUDE_DESIGN.md.
      This exists purely to prove catalog.json renders and to sanity-check the data. */
@@ -39,8 +39,8 @@
 </head>
 <body>
 <header>
-  <h1>SkillHub <span class="sub">— podgląd danych</span></h1>
-  <div class="sub">Oceny i badge generowane automatycznie przez <b>trust-skill</b>. To rusztowanie — finalny design powstaje w Claude Design.</div>
+  <h1>SkillHub <span class="sub">— data preview</span></h1>
+  <div class="sub">Ratings and badges generated automatically by <b>trust-skill</b>. This is scaffolding — the real design is produced in Claude Design.</div>
   <div class="stats" id="stats"></div>
 </header>
 <div class="filters" id="filters"></div>
@@ -60,15 +60,15 @@
   const dist = {A:0,B:0,C:0,D:0,F:0,'not-evaluated':0};
   cat.skills.forEach(s=>dist[s.overall]++);
   stats.innerHTML =
-    `<div class="stat"><b>${cat.skills.length}</b><span>ocenionych skilli</span></div>`+
-    `<div class="stat"><b>${cat.taxonomy.length}</b><span>kategorii</span></div>`+
-    `<div class="stat"><b>${dist.A}</b><span>ocena A</span></div>`+
-    `<div class="stat"><b>${dist.F}</b><span>odrzuconych (F)</span></div>`+
-    `<div class="stat"><b>v${cat.rubricVersion}</b><span>rubryka</span></div>`;
+    `<div class="stat"><b>${cat.skills.length}</b><span>skills evaluated</span></div>`+
+    `<div class="stat"><b>${cat.taxonomy.length}</b><span>categories</span></div>`+
+    `<div class="stat"><b>${dist.A}</b><span>grade A</span></div>`+
+    `<div class="stat"><b>${dist.F}</b><span>rejected (F)</span></div>`+
+    `<div class="stat"><b>v${cat.rubricVersion}</b><span>rubric</span></div>`;
 
   const filters = document.getElementById('filters');
   const cats = ['all', ...new Set(cat.skills.map(s=>s.category))];
-  filters.innerHTML = cats.map(c=>`<button class="chip${c==='all'?' on':''}" data-c="${c}">${c==='all'?'Wszystkie':labelOf(c)}</button>`).join('');
+  filters.innerHTML = cats.map(c=>`<button class="chip${c==='all'?' on':''}" data-c="${c}">${c==='all'?'All':labelOf(c)}</button>`).join('');
   filters.onclick = e => { const b=e.target.closest('.chip'); if(!b)return;
     active=b.dataset.c; [...filters.children].forEach(x=>x.classList.toggle('on',x===b)); render(); };
 
@@ -89,7 +89,7 @@
   }
   render();
   document.getElementById('foot').textContent =
-    `Wygenerowano ${cat.generatedAt} · rubryka v${cat.rubricVersion} · tryb: ocena natywna w Claude Code (bez API key) · badge liczone deterministycznie w kodzie.`;
+    `Generated ${cat.generatedAt} · rubric v${cat.rubricVersion} · mode: native evaluation in Claude Code (no API key) · badges computed deterministically in code.`;
 </script>
 </body>
 </html>

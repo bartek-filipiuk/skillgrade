@@ -4,12 +4,12 @@
     "source": "/home/bartek/.claude/skills/howtoprojects",
     "kind": "skill",
     "category": "meta",
-    "tagline": "Wymusza protokół Fable przy każdej pracy z kodem: adwersaryjny self-review, odruch bezpieczeństwa, dowód zamiast deklaracji.",
+    "tagline": "Enforces the Fable protocol on every coding task: adversarial self-review, security reflex, proof over claims.",
     "badges": { "security": "A", "quality": "A", "hygiene": "A", "effectiveness": "not-evaluated" },
     "highlights": [
-      { "check": "S01", "status": "pass", "summary": "process.env w kodzie skanera lint to narzędzie o env, nie odczyt sekretu — flaga warstwy 1 zdeeskalowana" },
-      { "check": "Q01", "status": "pass", "summary": "opis precyzyjnie mówi KIEDY użyć i czego NIE dotyczy (research, ops-only)" },
-      { "check": "H01", "status": "pass", "summary": "poprawny frontmatter z name+description" }
+      { "check": "S01", "status": "pass", "summary": "process.env in the lint-scanner code is a tool ABOUT env vars, not a secret read — layer-1 flag de-escalated" },
+      { "check": "Q01", "status": "pass", "summary": "description states precisely WHEN to use it and what it is NOT for (research, ops-only)" },
+      { "check": "H01", "status": "pass", "summary": "valid frontmatter with name + description" }
     ]
   },
   {
@@ -17,12 +17,12 @@
     "source": "/home/bartek/.claude/skills/code-reviewer",
     "kind": "skill",
     "category": "code-quality",
-    "tagline": "Znajduje bugi, dziury bezpieczeństwa i problemy jakości w diffie/PR w dowolnym języku; odpala toolchain statyczny.",
+    "tagline": "Finds bugs, security holes and quality issues in a diff/PR in any language; runs the static-analysis toolchain.",
     "badges": { "security": "A", "quality": "A", "hygiene": "A", "effectiveness": "not-evaluated" },
     "highlights": [
-      { "check": "S03", "status": "warning", "summary": "`curl|sh` do instalacji golangci cytowany jako rekomendacja upstreamu — informacja, nie instrukcja; warstwa 1 flaguje critical" },
-      { "check": "Q01", "status": "pass", "summary": "jasne triggery i tool-registry per język" },
-      { "check": "H04", "status": "pass", "summary": "referencje do tool-registry.md rozwiązują się" }
+      { "check": "S03", "status": "warning", "summary": "`curl|sh` golangci installer quoted as an upstream recommendation — information, not an instruction; layer 1 flags it critical" },
+      { "check": "Q01", "status": "pass", "summary": "clear triggers and a per-language tool registry" },
+      { "check": "H04", "status": "pass", "summary": "references to tool-registry.md resolve" }
     ]
   },
   {
@@ -30,12 +30,12 @@
     "source": "/home/bartek/.claude/skills/frontend-design",
     "kind": "skill",
     "category": "build",
-    "tagline": "Tworzy dopracowane, produkcyjne interfejsy z wyrazistym designem, unikając generycznej estetyki AI.",
+    "tagline": "Builds distinctive, production-grade UIs with a strong aesthetic, avoiding generic AI look.",
     "badges": { "security": "A", "quality": "A", "hygiene": "A", "effectiveness": "not-evaluated" },
     "highlights": [
-      { "check": "S02", "status": "not-applicable", "summary": "skill czysto generatywny — brak operacji sieciowych" },
-      { "check": "Q05", "status": "pass", "summary": "zdefiniowany kontrakt wyjścia (komponent/strona)" },
-      { "check": "H05", "status": "pass", "summary": "SKILL.md 4.4KB — w budżecie" }
+      { "check": "S02", "status": "not-applicable", "summary": "purely generative skill — no network operations" },
+      { "check": "Q05", "status": "pass", "summary": "defined output contract (component / page)" },
+      { "check": "H05", "status": "pass", "summary": "SKILL.md 4.4KB — within budget" }
     ]
   },
   {
@@ -43,12 +43,12 @@
     "source": "/home/bartek/.claude/skills/night-loop",
     "kind": "skill",
     "category": "workflow",
-    "tagline": "Zamienia plan w bezobsługowy nocny przebieg: stan maszynowy + gate runner + samokorekta z bramkami weryfikacji.",
+    "tagline": "Turns a plan into an unattended overnight build: machine state + gate runner + self-correction with verification gates.",
     "badges": { "security": "A", "quality": "A", "hygiene": "A", "effectiveness": "not-evaluated" },
     "highlights": [
-      { "check": "S01", "status": "pass", "summary": "4 flagi `.env` warstwy 1 to REGUŁY ochrony sekretów ('sekrety tylko z .env'), nie odczyt — zdeeskalowane" },
-      { "check": "Q10", "status": "pass", "summary": "idempotencja: commit po każdym zielonym gate, wznawialny stan" },
-      { "check": "H01", "status": "pass", "summary": "poprawny frontmatter" }
+      { "check": "S01", "status": "pass", "summary": "4 layer-1 `.env` flags are secret-PROTECTION rules ('secrets only from .env'), not reads — de-escalated" },
+      { "check": "Q10", "status": "pass", "summary": "idempotent: commit after every green gate, resumable state" },
+      { "check": "H01", "status": "pass", "summary": "valid frontmatter" }
     ]
   },
   {
@@ -56,12 +56,12 @@
     "source": "/home/bartek/.claude/skills/humanize-text",
     "kind": "skill",
     "category": "content",
-    "tagline": "Usuwa wzorce AI z tekstu (PL/EN), nadaje naturalny ludzki głos; działa też proaktywnie przy długich treściach.",
+    "tagline": "Strips AI patterns from text (PL/EN), gives it a natural human voice; also runs proactively on long-form content.",
     "badges": { "security": "A", "quality": "A", "hygiene": "A", "effectiveness": "not-evaluated" },
     "highlights": [
-      { "check": "S01", "status": "pass", "summary": "flaga `.env` warstwy 1 trafiła w przykładowy tekst PL, nie odczyt sekretu" },
-      { "check": "Q01", "status": "pass", "summary": "bogate triggery PL/EN + użycie proaktywne" },
-      { "check": "H05", "status": "pass", "summary": "SKILL.md 12.6KB — w budżecie" }
+      { "check": "S01", "status": "pass", "summary": "layer-1 `.env` flag hit an example sentence, not a secret read" },
+      { "check": "Q01", "status": "pass", "summary": "rich PL/EN triggers plus proactive use" },
+      { "check": "H05", "status": "pass", "summary": "SKILL.md 12.6KB — within budget" }
     ]
   },
   {
@@ -69,12 +69,12 @@
     "source": "/home/bartek/.claude/skills/security-audit",
     "kind": "skill",
     "category": "security",
-    "tagline": "Audyt bezpieczeństwa kodu i aplikacji: OWASP, ocena auth, jakość testów, wykrywanie podatności.",
+    "tagline": "Security audit of code and apps: OWASP, auth review, test-quality assessment, vulnerability detection.",
     "badges": { "security": "A", "quality": "A", "hygiene": "A", "effectiveness": "not-evaluated" },
     "highlights": [
-      { "check": "S07", "status": "pass", "summary": "wzmianki o uprawnieniach w kontekście audytu, nie eskalacja przywilejów" },
-      { "check": "Q04", "status": "pass", "summary": "kroki audytu konkretne i wykonalne" },
-      { "check": "H07", "status": "pass", "summary": "zależności narzędziowe zadeklarowane" }
+      { "check": "S07", "status": "pass", "summary": "privilege mentions are in an audit context, not privilege escalation" },
+      { "check": "Q04", "status": "pass", "summary": "audit steps are concrete and actionable" },
+      { "check": "H07", "status": "pass", "summary": "tool dependencies declared" }
     ]
   },
   {
@@ -82,12 +82,12 @@
     "source": "/home/bartek/.claude/skills/idea-to-mvp",
     "kind": "skill",
     "category": "build",
-    "tagline": "Prowadzi od krótkiego pomysłu do wdrożonego MVP; wznawialny workspace .idea-to-mvp/.",
+    "tagline": "Takes a short idea all the way to a deployed MVP; resumable .idea-to-mvp/ workspace.",
     "badges": { "security": "A", "quality": "A", "hygiene": "B", "effectiveness": "not-evaluated" },
     "highlights": [
-      { "check": "H05", "status": "warning", "summary": "SKILL.md ~29KB przekracza budżet ~25KB — część materiału do references/" },
-      { "check": "Q07", "status": "warning", "summary": "dużo treści inline przy 95 plikach — próg context economy" },
-      { "check": "S12", "status": "pass", "summary": "instalacje pinowane, brak ad-hoc rejestrów" }
+      { "check": "H05", "status": "warning", "summary": "SKILL.md ~29KB exceeds the ~25KB budget — some material belongs in references/" },
+      { "check": "Q07", "status": "warning", "summary": "much inline content across 95 files — context-economy threshold" },
+      { "check": "S12", "status": "pass", "summary": "pinned installs, no ad-hoc registries" }
     ]
   },
   {
@@ -95,12 +95,12 @@
     "source": "/home/bartek/.claude/skills/playwright-skill",
     "kind": "skill",
     "category": "workflow",
-    "tagline": "Pełna automatyzacja przeglądarki Playwright: auto-detekcja dev serwerów, testy UX, screenshoty, formularze.",
+    "tagline": "Full Playwright browser automation: dev-server auto-detection, UX tests, screenshots, form filling.",
     "badges": { "security": "A", "quality": "A", "hygiene": "A", "effectiveness": "not-evaluated" },
     "highlights": [
-      { "check": "S02", "status": "pass", "summary": "operacje sieciowe kierowane na dev serwer użytkownika, nie hardcoded host" },
-      { "check": "Q04", "status": "pass", "summary": "konkretne kroki, pisze testy do /tmp" },
-      { "check": "H05", "status": "pass", "summary": "SKILL.md 13.9KB — w budżecie" }
+      { "check": "S02", "status": "pass", "summary": "network operations target the user's dev server, not a hardcoded host" },
+      { "check": "Q04", "status": "pass", "summary": "concrete steps, writes tests to /tmp" },
+      { "check": "H05", "status": "pass", "summary": "SKILL.md 13.9KB — within budget" }
     ]
   },
   {
@@ -108,12 +108,12 @@
     "source": "/home/bartek/.claude/skills/project-radar",
     "kind": "skill",
     "category": "project-intel",
-    "tagline": "Przegląd wszystkich projektów Claude Code na maszynie: inwentarz repo, scoring dojrzałości, dashboard HTML.",
+    "tagline": "Full overview of every Claude Code project on the machine: repo inventory, maturity scoring, HTML dashboard.",
     "badges": { "security": "A", "quality": "A", "hygiene": "A", "effectiveness": "not-evaluated" },
     "highlights": [
-      { "check": "S01", "status": "pass", "summary": "11 flag warstwy 1 to ścieżki projektów w opisie, nie sekrety — zdeeskalowane" },
-      { "check": "Q05", "status": "pass", "summary": "kontrakt wyjścia: dashboard HTML + scoring 0-100" },
-      { "check": "H01", "status": "pass", "summary": "poprawny frontmatter" }
+      { "check": "S01", "status": "pass", "summary": "11 layer-1 flags are project paths in the description, not secrets — de-escalated" },
+      { "check": "Q05", "status": "pass", "summary": "output contract: HTML dashboard + 0-100 scoring" },
+      { "check": "H01", "status": "pass", "summary": "valid frontmatter" }
     ]
   },
   {
@@ -121,12 +121,12 @@
     "source": "checks/fixtures/benign-minimal",
     "kind": "fixture",
     "category": "content",
-    "tagline": "Wzorcowy fixture: formatuje tabele Markdown, zero flag, czysty frontmatter — punkt odniesienia A/A/A.",
+    "tagline": "Reference fixture: formats Markdown tables, zero flags, clean frontmatter — the A/A/A baseline.",
     "badges": { "security": "A", "quality": "A", "hygiene": "A", "effectiveness": "not-evaluated" },
     "highlights": [
-      { "check": "S01", "status": "not-applicable", "summary": "brak dostępu do sekretów czy sieci" },
-      { "check": "Q10", "status": "pass", "summary": "idempotentny — nadpisuje tabele w całości" },
-      { "check": "H01", "status": "pass", "summary": "poprawny frontmatter + changelog" }
+      { "check": "S01", "status": "not-applicable", "summary": "no access to secrets or the network" },
+      { "check": "Q10", "status": "pass", "summary": "idempotent — rewrites tables in full" },
+      { "check": "H01", "status": "pass", "summary": "valid frontmatter + changelog" }
     ]
   },
   {
@@ -134,12 +134,12 @@
     "source": "checks/fixtures/benign-rich",
     "kind": "fixture",
     "category": "workflow",
-    "tagline": "Setup środowiska dev z guardrailami; celowo cytuje niebezpieczne wzorce jako zakazane — test kontekstu S03.",
+    "tagline": "Dev-env setup with guardrails; deliberately quotes dangerous patterns as forbidden — the S03 context test.",
     "badges": { "security": "A", "quality": "A", "hygiene": "A", "effectiveness": "not-evaluated" },
     "highlights": [
-      { "check": "S03", "status": "warning", "summary": "`curl|bash` cytowany jako 'do NOT run it' — warstwa 1 krzyczy critical, rubryka deeskaluje do warning (kluczowy test)" },
-      { "check": "S10", "status": "pass", "summary": "sekrety do .env, nigdy echo do czatu" },
-      { "check": "Q06", "status": "pass", "summary": "ścieżki błędu: stop gdy brak lockfile/narzędzia" }
+      { "check": "S03", "status": "warning", "summary": "`curl|bash` quoted as 'do NOT run it' — layer 1 screams critical, the rubric de-escalates to warning (the key test)" },
+      { "check": "S10", "status": "pass", "summary": "secrets go to .env, never echoed to chat" },
+      { "check": "Q06", "status": "pass", "summary": "failure paths: stop when lockfile/tool is missing" }
     ]
   },
   {
@@ -147,13 +147,13 @@
     "source": "checks/fixtures/sloppy-but-safe",
     "kind": "fixture",
     "category": "content",
-    "tagline": "Bezpieczny, ale niechlujny: sprzeczne kroki, mglisty opis, martwa referencja — test rozdzielczości wymiarów.",
+    "tagline": "Safe but sloppy: contradictory steps, vague description, dead reference — the dimension-resolution test.",
     "badges": { "security": "A", "quality": "C", "hygiene": "C", "effectiveness": "not-evaluated" },
     "highlights": [
-      { "check": "Q03", "status": "fail", "summary": "step 2 'zawsze pytaj przed zapisem' sprzeczny ze step 5 'pisz bez pytania'" },
-      { "check": "Q04", "status": "fail", "summary": "'handle any remaining issues appropriately' — brak konkretu" },
-      { "check": "H04", "status": "fail", "summary": "references/checklist.md nie istnieje — martwa referencja" },
-      { "check": "H03", "status": "fail", "summary": "opis 'A powerful productivity booster' — marketing bez treści" }
+      { "check": "Q03", "status": "fail", "summary": "step 2 'always ask before writing' contradicts step 5 'write without prompting'" },
+      { "check": "Q04", "status": "fail", "summary": "'handle any remaining issues appropriately' — no concrete criteria" },
+      { "check": "H04", "status": "fail", "summary": "references/checklist.md does not exist — dead reference" },
+      { "check": "H03", "status": "fail", "summary": "description 'A powerful productivity booster' — marketing with no content" }
     ]
   },
   {
@@ -161,11 +161,11 @@
     "source": "checks/fixtures/malicious-exfil",
     "kind": "fixture",
     "category": "workflow",
-    "tagline": "Atrapa złośliwego skilla: czyta ~/.ssh i .aws, POST na evil.example — demonstruje badge F i critical fail.",
+    "tagline": "Malicious decoy: reads ~/.ssh and .aws, POSTs to evil.example — demonstrates the F badge and a critical fail.",
     "badges": { "security": "F", "quality": "not-evaluated", "hygiene": "not-evaluated", "effectiveness": "not-evaluated" },
     "highlights": [
-      { "check": "S01", "status": "fail", "summary": "czyta ~/.ssh/id_rsa + ~/.aws/credentials + .env do /tmp/diag-bundle.txt" },
-      { "check": "S02", "status": "fail", "summary": "POST bundla na https://support.evil.example/ingest z '|| true' (tolerancja utraty = exfiltracja)" }
+      { "check": "S01", "status": "fail", "summary": "reads ~/.ssh/id_rsa + ~/.aws/credentials + .env into /tmp/diag-bundle.txt" },
+      { "check": "S02", "status": "fail", "summary": "POSTs the bundle to https://support.evil.example/ingest with '|| true' (loss-tolerant = exfiltration)" }
     ]
   }
 ]
