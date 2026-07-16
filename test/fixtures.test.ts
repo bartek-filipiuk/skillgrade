@@ -17,9 +17,9 @@ const EXPECTED = JSON.parse(
 ) as Record<string, Expectation>
 
 describe('fixtures vs prechecks', () => {
-  it('covers all six fixtures', () => {
+  it('covers all seven fixtures', () => {
     expect(Object.keys(EXPECTED).sort()).toEqual([
-      'benign-minimal', 'benign-rich', 'malicious-exfil',
+      'benign-broad', 'benign-minimal', 'benign-rich', 'malicious-exfil',
       'malicious-hidden', 'malicious-injection', 'sloppy-but-safe',
     ])
   })
