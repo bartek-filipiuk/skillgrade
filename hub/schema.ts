@@ -34,6 +34,8 @@ export const CatalogEntrySchema = z.object({
   source: z.string().min(1),
   sourceUrl: z.string().url().optional(), // link to the original (public skills); the hub links, never copies
   kind: z.enum(['skill', 'fixture']), // fixtures demonstrate the full badge range honestly
+  featured: z.boolean().optional(), // pinned to the top with a distinct frame
+  featuredOrder: z.number().int().optional(), // order among featured (ascending); default large
   category: z.enum(CATEGORY_IDS),
   tagline: z.string().min(1).max(140),
   badges: z.object({

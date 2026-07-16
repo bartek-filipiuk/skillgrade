@@ -29,6 +29,8 @@ interface EvalInput {
   evaluator?: CatalogEntry['evaluator'] // who actually graded it; defaults to native
   evaluatedAt?: string // override the build timestamp (e.g. from a CLI report)
   preCheck?: CatalogEntry['preCheck'] // pre-supplied facts; else runPreChecks(e.source)
+  featured?: boolean
+  featuredOrder?: number
 }
 
 function buildEntry(e: EvalInput, evaluatedAt: string): CatalogEntry {

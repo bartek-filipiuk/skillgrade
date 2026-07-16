@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T11:30:05.430Z",
+  "generatedAt": "2026-07-16T15:42:13.531Z",
   "rubricVersion": "0.1.2",
   "taxonomy": [
     {
@@ -59,6 +59,8 @@
       "source": "github.com/bartek-filipiuk/cv-master",
       "sourceUrl": "https://github.com/bartek-filipiuk/cv-master",
       "kind": "skill",
+      "featured": true,
+      "featuredOrder": 1,
       "category": "content",
       "tagline": "Edits, translates, restyles or generates a CV/resume from a PDF, DOCX, link or raw data — outputs editable HTML + a verified PDF.",
       "badges": {
@@ -93,7 +95,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T11:30:05.430Z",
+      "evaluatedAt": "2026-07-16T15:42:13.531Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -138,7 +140,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T11:30:05.430Z",
+      "evaluatedAt": "2026-07-16T15:42:13.531Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -183,7 +185,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T11:30:05.430Z",
+      "evaluatedAt": "2026-07-16T15:42:13.531Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -228,7 +230,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T11:30:05.430Z",
+      "evaluatedAt": "2026-07-16T15:42:13.531Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -412,6 +414,226 @@
       "evaluator": {
         "mode": "cli",
         "model": "google/gemini-2.5-flash"
+      }
+    },
+    {
+      "name": "humanizer",
+      "source": "ClawHub · @biostartechnology/humanizer · 700★",
+      "sourceUrl": "https://clawhub.ai/biostartechnology/humanizer",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "Popular ClawHub skill (700★): strips AI-generated tells from text to give writing a more natural human voice.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "S02",
+          "status": "not-applicable",
+          "summary": "Pure text transformation — no network, secret access, or code execution anywhere (security is n/a or pass throughout)."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / out-of-scope guidance — could misfire on adjacent writing tasks."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 17781,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T15:42:13.531Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-fable-5"
+      }
+    },
+    {
+      "name": "gog",
+      "source": "ClawHub · @steipete/gog · 941★",
+      "sourceUrl": "https://clawhub.ai/steipete/gog",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Popular ClawHub skill (941★): a CLI for Google Workspace — Gmail, Calendar, Drive, Contacts, Sheets and Docs.",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "S01",
+          "status": "pass",
+          "summary": "Handles the user's own OAuth token locally and talks only to Google APIs — no secret exfiltration, harvesting, or unsolicited egress."
+        },
+        {
+          "check": "Q06",
+          "status": "fail",
+          "summary": "OAuth setup and every networked command can fail (missing binary, unauthenticated, expired token) with no failure handling."
+        },
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Installs from an unpinned personal Homebrew tap (steipete/tap/gogcli)."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 1747,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T15:42:13.531Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-fable-5"
+      }
+    },
+    {
+      "name": "weather",
+      "source": "ClawHub · @steipete/weather · 423★",
+      "sourceUrl": "https://clawhub.ai/steipete/weather",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Popular ClawHub skill (423★): current weather and forecasts with no API key required.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "S01",
+          "status": "pass",
+          "summary": "Fetches public weather data only — no secrets, no local data sent anywhere. Security clean."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / out-of-scope guidance (e.g. historical climate data)."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog, or dated revision notes."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 1168,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T15:42:13.531Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-fable-5"
+      }
+    },
+    {
+      "name": "imap-smtp-email",
+      "source": "ClawHub · @gzlicanyi/imap-smtp-email · 107★",
+      "sourceUrl": "https://clawhub.ai/gzlicanyi/imap-smtp-email",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "ClawHub skill (107★): reads and sends mail over IMAP/SMTP — checks new mail, fetches and sends messages.",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "S10",
+          "status": "warning",
+          "summary": "Falls back to a plaintext-password .env in the skill dir (600-perm, app-passwords recommended) — credentials stay local and are never echoed or sent anywhere but the user's own servers."
+        },
+        {
+          "check": "S07",
+          "status": "warning",
+          "summary": "Advises *_REJECT_UNAUTHORIZED=false for self-signed certs — weakens TLS verification."
+        },
+        {
+          "check": "Q03",
+          "status": "fail",
+          "summary": "Config-precedence contradiction between lines 36 and 63 (which .env is checked first)."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 9565,
+        "criticalFlags": 1,
+        "majorFlags": 9
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T15:42:13.531Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-fable-5"
+      }
+    },
+    {
+      "name": "superdesign",
+      "source": "ClawHub · @mpociot/superdesign · 192★",
+      "sourceUrl": "https://clawhub.ai/mpociot/superdesign",
+      "kind": "skill",
+      "category": "build",
+      "tagline": "ClawHub skill (192★): expert front-end guidelines for building modern, polished user interfaces.",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "H02",
+          "status": "fail",
+          "summary": "Frontmatter name is 'frontend-design' but the directory is 'superdesign/' — a name mismatch that also collides with a different skill."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' guidance; 'any user interface' invites misfire."
+        },
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Loads lucide@latest from unpkg (unpinned CDN dependency)."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 6177,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T15:42:13.531Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-fable-5"
       }
     }
   ]
