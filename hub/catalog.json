@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T20:55:18.099Z",
+  "generatedAt": "2026-07-16T20:58:13.113Z",
   "rubricVersion": "0.1.2",
   "taxonomy": [
     {
@@ -73,9 +73,9 @@
       "overall": "A",
       "highlights": [
         {
-          "check": "S02",
-          "status": "pass",
-          "summary": "Bundled scripts are read-only (poppler PDF triage, tool probes); the only network call is a status-code-only ping to fonts.googleapis.com with no data sent — verified safe."
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog, or dated revision notes in SKILL.md or README."
         },
         {
           "check": "S12",
@@ -83,9 +83,9 @@
           "summary": "Install hints (e.g. pip install pillow) are well-known default-registry packages but unpinned; user-run only."
         },
         {
-          "check": "H08",
-          "status": "fail",
-          "summary": "No version field, changelog, or dated revision notes in SKILL.md or README."
+          "check": "S02",
+          "status": "pass",
+          "summary": "Bundled scripts are read-only (poppler PDF triage, tool probes); the only network call is a status-code-only ping to fonts.googleapis.com with no data sent — verified safe."
         }
       ],
       "preCheck": {
@@ -96,7 +96,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -119,11 +119,6 @@
       "overall": "B",
       "highlights": [
         {
-          "check": "S01",
-          "status": "pass",
-          "summary": "Writes learnings to workspace files for its declared purpose — not secret exfiltration (a weak evaluator over-flags this)."
-        },
-        {
           "check": "Q03",
           "status": "warning",
           "summary": "The stated Pattern-Key format says hyphenated, but the doc's own examples use underscores — a self-inconsistency."
@@ -132,6 +127,11 @@
           "check": "H05",
           "status": "warning",
           "summary": "588-line SKILL.md is over the ~500-line budget (still under 2×)."
+        },
+        {
+          "check": "S01",
+          "status": "pass",
+          "summary": "Writes learnings to workspace files for its declared purpose — not secret exfiltration (a weak evaluator over-flags this)."
         }
       ],
       "preCheck": {
@@ -142,7 +142,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -165,11 +165,6 @@
       "overall": "B",
       "highlights": [
         {
-          "check": "S06",
-          "status": "pass",
-          "summary": "Lists attack patterns (curl|bash, ~/.ssh, base64) as things to DETECT — correctly read as detection material, not an attack; layer-1 flags 3, the rubric de-escalates."
-        },
-        {
           "check": "Q02",
           "status": "fail",
           "summary": "No 'NOT for' / out-of-scope guidance — could misfire on general code review."
@@ -178,6 +173,11 @@
           "check": "H07",
           "status": "warning",
           "summary": "jq is invoked with no requirements note or availability check."
+        },
+        {
+          "check": "S06",
+          "status": "pass",
+          "summary": "Lists attack patterns (curl|bash, ~/.ssh, base64) as things to DETECT — correctly read as detection material, not an attack; layer-1 flags 3, the rubric de-escalates."
         }
       ],
       "preCheck": {
@@ -188,7 +188,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -234,7 +234,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -257,14 +257,14 @@
       "overall": "A",
       "highlights": [
         {
-          "check": "S12",
-          "status": "warning",
-          "summary": "The `mcp` package is pinned to a minimum version (>=1.1.0) rather than an exact version — minor supply-chain looseness."
-        },
-        {
           "check": "H08",
           "status": "fail",
           "summary": "No versioning signal (version field or changelog) in frontmatter or body."
+        },
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "The `mcp` package is pinned to a minimum version (>=1.1.0) rather than an exact version — minor supply-chain looseness."
         },
         {
           "check": "S06",
@@ -303,14 +303,14 @@
       "overall": "C",
       "highlights": [
         {
-          "check": "Q02",
-          "status": "fail",
-          "summary": "The description and body never say when NOT to use the skill — no negative triggers."
-        },
-        {
           "check": "Q05",
           "status": "fail",
           "summary": "Describes its capabilities but does not define a final deliverable format or location."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "The description and body never say when NOT to use the skill — no negative triggers."
         },
         {
           "check": "H08",
@@ -349,14 +349,14 @@
       "overall": "D",
       "highlights": [
         {
-          "check": "Q02",
-          "status": "fail",
-          "summary": "The description is very broad and does not specify when NOT to use the skill."
-        },
-        {
           "check": "Q05",
           "status": "fail",
           "summary": "Describes many operations but defines no final deliverable format or location for any of them."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "The description is very broad and does not specify when NOT to use the skill."
         },
         {
           "check": "H02",
@@ -395,19 +395,19 @@
       "overall": "D",
       "highlights": [
         {
-          "check": "Q03",
+          "check": "Q02",
           "status": "fail",
-          "summary": "Forbids using /skill-test in one place, then references skipping evaluation in the Claude.ai path — an internal contradiction."
+          "summary": "No 'NOT for' / exclusion / out-of-scope language anywhere in description or body."
         },
         {
-          "check": "Q04",
+          "check": "H08",
           "status": "fail",
-          "summary": "Several instructions rely on subjective judgment ('different metaphors', 'something greater') without decidable criteria."
+          "summary": "No version field, changelog section, or dated revision notes anywhere in the file."
         },
         {
-          "check": "S03",
-          "status": "pass",
-          "summary": "The __EVAL_DATA_PLACEHOLDER__ is a template placeholder, not a piped-shell command — correctly not flagged (weak models mis-flag this)."
+          "check": "Q06",
+          "status": "warning",
+          "summary": "Packaging failure is addressed, but the equally risky init_skill.py step (Step 3) has no stated failure handling."
         }
       ],
       "preCheck": {
@@ -441,14 +441,14 @@
       "overall": "A",
       "highlights": [
         {
-          "check": "S02",
-          "status": "not-applicable",
-          "summary": "Pure text transformation — no network, secret access, or code execution anywhere (security is n/a or pass throughout)."
-        },
-        {
           "check": "Q02",
           "status": "fail",
           "summary": "No 'NOT for' / out-of-scope guidance — could misfire on adjacent writing tasks."
+        },
+        {
+          "check": "S02",
+          "status": "not-applicable",
+          "summary": "Pure text transformation — no network, secret access, or code execution anywhere (security is n/a or pass throughout)."
         }
       ],
       "preCheck": {
@@ -459,7 +459,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -482,11 +482,6 @@
       "overall": "C",
       "highlights": [
         {
-          "check": "S01",
-          "status": "pass",
-          "summary": "Handles the user's own OAuth token locally and talks only to Google APIs — no secret exfiltration, harvesting, or unsolicited egress."
-        },
-        {
           "check": "Q06",
           "status": "fail",
           "summary": "OAuth setup and every networked command can fail (missing binary, unauthenticated, expired token) with no failure handling."
@@ -495,6 +490,11 @@
           "check": "S12",
           "status": "warning",
           "summary": "Installs from an unpinned personal Homebrew tap (steipete/tap/gogcli)."
+        },
+        {
+          "check": "S01",
+          "status": "pass",
+          "summary": "Handles the user's own OAuth token locally and talks only to Google APIs — no secret exfiltration, harvesting, or unsolicited egress."
         }
       ],
       "preCheck": {
@@ -505,7 +505,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -528,11 +528,6 @@
       "overall": "B",
       "highlights": [
         {
-          "check": "S01",
-          "status": "pass",
-          "summary": "Fetches public weather data only — no secrets, no local data sent anywhere. Security clean."
-        },
-        {
           "check": "Q02",
           "status": "fail",
           "summary": "No 'NOT for' / out-of-scope guidance (e.g. historical climate data)."
@@ -541,6 +536,11 @@
           "check": "H08",
           "status": "fail",
           "summary": "No version field, changelog, or dated revision notes."
+        },
+        {
+          "check": "S01",
+          "status": "pass",
+          "summary": "Fetches public weather data only — no secrets, no local data sent anywhere. Security clean."
         }
       ],
       "preCheck": {
@@ -551,7 +551,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -574,9 +574,9 @@
       "overall": "C",
       "highlights": [
         {
-          "check": "S10",
-          "status": "warning",
-          "summary": "Falls back to a plaintext-password .env in the skill dir (600-perm, app-passwords recommended) — credentials stay local and are never echoed or sent anywhere but the user's own servers."
+          "check": "Q03",
+          "status": "fail",
+          "summary": "Config-precedence contradiction between lines 36 and 63 (which .env is checked first)."
         },
         {
           "check": "S07",
@@ -584,9 +584,9 @@
           "summary": "Advises *_REJECT_UNAUTHORIZED=false for self-signed certs — weakens TLS verification."
         },
         {
-          "check": "Q03",
-          "status": "fail",
-          "summary": "Config-precedence contradiction between lines 36 and 63 (which .env is checked first)."
+          "check": "S10",
+          "status": "warning",
+          "summary": "Falls back to a plaintext-password .env in the skill dir (600-perm, app-passwords recommended) — credentials stay local and are never echoed or sent anywhere but the user's own servers."
         }
       ],
       "preCheck": {
@@ -597,7 +597,7 @@
         "majorFlags": 9
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -620,14 +620,14 @@
       "overall": "C",
       "highlights": [
         {
-          "check": "H02",
-          "status": "fail",
-          "summary": "Frontmatter name is 'frontend-design' but the directory is 'superdesign/' — a name mismatch that also collides with a different skill."
-        },
-        {
           "check": "Q02",
           "status": "fail",
           "summary": "No 'NOT for' guidance; 'any user interface' invites misfire."
+        },
+        {
+          "check": "H02",
+          "status": "fail",
+          "summary": "Frontmatter name is 'frontend-design' but the directory is 'superdesign/' — a name mismatch that also collides with a different skill."
         },
         {
           "check": "S12",
@@ -643,7 +643,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -656,7 +656,7 @@
       "kind": "skill",
       "category": "workflow",
       "tagline": "ClawHub (1.3k★): Self-reflection + Self-criticism + Self-learning + Self-organizing memory. Agent evaluates its own work, catches mistakes,",
-      "verdict": "Contradicts its own scope section: it lists an exhaustive 'ONLY does these four things' list, then does something else entirely elsewhere in the file. The name field also isn't proper kebab-case, and there's no guidance on when not to use it despite overlapping with several similar skills.",
+      "verdict": "Setup silently writes persistent steering into your workspace files (AGENTS.md/SOUL.md), beyond the advertised self-reflection memory -- reshaping the agent's future behavior without disclosure. It also contradicts its own stated scope and gives no 'not for' guidance, inviting misfires against overlapping memory skills.",
       "badges": {
         "security": "A",
         "quality": "C",
@@ -666,19 +666,19 @@
       "overall": "C",
       "highlights": [
         {
-          "check": "H02",
+          "check": "S11",
           "status": "fail",
-          "summary": "name field is not kebab-case (spaces, uppercase, plus sign); a separate slug field is kebab-case but the check judges name."
-        },
-        {
-          "check": "Q02",
-          "status": "fail",
-          "summary": "No 'NOT for' / exclusion / pointer-to-other-skill language appears anywhere in the file, despite closely related skills (memory, learning, decide, escalate) being listed, so misfir"
+          "summary": "Description only advertises self-reflection/correction-learning stored under ~/self-improving/; it never mentions that setup also writes persistent 'steering' into the user's works"
         },
         {
           "check": "Q03",
           "status": "fail",
           "summary": "Contradicts the 'Scope' section's exhaustive 'This skill ONLY' list (lines 215-219), which enumerates four behaviors — none of which is writing to workspace AGENTS.md/SOUL.md/HEART"
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion / pointer-to-other-skill language appears anywhere in the file, despite closely related skills (memory, learning, decide, escalate) being listed, so misfir"
         }
       ],
       "preCheck": {
@@ -689,7 +689,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -712,11 +712,6 @@
       "overall": "C",
       "highlights": [
         {
-          "check": "H07",
-          "status": "fail",
-          "summary": "Skill relies throughout on non-universal tools (memory_search, session_status, cron, trash) with no requirements/availability-check section anywhere; failures are only discovered a"
-        },
-        {
           "check": "Q01",
           "status": "fail",
           "summary": "Description states what the skill is/does and lists feature names, but gives no 'use when' cue, task type, or example phrasing a dispatching agent could match against."
@@ -725,6 +720,11 @@
           "check": "Q02",
           "status": "fail",
           "summary": "No 'NOT for' / 'out of scope' / pointer-to-other-skill language appears anywhere in the description or body, despite this being a broad, persistent behavioral overlay that could ea"
+        },
+        {
+          "check": "Q07",
+          "status": "fail",
+          "summary": "17 largely independent, only-sometimes-needed topics (Tool Migration Checklist, Growth Loops, Heartbeat System, ADL/VFM, Six Pillars, etc.) are all pasted inline in one 631-line SK"
         }
       ],
       "preCheck": {
@@ -735,7 +735,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -758,11 +758,6 @@
       "overall": "F",
       "highlights": [
         {
-          "check": "Q02",
-          "status": "fail",
-          "summary": "Neither the description nor the body contains any 'NOT for' / out-of-scope / pointer-to-other-skill language, despite this being a broad general-purpose search skill likely to over"
-        },
-        {
           "check": "Q03",
           "status": "fail",
           "summary": "Directly contradicts the skill's own core workflow, which fetches 16 external search-engine URLs via web_fetch, e.g. line 16: 'Use web_fetch to execute search requests with rate li"
@@ -771,6 +766,11 @@
           "check": "Q05",
           "status": "fail",
           "summary": "No format, location, or required sections are specified for the 'core search report' deliverable."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "Neither the description nor the body contains any 'NOT for' / out-of-scope / pointer-to-other-skill language, despite this being a broad general-purpose search skill likely to over"
         }
       ],
       "preCheck": {
@@ -781,7 +781,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -804,9 +804,9 @@
       "overall": "C",
       "highlights": [
         {
-          "check": "H08",
+          "check": "Q06",
           "status": "fail",
-          "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
+          "summary": "No mention anywhere of what to do if `gh` is missing, unauthenticated, or a command/API call fails — total silence across a multi-step external-tool-dependent flow."
         },
         {
           "check": "Q02",
@@ -814,9 +814,9 @@
           "summary": "No 'NOT for' / out-of-scope / pointer-to-other-skill language anywhere in the description or body; the skill's scope is broad enough (general GitHub interaction) that exclusions wo"
         },
         {
-          "check": "Q06",
+          "check": "H08",
           "status": "fail",
-          "summary": "No mention anywhere of what to do if `gh` is missing, unauthenticated, or a command/API call fails — total silence across a multi-step external-tool-dependent flow."
+          "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
         }
       ],
       "preCheck": {
@@ -827,7 +827,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -850,6 +850,11 @@
       "overall": "C",
       "highlights": [
         {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion language anywhere in the file, despite broad triggers ('model switching', 'reduce AI costs') that could misfire on non-OpenRouter or non-OpenClaw cost/mode"
+        },
+        {
           "check": "H02",
           "status": "fail",
           "summary": "Skill directory is free-ride but frontmatter name is freeride (no hyphen) — mismatch per H02 rule."
@@ -858,11 +863,6 @@
           "check": "H08",
           "status": "fail",
           "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
-        },
-        {
-          "check": "Q02",
-          "status": "fail",
-          "summary": "No 'NOT for' / exclusion language anywhere in the file, despite broad triggers ('model switching', 'reduce AI costs') that could misfire on non-OpenRouter or non-OpenClaw cost/mode"
         }
       ],
       "preCheck": {
@@ -873,7 +873,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -896,19 +896,19 @@
       "overall": "B",
       "highlights": [
         {
-          "check": "H08",
-          "status": "fail",
-          "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
-        },
-        {
           "check": "Q06",
           "status": "fail",
           "summary": "The whole multi-step workflow (network navigation, external CLI tool, file-based state load/save, installation) has zero mention anywhere of what to do if a command fails, the tool"
         },
         {
-          "check": "Q01",
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
+        },
+        {
+          "check": "S12",
           "status": "warning",
-          "summary": "States what the tool is but names no concrete trigger situations or example user phrasings in the description field itself; the 'when to use' guidance only appears in the body (## "
+          "summary": "Global install with no version pin (`@latest` implied); publisher is credited (Vercel Labs) so not a typosquat/rogue-registry case, but unpinned install of a well-known package is "
         }
       ],
       "preCheck": {
@@ -919,7 +919,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -942,14 +942,14 @@
       "overall": "C",
       "highlights": [
         {
-          "check": "H08",
-          "status": "fail",
-          "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
-        },
-        {
           "check": "Q02",
           "status": "fail",
           "summary": "No 'NOT for' / exclusion / out-of-scope guidance appears anywhere in the description or body, despite the skill covering multiple distinct operations (search, create, move, delete)"
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
         },
         {
           "check": "Q06",
@@ -965,7 +965,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -988,19 +988,19 @@
       "overall": "C",
       "highlights": [
         {
-          "check": "Q02",
-          "status": "fail",
-          "summary": "No 'NOT for' / exclusion / out-of-scope guidance anywhere in description or body; skill has multiple sub-flows (setup, manual commands, troubleshooting) so misfire is not implausib"
-        },
-        {
           "check": "Q10",
           "status": "fail",
           "summary": "Setup instructs adding a cron job by name with no check for an existing 'Daily Auto-Update' job first; re-running the Quick Start/manual setup would create duplicate cron entries."
         },
         {
-          "check": "Q01",
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion / out-of-scope guidance anywhere in description or body; skill has multiple sub-flows (setup, manual commands, troubleshooting) so misfire is not implausib"
+        },
+        {
+          "check": "S12",
           "status": "warning",
-          "summary": "Describes what the skill does in detail but never states a triggering phrase or 'use when' cue for a dispatching agent."
+          "summary": "Global install/update uses unpinned @latest; per rubric guidance this is warning-level even for a well-known/first-party package, since no version is pinned."
         }
       ],
       "preCheck": {
@@ -1011,7 +1011,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1034,14 +1034,14 @@
       "overall": "B",
       "highlights": [
         {
-          "check": "H08",
-          "status": "fail",
-          "summary": "No version field, changelog, or dated revision notes anywhere in the file."
-        },
-        {
           "check": "Q02",
           "status": "fail",
           "summary": "No 'NOT for' / exclusion / pointer-to-other-skill language anywhere in description or body."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog, or dated revision notes anywhere in the file."
         }
       ],
       "preCheck": {
@@ -1052,7 +1052,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1075,11 +1075,6 @@
       "overall": "C",
       "highlights": [
         {
-          "check": "H05",
-          "status": "fail",
-          "summary": "File is 1555 lines / ~69KB, roughly 3x the ~500-line/25KB budget (bulk Supported Services table + duplicated per-provider reference link list inline)."
-        },
-        {
           "check": "Q02",
           "status": "fail",
           "summary": "No 'NOT for'/out-of-scope/pointer-to-other-skill language appears anywhere in the description or body, despite the skill covering ~150 different services where misfire against dedi"
@@ -1088,6 +1083,11 @@
           "check": "Q07",
           "status": "fail",
           "summary": "Beyond the 150+ row Supported Services table, a second ~150-line list duplicating the same providers with links follows this line, all inline in SKILL.md despite an obvious per-pro"
+        },
+        {
+          "check": "H05",
+          "status": "fail",
+          "summary": "File is 1555 lines / ~69KB, roughly 3x the ~500-line/25KB budget (bulk Supported Services table + duplicated per-provider reference link list inline)."
         }
       ],
       "preCheck": {
@@ -1098,7 +1098,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1121,19 +1121,19 @@
       "overall": "F",
       "highlights": [
         {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / out-of-scope / pointer-to-other-skill language anywhere in the file, despite the skill's scope (broad desktop automation) being plausible to misfire against adjacent"
+        },
+        {
+          "check": "Q07",
+          "status": "fail",
+          "summary": "The full multi-function API reference (lines ~84-403) plus the exhaustive Key Names Reference table (lines ~406-450) are pasted inline in SKILL.md with no references/ split, despit"
+        },
+        {
           "check": "H01",
           "status": "fail",
           "summary": "Frontmatter block (lines 1-3) contains only a `description` field; there is no `name` field at all, so the required non-empty name is absent."
-        },
-        {
-          "check": "H02",
-          "status": "fail",
-          "summary": "No `name` value exists in frontmatter to check against kebab-case or the directory name (`desktop-control/`) — naming requirement is violated by omission."
-        },
-        {
-          "check": "H08",
-          "status": "fail",
-          "summary": "No version field in frontmatter, no changelog heading, and no dated revision notes anywhere in the document."
         }
       ],
       "preCheck": {
@@ -1144,7 +1144,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1167,19 +1167,19 @@
       "overall": "D",
       "highlights": [
         {
-          "check": "H02",
-          "status": "fail",
-          "summary": "name is not kebab-case (spaces, slash, uppercase) against ^[a-z0-9]+(-[a-z0-9]+)*$; the separate `slug: word-docx` field matches the directory but the rubric judges the `name` fiel"
-        },
-        {
-          "check": "Q02",
-          "status": "fail",
-          "summary": "The 'Related Skills' list names adjacent skills to install alongside, but nowhere does the file say 'NOT for X, use Y instead' or otherwise state out-of-scope cases; no exclusion p"
-        },
-        {
           "check": "Q04",
           "status": "fail",
           "summary": "The entire skill is conceptual guidance with no named commands, tools, or scripts anywhere — 'inspect the package layout', 'use OOXML-aware editing', 'extend the current style syst"
+        },
+        {
+          "check": "Q05",
+          "status": "fail",
+          "summary": "Despite a section titled 'before delivery' and three declared job modes (create/inspect/edit), no file path, report shape, or required-fields format is ever specified for what the "
+        },
+        {
+          "check": "Q06",
+          "status": "fail",
+          "summary": "The skill catalogs many ways edits can silently fail (renumbering, orphaned comments, stale fields, layout drift) but never once states a detection step, fallback, or stop-and-repo"
         }
       ],
       "preCheck": {
@@ -1190,7 +1190,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1213,19 +1213,19 @@
       "overall": "C",
       "highlights": [
         {
-          "check": "Q02",
-          "status": "fail",
-          "summary": "No 'NOT for'/exclusion language appears anywhere in the file; nothing distinguishes this from non-YouTube video/audio summarization requests."
-        },
-        {
           "check": "Q05",
           "status": "fail",
           "summary": "No format, location, or shape is defined for either the script's output or the final deliverable — matches the rubric's own fail example almost verbatim."
         },
         {
-          "check": "Q06",
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for'/exclusion language appears anywhere in the file; nothing distinguishes this from non-YouTube video/audio summarization requests."
+        },
+        {
+          "check": "S12",
           "status": "warning",
-          "summary": "One failure path (no captions) is covered, but the equally likely 'yt-dlp not installed/available' case is only declared as a requirement (line 46) with no stated fallback or stop-"
+          "summary": "yt-dlp is a well-known legitimate tool installed via standard Homebrew/pip registries with correct spelling (no typosquat, no registry override), but neither install entry pins a v"
         }
       ],
       "preCheck": {
@@ -1236,7 +1236,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1264,14 +1264,14 @@
           "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
         },
         {
-          "check": "Q01",
-          "status": "warning",
-          "summary": "States capability and technology (speech-to-text, Whisper CLI, no API key) but has no explicit 'use when' cue or example user phrasing — says what it does, not when to invoke it."
-        },
-        {
           "check": "S12",
           "status": "warning",
           "summary": "Install source is the standard Homebrew registry with an exact, well-known formula name (no typosquat, no ad-hoc registry) but no version is pinned — matches the rubric's 'well-kno"
+        },
+        {
+          "check": "Q01",
+          "status": "warning",
+          "summary": "States capability and technology (speech-to-text, Whisper CLI, no API key) but has no explicit 'use when' cue or example user phrasing — says what it does, not when to invoke it."
         }
       ],
       "preCheck": {
@@ -1282,7 +1282,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1305,19 +1305,19 @@
       "overall": "C",
       "highlights": [
         {
-          "check": "H08",
-          "status": "fail",
-          "summary": "No version field, changelog section, or dated revision notes anywhere in the file."
-        },
-        {
           "check": "Q02",
           "status": "fail",
           "summary": "No 'NOT for' / exclusion / out-of-scope language anywhere in description or body."
         },
         {
-          "check": "H07",
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog section, or dated revision notes anywhere in the file."
+        },
+        {
+          "check": "Q06",
           "status": "warning",
-          "summary": "Invokes a bundled Python script (init_skill.py / package_skill.py) with no stated python3 requirement or availability check anywhere in the document."
+          "summary": "Packaging failure is addressed, but the equally risky init_skill.py step (Step 3) has no stated failure handling."
         }
       ],
       "preCheck": {
@@ -1328,7 +1328,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1351,14 +1351,14 @@
       "overall": "B",
       "highlights": [
         {
-          "check": "H08",
-          "status": "fail",
-          "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
-        },
-        {
           "check": "Q02",
           "status": "fail",
           "summary": "Description and body list only positive triggers; nowhere does the skill say what it is NOT for or point to a better-suited skill for adjacent tasks (e.g. coded/CI automation, sing"
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
         }
       ],
       "preCheck": {
@@ -1369,7 +1369,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1392,14 +1392,14 @@
       "overall": "B",
       "highlights": [
         {
-          "check": "H02",
-          "status": "fail",
-          "summary": "name is not kebab-case (spaces, capitals, a '+'); the separate slug field 'decision-making' (line 3) is kebab-case but does not match the bulk export directory name 'neosoul-decisi"
-        },
-        {
           "check": "Q09",
           "status": "fail",
           "summary": "The bespoke retrospective log format and the Decision Stats format (156-172) are given only as bracket-placeholder templates; neither is ever shown filled in with a real, concrete "
+        },
+        {
+          "check": "H02",
+          "status": "fail",
+          "summary": "name is not kebab-case (spaces, capitals, a '+'); the separate slug field 'decision-making' (line 3) is kebab-case but does not match the bulk export directory name 'neosoul-decisi"
         },
         {
           "check": "Q02",
@@ -1415,7 +1415,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1438,9 +1438,9 @@
       "overall": "C",
       "highlights": [
         {
-          "check": "H08",
+          "check": "Q06",
           "status": "fail",
-          "summary": "No version field in frontmatter, no changelog section, no dated revision notes for the skill itself anywhere in the file (the 'Version Tracking' section tracks Clawdbot's own docs,"
+          "summary": "Multiple network/tool-dependent steps (doc fetching, qmd-based indexing, cache refresh) with no mention anywhere of what to do if a fetch fails, qmd is missing, or a script errors."
         },
         {
           "check": "Q02",
@@ -1448,9 +1448,9 @@
           "summary": "No 'NOT for' / out-of-scope / pointer-to-other-skill text appears anywhere in description or body."
         },
         {
-          "check": "Q06",
+          "check": "H08",
           "status": "fail",
-          "summary": "Multiple network/tool-dependent steps (doc fetching, qmd-based indexing, cache refresh) with no mention anywhere of what to do if a fetch fails, qmd is missing, or a script errors."
+          "summary": "No version field in frontmatter, no changelog section, no dated revision notes for the skill itself anywhere in the file (the 'Version Tracking' section tracks Clawdbot's own docs,"
         }
       ],
       "preCheck": {
@@ -1461,7 +1461,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1497,7 +1497,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1520,9 +1520,9 @@
       "overall": "C",
       "highlights": [
         {
-          "check": "H02",
+          "check": "Q02",
           "status": "fail",
-          "summary": "name field is not kebab-case (contains spaces, slash, uppercase); the separate slug field (excel-xlsx) is kebab-case but H02 judges the name field itself."
+          "summary": "No 'NOT for' / exclusion / out-of-scope language anywhere in the skill; 'Related Skills' lists sibling install options but never states when this skill should be skipped in favor o"
         },
         {
           "check": "H07",
@@ -1530,9 +1530,9 @@
           "summary": "pandas and openpyxl are invoked as core dependencies throughout the skill with no requirements section, install step, or availability check; metadata even declares requires.bins as"
         },
         {
-          "check": "Q02",
+          "check": "H02",
           "status": "fail",
-          "summary": "No 'NOT for' / exclusion / out-of-scope language anywhere in the skill; 'Related Skills' lists sibling install options but never states when this skill should be skipped in favor o"
+          "summary": "name field is not kebab-case (contains spaces, slash, uppercase); the separate slug field (excel-xlsx) is kebab-case but H02 judges the name field itself."
         }
       ],
       "preCheck": {
@@ -1543,7 +1543,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1584,7 +1584,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1607,19 +1607,19 @@
       "overall": "D",
       "highlights": [
         {
-          "check": "H08",
+          "check": "Q06",
           "status": "fail",
-          "summary": "No version field in frontmatter and no changelog/dated revision notes anywhere in the file; the 'Notion-Version: 2025-09-03' header (line 34) is the wrapped API's version, not the "
+          "summary": "No check that the key file exists/is non-empty before use, and no guidance anywhere for handling curl failures, 401/403 auth errors, or the rate limit mentioned at line 155 — total"
+        },
+        {
+          "check": "Q10",
+          "status": "fail",
+          "summary": "The create-page (and create-data-source) operations have no existence check before creating; running the same step twice produces a duplicate page/database with no detection or ski"
         },
         {
           "check": "Q02",
           "status": "fail",
           "summary": "No 'NOT for' / out-of-scope / pointer-to-other-skill language appears anywhere in the description or body; the skill has multiple operations (search, CRUD on pages/data sources), s"
-        },
-        {
-          "check": "Q06",
-          "status": "fail",
-          "summary": "No check that the key file exists/is non-empty before use, and no guidance anywhere for handling curl failures, 401/403 auth errors, or the rate limit mentioned at line 155 — total"
         }
       ],
       "preCheck": {
@@ -1630,7 +1630,7 @@
         "majorFlags": 4
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1653,19 +1653,19 @@
       "overall": "C",
       "highlights": [
         {
-          "check": "H08",
-          "status": "fail",
-          "summary": "No version field in frontmatter, no changelog section, no dated revision notes anywhere in the file."
-        },
-        {
           "check": "Q06",
           "status": "fail",
           "summary": "The skill's entire flow depends on a working external API call, yet nowhere does it say what to do if the key is missing/invalid, the script errors, or the network/API call fails —"
         },
         {
-          "check": "H02",
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter, no changelog section, no dated revision notes anywhere in the file."
+        },
+        {
+          "check": "H07",
           "status": "warning",
-          "summary": "name is valid kebab-case, but the exposed path's directory is 'openclaw-tavily-search', not 'tavily-search'; this looks like a bulk-export naming artifact (prefixing the source app"
+          "summary": "python3 is used in every command but is never listed in the Requirements section or checked for availability (only the API key is called out as a requirement)."
         }
       ],
       "preCheck": {
@@ -1676,7 +1676,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1699,11 +1699,6 @@
       "overall": "C",
       "highlights": [
         {
-          "check": "Q02",
-          "status": "fail",
-          "summary": "No 'NOT for' / exclusion / out-of-scope language appears anywhere in the description or body."
-        },
-        {
           "check": "Q06",
           "status": "fail",
           "summary": "Multiple external-dependency flows (Yahoo Finance, CoinGecko, Google News, Twitter auth, SEC EDGAR) have no stated behavior for missing tools, failed fetches, or absent auth anywhe"
@@ -1712,6 +1707,11 @@
           "check": "Q10",
           "status": "fail",
           "summary": "Portfolio add and watchlist add are accumulating operations with no mention of checking for an existing identical entry before appending, so a second run would duplicate holdings/w"
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion / out-of-scope language appears anywhere in the description or body."
         }
       ],
       "preCheck": {
@@ -1722,7 +1722,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1745,9 +1745,9 @@
       "overall": "C",
       "highlights": [
         {
-          "check": "H08",
+          "check": "Q06",
           "status": "fail",
-          "summary": "No version field in frontmatter and no changelog/dated-revision section anywhere in the body; the --changelog flag shown is an argument for skills being published TO clawdhub, not "
+          "summary": "Multi-step flow depends on npm install, an auth step (login), and repeated network calls to a registry, but nothing anywhere states what to do if install fails, login fails, or a n"
         },
         {
           "check": "Q02",
@@ -1755,9 +1755,9 @@
           "summary": "No 'NOT for' / exclusion / pointer-to-alternative language anywhere in description or body, despite the skill covering multiple overlapping actions (search/install/update/publish) "
         },
         {
-          "check": "Q06",
+          "check": "H08",
           "status": "fail",
-          "summary": "Multi-step flow depends on npm install, an auth step (login), and repeated network calls to a registry, but nothing anywhere states what to do if install fails, login fails, or a n"
+          "summary": "No version field in frontmatter and no changelog/dated-revision section anywhere in the body; the --changelog flag shown is an argument for skills being published TO clawdhub, not "
         }
       ],
       "preCheck": {
@@ -1768,7 +1768,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1791,14 +1791,14 @@
       "overall": "C",
       "highlights": [
         {
-          "check": "H08",
-          "status": "fail",
-          "summary": "No version field, changelog, or dated revision notes anywhere in the file."
-        },
-        {
           "check": "Q02",
           "status": "fail",
           "summary": "No 'NOT for' / exclusion text anywhere in description or body; skill covers multiple broad actions (sync/view/search/create/edit/delete) so misfire against other calendar tools is "
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog, or dated revision notes anywhere in the file."
         },
         {
           "check": "Q01",
@@ -1814,7 +1814,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1850,7 +1850,7 @@
         "majorFlags": 18
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1863,7 +1863,7 @@
       "kind": "skill",
       "category": "project-intel",
       "tagline": "ClawHub (227★): Ultimate AI agent memory system for Cursor, Claude, ChatGPT & Copilot. WAL protocol + vector search + git-notes + cloud bac",
-      "verdict": "The description reads like ad copy (\"Ultimate\", \"Never lose context again\") instead of stating concrete situations to invoke it, so a dispatching agent has no real trigger signal and may fire it wrongly or never. Security fails outright too, and there's no scope boundary to stop misfire. Needs a rewrite before trusting it.",
+      "verdict": "A maintenance step deletes paths under your home directory, flagged only as a '(nuclear option)' with no explicit confirmation gate before it runs -- a wrong path or a misfire wipes real files. The description is generic marketing copy that never says when to invoke it, or when not to, raising accidental-trigger risk.",
       "badges": {
         "security": "F",
         "quality": "D",
@@ -1873,9 +1873,9 @@
       "overall": "F",
       "highlights": [
         {
-          "check": "H03",
+          "check": "S04",
           "status": "fail",
-          "summary": "Description is marketing copy (\"Ultimate\", \"Never lose context again\", \"Vibe-coding ready\") rather than a plain, informative dispatch signal."
+          "summary": "Home-directory path deletion listed under Maintenance Commands with only a \"(nuclear option)\" inline label and no explicit user-confirmation gate immediately before the step; criti"
         },
         {
           "check": "Q01",
@@ -1896,7 +1896,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1919,19 +1919,19 @@
       "overall": "D",
       "highlights": [
         {
-          "check": "H08",
+          "check": "Q03",
           "status": "fail",
-          "summary": "No version field in frontmatter, no changelog section, no dated revision notes anywhere; 'Current Status: Fully functional' is not a change-tracking signal."
+          "summary": "Usage section states the script path as 'skills/baidu-search/scripts/search.py' (line 25), but every Examples entry (e.g. line 40: python3 scripts/search.py '{\"query\":\"人工智能\"}') dro"
+        },
+        {
+          "check": "Q05",
+          "status": "fail",
+          "summary": "Nowhere does the skill describe the shape of the script's output (JSON schema, fields, how results are presented) — only that a search happens."
         },
         {
           "check": "Q02",
           "status": "fail",
           "summary": "No 'NOT for' / exclusion / pointer-to-better-skill text anywhere in description or body, despite plausible misfire against other search-engine skills."
-        },
-        {
-          "check": "Q03",
-          "status": "fail",
-          "summary": "Usage section states the script path as 'skills/baidu-search/scripts/search.py' (line 25), but every Examples entry (e.g. line 40: python3 scripts/search.py '{\"query\":\"人工智能\"}') dro"
         }
       ],
       "preCheck": {
@@ -1942,7 +1942,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1965,14 +1965,14 @@
       "overall": "B",
       "highlights": [
         {
-          "check": "H08",
-          "status": "fail",
-          "summary": "No version field, changelog section, or dated revision notes anywhere in the file."
-        },
-        {
           "check": "Q02",
           "status": "fail",
           "summary": "No 'NOT for' / exclusion / pointer-to-other-skill language anywhere in description or body, despite covering multiple distinct subcommand areas where misfire against adjacent skill"
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog section, or dated revision notes anywhere in the file."
         }
       ],
       "preCheck": {
@@ -1983,7 +1983,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2006,9 +2006,9 @@
       "overall": "C",
       "highlights": [
         {
-          "check": "H08",
+          "check": "Q06",
           "status": "fail",
-          "summary": "No version field, changelog section, or dated revision notes anywhere in frontmatter or body."
+          "summary": "Multi-step external-dependency flow (npm ci, missing API key, network search/fetch calls) has zero guidance anywhere on what to do if any of these fail."
         },
         {
           "check": "Q02",
@@ -2016,9 +2016,9 @@
           "summary": "No \"NOT for\" / exclusion / pointer-to-better-suited-skill text anywhere in description or body, and the skill is broad enough (general web search/content extraction) to plausibly m"
         },
         {
-          "check": "Q06",
+          "check": "H08",
           "status": "fail",
-          "summary": "Multi-step external-dependency flow (npm ci, missing API key, network search/fetch calls) has zero guidance anywhere on what to do if any of these fail."
+          "summary": "No version field, changelog section, or dated revision notes anywhere in frontmatter or body."
         }
       ],
       "preCheck": {
@@ -2029,7 +2029,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2052,19 +2052,19 @@
       "overall": "C",
       "highlights": [
         {
-          "check": "H07",
+          "check": "Q06",
           "status": "fail",
-          "summary": "Assumes `uv`/`uvx` is already present with no requirements section, install hint, or availability check; the -d/-e Azure Document Intelligence path also needs a configured Azure re"
-        },
-        {
-          "check": "H08",
-          "status": "fail",
-          "summary": "No version field in frontmatter, no changelog section, no dated revision notes anywhere in the file."
+          "summary": "No mention anywhere of what to do if markitdown fails, an unsupported/corrupt file is given, the network-dependent YouTube/Azure path errors, or uvx/markitdown is missing — total s"
         },
         {
           "check": "Q02",
           "status": "fail",
           "summary": "No 'NOT for' / out-of-scope / pointer-to-other-skill text anywhere in description or body, despite the skill covering many distinct format-specific paths (Azure DI, plugins, transc"
+        },
+        {
+          "check": "H07",
+          "status": "fail",
+          "summary": "Assumes `uv`/`uvx` is already present with no requirements section, install hint, or availability check; the -d/-e Azure Document Intelligence path also needs a configured Azure re"
         }
       ],
       "preCheck": {
@@ -2075,7 +2075,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2098,14 +2098,14 @@
       "overall": "B",
       "highlights": [
         {
-          "check": "H08",
-          "status": "fail",
-          "summary": "No version field, changelog, or dated revision notes anywhere in the file."
-        },
-        {
           "check": "Q02",
           "status": "fail",
           "summary": "No 'NOT for' / exclusion / out-of-scope language anywhere in the skill, despite being a general-purpose search skill that could misfire on adjacent tasks."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog, or dated revision notes anywhere in the file."
         }
       ],
       "preCheck": {
@@ -2116,7 +2116,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2139,19 +2139,19 @@
       "overall": "D",
       "highlights": [
         {
-          "check": "H03",
+          "check": "Q06",
           "status": "fail",
-          "summary": "Description is 573 characters, over the 500-char threshold, and reads as an enumerated feature list rather than a terse dispatch string."
-        },
-        {
-          "check": "H08",
-          "status": "fail",
-          "summary": "No version field in frontmatter, no changelog section, no dated revision notes anywhere in the file."
+          "summary": "The skill depends on reading bundled data files and running an external script, but nowhere addresses missing python3, a failing script, or absent asset/reference files."
         },
         {
           "check": "Q02",
           "status": "fail",
           "summary": "No 'NOT for' / exclusion / out-of-scope language anywhere in description or body, despite the skill's broad scope overlapping adjacent skills (accessibility-only, frontend code rev"
+        },
+        {
+          "check": "H03",
+          "status": "fail",
+          "summary": "Description is 573 characters, over the 500-char threshold, and reads as an enumerated feature list rather than a terse dispatch string."
         }
       ],
       "preCheck": {
@@ -2162,7 +2162,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2185,14 +2185,14 @@
       "overall": "D",
       "highlights": [
         {
-          "check": "Q02",
-          "status": "fail",
-          "summary": "No 'NOT for' / exclusion / out-of-scope language anywhere in description or body despite an extremely broad topic surface where misfire (e.g. generic business-strategy or sales que"
-        },
-        {
           "check": "Q05",
           "status": "fail",
           "summary": "No defined deliverable shape anywhere — no file, format, or required sections for the 'recommendation' output; the entire skill ends in unstructured advice."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion / out-of-scope language anywhere in description or body despite an extremely broad topic surface where misfire (e.g. generic business-strategy or sales que"
         },
         {
           "check": "Q07",
@@ -2208,7 +2208,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2231,19 +2231,19 @@
       "overall": "D",
       "highlights": [
         {
-          "check": "H08",
+          "check": "Q06",
           "status": "fail",
-          "summary": "No version field in frontmatter, no changelog heading, no dated revision notes anywhere in the file."
+          "summary": "The only failure-adjacent mention is stating the rate-limit numbers with no guidance on backoff/retry; auth errors, missing jq, invalid IDs, and API error responses are never addre"
+        },
+        {
+          "check": "Q10",
+          "status": "fail",
+          "summary": "Create-card (and add-comment) are POST-create operations with no existence check; running the step twice creates duplicate cards/comments, and nothing in the skill mentions this."
         },
         {
           "check": "Q02",
           "status": "fail",
           "summary": "No 'NOT for' / exclusion / out-of-scope text anywhere in frontmatter or body, and the skill covers enough surface (boards/lists/cards/comments) that misfire against adjacent PM-too"
-        },
-        {
-          "check": "Q06",
-          "status": "fail",
-          "summary": "The only failure-adjacent mention is stating the rate-limit numbers with no guidance on backoff/retry; auth errors, missing jq, invalid IDs, and API error responses are never addre"
         }
       ],
       "preCheck": {
@@ -2254,7 +2254,7 @@
         "majorFlags": 12
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2277,14 +2277,14 @@
       "overall": "B",
       "highlights": [
         {
-          "check": "H08",
-          "status": "fail",
-          "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
-        },
-        {
           "check": "Q02",
           "status": "fail",
           "summary": "No 'NOT for' / out-of-scope / pointer-to-other-skill language appears anywhere in the description or body; grep for 'not for', 'out of scope', 'instead use' finds nothing."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
         }
       ],
       "preCheck": {
@@ -2295,7 +2295,7 @@
         "majorFlags": 6
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2318,9 +2318,9 @@
       "overall": "C",
       "highlights": [
         {
-          "check": "H08",
+          "check": "Q06",
           "status": "fail",
-          "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
+          "summary": "Across all ten actions (invalid IDs, permission errors, missing message, rate limits, unauthenticated bot token) there is no mention anywhere of what to do on failure — total silen"
         },
         {
           "check": "Q02",
@@ -2328,9 +2328,9 @@
           "summary": "No 'NOT for' / out-of-scope / pointer-to-other-skill language anywhere in description or body, despite the skill exposing ~10 distinct actions where misfire against adjacent messag"
         },
         {
-          "check": "Q06",
+          "check": "H08",
           "status": "fail",
-          "summary": "Across all ten actions (invalid IDs, permission errors, missing message, rate limits, unauthenticated bot token) there is no mention anywhere of what to do on failure — total silen"
+          "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
         }
       ],
       "preCheck": {
@@ -2341,7 +2341,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2377,7 +2377,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2400,19 +2400,19 @@
       "overall": "B",
       "highlights": [
         {
-          "check": "H08",
-          "status": "fail",
-          "summary": "No version field in frontmatter and no changelog/dated revision notes anywhere in the body."
-        },
-        {
           "check": "Q02",
           "status": "fail",
           "summary": "No 'NOT for' / out-of-scope / pointer-to-other-skill language anywhere in description or body."
         },
         {
-          "check": "Q06",
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter and no changelog/dated revision notes anywhere in the body."
+        },
+        {
+          "check": "S12",
           "status": "warning",
-          "summary": "Troubleshooting section covers installation/runtime issues generically but never addresses step-level failures (e.g. selector not found, navigation timeout) within the actual autom"
+          "summary": "Official, well-known package but installed unpinned (no version); rubric treats well-known unpinned packages as warning, not fail."
         }
       ],
       "preCheck": {
@@ -2423,7 +2423,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2446,19 +2446,19 @@
       "overall": "C",
       "highlights": [
         {
-          "check": "H08",
-          "status": "fail",
-          "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
-        },
-        {
           "check": "Q02",
           "status": "fail",
           "summary": "No 'NOT for' / exclusion / out-of-scope language anywhere in description or body, despite the skill covering a broad, easily-confused surface (quotes, charts, news, options)."
         },
         {
-          "check": "Q01",
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
+        },
+        {
+          "check": "S12",
           "status": "warning",
-          "summary": "Description enumerates capabilities thoroughly but never frames WHEN to invoke the skill (no 'use when the user asks about...' cue) — says what it does, not when."
+          "summary": "Installs a well-known, correctly-spelled PyPI package from the standard registry but pins no version (uses -U/latest) — unpinned well-known package is warning, not fail."
         }
       ],
       "preCheck": {
@@ -2469,7 +2469,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2492,19 +2492,19 @@
       "overall": "D",
       "highlights": [
         {
-          "check": "H02",
+          "check": "Q04",
           "status": "fail",
-          "summary": "name is not kebab-case (spaces, slash, mixed case) and does not match the directory/slug 'powerpoint-pptx'; a separate 'slug: powerpoint-pptx' field is kebab-case but 'name' itself"
+          "summary": "The entire body is principle-level prose with zero concrete commands, tool names, file paths, or numeric criteria (e.g. no python-pptx/LibreOffice invocation, no specific placehold"
+        },
+        {
+          "check": "Q10",
+          "status": "fail",
+          "summary": "The skill performs mutating operations (duplicating/rebuilding slides, applying fixes) but nowhere addresses what happens on a second run — no check for already-applied fixes, alre"
         },
         {
           "check": "Q02",
           "status": "fail",
           "summary": "No 'NOT for' / 'out of scope' / 'instead use' language appears anywhere in the file. The 'Related Skills' section (documents, design, brief) lists complementary skills but never st"
-        },
-        {
-          "check": "Q04",
-          "status": "fail",
-          "summary": "The entire body is principle-level prose with zero concrete commands, tool names, file paths, or numeric criteria (e.g. no python-pptx/LibreOffice invocation, no specific placehold"
         }
       ],
       "preCheck": {
@@ -2515,7 +2515,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2538,19 +2538,19 @@
       "overall": "B",
       "highlights": [
         {
-          "check": "Q07",
-          "status": "fail",
-          "summary": "~450 lines of per-resource API catalog (Search/Videos/Channels/Playlists/PlaylistItems/Subscriptions/Comments, each with request+response examples) sit inline in SKILL.md with no s"
-        },
-        {
           "check": "Q10",
           "status": "fail",
           "summary": "Write operations (Create Playlist, Subscribe to Channel, Add Comment, Add Video to Playlist) have no mention of checking for an existing equivalent resource before creating; re-run"
         },
         {
-          "check": "H05",
+          "check": "Q07",
+          "status": "fail",
+          "summary": "~450 lines of per-resource API catalog (Search/Videos/Channels/Playlists/PlaylistItems/Subscriptions/Comments, each with request+response examples) sit inline in SKILL.md with no s"
+        },
+        {
+          "check": "S12",
           "status": "warning",
-          "summary": "File is 851 lines / ~18KB: over the ~500-line budget (about 1.7x) though under the 25KB byte ceiling; falls in the between-budget-and-2x warning band."
+          "summary": "Global install of the first-party CLI for the wrapped service from the standard npm registry, but unpinned (no version); same pattern in the Homebrew install line. Known publisher/"
         }
       ],
       "preCheck": {
@@ -2561,7 +2561,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2584,19 +2584,19 @@
       "overall": "D",
       "highlights": [
         {
-          "check": "H03",
-          "status": "fail",
-          "summary": "Description content is ~744 chars, a paragraph-length wall closing in an enumerated feature list, well past the ~500-char budget the check flags as fail even though the content its"
-        },
-        {
-          "check": "H08",
-          "status": "fail",
-          "summary": "No version field in frontmatter, no Changelog heading, and no dated revision notes about the skill itself anywhere in the document (the dates that appear are example data inside JS"
-        },
-        {
           "check": "Q02",
           "status": "fail",
           "summary": "Neither the description nor the body contains any 'NOT for' / 'out of scope' / pointer-to-other-skill language anywhere in the document; a broad marketing-automation skill like thi"
+        },
+        {
+          "check": "Q07",
+          "status": "fail",
+          "summary": "A full ~65-line node-canvas implementation is pasted inline in SKILL.md alongside several complete JSON schema examples (config.json, competitor-research.json, hook-performance.jso"
+        },
+        {
+          "check": "H03",
+          "status": "fail",
+          "summary": "Description content is ~744 chars, a paragraph-length wall closing in an enumerated feature list, well past the ~500-char budget the check flags as fail even though the content its"
         }
       ],
       "preCheck": {
@@ -2607,7 +2607,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2630,6 +2630,11 @@
       "overall": "C",
       "highlights": [
         {
+          "check": "Q05",
+          "status": "fail",
+          "summary": "Nowhere does the skill state what shape the final result to the user takes (e.g. a formatted list, required fields, ranking) — it only lists commands/sources with no defined delive"
+        },
+        {
           "check": "H07",
           "status": "fail",
           "summary": "The skill repeatedly invokes the non-universal 'clawhub' CLI via npx with no requirements section, availability check, or install-hint step; frontmatter even declares metadata.open"
@@ -2638,11 +2643,6 @@
           "check": "H08",
           "status": "fail",
           "summary": "No version field in frontmatter, no changelog heading, and no dated revision notes anywhere in the document."
-        },
-        {
-          "check": "Q05",
-          "status": "fail",
-          "summary": "Nowhere does the skill state what shape the final result to the user takes (e.g. a formatted list, required fields, ranking) — it only lists commands/sources with no defined delive"
         }
       ],
       "preCheck": {
@@ -2653,7 +2653,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2676,14 +2676,14 @@
       "overall": "C",
       "highlights": [
         {
-          "check": "Q02",
-          "status": "fail",
-          "summary": "No 'NOT for' / out-of-scope / pointer-to-other-skill language appears anywhere in description or body despite the skill covering a broad multi-market domain where misfire on non-da"
-        },
-        {
           "check": "Q03",
           "status": "fail",
           "summary": "Contradicts the total product count stated repeatedly elsewhere (line 69 '37,527+ 产品', line 102 breakdown summing to 37,527, lines 760/768/769/770 '37,527+ 产品覆盖 6 大市场') — one secti"
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / out-of-scope / pointer-to-other-skill language appears anywhere in description or body despite the skill covering a broad multi-market domain where misfire on non-da"
         },
         {
           "check": "Q07",
@@ -2699,7 +2699,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2722,9 +2722,9 @@
       "overall": "C",
       "highlights": [
         {
-          "check": "H08",
+          "check": "Q06",
           "status": "fail",
-          "summary": "No version field, changelog section, or dated revision notes anywhere in frontmatter or body."
+          "summary": "No mention anywhere of what to do if XAI_API_KEY is unset/invalid, the API call fails, or the search returns no results — silent happy-path throughout Setup and Usage."
         },
         {
           "check": "Q02",
@@ -2732,9 +2732,9 @@
           "summary": "No 'NOT for' / out-of-scope / pointer-to-other-skill language anywhere in description or body; skill has enough surface (multiple flags, general search framing) that misfire agains"
         },
         {
-          "check": "Q06",
+          "check": "H08",
           "status": "fail",
-          "summary": "No mention anywhere of what to do if XAI_API_KEY is unset/invalid, the API call fails, or the search returns no results — silent happy-path throughout Setup and Usage."
+          "summary": "No version field, changelog section, or dated revision notes anywhere in frontmatter or body."
         }
       ],
       "preCheck": {
@@ -2745,7 +2745,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2768,14 +2768,14 @@
       "overall": "C",
       "highlights": [
         {
-          "check": "H07",
+          "check": "Q06",
           "status": "fail",
-          "summary": "The optional voice-summary path hard-depends on OPENAI_API_KEY being set, but there is no requirements section, prerequisite check, or guidance for a missing/unauthenticated key an"
+          "summary": "Multiple external-dependency steps (four RSS feeds, OpenAI TTS call) with no mention anywhere of what to do if a feed is unreachable, malformed, or the TTS call fails/is unauthenti"
         },
         {
-          "check": "H08",
+          "check": "Q08",
           "status": "fail",
-          "summary": "No version field in frontmatter and no changelog/dated revision notes anywhere in the body."
+          "summary": "Presents grouping-by-region vs grouping-by-topic as an open choice with no stated default or deciding condition, materially changing the output structure."
         },
         {
           "check": "Q02",
@@ -2791,7 +2791,7 @@
         "majorFlags": 2
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2819,14 +2819,14 @@
           "summary": "No version field, changelog, or dated revision notes anywhere in frontmatter or body."
         },
         {
-          "check": "Q01",
-          "status": "warning",
-          "summary": "States what the skill does but has no explicit 'use when' / trigger phrasing."
-        },
-        {
           "check": "S12",
           "status": "warning",
           "summary": "Install source is the standard Homebrew formula for a well-known package (not a shady registry or typosquat), but no version is pinned — per rubric, a well-known package installed "
+        },
+        {
+          "check": "Q01",
+          "status": "warning",
+          "summary": "States what the skill does but has no explicit 'use when' / trigger phrasing."
         }
       ],
       "preCheck": {
@@ -2837,7 +2837,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2865,9 +2865,9 @@
           "summary": "No 'NOT for' / exclusion / out-of-scope text anywhere in description or body; skill is broad enough (generic skill-finding) that misfire on adjacent requests is plausible."
         },
         {
-          "check": "H07",
+          "check": "S12",
           "status": "warning",
-          "summary": "metadata.requires.bins declares only clawhub; jq is used (line 43) but never declared or checked, a single borderline-common tool missed."
+          "summary": "Installs unpinned skill packages by name from a community marketplace with no version pinning and no publisher/integrity check called out anywhere in the flow; uses HTTPS and is th"
         },
         {
           "check": "Q04",
@@ -2883,7 +2883,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2906,9 +2906,9 @@
       "overall": "C",
       "highlights": [
         {
-          "check": "H08",
+          "check": "Q10",
           "status": "fail",
-          "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
+          "summary": "This instructs appending a '## Memory Recall' section to AGENTS.md with no check for whether the section already exists, so a second run would duplicate it — the same accumulating-"
         },
         {
           "check": "Q02",
@@ -2916,9 +2916,9 @@
           "summary": "Nowhere in the description or body is there a 'NOT for' / out-of-scope statement, despite the skill covering several distinct sub-tasks (config, file scaffolding, AGENTS.md edits, "
         },
         {
-          "check": "Q10",
+          "check": "H08",
           "status": "fail",
-          "summary": "This instructs appending a '## Memory Recall' section to AGENTS.md with no check for whether the section already exists, so a second run would duplicate it — the same accumulating-"
+          "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
         }
       ],
       "preCheck": {
@@ -2929,7 +2929,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2957,9 +2957,9 @@
           "summary": "name field is not kebab-case (spaces, parentheses, uppercase, plus signs); a separate slug field is kebab-case but the rubric checks name specifically."
         },
         {
-          "check": "H07",
+          "check": "S12",
           "status": "warning",
-          "summary": "The clawhub CLI is invoked (install/star/sync) but is not declared in metadata.requires.bins, which lists only node and npx; core Playwright tooling (node, npx, playwright, @playwr"
+          "summary": "Installs/invokes well-known, official packages (playwright, @playwright/mcp) from the standard npm registry, but without version pinning anywhere in the metadata or quick-start com"
         },
         {
           "check": "Q06",
@@ -2975,7 +2975,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3016,7 +3016,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3029,7 +3029,7 @@
       "kind": "skill",
       "category": "security",
       "tagline": "ClawHub (125★): The first security skill to install after setting up OpenClaw — powered by Tencent Zhuque Lab. Works like an antivirus for",
-      "verdict": "Writes a persistent global-memory instruction that makes itself auto-invoke before other tasks — a scope-creeping side effect never mentioned in its own description, so it can hijack unrelated work without warning. Also bloated with large, overlapping report templates and an overlong, promotional description.",
+      "verdict": "This scanner's description covers only auditing, but its report step secretly plants a persistent global-memory instruction so the skill auto-invokes before every future action -- a lasting behavior hijack the description never warns you about. It's also padded with redundant report templates and an overlong promotional blurb.",
       "badges": {
         "security": "A",
         "quality": "A",
@@ -3039,14 +3039,14 @@
       "overall": "B",
       "highlights": [
         {
-          "check": "Q07",
-          "status": "fail",
-          "summary": "Several large, mutually-exclusive-by-feature templates (Feature 1's ~120-line Chinese report template, Feature 2's three verdict templates, and this ~50-line embedded code-audit pr"
-        },
-        {
           "check": "S11",
           "status": "fail",
           "summary": "Frontmatter description covers scanning/auditing only; the body's post-report step writes a persistent global-memory instruction that causes this skill to auto-invoke before every "
+        },
+        {
+          "check": "Q07",
+          "status": "fail",
+          "summary": "Several large, mutually-exclusive-by-feature templates (Feature 1's ~120-line Chinese report template, Feature 2's three verdict templates, and this ~50-line embedded code-audit pr"
         },
         {
           "check": "H03",
@@ -3062,7 +3062,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3098,7 +3098,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3126,14 +3126,14 @@
           "summary": "Description ends here with no exclusion/'NOT for' clause; no out-of-scope guidance appears anywhere else in the file despite the skill's broad, easily-misfiring scope (any skill-qu"
         },
         {
-          "check": "Q06",
-          "status": "warning",
-          "summary": "Auto-rollback on eval regression is handled explicitly, but this file read/JSON.parse (and other external-tool invocations) has no stated fallback or error message if package.json "
-        },
-        {
           "check": "S11",
           "status": "warning",
           "summary": "Editing the user's global ~/.claude/settings.json is a system-level side effect not mentioned in the frontmatter description ('Evaluate skill quality... tracks usage'); mitigated b"
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "Auto-rollback on eval regression is handled explicitly, but this file read/JSON.parse (and other external-tool invocations) has no stated fallback or error message if package.json "
         }
       ],
       "preCheck": {
@@ -3144,7 +3144,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3167,19 +3167,19 @@
       "overall": "F",
       "highlights": [
         {
+          "check": "Q01",
+          "status": "fail",
+          "summary": "There is no frontmatter `description` field at all, so no trigger phrasing or usage cue exists for a dispatching agent to read."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion / out-of-scope language appears anywhere in the file, despite this being a broad package routing to 50+ sub-skills where misfire against adjacent tasks is "
+        },
+        {
           "check": "H01",
           "status": "fail",
           "summary": "File opens directly with a markdown heading; there is no `---` YAML frontmatter block anywhere, so no name/description fields exist to parse."
-        },
-        {
-          "check": "H02",
-          "status": "fail",
-          "summary": "No frontmatter and therefore no `name` field exists to check for kebab-case or directory match."
-        },
-        {
-          "check": "H03",
-          "status": "fail",
-          "summary": "No `description` field exists anywhere in the file (no frontmatter block at all), so there is nothing to judge as a usable dispatch string."
         }
       ],
       "preCheck": {
@@ -3190,7 +3190,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3213,19 +3213,19 @@
       "overall": "D",
       "highlights": [
         {
-          "check": "H08",
+          "check": "Q03",
           "status": "fail",
-          "summary": "No version field in frontmatter and no changelog/dated revision notes anywhere in the document."
+          "summary": "Options table defines the flag as --depth, but Quick Start examples (lines 41 and 55) use --deep instead, e.g. 'node {baseDir}/scripts/search.mjs \"query\" --deep' — a direct naming "
+        },
+        {
+          "check": "Q06",
+          "status": "fail",
+          "summary": "No mention anywhere of what to do if the API key is missing, node is unavailable, the network call fails, or the script errors — total silence on failure paths for the external-dep"
         },
         {
           "check": "Q02",
           "status": "fail",
           "summary": "No 'NOT for' / exclusion / out-of-scope language anywhere in description or body, despite multiple similar search skills plausibly existing."
-        },
-        {
-          "check": "Q03",
-          "status": "fail",
-          "summary": "Options table defines the flag as --depth, but Quick Start examples (lines 41 and 55) use --deep instead, e.g. 'node {baseDir}/scripts/search.mjs \"query\" --deep' — a direct naming "
         }
       ],
       "preCheck": {
@@ -3236,7 +3236,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T20:55:18.099Z",
+      "evaluatedAt": "2026-07-16T20:58:13.113Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
