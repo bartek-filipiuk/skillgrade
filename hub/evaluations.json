@@ -41,7 +41,8 @@
       "model": "claude-fable-5"
     },
     "featured": true,
-    "featuredOrder": 1
+    "featuredOrder": 1,
+    "verdict": "Clean security surface: bundled scripts are read-only, and the one network call is a status-only ping with no data sent. Well-built overall. Weak spot: no version field or changelog, so you can't tell what changed between updates."
   },
   {
     "name": "self-improving-agent",
@@ -83,7 +84,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-fable-5"
-    }
+    },
+    "verdict": "Trustworthy on security — it writes learnings to its own workspace for its stated purpose, not exfiltration. Docs have a small internal slip (hyphenated format vs underscored examples) and the main file runs a bit long, but nothing that misleads you."
   },
   {
     "name": "skill-vetter",
@@ -125,7 +127,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-fable-5"
-    }
+    },
+    "verdict": "Security-clean and its listed attack patterns are documentation, not danger. Its blind spot: it never says when NOT to use it, so it could misfire on plain code review instead of security vetting. Also assumes jq is installed without checking."
   },
   {
     "name": "ontology",
@@ -167,7 +170,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-fable-5"
-    }
+    },
+    "verdict": "Middling trust. It never states what it's out of scope for despite casting a wide net, so it can trigger on tasks it wasn't built for. It also lacks any version history, and it calls python3 and a script without checking they exist."
   },
   {
     "name": "mcp-builder",
@@ -210,7 +214,8 @@
       "mode": "cli",
       "model": "google/gemini-2.5-flash"
     },
-    "evaluatedAt": "2026-07-16T10:05:12.802Z"
+    "evaluatedAt": "2026-07-16T10:05:12.802Z",
+    "verdict": "Well-built: no attempt to steer or game an evaluator, instructions stay on-task. Only real gaps are hygiene — the mcp package dependency is pinned to a minimum version rather than exact, and there's no version field or changelog to track changes."
   },
   {
     "name": "webapp-testing",
@@ -253,7 +258,8 @@
       "mode": "cli",
       "model": "google/gemini-2.5-flash"
     },
-    "evaluatedAt": "2026-07-16T10:05:21.825Z"
+    "evaluatedAt": "2026-07-16T10:05:21.825Z",
+    "verdict": "Mixed bag. It never says when NOT to use it and never defines what the final output should look like or where it goes, leaving results ambiguous. On the plus side, its security footprint is clean with no network or destructive risk."
   },
   {
     "name": "pdf",
@@ -296,7 +302,8 @@
       "mode": "cli",
       "model": "google/gemini-2.5-flash"
     },
-    "evaluatedAt": "2026-07-16T10:04:56.180Z"
+    "evaluatedAt": "2026-07-16T10:04:56.180Z",
+    "verdict": "No scope boundaries at all: the description is broad with no 'don't use this for' guidance, so it can hijack unrelated tasks. It also never defines a deliverable format or output location for any of its operations, and its name doesn't even match its own directory."
   },
   {
     "name": "skill-creator",
@@ -339,7 +346,8 @@
       "mode": "cli",
       "model": "google/gemini-2.5-flash"
     },
-    "evaluatedAt": "2026-07-16T10:05:38.981Z"
+    "evaluatedAt": "2026-07-16T10:05:38.981Z",
+    "verdict": "Contradicts itself on a key rule — it forbids using /skill-test in one place, then tells you to skip evaluation elsewhere, so which instruction wins is unclear. Several other steps lean on vague judgment calls ('different metaphors') with no way to check if you did it right."
   },
   {
     "name": "humanizer",
@@ -376,7 +384,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-fable-5"
-    }
+    },
+    "verdict": "Clean text-only transformation — no network calls, no secret access, no code execution anywhere. Its only weakness is not saying when NOT to use it, so it could get invoked on writing tasks it wasn't meant for."
   },
   {
     "name": "gog",
@@ -418,7 +427,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-fable-5"
-    }
+    },
+    "verdict": "Handles your own OAuth token locally and only talks to Google's APIs — no secret exfiltration. But it has no failure handling: if the binary is missing, you're unauthenticated, or a token expired, nothing tells you what to do, and it installs from an unpinned personal Homebrew tap."
   },
   {
     "name": "weather",
@@ -460,7 +470,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-fable-5"
-    }
+    },
+    "verdict": "Solid trust: it fetches public weather data only, no secrets touched, nothing leaves your machine. Docs don't say when it shouldn't be used (e.g. historical climate data), and there's no version field to track changes."
   },
   {
     "name": "imap-smtp-email",
@@ -502,7 +513,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-fable-5"
-    }
+    },
+    "verdict": "Falls back to a plaintext password file in its own directory (600 permissions, app-passwords recommended) that never leaves your machine — a real but contained weakness. It also tells you to disable TLS certificate verification for self-signed certs, and its own docs disagree on which config file loads first."
   },
   {
     "name": "superdesign",
@@ -544,7 +556,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-fable-5"
-    }
+    },
+    "verdict": "Its own frontmatter name doesn't match its directory and collides with another skill's name, which is confusing to route correctly. It also gives no guidance on when not to use it despite claiming to handle 'any user interface', and it loads an unpinned CDN script."
   },
   {
     "name": "self-improving",
@@ -586,7 +599,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Contradicts its own scope section: it lists an exhaustive 'ONLY does these four things' list, then does something else entirely elsewhere in the file. The name field also isn't proper kebab-case, and there's no guidance on when not to use it despite overlapping with several similar skills."
   },
   {
     "name": "proactive-agent",
@@ -628,7 +642,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Relies throughout on tools that may not exist (memory_search, cron, trash) with no check for whether they're available, so failures surface late. The description gives no 'use when' cue and no 'don't use for' boundary, so a dispatcher has little to go on for a broad, persistent behavior."
   },
   {
     "name": "multi-search-engine",
@@ -670,7 +685,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Directly contradicts its own workflow: its core process fetches 16 external search URLs, which conflicts with what the skill claims elsewhere. It also never says when not to use it despite being a broad general-purpose search tool, and never defines what its final report should contain."
   },
   {
     "name": "github",
@@ -712,7 +728,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "No scope boundaries despite covering all of general GitHub interaction, so it's prone to firing on unrelated tasks. It also has zero failure handling — if gh is missing, unauthenticated, or a call fails, nothing in the skill says what to do — and no version tracking at all."
   },
   {
     "name": "free-ride",
@@ -754,7 +771,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Its frontmatter name doesn't even match its own directory, a basic mismatch. It also gives no guidance on when not to use it despite broad triggers like 'reduce AI costs' that could catch unrelated cost-saving requests, and carries no version history. Quality itself scores well otherwise."
   },
   {
     "name": "agent-browser-clawdbot",
@@ -796,7 +814,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Solid trust profile: security A, quality B. But the multi-step workflow -- network navigation, an external CLI, file-based state -- has zero guidance on failure: a broken command or missing file leaves you guessing. No version history, and no clear trigger phrasing in the description either."
   },
   {
     "name": "obsidian",
@@ -838,7 +857,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Weak spot: no scope boundaries at all, despite covering search, create, move, and delete -- an agent could misfire on the wrong operation. Only the create path even discusses failure (URI handler issues); search, move, and delete are left silent if something goes wrong. Security is clean though."
   },
   {
     "name": "auto-updater",
@@ -880,7 +900,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Concrete risk: setup adds a cron job by name with no check for an existing one first -- re-run the Quick Start and you get duplicate scheduled updates running side by side. No stated exclusion cases either. Security and hygiene are otherwise clean (both A)."
   },
   {
     "name": "nano-banana-pro",
@@ -917,7 +938,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Strong showing: quality A, security A -- the core capability looks well built and safe. Remaining gaps are bookkeeping: no version or changelog to track changes, and no stated 'not for' cases to stop it being reached for adjacent image tasks it doesn't cover."
   },
   {
     "name": "api-gateway",
@@ -959,7 +981,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Main weakness is bloat: roughly 1555 lines, three times the normal budget, including a near-duplicate ~150-line provider list right after the main services table. With ~150 services covered and no exclusion guidance, misfiring against a more specific skill is a real risk. Security stays clean."
   },
   {
     "name": "desktop-control",
@@ -1001,7 +1024,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Serious defect: the frontmatter has no name field at all, just a description. Without a name, the skill may fail to register or load correctly, breaking things before it even runs. No versioning either. This needs fixing before use, not a minor nitpick."
   },
   {
     "name": "word-docx",
@@ -1043,7 +1067,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Red flag: this skill is pure prose -- no named commands, tools, or scripts anywhere, just conceptual instructions like 'inspect the package layout.' An agent following it has nothing concrete to execute and may improvise wrongly. Its name field also breaks kebab-case, and no scope boundary is stated."
   },
   {
     "name": "youtube-watcher",
@@ -1085,7 +1110,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Main gap: no defined output -- the skill never says where the result goes or what shape it takes, so you may not know where to find what it produced. Failure handling only covers missing captions; a missing yt-dlp install, an equally likely failure, has no stated fallback. Security is clean."
   },
   {
     "name": "openai-whisper",
@@ -1127,7 +1153,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Strong core: quality A, security A. The main gaps are housekeeping -- no version or changelog to track changes, and the Homebrew install isn't pinned to a version (though it's the standard registry with an exact, well-known formula name, so typosquat risk is low)."
   },
   {
     "name": "skill-creator (@chindden)",
@@ -1169,7 +1196,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Solid marks: quality B, security A. Weak spots: no stated 'not for' cases to prevent misfiring on adjacent tasks, and it runs a bundled Python script without ever confirming python3 is available -- if it's missing, the flow just breaks with no warning."
   },
   {
     "name": "automation-workflows",
@@ -1206,7 +1234,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Consistently solid: security A, quality B, hygiene B, no major red flags. The only real gaps are bookkeeping: no version or changelog to track changes over time, and no stated 'not for' cases, so it could be reached for tasks better served by a more specific automation skill."
   },
   {
     "name": "neosoul-decision-agent",
@@ -1248,7 +1277,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Solid core: security A, quality B. Weak spots: the skill's name doesn't match kebab-case or its own directory, a mismatch that could confuse skill resolution; and its retrospective and decision-stats templates are only bracket placeholders, never shown filled in with a real example."
   },
   {
     "name": "clawddocs",
@@ -1290,7 +1320,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Main risk: every step depends on live infrastructure -- fetching docs, qmd-based indexing, cache refresh -- with zero guidance on what to do if a fetch fails, qmd is missing, or a script errors; a broken dependency could stall or silently corrupt the docs state. Security is clean though."
   },
   {
     "name": "admapix",
@@ -1322,7 +1353,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Clean bill overall: quality A, security A, no functional or scope issues flagged. The only mark against it is bookkeeping -- no version field or changelog, so there's no way to track what changed between revisions."
   },
   {
     "name": "excel-xlsx",
@@ -1364,7 +1396,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Main risk: pandas and openpyxl are used as hard dependencies throughout, with no install step or availability check, despite the metadata declaring required binaries -- if either is missing, the skill just breaks mid-task. Its name field also isn't kebab-case. Quality is otherwise solid (B)."
   },
   {
     "name": "nano-pdf",
@@ -1401,7 +1434,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Strong core: quality A, security A. The one soft spot is output clarity -- the skill mentions producing an output PDF but never states its filename, location, or whether editing is in-place vs. a new file, leaving the result's whereabouts ambiguous. No version tracking either."
   },
   {
     "name": "notion",
@@ -1443,7 +1477,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Serious gap: total silence on error handling -- no check that the credentials file exists before use, and no guidance for curl failures, 401/403 auth errors, or the rate limit it itself mentions. A bad key or throttled request could fail confusingly with no recovery path."
   },
   {
     "name": "openclaw-tavily-search",
@@ -1485,7 +1520,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Main risk: the entire flow depends on a live external API call, yet nothing says what to do if the key is missing, the script errors, or the network call fails -- it just breaks with no fallback. The exposed directory name also doesn't match its own skill name, likely a bulk-export artifact."
   },
   {
     "name": "stock-analysis",
@@ -1527,7 +1563,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Main risk: adding a stock to your portfolio or watchlist twice creates a duplicate entry, with no check for what's already there. It also pulls live data from five outside services (Yahoo Finance, CoinGecko, Twitter, SEC EDGAR) with zero fallback if any go down. Security and file hygiene are solid."
   },
   {
     "name": "clawdhub",
@@ -1569,7 +1606,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "The install-login-publish chain has no fallback: if npm install fails, login fails, or a registry call times out, nothing tells you what to do next. It also never says what it's NOT for despite covering search, install, update, and publish at once. Security is otherwise clean."
   },
   {
     "name": "caldav-calendar",
@@ -1611,7 +1649,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Covers sync, view, search, create, edit, and delete on calendars but never says what it's NOT for, so it can misfire against other calendar tools. No version or changelog either, so you can't tell what changed between updates. Security is solid; it just lacks scoping and traceability."
   },
   {
     "name": "baidu-ai-map",
@@ -1643,7 +1682,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Clean across the board: security, quality, and file hygiene all score top marks. The only gap is that it never states what it's NOT for, so in a crowded toolset it could get invoked for tasks another skill handles better. Minor, easy fix."
   },
   {
     "name": "elite-longterm-memory",
@@ -1685,7 +1725,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "The description reads like ad copy (\"Ultimate\", \"Never lose context again\") instead of stating concrete situations to invoke it, so a dispatching agent has no real trigger signal and may fire it wrongly or never. Security fails outright too, and there's no scope boundary to stop misfire. Needs a rewrite before trusting it."
   },
   {
     "name": "baidu-search",
@@ -1727,7 +1768,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "The usage instructions and the actual examples point to two different script paths (skills/baidu-search/scripts/search.py vs scripts/search.py) — follow the wrong one and the command just won't run. No version tracking either, and no stated boundary against other search skills. Security is fine."
   },
   {
     "name": "mcporter",
@@ -1764,7 +1806,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Decent shape overall, with hygiene and quality both solid. Weak spots: no version or changelog to track what changed, and no stated boundary against adjacent tools, so it could get invoked for areas another skill covers better. Security is clean."
   },
   {
     "name": "brave-search",
@@ -1806,7 +1849,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "If npm ci fails, the API key is missing, or a search/fetch call errors out, the skill gives zero guidance on what to do next — a silent dead end. It also never states what it's NOT for despite being a broad, general web-search tool that easily overlaps others. No version tracking either."
   },
   {
     "name": "markdown-converter",
@@ -1848,7 +1892,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Assumes uv/uvx is already installed with no check or install hint, and the Azure Document Intelligence path silently requires a pre-configured Azure resource — miss either and it just fails. No version tracking, and no stated boundary across its many format-specific paths. Quality is otherwise good."
   },
   {
     "name": "answeroverflow",
@@ -1885,7 +1930,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Solid quality and file hygiene. Two gaps: no version or changelog to track changes, and no stated boundary, so as a general-purpose search tool it could get pulled into tasks a more specific skill would handle better. Security is clean."
   },
   {
     "name": "ui-ux-pro-max",
@@ -1927,7 +1973,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "The description itself is the problem: 573 characters of enumerated features instead of a short trigger phrase, so a dispatching agent struggles to tell when to invoke it. No version tracking, and no stated boundary against overlapping design and accessibility skills — real risk of misfire or being ignored."
   },
   {
     "name": "marketing-mode",
@@ -1969,7 +2016,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "No defined output shape: the skill ends in unstructured advice with no required format or sections, so results are unpredictable. A 692-line idea catalog is dumped inline instead of referenced, bloating the file. It also never states what it's NOT for despite an extremely broad topic. Security and hygiene are fine."
   },
   {
     "name": "trello",
@@ -2011,7 +2059,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Failure handling is essentially absent: only rate limits get a mention, while auth errors, missing jq, invalid IDs, and API error responses are never addressed — a failed call just leaves you guessing. No version tracking, and no stated boundary against other project-management tools. Security is clean."
   },
   {
     "name": "ecomseer",
@@ -2048,7 +2097,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Strong quality score and clean security. The only real gaps are housekeeping: no version or changelog to track updates, and no stated \"NOT for\" boundary — worth adding since this is otherwise a well-built skill."
   },
   {
     "name": "slack",
@@ -2090,7 +2140,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Across all ten supported actions, there's total silence on failure — invalid IDs, permission errors, rate limits, and bad tokens all go unaddressed, so problems surface as confusing breakage rather than a clear error. No version tracking, and no stated boundary against other messaging tools."
   },
   {
     "name": "n8n-workflow-automation",
@@ -2122,7 +2173,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Strong across the board, with quality and security both top marks. The only ding is housekeeping: no version field or changelog, so you can't tell what changed between revisions. Otherwise solid and low-risk."
   },
   {
     "name": "playwright-mcp",
@@ -2164,7 +2216,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Generally solid, with security and quality both good. Troubleshooting only covers install and runtime issues, not in-flow failures like a selector not found or a navigation timeout, so mid-automation breaks aren't well guided. No version tracking, and no stated \"NOT for\" boundary either."
   },
   {
     "name": "stock-market-pro",
@@ -2206,7 +2259,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Covers quotes, charts, news, and options but never frames WHEN to invoke it — it describes capabilities, not trigger situations — and never states what it's NOT for, so it can misfire against similar finance tools. No version tracking either. Security holds up fine."
   },
   {
     "name": "powerpoint-pptx",
@@ -2248,7 +2302,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Entirely abstract: the whole skill is principle-level prose with zero concrete commands, tool names, or file paths, so an agent following it has no working steps to execute and will improvise blindly. No out-of-scope guidance either, and even its own name field is malformed."
   },
   {
     "name": "youtube-api-skill",
@@ -2290,7 +2345,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Solid and safe: clean security, tidy hygiene, and a genuinely thorough API reference. The catch is write actions (create playlist, subscribe, comment) never check if the thing already exists first, so a retry after a hiccup can silently duplicate it. The 450-line inline catalog also bloats every load."
   },
   {
     "name": "larry",
@@ -2332,7 +2388,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "No version or changelog anywhere, so you can't tell if guidance is stale. The description is a 744-character wall of text before you even reach the steps. And it never says what it's NOT for, which matters for a broad marketing-automation skill that can easily get invoked on the wrong task."
   },
   {
     "name": "find-skills-skill",
@@ -2374,7 +2431,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Depends on a non-standard 'clawhub' CLI with no check for whether it's installed — if it's missing, the skill just fails without warning. No version tracking either, and it never defines what the final output should look like, so results come back in whatever shape the model feels like."
   },
   {
     "name": "tickdb-market-data",
@@ -2416,7 +2474,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Its own numbers disagree with each other: one section states a product-count breakdown that doesn't add up to the 37,527+ figure repeated elsewhere, so you can't trust the data at face value. Also dumps a 480-line raw API reference inline. Hygiene and structure are otherwise solid."
   },
   {
     "name": "x-search",
@@ -2458,7 +2517,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "If the API key is missing, invalid, or the search just returns nothing, the skill has no instructions for any of it — pure happy-path, so failures go silent instead of being surfaced. No version tracking and no stated boundaries on when not to use it either."
   },
   {
     "name": "news-summary",
@@ -2500,7 +2560,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "The voice-summary feature hard-requires an OpenAI key but gives zero guidance for a missing or bad one — it'll just break with no explanation. No version/changelog tracking, and no statement of what this skill should NOT be used for."
   },
   {
     "name": "video-frames",
@@ -2542,7 +2603,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Strong marks across security and quality — genuinely solid execution. Weak spots are cosmetic: no version or changelog to track drift, the Homebrew install isn't version-pinned (low risk, it's a known formula), and there's no explicit 'use this when...' trigger phrase."
   },
   {
     "name": "skill-finder-cn",
@@ -2584,7 +2646,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Good security and hygiene, functions as intended. Main gaps: no stated boundary on what it's NOT for despite being a broad skill-finder, a 'jq' dependency that's used but never declared, and the final recommendation step has no stated criteria (stars? downloads?) for picking a winner."
   },
   {
     "name": "memory-setup",
@@ -2626,7 +2689,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Appends a '## Memory Recall' section to AGENTS.md with no check for whether it's already there — run this twice and you get duplicate sections accumulating in the file. No version tracking, and no scope statement even though it bundles several distinct sub-tasks (config, scaffolding, edits)."
   },
   {
     "name": "playwright",
@@ -2668,7 +2732,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Quality and security are both strong here. The rough edges: the name field itself isn't kebab-case, the clawhub CLI it calls is never declared as a dependency, and there's no fallback advice if node/npx/Playwright are missing — despite the skill hard-depending on all three."
   },
   {
     "name": "shop",
@@ -2705,7 +2770,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Clean across the board — security, quality, and hygiene all top marks, a well-built integration. Only nitpicks: no stated 'not for' boundary, and the Shopify package install isn't version-pinned (minor, since it's an official scoped package from a known publisher)."
   },
   {
     "name": "edgeone-clawscan",
@@ -2747,7 +2813,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Writes a persistent global-memory instruction that makes itself auto-invoke before other tasks — a scope-creeping side effect never mentioned in its own description, so it can hijack unrelated work without warning. Also bloated with large, overlapping report templates and an overlong, promotional description."
   },
   {
     "name": "data-analysis",
@@ -2779,7 +2846,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Nearly clean — strong security and quality throughout. The one real defect is cosmetic but real: the name field is 'Data Analysis' with a space and capitals, failing to match its own directory, which can break exact-name lookups even though a separate slug field is correct."
   },
   {
     "name": "skill-compass",
@@ -2821,7 +2889,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Solid structure and security. The concerning part: it edits the user's global ~/.claude/settings.json, a system-wide side effect never disclosed in its own description, so it can surprise users with changes they didn't expect. Also lacks a 'not for' boundary and any fallback if package.json read fails."
   },
   {
     "name": "meitu-skills",
@@ -2863,7 +2932,8 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Broken at the root: there's no YAML frontmatter at all, meaning no name or description field exists for the routing system to parse — this skill likely can't even be discovered or dispatched correctly. Everything downstream is moot until that's fixed."
   },
   {
     "name": "liang-tavily-search",
@@ -2905,6 +2975,7 @@
     "evaluator": {
       "mode": "claude-code-native",
       "model": "claude-sonnet-5"
-    }
+    },
+    "verdict": "Its own documentation contradicts itself: the options table defines the flag as --depth, but the Quick Start examples use --deep instead — follow the docs literally and the command fails. No version tracking, and no stated boundary against the many similar search skills likely nearby."
   }
 ]

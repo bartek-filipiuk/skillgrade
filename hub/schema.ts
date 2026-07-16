@@ -38,6 +38,7 @@ export const CatalogEntrySchema = z.object({
   featuredOrder: z.number().int().optional(), // order among featured (ascending); default large
   category: z.enum(CATEGORY_IDS),
   tagline: z.string().min(1).max(140),
+  verdict: z.string().max(360).optional(), // plain-language assessment: risks/consequences for low grades, strengths for high
   badges: z.object({
     security: GRADE,
     quality: GRADE,

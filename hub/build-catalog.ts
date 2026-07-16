@@ -24,6 +24,7 @@ interface EvalInput {
   kind: 'skill' | 'fixture'
   category: CatalogEntry['category']
   tagline: string
+  verdict?: string
   badges: CatalogEntry['badges']
   highlights: CatalogEntry['highlights']
   evaluator?: CatalogEntry['evaluator'] // who actually graded it; defaults to native
