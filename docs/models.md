@@ -1,5 +1,8 @@
 # Models & pricing (evaluation backends)
 
+> **⚠️ Correction (2026-07-16, run 03 — real public skills).** Dogfooding on the official `anthropics/skills` repo showed **gpt-4o-mini over-triggers S03/S06 on real, diverse skills** and produces **false-positive Security F** — e.g. it flagged the `pdf` skill's broad description as evaluator-manipulation (S06) and `skill-creator`'s `__EVAL_DATA_PLACEHOLDER__` as piped-shell (S03). **grok-4.5 graded both Security A correctly.** So gpt-4o-mini passed the narrow fixture corpus but is **overfit to it**; do NOT treat it as production-ready until the corpus gains realistic-benign fixtures (broad description, casual prose, template placeholders, legitimate "evaluation" mentions) and models are re-tested. Current safest accurate choice on real skills: **grok-4.5** (pricey) — or re-test gemini-2.5-flash on real skills for a cheaper accurate option. See `docs/calibration/`.
+
+
 OpenRouter list prices per 1M tokens, checked **2026-07-16**. Prices drift — re-check at openrouter.ai/models before relying on them. Verdicts come from `scripts/calibrate.ts` against the fixture corpus (see `docs/calibration/2026-07-16-openrouter.md`).
 
 | Model spec | in / out ($/1M) | Structured output | Calibration | Use |

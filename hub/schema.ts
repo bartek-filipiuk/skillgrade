@@ -32,6 +32,7 @@ export const HighlightSchema = z.object({
 export const CatalogEntrySchema = z.object({
   name: z.string().min(1),
   source: z.string().min(1),
+  sourceUrl: z.string().url().optional(), // link to the original (public skills); the hub links, never copies
   kind: z.enum(['skill', 'fixture']), // fixtures demonstrate the full badge range honestly
   category: z.enum(CATEGORY_IDS),
   tagline: z.string().min(1).max(140),

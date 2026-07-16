@@ -20,6 +20,7 @@ const EVALUATOR = { mode: 'claude-code-native', model: 'claude-fable-5' }
 interface EvalInput {
   name: string
   source: string
+  sourceUrl?: string
   kind: 'skill' | 'fixture'
   category: CatalogEntry['category']
   tagline: string
