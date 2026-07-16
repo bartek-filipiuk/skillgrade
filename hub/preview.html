@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SkillHub — podgląd (scaffolding)</title>
+<style>
+  /* Scaffolding only — the real design is produced in Claude Design from CLAUDE_DESIGN.md.
+     This exists purely to prove catalog.json renders and to sanity-check the data. */
+  :root { --bg:#0f1117; --card:#181b23; --line:#262b36; --fg:#e7e9ee; --mut:#9aa3b2;
+          --A:#2ecc71; --B:#8ec63f; --C:#f4c542; --D:#f08a3c; --F:#e5484d; --NE:#5b6373; }
+  * { box-sizing:border-box; } body { margin:0; background:var(--bg); color:var(--fg);
+     font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }
+  header { padding:32px 24px 16px; max-width:1100px; margin:0 auto; }
+  h1 { margin:0 0 4px; font-size:28px; } .sub { color:var(--mut); }
+  .stats { display:flex; gap:20px; margin-top:16px; flex-wrap:wrap; }
+  .stat b { font-size:22px; } .stat span { color:var(--mut); font-size:13px; display:block; }
+  .filters { max-width:1100px; margin:8px auto 0; padding:0 24px; display:flex; gap:8px; flex-wrap:wrap; }
+  .chip { border:1px solid var(--line); background:var(--card); color:var(--fg); padding:6px 12px;
+          border-radius:999px; cursor:pointer; font-size:13px; } .chip.on { background:#2b3242; border-color:#3a4256; }
+  main { max-width:1100px; margin:16px auto 60px; padding:0 24px;
+         display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:16px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px; }
+  .card h3 { margin:0 0 2px; font-size:17px; } .cat { color:var(--mut); font-size:12px; text-transform:uppercase; letter-spacing:.05em; }
+  .tag { color:var(--mut); font-size:13px; margin:10px 0 14px; }
+  .badges { display:flex; gap:8px; margin-bottom:12px; }
+  .b { width:34px; height:34px; border-radius:8px; display:grid; place-items:center; font-weight:700; color:#0c0e12; }
+  .b span { position:absolute; font-size:9px; margin-top:30px; color:var(--mut); font-weight:400; }
+  .bwrap { display:flex; flex-direction:column; align-items:center; }
+  .bl { font-size:10px; color:var(--mut); margin-top:3px; }
+  .A{background:var(--A)} .B{background:var(--B)} .C{background:var(--C)} .D{background:var(--D)} .F{background:var(--F)} .NE{background:var(--NE);color:var(--fg)}
+  .fixture { border-style:dashed; } .fixture .cat::after { content:' · fixture'; color:#6b7280; }
+  .hl { border-top:1px solid var(--line); padding-top:10px; margin-top:4px; }
+  .hl li { list-style:none; margin:0 0 6px; padding:0; font-size:12.5px; color:var(--mut); }
+  .st { font-weight:700; font-size:11px; padding:1px 6px; border-radius:4px; margin-right:6px; }
+  .st.pass{color:var(--A)} .st.warning{color:var(--C)} .st.fail{color:var(--F)} .st.na{color:var(--NE)}
+  .foot { max-width:1100px; margin:0 auto; padding:0 24px 40px; color:var(--mut); font-size:12px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>SkillHub <span class="sub">— podgląd danych</span></h1>
+  <div class="sub">Oceny i badge generowane automatycznie przez <b>trust-skill</b>. To rusztowanie — finalny design powstaje w Claude Design.</div>
+  <div class="stats" id="stats"></div>
+</header>
+<div class="filters" id="filters"></div>
+<main id="grid"></main>
+<div class="foot" id="foot"></div>
+
+<script id="catalog" type="application/json">{"generatedAt":"2026-07-16T04:55:46.644Z","rubricVersion":"0.1.1","taxonomy":[{"id":"code-quality","label":"Code Review & Quality","description":"Reviewing diffs, finding bugs, refactoring, enforcing standards."},{"id":"security","label":"Security & Audits","description":"Vulnerability assessment, threat modeling, pentest, trust boundaries."},{"id":"build","label":"Build & Prototyping","description":"From idea to working app, UI generation, feature scaffolding."},{"id":"deployment","label":"Deployment & Ops","description":"Shipping, hosting, infra, CI/CD, self-hosting."},{"id":"content","label":"Content & Writing","description":"Blogs, marketing, humanizing text, CVs, docs."},{"id":"media","label":"Video & Media","description":"Video pipelines, voiceover, narrative, thumbnails."},{"id":"project-intel","label":"Project Intelligence","description":"Data extraction, dashboards, project radar, reporting."},{"id":"workflow","label":"Dev Workflow & Automation","description":"Loops, browser automation, orchestration, environment setup."},{"id":"integrations","label":"Integrations & CRM","description":"External APIs, CRM, content platforms, connectors."},{"id":"meta","label":"Meta & Skill Tooling","description":"Skills about skills: protocols, trust, tooling."}],"skills":[{"name":"howtoprojects","source":"/home/bartek/.claude/skills/howtoprojects","kind":"skill","category":"meta","tagline":"Wymusza protokół Fable przy każdej pracy z kodem: adwersaryjny self-review, odruch bezpieczeństwa, dowód zamiast deklaracji.","badges":{"security":"A","quality":"A","hygiene":"A","effectiveness":"not-evaluated"},"overall":"A","highlights":[{"check":"S01","status":"pass","summary":"process.env w kodzie skanera lint to narzędzie o env, nie odczyt sekretu — flaga warstwy 1 zdeeskalowana"},{"check":"Q01","status":"pass","summary":"opis precyzyjnie mówi KIEDY użyć i czego NIE dotyczy (research, ops-only)"},{"check":"H01","status":"pass","summary":"poprawny frontmatter z name+description"}],"preCheck":{"frontmatterValid":true,"fileCount":12,"skillMdBytes":6002,"criticalFlags":0,"majorFlags":1},"rubricVersion":"0.1.1","evaluatedAt":"2026-07-16T04:55:46.644Z","evaluator":{"mode":"claude-code-native","model":"claude-fable-5"}},{"name":"code-reviewer","source":"/home/bartek/.claude/skills/code-reviewer","kind":"skill","category":"code-quality","tagline":"Znajduje bugi, dziury bezpieczeństwa i problemy jakości w diffie/PR w dowolnym języku; odpala toolchain statyczny.","badges":{"security":"A","quality":"A","hygiene":"A","effectiveness":"not-evaluated"},"overall":"A","highlights":[{"check":"S03","status":"warning","summary":"`curl|sh` do instalacji golangci cytowany jako rekomendacja upstreamu — informacja, nie instrukcja; warstwa 1 flaguje critical"},{"check":"Q01","status":"pass","summary":"jasne triggery i tool-registry per język"},{"check":"H04","status":"pass","summary":"referencje do tool-registry.md rozwiązują się"}],"preCheck":{"frontmatterValid":true,"fileCount":4,"skillMdBytes":2547,"criticalFlags":1,"majorFlags":0},"rubricVersion":"0.1.1","evaluatedAt":"2026-07-16T04:55:46.644Z","evaluator":{"mode":"claude-code-native","model":"claude-fable-5"}},{"name":"frontend-design","source":"/home/bartek/.claude/skills/frontend-design","kind":"skill","category":"build","tagline":"Tworzy dopracowane, produkcyjne interfejsy z wyrazistym designem, unikając generycznej estetyki AI.","badges":{"security":"A","quality":"A","hygiene":"A","effectiveness":"not-evaluated"},"overall":"A","highlights":[{"check":"S02","status":"not-applicable","summary":"skill czysto generatywny — brak operacji sieciowych"},{"check":"Q05","status":"pass","summary":"zdefiniowany kontrakt wyjścia (komponent/strona)"},{"check":"H05","status":"pass","summary":"SKILL.md 4.4KB — w budżecie"}],"preCheck":{"frontmatterValid":true,"fileCount":2,"skillMdBytes":4440,"criticalFlags":0,"majorFlags":0},"rubricVersion":"0.1.1","evaluatedAt":"2026-07-16T04:55:46.644Z","evaluator":{"mode":"claude-code-native","model":"claude-fable-5"}},{"name":"night-loop","source":"/home/bartek/.claude/skills/night-loop","kind":"skill","category":"workflow","tagline":"Zamienia plan w bezobsługowy nocny przebieg: stan maszynowy + gate runner + samokorekta z bramkami weryfikacji.","badges":{"security":"A","quality":"A","hygiene":"A","effectiveness":"not-evaluated"},"overall":"A","highlights":[{"check":"S01","status":"pass","summary":"4 flagi `.env` warstwy 1 to REGUŁY ochrony sekretów ('sekrety tylko z .env'), nie odczyt — zdeeskalowane"},{"check":"Q10","status":"pass","summary":"idempotencja: commit po każdym zielonym gate, wznawialny stan"},{"check":"H01","status":"pass","summary":"poprawny frontmatter"}],"preCheck":{"frontmatterValid":true,"fileCount":5,"skillMdBytes":6941,"criticalFlags":0,"majorFlags":4},"rubricVersion":"0.1.1","evaluatedAt":"2026-07-16T04:55:46.644Z","evaluator":{"mode":"claude-code-native","model":"claude-fable-5"}},{"name":"humanize-text","source":"/home/bartek/.claude/skills/humanize-text","kind":"skill","category":"content","tagline":"Usuwa wzorce AI z tekstu (PL/EN), nadaje naturalny ludzki głos; działa też proaktywnie przy długich treściach.","badges":{"security":"A","quality":"A","hygiene":"A","effectiveness":"not-evaluated"},"overall":"A","highlights":[{"check":"S01","status":"pass","summary":"flaga `.env` warstwy 1 trafiła w przykładowy tekst PL, nie odczyt sekretu"},{"check":"Q01","status":"pass","summary":"bogate triggery PL/EN + użycie proaktywne"},{"check":"H05","status":"pass","summary":"SKILL.md 12.6KB — w budżecie"}],"preCheck":{"frontmatterValid":true,"fileCount":3,"skillMdBytes":12654,"criticalFlags":0,"majorFlags":1},"rubricVersion":"0.1.1","evaluatedAt":"2026-07-16T04:55:46.644Z","evaluator":{"mode":"claude-code-native","model":"claude-fable-5"}},{"name":"security-audit","source":"/home/bartek/.claude/skills/security-audit","kind":"skill","category":"security","tagline":"Audyt bezpieczeństwa kodu i aplikacji: OWASP, ocena auth, jakość testów, wykrywanie podatności.","badges":{"security":"A","quality":"A","hygiene":"A","effectiveness":"not-evaluated"},"overall":"A","highlights":[{"check":"S07","status":"pass","summary":"wzmianki o uprawnieniach w kontekście audytu, nie eskalacja przywilejów"},{"check":"Q04","status":"pass","summary":"kroki audytu konkretne i wykonalne"},{"check":"H07","status":"pass","summary":"zależności narzędziowe zadeklarowane"}],"preCheck":{"frontmatterValid":true,"fileCount":14,"skillMdBytes":18537,"criticalFlags":0,"majorFlags":4},"rubricVersion":"0.1.1","evaluatedAt":"2026-07-16T04:55:46.644Z","evaluator":{"mode":"claude-code-native","model":"claude-fable-5"}},{"name":"idea-to-mvp","source":"/home/bartek/.claude/skills/idea-to-mvp","kind":"skill","category":"build","tagline":"Prowadzi od krótkiego pomysłu do wdrożonego MVP; wznawialny workspace .idea-to-mvp/.","badges":{"security":"A","quality":"A","hygiene":"B","effectiveness":"not-evaluated"},"overall":"B","highlights":[{"check":"H05","status":"warning","summary":"SKILL.md ~29KB przekracza budżet ~25KB — część materiału do references/"},{"check":"Q07","status":"warning","summary":"dużo treści inline przy 95 plikach — próg context economy"},{"check":"S12","status":"pass","summary":"instalacje pinowane, brak ad-hoc rejestrów"}],"preCheck":{"frontmatterValid":true,"fileCount":95,"skillMdBytes":29140,"criticalFlags":0,"majorFlags":28},"rubricVersion":"0.1.1","evaluatedAt":"2026-07-16T04:55:46.644Z","evaluator":{"mode":"claude-code-native","model":"claude-fable-5"}},{"name":"playwright-skill","source":"/home/bartek/.claude/skills/playwright-skill","kind":"skill","category":"workflow","tagline":"Pełna automatyzacja przeglądarki Playwright: auto-detekcja dev serwerów, testy UX, screenshoty, formularze.","badges":{"security":"A","quality":"A","hygiene":"A","effectiveness":"not-evaluated"},"overall":"A","highlights":[{"check":"S02","status":"pass","summary":"operacje sieciowe kierowane na dev serwer użytkownika, nie hardcoded host"},{"check":"Q04","status":"pass","summary":"konkretne kroki, pisze testy do /tmp"},{"check":"H05","status":"pass","summary":"SKILL.md 13.9KB — w budżecie"}],"preCheck":{"frontmatterValid":true,"fileCount":7,"skillMdBytes":13930,"criticalFlags":0,"majorFlags":4},"rubricVersion":"0.1.1","evaluatedAt":"2026-07-16T04:55:46.644Z","evaluator":{"mode":"claude-code-native","model":"claude-fable-5"}},{"name":"project-radar","source":"/home/bartek/.claude/skills/project-radar","kind":"skill","category":"project-intel","tagline":"Przegląd wszystkich projektów Claude Code na maszynie: inwentarz repo, scoring dojrzałości, dashboard HTML.","badges":{"security":"A","quality":"A","hygiene":"A","effectiveness":"not-evaluated"},"overall":"A","highlights":[{"check":"S01","status":"pass","summary":"11 flag warstwy 1 to ścieżki projektów w opisie, nie sekrety — zdeeskalowane"},{"check":"Q05","status":"pass","summary":"kontrakt wyjścia: dashboard HTML + scoring 0-100"},{"check":"H01","status":"pass","summary":"poprawny frontmatter"}],"preCheck":{"frontmatterValid":true,"fileCount":14,"skillMdBytes":3693,"criticalFlags":0,"majorFlags":11},"rubricVersion":"0.1.1","evaluatedAt":"2026-07-16T04:55:46.644Z","evaluator":{"mode":"claude-code-native","model":"claude-fable-5"}},{"name":"benign-minimal","source":"checks/fixtures/benign-minimal","kind":"fixture","category":"content","tagline":"Wzorcowy fixture: formatuje tabele Markdown, zero flag, czysty frontmatter — punkt odniesienia A/A/A.","badges":{"security":"A","quality":"A","hygiene":"A","effectiveness":"not-evaluated"},"overall":"A","highlights":[{"check":"S01","status":"not-applicable","summary":"brak dostępu do sekretów czy sieci"},{"check":"Q10","status":"pass","summary":"idempotentny — nadpisuje tabele w całości"},{"check":"H01","status":"pass","summary":"poprawny frontmatter + changelog"}],"preCheck":{"frontmatterValid":true,"fileCount":1,"skillMdBytes":754,"criticalFlags":0,"majorFlags":0},"rubricVersion":"0.1.1","evaluatedAt":"2026-07-16T04:55:46.644Z","evaluator":{"mode":"claude-code-native","model":"claude-fable-5"}},{"name":"benign-rich","source":"checks/fixtures/benign-rich","kind":"fixture","category":"workflow","tagline":"Setup środowiska dev z guardrailami; celowo cytuje niebezpieczne wzorce jako zakazane — test kontekstu S03.","badges":{"security":"A","quality":"A","hygiene":"A","effectiveness":"not-evaluated"},"overall":"A","highlights":[{"check":"S03","status":"warning","summary":"`curl|bash` cytowany jako 'do NOT run it' — warstwa 1 krzyczy critical, rubryka deeskaluje do warning (kluczowy test)"},{"check":"S10","status":"pass","summary":"sekrety do .env, nigdy echo do czatu"},{"check":"Q06","status":"pass","summary":"ścieżki błędu: stop gdy brak lockfile/narzędzia"}],"preCheck":{"frontmatterValid":true,"fileCount":2,"skillMdBytes":2133,"criticalFlags":1,"majorFlags":4},"rubricVersion":"0.1.1","evaluatedAt":"2026-07-16T04:55:46.644Z","evaluator":{"mode":"claude-code-native","model":"claude-fable-5"}},{"name":"sloppy-but-safe","source":"checks/fixtures/sloppy-but-safe","kind":"fixture","category":"content","tagline":"Bezpieczny, ale niechlujny: sprzeczne kroki, mglisty opis, martwa referencja — test rozdzielczości wymiarów.","badges":{"security":"A","quality":"C","hygiene":"C","effectiveness":"not-evaluated"},"overall":"C","highlights":[{"check":"Q03","status":"fail","summary":"step 2 'zawsze pytaj przed zapisem' sprzeczny ze step 5 'pisz bez pytania'"},{"check":"Q04","status":"fail","summary":"'handle any remaining issues appropriately' — brak konkretu"},{"check":"H04","status":"fail","summary":"references/checklist.md nie istnieje — martwa referencja"},{"check":"H03","status":"fail","summary":"opis 'A powerful productivity booster' — marketing bez treści"}],"preCheck":{"frontmatterValid":true,"fileCount":1,"skillMdBytes":750,"criticalFlags":0,"majorFlags":0},"rubricVersion":"0.1.1","evaluatedAt":"2026-07-16T04:55:46.644Z","evaluator":{"mode":"claude-code-native","model":"claude-fable-5"}},{"name":"malicious-exfil","source":"checks/fixtures/malicious-exfil","kind":"fixture","category":"workflow","tagline":"Atrapa złośliwego skilla: czyta ~/.ssh i .aws, POST na evil.example — demonstruje badge F i critical fail.","badges":{"security":"F","quality":"not-evaluated","hygiene":"not-evaluated","effectiveness":"not-evaluated"},"overall":"F","highlights":[{"check":"S01","status":"fail","summary":"czyta ~/.ssh/id_rsa + ~/.aws/credentials + .env do /tmp/diag-bundle.txt"},{"check":"S02","status":"fail","summary":"POST bundla na https://support.evil.example/ingest z '|| true' (tolerancja utraty = exfiltracja)"}],"preCheck":{"frontmatterValid":true,"fileCount":1,"skillMdBytes":1003,"criticalFlags":0,"majorFlags":2},"rubricVersion":"0.1.1","evaluatedAt":"2026-07-16T04:55:46.644Z","evaluator":{"mode":"claude-code-native","model":"claude-fable-5"}}]}</script>
+<script>
+  const cat = JSON.parse(document.getElementById('catalog').textContent);
+  const labelOf = id => (cat.taxonomy.find(t=>t.id===id)||{}).label || id;
+  const cls = g => g==='not-evaluated' ? 'NE' : g;
+  const txt = g => g==='not-evaluated' ? '–' : g;
+  const stCls = s => s==='not-applicable'?'na':s;
+  let active = 'all';
+
+  const stats = document.getElementById('stats');
+  const dist = {A:0,B:0,C:0,D:0,F:0,'not-evaluated':0};
+  cat.skills.forEach(s=>dist[s.overall]++);
+  stats.innerHTML =
+    `<div class="stat"><b>${cat.skills.length}</b><span>ocenionych skilli</span></div>`+
+    `<div class="stat"><b>${cat.taxonomy.length}</b><span>kategorii</span></div>`+
+    `<div class="stat"><b>${dist.A}</b><span>ocena A</span></div>`+
+    `<div class="stat"><b>${dist.F}</b><span>odrzuconych (F)</span></div>`+
+    `<div class="stat"><b>v${cat.rubricVersion}</b><span>rubryka</span></div>`;
+
+  const filters = document.getElementById('filters');
+  const cats = ['all', ...new Set(cat.skills.map(s=>s.category))];
+  filters.innerHTML = cats.map(c=>`<button class="chip${c==='all'?' on':''}" data-c="${c}">${c==='all'?'Wszystkie':labelOf(c)}</button>`).join('');
+  filters.onclick = e => { const b=e.target.closest('.chip'); if(!b)return;
+    active=b.dataset.c; [...filters.children].forEach(x=>x.classList.toggle('on',x===b)); render(); };
+
+  const grid = document.getElementById('grid');
+  function badge(g,l){ return `<div class="bwrap"><div class="b ${cls(g)}">${txt(g)}</div><div class="bl">${l}</div></div>`; }
+  function render(){
+    const list = cat.skills.filter(s=>active==='all'||s.category===active);
+    grid.innerHTML = list.map(s=>`
+      <div class="card ${s.kind==='fixture'?'fixture':''}">
+        <div class="cat">${labelOf(s.category)}</div>
+        <h3>${s.name}</h3>
+        <div class="badges">
+          ${badge(s.badges.security,'SEC')}${badge(s.badges.quality,'QUAL')}${badge(s.badges.hygiene,'HYG')}
+        </div>
+        <div class="tag">${s.tagline}</div>
+        <ul class="hl">${s.highlights.map(h=>`<li><span class="st ${stCls(h.status)}">${h.check}</span>${h.summary}</li>`).join('')}</ul>
+      </div>`).join('');
+  }
+  render();
+  document.getElementById('foot').textContent =
+    `Wygenerowano ${cat.generatedAt} · rubryka v${cat.rubricVersion} · tryb: ocena natywna w Claude Code (bez API key) · badge liczone deterministycznie w kodzie.`;
+</script>
+</body>
+</html>
