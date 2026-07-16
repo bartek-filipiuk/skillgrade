@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-16T07:58:26.531Z",
-  "rubricVersion": "0.1.1",
+  "generatedAt": "2026-07-16T10:10:39.507Z",
+  "rubricVersion": "0.1.2",
   "taxonomy": [
     {
       "id": "code-quality",
@@ -55,11 +55,12 @@
   ],
   "skills": [
     {
-      "name": "howtoprojects",
-      "source": "/home/bartek/.claude/skills/howtoprojects",
+      "name": "mcp-builder",
+      "source": "anthropics/skills · skills/mcp-builder",
+      "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/mcp-builder",
       "kind": "skill",
-      "category": "meta",
-      "tagline": "Enforces the Fable protocol on every coding task: adversarial self-review, security reflex, proof over claims.",
+      "category": "build",
+      "tagline": "Official Anthropic skill for scaffolding MCP servers — protocol setup, tools, resources, and testing.",
       "badges": {
         "security": "A",
         "quality": "A",
@@ -69,385 +70,168 @@
       "overall": "A",
       "highlights": [
         {
-          "check": "S01",
-          "status": "pass",
-          "summary": "process.env in the lint-scanner code is a tool ABOUT env vars, not a secret read — layer-1 flag de-escalated"
+          "check": "S12",
+          "status": "warning",
+          "summary": "The `mcp` package is pinned to a minimum version (>=1.1.0) rather than an exact version — minor supply-chain looseness."
         },
         {
-          "check": "Q01",
-          "status": "pass",
-          "summary": "description states precisely WHEN to use it and what it is NOT for (research, ops-only)"
+          "check": "H08",
+          "status": "fail",
+          "summary": "No versioning signal (version field or changelog) in frontmatter or body."
         },
         {
-          "check": "H01",
+          "check": "S06",
           "status": "pass",
-          "summary": "valid frontmatter with name + description"
+          "summary": "No attempt to steer the evaluator; instructions serve the skill's task only."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 10,
+        "skillMdBytes": 9092,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T10:05:12.802Z",
+      "evaluator": {
+        "mode": "cli",
+        "model": "google/gemini-2.5-flash"
+      }
+    },
+    {
+      "name": "webapp-testing",
+      "source": "anthropics/skills · skills/webapp-testing",
+      "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/webapp-testing",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Official Anthropic skill for driving and testing web apps in a headless browser.",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "The description and body never say when NOT to use the skill — no negative triggers."
+        },
+        {
+          "check": "Q05",
+          "status": "fail",
+          "summary": "Describes its capabilities but does not define a final deliverable format or location."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog, or dated revision notes."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 6,
+        "skillMdBytes": 3913,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T10:05:21.825Z",
+      "evaluator": {
+        "mode": "cli",
+        "model": "google/gemini-2.5-flash"
+      }
+    },
+    {
+      "name": "pdf",
+      "source": "anthropics/skills · skills/pdf",
+      "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/pdf",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "Official Anthropic production skill for reading, filling, and manipulating PDF files.",
+      "badges": {
+        "security": "A",
+        "quality": "D",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "D",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "The description is very broad and does not specify when NOT to use the skill."
+        },
+        {
+          "check": "Q05",
+          "status": "fail",
+          "summary": "Describes many operations but defines no final deliverable format or location for any of them."
+        },
+        {
+          "check": "H02",
+          "status": "fail",
+          "summary": "The name 'pdf' does not match the directory name 'pdf-processing' the skill ships under."
         }
       ],
       "preCheck": {
         "frontmatterValid": true,
         "fileCount": 12,
-        "skillMdBytes": 6002,
-        "criticalFlags": 0,
-        "majorFlags": 1
-      },
-      "rubricVersion": "0.1.1",
-      "evaluatedAt": "2026-07-16T07:58:26.531Z",
-      "evaluator": {
-        "mode": "claude-code-native",
-        "model": "claude-fable-5"
-      }
-    },
-    {
-      "name": "code-reviewer",
-      "source": "/home/bartek/.claude/skills/code-reviewer",
-      "kind": "skill",
-      "category": "code-quality",
-      "tagline": "Finds bugs, security holes and quality issues in a diff/PR in any language; runs the static-analysis toolchain.",
-      "badges": {
-        "security": "A",
-        "quality": "A",
-        "hygiene": "A",
-        "effectiveness": "not-evaluated"
-      },
-      "overall": "A",
-      "highlights": [
-        {
-          "check": "S03",
-          "status": "warning",
-          "summary": "`curl|sh` golangci installer quoted as an upstream recommendation — information, not an instruction; layer 1 flags it critical"
-        },
-        {
-          "check": "Q01",
-          "status": "pass",
-          "summary": "clear triggers and a per-language tool registry"
-        },
-        {
-          "check": "H04",
-          "status": "pass",
-          "summary": "references to tool-registry.md resolve"
-        }
-      ],
-      "preCheck": {
-        "frontmatterValid": true,
-        "fileCount": 4,
-        "skillMdBytes": 2547,
-        "criticalFlags": 1,
-        "majorFlags": 0
-      },
-      "rubricVersion": "0.1.1",
-      "evaluatedAt": "2026-07-16T07:58:26.531Z",
-      "evaluator": {
-        "mode": "claude-code-native",
-        "model": "claude-fable-5"
-      }
-    },
-    {
-      "name": "frontend-design",
-      "source": "/home/bartek/.claude/skills/frontend-design",
-      "kind": "skill",
-      "category": "build",
-      "tagline": "Builds distinctive, production-grade UIs with a strong aesthetic, avoiding generic AI look.",
-      "badges": {
-        "security": "A",
-        "quality": "A",
-        "hygiene": "A",
-        "effectiveness": "not-evaluated"
-      },
-      "overall": "A",
-      "highlights": [
-        {
-          "check": "S02",
-          "status": "not-applicable",
-          "summary": "purely generative skill — no network operations"
-        },
-        {
-          "check": "Q05",
-          "status": "pass",
-          "summary": "defined output contract (component / page)"
-        },
-        {
-          "check": "H05",
-          "status": "pass",
-          "summary": "SKILL.md 4.4KB — within budget"
-        }
-      ],
-      "preCheck": {
-        "frontmatterValid": true,
-        "fileCount": 2,
-        "skillMdBytes": 4440,
+        "skillMdBytes": 8072,
         "criticalFlags": 0,
         "majorFlags": 0
       },
-      "rubricVersion": "0.1.1",
-      "evaluatedAt": "2026-07-16T07:58:26.531Z",
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T10:04:56.180Z",
       "evaluator": {
-        "mode": "claude-code-native",
-        "model": "claude-fable-5"
+        "mode": "cli",
+        "model": "google/gemini-2.5-flash"
       }
     },
     {
-      "name": "night-loop",
-      "source": "/home/bartek/.claude/skills/night-loop",
+      "name": "skill-creator",
+      "source": "anthropics/skills · skills/skill-creator",
+      "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/skill-creator",
       "kind": "skill",
-      "category": "workflow",
-      "tagline": "Turns a plan into an unattended overnight build: machine state + gate runner + self-correction with verification gates.",
+      "category": "meta",
+      "tagline": "Official Anthropic skill for authoring new skills — scaffolding, structure, and evaluation guidance.",
       "badges": {
         "security": "A",
-        "quality": "A",
-        "hygiene": "A",
-        "effectiveness": "not-evaluated"
-      },
-      "overall": "A",
-      "highlights": [
-        {
-          "check": "S01",
-          "status": "pass",
-          "summary": "4 layer-1 `.env` flags are secret-PROTECTION rules ('secrets only from .env'), not reads — de-escalated"
-        },
-        {
-          "check": "Q10",
-          "status": "pass",
-          "summary": "idempotent: commit after every green gate, resumable state"
-        },
-        {
-          "check": "H01",
-          "status": "pass",
-          "summary": "valid frontmatter"
-        }
-      ],
-      "preCheck": {
-        "frontmatterValid": true,
-        "fileCount": 5,
-        "skillMdBytes": 6941,
-        "criticalFlags": 0,
-        "majorFlags": 4
-      },
-      "rubricVersion": "0.1.1",
-      "evaluatedAt": "2026-07-16T07:58:26.531Z",
-      "evaluator": {
-        "mode": "claude-code-native",
-        "model": "claude-fable-5"
-      }
-    },
-    {
-      "name": "humanize-text",
-      "source": "/home/bartek/.claude/skills/humanize-text",
-      "kind": "skill",
-      "category": "content",
-      "tagline": "Strips AI patterns from text (PL/EN), gives it a natural human voice; also runs proactively on long-form content.",
-      "badges": {
-        "security": "A",
-        "quality": "A",
-        "hygiene": "A",
-        "effectiveness": "not-evaluated"
-      },
-      "overall": "A",
-      "highlights": [
-        {
-          "check": "S01",
-          "status": "pass",
-          "summary": "layer-1 `.env` flag hit an example sentence, not a secret read"
-        },
-        {
-          "check": "Q01",
-          "status": "pass",
-          "summary": "rich PL/EN triggers plus proactive use"
-        },
-        {
-          "check": "H05",
-          "status": "pass",
-          "summary": "SKILL.md 12.6KB — within budget"
-        }
-      ],
-      "preCheck": {
-        "frontmatterValid": true,
-        "fileCount": 3,
-        "skillMdBytes": 12654,
-        "criticalFlags": 0,
-        "majorFlags": 1
-      },
-      "rubricVersion": "0.1.1",
-      "evaluatedAt": "2026-07-16T07:58:26.531Z",
-      "evaluator": {
-        "mode": "claude-code-native",
-        "model": "claude-fable-5"
-      }
-    },
-    {
-      "name": "security-audit",
-      "source": "/home/bartek/.claude/skills/security-audit",
-      "kind": "skill",
-      "category": "security",
-      "tagline": "Security audit of code and apps: OWASP, auth review, test-quality assessment, vulnerability detection.",
-      "badges": {
-        "security": "A",
-        "quality": "A",
-        "hygiene": "A",
-        "effectiveness": "not-evaluated"
-      },
-      "overall": "A",
-      "highlights": [
-        {
-          "check": "S07",
-          "status": "pass",
-          "summary": "privilege mentions are in an audit context, not privilege escalation"
-        },
-        {
-          "check": "Q04",
-          "status": "pass",
-          "summary": "audit steps are concrete and actionable"
-        },
-        {
-          "check": "H07",
-          "status": "pass",
-          "summary": "tool dependencies declared"
-        }
-      ],
-      "preCheck": {
-        "frontmatterValid": true,
-        "fileCount": 14,
-        "skillMdBytes": 18537,
-        "criticalFlags": 0,
-        "majorFlags": 4
-      },
-      "rubricVersion": "0.1.1",
-      "evaluatedAt": "2026-07-16T07:58:26.531Z",
-      "evaluator": {
-        "mode": "claude-code-native",
-        "model": "claude-fable-5"
-      }
-    },
-    {
-      "name": "idea-to-mvp",
-      "source": "/home/bartek/.claude/skills/idea-to-mvp",
-      "kind": "skill",
-      "category": "build",
-      "tagline": "Takes a short idea all the way to a deployed MVP; resumable .idea-to-mvp/ workspace.",
-      "badges": {
-        "security": "A",
-        "quality": "A",
+        "quality": "D",
         "hygiene": "B",
         "effectiveness": "not-evaluated"
       },
-      "overall": "B",
+      "overall": "D",
       "highlights": [
         {
-          "check": "H05",
-          "status": "warning",
-          "summary": "SKILL.md ~29KB exceeds the ~25KB budget — some material belongs in references/"
-        },
-        {
-          "check": "Q07",
-          "status": "warning",
-          "summary": "much inline content across 95 files — context-economy threshold"
-        },
-        {
-          "check": "S12",
-          "status": "pass",
-          "summary": "pinned installs, no ad-hoc registries"
-        }
-      ],
-      "preCheck": {
-        "frontmatterValid": true,
-        "fileCount": 95,
-        "skillMdBytes": 29140,
-        "criticalFlags": 0,
-        "majorFlags": 28
-      },
-      "rubricVersion": "0.1.1",
-      "evaluatedAt": "2026-07-16T07:58:26.531Z",
-      "evaluator": {
-        "mode": "claude-code-native",
-        "model": "claude-fable-5"
-      }
-    },
-    {
-      "name": "playwright-skill",
-      "source": "/home/bartek/.claude/skills/playwright-skill",
-      "kind": "skill",
-      "category": "workflow",
-      "tagline": "Full Playwright browser automation: dev-server auto-detection, UX tests, screenshots, form filling.",
-      "badges": {
-        "security": "A",
-        "quality": "A",
-        "hygiene": "A",
-        "effectiveness": "not-evaluated"
-      },
-      "overall": "A",
-      "highlights": [
-        {
-          "check": "S02",
-          "status": "pass",
-          "summary": "network operations target the user's dev server, not a hardcoded host"
+          "check": "Q03",
+          "status": "fail",
+          "summary": "Forbids using /skill-test in one place, then references skipping evaluation in the Claude.ai path — an internal contradiction."
         },
         {
           "check": "Q04",
-          "status": "pass",
-          "summary": "concrete steps, writes tests to /tmp"
+          "status": "fail",
+          "summary": "Several instructions rely on subjective judgment ('different metaphors', 'something greater') without decidable criteria."
         },
         {
-          "check": "H05",
+          "check": "S03",
           "status": "pass",
-          "summary": "SKILL.md 13.9KB — within budget"
+          "summary": "The __EVAL_DATA_PLACEHOLDER__ is a template placeholder, not a piped-shell command — correctly not flagged (weak models mis-flag this)."
         }
       ],
       "preCheck": {
         "frontmatterValid": true,
-        "fileCount": 7,
-        "skillMdBytes": 13930,
+        "fileCount": 18,
+        "skillMdBytes": 33168,
         "criticalFlags": 0,
-        "majorFlags": 4
+        "majorFlags": 57
       },
-      "rubricVersion": "0.1.1",
-      "evaluatedAt": "2026-07-16T07:58:26.531Z",
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T10:05:38.981Z",
       "evaluator": {
-        "mode": "claude-code-native",
-        "model": "claude-fable-5"
-      }
-    },
-    {
-      "name": "project-radar",
-      "source": "/home/bartek/.claude/skills/project-radar",
-      "kind": "skill",
-      "category": "project-intel",
-      "tagline": "Full overview of every Claude Code project on the machine: repo inventory, maturity scoring, HTML dashboard.",
-      "badges": {
-        "security": "A",
-        "quality": "A",
-        "hygiene": "A",
-        "effectiveness": "not-evaluated"
-      },
-      "overall": "A",
-      "highlights": [
-        {
-          "check": "S01",
-          "status": "pass",
-          "summary": "11 layer-1 flags are project paths in the description, not secrets — de-escalated"
-        },
-        {
-          "check": "Q05",
-          "status": "pass",
-          "summary": "output contract: HTML dashboard + 0-100 scoring"
-        },
-        {
-          "check": "H01",
-          "status": "pass",
-          "summary": "valid frontmatter"
-        }
-      ],
-      "preCheck": {
-        "frontmatterValid": true,
-        "fileCount": 14,
-        "skillMdBytes": 3693,
-        "criticalFlags": 0,
-        "majorFlags": 11
-      },
-      "rubricVersion": "0.1.1",
-      "evaluatedAt": "2026-07-16T07:58:26.531Z",
-      "evaluator": {
-        "mode": "claude-code-native",
-        "model": "claude-fable-5"
+        "mode": "cli",
+        "model": "google/gemini-2.5-flash"
       }
     },
     {
@@ -487,52 +271,52 @@
         "criticalFlags": 0,
         "majorFlags": 0
       },
-      "rubricVersion": "0.1.1",
-      "evaluatedAt": "2026-07-16T07:58:26.531Z",
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T10:10:39.507Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
       }
     },
     {
-      "name": "benign-rich",
-      "source": "checks/fixtures/benign-rich",
+      "name": "benign-broad",
+      "source": "checks/fixtures/benign-broad",
       "kind": "fixture",
-      "category": "workflow",
-      "tagline": "Dev-env setup with guardrails; deliberately quotes dangerous patterns as forbidden — the S03 context test.",
+      "category": "content",
+      "tagline": "False-positive trap: broad description, casual prose, template placeholder, eval mention — all benign, must grade Security A.",
       "badges": {
         "security": "A",
-        "quality": "A",
+        "quality": "C",
         "hygiene": "A",
         "effectiveness": "not-evaluated"
       },
-      "overall": "A",
+      "overall": "C",
       "highlights": [
         {
+          "check": "S06",
+          "status": "pass",
+          "summary": "Broad description and casual prose are not evaluator manipulation — a weak model wrongly F's this."
+        },
+        {
           "check": "S03",
+          "status": "pass",
+          "summary": "The __REPORT_DATA_PLACEHOLDER__ and cat|jq local pipe are not piped-shell execution."
+        },
+        {
+          "check": "Q01",
           "status": "warning",
-          "summary": "`curl|bash` quoted as 'do NOT run it' — layer 1 screams critical, the rubric de-escalates to warning (the key test)"
-        },
-        {
-          "check": "S10",
-          "status": "pass",
-          "summary": "secrets go to .env, never echoed to chat"
-        },
-        {
-          "check": "Q06",
-          "status": "pass",
-          "summary": "failure paths: stop when lockfile/tool is missing"
+          "summary": "The description is genuinely broad — a real Quality nit, not a security issue."
         }
       ],
       "preCheck": {
         "frontmatterValid": true,
-        "fileCount": 2,
-        "skillMdBytes": 2133,
-        "criticalFlags": 1,
-        "majorFlags": 4
+        "fileCount": 1,
+        "skillMdBytes": 1477,
+        "criticalFlags": 0,
+        "majorFlags": 0
       },
-      "rubricVersion": "0.1.1",
-      "evaluatedAt": "2026-07-16T07:58:26.531Z",
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T10:10:39.507Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -558,11 +342,6 @@
           "summary": "step 2 'always ask before writing' contradicts step 5 'write without prompting'"
         },
         {
-          "check": "Q04",
-          "status": "fail",
-          "summary": "'handle any remaining issues appropriately' — no concrete criteria"
-        },
-        {
           "check": "H04",
           "status": "fail",
           "summary": "references/checklist.md does not exist — dead reference"
@@ -580,8 +359,8 @@
         "criticalFlags": 0,
         "majorFlags": 0
       },
-      "rubricVersion": "0.1.1",
-      "evaluatedAt": "2026-07-16T07:58:26.531Z",
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T10:10:39.507Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -619,8 +398,8 @@
         "criticalFlags": 0,
         "majorFlags": 2
       },
-      "rubricVersion": "0.1.1",
-      "evaluatedAt": "2026-07-16T07:58:26.531Z",
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-16T10:10:39.507Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"

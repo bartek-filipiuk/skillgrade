@@ -26,24 +26,33 @@ interface EvalInput {
   tagline: string
   badges: CatalogEntry['badges']
   highlights: CatalogEntry['highlights']
+  evaluator?: CatalogEntry['evaluator'] // who actually graded it; defaults to native
+  evaluatedAt?: string // override the build timestamp (e.g. from a CLI report)
+  preCheck?: CatalogEntry['preCheck'] // pre-supplied facts; else runPreChecks(e.source)
 }
 
 function buildEntry(e: EvalInput, evaluatedAt: string): CatalogEntry {
-  const pc = runPreChecks(e.source)
-  const skillMd = pc.files.find((f) => f.path === 'SKILL.md')
-  return {
-    ...e,
-    overall: overallGrade(e.badges),
-    preCheck: {
+  // Prefer facts carried in the eval input (from a CLI report) so the catalog is
+  // self-contained — a public skill's original need not be present locally.
+  let preCheck = e.preCheck
+  if (!preCheck) {
+    const pc = runPreChecks(e.source)
+    const skillMd = pc.files.find((f) => f.path === 'SKILL.md')
+    preCheck = {
       frontmatterValid: pc.frontmatter.valid,
       fileCount: pc.files.length,
       skillMdBytes: skillMd?.bytes ?? 0,
       criticalFlags: pc.flags.filter((f) => f.severity === 'critical').length,
       majorFlags: pc.flags.filter((f) => f.severity === 'major').length,
-    },
+    }
+  }
+  return {
+    ...e,
+    overall: overallGrade(e.badges),
+    preCheck,
     rubricVersion: RUBRIC_VERSION,
-    evaluatedAt,
-    evaluator: EVALUATOR,
+    evaluatedAt: e.evaluatedAt ?? evaluatedAt,
+    evaluator: e.evaluator ?? EVALUATOR,
   }
 }
 

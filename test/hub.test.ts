@@ -27,11 +27,16 @@ describe('buildCatalog', () => {
   it('every category is a known taxonomy id', () => {
     for (const s of catalog.skills) expect(CATEGORY_IDS).toContain(s.category)
   })
-  it('merges real pre-check facts (idea-to-mvp SKILL.md over budget → hygiene B)', () => {
-    const mvp = catalog.skills.find((s) => s.name === 'idea-to-mvp')!
-    expect(mvp.preCheck.skillMdBytes).toBeGreaterThan(25000)
-    expect(mvp.badges.hygiene).toBe('B')
-    expect(mvp.overall).toBe('B')
+  it('computes pre-check facts from source for fixtures (no pre-supplied preCheck)', () => {
+    const fx = catalog.skills.find((s) => s.name === 'benign-minimal')!
+    expect(fx.preCheck.frontmatterValid).toBe(true)
+    expect(fx.preCheck.skillMdBytes).toBeGreaterThan(0)
+  })
+  it('carries pre-supplied pre-check facts + evaluator for public skills', () => {
+    const pub = catalog.skills.find((s) => s.name === 'skill-creator')!
+    expect(pub.preCheck.skillMdBytes).toBeGreaterThan(25000) // supplied from the CLI report
+    expect(pub.evaluator.model).toBe('google/gemini-2.5-flash')
+    expect(pub.sourceUrl).toContain('github.com/anthropics/skills')
   })
   it('demonstrates the full badge range for the hub UI', () => {
     const grades = new Set(catalog.skills.map((s) => s.overall))

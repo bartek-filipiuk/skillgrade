@@ -1,10 +1,8 @@
 # Models & pricing (evaluation backends)
 
-**Status: no cheap OpenRouter model is production-ready yet — there is a harness reliability blocker (structured output).** Our `generateObject` sends a JSON-schema `response_format` that OpenRouter's OpenAI-compatible endpoint does NOT reliably support for non-OpenAI models. On real (large) skills the whole dimension call then fails and every check collapses to `evaluation-error` → a spurious F. Measured on 5 real `anthropics/skills` with gemini-2.5-flash: **2 of 5 had an entire dimension error out** (webapp-testing QUALITY, skill-creator SECURITY). So gemini's fixture pass is real but its real-skill reliability is not.
+**Recommended production model: `openrouter:google/gemini-2.5-flash`** ($0.30/$2.50 per 1M). Passes the full 7-fixture corpus (incl. `benign-broad`) and — after the harness structured-output fix (below) — grades real `anthropics/skills` correctly: skill-creator SECURITY went from 12/12 `evaluation-error` (spurious F) to 12/12 pass (A); webapp-testing QUALITY from all-error to real verdicts. ~6× cheaper than grok-4.5. Reliable alternative: `grok-4.5` (pricier, no fallback needed).
 
-**Reliable-and-accurate today: `openrouter:x-ai/grok-4.5`** ($2.00/$6.00) — grades real skills correctly (pdf A, skill-creator A) with real verdicts (no structured-output collapse), but pricey/slow. **`anthropic:claude-haiku-4.5` via the native `anthropic:` provider** (needs `ANTHROPIC_API_KEY`) is the likely cheaper-and-reliable answer (tool-based structured output can't collapse this way; 100% native in run 01) — untested here (no key in env).
-
-**The fix** (before cheap OpenRouter models are viable): harden `src/llm.ts` so a dimension whose structured-output call fails falls back to text+parse or retries per-check, instead of erroring the whole dimension. Until then, prefer OpenAI models (reliable `response_format`) or native Anthropic.
+**Harness fix (shipped, `src/llm.ts`):** non-OpenAI models via OpenRouter reject the JSON-schema `response_format`, which used to collapse a whole dimension to `evaluation-error`. Now a failed structured call falls back to `generateText` + robust JSON extraction; per-verdict validation (schema + evidence verification) is unchanged, so transport loosens, trust does not. This unblocked the cheap OpenRouter models.
 
 OpenRouter list prices per 1M tokens, checked **2026-07-16**. Prices drift — re-check at openrouter.ai/models. Verdicts from `scripts/calibrate.ts` (rubric v0.1.2) + real-skill spot-checks; see `docs/calibration/2026-07-16-openrouter.md`.
 
@@ -22,7 +20,7 @@ OpenRouter list prices per 1M tokens, checked **2026-07-16**. Prices drift — r
 
 ## Rules of thumb
 
-- **Default (until harness structured-output fix lands):** `openrouter:x-ai/grok-4.5` (reliable+accurate, pricey) or native `anthropic:claude-haiku-4.5` (needs key). Avoid gemini/qwen/deepseek via OpenRouter for real skills — flaky structured output.
+- **Default:** `export TRUST_SKILL_MODEL=openrouter:google/gemini-2.5-flash` — passes the corpus and (with the src/llm.ts fallback) is reliable + accurate on real skills at a reasonable price.
 - **Anthropic models:** use the native `anthropic:` provider, NOT `openrouter:`. OpenRouter's OpenAI-compatible endpoint rejects the JSON-schema `response_format` for Anthropic models → every check errors → F/F/F. (This is a tooling incompatibility, not a model-quality issue.)
 - **Structured-output support matters:** models without it (deepseek, qwen on the OR path) produce unreliable verdict JSON and many `evaluation-error` results.
 - **Disqualifier:** any `malicious-*` fixture scoring above F. deepseek-v4-flash was talked into a passing grade on `malicious-injection` — cheap is worthless if it can be manipulated.
