@@ -1,5 +1,53 @@
 [
   {
+    "name": "self-improving-agent",
+    "source": "ClawHub · @pskoett/self-improving-agent · 3.9k★",
+    "sourceUrl": "https://clawhub.ai/pskoett/skills/self-improving-agent",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Popular ClawHub skill (3.9k★): captures learnings, errors and corrections so the agent improves over time.",
+    "badges": { "security": "A", "quality": "B", "hygiene": "A", "effectiveness": "not-evaluated" },
+    "highlights": [
+      { "check": "S01", "status": "pass", "summary": "Writes learnings to workspace files for its declared purpose — not secret exfiltration (a weak evaluator over-flags this)." },
+      { "check": "Q03", "status": "warning", "summary": "The stated Pattern-Key format says hyphenated, but the doc's own examples use underscores — a self-inconsistency." },
+      { "check": "H05", "status": "warning", "summary": "588-line SKILL.md is over the ~500-line budget (still under 2×)." }
+    ],
+    "preCheck": { "frontmatterValid": true, "fileCount": 1, "skillMdBytes": 21092, "criticalFlags": 0, "majorFlags": 0 },
+    "evaluator": { "mode": "claude-code-native", "model": "claude-fable-5" }
+  },
+  {
+    "name": "skill-vetter",
+    "source": "ClawHub · @spclaudehome/skill-vetter · 1.3k★",
+    "sourceUrl": "https://clawhub.ai/spclaudehome/skills/skill-vetter",
+    "kind": "skill",
+    "category": "security",
+    "tagline": "Popular ClawHub skill (1.3k★): a security-first checklist for vetting other skills before install. Meta — evaluated by a grader.",
+    "badges": { "security": "A", "quality": "B", "hygiene": "A", "effectiveness": "not-evaluated" },
+    "highlights": [
+      { "check": "S06", "status": "pass", "summary": "Lists attack patterns (curl|bash, ~/.ssh, base64) as things to DETECT — correctly read as detection material, not an attack; layer-1 flags 3, the rubric de-escalates." },
+      { "check": "Q02", "status": "fail", "summary": "No 'NOT for' / out-of-scope guidance — could misfire on general code review." },
+      { "check": "H07", "status": "warning", "summary": "jq is invoked with no requirements note or availability check." }
+    ],
+    "preCheck": { "frontmatterValid": true, "fileCount": 1, "skillMdBytes": 4560, "criticalFlags": 0, "majorFlags": 3 },
+    "evaluator": { "mode": "claude-code-native", "model": "claude-fable-5" }
+  },
+  {
+    "name": "ontology",
+    "source": "ClawHub · @oswalpalash/ontology · 650★",
+    "sourceUrl": "https://clawhub.ai/oswalpalash/skills/ontology",
+    "kind": "skill",
+    "category": "project-intel",
+    "tagline": "Popular ClawHub skill (650★): a typed knowledge graph for structured agent memory and composable recall.",
+    "badges": { "security": "B", "quality": "C", "hygiene": "B", "effectiveness": "not-evaluated" },
+    "highlights": [
+      { "check": "Q02", "status": "fail", "summary": "No out-of-scope guidance despite broad triggers — high misfire risk." },
+      { "check": "H08", "status": "fail", "summary": "No version field, changelog, or dated revision notes." },
+      { "check": "H07", "status": "warning", "summary": "python3 and a bundled script are invoked with no requirements note or availability check." }
+    ],
+    "preCheck": { "frontmatterValid": true, "fileCount": 1, "skillMdBytes": 6702, "criticalFlags": 0, "majorFlags": 0 },
+    "evaluator": { "mode": "claude-code-native", "model": "claude-fable-5" }
+  },
+  {
     "name": "mcp-builder",
     "source": "anthropics/skills · skills/mcp-builder",
     "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/mcp-builder",
