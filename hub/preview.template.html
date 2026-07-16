@@ -50,6 +50,10 @@
 <script id="catalog" type="application/json">/*CATALOG_JSON*/</script>
 <script>
   const cat = JSON.parse(document.getElementById('catalog').textContent);
+  // Skill-derived strings (name, tagline, highlight summary) come from untrusted
+  // skill content — escape before inserting into the DOM. A trust tool must not
+  // itself be XSS-able by a malicious skill.
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const labelOf = id => (cat.taxonomy.find(t=>t.id===id)||{}).label || id;
   const cls = g => g==='not-evaluated' ? 'NE' : g;
   const txt = g => g==='not-evaluated' ? '–' : g;
@@ -78,13 +82,13 @@
     const list = cat.skills.filter(s=>active==='all'||s.category===active);
     grid.innerHTML = list.map(s=>`
       <div class="card ${s.kind==='fixture'?'fixture':''}">
-        <div class="cat">${labelOf(s.category)}</div>
-        <h3>${s.name}</h3>
+        <div class="cat">${esc(labelOf(s.category))}</div>
+        <h3>${esc(s.name)}</h3>
         <div class="badges">
           ${badge(s.badges.security,'SEC')}${badge(s.badges.quality,'QUAL')}${badge(s.badges.hygiene,'HYG')}
         </div>
-        <div class="tag">${s.tagline}</div>
-        <ul class="hl">${s.highlights.map(h=>`<li><span class="st ${stCls(h.status)}">${h.check}</span>${h.summary}</li>`).join('')}</ul>
+        <div class="tag">${esc(s.tagline)}</div>
+        <ul class="hl">${s.highlights.map(h=>`<li><span class="st ${stCls(h.status)}">${esc(h.check)}</span>${esc(h.summary)}</li>`).join('')}</ul>
       </div>`).join('');
   }
   render();

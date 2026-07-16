@@ -57,7 +57,10 @@ export function buildCatalog(evals: EvalInput[], now: string): Catalog {
 }
 
 function renderPreview(catalog: Catalog, template: string): string {
-  return template.replace('/*CATALOG_JSON*/', JSON.stringify(catalog))
+  // Escape '<' so a skill name/tagline containing "</script>" can't break out of
+  // the <script type="application/json"> block it's injected into.
+  const json = JSON.stringify(catalog).replace(/</g, '\\u003c')
+  return template.replace('/*CATALOG_JSON*/', json)
 }
 
 // CLI entrypoint (skipped when imported by tests)
