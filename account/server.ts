@@ -114,9 +114,14 @@ export function main(): void {
     // transaction, so a crash between them rolls back BOTH and Stripe's retry
     // re-credits exactly once. ref is event.id; reason is pinned to 'purchase'
     // so the event id never leaks into the ledger reason column.
+    // NO onConflictDoNothing here: for CONCURRENT duplicate delivery both handlers
+    // see alreadyProcessed=false and run the tx; the second insert must raise the
+    // unique violation so its tx (credit included) rolls back. Stripe gets a non-2xx
+    // and retries; the retry then sees alreadyProcessed=true and skips. Exactly-once
+    // credit under both crash-retry AND concurrent delivery.
     addCredits: (userId, n, ref) => db.transaction(async (tx) => {
       await makeCredits(drizzlePrimitives(tx)).addCredits(userId, n, 'purchase', ref)
-      await tx.insert(stripeEvents).values({ eventId: ref }).onConflictDoNothing()
+      await tx.insert(stripeEvents).values({ eventId: ref })
     }),
   })
 
