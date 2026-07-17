@@ -1,27 +1,11 @@
 import { loadRubric } from '../src/rubric.js'
 import { aggregate } from '../src/aggregate.js'
-import type { ReportVerdict, DimensionKey, Letter } from '../src/types.js'
+import type { ReportVerdict, DimensionKey } from '../src/types.js'
 import type { WorklistItem } from './dedup.js'
+import type { EvalInput } from '../hub/build-catalog.js'
+import { CATEGORY_IDS } from '../hub/schema.js'
 
-// The EvalInput shape consumed by hub/build-catalog.ts (kept in sync with it).
-export interface EvalInput {
-  name: string
-  source: string
-  sourceUrl?: string
-  kind: 'skill'
-  category: string
-  tagline: string
-  verdict?: string
-  badges: { security: Letter | 'not-evaluated'; quality: Letter | 'not-evaluated'; hygiene: Letter | 'not-evaluated'; effectiveness: 'not-evaluated' }
-  highlights: { check: string; status: string; summary: string }[]
-  evaluator?: { mode: string; model: string }
-  evaluatedAt?: string
-  preCheck?: { frontmatterValid: boolean; fileCount: number; skillMdBytes: number; criticalFlags: number; majorFlags: number }
-  popularity?: number
-  mirrors?: string[]
-  discoveredVia?: string | null
-  skillMdHash?: string | null
-}
+export type { EvalInput }
 
 export interface WaveVerdicts {
   skillMdHash: string
@@ -67,9 +51,11 @@ export function mergeGraded(
       source: `GitHub · ${item.repo}${item.stars ? ` · ${item.stars}★` : ''}`,
       sourceUrl: item.primarySourceUrl,
       kind: 'skill',
-      category: w.category,
-      tagline: w.tagline,
-      verdict: w.verdict,
+      // Model-authored fields are clamped/validated here so one bad wave result can't
+      // crash the downstream CatalogSchema.parse (category enum, tagline≤140, verdict≤360).
+      category: CATEGORY_IDS.includes(w.category) ? w.category : 'workflow',
+      tagline: w.tagline.slice(0, 140),
+      verdict: w.verdict.slice(0, 360),
       badges,
       highlights,
       evaluator: { mode: 'claude-code-native', model: 'claude-sonnet-5' },

@@ -2,8 +2,6 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs'
 import { join } from 'node:path'
 import type { WorklistItem } from './dedup.js'
 
-const RANK: Record<WorklistItem['status'], number> = { ready: 0, drifted: 0, graded: 1, 'filtered-out': 2 }
-
 // Merge a fresh discovery pass into existing state without losing grading work.
 //   - a hash already graded stays graded (skip re-grading)
 //   - a fresh item on a known source but a NEW hash = drift → re-grade
@@ -25,7 +23,7 @@ export function mergeWorklist(existing: WorklistItem[], fresh: WorklistItem[], g
 export function selectWave(items: WorklistItem[], n: number): WorklistItem[] {
   return items
     .filter((i) => i.status === 'ready' || i.status === 'drifted')
-    .sort((a, b) => (RANK[a.status] - RANK[b.status]) || b.stars - a.stars)
+    .sort((a, b) => b.stars - a.stars)
     .slice(0, n)
 }
 

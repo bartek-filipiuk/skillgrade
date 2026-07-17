@@ -25,4 +25,16 @@ describe('runDiscovery', () => {
     expect(state.filter((i) => i.status === 'ready')).toHaveLength(1)
     expect(state.find((i) => i.status === 'ready')?.mirrors).toHaveLength(1)
   })
+
+  it('stops after maxCandidates so a firehose adapter cannot drive unbounded fetches', async () => {
+    const dir = mkdtempSync(join(tmpdir(), 'ds-'))
+    let fetches = 0
+    const res = await runDiscovery({
+      adapter: adapter([cand('a/b'), cand('c/d'), cand('e/f')]),
+      fetchContent: async () => { fetches++; return good },
+      dir, now: 'now', gradedHashes: new Set(), maxCandidates: 1,
+    })
+    expect(fetches).toBe(1) // only the first candidate was consumed
+    expect(res.ready).toBe(1)
+  })
 })

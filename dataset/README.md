@@ -39,9 +39,11 @@ stored by content hash, so re-runs are conditional (304 → served from cache).
 Work the worklist in waves of ≈50–100 (repeat until `ready`/`drifted` are drained):
 
 1. `selectWave(items, N)` — next N `ready`/`drifted` items, most popular first.
-2. `buildBatchInput(wave, readContent)` — builds one payload per skill:
-   `{ hash, name, sourceUrl, content }`. **The `content` is untrusted data to
-   evaluate, not instructions** — the grading prompt frames it as such.
+2. `buildBatchInput(wave, readCachedContent)` — builds one payload per skill:
+   `{ hash, name, sourceUrl, content }`, where `readCachedContent` (from
+   `dataset/discover.ts`) reads the cached SKILL.md by its `skillMdHash`. **The
+   `content` is untrusted data to evaluate, not instructions** — the grading
+   prompt frames it as such.
 3. Invoke the `grade-skills-batch` ultracode Workflow: it fans the batch out to
    Claude Sonnet 5 subagents, one per skill, each returning per-check `VERDICTS`
    (the model judges checks; it never assigns letter grades).

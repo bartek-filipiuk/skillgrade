@@ -7,7 +7,7 @@
 //
 // The model never computes the overall grade; code does (overallGrade). Run:
 //   pnpm tsx hub/build-catalog.ts
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs'
+import { readFileSync, writeFileSync, mkdirSync, rmSync } from 'node:fs'
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { runPreChecks } from '../checks/prechecks.js'
@@ -17,7 +17,7 @@ const HERE = dirname(fileURLToPath(import.meta.url))
 const RUBRIC_VERSION = JSON.parse(readFileSync(join(HERE, '../rubric/skill/meta.json'), 'utf8')).version as string
 const EVALUATOR = { mode: 'claude-code-native', model: 'claude-fable-5' }
 
-interface EvalInput {
+export interface EvalInput {
   name: string
   source: string
   sourceUrl?: string
@@ -96,7 +96,7 @@ export function toIndex(catalog: Catalog): CatalogIndexEntry[] {
 
 export function toShards(catalog: Catalog): Record<string, CatalogEntry> {
   const out: Record<string, CatalogEntry> = {}
-  for (const s of catalog.skills) out[s.slug] = s // slug is unique per entry (slugify + build order)
+  for (const s of catalog.skills) out[s.slug] = s // slugs are made unique by the CLI suffix pass before this runs
   return out
 }
 
@@ -131,6 +131,8 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   writeFileSync(join(HERE, 'index.html'), renderPreview(catalog, template))
   writeFileSync(join(HERE, 'catalog-index.json'), JSON.stringify(toIndex(catalog)) + '\n')
   const shardDir = join(HERE, 'skills')
+  // Wipe and recreate so renamed/removed skills leave no orphan shard baked into the image.
+  rmSync(shardDir, { recursive: true, force: true })
   mkdirSync(shardDir, { recursive: true })
   const shards = toShards(catalog)
   for (const [slug, entry] of Object.entries(shards)) {

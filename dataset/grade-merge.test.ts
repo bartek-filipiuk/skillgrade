@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { mergeGraded } from './grade-merge.js'
-import { HighlightSchema } from '../hub/schema.js'
+import { HighlightSchema, CatalogEntrySchema } from '../hub/schema.js'
 import type { WorklistItem } from './dedup.js'
 
 const RUBRIC = join(dirname(fileURLToPath(import.meta.url)), '../rubric/skill')
@@ -60,6 +60,18 @@ describe('mergeGraded', () => {
     }], items, RUBRIC, 'now')
     expect(out[0].highlights[0].summary).toBe('S04')
     expect(() => HighlightSchema.parse(out[0].highlights[0])).not.toThrow()
+  })
+  it('clamps off-taxonomy category and overlong tagline/verdict so the catalog build accepts it', () => {
+    const items = new Map<string, WorklistItem>([['h1', item('h1')]])
+    const out = mergeGraded([], [{
+      skillMdHash: 'h1', category: 'totally-made-up', tagline: 'x'.repeat(300), verdict: 'y'.repeat(500), verdicts: [],
+    }], items, RUBRIC, 'now')
+    expect(out[0].category).toBe('workflow')
+    expect(out[0].tagline.length).toBe(140)
+    expect(out[0].verdict!.length).toBe(360)
+    // The full entry (with builder-supplied fields) must pass CatalogEntrySchema.
+    const entry = { ...out[0], overall: 'F', rubricVersion: '1', slug: 'foo' }
+    expect(() => CatalogEntrySchema.parse(entry)).not.toThrow()
   })
   it('preserves hashless existing entries (no data loss) alongside a new graded hash', () => {
     const items = new Map<string, WorklistItem>([['h1', item('h1')]])

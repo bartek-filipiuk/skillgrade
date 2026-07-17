@@ -15,6 +15,9 @@ export function parseRepoSearch(json: unknown): RepoMeta[] {
   })
 }
 
+// Cap SKILL.md blobs taken from any one repo so a hostile repo tree can't flood the run.
+export const MAX_FILES_PER_REPO = 200
+
 export function parseTree(
   json: unknown,
   meta: { repo: string; ref: string; stars: number; pushedAt: string },
@@ -25,7 +28,8 @@ export function parseTree(
     const o = n as Record<string, unknown>
     if (o.type !== 'blob') continue
     const path = String(o.path)
-    if (!path.endsWith('SKILL.md')) continue
+    // Exact filename only — endsWith('SKILL.md') would also match MYSKILL.md.
+    if (path !== 'SKILL.md' && !path.endsWith('/SKILL.md')) continue
     out.push({
       sourceUrl: `https://github.com/${meta.repo}/blob/${meta.ref}/${path}`,
       repo: meta.repo,
@@ -34,6 +38,7 @@ export function parseTree(
       stars: meta.stars,
       pushedAt: meta.pushedAt,
     })
+    if (out.length >= MAX_FILES_PER_REPO) break
   }
   return out
 }
@@ -61,7 +66,13 @@ export function githubAdapter(apiGet: ApiGet): SourceAdapter {
         for (const m of parseRepoSearch(search)) {
           if (seenRepos.has(m.repo)) continue
           seenRepos.add(m.repo)
-          const tree = await apiGet(`/repos/${m.repo}/git/trees/${m.defaultBranch}?recursive=1`)
+          // One bad repo (deleted branch, rate spike) must not abort discovery — skip it.
+          let tree: unknown
+          try {
+            tree = await apiGet(`/repos/${m.repo}/git/trees/${m.defaultBranch}?recursive=1`)
+          } catch {
+            continue
+          }
           for (const c of parseTree(tree, { repo: m.repo, ref: m.defaultBranch, stars: m.stars, pushedAt: m.pushedAt })) {
             yield c
           }

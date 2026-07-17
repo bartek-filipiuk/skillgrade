@@ -152,7 +152,7 @@
 <script type="module">
   // Single module: runs after the DOM is parsed, so every getElementById below is valid.
   // Imports the pure browse helpers directly — no window bridge, no script-order race.
-  import { filterSort, paginate, GRADE_ORDER } from './client-search.js'
+  import { filterSort, paginate } from './client-search.js'
   var meta = JSON.parse(document.getElementById('catmeta').textContent);
   var esc = function(s){ return String(s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); };
 
