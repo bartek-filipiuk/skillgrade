@@ -3,7 +3,7 @@ import type { Candidate } from './adapters/types.js'
 export const ALLOWED_HOSTS = new Set(['api.github.com', 'raw.githubusercontent.com'])
 export const MAX_BYTES = 262144 // 256 KB — larger "SKILL.md" is junk or an attack
 
-const PRIVATE_HOST = /^(localhost|127\.|10\.|192\.168\.|169\.254\.|::1)/i
+const PRIVATE_HOST = /^(localhost|127\.|10\.|192\.168\.|169\.254\.|\[?::1)/i
 const PRIVATE_172 = /^172\.(1[6-9]|2\d|3[01])\./
 
 // SSRF guard: only https, only allowlisted hosts, never a private/link-local target.
@@ -61,14 +61,14 @@ export async function fetchSkillMd(c: Candidate, opts: FetchOpts = {}): Promise<
   if (etag) headers['if-none-match'] = etag
   let res: Response
   try {
-    res = await fetchFn(url, { headers })
+    res = await fetchFn(url, { headers, redirect: 'error' })
   } catch {
     return null
   }
   if (res.status === 304) return null
   if (!res.ok) return null
-  const body = await res.text()
-  if (body.length > maxBytes) return null
+  const body = await res.text().catch(() => null)
+  if (body === null || body.length > maxBytes) return null
   const newEtag = res.headers.get('etag') ?? undefined
   return { content: body, etag: newEtag }
 }
