@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T10:33:14.879Z",
+  "generatedAt": "2026-07-17T10:55:36.936Z",
   "rubricVersion": "0.1.2",
   "taxonomy": [
     {
@@ -96,7 +96,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -143,7 +143,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -190,7 +190,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -237,7 +237,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -467,7 +467,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -514,7 +514,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -561,7 +561,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -608,7 +608,7 @@
         "majorFlags": 9
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -655,7 +655,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -702,7 +702,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -749,7 +749,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -796,7 +796,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -843,7 +843,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -890,7 +890,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -937,7 +937,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -984,7 +984,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1031,7 +1031,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1073,7 +1073,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1120,7 +1120,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1167,7 +1167,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1214,7 +1214,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1261,7 +1261,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1308,7 +1308,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1355,7 +1355,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1397,7 +1397,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1444,7 +1444,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1491,7 +1491,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1528,7 +1528,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1575,7 +1575,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1617,7 +1617,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1664,7 +1664,7 @@
         "majorFlags": 4
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1711,7 +1711,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1758,7 +1758,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1805,7 +1805,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1852,7 +1852,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1889,7 +1889,7 @@
         "majorFlags": 18
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1936,7 +1936,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1983,7 +1983,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2025,7 +2025,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2072,7 +2072,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2119,7 +2119,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2161,7 +2161,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2208,7 +2208,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2255,7 +2255,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2302,7 +2302,7 @@
         "majorFlags": 12
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2344,7 +2344,7 @@
         "majorFlags": 6
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2391,7 +2391,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2428,7 +2428,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2475,7 +2475,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2522,7 +2522,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2569,7 +2569,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2616,7 +2616,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2663,7 +2663,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2710,7 +2710,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2757,7 +2757,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2804,7 +2804,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2851,7 +2851,7 @@
         "majorFlags": 2
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2898,7 +2898,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2945,7 +2945,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2992,7 +2992,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3039,7 +3039,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3081,7 +3081,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3128,7 +3128,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3165,7 +3165,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3212,7 +3212,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3259,7 +3259,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3306,7 +3306,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3353,7 +3353,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3400,7 +3400,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3447,7 +3447,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3484,7 +3484,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3531,7 +3531,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3578,7 +3578,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3625,7 +3625,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3672,7 +3672,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3719,7 +3719,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3766,7 +3766,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3813,7 +3813,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3860,7 +3860,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3902,7 +3902,7 @@
         "majorFlags": 2
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3949,7 +3949,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3996,7 +3996,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4043,7 +4043,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4090,7 +4090,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4137,7 +4137,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4184,7 +4184,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4231,7 +4231,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4278,7 +4278,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4325,7 +4325,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4372,7 +4372,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4419,7 +4419,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4466,7 +4466,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4513,7 +4513,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4560,7 +4560,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4607,7 +4607,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4654,7 +4654,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4691,7 +4691,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4738,7 +4738,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4785,7 +4785,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4832,7 +4832,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4879,7 +4879,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4926,7 +4926,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4973,7 +4973,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5010,7 +5010,7 @@
         "majorFlags": 2
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5057,7 +5057,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5104,7 +5104,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5151,7 +5151,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5198,7 +5198,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5245,7 +5245,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5287,7 +5287,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5334,7 +5334,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5381,7 +5381,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5423,7 +5423,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5470,7 +5470,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5517,7 +5517,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5564,7 +5564,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5611,7 +5611,7 @@
         "majorFlags": 2
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5658,7 +5658,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5705,7 +5705,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5752,7 +5752,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5799,7 +5799,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T10:33:14.879Z",
+      "evaluatedAt": "2026-07-17T10:55:36.936Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"

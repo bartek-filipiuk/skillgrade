@@ -44,6 +44,7 @@
       </div>
       <nav style="display:flex;gap:26px;align-items:baseline">
         <a href="#browse" data-scroll="browse" style="font-size:14px;color:#c9c3b8;cursor:pointer">Browse</a>
+        <a href="#mcp" data-scroll="mcp" style="font-size:14px;color:oklch(0.8 0.11 155);cursor:pointer">MCP</a>
         <a href="#methodology" data-scroll="methodology" style="font-size:14px;color:#c9c3b8;cursor:pointer">How we grade</a>
         <span class="mono" id="nav-rubric" style="font-size:11px;color:#8a857b;border:1px solid rgba(232,226,214,0.14);border-radius:99px;padding:3px 10px">rubric v—</span>
       </nav>
@@ -57,8 +58,38 @@
     <div style="display:flex;gap:14px;margin-top:36px;flex-wrap:wrap;animation:rise 0.5s 0.18s ease both">
       <a href="#browse" data-scroll="browse" class="cta-solid" style="background:#ece7dc;color:#171614;font-size:14.5px;font-weight:600;padding:12px 24px;border-radius:2px;cursor:pointer">Browse skills</a>
       <a href="#methodology" data-scroll="methodology" class="cta-ghost" style="border:1px solid rgba(232,226,214,0.22);color:#ece7dc;font-size:14.5px;font-weight:500;padding:12px 24px;border-radius:2px;cursor:pointer">How we grade</a>
+      <a href="#mcp" data-scroll="mcp" class="cta-ghost" style="border:1px solid oklch(0.8 0.11 155 / 0.5);color:oklch(0.8 0.11 155);font-size:14.5px;font-weight:500;padding:12px 24px;border-radius:2px;cursor:pointer">Audit your skills via MCP &rarr;</a>
     </div>
     <div id="stats" style="display:flex;border-top:1px solid rgba(232,226,214,0.1);border-bottom:1px solid rgba(232,226,214,0.1);border-right:1px solid rgba(232,226,214,0.1);margin:72px 0 0;flex-wrap:wrap;animation:rise 0.5s 0.24s ease both"></div>
+  </section>
+
+  <section id="mcp" style="margin-top:96px;border-top:1px solid oklch(0.8 0.11 155 / 0.22);background:linear-gradient(180deg,#1b1a17,#1a1917)">
+    <div class="wrap" style="padding-top:80px;padding-bottom:80px">
+      <p class="mono" style="font-size:11px;letter-spacing:0.18em;color:oklch(0.8 0.11 155);margin:0 0 18px">NEW &middot; MCP SERVER &middot; mcp.skillgrade.dev</p>
+      <div class="method-grid" style="display:grid;grid-template-columns:minmax(260px,420px) 1fr;gap:72px">
+        <div>
+          <h2 class="serif" style="font-size:38px;line-height:1.1;margin:0">Audit your installed skills — right from your agent.</h2>
+          <p style="font-size:15px;line-height:1.65;color:#9a948a;margin:20px 0 0;text-wrap:pretty">Connect the SkillGrade MCP to Claude Code and ask it to check the skills you already have. It matches each <span class="mono" style="font-size:13px">SKILL.md</span> against our graded catalog by content hash — so you see the grade, whether your copy <em style="font-style:italic;color:#c9c3b8">drifted</em> from the one we graded, and lightweight notes on what to fix.</p>
+          <p style="font-size:13.5px;line-height:1.6;color:#8a857b;margin:18px 0 0">Read-only and privacy-first: only a skill's <span style="color:#c9c3b8">name and a hash</span> ever leave your machine — never the skill's contents. The server runs nothing you send it.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:24px">
+          <div>
+            <p class="mono" style="font-size:10.5px;letter-spacing:0.12em;color:#8a857b;margin:0 0 10px">1 &middot; ADD THE SERVER</p>
+            <div class="mono" style="font-size:13px;color:#ece7dc;background:#111010;border:1px solid rgba(232,226,214,0.14);border-radius:4px;padding:14px 16px;overflow-x:auto;white-space:nowrap">claude mcp add --transport http skillgrade https://mcp.skillgrade.dev/mcp</div>
+          </div>
+          <div>
+            <p class="mono" style="font-size:10.5px;letter-spacing:0.12em;color:#8a857b;margin:0 0 10px">2 &middot; ASK YOUR AGENT</p>
+            <div style="font-size:14.5px;color:#c9c3b8;background:#111010;border:1px solid rgba(232,226,214,0.14);border-radius:4px;padding:14px 16px;line-height:1.5">&ldquo;Check the skills in <span class="mono" style="font-size:12.5px">~/.claude/skills</span> against SkillGrade — which are safe, which drifted, and what should I fix?&rdquo;</div>
+          </div>
+          <div style="display:flex;gap:22px;flex-wrap:wrap;padding-top:4px">
+            <div style="flex:1;min-width:150px"><p class="mono" style="font-size:11px;color:oklch(0.8 0.11 155);margin:0 0 4px">lookup_skill</p><p style="font-size:12.5px;color:#8a857b;margin:0;line-height:1.45">One skill by hash or name &rarr; grade + findings.</p></div>
+            <div style="flex:1;min-width:150px"><p class="mono" style="font-size:11px;color:oklch(0.8 0.11 155);margin:0 0 4px">audit_skills</p><p style="font-size:12.5px;color:#8a857b;margin:0;line-height:1.45">Your whole set at once &rarr; summary + per-skill verdicts.</p></div>
+            <div style="flex:1;min-width:150px"><p class="mono" style="font-size:11px;color:oklch(0.8 0.11 155);margin:0 0 4px">search</p><p style="font-size:12.5px;color:#8a857b;margin:0;line-height:1.45">Find a graded skill by name.</p></div>
+          </div>
+          <p style="font-size:12.5px;color:#6f6a61;margin:2px 0 0;line-height:1.55">Status &mdash; <span style="color:#9a948a">verified</span>: your copy matches ours &middot; <span style="color:#9a948a">drift</span>: yours differs, we can&rsquo;t vouch for it &middot; <span style="color:#9a948a">reference</span>: graded, send a hash to confirm &middot; <span style="color:#9a948a">unknown</span>: not in the catalog yet.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="methodology" style="margin-top:96px;border-top:1px solid rgba(232,226,214,0.08);background:#1a1917">
