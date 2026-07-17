@@ -112,8 +112,20 @@ async function githubApiGet(path: string): Promise<unknown> {
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const token = process.env.GITHUB_TOKEN
-  const gradedHashes = new Set<string>() // seeded by grade step; empty run = grade everything ready
-  runDiscovery({ adapter: githubAdapter(githubApiGet), fetchContent: cachedFetch(token), dir: HERE, now: new Date().toISOString(), gradedHashes })
+  const gradedHashes = new Set<string>() // seed from evaluations.json when re-scanning; empty = grade everything ready
+  const adapter = githubAdapter(githubApiGet, {
+    codeSearch: process.env.CODE_SEARCH !== '0', // default on; CODE_SEARCH=0 to disable
+    maxReposPerQuery: process.env.MAX_REPOS ? Number(process.env.MAX_REPOS) : undefined,
+  })
+  runDiscovery({
+    adapter,
+    fetchContent: cachedFetch(token),
+    dir: HERE,
+    now: new Date().toISOString(),
+    gradedHashes,
+    maxCandidates: process.env.MAX_CANDIDATES ? Number(process.env.MAX_CANDIDATES) : undefined,
+    concurrency: process.env.CONCURRENCY ? Number(process.env.CONCURRENCY) : undefined,
+  })
     .then((r) => console.log(`discovery: ready=${r.ready} filtered=${r.filtered} drifted=${r.drifted}`))
     .catch((e) => { console.error(e); process.exit(1) })
 }
