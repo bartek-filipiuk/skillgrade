@@ -131,7 +131,7 @@
     <div id="sentinel" style="height:1px"></div>
     <div id="empty" style="display:none;border:1px dashed rgba(232,226,214,0.16);border-radius:4px;padding:56px 24px;text-align:center;margin-top:32px">
       <p class="serif" style="font-size:24px;margin:0">No skills in this category.</p>
-      <p style="font-size:13.5px;color:#8a857b;margin:10px 0 0">Try a different category, relax the minimum grade, or show fixtures.</p>
+      <p style="font-size:13.5px;color:#8a857b;margin:10px 0 0">Try a different category or relax the minimum grade.</p>
     </div>
   </section>
 
@@ -150,17 +150,13 @@
      and each skill's full detail is lazy-loaded from skills/<slug>.json on demand. -->
 <script id="catmeta" type="application/json">/*CATALOG_META_JSON*/</script>
 <script type="module">
+  // Single module: runs after the DOM is parsed, so every getElementById below is valid.
+  // Imports the pure browse helpers directly — no window bridge, no script-order race.
   import { filterSort, paginate, GRADE_ORDER } from './client-search.js'
-  window.__browse = { filterSort, paginate, GRADE_ORDER }
-</script>
-<script>
-(function(){
-  var B = window.__browse;
   var meta = JSON.parse(document.getElementById('catmeta').textContent);
   var esc = function(s){ return String(s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); };
 
   var PAGE = 60;
-  var GRADE_ORDER = B.GRADE_ORDER;
   var GRADE_COLOR = { A:'oklch(0.8 0.11 155)', B:'oklch(0.8 0.11 125)', C:'oklch(0.8 0.11 95)', D:'oklch(0.77 0.12 60)', F:'oklch(0.68 0.16 25)', 'not-evaluated':'#8a857b' };
   var tint = function(g,a){ return g==='not-evaluated' ? 'rgba(232,226,214,'+a+')' : GRADE_COLOR[g].replace(')',' / '+a+')'); };
   var STATUS = {
@@ -269,11 +265,15 @@
   function cardHTML(s){
     var host = '';
     if(s.sourceUrl){ try { host = new URL(s.sourceUrl).hostname; } catch(e){ host = s.sourceUrl; } }
-    return '<article class="card" data-slug="'+esc(s.slug)+'" style="border:1px solid rgba(232,226,214,0.13);background:#1c1a17;border-radius:5px;padding:24px 24px 20px;cursor:pointer;transition:border-color 0.15s,transform 0.15s">'+
+    var frame = s.featured
+      ? 'border:1px solid oklch(0.8 0.11 155 / 0.5);box-shadow:0 0 0 1px oklch(0.8 0.11 155 / 0.15),0 8px 30px oklch(0.8 0.11 155 / 0.06);background:linear-gradient(#1e211c,#1c1a17)'
+      : 'border:1px solid rgba(232,226,214,0.13);background:#1c1a17';
+    return '<article class="card'+(s.featured?' featured':'')+'" data-slug="'+esc(s.slug)+'" style="'+frame+';border-radius:5px;padding:24px 24px 20px;cursor:pointer;transition:border-color 0.15s,transform 0.15s">'+
       '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:18px">'+
         '<div style="min-width:0">'+
           '<div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap">'+
             '<span class="mono" style="font-size:10.5px;letter-spacing:0.14em;color:#8a857b;text-transform:uppercase">'+esc(labelOf(s.category))+'</span>'+
+            (s.featured?'<span class="mono" style="font-size:9.5px;letter-spacing:0.1em;color:oklch(0.8 0.11 155);border:1px solid oklch(0.8 0.11 155 / 0.45);border-radius:99px;padding:2px 8px">★ FEATURED</span>':'')+
           '</div>'+
           '<h3 class="serif" style="font-size:27px;margin:0;line-height:1.1">'+esc(s.name)+'</h3>'+
           '<p style="font-size:14px;line-height:1.55;color:#9a948a;margin:10px 0 0;text-wrap:pretty">'+esc(s.tagline)+'</p>'+
@@ -296,7 +296,7 @@
   var shardCache = {};
 
   function appendPage(){
-    var pg = B.paginate(filteredRows, state.page, PAGE);
+    var pg = paginate(filteredRows, state.page, PAGE);
     document.getElementById('grid').insertAdjacentHTML('beforeend', pg.rows.map(cardHTML).join(''));
     hasMore = pg.hasMore;
     document.getElementById('sentinel').style.display = hasMore ? 'block' : 'none';
@@ -304,7 +304,13 @@
 
   // Re-run the filter/sort and render page 0 fresh. Load-more only ever APPENDS.
   function refresh(){
-    filteredRows = B.filterSort(index, state);
+    // Featured rows pin to the top (ascending featuredOrder) within the current filter set;
+    // a featured card still hides if it doesn't match the active category/min-grade/query.
+    var rows = filterSort(index, state);
+    var featured = rows.filter(function(r){ return r.featured; })
+      .sort(function(a,b){ return (a.featuredOrder==null?9999:a.featuredOrder) - (b.featuredOrder==null?9999:b.featuredOrder); });
+    var rest = rows.filter(function(r){ return !r.featured; });
+    filteredRows = featured.concat(rest);
     state.page = 0;
     var n = filteredRows.length;
     document.getElementById('count-label').textContent = n+(n===1?' SKILL':' SKILLS')+' SHOWN';
@@ -315,10 +321,23 @@
 
   function openBySlug(slug){
     if(shardCache[slug]){ openDetail(shardCache[slug]); return; }
-    fetch('skills/'+encodeURIComponent(slug)+'.json').then(function(r){ return r.json(); }).then(function(detail){
+    fetch('skills/'+encodeURIComponent(slug)+'.json').then(function(r){
+      if(!r.ok) throw new Error('shard '+slug+' HTTP '+r.status);
+      return r.json();
+    }).then(function(detail){
       shardCache[slug] = detail;
       openDetail(detail);
-    }).catch(function(){ /* shard missing/offline — leave the grid as-is */ });
+    }).catch(function(err){
+      console.error('SkillGrade: could not load skill detail', err);
+      var d = document.getElementById('drawer');
+      d.style.animation = 'drawerIn 0.22s ease both';
+      d.innerHTML = '<div style="display:flex;justify-content:flex-end">'+
+        '<button id="drawer-close" style="background:none;border:1px solid rgba(232,226,214,0.18);border-radius:99px;color:#c9c3b8;width:32px;height:32px;cursor:pointer;font-size:14px;line-height:1">✕</button></div>'+
+        '<p style="font-size:15px;color:#b0aa9e;margin:24px 0 0">Couldn&rsquo;t load details — try again.</p>';
+      document.getElementById('backdrop').style.display='block';
+      d.style.display='block';
+      document.getElementById('drawer-close').onclick = closeDetail;
+    });
   }
 
   function openDetail(s){
@@ -415,7 +434,6 @@
     document.getElementById('empty').style.display = 'block';
     document.getElementById('empty').innerHTML = '<p class="serif" style="font-size:24px;margin:0">Could not load the catalog.</p>';
   });
-})();
 </script>
 </body>
 </html>

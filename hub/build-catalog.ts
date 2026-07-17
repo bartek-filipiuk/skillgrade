@@ -89,6 +89,8 @@ export function toIndex(catalog: Catalog): CatalogIndexEntry[] {
     popularity: s.popularity,
     sourceUrl: s.sourceUrl ?? '',
     skillMdHash: s.skillMdHash,
+    featured: s.featured,
+    featuredOrder: s.featuredOrder,
   }))
 }
 

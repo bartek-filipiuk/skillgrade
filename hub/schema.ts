@@ -103,5 +103,7 @@ export const CatalogIndexEntrySchema = z.object({
   popularity: z.number().int().nonnegative(),
   sourceUrl: z.string(),
   skillMdHash: z.string().nullable(),
+  featured: z.boolean().optional(), // pinned to the top with a distinct frame
+  featuredOrder: z.number().int().optional(), // order among featured (ascending); default large
 })
 export type CatalogIndexEntry = z.infer<typeof CatalogIndexEntrySchema>
