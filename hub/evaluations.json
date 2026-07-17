@@ -10803,5 +10803,2783 @@
     "mirrors": [],
     "discoveredVia": "github",
     "skillMdHash": "6a47d0611f1b628983e1fa96e09a00d519ce10030bf7de95885d4bdba9f6ddef"
+  },
+  {
+    "name": "infographics",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/infographics/SKILL.md",
+    "kind": "skill",
+    "category": "media",
+    "tagline": "AI infographic generator (Nano Banana Pro) with Gemini 3 Pro quality review, iterative refinement, and optional Perplexity research lookup.",
+    "verdict": "No malicious patterns: no credential theft, destructive commands, obfuscation, or prompt-injection. It needs an OpenRouter API key and sends prompt text to third-party AI (Nano Banana Pro, Gemini 3 Pro, Perplexity) per its stated purpose. Gaps: file exceeds the ~500-line budget, no API/auth failure guidance; bundled scripts/refs unverifiable.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "Troubleshooting section (lines 520-535) only covers content/quality issues (unreadable text, color clash, low score, wrong type) — no guidance for missing/invalid API key, network failure, or rate-lim"
+      },
+      {
+        "check": "Q07",
+        "status": "warning",
+        "summary": "Document is verbose at 566 lines with many near-duplicate per-type example blocks (10 types x full bash command each, lines 160-309); could be condensed, and it pushes past the H05 size budget."
+      },
+      {
+        "check": "Q08",
+        "status": "warning",
+        "summary": "Quality scoring and iteration count depend on Gemini 3 Pro's judgment (lines 358-403), so repeated runs on identical input can yield different scores/iteration counts — inherent to the LLM-judge desig"
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:41:09.162Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 18169,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "f06abbacea7609933b4ee515a48d452d2659713402ea177b5b5fcf11eced67fd"
+  },
+  {
+    "name": "imaging-data-commons",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/imaging-data-commons/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Queries and downloads public cancer imaging (DICOM CT/MR/PET, pathology) from NCI's Imaging Data Commons via the idc-index Python package.",
+    "verdict": "No security red flags: no credential access, no obfuscated payloads, no exfiltration of local data, and it only pulls from mainstream PyPI/public buckets. Two hygiene issues for the user to know about: the file is 858 lines (~500-line budget), and the auto-upgrade check (line 26) does a buggy string comparison of version numbers and silently runs pip install",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "S04",
+        "status": "warning",
+        "summary": "Lines 18-33 run `subprocess.run([...pip3 install --upgrade --break-system-packages idc-index], check=True)` automatically as the mandated first step, silently modifying the Python environment without "
+      },
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No explicit negative-trigger guidance (e.g. when to prefer BigQuery/Portal instead, or when this skill does not apply) beyond a brief tool-selection table (lines 666-675)."
+      },
+      {
+        "check": "Q08",
+        "status": "warning",
+        "summary": "Line 26 (`if installed < REQUIRED_VERSION`) does a lexicographic string comparison of version numbers, which can misclassify versions (e.g. '0.9.0' vs '0.11.14') and skip or trigger an upgrade incorre"
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:41:09.162Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 36860,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "dc81a27c9f453b7a2e39697622d800c3ae1bf0d098fce9eeae372025c8ac6616"
+  },
+  {
+    "name": "iso-13485-certification",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/iso-13485-certification/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Guides medical-device makers through ISO 13485 QMS documentation: gap analysis, Quality Manual, procedure templates.",
+    "verdict": "No security red flags: no credential access, no network calls, no shell-piped remote code, no manipulation attempts. Main gaps are hygiene/quality nits: SKILL.md runs ~677 lines (over the ~500 budget), the bundled gap_analyzer.py script's actual behavior is unverified since no bundled files were fetched, no negative-use guidance is given, and failure paths (",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "gap_analyzer.py (line 45) is a bundled script that this SKILL.md-only review could not inspect for supply-chain integrity; its actual behavior is unverified from this file alone."
+      },
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No 'do not use when' / negative-trigger guidance is given anywhere in the file, so an agent could misapply the skill to out-of-scope regulatory frameworks without a stated boundary."
+      },
+      {
+        "check": "Q03",
+        "status": "warning",
+        "summary": "The 'Quick Reference' section is titled 'The 31 Required Documented Procedures' but the list itself has 33 numbered entries (lines 585-621); a trailing note tries to explain the mismatch (line 621) bu"
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:41:09.162Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 23261,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "d64b55c8fd2fcf4729c7dff44df9087b83d4d45047f4e47201f6965f00ecead9"
+  },
+  {
+    "name": "labarchive-integration",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/labarchive-integration/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Drives the LabArchives ELN REST API for auth, notebook backups, entries/attachments, and third-party tool integrations.",
+    "verdict": "Scope-matched, well-documented API integration skill (auth, backup, entries, reports, Protocols.io/Jupyter/REDCap). Main risk: it tells users to `git clone` and `pip install .` an unofficial, unpinned third-party wrapper (mcmero/labarchives-py) straight from GitHub, which is a supply-chain trust gap. No malicious behavior, secret exfiltration, or hidden inst",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "Line 222 has the user `git clone https://github.com/mcmero/labarchives-py` and run `uv pip install .` — an unofficial third-party wrapper (not published by LabArchives, not on PyPI), no commit pin or "
+      },
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No 'do not use when' guidance is given, e.g. for non-Enterprise accounts lacking API access or when LabArchives isn't the target ELN."
+      },
+      {
+        "check": "Q05",
+        "status": "warning",
+        "summary": "No explicit statement of output shape/contract (e.g. schema of backup archive, JSON vs XML response format details) beyond ad hoc examples; user must infer from API reference file (not bundled/verifia"
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:41:09.162Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 9461,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "67f24151b607651c9331ed8bf4d45f344b9a26bede779839bf36aaa380dbba2d"
+  },
+  {
+    "name": "lamindb",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/lamindb/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Domain skill for LaminDB, a lineage-tracking data lakehouse for biological datasets, covering setup, querying, curation, ontologies, and thi",
+    "verdict": "Clean, well-scoped reference skill. It has an explicit 'Safety and Security Defaults' section forbidding credential display/logging and requiring pinned installs, all shell/install commands are plain `uv pip install`/`lamin` CLI calls with no piping fetched code into a shell, and every claim stays within the stated LaminDB domain. Minor gaps: no explicit 'wh",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No explicit 'do not use when' / negative-trigger guidance anywhere in the file, so an agent could apply it outside its intended scope."
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "Failure-path handling ('troubleshooting') is deferred to `references/setup-deployment.md`, which was not fetched/available for this review, so it can't be verified as adequate."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:41:09.162Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 16130,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "b6148760ad8a590d98d2e997f3e8d5d8ed16fd0bbed78d084567ab0434337e55"
+  },
+  {
+    "name": "latchbio-integration",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/latchbio-integration/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Reference skill for building/deploying bioinformatics pipelines on the LatchBio platform (workflows, Registry data, GPU tasks).",
+    "verdict": "Clean, purely-documentary skill for the Latch SDK: no code exfiltrates secrets, no piped remote execution, no obfuscation, and it points to official docs.latch.bio / github.com/latchbio/latch. Minor quality gaps only: the frontmatter description is keyword-heavy rather than trigger-focused, no explicit output contract, and idempotency of `latch register` on ",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No 'when NOT to use this skill' guidance anywhere in the file; a user could misapply it to non-Latch bioinformatics tasks with no signpost against it."
+      },
+      {
+        "check": "Q05",
+        "status": "warning",
+        "summary": "No explicit statement of what artifact/output using the skill produces (e.g., expected files created, confirmation message format) — it reads as reference documentation rather than a task with a defin"
+      },
+      {
+        "check": "Q10",
+        "status": "warning",
+        "summary": "Doc never states whether re-running `latch register` or `latch init` on an already-initialized workflow is safe/idempotent or creates duplicate versions."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:41:09.162Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 9821,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "8731526133ef526b5a1cffccac9b0bd2f9e87bd4bf5d7f4d1155f91d4028c6c3"
+  },
+  {
+    "name": "latex-posters",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/latex-posters/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Generates LaTeX research posters (beamerposter/tikzposter/baposter) with AI-generated visuals, overflow checks, and print QC.",
+    "verdict": "No malicious behavior found: no credential access, no piped remote execution, no hidden instructions, no destructive commands. Main issues are quality/hygiene, not safety: the file is ~1600 lines (3x the size budget) with heavy repetition, contains a self-contradictory visual-to-text ratio (60-70% vs 40-50%), and its core AI-visual workflow repeatedly invoke",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "Workflow repeatedly shells out to `python scripts/generate_schematic.py` (e.g. lines 318-355, 474-487) dozens of times as the core visual-generation step, but this SKILL.md-only review has no visibili"
+      },
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No 'when NOT to use' guidance is given anywhere in the file — e.g. no note that this isn't for slide decks, papers, or non-LaTeX posters."
+      },
+      {
+        "check": "Q03",
+        "status": "warning",
+        "summary": "Self-contradictory visual/text ratio: line 37 states 'Target: 60-70% of poster area should be AI-generated visuals, 30-40% text' while line 637 later recommends 'Balance text with visual content (40-5"
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:41:09.162Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 59384,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "86621cf37461597d80882914ecb84720b91ce09073b949bd4e0b42ee38b3ba21"
+  },
+  {
+    "name": "literature-review",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/literature-review/SKILL.md",
+    "kind": "skill",
+    "category": "security",
+    "tagline": "Guides systematic literature reviews — multi-database search, screening, citation verification, and PDF/figure generation.",
+    "verdict": "Detailed, well-structured research workflow, but its Dependencies section pipes a curl download straight into bash (unverified installer) and the pipeline leans on several unaudited third-party skills/services (parallel-cli, gget, OpenRouter) — a real supply-chain risk for installers who follow the setup steps literally. Also overlong (711 lines) with a dupl",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "B",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "S03",
+        "status": "fail",
+        "summary": "Line 670: `curl -fsSL https://parallel.ai/install.sh | bash` — downloads and executes a remote script directly into bash with no checksum/signature verification."
+      },
+      {
+        "check": "S09",
+        "status": "warning",
+        "summary": "Phase 2/Citation Chaining instruct fetching full paper content via `parallel-cli extract` (lines 115-118, 406-409) and treating it as review material, with no guidance to treat fetched external text a"
+      },
+      {
+        "check": "S10",
+        "status": "warning",
+        "summary": "required_environment_variables (line 6) prompts the user to supply an OPENROUTER_API_KEY; marked optional and used for the skill's own calls, but it is still a live-secret request bundled into the fro"
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:41:09.162Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 29099,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "93a8345629d2a3199e48337a1b24048de1c2a7cee7ddefcf4ed04a33ba4db12f"
+  },
+  {
+    "name": "liteparse",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/liteparse/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Wraps the real, popular open-source LiteParse library for local PDF/document parsing with OCR, bounding boxes, and JSON output.",
+    "verdict": "Clean skill: the underlying package is a verified, real, 11.6k-star open-source project (run-llama/LlamaIndex), all parsing stays local with no cloud calls, triggers and anti-triggers are clear, and failure paths (missing LibreOffice/ImageMagick, bad PDFs) are documented. No secret access, destructive ops, or hidden instructions found. Minor drift: pinned ex",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:41:09.162Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 9326,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "f56ed3a666ae865ad28ae0add367ee436aa2b642e9e111092b30877446bb231c"
+  },
+  {
+    "name": "markdown-mermaid-writing",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/markdown-mermaid-writing/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Style-guide skill for writing markdown docs with embedded Mermaid diagrams, plus 24 diagram refs and 9 doc templates.",
+    "verdict": "Well-structured markdown/Mermaid style-guide skill: clear triggers, actionable 5-step workflow, good pitfall/example coverage, no network calls, no secret access, no hidden instructions. Minor flags: it declares Bash tool access never used or explained (broader than needed), and metadata carries two conflicting version numbers (1.1 vs 1.0.0).",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "S11",
+        "status": "warning",
+        "summary": "allowed-tools declares Bash (line 4) alongside Read/Write/Edit, but nothing in the skill body uses, calls, or explains a need for shell execution for a markdown/diagram-writing task — capability decla"
+      },
+      {
+        "check": "Q05",
+        "status": "warning",
+        "summary": "No explicit statement of the final output artifact's shape (file location/naming convention) beyond 'commit as text' (Step 5, lines 179-181); relies on implicit convention rather than a stated contrac"
+      },
+      {
+        "check": "H07",
+        "status": "warning",
+        "summary": "allowed-tools lists Bash (line 4) with no corresponding shell usage described anywhere in the skill body — declared tooling exceeds what the documented workflow needs."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:41:09.162Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 14729,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "72235c2c27162172e263db610eb4a8b1f1c0b2267d33487641d42fa0407a05f6"
+  },
+  {
+    "name": "markitdown",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/markitdown/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Converts PDF, DOCX, PPTX, XLSX, images, audio, HTML and more to Markdown via Microsoft's markitdown, with optional OpenRouter image descript",
+    "verdict": "Largely a faithful wrapper around the real Microsoft markitdown tool, with a transparently declared optional OpenRouter key. Risk: an embedded 'Visual Enhancement with Scientific Schematics' section directs the agent to always invoke a separate scientific-schematics skill and auto-generate AI images per document — scope creep beyond the stated file-to-Markdo",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "C",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S02",
+        "status": "warning",
+        "summary": "Optional AI-image-description feature sends document/image content to OpenRouter (lines 128-148). Transparent and opt-in via declared env var, but is real network egress of local file content when ena"
+      },
+      {
+        "check": "S06",
+        "status": "warning",
+        "summary": "Lines 24-33 use directive language aimed at the agent — 'always consider adding scientific diagrams', 'Scientific schematics should be generated by default' — pushing behavior beyond what the user ask"
+      },
+      {
+        "check": "S07",
+        "status": "warning",
+        "summary": "Troubleshooting section includes `sudo apt-get install tesseract-ocr` (line 461) reachable via the declared Bash tool; a legitimate fix but a privilege-escalating command with no explicit confirmation"
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:41:09.162Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 13003,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "67762af9119e1e776982d3fb5ee713aff4a3b94e56cf1a949edee2abf577563e"
+  },
+  {
+    "name": "matplotlib",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/matplotlib/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Reference guide for using matplotlib (OO vs pyplot API, subplots, styling, exports) — plain documentation, no risky behavior.",
+    "verdict": "Clean, low-risk skill. It only teaches matplotlib usage patterns (plotting, styling, saving figures) via `uv add`/`uv run` and standard Python code; no network calls, no credential handling, no shell piping of remote code, no hidden instructions. Safe to install.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:41:09.162Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 12259,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "336fb01df4743c682dbcd6cdddbbe9b0bc091ab34d6f42e2a908d29df6f6656d"
+  },
+  {
+    "name": "matchms",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/matchms/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Reference skill wrapping the matchms Python library for mass-spec spectral similarity scoring and compound ID.",
+    "verdict": "Clean, well-scoped documentation skill. No credential access, no network egress beyond a normal `pip install matchms` of the real PyPI package, no shell-piped remote code, no obfuscation, and no attempts to steer the reviewing agent. Behavior matches its stated scope. Only minor gaps: it doesn't spell out failure-path handling (e.g. malformed spectra files) ",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q05",
+        "status": "warning",
+        "summary": "No explicit statement of expected output shape (e.g. what a Scores object or plot should look like beyond print statements); acceptable for a library-reference skill but not spelled out."
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "No guidance on handling malformed spectra, missing peaks, empty libraries, or similarity-function errors — a user following the skill has no fallback described for common failure modes."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:41:09.162Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 7030,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "a44a5ec8f7179365e5b3954976b4b6eb11e44be4c909faab63f52f6654f9dfd5"
+  },
+  {
+    "name": "market-research-reports",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/market-research-reports/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Generates 50+ page McKinsey-style market research reports (LaTeX/PDF) with auto-generated charts via companion skills.",
+    "verdict": "No security red flags found: no credential access, no piped remote-code execution, no hidden or obfuscated instructions, no destructive commands. Main issues are hygiene, not safety: the file is ~905 lines (nearly 2x the ~500-line budget) and gives no negative-trigger guidance, so a user may over-invoke it for short reports. It also assumes three sibling ski",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "Workflow assumes sibling skills exist at fixed relative paths (skills/scientific-schematics/..., skills/generate-image/..., skills/research-lookup/..., line 63, 81, 458) with no version pinning or int"
+      },
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No 'do not use when' guidance is given anywhere in the file, so a user has no signal to avoid invoking this heavy 50+-page/LaTeX workflow for a quick market summary."
+      },
+      {
+        "check": "Q07",
+        "status": "warning",
+        "summary": "At ~905 lines the skill is verbose and repeats similar per-chapter visual/required-content boilerplate 11 times (lines 128-415) instead of factoring it into the referenced references/report_structure_"
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:41:09.162Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 28691,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "d3adfbc78ddac8b18a4484f4368b005aa61dfa08084e67c7398fc746be237781"
+  },
+  {
+    "name": "matlab",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/matlab/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Reference skill for writing MATLAB/Octave scripts: matrix ops, plotting, stats, ODEs, and signal processing, with links to deeper docs.",
+    "verdict": "Clean, low-risk reference skill. No credential access, no network exfiltration, no obfuscation, no hidden or manipulative instructions. Only minor quality gaps: no negative-trigger guidance, no error-handling advice, and example code overwrites output files (results.csv, results.png) without checks. Nothing here endangers a user who installs it.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No explicit negative-trigger guidance (when NOT to use, e.g. for non-numeric scripting tasks or other languages); a user has no signal on scope boundaries."
+      },
+      {
+        "check": "Q05",
+        "status": "warning",
+        "summary": "No explicit statement of what output the skill should produce (script vs. explanation vs. execution) beyond implied code generation; left to context."
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "No guidance on error handling / try-catch patterns, or what to do when Octave/MATLAB isn't installed beyond the install snippet (lines 24-33)."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:41:09.162Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 9240,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "d2f07c2b2be9c03d8971b46a3e5483c4dd11c09c1dadac4af9a5aa1231761d76"
+  },
+  {
+    "name": "medchem",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/medchem/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Documents the medchem Python library: drug-likeness rules, structural alert catalogs, complexity metrics, and a query language for compound ",
+    "verdict": "Clean, purely informational reference skill for the medchem cheminformatics library. No network egress, no shell piping of remote code, no secret handling, no hidden or manipulative instructions. Minor polish gaps only: no explicit negative-use guidance and no failure-path notes (invalid SMILES, missing optional binaries). Safe to install.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No explicit 'do not use when' guidance (e.g., for non-drug-discovery cheminformatics tasks or when target-specific SAR knowledge is required instead) — a user could misapply the filters as a sole gate"
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "No guidance on failure paths — e.g., invalid SMILES/molecule parsing errors, or behavior when the optional lilly-medchem-rules binary is missing beyond noting it's 'optional'."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:41:09.162Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 10728,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "ab9fe5aa13f40f6273c69af27deed849135c4fe95bc7480e90c2e1040b820588"
+  },
+  {
+    "name": "modal",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/modal/SKILL.md",
+    "kind": "skill",
+    "category": "deployment",
+    "tagline": "Reference skill for deploying and scaling Python/ML workloads (GPUs, web endpoints, cron jobs) on Modal's serverless cloud.",
+    "verdict": "Clean, well-scoped SDK reference for Modal's serverless cloud. Credential handling is explicit and minimal (only MODAL_TOKEN_ID/SECRET, with an explicit instruction not to read or forward other env vars), and it gives sound guidance on isolating untrusted code via Sandbox + egress allowlists and on avoiding shell-injection in subprocess calls. Only minor gap",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No explicit 'do NOT use this skill when...' guidance is given anywhere, so a user could misapply it to non-Modal or non-cloud deployment scenarios without a clear signal to stop."
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "Failure-path handling is thin: only a GPU fallback chain (lines 143-146) and generic timeout config (line 294) are covered; no guidance on handling deploy failures, auth errors, or quota/OOM issues."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:41:09.162Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 15707,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "363aec9e83837b3b29b2331b4b7e24ac3e84fab0c7316d922315f1080fc402c7"
+  },
+  {
+    "name": "molecular-dynamics",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/molecular-dynamics/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Reference workflow for running OpenMM molecular dynamics simulations and analyzing trajectories with MDAnalysis.",
+    "verdict": "Clean scientific-computing skill: every code path runs locally, installs only mainstream conda-forge/PyPI packages (openmm, mdanalysis, pdbfixer, openff-toolkit), no network exfiltration, no shell-piped remote code, no obfuscation or hidden/manipulative instructions. Minor gaps: no explicit 'when NOT to use' guidance, thin failure-path handling beyond a GPU/",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No explicit negative-trigger guidance (e.g., when quantum-level accuracy, docking-only, or non-MD methods would be more appropriate); a user could misapply MD where it's overkill or insufficient."
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "Only failure-path handling shown is GPU platform fallback (CUDA->OpenCL->CPU, lines 121-130) and a general 'Save checkpoints' best practice (line 443); no guidance on handling minimization non-converg"
+      },
+      {
+        "check": "Q10",
+        "status": "warning",
+        "summary": "Re-running example functions with default filenames (e.g. 'minimized.pdb', 'nvt_traj.dcd', 'npt_checkpoint.chk') will silently overwrite prior run outputs; no uniqueness/overwrite-protection guidance."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:41:09.162Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 14702,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "ba4fbbcb50ce77edaefa0700249688cd878e3242c2fc4a847d7b00acb4fbd160"
+  },
+  {
+    "name": "networkx",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/networkx/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Reference skill for creating, analyzing, and visualizing graphs/networks in Python with the NetworkX library.",
+    "verdict": "Clean, low-risk skill. No credential access, network egress, shell-piped code, obfuscation, or hidden instructions found. All code examples operate on in-memory graph objects and local files the user explicitly names; nothing destructive or irreversible runs without the user driving it. Only minor quality gaps: no explicit negative triggers and thin failure-",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No explicit negative-trigger guidance ('do not use for X') anywhere in the file; a user can't easily tell when NOT to reach for this skill (e.g. non-graph tabular analysis)."
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "Failure-path handling is thin: install guidance only checks `nx.__version__` (lines 261-263) without handling ImportError, and no notes on common runtime errors (e.g. disconnected-graph exceptions fro"
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:41:09.162Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 13482,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "13c675a010f1af30b67dfe4499ae87d0b7b19e3aa1dc7b30ba41e30827ac0177"
+  },
+  {
+    "name": "molfeat",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/molfeat/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Reference skill teaching Claude to use the molfeat Python library for molecular featurization (fingerprints, descriptors, pretrained embeddi",
+    "verdict": "Clean, purely educational library-usage skill with no code execution risk of its own: version-pinned installs, an explicit warning against unsafe pickle caching, and a troubleshooting section. Minor nits only: it points to installing MAP4 from an unpinned third-party GitHub repo, has no 'when not to use' guidance, and runs slightly past the ~500-line budget.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "Line 48 tells the user to install MAP4 from `reymond-group/map4` on GitHub outside PyPI with no version pin or hash check, and recommends conda-forge for some heavy deps — a legitimate but unverifiabl"
+      },
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No explicit 'when NOT to use this skill' guidance (e.g., non-Python 3.9/3.10 environments, non-molecular ML tasks) is stated anywhere."
+      },
+      {
+        "check": "H05",
+        "status": "warning",
+        "summary": "File is 522 lines, modestly over the ~500-line budget."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:41:09.162Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 16376,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "8f756758378c703e0252016a63fe2357dd5034361ada80909c50c8df2116294f"
+  },
+  {
+    "name": "neurokit2",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/neurokit2/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Reference/how-to skill for the neurokit2 Python library covering ECG/EEG/EDA/RSP/EMG/EOG biosignal processing workflows.",
+    "verdict": "Clean, low-risk documentation skill. No network egress, no credential access, no destructive or obfuscated actions, and no attempts to manipulate the reviewer. Minor points: it points to an unpinned GitHub dev-branch zipball as an alternate install source, and it doesn't spell out negative triggers or failure-path guidance (e.g. bad signal quality, missing p",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "Line 278 offers installing straight from `https://github.com/neuropsychology/NeuroKit/zipball/dev` (an unpinned dev branch) alongside the normal PyPI install (line 273) — a user who follows this gets "
+      },
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No explicit 'do not use for X' guidance anywhere in the file, so a user can't quickly tell when this skill is the wrong tool (e.g. non-physiological time series, real-time streaming constraints)."
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "No section addresses failure paths — e.g. what happens with noisy signals, missing R-peaks, unsupported sampling rates, or how errors surface to the caller."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:52:44.701Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 12031,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "e784448d81532cce004872a8cc4665b1a6083d6472f2df3f16e54ffdbcf36817"
+  },
+  {
+    "name": "nextflow",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/nextflow/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Reference skill for building, running, and debugging Nextflow/nf-core bioinformatics pipelines, plus CLI and config guidance.",
+    "verdict": "Comprehensive, well-scoped, and honestly written skill with no manipulation or hidden instructions. Main risk: the Setup section has the user run `curl -s https://get.nextflow.io | bash` then `sudo mv` the result onto PATH — a curl-pipe-to-shell plus sudo install with no checksum shown, a real (if commonly used) supply-chain pattern users installing this ski",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "B",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S03",
+        "status": "warning",
+        "summary": "Setup section line 38: `curl -s https://get.nextflow.io | bash` pipes a remote script directly into bash with no integrity check shown. It mirrors Nextflow's own official install docs, but is still a "
+      },
+      {
+        "check": "S07",
+        "status": "warning",
+        "summary": "Line 39: `sudo mv nextflow /usr/local/bin/` requires elevated privileges during install. Standard for this tool's official install flow, but worth flagging as a privilege-escalation step a user should"
+      },
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "Install paths include a curl|bash script from get.nextflow.io and `pip install nf-core` / conda installs from bioconda/conda-forge — mainstream but unpinned/unverified sources (no hash/signature check"
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:52:44.701Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 12182,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "468e091a121c3614ecf0b67232d292444394a653c9accca55a50fcc0690348a3"
+  },
+  {
+    "name": "onekgpd",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/onekgpd/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Wraps a public 1000 Genomes Project genomics API for per-individual variant, sample, and kinship queries.",
+    "verdict": "Clean, well-scoped skill: no credentials used, network egress is disclosed and matches its stated purpose, and it repeatedly warns the caller to verify coordinates before querying. Minor gaps: the bundled query script (scripts/onekgpd_api.py) wasn't fetched in this review so its inline dependency supply chain can't be verified, and the 'Write' tool grant isn",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "`scripts/onekgpd_api.py` and `scripts/onekgpd_meta.py` are bundled resources not fetched/inspected in this SKILL.md-only review; the skill relies on `uv run`, which auto-installs packages from the scr"
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:52:44.701Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 18802,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "c49ae9168de30808e7044a460843b4cc3074fc830e1ed669ad73e9d940ae18d9"
+  },
+  {
+    "name": "omero-integration",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/omero-integration/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Python API skill for connecting to OMERO microscopy servers to fetch images, manage ROIs/annotations, run batch analysis and scripts.",
+    "verdict": "Clean, well-scoped integration skill. It legitimately needs OMERO_HOST/USER/PASSWORD to log into the user's own server (declared up front in frontmatter, no exfiltration seen). No shell-piped code, obfuscation, or hidden instructions. Weak spots: no 'when NOT to use' guidance and no idempotency notes for repeated write/delete operations (delete capability is",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S04",
+        "status": "warning",
+        "summary": "Section 8 'Advanced Features' names delete operations ('Delete objects with callbacks', line 117) as a capability, but the actual delete code/confirmation pattern lives in references/advanced.md, whic"
+      },
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No 'when NOT to use' guidance is present anywhere in the file — a user can't easily tell when this skill is the wrong tool (e.g. non-OMERO imaging platforms)."
+      },
+      {
+        "check": "Q05",
+        "status": "warning",
+        "summary": "No explicit statement of what artifact/output the skill produces (e.g. files, tables, images) beyond scattered mentions in 'Common scenarios' bullets; output contract is implicit only."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:52:44.701Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 8842,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "86fc1b4c72efc089e0ca64fbde2b5d563fb7652c3188d8ce8812dcf750035a86"
+  },
+  {
+    "name": "neuropixels-analysis",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/neuropixels-analysis/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "SpikeInterface-based end-to-end Neuropixels workflow: load, preprocess, drift-correct, spike-sort, and curate units.",
+    "verdict": "Clean, well-scoped scientific workflow skill. Steps are concrete SpikeInterface API calls, dependencies and versions are declared, and optional network/API use (Hugging Face model downloads, Anthropic API for AI-assisted curation) is disclosed with explicit trust warnings rather than hidden. Minor gaps: no negative-trigger guidance and no explicit re-run/ide",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S09",
+        "status": "warning",
+        "summary": "Model-based curation loads pretrained classifiers from Hugging Face via `trust_model=True` (lines 199-211), which deserializes remote model files. The skill does caveat 'only load models from sources "
+      },
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "Installs numerous third-party packages/sorters (kilosort, mountainsort5, spykingcircus, ibllib, bombcell, huggingface_hub/skops) and pulls ML classifier weights from Hugging Face repos (lines 199-211,"
+      },
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No explicit 'do not use when' / negative-trigger section; domain is narrow (Neuropixels-specific) so misfires are unlikely, but the omission is a real gap for a large reference document."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:52:44.701Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 16051,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "2b3df772f886c3536dd9b10ea1d88ce08edf2812285f8eb0e08c45f83b1ca266"
+  },
+  {
+    "name": "opentrons-integration",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/opentrons-integration/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Reference guide for writing Opentrons Protocol API v2 Python scripts to run OT-2/Flex lab robots (pipetting, modules, PCR).",
+    "verdict": "Clean, purely educational reference skill for the official Opentrons robotics API. No credential access, network calls, shell execution, or hidden instructions found. Only minor polish gaps: file runs slightly over the ~500-line budget and doesn't call out that physical protocols (liquid handling, PCR) aren't safely re-runnable if a script is executed twice.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q07",
+        "status": "warning",
+        "summary": "At 570 lines with many near-duplicate code blocks per hardware module, the file runs long relative to the ~500-line guidance, costing extra context on every load."
+      },
+      {
+        "check": "Q10",
+        "status": "warning",
+        "summary": "No guidance on re-run safety for physical protocols — re-executing a generated script would re-dispense liquids/re-run PCR cycles on real hardware, which the skill doesn't flag as a risk to the user."
+      },
+      {
+        "check": "H05",
+        "status": "warning",
+        "summary": "File is 570 lines, moderately over the ~500-line budget guidance."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:52:44.701Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 14735,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "077056d25a161ca3edbf7f9c371320236ad56c057e56690c3e27ec16d8f9d7c0"
+  },
+  {
+    "name": "open-notebook",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/open-notebook/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Wraps the self-hosted Open Notebook REST API for organizing research, ingesting docs, AI chat/search, and podcast generation across 16+ prov",
+    "verdict": "Mostly a documentation wrapper around a legitimate open-source self-hosted tool (github.com/lfnovo/open-notebook); no secret exfiltration or hidden instructions found. Main risk: the install step curls docker-compose.yml from the 'main' branch unpinned and unverified, then runs docker-compose up -d, so a future repo compromise or unreviewed change would be p",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S09",
+        "status": "warning",
+        "summary": "Line 39: `curl -o docker-compose.yml https://raw.githubusercontent.com/lfnovo/open-notebook/main/docker-compose.yml` pulls from the unpinned `main` branch and is executed via docker-compose without an"
+      },
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "Install pulls docker-compose.yml from an unpinned branch (line 39) and the compose file's own image sources aren't shown/pinned in this document, leaving supply-chain trust entirely on the upstream re"
+      },
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No 'do not use when' guidance is given anywhere in the file — e.g. no note that this requires Docker/self-hosting and isn't for users wanting a zero-install cloud option."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:52:44.701Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 10424,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "30736d5da208036e51cef990340d147f59b54114e72b7a6787330ee6d3cfc6a6"
+  },
+  {
+    "name": "pacsomatic",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pacsomatic/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Operator toolkit that validates inputs and generates samplesheets/launch scripts to run the nf-core/pacsomatic tumor-normal pipeline locally",
+    "verdict": "Clean, well-scoped operator skill for a genomics pipeline. Frontmatter, triggers, and workflow are consistent and concise; failure handling and an explicit response contract are defined. No secret access, network exfiltration, obfuscation, hidden instructions, or scope creep found in the SKILL.md text itself. Caveat: the actual bundled script (scripts/run_pa",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:52:44.701Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 5056,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "0b63aa3dad46e15ad1ebb59aca15f6b0de581752076a77cc902900d1a2dc036c"
+  },
+  {
+    "name": "paper-lookup",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/paper-lookup/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Searches 10 academic literature APIs (PubMed, arXiv, Semantic Scholar, Crossref, etc.) and returns papers/citations with reproducible proven",
+    "verdict": "Well-scoped and defensively written: it explicitly warns against following instructions embedded in fetched results, never echoing API keys, and bounds/rate-limits calls before asking to proceed. Minor gaps: no explicit 'don't use for X' guidance, and it instructs using WebFetch as the primary fetch tool without declaring WebFetch in allowed-tools (only Read",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No explicit 'do not use for X' guidance in the description or body; only implicit scope discipline ('Don't fan out across all ten just because they're available', line 21). Minor gap, low risk given t"
+      },
+      {
+        "check": "H07",
+        "status": "warning",
+        "summary": "allowed-tools declares only 'Read Bash', but the 'Making API Calls' section (lines 104-113) instructs using WebFetch as the primary HTTP fetch tool for Claude Code, with curl/Bash as fallback — WebFet"
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:52:44.701Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 14698,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "00a6f39a510881c5ae0e6df29e1dfad42dce1222a541319134cdc7588aab7913"
+  },
+  {
+    "name": "optimize-for-gpu",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/optimize-for-gpu/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Guides GPU-accelerating Python (NumPy/pandas/sklearn/NetworkX/Faiss) via CuPy, Numba, Warp, and RAPIDS libraries, with install commands and ",
+    "verdict": "No security risks found: no credential access, no data exfiltration, no piped remote-code execution, no destructive/hidden operations. Package installs point at PyPI and NVIDIA's official RAPIDS index via `uv add`, normal practice for this ecosystem. Two minor rough edges: the file is ~708 lines (well over the ~500-line budget) and its trigger phrasing ('eve",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No explicit 'do not use when' list in the description; combined with the auto-trigger phrase 'even if not explicitly requested' (line 34) this could cause the skill to fire more aggressively than a us"
+      },
+      {
+        "check": "Q07",
+        "status": "warning",
+        "summary": "Base SKILL.md carries ten full before/after code blocks (lines 410-679) inline rather than deferring all of them to the per-library reference files, adding bulk beyond what's needed to decide which li"
+      },
+      {
+        "check": "H05",
+        "status": "warning",
+        "summary": "File is 708 lines, roughly 40% over the ~500-line budget guideline."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:52:44.701Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 35580,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "bf1c8fb1a8531023c0936181d8e1b43c922729d10417e2163c916d4d45d6e3a2"
+  },
+  {
+    "name": "paperzilla",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/paperzilla/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "CLI-wrapper skill letting an agent browse Paperzilla projects, canonical papers, and recommendations via the `pz` command-line tool.",
+    "verdict": "Clean, in-scope skill: commands are concrete and reversible, no piped remote execution, no secret harvesting or hidden instructions. Minor risks: it tells the agent to blindly \"follow\" unspecified extra instructions from other profiles (S09), the CLI installs from a vendor-only brew tap/scoop bucket with no checksum mentioned (S12), and it lacks negative-use",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S09",
+        "status": "warning",
+        "summary": "\"If the current profile ships extra agent-specific instructions, follow those as well.\" — a vague directive to follow unspecified additional instructions from elsewhere, which could be abused if a ref"
+      },
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "CLI installed from a vendor-specific tap (\"brew install paperzilla-ai/tap/pz\") and a custom scoop bucket, not an official package index; no checksum/signature verification is mentioned."
+      },
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No section describing when NOT to use the skill."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:52:44.701Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 3744,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "550bd8fa63e054b5a049ba717a4e32671a31c0f9d6bf91ea57e5365a4ea7bdd9"
+  },
+  {
+    "name": "parallel-web",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/parallel-web/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Wraps Parallel's CLI (search, extract, deep research, enrichment, entity discovery, monitoring) behind an API key.",
+    "verdict": "Clean, well-scoped skill. It explicitly instructs the agent to treat fetched web content as untrusted and never follow embedded instructions, forbids printing/logging the API key, pins the installed CLI version, and caps polling loops. The only soft spot is trusting the third-party 'parallel-web-tools' PyPI package and the Parallel API itself, which can't be",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "Installs a third-party CLI, 'parallel-web-tools[cli]==0.7.1', from an external index (line 75). Version is pinned and installed in an isolated uv tool env, which mitigates but does not eliminate relia"
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:52:44.701Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 6192,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "3b5b0d317a0f3f2b4eaaaa136f12eceadf8f935db3514605bb3b769dabd11bd4"
+  },
+  {
+    "name": "pathml",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pathml/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Guide for PathML, a Python toolkit for whole-slide pathology image loading, preprocessing, ML training, and spatial proteomics analysis.",
+    "verdict": "Clean documentation-only skill: no shell execution, no secrets access, no network calls beyond a standard pip install. Description matches content, install source is PyPI. References six detail files not fetched here, so their content is unverified, but the SKILL.md itself is safe and well-scoped.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q05",
+        "status": "warning",
+        "summary": "No explicit statement of what a completed task should produce (files, artifacts, format); output is only implied by the code sample (processed tiles/masks), acceptable for a reference-style skill but "
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "SKILL.md itself contains no troubleshooting/error-handling guidance; it claims 'troubleshooting guidance' lives in the six reference files (line 149), which are not part of this review since no bundle"
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:52:44.701Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 7387,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "7fef8461207baf6631368ba93945f4d1c29bf1ac28c60daa9a2686c819d8103c"
+  },
+  {
+    "name": "pathway-enrichment",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pathway-enrichment/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Runs and interprets pathway/gene-set enrichment (ORA/GSEA/ssGSEA) on gene lists via gseapy, g:Profiler, Enrichr, MSigDB, GO, KEGG, Reactome.",
+    "verdict": "Clean bioinformatics workflow skill. Installs only well-known PyPI packages (gseapy, gprofiler-official), openly discloses the network access it needs (Enrichr/g:Profiler/MSigDB lookups) as part of its stated purpose, has no secret access, no destructive operations, and no hidden or manipulative instructions. Solid step-by-step guidance, pitfalls list, and r",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:52:44.701Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 12562,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "8fc67c71801a26acf4c06760a5da43fb849ed64da3d232941f3450e8819303a0"
+  },
+  {
+    "name": "pennylane",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pennylane/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Reference skill teaching PennyLane quantum-ML usage: pinned installs, circuit/VQE/optimizer code samples, links to bundled reference docs.",
+    "verdict": "Clean, well-scoped reference skill. Installs only official PennyLaneAI/plugin packages via pinned `uv pip install`, no credential access, no remote code execution, no hidden or manipulative text. Minor gaps: no troubleshooting/failure-path guidance and no explicit output contract, and the hardware-switch example implicitly assumes the user already has IBM Qu",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "No troubleshooting or failure-path section (e.g., what to do if a hardware plugin's dependency conflicts, or if the QPU job fails) despite the install section itself warning Qiskit's dependency graph "
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:52:44.701Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 8355,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "df2c6f23e3bfd50551e8f1f85a04458d000cc93cbfa2f8d5caa20bf97cd6ad1d"
+  },
+  {
+    "name": "peer-review",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/peer-review/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Guides Claude through a structured, checklist-based peer review of scientific manuscripts, grants, and presentation slide decks.",
+    "verdict": "Solid, well-scoped peer-review skill: clear triggers, structured output, no secret exfiltration. Flags: declares OPENROUTER_API_KEY and an image API for undocumented optional steps, depends on a sibling skill's script via an unverified relative path, and prints fake timestamped \"log\" lines that could mislead readers into thinking there is real monitoring.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "B",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S02",
+        "status": "warning",
+        "summary": "Frontmatter declares OPENROUTER_API_KEY 'for the skill's LLM-powered steps' (line 6) and the body says schematics 'should be generated by default' via an external AI, 'Nano Banana Pro' (lines 33-38) —"
+      },
+      {
+        "check": "S06",
+        "status": "warning",
+        "summary": "Body instructs the agent to print fabricated timestamped 'system log' lines (lines 412-415, 529-541: '[HH:MM:SS] PEER REVIEW: ...') that mimic genuine automated tooling output, which could mislead a u"
+      },
+      {
+        "check": "S11",
+        "status": "warning",
+        "summary": "The 'Visual Enhancement with Scientific Schematics' section (lines 29-60) pulls in an image-generation/network dependency tangential to the stated peer-review purpose, and the body also directly invok"
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:52:44.701Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 23773,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "78c7c48dcc0c1aaf67b65f5db2e2c7f18e16c873898cf6cc52fcbf36faf26be6"
+  },
+  {
+    "name": "pi-agent",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pi-agent/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Router/index skill for installing, configuring, and building on the Pi terminal coding agent (CLI, SDK, RPC, extensions, packages).",
+    "verdict": "Clean, low-risk reference index: no shell-piped code execution, no secret handling beyond advising env vars/OAuth, install command uses --ignore-scripts, no hidden or manipulative instructions. Weak spots are quality-only: no negative triggers, no explicit output contract or failure-path guidance, and it points to a dozen references/*.md files that were not ",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No explicit 'do not use for X' guidance anywhere in frontmatter or body; a user could misapply it to unrelated coding-agent tools."
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "No guidance for what to do if a referenced file is missing, a provider auth fails, or `pi` isn't installed — failure paths aren't addressed in the SKILL.md body."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:52:44.701Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 5250,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "75a6fe1a05f0947906a1fc0c32a64f23342b8ff567587413ef8f13eee030f678"
+  },
+  {
+    "name": "phylogenetics",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/phylogenetics/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Local bioinformatics pipeline (MAFFT, IQ-TREE 2, FastTree, ETE3) for building and analyzing phylogenetic trees via subprocess calls.",
+    "verdict": "Clean skill: shells out only to locally installed CLI tools (mafft, iqtree2, FastTree, trimal) on user files, reads no credentials, makes no network calls. Minor gaps: TrimAl missing from install block, IQ-TREE's --redo overwrites prior results silently, no bootstrap seed, no 'when NOT to use' guidance. No safety risk to install.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S04",
+        "status": "warning",
+        "summary": "run_iqtree() always passes --redo (line 145, comment 'Overwrite existing results'), and trim_alignment_trimal()'s failure path silently shutil.copy()'s over output_fasta (lines 111-113) — both overwri"
+      },
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No explicit 'do not use this for X' guidance anywhere in the file — e.g. no note that this isn't for pairwise alignment only, small-scale BLAST lookups, or non-phylogenetic sequence tasks."
+      },
+      {
+        "check": "Q08",
+        "status": "warning",
+        "summary": "No random seed parameter is exposed or set for IQ-TREE's ultrafast bootstrap or MAFFT's iterative refinement, so identical inputs can yield slightly different bootstrap/tree output across runs — not c"
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:52:44.701Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 13899,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "9a98ce760919a1f24e458f00d7568c668e3f821cd5ea48524eb06b4fe9816958"
+  },
+  {
+    "name": "polars-bio",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/polars-bio/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Reference skill for polars-bio: fast genomic interval ops and BED/VCF/BAM/GFF I/O on Polars DataFrames.",
+    "verdict": "Clean, well-scoped documentation skill. No credential reads, no unsolicited network calls, no shell-piped remote code, no hidden instructions. Install is pinned (polars-bio==0.31.0) to a real, named PyPI package. Cloud I/O only touches user-specified s3/gs/az paths via standard SDK env vars, never sent elsewhere. Minor gaps: no explicit 'do not use when' gui",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S11",
+        "status": "warning",
+        "summary": "allowed-tools declares Read Write Edit Bash (line 5); Bash is justified by `uv pip install` but the doc shows no other Bash usage, making the grant broader than demonstrated need."
+      },
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No explicit 'do not use when' / negative-trigger guidance anywhere in the document."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:52:44.701Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 15152,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "931b7df57fb8424b8251b8f28274b68811cb15524f2868f690b28100e929c433"
+  },
+  {
+    "name": "polars",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/polars/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Reference guide for the Polars Python DataFrame library: install, expressions, lazy evaluation, I/O, joins, and pandas migration.",
+    "verdict": "Clean, benign reference skill. No credential access, network egress, shell-piped execution, destructive operations, or hidden/manipulative instructions found. Only risk is that install/example commands (uv pip install, python snippets) exceed the declared allowed-tools: Read scope, and there's no guidance on install/query failure handling or when NOT to use ",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No explicit 'do NOT use for X' guidance (e.g. small in-memory scripts where pandas suffices) — a user can't tell from the description when polars is the wrong choice."
+      },
+      {
+        "check": "Q03",
+        "status": "warning",
+        "summary": "Frontmatter declares `allowed-tools: Read` (line 5) yet the body instructs running shell installs (line 22, 27) and executing Python code — tool scope and instructed actions are inconsistent."
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "No guidance on handling install failures, version mismatches, or runtime errors (e.g. schema mismatches on join, missing columns) — failure paths are unaddressed."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:52:44.701Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 9801,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "1f9a04203470bf75aa8ce46b2f71e5fd0c99145a933d12bf9b05c90538b082d9"
+  },
+  {
+    "name": "primekg",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/primekg/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Local Python/CSV skill for querying the PrimeKG precision-medicine knowledge graph (genes, drugs, diseases, phenotypes).",
+    "verdict": "No security issues: purely local, read-only CSV queries with no network egress, secrets access, or hidden instructions. Main risk is functional, not security: the data path is hardcoded to the original author's personal machine (C:\\Users\\eamon\\...), inconsistently duplicated as a WSL mount path, and no guidance covers a missing-data or no-match case, so it m",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No 'do NOT use when' guidance is given, so a user could invoke it for biology questions outside PrimeKG's actual coverage (e.g. entities absent from the graph)."
+      },
+      {
+        "check": "Q03",
+        "status": "warning",
+        "summary": "Data path is given twice in inconsistent forms: 'C:\\Users\\eamon\\Documents\\Data\\PrimeKG\\kg.csv' in Overview vs '/mnt/c/Users/eamon/Documents/Data/PrimeKG/kg.csv' in Resources; node counts also drift ('"
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "No handling is described for a missing data file, an unmatched search, or ambiguous entity names — a likely failure path given the hardcoded personal path."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:57:23.151Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 3841,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "c5d9bb04f9f1f632a534c4c106951ae37629b88b6952238beb00d48cddbbb000"
+  },
+  {
+    "name": "pptx-posters",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pptx-posters/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Builds AI-illustrated HTML research posters (with strict anti-clutter rules) exportable to PDF or PPTX via Chrome/LibreOffice.",
+    "verdict": "Clean skill: no secret harvesting, no piped/remote code execution, no hidden instructions, and it clearly states when (and when not) to use itself. Minor rough edges: it doesn't say what to do if LibreOffice/Chrome are missing, and Stage 3's `cp poster_html_template.html poster.html` will silently overwrite an existing poster.html on a re-run. The optional O",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "Content-quality failure modes (overflow, cramped text) are covered extensively (Quality Checklist, lines 325-367), but tooling failure paths are thin: 'Chrome headless PDF export... (if Chrome availab"
+      },
+      {
+        "check": "Q07",
+        "status": "warning",
+        "summary": "Considerable repetition of the same constraints (3-4 elements, 50% white space, GIANT/MANDATORY/CRITICAL) across at least 5 sections (lines 52-90, 168-190, 325-367, 370-387) inflates context usage wit"
+      },
+      {
+        "check": "Q10",
+        "status": "warning",
+        "summary": "Stage 3 step 1 `cp skills/pptx-posters/assets/poster_html_template.html poster.html` (lines 220-223) will silently overwrite an existing poster.html if the workflow is re-run after the user has alread"
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:57:23.151Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 14001,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "8c3cc4f1c4c92c9306326e143f46fe6a5ea1be75bae44915a43d07ee8b5bb02f"
+  },
+  {
+    "name": "pufferlib",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pufferlib/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Reference skill for building/training RL agents with PufferLib (PPO, vectorized envs, multi-agent) — docs and code patterns only.",
+    "verdict": "Clean, single-file reference skill with no security red flags: no credential access, no shell-piped remote code, no obfuscation, no hidden instructions, no destructive commands. Install is a plain `uv pip install pufferlib` from PyPI. Minor gap: the main file itself has no explicit error/troubleshooting guidance, deferring that to unreviewed reference/*.md f",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "The main SKILL.md itself has no troubleshooting/failure-handling section; error handling is deferred to 'Troubleshooting' subsections inside references/training.md, vectorization.md, integration.md, w"
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:57:23.151Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 13513,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "68f651e3f03a620b3cdbe8ae085fe96e160b80cc5661805a676a5ca4aa99fdb8"
+  },
+  {
+    "name": "protocolsio-integration",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/protocolsio-integration/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Documents the protocols.io API v3 (search, create, publish protocols; manage steps, files, workspaces, discussions) via bearer-token REST ca",
+    "verdict": "Clean, transparent API-integration skill: tokens are used only to call protocols.io directly, no exfiltration or hidden instructions found. Two real gaps for installers: irreversible actions (DOI publish, file/comment delete) have no built-in confirmation step, and repeated runs of create/publish workflows have no duplicate-avoidance guidance.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S04",
+        "status": "warning",
+        "summary": "Lists 'Delete and restore files' (line 99), comment deletion (line 69), and 'Publish protocols with DOI issuance' (line 56, and Workflow 2 step 6 at line 203) as normal operations with no instruction "
+      },
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No 'do not use when' / negative-trigger guidance anywhere in the file; a user can't tell from the skill when protocols.io integration is the wrong tool."
+      },
+      {
+        "check": "Q10",
+        "status": "warning",
+        "summary": "Create/publish workflows (Workflow 2, lines 194-205) give no guidance on checking for an existing protocol before creating, so re-running the workflow risks duplicate protocols or repeated DOI-publish"
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:57:23.151Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 14910,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "da9f38f70975f182b83290aed5f50023b1cac5db0fe327784fa48325695fda16"
+  },
+  {
+    "name": "pptx",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pptx/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Reads, edits, and creates .pptx decks (markitdown/pptxgenjs/LibreOffice) with design guidance and mandatory image-based QA.",
+    "verdict": "Clean local-tooling skill: no secret access, no network egress, no shell-piped remote code, no hidden instructions. All commands are local file conversions using well-known packages (markitdown, pptxgenjs, LibreOffice, Poppler) from standard registries. The only real gap for an installer is that editing.md, pptxgenjs.md, and scripts/office/{unpack,soffice}.p",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "Skill executes bundled scripts (scripts/office/unpack.py, scripts/office/soffice.py, scripts/thumbnail.py, lines 27/30/213) and links out to editing.md/pptxgenjs.md that were not fetched in this SKILL"
+      },
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No explicit 'do not use this skill for X' guidance is given anywhere in the file; scope is only defined positively."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:57:23.151Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 9157,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "2a330c9ef520d14c05b39fe382c132b1bdf284876ab34cb49f4aeb316f3cd28c"
+  },
+  {
+    "name": "pydeseq2",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pydeseq2/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Guides bulk RNA-seq differential expression analysis with PyDESeq2: design, testing, shrinkage, export, and troubleshooting.",
+    "verdict": "Clean, on-topic bioinformatics workflow skill with no security red flags: no credential access, no network exfiltration, no remote code piped into shell, pinned installs from PyPI, and explicit pickle-safety warnings. Minor nits: no negative-trigger guidance (single-cell vs bulk) and file runs to 577 lines, over the ~500-line budget, so some content could mo",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No explicit 'do not use for' guidance — e.g. does not clarify this is for bulk RNA-seq specifically, not single-cell, which a user could otherwise misapply the skill to."
+      },
+      {
+        "check": "H05",
+        "status": "warning",
+        "summary": "File is 577 lines, exceeding the ~500-line budget; several code-heavy sections (visualization guidelines, common analysis patterns) could be trimmed toward the reference docs."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:57:23.151Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 17512,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "d1e725f3e27fec5e0827a345b8d8ba24f751a19dee4e3c5459f159cd3a8335a5"
+  },
+  {
+    "name": "pyhealth",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pyhealth/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Guides building clinical ML pipelines with the PyHealth library (MIMIC/eICU/OMOP datasets, dataset→task→model→trainer→metrics pattern).",
+    "verdict": "Clean, well-scoped skill: no credential reads, no piped-shell execution of remote code, only standard `uv add pyhealth` installs and a public synthetic-MIMIC bucket URL for demos. Triggers and negative triggers are explicit, common pitfalls are flagged, and heavy reference docs are deferred to keep context small. No hidden instructions, no reviewer manipulat",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:57:23.151Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 7334,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "c8bc9e7d64e7f5b3e6b8d3e3b2394c3d02e25f6c45a763b77602ff2e559ff26c"
+  },
+  {
+    "name": "pylabrobot",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pylabrobot/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Python SDK skill wrapping PyLabRobot to drive multi-vendor lab hardware (liquid handlers, plate readers, pumps, centrifuges) from a unified ",
+    "verdict": "No malicious, obfuscated, or hidden content found; the file is plain documentation of a real open-source SDK (PyPI: PyLabRobot). Main real-world risk: it directs code that moves physical robots (pipetting, centrifuging) and only recommends simulation-first as a best practice rather than requiring a confirmation gate before hardware runs, and it gives no guid",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S04",
+        "status": "warning",
+        "summary": "Skill drives physical lab robots (pipette aspirate/dispense, centrifuge spin, heater/incubator temperature) which have real-world, irreversible effects (spills, sample loss, hardware collision). Best "
+      },
+      {
+        "check": "Q05",
+        "status": "warning",
+        "summary": "No explicit statement of what the skill should produce as its final output/deliverable (e.g., a runnable protocol script vs. a report); output is only implied by the code examples."
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "Failure handling is limited to one bullet, 'Implement proper async error handling for hardware operations' (line 127), with no guidance on specific hardware failure modes (tip-pickup failure, dispense"
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:57:23.151Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 8214,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "fd9e0f9f5f8824f03226904a2db970a1d84ec19b569f41048971c72b942ca6b7"
+  },
+  {
+    "name": "pydicom",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pydicom/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Reference skill for reading, writing, anonymizing, and converting medical DICOM imaging files with the pydicom Python library.",
+    "verdict": "Solid, low-risk library guide: no network egress, no secret access, no hidden or manipulative instructions. One real quality flaw: the anonymization example's comment claims dates get 'a random offset' but the code hardcodes StudyDate to a fixed value, so a user copying it verbatim gets weaker PHI protection than the text implies.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "Installs from PyPI with no version pins (`uv pip install pydicom`, `pylibjpeg`, `python-gdcm`, etc.) — legitimate, well-known packages, but unpinned installs mean the exact code executed is not reprod"
+      },
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No explicit 'do not use when' guidance anywhere in the file; nothing tells the agent when pydicom is the wrong tool (e.g. non-DICOM imaging formats, DICOMweb/network PACS protocols)."
+      },
+      {
+        "check": "Q03",
+        "status": "warning",
+        "summary": "Anonymization example is internally inconsistent: comment says '# Shift dates by a random offset' (line 216) but the code directly below hardcodes `ds.StudyDate = '20000101'` (line 217) — not random, "
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:57:23.151Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 13209,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "5c456f22b62951568e496df31a3c26fa22629f20b9b8a937d306f406821cea02"
+  },
+  {
+    "name": "pymatgen",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pymatgen/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Wraps the pymatgen library and Materials Project API for crystal structures, phase diagrams, and electronic-structure analysis.",
+    "verdict": "Clean, on-topic scientific toolkit skill. MP_API_KEY handling is declared transparently in frontmatter and only used against the official Materials Project API (next-gen.materialsproject.org) — no exfiltration, no shell-piping, no hidden instructions. Minor hygiene gaps only: file runs 690 lines (~38% over the ~500-line budget) and gives no explicit 'do not ",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No explicit negative-trigger section ('do NOT use for...') is present anywhere in the file, leaving edge cases (e.g. non-materials chemistry, MD simulations) unaddressed."
+      },
+      {
+        "check": "Q05",
+        "status": "warning",
+        "summary": "No explicit 'output contract' section defining expected return format; output shape is implied only by scattered code snippets (print statements, file writes), which is workable for a library-referenc"
+      },
+      {
+        "check": "H05",
+        "status": "warning",
+        "summary": "File is 690 lines total, roughly 38% over the ~500-line size budget, though the overage is legitimate technical content rather than bloat."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:57:23.151Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 20388,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "0b1f950c462dc0c357f1a0c2632fea68bf792bd3c0471a36a0ab6a77411005b6"
+  },
+  {
+    "name": "pymc",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pymc/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Guides Bayesian modeling in PyMC: model building, MCMC/NUTS sampling, diagnostics, and LOO/WAIC model comparison.",
+    "verdict": "Clean, pure-documentation skill. No credential access, no network egress beyond a declared `uv pip install` for PyMC itself, no obfuscation, no hidden or manipulative instructions, no destructive operations — all code is standard Bayesian-modeling Python (pymc/arviz) that stays within the stated scope. Only minor polish gaps: no explicit 'when not to use' gu",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No section states when NOT to use this skill (e.g. non-Bayesian/frequentist tasks, other PPLs like Stan); a user could invoke it outside its comfort zone without guidance."
+      },
+      {
+        "check": "Q05",
+        "status": "warning",
+        "summary": "No explicit statement of the expected final deliverable/output format (e.g. saved idata file, report); output is implied only through the workflow steps and 'Save results with idata.to_netcdf' note (l"
+      },
+      {
+        "check": "Q07",
+        "status": "warning",
+        "summary": "File is fairly dense with many near-duplicate code blocks (regression variants, sampling snippets repeated in both workflow and quick-reference sections), pushing it over typical context budget."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:57:23.151Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 17404,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "93b8322a7fce1093686a7c6fee845ffdbe5850c37d3eb4b4a046ba747adc3d6c"
+  },
+  {
+    "name": "pytdc",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pytdc/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Wraps the PyTDC Python library for loading drug-discovery ML datasets, benchmarks, splits, and molecular generation oracles.",
+    "verdict": "No security risks found: no credential access, no piped/remote code execution, no hidden or manipulative instructions, and the install command (uv pip install PyTDC) matches the real, well-known PyPI/GitHub package from Harvard's TDC project. Minor quality gaps only: no explicit 'when NOT to use' guidance and no documented failure-path handling (bad dataset ",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No section states when NOT to use the skill (e.g., non-drug ML tasks, production inference vs. research benchmarking); a user could misapply it outside its intended research/benchmarking scope with no"
+      },
+      {
+        "check": "Q05",
+        "status": "warning",
+        "summary": "Individual sections describe return shapes informally ('Returns dict with train/valid/test DataFrames', line 66; column names, lines 138-141) but there is no single explicit output-contract statement "
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "No guidance anywhere for handling errors: invalid dataset/oracle names, network failures during dataset download, or missing optional dependencies auto-installed 'as needed' (line 42)."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:57:23.151Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 12720,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "58521d6ec758ec8c4d96ee8b35cdb2c92532b6e741a4e1bd95823c0e8773d16f"
+  },
+  {
+    "name": "pysam",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pysam/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Reference skill teaching pysam usage to read/write SAM/BAM/CRAM, VCF/BCF and FASTA/FASTQ genomic files via samtools/bcftools wrappers.",
+    "verdict": "Clean, narrowly-scoped bioinformatics reference. No credential access, no network egress, no piped/remote code execution, no obfuscation, no manipulative language. File-write operations (pysam \"wb\" mode, samtools.sort/view) are ordinary library semantics, not unconfirmed destructive actions. Only soft gap: no explicit \"when NOT to use\" guidance.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No 'when NOT to use this skill' guidance is present anywhere in the file; a user can't easily tell when a different tool (e.g. non-genomic file handling) would be more appropriate."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:57:23.151Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 10003,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "32f26e46ef7438881011d240444e4ca8330cd4f7f9ca59c1c29f73606d2f0142"
+  },
+  {
+    "name": "pyopenms",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pyopenms/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Wraps pyOpenMS (mass-spectrometry proteomics/metabolomics) into ready-to-run CLI scripts and API guidance.",
+    "verdict": "Clean, well-scoped scientific-computing skill. No secret access, no network egress beyond a standard `pip install pyopenms` from PyPI, no obfuscated code, no hidden or manipulative instructions, and behavior matches the stated proteomics/metabolomics purpose. Clear when-to-use/when-not-to-use guidance (defers to matchms for simple cases) and concrete, action",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q10",
+        "status": "warning",
+        "summary": "Scripts write to user-specified output paths but the doc never states overwrite/re-run behavior explicitly, so a rerun's effect on existing output files is left implicit."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:57:23.151Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 8036,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "bfc74bb722ede4a099e8e8e58ff0bf2d359e78eabe87a7ac397cf61766b84b6d"
+  },
+  {
+    "name": "pymoo",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pymoo/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Reference/how-to skill for pymoo, the Python multi-objective optimization library (NSGA-II/III, MOEA/D, Pareto fronts).",
+    "verdict": "Clean, purely instructional documentation skill with no security red flags: no credential access, no network exfiltration, no piped remote-code execution, no hidden instructions. Only real issue is the file runs 657 lines, over the ~500-line hygiene budget, and lacks an explicit negative-trigger note.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No explicit 'do NOT use when' / negative-trigger guidance anywhere in the file; a user could misapply it to single-variable calculus optimization or non-Python contexts without being told otherwise."
+      },
+      {
+        "check": "H05",
+        "status": "warning",
+        "summary": "File is 657 lines, well above the ~500-line hygiene budget, though the length is spent on genuinely distinct workflows rather than padding."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:57:23.151Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 20634,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "15b871f01867f0f6f1cf340b89cf606786f00c40b1b866f5d08a49d2ae6e8b98"
+  },
+  {
+    "name": "pytorch-lightning",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pytorch-lightning/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Reference skill for structuring PyTorch training code with Lightning: LightningModule, Trainer, DataModules, callbacks, logging, distributed",
+    "verdict": "Clean, well-scoped instructional skill for the PyTorch Lightning framework. No credential access, no network exfiltration, no shell-piped remote code, no hidden or manipulative instructions. Only installs the standard PyPI `lightning` package. Minor gaps: no explicit negative-trigger guidance and no failure-path/error-handling notes, neither of which poses a",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No explicit negative-trigger guidance (e.g. when to use plain PyTorch, Keras, or another framework instead); a user could misapply the skill to non-Lightning PyTorch work without being told otherwise."
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "No guidance on failure paths (e.g. install failures, CUDA mismatch, version incompatibility beyond the one NeptuneLogger removal note at line 107)."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:57:23.151Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 7494,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "99a3d6f2e721c22b700843b979db1014891717c99ee936cdec304b20936731c6"
+  },
+  {
+    "name": "qiskit",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/qiskit/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Reference guide for building, transpiling, and running quantum circuits with Qiskit on IBM Quantum hardware.",
+    "verdict": "Clean, low-risk documentation skill: no credential harvesting, no shell-piped remote code, no hidden instructions, standard `pip install qiskit`. Cloud execution (QiskitRuntimeService) is the tool's stated purpose, using the user's own IBM credentials, not exfiltration. Minor gaps: no guidance on handling job/auth failures, and the overview repeats unverifie",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "No guidance anywhere in the file for handling job failures, authentication errors, queue timeouts, or backend unavailability when running on real IBM hardware — a user hitting a Runtime error has no t"
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:57:23.151Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 8751,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "065bfd44fa1e82e238f072a5d0d2aee82f54128d102cb066558704ff428985f0"
+  },
+  {
+    "name": "qutip",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/qutip/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Reference skill teaching QuTiP (Quantum Toolbox in Python) usage for simulating open/closed quantum systems, solvers, and visualization.",
+    "verdict": "Clean, well-scoped skill. Only shell command is a standard `uv pip install qutip` from PyPI (line 17) — no piped remote scripts, no network egress, no secrets touched, no sudo. Description clearly states when to use it and explicitly excludes circuit-based quantum computing use cases. Safe to install.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:57:23.151Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 9042,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "a37f1ddf70b880955e7d14a324bcad3cae2969eb0c66165931a05a042c332fa3"
+  },
+  {
+    "name": "pyzotero",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pyzotero/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Python client skill wrapping pyzotero to read, write, and manage Zotero reference libraries via the Web API, local CLI, or MCP server.",
+    "verdict": "Clean, transparent thin API-client skill. Credentials (ZOTERO_API_KEY etc.) are declared openly in frontmatter and stored in env vars/.env as expected for any API wrapper -- no exfiltration or hidden behavior found. Minor quality gaps: no negative-trigger guidance and no warning that create_items()/update_item() calls are not idempotent if re-run.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No explicit negative-trigger guidance (when NOT to use this skill) anywhere in the file."
+      },
+      {
+        "check": "Q10",
+        "status": "warning",
+        "summary": "create_items()/update_item() examples (lines 94-106) have no note on re-run safety; re-running the create example would create duplicate items with no idempotency key mentioned."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:57:23.151Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 6069,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "6c4c13828ea3e786325ff59dc2018410e79289b6a9d78f82af4e7d32eaba306c"
+  },
+  {
+    "name": "rdkit",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/rdkit/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "RDKit cheminformatics reference: molecule I/O, descriptors, fingerprints, substructure search, reactions, 2D/3D generation, visualization.",
+    "verdict": "Clean, well-scoped RDKit reference skill: clear trigger/negative-trigger guidance, no network egress or credential access, an explicit pickle-deserialization warning shows security awareness, and versioned metadata with documented breaking changes. Main issue is length (833 lines, well over the ~500-line budget), which bloats context but introduces no safety",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q05",
+        "status": "warning",
+        "summary": "As a reference/how-to skill it shows return types informally (e.g. dict from CalcMolDescriptors, PIL image from MolToImage) but never states a formal output contract for what the agent should hand bac"
+      },
+      {
+        "check": "Q07",
+        "status": "warning",
+        "summary": "833 lines of dense reference content will consume significant context when loaded in full; only the references/ and scripts/ bundled files are deferred, the SKILL.md body itself is large."
+      },
+      {
+        "check": "H05",
+        "status": "warning",
+        "summary": "File is 833 lines, well over the ~500-line budget; content is dense reference material rather than obvious padding, but still exceeds the target substantially."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:57:23.151Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 23873,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "910fce069d7b7b4ab8e1d603e44b05a2578d85ea95726fa0cf631c8fa5f7b681"
+  },
+  {
+    "name": "research-grants",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/research-grants/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Guidance skill for writing NSF, NIH, DOE, DARPA and Taiwan NSTC grant proposals, with agency-specific structure, budgets and review criteria",
+    "verdict": "Clean, well-scoped writing-guidance skill with no exfiltration, obfuscation, or manipulation attempts. The one network path (optional AI figure generation via OpenRouter) is honestly disclosed and opt-in, requiring the user's own API key. Main issues are hygiene: SKILL.md is ~929 lines, nearly double the ~500-line budget, and it lacks explicit 'when not to u",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S02",
+        "status": "warning",
+        "summary": "Optional figure generation via the sibling 'scientific-schematics' skill sends the user's prompt to OpenRouter (line 54: 'AI schematic generation sends your prompt to OpenRouter (a third-party API)')."
+      },
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No 'when NOT to use this skill' section exists anywhere in the file, so a user can't quickly tell when this skill is the wrong tool (e.g., non-federal/foundation grants, non-US/Taiwan agencies)."
+      },
+      {
+        "check": "Q05",
+        "status": "warning",
+        "summary": "Despite declaring allowed-tools Read Write Edit Bash (line 4), the skill never states what file(s) it actually writes, where, or in what format — no explicit output contract for the drafting work it e"
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:59:56.299Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 36467,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "a4449f6f9ac9aad8fef2e874f2f2c524a04e0fd6f790b99314a73580076f3105"
+  },
+  {
+    "name": "research-lookup",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/research-lookup/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Compiles a verified, citation-ready academic reference packet for a manuscript by routing queries through Parallel Search/Extract/Research, ",
+    "verdict": "Clean skill. It scopes itself tightly to manuscript literature research, discloses exactly which queries go to which external API (Parallel by default, OpenRouter only when Perplexity is chosen), never logs or prints API keys, and explicitly tells the agent to treat fetched web content as untrusted data rather than instructions. Only soft spot: it installs a",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "Setup pulls a third-party CLI from PyPI: `uv tool install \"parallel-web-tools[cli]==0.7.1\"` (line 287). Version is pinned and installed in an isolated tool env, which mitigates but does not eliminate "
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:59:56.299Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 13526,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "130ef8572afa1ee54870bd0a0d11712ec15d05565724e9b7583391e71634d7ab"
+  },
+  {
+    "name": "rowan",
+    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/rowan/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Python SDK skill wrapping Rowan's cloud molecular-modeling API: pKa, docking, conformers, MSA, protein cofolding.",
+    "verdict": "No malicious behavior found: no secret theft, no piped remote execution, no hidden instructions. Two real but low-severity issues for an installer to know: the flagship end-to-end example references an undefined variable (top_compound) and will crash with NameError if run as-is, and the file is 1087 lines (~2x the recommended budget), adding context cost on ",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S04",
+        "status": "warning",
+        "summary": "rotate_webhook_secret() example (lines 135-138, 780-782) invalidates the existing secret immediately with no confirmation guard shown; risky if copied into automation verbatim."
+      },
+      {
+        "check": "S10",
+        "status": "warning",
+        "summary": "Lines 76 and 110 show `rowan.api_key = \"your_api_key_here\"` (hardcode-in-source) presented alongside the env-var method, which can encourage committing API keys to source control."
+      },
+      {
+        "check": "Q03",
+        "status": "warning",
+        "summary": "End-to-end example (line 1008) references `top_compound`, a variable never defined — only `top_idx` (line 994) and `top_smiles` (line 995) exist — so the snippet as written raises NameError."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T19:59:56.299Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 37121,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 31080,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "b79eaf95e067781edd71eaf698a9b3a0f32911f08ad1492816a9c7a1aa1fdde5"
   }
 ]
