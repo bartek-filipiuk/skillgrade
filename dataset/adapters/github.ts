@@ -71,6 +71,67 @@ export async function* paginateRepos(apiGet: ApiGet, query: string, maxRepos: nu
   }
 }
 
+// Shard `filename:SKILL.md` by byte-size range to get past the per-query 1000-result
+// cap. Ranges are contiguous and non-overlapping, so every SKILL.md lands in exactly
+// one shard. Bytes (code search `size:` is in bytes).
+const SIZE_BOUNDS = [800, 1600, 3000, 6000, 12000]
+export function sizeShards(): string[] {
+  const shards: string[] = []
+  let lo = 0
+  for (const hi of SIZE_BOUNDS) { shards.push(`size:${lo}..${hi - 1}`); lo = hi }
+  shards.push(`size:>=${lo}`)
+  return shards
+}
+
+export function parseCodeSearch(json: unknown): { repo: string; path: string }[] {
+  const items = (json as { items?: unknown[] }).items ?? []
+  const out: { repo: string; path: string }[] = []
+  for (const it of items) {
+    const o = it as Record<string, unknown>
+    const path = String(o.path ?? '')
+    if (path !== 'SKILL.md' && !path.endsWith('/SKILL.md')) continue
+    const repo = String((o.repository as Record<string, unknown> | undefined)?.full_name ?? '')
+    if (!repo) continue
+    out.push({ repo, path })
+  }
+  return out
+}
+
+// Code search reaches beyond topic repos. Each hit gives {repo, path}; one cached
+// /repos/{repo} lookup supplies stars + default branch for the sourceUrl + ranking.
+async function* codeSearchCandidates(apiGet: ApiGet, seenRepos: Set<string>): AsyncIterable<Candidate> {
+  const repoMeta = new Map<string, { stars: number; ref: string } | null>()
+  for (const shard of sizeShards()) {
+    for (let page = 1; page <= 10; page++) {
+      let res: unknown
+      try {
+        res = await apiGet(`/search/code?q=${encodeURIComponent('filename:SKILL.md ' + shard)}&per_page=100&page=${page}`)
+      } catch {
+        break // shard rate-limited/exhausted → move to the next shard
+      }
+      const hits = parseCodeSearch(res)
+      for (const h of hits) {
+        if (seenRepos.has(h.repo)) continue // already covered by a topic tree-walk
+        if (!repoMeta.has(h.repo)) {
+          try {
+            const r = (await apiGet(`/repos/${h.repo}`)) as Record<string, unknown>
+            repoMeta.set(h.repo, { stars: Number(r.stargazers_count ?? 0), ref: String(r.default_branch ?? 'main') })
+          } catch {
+            repoMeta.set(h.repo, null)
+          }
+        }
+        const meta = repoMeta.get(h.repo)
+        if (!meta) continue
+        yield {
+          sourceUrl: `https://github.com/${h.repo}/blob/${meta.ref}/${h.path}`,
+          repo: h.repo, path: h.path, ref: meta.ref, stars: meta.stars, pushedAt: '',
+        }
+      }
+      if (hits.length < 100) break // shard drained
+    }
+  }
+}
+
 export interface GithubAdapterOpts {
   maxReposPerQuery?: number
   treeTimeoutMs?: number
@@ -81,7 +142,7 @@ export interface GithubAdapterOpts {
 // discover() drives the network via an injected apiGet (tested modules stay pure;
 // the real apiGet lives in fetch.ts and is wired in discover.ts).
 export function githubAdapter(apiGet: ApiGet, opts: GithubAdapterOpts = {}): SourceAdapter {
-  const { maxReposPerQuery = 1000, treeTimeoutMs = 15000, topics = true, codeSearch = false } = opts
+  const { maxReposPerQuery = 1000, treeTimeoutMs = 15000, topics = true, codeSearch = true } = opts
   return {
     name: 'github',
     async *discover(): AsyncIterable<Candidate> {
@@ -102,6 +163,9 @@ export function githubAdapter(apiGet: ApiGet, opts: GithubAdapterOpts = {}): Sou
             }
           }
         }
+      }
+      if (codeSearch) {
+        yield* codeSearchCandidates(apiGet, seenRepos)
       }
     },
   }

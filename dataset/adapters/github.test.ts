@@ -79,3 +79,47 @@ describe('githubAdapter tree timeout', () => {
     expect(out).toEqual([]) // hung repo skipped, no candidates, no throw
   })
 })
+
+import { sizeShards, parseCodeSearch } from './github.js'
+
+describe('sizeShards', () => {
+  it('partitions file sizes into non-overlapping, exhaustive byte ranges', () => {
+    const s = sizeShards()
+    expect(s[0]).toBe('size:0..799')
+    expect(s.some((x) => x.startsWith('size:>='))).toBe(true) // an open-ended top shard
+    // boundaries do not overlap: each `..` upper bound is one below the next lower bound
+    expect(s).toContain('size:800..1599')
+  })
+})
+
+describe('parseCodeSearch', () => {
+  it('extracts {repo, path} for SKILL.md hits, skipping non-SKILL.md and repoless items', () => {
+    const json = { items: [
+      { path: 'skills/foo/SKILL.md', repository: { full_name: 'a/b' } },
+      { path: 'docs/NOTSKILL.md', repository: { full_name: 'a/b' } },
+      { path: 'SKILL.md', repository: {} }, // no full_name → skip
+    ] }
+    expect(parseCodeSearch(json)).toEqual([{ repo: 'a/b', path: 'skills/foo/SKILL.md' }])
+  })
+})
+
+describe('githubAdapter code-search mode', () => {
+  it('yields code-search candidates (topics off), resolving repo meta once', async () => {
+    let repoCalls = 0
+    const apiGet = async (path: string) => {
+      if (path.includes('/search/code')) {
+        // only the first shard returns a hit; others empty
+        return path.includes('0..799')
+          ? { items: [{ path: 'x/SKILL.md', repository: { full_name: 'c/d' } }] }
+          : { items: [] }
+      }
+      if (path.startsWith('/repos/c/d')) { repoCalls++; return { stargazers_count: 5, default_branch: 'main' } }
+      return { items: [] }
+    }
+    const out: any[] = []
+    for await (const c of githubAdapter(apiGet, { topics: false, codeSearch: true }).discover()) out.push(c)
+    expect(out).toHaveLength(1)
+    expect(out[0]).toMatchObject({ repo: 'c/d', path: 'x/SKILL.md', stars: 5, sourceUrl: 'https://github.com/c/d/blob/main/x/SKILL.md' })
+    expect(repoCalls).toBe(1)
+  })
+})
