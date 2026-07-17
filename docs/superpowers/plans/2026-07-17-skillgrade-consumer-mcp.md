@@ -13,7 +13,7 @@
 - TypeScript ESM, `type: module`; import local files with the `.js` extension in import specifiers (e.g. `./lookup.js`), matching the existing `src/` code.
 - Node ≥ 20. pnpm (`pnpm@10.24.0`).
 - Zod 4 (already a dep). MCP SDK requires `zod ^4.2.0` — compatible.
-- Tests: Vitest (`pnpm test` → `vitest run`). Colocate as `*.test.ts` next to source, matching existing layout.
+- Tests: Vitest (`pnpm test` → `vitest run`). New `hub/` and `mcp/` tests are colocated as `*.test.ts` next to source; `vitest.config.ts` `include` must list `test/**`, `hub/**`, and `mcp/**` globs so they run (the repo's older suite lives under `test/`).
 - The MCP executes nothing, fetches no user-supplied URL, accepts no skill content — only `{name, hash}` inputs. Responses are plain JSON.
 - Normalization rules (identical everywhere): decode UTF-8 → strip leading BOM → CRLF and lone CR → LF → rstrip trailing whitespace/newlines → sha256 of resulting UTF-8 bytes, lowercase hex.
 - `skillMdHash` = normalized sha256 of the **SKILL.md file only** (not the bundle). Distinct from the existing bundle `contentHash` in `src/loadSkill.ts`.
