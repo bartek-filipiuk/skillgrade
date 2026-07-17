@@ -59,13 +59,10 @@ function extractScalarFields(block: string): Record<string, string> {
   return out
 }
 
-function checkFrontmatter(skillDir: string): { valid: boolean; errors: string[] } {
-  let raw: string
-  try {
-    raw = readFileSync(join(skillDir, 'SKILL.md'), 'utf8')
-  } catch {
-    return { valid: false, errors: ['SKILL.md not found'] }
-  }
+// Content-based core so both the fs path (runPreChecks) and in-memory callers
+// (mcp/grade-content) share ONE frontmatter validator — no drifting duplicate.
+export function checkFrontmatterContent(raw: string | undefined): { valid: boolean; errors: string[] } {
+  if (raw === undefined) return { valid: false, errors: ['SKILL.md not found'] }
   const m = raw.match(/^---\r?\n([\s\S]*?)\r?\n---[ \t]*(?:\r?\n|$)/)
   if (!m) return { valid: false, errors: ['no frontmatter block'] }
 
@@ -88,6 +85,32 @@ function checkFrontmatter(skillDir: string): { valid: boolean; errors: string[] 
   return { valid: errors.length === 0, errors }
 }
 
+function checkFrontmatter(skillDir: string): { valid: boolean; errors: string[] } {
+  let raw: string | undefined
+  try {
+    raw = readFileSync(join(skillDir, 'SKILL.md'), 'utf8')
+  } catch {
+    raw = undefined
+  }
+  return checkFrontmatterContent(raw)
+}
+
+// Run every pattern/canary rule over one file's lines. Shared by the fs walk and
+// in-memory callers so the rule scan lives in exactly one place.
+export function scanFlags(path: string, content: string): PreCheckFlag[] {
+  const flags: PreCheckFlag[] = []
+  const lines = content.split('\n')
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i]
+    for (const { rule, re, severity } of ALL_RULES) {
+      if (re.test(line)) {
+        flags.push({ rule, severity, file: path, line: i + 1, excerpt: line.slice(0, 200) })
+      }
+    }
+  }
+  return flags
+}
+
 export function runPreChecks(skillDir: string): PreCheckReport {
   const files: PreCheckReport['files'] = []
   const flags: PreCheckFlag[] = []
@@ -96,15 +119,7 @@ export function runPreChecks(skillDir: string): PreCheckReport {
     const binary = isBinary(buf)
     files.push({ path, bytes: buf.length, binary })
     if (binary) continue
-    const lines = buf.toString('utf8').split('\n')
-    for (let i = 0; i < lines.length; i++) {
-      const line = lines[i]
-      for (const { rule, re, severity } of ALL_RULES) {
-        if (re.test(line)) {
-          flags.push({ rule, severity, file: path, line: i + 1, excerpt: line.slice(0, 200) })
-        }
-      }
-    }
+    flags.push(...scanFlags(path, buf.toString('utf8')))
   }
   return { files, frontmatter: checkFrontmatter(skillDir), flags }
 }

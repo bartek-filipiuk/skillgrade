@@ -8,8 +8,62 @@ import { z } from 'zod'
 import { CatalogSchema } from '../hub/schema.js'
 import { buildIndex, type SkillIndex } from './index-build.js'
 import { makeHandlers } from './handlers.js'
+import { makeGradeSkill } from './grade-skill.js'
+import { gradeContent } from './grade-content.js'
 
 const HERE = dirname(fileURLToPath(import.meta.url))
+const RUBRIC_DIR = join(HERE, '../rubric/skill')
+const MAX_GRADE_BYTES = 262144
+
+// charge/refund hit the Account service's internal routes with the shared secret.
+async function postInternal(path: string, body: unknown) {
+  return fetch(`${process.env.INTERNAL_URL}${path}`, {
+    method: 'POST',
+    headers: { 'content-type': 'application/json', 'x-internal-secret': process.env.INTERNAL_SECRET ?? '' },
+    body: JSON.stringify(body),
+  })
+}
+
+const GRADE_TIMEOUT_MS = 30_000
+
+function gradeSkillDeps(index: SkillIndex) {
+  // A hung OpenRouter call would charge a credit and never throw, so the refund path (throw-only)
+  // never fires and the client hangs. Reject after 30s → handler catches, refunds, returns grade-failed.
+  // ponytail: the underlying LLM promise leaks in the background on timeout — acceptable for MVP.
+  const gradeContentWithTimeout = (content: string) => Promise.race([
+    gradeContent(content, { rubricDir: RUBRIC_DIR, model: 'openrouter:google/gemini-2.5-flash' }),
+    new Promise<never>((_, rej) => setTimeout(() => rej(new Error('grade timeout')), GRADE_TIMEOUT_MS)),
+  ])
+  return makeGradeSkill({
+    index,
+    gradeContent: gradeContentWithTimeout,
+    charge: async (token) => {
+      const res = await postInternal('/internal/charge', { token })
+      if (res.status === 401) return { ok: false as const, reason: 'invalid-token' as const }
+      if (!res.ok) throw new Error(`charge failed: ${res.status}`) // fail loud (e.g. 500 / bad INTERNAL_SECRET)
+      const j = (await res.json()) as { ok: boolean; remaining: number }
+      return j.ok ? { ok: true as const, remaining: j.remaining } : { ok: false as const, reason: 'no-credits' as const }
+    },
+    // Never throw: a lost refund must leave a loud, replayable trace, not reject the tool call.
+    refund: async (token, ref) => {
+      try {
+        const res = await postInternal('/internal/refund', { token, ref })
+        if (!res.ok) console.error('[grade_skill] REFUND FAILED ref=%s status=%s — credit must be manually restored', ref, res.status)
+      } catch (err) {
+        console.error('[grade_skill] REFUND FAILED ref=%s status=%s — credit must be manually restored', ref, err)
+      }
+    },
+    maxBytes: MAX_GRADE_BYTES,
+  })
+}
+
+// Prefer the request's `Authorization: Bearer <token>` header; fall back to the token arg.
+function bearerFrom(extra: { requestInfo?: { headers?: Record<string, string | string[] | undefined> } }): string | undefined {
+  const raw = extra.requestInfo?.headers?.authorization
+  const header = Array.isArray(raw) ? raw[0] : raw
+  const m = header?.match(/^Bearer\s+(.+)$/i)
+  return m?.[1]
+}
 
 export function loadIndex(): SkillIndex {
   const raw = JSON.parse(readFileSync(join(HERE, '../hub/catalog.json'), 'utf8'))
@@ -39,6 +93,18 @@ export function buildMcpServer(index: SkillIndex): McpServer {
     description: 'Find graded skills by name substring. Returns name, overall grade, category and report URL.',
     inputSchema: { query: z.string() },
   }, ({ query }) => h.search({ query }))
+
+  const grader = gradeSkillDeps(index)
+  server.registerTool('grade_skill', {
+    title: 'Grade a SKILL.md (paid fresh grade)',
+    description: 'Grade the submitted SKILL.md content against the SkillGrade rubric. Requires a bearer token — pass it as ' +
+      'the Authorization header (preferred) or the `token` arg. A skill already in the public catalog returns its stored ' +
+      'grade for FREE; anything new charges one credit and is refunded if grading fails. Content is graded in memory, never stored.',
+    inputSchema: { content: z.string(), token: z.string().optional() },
+  }, async ({ content, token }, extra) => {
+    const result = await grader.handle({ content, token: bearerFrom(extra) ?? token })
+    return { content: [{ type: 'text' as const, text: JSON.stringify(result) }], structuredContent: result }
+  })
 
   return server
 }

@@ -100,7 +100,7 @@ function hashFiles(files: { path: string; content: string }[]): string {
 // in the file is emitted prefixed (e.g. "1|</skill-content>") and can't be confused with
 // our unprefixed real closer. Path is attribute-escaped so a quote in a filename can't
 // break out of path="...".
-function numberContent(files: { path: string; content: string }[]): string {
+export function numberContent(files: { path: string; content: string }[]): string {
   return files
     .map((f) => {
       const path = f.path.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/[\r\n]/g, '')
