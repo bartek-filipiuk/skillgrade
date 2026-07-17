@@ -117,6 +117,7 @@
     </div>
     <div id="chips" style="display:flex;flex-wrap:wrap;gap:8px;margin-top:28px"></div>
     <div style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;margin-top:20px;padding:14px 0;border-top:1px solid rgba(232,226,214,0.08);border-bottom:1px solid rgba(232,226,214,0.08)">
+      <input id="search" type="search" placeholder="Search skills…" autocomplete="off" style="flex:1;min-width:180px;background:#111010;border:1px solid rgba(232,226,214,0.14);border-radius:4px;color:#ece7dc;font-family:inherit;font-size:14px;padding:9px 12px">
       <div style="display:flex;align-items:center;gap:10px">
         <span class="mono" style="font-size:10.5px;letter-spacing:0.12em;color:#8a857b">MIN&nbsp;GRADE</span>
         <div id="grade-opts" style="display:flex;gap:4px"></div>
@@ -125,15 +126,12 @@
         <span class="mono" style="font-size:10.5px;letter-spacing:0.12em;color:#8a857b">SORT</span>
         <div id="sort-opts" style="display:flex;gap:4px"></div>
       </div>
-      <button id="fixtures-toggle" style="display:flex;align-items:center;gap:10px;background:none;border:none;padding:6px 0;cursor:pointer;margin-left:auto">
-        <span id="fx-track"></span>
-        <span style="font-size:13px;color:#c9c3b8">Show fixtures <span class="mono" style="font-size:10px;color:#8a857b">(demo skills)</span></span>
-      </button>
     </div>
     <div id="grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:18px;margin-top:32px"></div>
+    <div id="sentinel" style="height:1px"></div>
     <div id="empty" style="display:none;border:1px dashed rgba(232,226,214,0.16);border-radius:4px;padding:56px 24px;text-align:center;margin-top:32px">
       <p class="serif" style="font-size:24px;margin:0">No skills in this category.</p>
-      <p style="font-size:13.5px;color:#8a857b;margin:10px 0 0">Try a different category, relax the minimum grade, or show fixtures.</p>
+      <p style="font-size:13.5px;color:#8a857b;margin:10px 0 0">Try a different category or relax the minimum grade.</p>
     </div>
   </section>
 
@@ -148,13 +146,17 @@
   <aside id="drawer" style="display:none;position:fixed;top:0;right:0;bottom:0;width:min(580px,100vw);background:#1d1b18;border-left:1px solid rgba(232,226,214,0.12);z-index:41;overflow-y:auto;padding:36px 40px 56px"></aside>
 </div>
 
-<script id="catalog" type="application/json">/*CATALOG_JSON*/</script>
-<script>
-(function(){
-  var cat = JSON.parse(document.getElementById('catalog').textContent);
+<!-- Only O(1) metadata is inlined; the per-skill catalog is fetched (catalog-index.json)
+     and each skill's full detail is lazy-loaded from skills/<slug>.json on demand. -->
+<script id="catmeta" type="application/json">/*CATALOG_META_JSON*/</script>
+<script type="module">
+  // Single module: runs after the DOM is parsed, so every getElementById below is valid.
+  // Imports the pure browse helpers directly — no window bridge, no script-order race.
+  import { filterSort, paginate } from './client-search.js'
+  var meta = JSON.parse(document.getElementById('catmeta').textContent);
   var esc = function(s){ return String(s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); };
 
-  var GRADE_ORDER = { A:0, B:1, C:2, D:3, F:4, 'not-evaluated':9 };
+  var PAGE = 60;
   var GRADE_COLOR = { A:'oklch(0.8 0.11 155)', B:'oklch(0.8 0.11 125)', C:'oklch(0.8 0.11 95)', D:'oklch(0.77 0.12 60)', F:'oklch(0.68 0.16 25)', 'not-evaluated':'#8a857b' };
   var tint = function(g,a){ return g==='not-evaluated' ? 'rgba(232,226,214,'+a+')' : GRADE_COLOR[g].replace(')',' / '+a+')'); };
   var STATUS = {
@@ -176,30 +178,33 @@
       "font-family:'Instrument Serif',serif;font-size:"+font+'px;color:'+GRADE_COLOR[g]+';'+
       'border:1px solid '+tint(g,0.4)+';background:'+tint(g,0.08);
   };
-  var labelOf = function(id){ var t=cat.taxonomy.filter(function(x){return x.id===id;})[0]; return t?t.label:id; };
+  var labelOf = function(id){ var t=meta.taxonomy.filter(function(x){return x.id===id;})[0]; return t?t.label:id; };
 
-  var state = { category:'all', minGrade:'all', sort:'grade', showFixtures:true, selected:null };
+  var state = { q:'', category:'all', minGrade:'not-evaluated', sort:'grade', page:0 };
 
-  // --- static: rubric badges, stats, scale, dimension rows ---
-  document.getElementById('nav-rubric').textContent = 'rubric v'+cat.rubricVersion;
+  // --- static: rubric badges, scale, dimension rows (all from O(1) meta) ---
+  document.getElementById('nav-rubric').textContent = 'rubric v'+meta.rubricVersion;
   document.getElementById('foot-left').textContent =
-    'SkillGrade · generated '+new Date(cat.generatedAt).toISOString().slice(0,10)+' · rubric v'+cat.rubricVersion+' · evaluated by '+
-    (cat.skills[0]?cat.skills[0].evaluator.model+' · '+cat.skills[0].evaluator.mode:'—');
+    'SkillGrade · generated '+new Date(meta.generatedAt).toISOString().slice(0,10)+' · rubric v'+meta.rubricVersion+' · evaluated by '+
+    (meta.evaluator?meta.evaluator.model+' · '+meta.evaluator.mode:'—');
 
-  var aCount = cat.skills.filter(function(s){return s.overall==='A';}).length;
-  var fCount = cat.skills.filter(function(s){return s.overall==='F';}).length;
-  var stats = [
-    { n:String(cat.skills.length), label:'skills evaluated' },
-    { n:String(cat.taxonomy.length), label:'categories' },
-    { n:String(aCount), label:'graded A overall' },
-    { n:String(fCount), label:'rejected (F)' },
-    { n:'v'+cat.rubricVersion, label:'rubric version' }
-  ];
-  document.getElementById('stats').innerHTML = stats.map(function(st){
-    return '<div style="flex:1;padding:22px 24px 24px;border-left:1px solid rgba(232,226,214,0.1);min-width:120px">'+
-      '<div class="serif" style="font-size:38px;line-height:1">'+esc(st.n)+'</div>'+
-      '<div class="mono" style="font-size:10.5px;letter-spacing:0.12em;color:#8a857b;margin-top:8px;text-transform:uppercase">'+esc(st.label)+'</div></div>';
-  }).join('');
+  // Stats depend on the fetched index (skill counts); filled in renderStats() after load.
+  function renderStats(index){
+    var aCount = index.filter(function(s){return s.overall==='A';}).length;
+    var fCount = index.filter(function(s){return s.overall==='F';}).length;
+    var stats = [
+      { n:String(index.length), label:'skills evaluated' },
+      { n:String(meta.taxonomy.length), label:'categories' },
+      { n:String(aCount), label:'graded A overall' },
+      { n:String(fCount), label:'rejected (F)' },
+      { n:'v'+meta.rubricVersion, label:'rubric version' }
+    ];
+    document.getElementById('stats').innerHTML = stats.map(function(st){
+      return '<div style="flex:1;padding:22px 24px 24px;border-left:1px solid rgba(232,226,214,0.1);min-width:120px">'+
+        '<div class="serif" style="font-size:38px;line-height:1">'+esc(st.n)+'</div>'+
+        '<div class="mono" style="font-size:10.5px;letter-spacing:0.12em;color:#8a857b;margin-top:8px;text-transform:uppercase">'+esc(st.label)+'</div></div>';
+    }).join('');
+  }
 
   var scale = [['A','BEST'],['B','GOOD'],['C','ACCEPTABLE'],['D','POOR'],['F','REJECTED']];
   document.getElementById('scale').innerHTML = scale.map(function(p){
@@ -230,43 +235,24 @@
     (active?'background:#ece7dc;color:#171614;border:1px solid #ece7dc;font-weight:600':'background:none;color:#c9c3b8;border:1px solid rgba(232,226,214,0.18)'); }
 
   function renderControls(){
-    var chips = [{id:'all',label:'All'}].concat(cat.taxonomy.map(function(t){return {id:t.id,label:t.label};}));
+    var chips = [{id:'all',label:'All'}].concat(meta.taxonomy.map(function(t){return {id:t.id,label:t.label};}));
     document.getElementById('chips').innerHTML = chips.map(function(c){
       return '<button class="chip" data-cat="'+esc(c.id)+'" style="'+chipStyle(state.category===c.id)+'">'+esc(c.label)+'</button>';
     }).join('');
-    var grades=[{id:'all',label:'ANY'},{id:'A',label:'A'},{id:'B',label:'≥B'},{id:'C',label:'≥C'}];
+    // 'ANY' maps to the lowest rank ('not-evaluated') so every row passes filterSort.
+    var grades=[{id:'not-evaluated',label:'ANY'},{id:'A',label:'A'},{id:'B',label:'≥B'},{id:'C',label:'≥C'}];
     document.getElementById('grade-opts').innerHTML = grades.map(function(g){
       return '<button class="seg" data-grade="'+esc(g.id)+'" style="'+segStyle(state.minGrade===g.id)+'">'+esc(g.label)+'</button>';
     }).join('');
-    var sorts=[{id:'grade',label:'GRADE'},{id:'name',label:'NAME'},{id:'category',label:'CATEGORY'}];
+    var sorts=[{id:'grade',label:'GRADE'},{id:'name',label:'NAME'},{id:'popularity',label:'POPULARITY'}];
     document.getElementById('sort-opts').innerHTML = sorts.map(function(s){
       return '<button class="seg" data-sort="'+esc(s.id)+'" style="'+segStyle(state.sort===s.id)+'">'+esc(s.label)+'</button>';
     }).join('');
-    document.getElementById('fx-track').style.cssText = 'width:34px;height:19px;border-radius:99px;position:relative;transition:background 0.15s;background:'+
-      (state.showFixtures?'oklch(0.8 0.11 155 / 0.5)':'rgba(232,226,214,0.15)');
-    document.getElementById('fx-track').innerHTML = '<span style="position:absolute;top:2px;left:'+(state.showFixtures?'17px':'2px')+
-      ';width:15px;height:15px;border-radius:50%;background:#ece7dc;transition:left 0.15s"></span>';
-  }
-
-  function filtered(){
-    var list = cat.skills.filter(function(s){
-      return (state.category==='all'||s.category===state.category) &&
-        (state.showFixtures||s.kind!=='fixture') &&
-        (state.minGrade==='all'||GRADE_ORDER[s.overall]<=GRADE_ORDER[state.minGrade]);
-    });
-    var by;
-    if(state.sort==='name') by=function(a,b){return a.name.localeCompare(b.name);};
-    else if(state.sort==='category') by=function(a,b){return a.category.localeCompare(b.category)||a.name.localeCompare(b.name);};
-    else by=function(a,b){return GRADE_ORDER[a.overall]-GRADE_ORDER[b.overall]||a.name.localeCompare(b.name);};
-    // Featured skills are always pinned to the top (by featuredOrder), then the chosen sort.
-    var fo=function(s){return s.featured?(s.featuredOrder==null?9999:s.featuredOrder):Infinity;};
-    list.sort(function(a,b){ return (fo(a)-fo(b)) || by(a,b); });
-    return list;
   }
 
   function cardDims(s){
     return DIMS.map(function(dm){
-      var g=s.badges[dm.key], ne=g==='not-evaluated';
+      var g=s.badges[dm.key]||'not-evaluated', ne=g==='not-evaluated';
       var title = dm.label.charAt(0)+dm.label.slice(1).toLowerCase()+': '+(ne?(dm.key==='effectiveness'?'coming soon':'not evaluated'):g);
       return '<span class="mono" title="'+esc(title)+'" style="font-size:10.5px;color:#8a857b;border:1px '+(ne?'dashed':'solid')+' '+(ne?'rgba(232,226,214,0.14)':tint(g,0.3))+
         ';border-radius:3px;padding:4px 8px;background:'+(ne?'transparent':tint(g,0.05))+(dm.key==='effectiveness'?';opacity:0.6':'')+'">'+
@@ -274,48 +260,83 @@
     }).join('');
   }
 
-  function renderGrid(){
-    var list = filtered();
-    document.getElementById('count-label').textContent = list.length+(list.length===1?' SKILL':' SKILLS')+' SHOWN';
-    document.getElementById('empty').style.display = list.length? 'none':'block';
-    var nHl = 2;
-    document.getElementById('grid').innerHTML = list.map(function(s,idx){
-      var hs = s.highlights.slice().sort(function(a,b){return STATUS[a.status].order-STATUS[b.status].order;}).slice(0,nHl);
-      var fborder = s.featured
-        ? 'border:1px solid oklch(0.8 0.11 155 / 0.5);box-shadow:0 0 0 1px oklch(0.8 0.11 155 / 0.15),0 8px 30px oklch(0.8 0.11 155 / 0.06);background:linear-gradient(#1e211c,#1c1a17)'
-        : 'border:1px '+(s.kind==='fixture'?'dashed':'solid')+' rgba(232,226,214,0.13);background:#1c1a17';
-      return '<article class="card'+(s.featured?' featured':'')+'" data-idx="'+idx+'" style="'+fborder+';border-radius:5px;padding:24px 24px 20px;cursor:pointer;transition:border-color 0.15s,transform 0.15s">'+
-        '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:18px">'+
-          '<div style="min-width:0">'+
-            '<div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap">'+
-              '<span class="mono" style="font-size:10.5px;letter-spacing:0.14em;color:#8a857b;text-transform:uppercase">'+esc(labelOf(s.category))+'</span>'+
-              (s.featured?'<span class="mono" style="font-size:9.5px;letter-spacing:0.1em;color:oklch(0.8 0.11 155);border:1px solid oklch(0.8 0.11 155 / 0.45);border-radius:99px;padding:2px 8px">★ FEATURED</span>':'')+
-              (s.kind==='fixture'?'<span class="mono" style="font-size:9.5px;letter-spacing:0.1em;color:#b0aa9e;border:1px dashed rgba(232,226,214,0.3);border-radius:99px;padding:2px 8px">EXAMPLE</span>':'')+
-            '</div>'+
-            '<h3 class="serif" style="font-size:27px;margin:0;line-height:1.1">'+esc(s.name)+'</h3>'+
-            '<p style="font-size:14px;line-height:1.55;color:#9a948a;margin:10px 0 0;text-wrap:pretty">'+esc(s.tagline)+'</p>'+
+  // Card renders from a compact INDEX row (no verdict/highlights/source text — those
+  // live in the per-skill shard and appear in the drawer on click).
+  function cardHTML(s){
+    var host = '';
+    if(s.sourceUrl){ try { host = new URL(s.sourceUrl).hostname; } catch(e){ host = s.sourceUrl; } }
+    var frame = s.featured
+      ? 'border:1px solid oklch(0.8 0.11 155 / 0.5);box-shadow:0 0 0 1px oklch(0.8 0.11 155 / 0.15),0 8px 30px oklch(0.8 0.11 155 / 0.06);background:linear-gradient(#1e211c,#1c1a17)'
+      : 'border:1px solid rgba(232,226,214,0.13);background:#1c1a17';
+    return '<article class="card'+(s.featured?' featured':'')+'" data-slug="'+esc(s.slug)+'" style="'+frame+';border-radius:5px;padding:24px 24px 20px;cursor:pointer;transition:border-color 0.15s,transform 0.15s">'+
+      '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:18px">'+
+        '<div style="min-width:0">'+
+          '<div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap">'+
+            '<span class="mono" style="font-size:10.5px;letter-spacing:0.14em;color:#8a857b;text-transform:uppercase">'+esc(labelOf(s.category))+'</span>'+
+            (s.featured?'<span class="mono" style="font-size:9.5px;letter-spacing:0.1em;color:oklch(0.8 0.11 155);border:1px solid oklch(0.8 0.11 155 / 0.45);border-radius:99px;padding:2px 8px">★ FEATURED</span>':'')+
           '</div>'+
-          '<div style="'+overallCircle(s.overall,52,27)+'">'+letterOf(s.overall)+'</div>'+
+          '<h3 class="serif" style="font-size:27px;margin:0;line-height:1.1">'+esc(s.name)+'</h3>'+
+          '<p style="font-size:14px;line-height:1.55;color:#9a948a;margin:10px 0 0;text-wrap:pretty">'+esc(s.tagline)+'</p>'+
         '</div>'+
-        '<div style="display:flex;gap:8px;margin-top:20px;flex-wrap:wrap">'+cardDims(s)+'</div>'+
-        (s.verdict?'<div style="margin-top:16px;padding:11px 14px;border-left:2px solid '+GRADE_COLOR[s.overall]+';background:'+tint(s.overall,0.05)+';border-radius:0 4px 4px 0"><span style="font-size:13px;line-height:1.55;color:#c9c3b8">'+esc(s.verdict)+'</span></div>':'')+
-        '<div style="margin-top:18px;border-top:1px solid rgba(232,226,214,0.08);display:flex;flex-direction:column">'+
-          hs.map(function(h){
-            return '<div style="display:flex;gap:10px;align-items:baseline;padding:10px 0 0">'+
-              '<span class="hl-dot" style="background:'+STATUS[h.status].color+'"></span>'+
-              '<span class="mono" style="font-size:11px;color:#c9c3b8;flex-shrink:0">'+esc(h.check)+'</span>'+
-              '<span style="font-size:12.5px;line-height:1.5;color:#8a857b">'+esc(h.summary)+'</span></div>';
-          }).join('')+
-        '</div>'+
-        '<div style="margin-top:16px;padding-top:12px;border-top:1px solid rgba(232,226,214,0.08)">'+
-          (s.sourceUrl
-            ? '<a class="srclink" href="'+esc(s.sourceUrl)+'" target="_blank" rel="noopener noreferrer" style="font-family:\'IBM Plex Mono\',monospace;font-size:10.5px;color:#8a857b;word-break:break-all;display:inline-flex;align-items:baseline;gap:5px">'+esc(s.source)+' <span style="color:oklch(0.8 0.11 155)">↗</span></a>'
-            : '<span class="mono" style="font-size:10.5px;color:#8a857b">'+esc(s.source)+'</span>')+
-        '</div></article>';
-    }).join('');
-    var listRef = list;
-    Array.prototype.forEach.call(document.querySelectorAll('#grid .card'), function(el){
-      el.onclick = function(e){ if(e.target.closest('.srclink')) return; openDetail(listRef[+el.getAttribute('data-idx')]); };
+        '<div style="'+overallCircle(s.overall,52,27)+'">'+letterOf(s.overall)+'</div>'+
+      '</div>'+
+      '<div style="display:flex;gap:8px;margin-top:20px;flex-wrap:wrap">'+cardDims(s)+'</div>'+
+      (s.sourceUrl
+        ? '<div style="margin-top:18px;padding-top:12px;border-top:1px solid rgba(232,226,214,0.08)">'+
+          '<a class="srclink" href="'+esc(s.sourceUrl)+'" target="_blank" rel="noopener noreferrer" style="font-family:\'IBM Plex Mono\',monospace;font-size:10.5px;color:#8a857b;word-break:break-all;display:inline-flex;align-items:baseline;gap:5px">'+esc(host)+' <span style="color:oklch(0.8 0.11 155)">↗</span></a>'+
+          '</div>'
+        : '')+
+      '</article>';
+  }
+
+  var index = [];          // fetched compact catalog
+  var filteredRows = [];   // current filter/sort result
+  var hasMore = false;
+  var io = null;
+  var shardCache = {};
+
+  function appendPage(){
+    var pg = paginate(filteredRows, state.page, PAGE);
+    document.getElementById('grid').insertAdjacentHTML('beforeend', pg.rows.map(cardHTML).join(''));
+    hasMore = pg.hasMore;
+    document.getElementById('sentinel').style.display = hasMore ? 'block' : 'none';
+  }
+
+  // Re-run the filter/sort and render page 0 fresh. Load-more only ever APPENDS.
+  function refresh(){
+    // Featured rows pin to the top (ascending featuredOrder) within the current filter set;
+    // a featured card still hides if it doesn't match the active category/min-grade/query.
+    var rows = filterSort(index, state);
+    var featured = rows.filter(function(r){ return r.featured; })
+      .sort(function(a,b){ return (a.featuredOrder==null?9999:a.featuredOrder) - (b.featuredOrder==null?9999:b.featuredOrder); });
+    var rest = rows.filter(function(r){ return !r.featured; });
+    filteredRows = featured.concat(rest);
+    state.page = 0;
+    var n = filteredRows.length;
+    document.getElementById('count-label').textContent = n+(n===1?' SKILL':' SKILLS')+' SHOWN';
+    document.getElementById('empty').style.display = n ? 'none' : 'block';
+    document.getElementById('grid').innerHTML = '';
+    appendPage();
+  }
+
+  function openBySlug(slug){
+    if(shardCache[slug]){ openDetail(shardCache[slug]); return; }
+    fetch('skills/'+encodeURIComponent(slug)+'.json').then(function(r){
+      if(!r.ok) throw new Error('shard '+slug+' HTTP '+r.status);
+      return r.json();
+    }).then(function(detail){
+      shardCache[slug] = detail;
+      openDetail(detail);
+    }).catch(function(err){
+      console.error('SkillGrade: could not load skill detail', err);
+      var d = document.getElementById('drawer');
+      d.style.animation = 'drawerIn 0.22s ease both';
+      d.innerHTML = '<div style="display:flex;justify-content:flex-end">'+
+        '<button id="drawer-close" style="background:none;border:1px solid rgba(232,226,214,0.18);border-radius:99px;color:#c9c3b8;width:32px;height:32px;cursor:pointer;font-size:14px;line-height:1">✕</button></div>'+
+        '<p style="font-size:15px;color:#b0aa9e;margin:24px 0 0">Couldn&rsquo;t load details — try again.</p>';
+      document.getElementById('backdrop').style.display='block';
+      d.style.display='block';
+      document.getElementById('drawer-close').onclick = closeDetail;
     });
   }
 
@@ -385,10 +406,12 @@
   function closeDetail(){ document.getElementById('drawer').style.display='none'; document.getElementById('backdrop').style.display='none'; }
 
   // --- wiring ---
-  document.getElementById('chips').onclick = function(e){ var b=e.target.closest('[data-cat]'); if(!b)return; state.category=b.getAttribute('data-cat'); renderControls(); renderGrid(); };
-  document.getElementById('grade-opts').onclick = function(e){ var b=e.target.closest('[data-grade]'); if(!b)return; state.minGrade=b.getAttribute('data-grade'); renderControls(); renderGrid(); };
-  document.getElementById('sort-opts').onclick = function(e){ var b=e.target.closest('[data-sort]'); if(!b)return; state.sort=b.getAttribute('data-sort'); renderControls(); renderGrid(); };
-  document.getElementById('fixtures-toggle').onclick = function(){ state.showFixtures=!state.showFixtures; renderControls(); renderGrid(); };
+  document.getElementById('chips').onclick = function(e){ var b=e.target.closest('[data-cat]'); if(!b)return; state.category=b.getAttribute('data-cat'); renderControls(); refresh(); };
+  document.getElementById('grade-opts').onclick = function(e){ var b=e.target.closest('[data-grade]'); if(!b)return; state.minGrade=b.getAttribute('data-grade'); renderControls(); refresh(); };
+  document.getElementById('sort-opts').onclick = function(e){ var b=e.target.closest('[data-sort]'); if(!b)return; state.sort=b.getAttribute('data-sort'); renderControls(); refresh(); };
+  document.getElementById('search').oninput = function(e){ state.q = e.target.value; refresh(); };
+  // Delegated click — cards are appended across pages, so bind once on the grid.
+  document.getElementById('grid').onclick = function(e){ if(e.target.closest('.srclink')) return; var c=e.target.closest('.card'); if(c) openBySlug(c.getAttribute('data-slug')); };
   document.getElementById('backdrop').onclick = closeDetail;
   window.addEventListener('keydown', function(e){ if(e.key==='Escape') closeDetail(); });
   Array.prototype.forEach.call(document.querySelectorAll('[data-scroll]'), function(a){
@@ -396,9 +419,21 @@
       if(el) window.scrollTo({top:el.getBoundingClientRect().top+window.scrollY-64,behavior:'smooth'}); };
   });
 
+  // Infinite scroll: sentinel below the grid triggers the next page.
+  io = new IntersectionObserver(function(entries){
+    if(entries[0].isIntersecting && hasMore){ state.page++; appendPage(); }
+  }, { rootMargin:'400px' });
+  io.observe(document.getElementById('sentinel'));
+
   renderControls();
-  renderGrid();
-})();
+  fetch('catalog-index.json').then(function(r){ return r.json(); }).then(function(data){
+    index = Array.isArray(data) ? data : [];
+    renderStats(index);
+    refresh();
+  }).catch(function(){
+    document.getElementById('empty').style.display = 'block';
+    document.getElementById('empty').innerHTML = '<p class="serif" style="font-size:24px;margin:0">Could not load the catalog.</p>';
+  });
 </script>
 </body>
 </html>

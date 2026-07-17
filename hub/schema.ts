@@ -58,6 +58,10 @@ export const CatalogEntrySchema = z.object({
   evaluatedAt: z.string(),
   evaluator: z.object({ mode: z.string(), model: z.string() }),
   skillMdHash: z.string().nullable(), // normalized sha256 of SKILL.md; null when no source resolved
+  popularity: z.number().int().nonnegative().default(0),
+  mirrors: z.array(z.string().url()).default([]),
+  discoveredVia: z.string().nullable().default(null),
+  slug: z.string().min(1),
 })
 
 export const CatalogSchema = z.object({
@@ -81,3 +85,25 @@ export function overallGrade(badges: { security: Grade; quality: Grade; hygiene:
   if (graded.length === 0) return 'not-evaluated'
   return graded.reduce((worst, g) => (ORDER.indexOf(g) > ORDER.indexOf(worst) ? g : worst))
 }
+
+// URL-safe skill id used in reportUrl anchors and detail-shard filenames.
+export function slugify(name: string): string {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'skill'
+}
+
+// The compact per-skill row the hub page loads for browse/search. No heavy fields
+// (highlights/verdict/preCheck/evaluator) — those live in skills/<slug>.json.
+export const CatalogIndexEntrySchema = z.object({
+  slug: z.string(),
+  name: z.string(),
+  overall: GRADE,
+  badges: z.object({ security: GRADE, quality: GRADE, hygiene: GRADE }),
+  category: z.string(),
+  tagline: z.string(),
+  popularity: z.number().int().nonnegative(),
+  sourceUrl: z.string(),
+  skillMdHash: z.string().nullable(),
+  featured: z.boolean().optional(), // pinned to the top with a distinct frame
+  featuredOrder: z.number().int().optional(), // order among featured (ascending); default large
+})
+export type CatalogIndexEntry = z.infer<typeof CatalogIndexEntrySchema>
