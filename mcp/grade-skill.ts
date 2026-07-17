@@ -4,7 +4,7 @@ import type { SkillIndex } from './index-build.js'
 export interface GradeSkillDeps {
   index: SkillIndex
   gradeContent: (content: string) => Promise<{ skillMdHash: string; overall: string; badges: { security: string; quality: string; hygiene: string }; findings: unknown[] }>
-  charge: (token: string) => Promise<{ ok: boolean; remaining: number }>
+  charge: (token: string) => Promise<{ ok: true; remaining: number } | { ok: false; reason: 'no-credits' | 'invalid-token' }>
   refund: (token: string, ref: string) => Promise<void>
   maxBytes: number
 }
@@ -21,7 +21,7 @@ export function makeGradeSkill(deps: GradeSkillDeps) {
       if (hit) return { charged: false as const, source: 'catalog' as const, overall: hit.overall, badges: { security: hit.badges.security, quality: hit.badges.quality, hygiene: hit.badges.hygiene }, name: hit.name, reportUrl: `https://skillgrade.dev/#skill-${encodeURIComponent(hit.name)}` }
 
       const c = await deps.charge(token)
-      if (!c.ok) return { error: 'no-credits' as const, remaining: c.remaining }
+      if (!c.ok) return { error: c.reason }
       try {
         const g = await deps.gradeContent(content)
         return { charged: true as const, remaining: c.remaining, overall: g.overall, badges: g.badges, findings: g.findings, skillMdHash: g.skillMdHash }

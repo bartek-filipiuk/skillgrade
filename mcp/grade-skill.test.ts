@@ -31,9 +31,15 @@ describe('grade_skill', () => {
     expect(r).toMatchObject({ charged: true, remaining: 4, overall: 'B' })
   })
   it('no credits -> error, no grade', async () => {
-    const { h, gradeContent } = mk({ charge: vi.fn(async () => ({ ok: false, remaining: 0 })) })
+    const { h, gradeContent } = mk({ charge: vi.fn(async () => ({ ok: false, reason: 'no-credits' })) })
     const r = await h.handle({ content: '---\nname: new2\ndescription: d\n---\n# N\nx', token: 't' })
     expect(r).toMatchObject({ error: 'no-credits' })
+    expect(gradeContent).not.toHaveBeenCalled()
+  })
+  it('invalid token from charge -> error, no grade', async () => {
+    const { h, gradeContent } = mk({ charge: vi.fn(async () => ({ ok: false, reason: 'invalid-token' })) })
+    const r = await h.handle({ content: '---\nname: new4\ndescription: d\n---\n# N\nx', token: 't' })
+    expect(r).toMatchObject({ error: 'invalid-token' })
     expect(gradeContent).not.toHaveBeenCalled()
   })
   it('missing token -> invalid-token', async () => {

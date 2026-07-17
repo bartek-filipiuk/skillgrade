@@ -30,11 +30,20 @@ function gradeSkillDeps(index: SkillIndex) {
     gradeContent: (content) => gradeContent(content, { rubricDir: RUBRIC_DIR, model: 'openrouter:google/gemini-2.5-flash' }),
     charge: async (token) => {
       const res = await postInternal('/internal/charge', { token })
-      if (!res.ok) return { ok: false, remaining: 0 } // 401 invalid-token / out of credits
+      if (res.status === 401) return { ok: false as const, reason: 'invalid-token' as const }
+      if (!res.ok) throw new Error(`charge failed: ${res.status}`) // fail loud (e.g. 500 / bad INTERNAL_SECRET)
       const j = (await res.json()) as { ok: boolean; remaining: number }
-      return { ok: j.ok, remaining: j.remaining }
+      return j.ok ? { ok: true as const, remaining: j.remaining } : { ok: false as const, reason: 'no-credits' as const }
     },
-    refund: async (token, ref) => { await postInternal('/internal/refund', { token, ref }) },
+    // Never throw: a lost refund must leave a loud, replayable trace, not reject the tool call.
+    refund: async (token, ref) => {
+      try {
+        const res = await postInternal('/internal/refund', { token, ref })
+        if (!res.ok) console.error('[grade_skill] REFUND FAILED ref=%s status=%s — credit must be manually restored', ref, res.status)
+      } catch (err) {
+        console.error('[grade_skill] REFUND FAILED ref=%s status=%s — credit must be manually restored', ref, err)
+      }
+    },
     maxBytes: MAX_GRADE_BYTES,
   })
 }
