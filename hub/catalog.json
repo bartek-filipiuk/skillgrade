@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T18:51:23.673Z",
+  "generatedAt": "2026-07-17T19:08:49.892Z",
   "rubricVersion": "0.1.2",
   "taxonomy": [
     {
@@ -96,7 +96,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -351,7 +351,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -402,7 +402,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -453,7 +453,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -499,7 +499,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -550,7 +550,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -601,7 +601,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -652,7 +652,7 @@
         "majorFlags": 9
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -703,7 +703,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -754,7 +754,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -805,7 +805,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -856,7 +856,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -907,7 +907,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -958,7 +958,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1009,7 +1009,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1060,7 +1060,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1111,7 +1111,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1157,7 +1157,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1208,7 +1208,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1259,7 +1259,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1310,7 +1310,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1361,7 +1361,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1412,7 +1412,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1463,7 +1463,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1509,7 +1509,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1560,7 +1560,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1611,7 +1611,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1652,7 +1652,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1703,7 +1703,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1749,7 +1749,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1800,7 +1800,7 @@
         "majorFlags": 4
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1851,7 +1851,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1902,7 +1902,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1953,7 +1953,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2004,7 +2004,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2045,7 +2045,7 @@
         "majorFlags": 18
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2096,7 +2096,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2147,7 +2147,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2193,7 +2193,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2244,7 +2244,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2295,7 +2295,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2341,7 +2341,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2392,7 +2392,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2443,7 +2443,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2494,7 +2494,7 @@
         "majorFlags": 12
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2540,7 +2540,7 @@
         "majorFlags": 6
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2591,7 +2591,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2632,7 +2632,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2683,7 +2683,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2734,7 +2734,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2785,7 +2785,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2836,7 +2836,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2887,7 +2887,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2938,7 +2938,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2989,7 +2989,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3040,7 +3040,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3091,7 +3091,7 @@
         "majorFlags": 2
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3142,7 +3142,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3193,7 +3193,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3244,7 +3244,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3295,7 +3295,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3341,7 +3341,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3392,7 +3392,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3433,7 +3433,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3484,7 +3484,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3535,7 +3535,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3586,7 +3586,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3637,7 +3637,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3688,7 +3688,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3739,7 +3739,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3780,7 +3780,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3831,7 +3831,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3882,7 +3882,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3933,7 +3933,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3984,7 +3984,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4035,7 +4035,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4086,7 +4086,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4137,7 +4137,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4188,7 +4188,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4234,7 +4234,7 @@
         "majorFlags": 2
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4285,7 +4285,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4336,7 +4336,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4387,7 +4387,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4438,7 +4438,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4489,7 +4489,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4540,7 +4540,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4591,7 +4591,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4642,7 +4642,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4693,7 +4693,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4744,7 +4744,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4795,7 +4795,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4846,7 +4846,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4897,7 +4897,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4948,7 +4948,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4999,7 +4999,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5050,7 +5050,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5091,7 +5091,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5142,7 +5142,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5193,7 +5193,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5244,7 +5244,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5295,7 +5295,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5346,7 +5346,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5397,7 +5397,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5438,7 +5438,7 @@
         "majorFlags": 2
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5489,7 +5489,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5540,7 +5540,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5591,7 +5591,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5642,7 +5642,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5693,7 +5693,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5739,7 +5739,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5790,7 +5790,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5841,7 +5841,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5887,7 +5887,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5938,7 +5938,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5989,7 +5989,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -6040,7 +6040,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -6091,7 +6091,7 @@
         "majorFlags": 2
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -6142,7 +6142,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -6193,7 +6193,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -6244,7 +6244,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -6295,7 +6295,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T18:51:23.673Z",
+      "evaluatedAt": "2026-07-17T19:08:49.892Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -10207,6 +10207,1882 @@
       "mirrors": [],
       "discoveredVia": "github",
       "slug": "aeon"
+    },
+    {
+      "name": "biopython",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/biopython/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Reference skill for Biopython: sequence I/O, alignments, NCBI/Entrez/BLAST access, PDB structures, phylogenetics.",
+      "verdict": "Clean, well-scoped reference skill. All example code is plain, unobfuscated Python; network calls (Entrez/BLAST) are the stated purpose, clearly declared in the compatibility field, and only read NCBI_EMAIL/NCBI_API_KEY via structured metadata fields rather than prompting for secrets in chat. Version is pinned on install. No destructive ops, no hidden instru",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "H07",
+          "status": "warning",
+          "summary": "`allowed-tools: Read Write Edit Bash` (line 4) is a space-delimited plain scalar rather than the more common comma-separated or YAML-list form; likely parses fine as a single string but is a nonstanda"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 16391,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:03:37.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "6119ad3a0a145a794d45c783cf6a757760cad63de9bc025f48a61b6d475a42a2",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "biopython"
+    },
+    {
+      "name": "bioservices",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/bioservices/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Python wrapper skill giving a unified API to 40+ bioinformatics web services (UniProt, KEGG, ChEMBL, PDB, PSICQUIC, etc.).",
+      "verdict": "Clean, scoped skill. Network calls go only to the public bioinformatics APIs it exists to wrap, the only user-provided value is a contact email required by NCBI's own BLAST usage policy (not a secret), install is pinned to bioservices==1.16.0 from PyPI, and no hidden or manipulative instructions were found. Safe to install for bioinformatics/data-science wor",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 11713,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:03:37.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "fc8f4f1056737bd39e79d14ac665b4b78d164a6c30e2bc02d5af19dd5ee74ca7",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "bioservices"
+    },
+    {
+      "name": "bulk-rnaseq",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/bulk-rnaseq/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Orchestrates bulk RNA-seq end-to-end: FASTQ QC/trim, STAR/Salmon alignment/quant, counts matrix, then hands off to DESeq2, enrichment, and f",
+      "verdict": "Clean, well-scoped bioinformatics workflow skill. No credential or secret access, no piped/obfuscated shell execution, no destructive ops. Installs come from standard, pinned PyPI/bioconda/nf-core sources with reproducibility emphasized throughout. Clear scope, explicit negative trigger (single-cell -> use scanpy), concrete failure-path guidance (Common Pitf",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 14560,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:03:37.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "e6a27eb602dd78a98ccbd98dd3c610cd43016889e4a3d6b4f2f0f05bf462425e",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "bulk-rnaseq"
+    },
+    {
+      "name": "clinical-reports",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/clinical-reports/SKILL.md",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "Reference/template skill for writing clinical case, diagnostic, trial, and patient reports per CARE/ICH-E3/HIPAA standards.",
+      "verdict": "Well-organized reference covering CARE, ICH-E3, HIPAA and standard report templates. Main risk: it MANDATES routing every report through a third-party AI image API (OpenRouter/'Nano Banana Pro') for a figure, in tension with its own PHI/de-identification warnings, and depends on an unbundled external skill. File is also 2x over the size budget, with no negat",
+      "badges": {
+        "security": "B",
+        "quality": "B",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "S02",
+          "status": "warning",
+          "summary": "Lines 34-49: 'MANDATORY... not optional' figure generation sends diagram descriptions to an external AI image service (Nano Banana Pro via OpenRouter) for every report, despite the skill's own HIPAA/d"
+        },
+        {
+          "check": "S06",
+          "status": "warning",
+          "summary": "Repeated forceful directive language ('⚠️ MANDATORY', 'This is not optional', lines 34-36) pressures the agent into an external network call regardless of context or user intent — a soft manipulation "
+        },
+        {
+          "check": "S11",
+          "status": "warning",
+          "summary": "Stated purpose is clinical report writing, but lines 34-36 mandate an unrelated third-party AI image-generation step for every single report, exceeding the documentation-writing scope and forcing netw"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 40061,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:03:37.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "4f5b6fe44549063660aa9625c57f3538e08fc1eb8e497259c844dfc406ce351d",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "clinical-reports"
+    },
+    {
+      "name": "consciousness-council",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/consciousness-council/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Runs a multi-persona 'council' debate (12 archetypes) to produce a synthesized recommendation on tough decisions.",
+      "verdict": "No malicious behavior found: pure prompting/roleplay skill, no network calls, no shell execution, no secret handling. Only nit: frontmatter declares allowed-tools 'Read Write' but the skill body never describes reading or writing any file — an unused/unexplained permission grant a user should notice, though low risk on its own. Otherwise clean and well struc",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "S11",
+          "status": "warning",
+          "summary": "Frontmatter line 4 declares 'allowed-tools: Read Write' but the skill body (lines 9-149) never describes reading or writing any file — it's a purely conversational output skill. Unused tool grant is a"
+        },
+        {
+          "check": "H07",
+          "status": "warning",
+          "summary": "Declared allowed-tools 'Read Write' (line 4) is never justified or used by the skill's actual instructions, which describe only conversational output — mismatched/unexplained tool declaration."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 8682,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:03:37.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "698664c2d7ec174923588f4bc67b8228ee05fa9bb72a0b725086601ebb6a0f7b",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "consciousness-council"
+    },
+    {
+      "name": "cirq",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/cirq/SKILL.md",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "Reference skill for building, simulating, and running Cirq quantum circuits on Google, IonQ, Azure, AQT, and Pasqal hardware.",
+      "verdict": "Clean, well-scoped reference skill: clear when-to-use triggers with named alternatives (qiskit/pennylane/qutip), pinned package versions, and a troubleshooting section for common failures. Hardware templates read provider API keys (IONQ_API_KEY, AZURE_QUANTUM_RESOURCE_ID, GOOGLE_CLOUD_PROJECT) only via standard env-vars to call the vendor's own SDK locally, ",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "Q10",
+          "status": "warning",
+          "summary": "Hardware-execution templates (engine.get_sampler, ionq.Service, AzureQuantumService) can incur real cost/quantum-time on each call; the skill gives no explicit guard or warning against unintentionally"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 12209,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:03:37.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "629c844b27a79dd494b050d7e273dbb265b267e13666fc7d0ebcca6564aa29e6",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "cirq"
+    },
+    {
+      "name": "cellxgene-census",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/cellxgene-census/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Python skill for querying the public CZ CELLxGENE Census (single-cell/spatial transcriptomics data) via cellxgene-census and TileDB-SOMA.",
+      "verdict": "Clean, well-scoped skill: only public, unauthenticated scientific data queries, no credential access, no shell-pipe execution, no hidden instructions. Solid failure-path and reproducibility guidance. Minor nit: SKILL.md runs 559 lines, slightly over the ~500-line budget, and it lacks an explicit output-format contract.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "Q05",
+          "status": "warning",
+          "summary": "The skill defines how to query/process data but never states an expected output format or deliverable shape for the final answer to the user; low risk since this is a library-usage skill, not a report"
+        },
+        {
+          "check": "H05",
+          "status": "warning",
+          "summary": "File is 559 lines, moderately over the ~500-line soft budget, though much reference detail is already split into separate reference files (lines 445-466)."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 19137,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:03:37.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "a2331f6914af30b0958154406b6de1ec4c2323839734031e32fe239750cbf702",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "cellxgene-census"
+    },
+    {
+      "name": "citation-management",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/citation-management/SKILL.md",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "Searches Google Scholar/PubMed, extracts metadata (DOI/PMID/arXiv), and builds/validates BibTeX bibliographies.",
+      "verdict": "No security exploit found — API keys are used only for their stated purpose. Main risks are hygiene/quality: the file is ~2.5x the size budget, a 'MANDATORY' phase silently depends on an undeclared 'parallel-cli' tool, an unrelated schematics upsell creeps into scope, and forceful language pushes arbitrary citation-count quotas that risk padding a bibliograp",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "S06",
+          "status": "warning",
+          "summary": "Heavy imperative language ('MANDATORY' line 216, 'Non-Negotiable' line 496, 'NEVER' line 997, 'CRITICAL' line 585) plus a hard-coded citation-count quota table ('Citations must always be high in numbe"
+        },
+        {
+          "check": "S11",
+          "status": "warning",
+          "summary": "The 'Visual Enhancement with Scientific Schematics' section (lines 32-62) instructs always generating AI diagrams via a separate scientific-schematics skill/'Nano Banana Pro' for any document — scope "
+        },
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No 'do not use when' / negative-trigger guidance appears anywhere in the file."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 40844,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:03:37.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "9ccbc5c941cc55ac60e83237d19d19eba3ea3b8ac75f9688ff7a5d23f931783c",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "citation-management"
+    },
+    {
+      "name": "clinical-decision-support",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/clinical-decision-support/SKILL.md",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "Generates LaTeX/PDF clinical-decision-support documents (biomarker cohort analyses, GRADE treatment guidelines) with stats, tables, and AI-g",
+      "verdict": "No malicious, hidden, or credential-stealing behavior found. Real risks are minor: it mandates calling an external image-generation service (scientific-schematics, via the user's own optional OPENROUTER_API_KEY) for every document with no described fallback if the key is absent, and it leans on companion skills (treatment-plans, clinical-reports, scientific-",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "S02",
+          "status": "warning",
+          "summary": "Mandates AI-generated figures via scripts/generate_schematic.py (lines 106-127), which the referenced scientific-schematics skill sends out over the network using OPENROUTER_API_KEY. Egress is declare"
+        },
+        {
+          "check": "S11",
+          "status": "warning",
+          "summary": "Core purpose is LaTeX/PDF document generation, but the skill mandates (not merely permits) invoking a separate external AI image-generation call for 'every' document (lines 106-108), which is a scope "
+        },
+        {
+          "check": "Q03",
+          "status": "warning",
+          "summary": "Figure generation is called 'MANDATORY' (line 106) while its dependency, OPENROUTER_API_KEY, is documented as only 'required_for: optional features' (line 6) — a direct tension between mandatory outpu"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 26771,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:03:37.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "be5159596af7ce43ab1efabaa20c4c2b486b07cbb0264b4b30b9e12b6de36f32",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "clinical-decision-support"
+    },
+    {
+      "name": "cobrapy",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/cobrapy/SKILL.md",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "Python library reference for COBRApy constraint-based metabolic modeling (FBA, FVA, knockouts, sampling, gapfilling).",
+      "verdict": "Clean, well-scoped reference skill with no malicious or hidden behavior found. It correctly discloses that load_model can fetch remote data from BiGG/BioModels (network required), matches its stated purpose, and stays within declared tools (Read/Write/Edit/Bash for pip installs). Minor gaps: no explicit 'do not use for' guidance and no explicit output-artifa",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit 'do not use this skill for X' guidance is given anywhere in the file, so a user/agent could misapply it to unsupported workflows without a clear boundary signal."
+        },
+        {
+          "check": "Q05",
+          "status": "warning",
+          "summary": "No explicit statement of what output artifacts/formats the skill should ultimately produce (e.g. expected files, report shape); relies on the reader inferring outputs from individual code snippets."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 14483,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:03:37.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "d712b8bb693f571e7be16ce70751d425658be2e5d57f034748ece146fa5f648b",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "cobrapy"
+    },
+    {
+      "name": "dask",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/dask/SKILL.md",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "Reference skill teaching when/how to use Dask for out-of-core and distributed pandas/NumPy workflows.",
+      "verdict": "Clean, well-scoped documentation skill. No secret access, no network exfiltration, no hidden or manipulative instructions, and package installs are limited to mainstream PyPI packages (dask, s3fs, gcsfs). Description gives clear positive and negative triggers, and detail is offloaded to reference files to keep context lean. Safe to install.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 15385,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:03:37.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "7ed0e73b2306e287a2eb6fe48172af1e2f07a8ff0fe76793e155e0acc0d9dabf",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "dask"
+    },
+    {
+      "name": "database-lookup",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/database-lookup/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Looks up facts from 78 public scientific/financial/regulatory database APIs with provenance, pagination, and rate-limit handling.",
+      "verdict": "Unusually security-conscious: explicitly treats API responses as untrusted data, blocks prompt injection from returned payloads, and handles credentials narrowly (checks one named env/.env var, never dumps or echoes secrets). Minor issues only: file runs slightly over the ~500-line budget, no explicit negative-trigger guidance, and allowed-tools declares onl",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit 'do not use when...' statement; only an implicit contrast ('rather than inferred from general knowledge', line 3) hints at the negative trigger."
+        },
+        {
+          "check": "Q03",
+          "status": "warning",
+          "summary": "Frontmatter allowed-tools is 'Read Bash' (line 4), but the Making API Calls section names WebFetch as the primary Claude Code fetch tool (line 313) — that tool isn't declared."
+        },
+        {
+          "check": "H05",
+          "status": "warning",
+          "summary": "File is 534 lines, modestly over the ~500-line budget, driven by the large database-selection and identifier tables."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 34642,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:03:37.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "1123c86257544c85f41cae685a972608f10a9fd909df814b6230c55fafc24754",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "database-lookup"
+    },
+    {
+      "name": "datamol",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/datamol/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Reference skill teaching Claude to use datamol (a Pythonic RDKit wrapper) for cheminformatics: SMILES, descriptors, clustering, conformers.",
+      "verdict": "Clean, well-scoped library-usage guide. No credential harvesting, no piped remote-code execution, no hidden instructions; cloud I/O is explicitly gated behind user confirmation and only reads the standard provider env vars locally. Only real nits: the file runs ~723 lines (over the ~500-line hygiene budget) and one code snippet's step numbering skips '#2'. S",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q03",
+          "status": "warning",
+          "summary": "Minor inconsistency: the 'Virtual Screening Pipeline' snippet numbers comments 1, 3, 4, 5 and skips '2' (lines 591-608) — cosmetic, not functionally confusing."
+        },
+        {
+          "check": "Q07",
+          "status": "warning",
+          "summary": "File is ~723 lines; deep API detail is delegated to 6 external reference files (references/*.md) but the SKILL.md body itself is still long for a single load."
+        },
+        {
+          "check": "H05",
+          "status": "warning",
+          "summary": "Document is ~723 lines, roughly 45% over the ~500-line hygiene budget, despite offloading deep detail to external reference files."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 20657,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:03:37.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "eb138666e64b81148579ed9d4efacc72b7330747b266a1369a88e1903ba82c73",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "datamol"
+    },
+    {
+      "name": "deepchem",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/deepchem/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Guides Claude Code through DeepChem: loading, featurizing, training, and evaluating molecular ML models for drug discovery and materials sci",
+      "verdict": "Clean, purely technical library-usage skill with no security red flags. Only issue: SKILL.md runs ~602 lines, over the ~500-line budget, and Bash/Write/Edit tool access is broad but consistent with its stated purpose (installing packages, running training scripts).",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "Q05",
+          "status": "warning",
+          "summary": "No explicit statement of what the skill should hand back to the user (e.g., expected files, printed metrics format) — output is implied by code examples only, not stated as a contract."
+        },
+        {
+          "check": "H05",
+          "status": "warning",
+          "summary": "File is 602 lines, exceeding the ~500-line budget by roughly 20%, though content is organized and not padded."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 19384,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:03:37.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "faea6425350983c8dcd88433d9d2d6f41c7114bc7341f765bd5f04f70fe3cf0b",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "deepchem"
+    },
+    {
+      "name": "dhdna-profiler",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/dhdna-profiler/SKILL.md",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "Scores any text on 12 'cognitive DNA' dimensions to build a narrative psychological/thinking-style profile of its author.",
+      "verdict": "No security red flags: no secrets, network calls, shell execution, or destructive actions — it's a pure Read/analyze/present text-profiling framework. Minor gaps: declares an unused 'Write' tool, gives no guidance against profiling third parties without consent or handling thin/ambiguous text, and lacks a worked example, but nothing here is unsafe to install",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit 'do not use for X' guidance — e.g. no caution against profiling a third party's writing without their knowledge/consent, or using the output for hiring/vetting decisions; 'What This Is NOT"
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "No instructions for edge cases: very short/thin text, non-English text, or text with insufficient signal beyond tagging confidence as LOW — no guidance to caveat or decline when evidence is too sparse"
+        },
+        {
+          "check": "Q09",
+          "status": "warning",
+          "summary": "Output format (lines 101-131) is a template with placeholder text only ('9/10', bracketed fields) — no fully worked example profile is shown to anchor how ambiguous scoring judgments should resolve."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 9637,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:03:37.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "98b38f88a1b16d9ef41f0c8e3aa681901fb7f1e26b8ab9a78cca354cee92a106",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "dhdna-profiler"
+    },
+    {
+      "name": "deeptools",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/deeptools/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Guides Claude through deepTools NGS workflows: BAM-to-bigWig conversion, QC, and ChIP/RNA/ATAC-seq heatmaps.",
+      "verdict": "Clean, well-scoped bioinformatics skill. No secret access, no network exfiltration, no destructive or obfuscated commands — installs a pinned, well-known PyPI/conda package (deepTools) and runs standard analysis CLIs. Minor polish gaps only: no 'when not to use' guidance and the file runs slightly past the ~500-line budget.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit negative-trigger guidance (e.g., non-genomic data, unsupported assay types) is given anywhere in the file — only positive triggers are listed."
+        },
+        {
+          "check": "H05",
+          "status": "warning",
+          "summary": "File is 536 lines, moderately over the ~500-line budget guidance."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 19164,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:03:37.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "9c67f35007177524d9cf09ed37fd6c00566735376408d91c40bf8a2933f8f47e",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "deeptools"
+    },
+    {
+      "name": "depmap",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/depmap/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Python reference + workflows for querying the Broad Institute's public DepMap API and data downloads for cancer gene-dependency analysis.",
+      "verdict": "Clean, single-purpose scientific skill. All network calls target official depmap.org/figshare endpoints for public research data, no credentials are read or requested, no shell execution of fetched code, nothing obfuscated or hidden. Minor nits: thin error handling, undeclared Python deps, and one placeholder download URL — cosmetic, not a safety issue. Safe",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit 'do not use when' guidance (e.g., non-cancer contexts, need for RNA-seq raw data) is given anywhere in the file."
+        },
+        {
+          "check": "Q05",
+          "status": "warning",
+          "summary": "Individual functions document return shapes via docstrings/comments, but there is no overall output-contract statement for the skill (e.g., expected report/format), left to the invoking agent."
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "API helper functions (lines 68-96) do minimal error handling (raise_for_status only in depmap_get) and don't guide the user on handling 404s, rate limits, or missing files; the FILES dict (lines 114-1"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 11275,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:03:37.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "02d3bcf902d3d958ffa2fac0a33e7a0b723c6aa906237685aaec8fa6c1e8be1e",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "depmap"
+    },
+    {
+      "name": "diffdock",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/diffdock/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Guides DiffDock/DiffDock-L molecular docking: env setup, single/batch pose prediction, confidence scoring, troubleshooting.",
+      "verdict": "Clean scientific-workflow skill: no secret access, no data exfiltration, no hidden instructions, and it explicitly states what it is and is not for (docking poses, not binding affinity). Only real risk is standard supply-chain exposure: it has the agent `git clone` an unpinned upstream repo and `docker pull` an image by floating tag rather than a pinned comm",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Installation instructs `git clone https://github.com/gcorso/DiffDock.git` (no commit/tag pin) and `docker pull rbgcsail/diffdock` (no digest pin) — a user re-running this later could silently get diff"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 16372,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:03:37.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "cee96009cabbb2013f5a8143ef51e6e280549d7a1230251f1ca4ed86f2290573",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "diffdock"
+    },
+    {
+      "name": "dnanexus-integration",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/dnanexus-integration/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Reference skill for building DNAnexus apps, moving genomic data, and scripting the dxpy SDK.",
+      "verdict": "No security red flags: it only documents the platform's own `dx login` auth flow, uses official PyPI dxpy, and has no piped remote execution, obfuscation, or hidden instructions. Minor quality gaps: no negative-use guidance, no explicit output contract, and no note that repeated upload/run patterns aren't idempotent. Safe to install; treat the shown code as ",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No 'do not use when' guidance anywhere in the file; a user could invoke it for unrelated genomics tasks outside DNAnexus with no steer-away."
+        },
+        {
+          "check": "Q05",
+          "status": "warning",
+          "summary": "No explicit statement of what the agent should return to the user (file, summary, job status) after following the workflow."
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "Only a general 'wrap API calls in try-except' best-practice bullet (line 350); no guidance for skill-specific failure modes like auth expiry or missing reference docs."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 11198,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:03:37.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "98bf9d0e5adb863c93030305f30034196d5546476423cd2af47e5bc4a1d8ce41",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "dnanexus-integration"
+    },
+    {
+      "name": "docx",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/docx/SKILL.md",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "Guides Claude to build, edit, and analyze Word .docx files via docx-js and XML unpack/edit/pack scripts, including tracked changes.",
+      "verdict": "Solid, safe skill: clear use/don't-use triggers, deterministic docx-js and XML guidance, plus validation/auto-repair steps. No secret access, network exfiltration, or destructive ops. Minor issues: file runs 592 lines (over the ~500 budget), `npm install -g docx` is unpinned (supply-chain drift risk), and repeated unpack/edit/pack runs have no guidance again",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Line 59: `npm install -g docx` installs the third-party npm package globally with no version pin, so behavior can silently drift on new releases (supply-chain risk, though the package itself is a well"
+        },
+        {
+          "check": "Q10",
+          "status": "warning",
+          "summary": "No guidance on ID collisions (w:id for w:ins/w:del, comment ids) or repeatability if unpack→edit→pack is run multiple times against the same document; re-running edits could produce duplicate revision"
+        },
+        {
+          "check": "H05",
+          "status": "warning",
+          "summary": "File is 592 lines, moderately over the ~500-line budget, though content density (docx-js API + XML schema reference) partly justifies the length."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 20085,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:03:37.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "73eaac70a6c6dbdcde3ffc0d2d56daf094870dd9c1c3169ab4715edda9f0738c",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "docx"
+    },
+    {
+      "name": "esm",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/esm/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Reference skill for EvolutionaryScale's `esm` Python SDK: protein generation, structure prediction, embeddings, and Forge/Biohub cloud infer",
+      "verdict": "Clean, well-scoped SDK guide. Auth reads ESM_API_KEY from env only, explicitly warns against hardcoding/committing tokens, and pins the PyPI install to a fixed version. No shell-piped code, no hidden instructions, no reviewer manipulation. Minor nits: no stated negative trigger, mixed EvolutionaryScale/Biohub branding could confuse installers, and a shortene",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "S05",
+          "status": "warning",
+          "summary": "Community link uses a shortened bit.ly URL (line 326: https://bit.ly/3FKwcWd) whose destination is obscured; low severity since it's a doc link, not executable content."
+        },
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Install source is PyPI with a pinned version (esm==3.2.3, line 246) which is good, but the GitHub link (line 319) points to 'Biohub/esm' while installation text attributes the package to 'Evolutionary"
+        },
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit 'do not use when...' guidance anywhere in the frontmatter or body."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 12296,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:08:49.143Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "2ee8b30793d79e4fabb8d8e84931ddec7e1027377ad5dfa57bf0219d2cb32f8a",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "esm"
+    },
+    {
+      "name": "exa-search",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/exa-search/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Web search + URL extraction skill wrapping the Exa API, with an academic/scientific-source filtering mode.",
+      "verdict": "Clean, well-scoped API-integration skill: no credential theft, no shell-piped remote code, transparent setup. Minor notes: it directs the agent to preserve Exa's usage-attribution header even when a user adapts the scripts, and defers citation/output-format and error-handling details to reference files not included in this review.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "S06",
+          "status": "warning",
+          "summary": "Line 83 instructs the agent: 'Do not remove or rename this header when adapting the scripts' (an Exa usage-attribution header). Disclosed openly, not hidden, but it is a directive aimed at constrainin"
+        },
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit negative-trigger guidance (e.g., when to prefer built-in WebFetch or when NOT to reach for this skill) beyond one aside preferring Web Extract 'over the built-in WebFetch for batch extract"
+        },
+        {
+          "check": "Q05",
+          "status": "warning",
+          "summary": "Citation format is only partially specified inline ('include author names and publication year... in addition to the standard citation format', line 43) without defining 'standard citation format' her"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 5211,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:08:49.143Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "38dbb71205884e35d6f223fa7f799e56494c1200126dc13cbfb7ed4793c44810",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "exa-search"
+    },
+    {
+      "name": "experimental-design",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/experimental-design/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Guides picking an experiment/study design and generates seeded randomization or DOE layouts via bundled Python scripts.",
+      "verdict": "Clean, well-scoped methodology skill. No credential access, no network egress beyond a plain `uv pip install` of well-known packages (numpy, pandas, pyDOE3), no hidden instructions or reviewer-manipulation attempts, and everything runs locally and deterministically (seeded). Only soft gap: no explicit guidance for install failures or violated design assumpti",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "No guidance for failure paths — e.g. what to do if the `uv pip install` fails, pyDOE3 is unavailable, or chosen design assumptions turn out to be violated; a user hitting an install error has no fallb"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 12937,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:08:49.143Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "074e67176e8c3e455ba054cb1cb79df1d0610cefecef01101554fad2ceaacb9f",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "experimental-design"
+    },
+    {
+      "name": "etetoolkit",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/etetoolkit/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "SKILL.md wrapping the ete3 Python library for phylogenetic tree manipulation, orthology detection, NCBI taxonomy, and tree visualization.",
+      "verdict": "No security fails. NCBI taxonomy download (~300MB) and optional sudo installs for Qt rendering are both clearly disclosed, not hidden or exfiltrating data. Minor hygiene issues: file runs 620 lines (over the ~500 budget) and lacks negative-trigger guidance and a unified output contract. Overall a legitimate, actionable reference for the ete3 bioinformatics t",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "S07",
+          "status": "warning",
+          "summary": "Lines 370 and 556 include 'sudo apt-get install python3-pyqt5 python3-pyqt5.qtsvg' for optional Qt rendering support; legitimate and disclosed, but a sudo command a user could run without scrutiny."
+        },
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit statement of when NOT to use this skill (e.g. non-tree hierarchical data, non-phylogenetic use cases)."
+        },
+        {
+          "check": "Q05",
+          "status": "warning",
+          "summary": "No single unified output contract; outputs vary implicitly per capability (files written, printed stats, rendered images) without a consolidated statement of expected artifacts."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 17904,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:08:49.143Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "7782e33ff13e850bcf7f4436e31401cb09aef57242dc6566759f7c799312e0c3",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "etetoolkit"
+    },
+    {
+      "name": "flowio",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/flowio/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Python library skill for parsing/writing Flow Cytometry Standard (FCS) files into NumPy arrays, CSV, and back.",
+      "verdict": "Clean, low-risk documentation skill. It teaches local file I/O with the flowio PyPI package only — no network calls, no credential access, no shell-piped remote code, no obfuscation. Only real nits: it runs ~606 lines (over the ~500-line budget) and never states an explicit 'do not use for X' boundary beyond pointing to FlowKit for advanced analysis.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit 'do not use when' section; the 'Related Tools' note (line 26) pointing to FlowKit for compensation/gating implies a boundary but never states it as a negative trigger."
+        },
+        {
+          "check": "Q07",
+          "status": "warning",
+          "summary": "Content is fairly verbose with repeated/overlapping examples across 'Core Workflows', 'Common Use Cases', and 'Integration Notes' sections, costing more context than strictly needed."
+        },
+        {
+          "check": "H05",
+          "status": "warning",
+          "summary": "File is 606 lines, roughly 20% over the ~500-line budget guideline, mostly due to repetitive example sections."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 16792,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:08:49.143Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "7e498adf3cca70260beee1fa021b286977283f0779700de4b8790b40ef896869",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "flowio"
+    },
+    {
+      "name": "fluidsim",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/fluidsim/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Reference/how-to skill for running FluidSim CFD simulations (Navier-Stokes, shallow water, stratified flows) with pseudospectral FFT solvers",
+      "verdict": "Clean, narrowly-scoped skill: no credential access, no unsolicited network calls beyond a plain `pip install`, no shell-piped remote code, no obfuscation, and no hidden or manipulative instructions found. Minor documentation gaps (no negative triggers, no troubleshooting/re-run guidance) but nothing that endangers a user who installs it.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit 'do not use when' guidance (e.g. non-periodic domains, non-spectral methods, unstructured meshes) — a user with an unsupported problem type has no signal to look elsewhere."
+        },
+        {
+          "check": "Q05",
+          "status": "warning",
+          "summary": "No explicit statement of what a completed task should return/produce (e.g. expected files, report format) — the doc shows API calls but not a defined deliverable contract."
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "Only one failure mode is addressed ('Parameters object raises AttributeError for typos', line 148); no guidance on common runtime failures like missing FFT backend, MPI misconfiguration, or convergenc"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 9404,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:08:49.143Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "b374e522e4aec608068f99cb9f43f43881930d68029defe7b48885910683c852",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "fluidsim"
+    },
+    {
+      "name": "exploratory-data-analysis",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/exploratory-data-analysis/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Automates exploratory data analysis on 200+ scientific file formats, producing markdown reports with quality metrics and recommendations.",
+      "verdict": "Clean, benign skill. No credential access, network egress, shell-piped remote code, destructive ops, obfuscation, or manipulation of the reviewer/agent found. It only reads local scientific data files and writes markdown reports. Minor gaps: no explicit 'when NOT to use' guidance, and bundled reference/script files (referenced but not fetched here) were not ",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit negative-trigger / 'when NOT to use' guidance is present anywhere in the file, so an agent could misapply it to non-scientific or non-file-based requests."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 14322,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:08:49.143Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "71750511a989e044da03f9be228304e27046fac948416fa8ac4afdf57b245794",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "exploratory-data-analysis"
+    },
+    {
+      "name": "generate-image",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/generate-image/SKILL.md",
+      "kind": "skill",
+      "category": "media",
+      "tagline": "Wraps a Python script that generates or edits images through OpenRouter (FLUX.2, Gemini image models) using your own API key.",
+      "verdict": "Clean, well-scoped skill: clear when-to-use / when-not-to-use guidance, documented error handling, and API-key setup that stays local (.env) rather than being sent anywhere but OpenRouter itself. The referenced scripts/generate_image.py was not bundled with this review, so its actual code is unverified — treat that as the main residual trust gap. Minor nit: ",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 7068,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:08:49.143Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "68f43ca03e50a62f8d3fc95bf336d54e4c46a5be860103ff12a8a00e2cfe65b0",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "generate-image"
+    },
+    {
+      "name": "geniml",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/geniml/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Guides genomic-interval ML workflows (Region2Vec, BEDspace, scEmbed, universe building) via the geniml Python package.",
+      "verdict": "Clean, plain-text documentation skill for the legitimate open-source geniml package. No hidden instructions, credential access, destructive commands, or obfuscation. Minor notes: it offers an optional git+https dev install and a separate third-party StarSpace install (normal for scientific tooling but slightly less verifiable than PyPI), and it doesn't spell",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Line 31 offers `uv pip install git+https://github.com/databio/geniml.git` (dev version bypassing PyPI review) and lines 310-312 direct users to separately install StarSpace from facebookresearch/StarS"
+        },
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit negative-trigger guidance (e.g., 'not for non-genomic data' or 'not for supervised classification tasks') anywhere in the file."
+        },
+        {
+          "check": "Q05",
+          "status": "warning",
+          "summary": "Individual code snippets show output artifacts (e.g. embeddings.npy, universe.bed) but the skill never states an explicit overall output contract for what the agent should return to the user."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 10099,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:08:49.143Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "85c48802ff849d54443871f2f03f60da13d0783256441e596d2d221587adc807",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "geniml"
+    },
+    {
+      "name": "geomaster",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/geomaster/SKILL.md",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "Geospatial reference skill: install commands plus 500+ Python code snippets for remote sensing, GIS, spatial ML, and cloud-native geo workfl",
+      "verdict": "No security red flags found: all code is plain-text, network calls (STAC, Earth Engine, OSM) match the stated geospatial purpose, and the one credential-shaped line (AWSSession) is an unfilled library-usage example, not exfiltration. Dependencies are reputable, well-known geo packages. Quality gaps are minor: no negative-trigger guidance, no explicit output ",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No 'do not use for' / negative-trigger guidance anywhere in the frontmatter or body, so an agent has no signal for when geomaster is the wrong tool (e.g. non-geospatial data science tasks)."
+        },
+        {
+          "check": "Q05",
+          "status": "warning",
+          "summary": "No explicit statement of what the skill should hand back to the user (file, report, summary format); it reads as a reference library rather than a task with a defined output contract."
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "Code snippets have essentially no error handling (e.g. classify_imagery lines 220-249, terrain_metrics lines 179-195 assume well-formed inputs); failure guidance is deferred entirely to an unfetched r"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 11765,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:08:49.143Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "e1ca88df0916acec5c2523a2ec0e99e5eac22a57431b24217be9b3a3e5912c60",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "geomaster"
+    },
+    {
+      "name": "geopandas",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/geopandas/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Teaches GeoPandas usage for reading, transforming, analyzing, and mapping geospatial vector data (shapefiles, GeoJSON, PostGIS).",
+      "verdict": "Clean, low-risk library-usage skill. No credential access, no network exfiltration, no shell/curl-pipe execution, no obfuscation or hidden instructions. Package installs (geopandas, folium, pyarrow, psycopg2, cartopy, etc.) are all mainstream PyPI packages via `uv pip install`, matching the stated geospatial-analysis scope. Minor quality gaps: no explicit ne",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No 'do not use when' guidance is given (e.g. raster data, non-geospatial tabular pandas work); minor omission typical for library-reference skills."
+        },
+        {
+          "check": "Q05",
+          "status": "warning",
+          "summary": "No explicit statement of expected output/deliverable format beyond the code examples themselves (e.g. what a completed task should look like)."
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "Failure-path handling is thin: only a one-line best practice to 'Validate geometries with `.is_valid`' (line 243); no guidance on handling CRS mismatches, malformed files, or overwrite-on-write errors"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 7137,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:08:49.143Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "139dd495463e39477e19f707cbd7c2ba7b84924bff3dab8e7dd5b6c3ca3eb33c",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "geopandas"
+    },
+    {
+      "name": "gget",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/gget/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "CLI/Python reference for querying 20+ bioinformatics databases (Ensembl, BLAST, AlphaFold, COSMIC, CELLxGENE) via the gget package.",
+      "verdict": "Clean, well-scoped reference doc for the real gget bioinformatics tool. It explicitly warns against hardcoding COSMIC/OpenAI credentials, recommends env vars, and flags heavy-download operations (AlphaFold ~4GB, gget virus bulk downloads). Main issue: the SKILL.md is ~973 lines, roughly double the recommended size budget, so it eats context even though the c",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "S11",
+          "status": "warning",
+          "summary": "Description promises 'gene info, BLAST/BLAT, viral sequence downloads, AlphaFold structures, enrichment analysis, OpenTargets, COSMIC, CELLxGENE, and 8cube' but the body also documents `gget gpt` (Ope"
+        },
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "`gget setup alphafold` 'Installs modified third-party dependencies and downloads model parameters' (line 317) without specifying source/checksum verification; matches known real gget behavior but the "
+        },
+        {
+          "check": "Q07",
+          "status": "warning",
+          "summary": "At ~973 lines the file is dense; a chunk of parameter-level detail could have been pushed to the referenced references/module_reference.md to keep the main context leaner."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 31864,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:08:49.143Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "08c001b7bcf64ce033c4b49777ccc83347d7ae9e749ea513c04b7780b70e57a1",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "gget"
+    },
+    {
+      "name": "ginkgo-cloud-lab",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/ginkgo-cloud-lab/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Read-only reference catalog for selecting and ordering protein/RNA lab protocols on Ginkgo Bioworks Cloud Lab (cloud.ginkgo.bio).",
+      "verdict": "Clean, low-risk skill: allowed-tools is restricted to Read, so it can only surface a protocol catalog and manual ordering steps for a named, legitimate biotech company's site -- it cannot itself submit orders, run code, or touch credentials. Minor quality nit: no explicit negative-trigger guidance.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit 'do not use when...' guidance; a user could be steered toward this skill for unrelated bio-lab work it doesn't cover."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 7324,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:08:49.143Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "af90b2959873d00b724233118e5e0a5df19b5be8b2e26069961c1f02377ca8fe",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "ginkgo-cloud-lab"
+    },
+    {
+      "name": "get-available-resources",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/get-available-resources/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Detects local CPU/GPU/memory/disk resources and writes a JSON recommendation file to guide computational strategy for scientific tasks.",
+      "verdict": "Clean, narrowly-scoped skill: runs a local script to report CPU/GPU/memory/disk and writes results to .claude_resources.json. No network calls, no credential access, no destructive or obfuscated behavior found in the SKILL.md text. Minor gaps: no explicit negative-trigger guidance, and its one dependency (psutil) is installed unpinned. Overall low risk to in",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit 'do not use when' / negative-trigger guidance anywhere in the file; a user can't tell when this skill is unnecessary overhead (e.g. trivial scripts)."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 9849,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:08:49.143Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "f74eaf6a8aaa4e9e744deda2d3dc7ca4bbbf6d188118aa0bcb471c603026bd30",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "get-available-resources"
+    },
+    {
+      "name": "histolab",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/histolab/SKILL.md",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "Reference doc for the histolab Python library: WSI tile extraction, tissue masking, and stain normalization for H&E slides.",
+      "verdict": "Clean, well-scoped documentation skill with no code-execution risk. Only installs standard PyPI packages (histolab, pooch) and links to the legitimate OpenSlide project; no network exfiltration, secrets access, or hidden instructions found. Main weakness is length: the SKILL.md itself runs ~714 lines, well past the ~500-line budget, so it front-loads more co",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "Q07",
+          "status": "warning",
+          "summary": "Main file is verbose (714 lines) with many full code blocks inline even though five reference files already exist for deep detail — some of that content could have been pushed to references to keep th"
+        },
+        {
+          "check": "Q10",
+          "status": "warning",
+          "summary": "Re-running extraction workflows against the same processed_path/output directory is never addressed — unclear whether tiles get overwritten, duplicated, or skipped on a second run."
+        },
+        {
+          "check": "H05",
+          "status": "warning",
+          "summary": "File is 714 lines total, well above the ~500-line budget, despite delegating deep detail to five separate reference files."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 22040,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:08:49.143Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "12354a8f5b4b9a4899528235e4aec73977ae7a2b03a9faa2e898d1b21c63e523",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "histolab"
+    },
+    {
+      "name": "gtars",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/gtars/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Docs-only skill wrapping the gtars Rust/Python genomic-interval toolkit (overlap, coverage, tokenization, refget, fragments).",
+      "verdict": "Clean, standard-practice documentation skill. Installs via public registries (PyPI/crates.io) with no scripts, no hidden instructions, no data exfiltration. Minor polish gaps only: no explicit negative-use guidance and license field is 'Unknown'. Safe to install.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit 'do NOT use when' guidance anywhere in the file; a user could reach for this outside genomics contexts without being redirected."
+        },
+        {
+          "check": "Q05",
+          "status": "warning",
+          "summary": "No explicit statement of expected output/result contract for the agent (e.g. what to report back to the user after running a workflow); relies on generic code-example outputs only."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 7823,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:08:49.143Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "868394af086bc2797a38189c5079d9aae72e0686b8b00481fd2a1ce37cad68bb",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "gtars"
+    },
+    {
+      "name": "glycoengineering",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/glycoengineering/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Scans protein sequences for N/O-glycosylation sites and links out to external glycoengineering tools and databases.",
+      "verdict": "Clean, on-topic bioinformatics skill: plain Python regex/heuristic code, no obfuscation or hidden instructions. Minor flags: it queries public third-party APIs (GlyConnect, DTU) with sequence/UniProt data and tells the user to `pip install glycoshield` from an unpinned source, both disclosed but unconfirmed before execution.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "S02",
+          "status": "warning",
+          "summary": "query_glyconnect() sends a UniProt ID to glyconnect.expasy.org via requests.get; disclosed in the skill's stated purpose ('access curated glycoengineering tools') but fires with no explicit user confi"
+        },
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Instructs `pip install glycoshield` (line 232) from PyPI with no version pin or checksum, and points to a GitLab-hosted research tool (line 226) — standard for a scientific skill but technically an un"
+        },
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit 'do NOT use when' guidance (e.g., non-protein sequences, DNA/RNA input, or when experimental validation is required) is stated anywhere."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 12464,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:08:49.143Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "a57b8129c28eec18e13a7b207f90e3c21a5c5074431a8d6684987f61b0f57856",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "glycoengineering"
+    },
+    {
+      "name": "hugging-science",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/hugging-science/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Curated Hugging Face catalog skill for scientific ML — helps find/use datasets, models, and Spaces via standard HF tooling.",
+      "verdict": "Well-scoped and tidy: clear triggers/anti-triggers, graceful failure handling, lean SKILL.md. HF_TOKEN is read from a local .env only to authenticate to HF itself, not sent elsewhere, and hardcoding/echoing is explicitly discouraged. Main risk for installers: it normalizes trust_remote_code=True (arbitrary code execution from remote HF model repos) with only",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "S03",
+          "status": "warning",
+          "summary": "No curl|bash pattern, but line 115 tells the agent to routinely pass trust_remote_code=True for scientific models, which makes `transformers` execute arbitrary Python shipped in the remote HF repo — f"
+        },
+        {
+          "check": "S11",
+          "status": "warning",
+          "summary": "Mostly matches its stated purpose (discovery + standard HF usage), but the routine trust_remote_code=True guidance (line 115) and unqualified default to streaming/large downloads (line 117) push sligh"
+        },
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Points users to 'community-submitted datasets, a few models' (line 14) and general HF Hub content; only mitigation offered is 'check the underlying HF model card' for license/access (line 66) — no int"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 9780,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:08:49.143Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "c427c0efbb77049dad7464eb5e5e37e468640079df8cd7aaeab83bafefb8c540",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "hugging-science"
+    },
+    {
+      "name": "hypothesis-generation",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/hypothesis-generation/SKILL.md",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "Builds literature-grounded hypotheses, experiments, and a LaTeX report; mandates calling an image-gen skill for figures.",
+      "verdict": "No secret theft, destructive ops, or hidden instructions found. But allowed-tools omits WebFetch/WebSearch the workflow actually uses (H07); real scope (web/PubMed fetches, third-party image-gen API calls, LaTeX toolchain) exceeds the short description (S11); 'MANDATORY... not optional' figure step pressures extra network calls/cost (S06); no fallback guidan",
+      "badges": {
+        "security": "B",
+        "quality": "C",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "S02",
+          "status": "warning",
+          "summary": "Workflow directs WebFetch/WebSearch against PubMed/general web (lines 82-88) and a mandatory Bash call to a third-party AI image-gen API (lines 40-48); functional for research but not flagged in the s"
+        },
+        {
+          "check": "S06",
+          "status": "warning",
+          "summary": "\"⚠️ MANDATORY... This is not optional\" (lines 28-30) pressures the executing agent to always invoke a separate image-generation skill/API regardless of what the user actually asked for."
+        },
+        {
+          "check": "S11",
+          "status": "warning",
+          "summary": "Frontmatter description promises only hypothesis formulation/predictions/mechanisms/experiments (line 3), but the workflow mandates web literature search, a full LaTeX report pipeline (lines 223-234),"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 14214,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:08:49.143Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "e5c5356c3c84bc5cbd4006d2e02e1d4591a01f588436ebe6d0ab81099198f86b",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "hypothesis-generation"
+    },
+    {
+      "name": "hypogenic",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/hypogenic/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Wraps the ChicagoHAI 'hypogenic' pip package to auto-generate and test scientific hypotheses from data and literature via LLM APIs.",
+      "verdict": "Clean, well-documented research-automation skill: no hidden instructions, secret theft, or destructive commands found. It does pip-install an external package, clone two GitHub dataset repos, and run third-party GROBID setup scripts from those clones, so trust partly rests on those external sources. By design it sends your dataset text to OpenAI/Anthropic AP",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "S09",
+          "status": "warning",
+          "summary": "Instructs running third-party GROBID setup/run scripts (lines 235, 244) from a separately cloned repo (github.com/ChicagoHAI/hypothesis-generation) without any integrity check (hash/pin) before execut"
+        },
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Installs an external pip package (`uv pip install hypogenic`, line 20) and clones two additional GitHub repos for datasets (lines 23, 134, 137, 615, 618) plus runs GROBID via a third cloned repo — thr"
+        },
+        {
+          "check": "Q07",
+          "status": "warning",
+          "summary": "At 654 lines the file is well beyond a lean context budget, with substantial space spent on marketing-style 'Proven Results'/'Expected Outcomes' stats (lines 78-82, 420-426) and three full BibTeX cita"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 21757,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T19:08:49.143Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "6a47d0611f1b628983e1fa96e09a00d519ce10030bf7de95885d4bdba9f6ddef",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "hypogenic"
     }
   ]
 }
