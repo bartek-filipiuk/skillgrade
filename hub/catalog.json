@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T17:10:33.001Z",
+  "generatedAt": "2026-07-17T18:51:23.673Z",
   "rubricVersion": "0.1.2",
   "taxonomy": [
     {
@@ -96,7 +96,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -351,7 +351,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -402,7 +402,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -453,7 +453,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -499,7 +499,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -550,7 +550,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -601,7 +601,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -652,7 +652,7 @@
         "majorFlags": 9
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -703,7 +703,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -754,7 +754,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -805,7 +805,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -856,7 +856,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -907,7 +907,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -958,7 +958,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1009,7 +1009,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1060,7 +1060,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1111,7 +1111,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1157,7 +1157,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1208,7 +1208,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1259,7 +1259,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1310,7 +1310,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1361,7 +1361,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1412,7 +1412,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1463,7 +1463,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1509,7 +1509,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1560,7 +1560,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1611,7 +1611,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1652,7 +1652,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1703,7 +1703,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1749,7 +1749,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1800,7 +1800,7 @@
         "majorFlags": 4
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1851,7 +1851,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1902,7 +1902,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1953,7 +1953,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2004,7 +2004,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2045,7 +2045,7 @@
         "majorFlags": 18
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2096,7 +2096,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2147,7 +2147,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2193,7 +2193,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2244,7 +2244,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2295,7 +2295,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2341,7 +2341,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2392,7 +2392,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2443,7 +2443,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2494,7 +2494,7 @@
         "majorFlags": 12
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2540,7 +2540,7 @@
         "majorFlags": 6
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2591,7 +2591,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2632,7 +2632,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2683,7 +2683,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2734,7 +2734,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2785,7 +2785,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2836,7 +2836,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2887,7 +2887,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2938,7 +2938,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2989,7 +2989,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3040,7 +3040,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3091,7 +3091,7 @@
         "majorFlags": 2
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3142,7 +3142,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3193,7 +3193,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3244,7 +3244,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3295,7 +3295,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3341,7 +3341,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3392,7 +3392,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3433,7 +3433,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3484,7 +3484,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3535,7 +3535,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3586,7 +3586,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3637,7 +3637,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3688,7 +3688,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3739,7 +3739,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3780,7 +3780,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3831,7 +3831,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3882,7 +3882,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3933,7 +3933,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3984,7 +3984,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4035,7 +4035,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4086,7 +4086,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4137,7 +4137,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4188,7 +4188,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4234,7 +4234,7 @@
         "majorFlags": 2
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4285,7 +4285,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4336,7 +4336,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4387,7 +4387,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4438,7 +4438,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4489,7 +4489,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4540,7 +4540,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4591,7 +4591,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4642,7 +4642,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4693,7 +4693,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4744,7 +4744,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4795,7 +4795,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4846,7 +4846,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4897,7 +4897,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4948,7 +4948,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4999,7 +4999,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5050,7 +5050,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5091,7 +5091,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5142,7 +5142,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5193,7 +5193,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5244,7 +5244,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5295,7 +5295,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5346,7 +5346,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5397,7 +5397,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5438,7 +5438,7 @@
         "majorFlags": 2
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5489,7 +5489,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5540,7 +5540,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5591,7 +5591,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5642,7 +5642,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5693,7 +5693,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5739,7 +5739,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5790,7 +5790,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5841,7 +5841,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5887,7 +5887,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5938,7 +5938,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5989,7 +5989,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -6040,7 +6040,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -6091,7 +6091,7 @@
         "majorFlags": 2
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -6142,7 +6142,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -6193,7 +6193,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -6244,7 +6244,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -6295,7 +6295,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-17T17:10:33.001Z",
+      "evaluatedAt": "2026-07-17T18:51:23.673Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -7218,6 +7218,2995 @@
       "mirrors": [],
       "discoveredVia": "github",
       "slug": "wowerpoint"
+    },
+    {
+      "name": "understand-figma",
+      "source": "GitHub · Egonex-AI/Understand-Anything · 74884★",
+      "sourceUrl": "https://github.com/Egonex-AI/Understand-Anything/blob/main/understand-anything-plugin/skills/understand-figma/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Fetches a Figma file via the Figma REST API and builds an interactive design knowledge-graph dashboard from a user-supplied personal access ",
+      "verdict": "Solid: FIGMA_TOKEN is read only from env, sent only to api.figma.com in a header, explicitly never written to graph/logs, and fetch is separated from non-deterministic LLM enrichment with idempotency (UP_TO_DATE short-circuit). Minor risks: Figma node names flow unsanitized into an LLM subagent (mild indirect-injection surface via a shared file's layer names",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "S09",
+          "status": "warning",
+          "summary": "Phase 2 passes raw Figma node data — including names/child names, which are attacker-controllable if the file is shared by an untrusted collaborator — directly into an LLM subagent (design-analyzer) w"
+        },
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No negative-trigger guidance (e.g., what to do for non-Figma inputs or already-current graphs beyond the UP_TO_DATE case) is stated anywhere in the file."
+        },
+        {
+          "check": "H08",
+          "status": "warning",
+          "summary": "No version field or changelog/change-signal is present in the frontmatter or body of this SKILL.md."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 4115,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:40:41.298Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "c0bccf0044f015aa9c3ad737911bb3eb8344b55de70373d01942b98f9c87c610",
+      "popularity": 74884,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "understand-figma"
+    },
+    {
+      "name": "understand-dashboard",
+      "source": "GitHub · Egonex-AI/Understand-Anything · 74884★",
+      "sourceUrl": "https://github.com/Egonex-AI/Understand-Anything/blob/main/understand-anything-plugin/skills/understand-dashboard/SKILL.md",
+      "kind": "skill",
+      "category": "project-intel",
+      "tagline": "Starts a local web dashboard to visualize a codebase's knowledge graph, with a GitHub-release fast path and a pnpm/Vite build fallback.",
+      "verdict": "Local-only (127.0.0.1) dashboard skill, transparent and well-structured with solid failure handling. Main risk: step 4 auto-downloads and npx-executes a GitHub release tarball with no checksum/signature check, unconfirmed and backgrounded — a supply-chain exposure if that release asset is ever compromised. No credential access, data exfiltration, or hidden i",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "S03",
+          "status": "warning",
+          "summary": "Step 4: 'npx --yes \"$VIEWER_URL\" \"$PROJECT_DIR\"' fetches a tarball from a GitHub Releases URL and executes it immediately with no checksum/signature verification, run 'in the background' without askin"
+        },
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Step 4 fetches 'https://github.com/Egonex-AI/Understand-Anything/releases/download/v${PLUGIN_VERSION}/understand-anything-viewer.tgz' and runs it via npx with no hash pinning; version-matching to the "
+        },
+        {
+          "check": "Q01",
+          "status": "warning",
+          "summary": "Frontmatter description ('Launch the interactive web dashboard to visualize a codebase's knowledge graph') states what it does but not an explicit 'use when' trigger phrase; relies on the implicit sla"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 7510,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:40:41.298Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "0915bbdb44664c40172a1d3722fd767183017635e8bd5ce0dcdc19844f256e2c",
+      "popularity": 74884,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "understand-dashboard"
+    },
+    {
+      "name": "understand-domain",
+      "source": "GitHub · Egonex-AI/Understand-Anything · 74884★",
+      "sourceUrl": "https://github.com/Egonex-AI/Understand-Anything/blob/main/understand-anything-plugin/skills/understand-domain/SKILL.md",
+      "kind": "skill",
+      "category": "project-intel",
+      "tagline": "Scans a codebase (or reuses a cached knowledge graph) to extract business-domain flows and render them in an interactive dashboard.",
+      "verdict": "Clean, local-only skill: no credential access, no network egress, no remote/fetched-code execution, no privilege escalation. Steps are concrete, idempotent, and fail gracefully. Minor gaps only: no negative-trigger guidance, no declared tooling/version metadata, and it auto-deletes its own generated intermediate files (low risk, self-generated data only).",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit negative-trigger guidance ('do not use when...') anywhere in the file — a user can't tell from SKILL.md when this tool is the wrong choice."
+        },
+        {
+          "check": "Q09",
+          "status": "warning",
+          "summary": "No example domain-graph output or example entry-point detection is shown, though the procedural steps are detailed enough to follow without one."
+        },
+        {
+          "check": "H07",
+          "status": "warning",
+          "summary": "Frontmatter declares only name/description/argument-hint — no tools/permissions/dependency field — yet the skill requires python3, git, and bash to be present and on PATH."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 9767,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:40:41.298Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "abbcb55ccf59bc270298467a4809845b8747b92ef86c505adca672a6b70ed3e8",
+      "popularity": 74884,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "understand-domain"
+    },
+    {
+      "name": "understand-knowledge",
+      "source": "GitHub · Egonex-AI/Understand-Anything · 74884★",
+      "sourceUrl": "https://github.com/Egonex-AI/Understand-Anything/blob/main/understand-anything-plugin/skills/understand-knowledge/SKILL.md",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "Scans a Karpathy-pattern wiki directory, runs two bundled Python scripts plus LLM subagents, and builds an interactive knowledge-graph dashb",
+      "verdict": "Mostly solid: explicit prompt-injection guard for article content, a guarded rm -rf that can't expand to root, clear phased steps and failure handling. Two risks for installers: the actual parsing/merge logic lives in bundled .py scripts not visible in SKILL.md (unverified in this review), and intermediate files are deleted automatically with no user confirm",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "S04",
+          "status": "warning",
+          "summary": "Phase 5 step 5 runs `rm -rf \"$UA_DIR/intermediate\"` automatically with no user confirmation prompt; risk is scoped (only the skill's own regenerable intermediate dir) and guarded against empty-path ro"
+        },
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Two executable python scripts (parse-knowledge-base.py, merge-knowledge-graph.py) are referenced as bundled but their contents were not available in this SKILL.md-only review — the actual filesystem-t"
+        },
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit 'do not use when' guidance in the description; Phase 1 does handle a non-matching directory at runtime (script errors, tells user it isn't a Karpathy-pattern wiki), but this isn't surfaced"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 6171,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:40:41.298Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "1b5fd08d37b1412e360219f74172c7cee56595f7d5279e618554ae090a90b6d5",
+      "popularity": 74884,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "understand-knowledge"
+    },
+    {
+      "name": "understand-explain",
+      "source": "GitHub · Egonex-AI/Understand-Anything · 74884★",
+      "sourceUrl": "https://github.com/Egonex-AI/Understand-Anything/blob/main/understand-anything-plugin/skills/understand-explain/SKILL.md",
+      "kind": "skill",
+      "category": "project-intel",
+      "tagline": "Explains a file/function/module by grepping a precomputed knowledge-graph JSON, checking its freshness against git, then reading the source.",
+      "verdict": "Clean, read-only skill: only Grep/Read and local git diff commands, no network egress, no destructive ops, no hidden or manipulative instructions. Good failure-path handling (missing graph, unresolvable commit hash) and context-economy guidance. Minor gaps: no explicit negative-trigger guidance and no version/changelog signal, neither of which is a safety is",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit 'do not use for X' guidance is given anywhere in the description or body — minor discoverability gap, not a safety issue."
+        },
+        {
+          "check": "H08",
+          "status": "warning",
+          "summary": "No version field or changelog signal in frontmatter or body, so users can't tell if/how the skill has changed between installs."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 5000,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:40:41.298Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "09c49ef3d798dd89d92ebd9ad203f23100b03a8cb974a165ba67964438cdbddf",
+      "popularity": 74884,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "understand-explain"
+    },
+    {
+      "name": "understand-diff",
+      "source": "GitHub · Egonex-AI/Understand-Anything · 74884★",
+      "sourceUrl": "https://github.com/Egonex-AI/Understand-Anything/blob/main/understand-anything-plugin/skills/understand-diff/SKILL.md",
+      "kind": "skill",
+      "category": "project-intel",
+      "tagline": "Maps a git diff's changed files to affected components/layers via a local knowledge-graph JSON, for risk assessment.",
+      "verdict": "Clean, fully local skill: reads git diff/log output and a project-generated .ua/knowledge-graph.json, then writes a diff-overlay.json for a dashboard. No credential access, no network egress, no piped remote code, no destructive git ops, nothing hidden. Only soft gaps: no explicit negative-trigger guidance and no version/changelog signal in the frontmatter —",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit 'do not use when...' guidance (e.g., when no knowledge graph exists yet, beyond the runtime check in step 1); minor clarity gap, not a safety issue."
+        },
+        {
+          "check": "H08",
+          "status": "warning",
+          "summary": "No version field or changelog/change-signal present in frontmatter or body; harmless but makes it harder for a consumer to detect updates."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 5753,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:40:41.298Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "d5bfcff77412eeb01d64d889e231c1e357ada146d37cbcf680c6d1aa97ac2c6a",
+      "popularity": 74884,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "understand-diff"
+    },
+    {
+      "name": "understand-chat",
+      "source": "GitHub · Egonex-AI/Understand-Anything · 74884★",
+      "sourceUrl": "https://github.com/Egonex-AI/Understand-Anything/blob/main/understand-anything-plugin/skills/understand-chat/SKILL.md",
+      "kind": "skill",
+      "category": "project-intel",
+      "tagline": "Answers codebase questions by grepping a pre-built knowledge-graph JSON and checking its freshness against git before answering.",
+      "verdict": "Clean, read-only skill: no network calls, no secrets touched, no destructive commands, and it defensively guards its own git-diff invocation against argument injection. Only minor doc gaps (no explicit non-triggers, no worked example, no version field) keep it from a perfect score.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit 'do not use when...' guidance in the description or body (e.g. when the graph is absent or wildly stale beyond the auto-warning)."
+        },
+        {
+          "check": "Q09",
+          "status": "warning",
+          "summary": "No worked example of a query and its expected subgraph/answer is given, which could leave ambiguous cases (e.g. multi-match keywords) under-specified."
+        },
+        {
+          "check": "H08",
+          "status": "warning",
+          "summary": "No version field or changelog/change-signal anywhere in the frontmatter or body."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 4746,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:40:41.298Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "8a538c48c88513522100edc809a9f0c463fe768fc454b4ee69f653ae8b0ff807",
+      "popularity": 74884,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "understand-chat"
+    },
+    {
+      "name": "understand-onboard",
+      "source": "GitHub · Egonex-AI/Understand-Anything · 74884★",
+      "sourceUrl": "https://github.com/Egonex-AI/Understand-Anything/blob/main/understand-anything-plugin/skills/understand-onboard/SKILL.md",
+      "kind": "skill",
+      "category": "project-intel",
+      "tagline": "Generates a project onboarding guide (architecture, tour, complexity hotspots) from a local knowledge-graph JSON built by a companion skill.",
+      "verdict": "Clean, local-only skill: no network calls, no credential access, no destructive file ops, and it even quotes/validates a git commit hash before use to avoid shell injection. Minor polish gaps only: no explicit negative-trigger guidance, no version/changelog signal, and 'highest complexity' hotspot threshold is left undefined. Safe to install.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit negative-trigger statement; the prerequisite (`/understand` must have run first) is only surfaced as a runtime failure path (line 33), not in the description, so a user could invoke it nee"
+        },
+        {
+          "check": "Q09",
+          "status": "warning",
+          "summary": "No worked example of graph JSON input or sample guide output; 'highest complexity values' (step 7, line 58) has no defined threshold or count, leaving the hotspot selection ambiguous."
+        },
+        {
+          "check": "H08",
+          "status": "warning",
+          "summary": "No version field or changelog/last-updated marker anywhere in the file, so consumers can't detect drift between installed and upstream copies."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 4985,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:40:41.298Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "6f945e62f3b33c8b565bb0c5758a250c2f750ee1029d5c32fba99ab91f099a07",
+      "popularity": 74884,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "understand-onboard"
+    },
+    {
+      "name": "understand",
+      "source": "GitHub · Egonex-AI/Understand-Anything · 74884★",
+      "sourceUrl": "https://github.com/Egonex-AI/Understand-Anything/blob/main/understand-anything-plugin/skills/understand/SKILL.md",
+      "kind": "skill",
+      "category": "project-intel",
+      "tagline": "Scans a codebase with LLM subagents to build an interactive architecture knowledge-graph, layer map, and guided tour under .ua/.",
+      "verdict": "Mostly solid: no secret reads, no network exfiltration, and explicit instructions to treat README/manifest content as untrusted, ignoring embedded directives. Concerns for an installer: SKILL.md is 859 lines (well over the ~500 budget); it auto rm -rf's old trash dirs every run, with wording that frames this as dodging hardened-host 'destructive-action gates",
+      "badges": {
+        "security": "B",
+        "quality": "A",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "S04",
+          "status": "warning",
+          "summary": "Phase 0 step 3.1 runs `find \"$UA_DIR/\" ... -mtime +7 -exec rm -rf {} +` on every invocation with no user confirmation. Text (line 139) explicitly frames the mv-then-delayed-delete design as existing '"
+        },
+        {
+          "check": "S06",
+          "status": "warning",
+          "summary": "Same passage as S04: 'Phase 7 cleanup mvs scratch dirs into .trash-<timestamp>/ rather than rm -rf'ing them directly ... so that destructive-action gates on hardened hosts don't trip on just-created p"
+        },
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "First-run bootstrap: `pnpm install --frozen-lockfile 2>/dev/null || pnpm install` (line 118) silently falls back to a non-frozen install if the frozen one fails, which can pull different/updated trans"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 46484,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:40:41.298Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "60111c430b571f46c5e01cabdf9b668e0d2e2d2a81e1637b12e14f21ae637ab1",
+      "popularity": 74884,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "understand"
+    },
+    {
+      "name": "get-unpublished-changes",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/.agents/skills/get-unpublished-changes/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Diffs HEAD against the latest published npm versions and drafts a layered, human-readable changelog with version-bump recommendations.",
+      "verdict": "Clean, low-risk skill: read-only git/npm inspection, no secrets, no network exfil, no destructive commands, no hidden instructions. Weaknesses are quality-of-life only: no negative triggers, no failure-path guidance (missing tag, no prior publish, npm lookup failure), no ambiguity examples for multi-layer files, and no declared tooling/version metadata in fr",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No negative-trigger guidance — e.g. what to do for a repo with no npm publish history, no git tags, or a non-npm project; a user could invoke this on an inapplicable repo with no guardrail."
+        },
+        {
+          "check": "Q04",
+          "status": "warning",
+          "summary": "Steps are largely actionable (explicit `git diff v{published-version}..HEAD` command, line 27) but step 1 ('Detect latest published versions') gives no concrete command (e.g. `npm view <pkg> version`)"
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "No handling described for likely failure paths: no published version found (first release), missing git tag, or npm lookup failure — the skill assumes happy-path data availability throughout."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 2128,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:40:41.298Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "5ff67df95e32a05857a1cd4faa9e04cf8a677a069249857cdc314862970620f6",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "get-unpublished-changes"
+    },
+    {
+      "name": "codex-qa",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/.agents/skills/codex-qa/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "QA harness for the omo Codex plugin: isolated CODEX_HOME + mock model, real ~/.codex and real API calls never touched.",
+      "verdict": "Solid, well-isolated QA skill: mock model (no real API calls), isolated/mktemp CODEX_HOME, shasum checks proving the real ~/.codex is untouched, self-testing scripts, deterministic evidence capture. Minor gaps only: no explicit 'do not use for X' guidance and thin failure-recovery notes, neither posing risk to a user who installs it.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Docker QA path says 'a disposable container that has the latest codex' (script/agent/qa-docker.sh) rather than a pinned version, unlike the pinned 'codex-cli 0.140.0' used for local scripts — minor dr"
+        },
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit negative-trigger statement (e.g. 'not for QA of a user's real ~/.codex or unrelated Codex work') beyond implied scope."
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "Failure modes are named (e.g. 'codex hard-errors' without CODEX_HOME) but no explicit recovery/retry guidance is given for script failures."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 7641,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:40:41.298Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "9462f6ec79020795092ac2d8b0dfa92ea70c3791fdeb2221c3a97319c70395d8",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "codex-qa"
+    },
+    {
+      "name": "security-research",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/.agents/skills/security-research/SKILL.md",
+      "kind": "skill",
+      "category": "security",
+      "tagline": "Orchestrates a 5-agent Team Mode audit (3 vuln hunters + 2 PoC engineers) to find and prove exploitable vulnerabilities in a repo or diff.",
+      "verdict": "Clean, well-scoped skill: it explicitly bans destructive exploits against real/third-party systems, requires local fixtures/dry-runs, and produces a strict evidence-based report. Minor gaps only: no explicit negative-use guidance and no version field in frontmatter. Safe to install; it audits code, it does not exfiltrate or execute untrusted remote code.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit 'do not use for X' guidance anywhere in the file; a user could invoke it for non-security tasks with no steering away."
+        },
+        {
+          "check": "Q08",
+          "status": "warning",
+          "summary": "Relies on opaque team categories ('deep', 'ultrabrain', 'unspecified-high', lines 45-49) whose behavior is defined by the external oh-my-openagent platform, not this file, so audit depth/determinism v"
+        },
+        {
+          "check": "H08",
+          "status": "warning",
+          "summary": "Frontmatter has no version field and the file has no changelog/change-signal, so consumers can't detect updates between installs."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 7767,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:40:41.298Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "f69b19ad1297f62bd246a44bb9ffb4fb0f55c7570eded9e546afffbc9256a6f4",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "security-research"
+    },
+    {
+      "name": "github-triage",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/.agents/skills/github-triage/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Read-only GitHub issue/PR triage orchestrator that spawns background subagents to write evidence-backed, permalinked report files.",
+      "verdict": "Strong no-mutation design repeated at multiple layers and safe to re-run. Main risk: raw issue/PR body text is pasted straight into subagent prompts, an indirect-prompt-injection vector guarded only by prose rules, not tool-level enforcement. It also leans on non-standard orchestration primitives (task_create/background_output) tied to its own framework, so ",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "S09",
+          "status": "warning",
+          "summary": "Issue/PR `body` and `comments_summary` (untrusted, author-controlled text) are interpolated verbatim into each subagent's prompt (lines 231-232, 274-276, etc.), defended only by prose 'NEVER run gh is"
+        },
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No negative-trigger guidance anywhere (e.g. private/no-gh-auth repos, empty backlog, cases where real GitHub actions are actually wanted)."
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "No guidance for gh/API failures, rate limits, auth errors, zero-open-items repos, or a subagent that errors/times out mid-analysis; Phase 4 only covers the happy path of polling completed background t"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 17119,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:40:41.298Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "f684fd86844dd2c3c60fd45699eb924ff0a490da2031a10d30e846ab2b8ea019",
+      "popularity": 66016,
+      "mirrors": [
+        "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/.opencode/skills/github-triage/SKILL.md"
+      ],
+      "discoveredVia": "github",
+      "slug": "github-triage"
+    },
+    {
+      "name": "opencode-qa",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/.agents/skills/opencode-qa/SKILL.md",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "QA toolkit for opencode itself: scripted CLI/server/SSE/TUI/DB checks, each script self-testing, all local.",
+      "verdict": "Clean, well-scoped QA skill. All network calls target localhost/an opencode server the user runs; DB access is read-only against opencode's own local SQLite file; spawned processes use isolated XDG sandboxes so tests can't pollute the real DB. No exfiltration, no piped remote-code execution, no privilege escalation. Only gap: no explicit 'do not use for X' g",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit negative-trigger guidance (e.g. 'not for general opencode usage help' or 'not for QA-ing other CLIs') is stated anywhere in the description or body."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 11537,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:40:41.298Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "d45d342c0aed78886ed140ea40a5be6af07ce561e2139be0fe0f5809107cd52d",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "opencode-qa"
+    },
+    {
+      "name": "hyperplan",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/.agents/skills/hyperplan/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Orchestrates a 5-agent adversarial debate over a plan, then hands the surviving insights to a dedicated 'plan' agent for formalization.",
+      "verdict": "No security red flags found: it never touches credentials, makes no external network calls, runs no shell/piped code, and contains no hidden or encoded instructions. It's a pure in-session multi-agent orchestration workflow (team_* tools + a 'plan' agent handoff) for opencode/oh-my-opencode. Minor hygiene gaps: no version/changelog field, and the file is nea",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "Q07",
+          "status": "warning",
+          "summary": "451 lines with five full verbatim system prompts plus per-phase message templates make this a heavy context load per invocation; functional for the design but costly to load repeatedly."
+        },
+        {
+          "check": "H08",
+          "status": "warning",
+          "summary": "No version number or changelog/last-updated signal anywhere in the frontmatter or body, making it hard for a consumer to detect when the skill's behavior has changed between installs."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 25738,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:40:41.298Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "0c9e5af788a4e5d723749d966b9f36945cf3a714efff8d3b5e84533815cec9cd",
+      "popularity": 66016,
+      "mirrors": [
+        "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/.opencode/skills/hyperplan/SKILL.md"
+      ],
+      "discoveredVia": "github",
+      "slug": "hyperplan"
+    },
+    {
+      "name": "remove-deadcode",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/.agents/skills/remove-deadcode/SKILL.md",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "Orchestrates parallel sub-agents to scan, LSP-verify, and auto-commit removal of dead code in a TypeScript project.",
+      "verdict": "No secret access, network egress, or hidden instructions found. Main risk: it auto-deletes files and auto-commits each batch (git commit, rm) without a per-batch user confirmation step, relying only on typecheck + LSP re-verification as the safety net. It also depends on non-standard tool primitives (task(), LspFindReferences, run_in_background) from its sou",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "S04",
+          "status": "warning",
+          "summary": "Phase 4 has agents `rm` dead files and auto `git commit` per batch with no explicit user confirmation step before committing; changes are git-reversible but this is autonomous destructive action by de"
+        },
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No negative-trigger guidance (e.g. non-TypeScript/non-bun projects, repos without an LSP integration) despite the skill being tightly coupled to that stack."
+        },
+        {
+          "check": "H07",
+          "status": "warning",
+          "summary": "Relies on non-standard, undeclared tool primitives (task(), LspFindReferences, run_in_background agent orchestration) specific to the source framework (oh-my-openagent) rather than stock Claude Code t"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 7212,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:40:41.298Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "ecb75a3701c4447da6d303e48e890d6345ebea06d0d19ab858b9600bb9aeb659",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "remove-deadcode"
+    },
+    {
+      "name": "pre-publish-review",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/.agents/skills/pre-publish-review/SKILL.md",
+      "kind": "skill",
+      "category": "deployment",
+      "tagline": "Orchestrates up to 16 background sub-agents (ultrabrain, review-work, oracle) to gate an npm release before publish.",
+      "verdict": "Well-scoped, read-only review workflow with explicit negative triggers and clear output contracts — no security red flags found. Caveats: it depends on custom orchestration primitives (task(), skill(), background_output(), oracle/ultrabrain agent types) specific to the oh-my-openagent framework, undeclared in frontmatter, so it will not run as-is in a plain ",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q03",
+          "status": "warning",
+          "summary": "Titled '16-agent' (line 6) but the skill directly spawns only 10 ultrabrains + 1 review-work coordinator + 1 oracle = 12 tasks (Phase 3 table, lines 304-308); the other 4 are nested inside the review-"
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "Handles the 'not yet published / first release' edge case (line 61) but gives no guidance for a background agent that errors, times out, or never returns — Phase 3 only says 'do not deliver until all "
+        },
+        {
+          "check": "H07",
+          "status": "warning",
+          "summary": "Relies throughout on non-standard orchestration primitives — task(), skill(), background_output(), subagent_type='oracle', category='ultrabrain', model='gpt-5.6-sol' (lines 33, 90-94, 167-171, 198-203"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 17074,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:40:41.298Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "cde48edc1c594e6c212709a11dc647d0ae0b16ca7eb3b976bcbdcbcf09ecfc80",
+      "popularity": 66016,
+      "mirrors": [
+        "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/.opencode/skills/pre-publish-review/SKILL.md"
+      ],
+      "discoveredVia": "github",
+      "slug": "pre-publish-review"
+    },
+    {
+      "name": "publish",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/.agents/skills/publish/SKILL.md",
+      "kind": "skill",
+      "category": "deployment",
+      "tagline": "Runs the full oh-my-opencode release pipeline: triggers the GitHub Actions publish workflow, verifies npm/platform artifacts, drafts release",
+      "verdict": "Mostly a well-specified CI/release runbook with good failure handling, but it silently does more than its description says (drafts marketing copy and posts a public @here Discord announcement via a hardcoded bot ID) and is written to push the agent past confirmation checkpoints once a bump type is given, reducing human oversight before irreversible public ac",
+      "badges": {
+        "security": "B",
+        "quality": "B",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "S04",
+          "status": "warning",
+          "summary": "After the single initial bump-type confirmation, the skill explicitly instructs the agent to skip further acknowledgement gates: ‘Do not stop before Step 7.5’, ‘Do not end the assistant turn here’, an"
+        },
+        {
+          "check": "S06",
+          "status": "warning",
+          "summary": "Repeated CRITICAL/MANDATORY/hard-gate framing and explicit turn-control directives (‘Do not end the assistant turn here’, ‘Do not wait for a second user acknowledgement’) are aimed at overriding the a"
+        },
+        {
+          "check": "S11",
+          "status": "warning",
+          "summary": "Description (line 3) only says ‘Publish ... to npm by triggering the GitHub Actions publish workflow and verifying its artifacts’, but the skill also drafts marketing release copy (Step 6) and posts a"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 17629,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:40:41.298Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "f316b07e467cfdb823b6a39a8aecb4e5e7d1dee17473c9e42df7f167f8305fb9",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "publish"
+    },
+    {
+      "name": "omomomo",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/.agents/skills/omomomo/SKILL.md",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "Easter-egg skill that prints a fixed promotional blurb about the unrelated 'oh-my-opencode' CLI tool.",
+      "verdict": "Safe to install: the skill contains no code, no shell/network calls, no credential access, and no hidden instructions - it only outputs a static marketing message about a separate GitHub project when triggered by 'omomomo'/'about'/'easter egg'. Minor hygiene gaps: no version/change signal and no stated negative triggers, but these carry no real risk given th",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit 'do NOT use when' guidance is given, though ambiguity risk is low given the narrow, distinctive trigger words."
+        },
+        {
+          "check": "H08",
+          "status": "warning",
+          "summary": "No version field or changelog signal anywhere in the frontmatter or body."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 1218,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:40:41.298Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "acfe576d7e46d5fd0832ed23eed076d65884edef7d20013489c84b628ee237b8",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "omomomo"
+    },
+    {
+      "name": "tech-debt-audit",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/.agents/skills/tech-debt-audit/SKILL.md",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "Read-only, tool-driven skill that audits a repo across 9 tech-debt dimensions and writes a cited TECH_DEBT_AUDIT.md report.",
+      "verdict": "Low-risk audit skill: it only reads (grep/glob/bash/lsp) and writes a single local Markdown report; secret-pattern greps are for reporting, not exfiltration, and no destructive or hidden actions were found. Minor issues: claims to be language-agnostic but many concrete commands hardcode TypeScript ast-grep patterns, no negative-trigger or non-JS fallback gui",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Recommends an optional 'CodeGraph' MCP server from a single unverified GitHub repo (github.com/colbymchenry/codegraph, line 13) as an enhancement, with no vetting guidance for users who choose to inst"
+        },
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit 'do NOT use when' guidance is given anywhere in the description or body, so users can't easily tell when this heavyweight audit is the wrong tool (e.g., quick single-file review)."
+        },
+        {
+          "check": "Q03",
+          "status": "warning",
+          "summary": "Claims to be language-agnostic ('map the language stack' via glob for .ts/.py/etc, line 38) but most concrete Phase-1 commands hardcode TypeScript-specific ast-grep patterns (`-l ts .`, e.g. lines 65-"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 13097,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:40:41.298Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "9f7ffc385650264fe357dd9011078661b535d53b0944e83c7fdedfe6f1b438d0",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "tech-debt-audit"
+    },
+    {
+      "name": "work-with-pr",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/.agents/skills/work-with-pr/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Automates a full git-worktree PR lifecycle: implement, push, wait for CI+Cubic review, then auto-merge and clean up.",
+      "verdict": "Well-structured and actionable, with good habits (isolated worktrees, no force-push/force-remove, secret redaction in PR bodies). Main risk: it enables auto-merge into the shared 'dev' branch by default on every run and skips its Cubic review gate whenever quota is exhausted, so code can land without a human review checkpoint unless the user explicitly opts ",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "S04",
+          "status": "warning",
+          "summary": "\"Enabling auto-merge is the default - do it unless the user explicitly told you not to merge\" (line 285) and `gh pr merge --auto --delete-branch` (line 290) merge into the shared 'dev' branch autonomo"
+        },
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit negative-trigger guidance (e.g. when a change shouldn't go through worktree+PR+auto-merge, such as trivial doc tweaks or when the user wants review-only). Description and body only state p"
+        },
+        {
+          "check": "Q08",
+          "status": "warning",
+          "summary": "Verification loop is explicitly unbounded ('The loop has no iteration cap - keep going until done', line 183) with no stated max-iteration or time-box fallback beyond the Cubic quota check, so a persi"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 17626,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:45:47.879Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "fdfa33f3d1b5439fba14a1bf57efbf2fc0a65d479055d5f126177e871d87c0cb",
+      "popularity": 66016,
+      "mirrors": [
+        "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/.opencode/skills/work-with-pr/SKILL.md"
+      ],
+      "discoveredVia": "github",
+      "slug": "work-with-pr"
+    },
+    {
+      "name": "lcx-contribute-bug-fix",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/omo-codex/plugin/components/lcx/skills/lcx-contribute-bug-fix/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Debugs a LazyCodex/Codex bug and delivers it as a fork PR (upstream openai/codex) or a verified-fix issue (code-yeongyu/lazycodex) via gh/gi",
+      "verdict": "Scoped to two named GitHub repos, uses only ambient gh auth, no secret reads, no obfuscation or hidden instructions. Main risk: it can autonomously push a branch, open a public PR against openai/codex, or file a public issue under the user's identity with no explicit pre-submission confirmation gate. Also lacks a declared-tooling section and any version/chan",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "S04",
+          "status": "warning",
+          "summary": "Steps 12-13 push a branch, open a PR against `openai/codex`, or file a public issue on `code-yeongyu/lazycodex` with no explicit final confirmation step. 'Stop Conditions' only cover ambiguous target "
+        },
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit 'do not use when' statement; the only negative-trigger signal is an implicit contrast with the separate `$lcx-report-bug` skill for reporting without a fix, never spelled out in this file."
+        },
+        {
+          "check": "H07",
+          "status": "warning",
+          "summary": "No upfront 'Requirements' section declaring `gh` (authenticated), `git`, and `node` as prerequisites — tooling needs only surface implicitly inside the step-by-step bash blocks."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 11323,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:45:47.879Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "e3720d3915b17d7c79691492ec17ffd4f5cce198d59f5b08f399e3ba07e411dd",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "lcx-contribute-bug-fix"
+    },
+    {
+      "name": "comment-checker",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/omo-codex/plugin/components/comment-checker/skills/comment-checker/SKILL.md",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "Tells Codex how to react to comment-checker warnings fired by a PostToolUse edit hook.",
+      "verdict": "Clean and minimal (17 lines): no code, no network calls, no credential access, nothing hidden. It only describes plugin hook behavior and tells the agent to fix or explain a flagged comment. Minor documentation gaps only — no negative-trigger guidance, no defined output format, and no version/change signal — none of which pose a safety risk to a user who ins",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit negative-trigger statement; only an indirect 'Non-edit tools are ignored by this plugin' hints at scope boundaries."
+        },
+        {
+          "check": "Q04",
+          "status": "warning",
+          "summary": "The only actionable step is one sentence ('fix or explain the flagged comment before moving on') with no concrete procedure for how to fix/explain or where to look."
+        },
+        {
+          "check": "Q05",
+          "status": "warning",
+          "summary": "No explicit output/response contract is defined for how Codex should format its fix-or-explain response."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 640,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:45:47.879Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "61138068027e91e215623da8561f15d3667c75736664fed5f2e81663950f50ae",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "comment-checker"
+    },
+    {
+      "name": "lcx-doctor",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/omo-codex/plugin/components/lcx/skills/lcx-doctor/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Diagnoses LazyCodex/Codex CLI install health by syncing the latest official sources and diffing them against the local install.",
+      "verdict": "Solid diagnostic skill: explicitly forbids mutating the user's install, scopes writes to a temp/source-root cache, quarantines rather than deletes corrupt state, and requires evidence for every verdict. Network calls only pull two named, official upstream repos for comparison; nothing local is sent out. Minor gaps: no explicit 'when not to use' guidance, no ",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit 'do NOT use when...' statement in the description; the only negative-trigger logic (don't call `lazycodex doctor` to avoid recursion) is buried in step 4 rather than stated up front."
+        },
+        {
+          "check": "H07",
+          "status": "warning",
+          "summary": "Script assumes `git`, `gh`, and `codex` CLIs are installed and on PATH but never states this as a prerequisite anywhere in frontmatter or body."
+        },
+        {
+          "check": "H08",
+          "status": "warning",
+          "summary": "No version field, changelog, or last-updated marker anywhere in the frontmatter or body, despite the skill's entire purpose being to track drift against fast-moving upstream sources."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 9004,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:45:47.879Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "0b38d896bbf6b74c754323f8f87c7fe5c3fecfe58b0cc148c65a0f1494f88640",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "lcx-doctor"
+    },
+    {
+      "name": "lcx-report-bug",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/omo-codex/plugin/components/lcx/skills/lcx-report-bug/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Routes LazyCodex/Codex CLI bugs to the owning GitHub repo, gathers source+runtime evidence, then files a labeled issue or PR via gh.",
+      "verdict": "No malicious behavior found: no credential reads, no obfuscation, no manipulation of the reviewing agent, no destructive git ops. Two real risks: it files public GitHub issues/PRs autonomously with no explicit user-confirmation gate on the gh path (only the browser/computer-use fallbacks require visual confirmation before submit), and its templates push 'Rel",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "S02",
+          "status": "warning",
+          "summary": "Egress to GitHub is the stated purpose, but the Issue/PR templates (lines 134-139, 158-159) ask for 'Relevant config' and raw evidence/logs with no redaction or secret-scrubbing instruction before pos"
+        },
+        {
+          "check": "S04",
+          "status": "warning",
+          "summary": "The primary `gh issue create`/`gh pr create` path (steps 9-11, lines 101-114) has no explicit 'confirm with user before submitting' gate; only the browser-use and computer-use fallbacks (lines 244, 25"
+        },
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No negative-trigger guidance is given (e.g., not for feature requests, not for unrelated-repo bugs); description only lists positive triggers."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 12060,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:45:47.879Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "f83f4b69e5ee027ff853cc544aef8e1c45d83c80babfe3e5f9ee55ae827bb5b4",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "lcx-report-bug"
+    },
+    {
+      "name": "lsp",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/omo-codex/plugin/components/lsp/skills/lsp/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Thin reference skill that wraps Codex's LSP MCP tools (diagnostics, definitions, references, rename checks).",
+      "verdict": "Clean and low-risk: no credential access, no network egress, no shell execution, nothing destructive, no hidden or manipulative instructions. It even explicitly warns the model that lsp.* tool names are MCP calls, not shell commands, cutting off a shell-injection misread. Only minor polish gaps: no explicit negative-use guidance, no stated output contract, a",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit 'do not use when...' guidance (e.g., non-LSP-supported languages, missing servers beyond the lsp.status hint) — minor omission, low practical impact given the narrow scope."
+        },
+        {
+          "check": "Q05",
+          "status": "warning",
+          "summary": "Does not specify the output format/shape returned by each tool call (e.g., what a diagnostics or symbols response looks like), leaving that implicit."
+        },
+        {
+          "check": "H08",
+          "status": "warning",
+          "summary": "No version field or changelog signal in the frontmatter or body to track skill revisions over time."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 1213,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:45:47.879Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "48b55765f04cbd8b7c86ebdcbf1ffb9be4d02eca615d0170baadb81046bf7589",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "lsp"
+    },
+    {
+      "name": "rules",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/omo-codex/plugin/components/rules/skills/rules/SKILL.md",
+      "kind": "skill",
+      "category": "meta",
+      "tagline": "Reference doc explaining how the Codex Rules plugin auto-injects project rule files and its env-var toggles.",
+      "verdict": "Clean, low-risk reference skill: pure documentation, no shell/network calls, no credential access, no remote instruction-following. Only minor gaps are hygiene nits (no negative-trigger guidance, no version signal in frontmatter) — nothing that endangers a user who installs it.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit 'do not use when...' guidance; minor omission for a narrowly-scoped reference skill, low practical impact."
+        },
+        {
+          "check": "H08",
+          "status": "warning",
+          "summary": "Frontmatter has no version or changelog field, so consumers can't tell if the injection behavior it documents has drifted from a newer plugin release."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 1076,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:45:47.879Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "8cdafc679dbc7c55af408f2491ca778b1359792fda1d763b1ae6888bee72ef42",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "rules"
+    },
+    {
+      "name": "ulw-loop",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/omo-codex/plugin/components/ulw-loop/skills/ulw-loop/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Orchestrates goal-based, evidence-bound work loops that spawn/track Codex subagents and drive an external `omo ulw-loop` CLI, including auto",
+      "verdict": "No secret access, network egress, obfuscation, or hidden instructions found. Two real risks: it directs the agent to autonomously commit code ('commit each verified work unit atomically') and to force-overwrite goal-state evidence via `--force`, both without a described per-action user confirmation step. Most substantive procedure also lives in an unreviewed",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "S04",
+          "status": "warning",
+          "summary": "Directs autonomous 'commit each verified work unit atomically' (line 34) and overwriting goal state with `--force` 'to intentionally overwrite completed evidence' (line 24) — both irreversible actions"
+        },
+        {
+          "check": "S11",
+          "status": "warning",
+          "summary": "Frontmatter description only claims 'decompose work into systematic, evidence-bound steps,' but the body also mandates autonomous git commits, multi-agent spawning, and state-file force-overwrite — br"
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'do not use when...' guidance anywhere in the file."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 5045,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:45:47.879Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "69f9ca1a50534ce4dcd2441561354ab9c3535fcf285c7d49d8a551a10cd58163",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "ulw-loop"
+    },
+    {
+      "name": "ulw-plan",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/omo-codex/plugin/components/ultrawork/skills/ulw-plan/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Planning-only consultant skill (\"Prometheus\") that interviews minimally, researches the codebase, and writes one decision-complete plan befo",
+      "verdict": "Clean scope: explicitly never edits product code or implements, no secret access, no network egress, tells the agent to verify sub-agent claims instead of trusting them blindly. Minor risks: it runs a bundled scripts/scaffold-plan.mjs whose contents were not fetched/auditable here, a --reset --force flag can discard local plan-draft edits without a stated co",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "S04",
+          "status": "warning",
+          "summary": "`--reset --force discards edits` (line 44) is offered as an option with no explicit user-confirmation step described before it runs; low blast radius since it only touches plan drafts under .omo/, nev"
+        },
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "The workflow depends on executing a bundled scripts/scaffold-plan.mjs (line 39) whose actual code was not part of this SKILL.md-only review, so its behavior can't be independently verified from the te"
+        },
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit \"do NOT use when...\" guidance; the planner/implementer boundary is stated as a behavioral rule (line 10) rather than as a negative trigger in the description."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 12235,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:45:47.879Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "561acab091e494cb1fd9fefbe5d6400b835fb205584827dff15c31ebb411caa7",
+      "popularity": 66016,
+      "mirrors": [
+        "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/omo-codex/plugin/skills/ulw-plan/SKILL.md"
+      ],
+      "discoveredVia": "github",
+      "slug": "ulw-plan"
+    },
+    {
+      "name": "init-deep",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/omo-codex/plugin/skills/init-deep/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Spawns parallel agents + LSP/codegraph analysis to generate scored, hierarchical AGENTS.md documentation files.",
+      "verdict": "No malicious behavior found: purely local exploration/doc generation, no secrets, network egress, or remote code execution. Real risks are quality gaps, not safety ones: --create-new deletes existing AGENTS.md files on just a CLI flag, description lacks explicit use/avoid triggers, and it silently assumes several harness-specific tools (multi_agent_v1, codeg",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "S04",
+          "status": "warning",
+          "summary": "'--create-new: Read existing first → then delete all → regenerate' (line ~139) is an irreversible bulk delete gated only by a CLI flag, with no explicit confirmation step inside the skill itself."
+        },
+        {
+          "check": "Q01",
+          "status": "warning",
+          "summary": "Description '(builtin) Initialize hierarchical AGENTS.md knowledge base' states what it does but not an explicit 'use when' condition (e.g. new repo, post-refactor)."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No negative-trigger guidance anywhere in the file (e.g. skip for trivial/single-file repos, or when AGENTS.md is manually curated)."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 15574,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:45:47.879Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "1dacb6685fb5e67af2dc52fa0be17e74f267d50fa59f0190b13c7d551c5e4b39",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "init-deep"
+    },
+    {
+      "name": "teammode",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/omo-codex/plugin/components/teammode/skills/teammode/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Orchestrates a named team of cooperating Codex agent workers, tracking durable on-disk state via a bundled Node script.",
+      "verdict": "No security red flags in the SKILL.md text: it stays local (no credential reads, no network egress, no piped remote code), guards destructive team deletion with explicit stop/force rules, and is transparent about its own limits. The one caveat: it delegates real filesystem/git work (worktrees, branch merges, state deletion) to a bundled scripts/team.mjs that",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "The skill delegates state management, git worktree creation, branch merges, and team deletion to `scripts/team.mjs`, which is bundled but was not included in this review (SKILL.md-only). Its actual co"
+        },
+        {
+          "check": "H08",
+          "status": "warning",
+          "summary": "Frontmatter has no version field or changelog signal; only `name` and `description` are present, so users can't tell if/when the skill changed."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 21054,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:45:47.879Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "0f12df5c52ec250153d82b7d8a933f0d9f5fd776c3079f6b2d09c010ae0173af",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "teammode"
+    },
+    {
+      "name": "ultrawork",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/omo-codex/plugin/components/ultrawork/skills/ultrawork/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Binding \"ultrawork\" mode for OpenAI Codex/omo agents: mandates TDD-with-evidence, goal registration, notepads, and subagent orchestration.",
+      "verdict": "Not malicious, but built around Codex/omo-internal tools (create_goal, update_plan, multi_agent_v1.spawn_agent, codegraph_explore) so it may silently misfire on other hosts. Uses coercive all-caps directives to force a literal output banner and a full-session behavior takeover from one trigger word, and tells the agent to download an unverified third-party t",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "S06",
+          "status": "warning",
+          "summary": "Pervasive coercive directive language pressures the executing agent into rigid, unconditional compliance, e.g. '**MANDATORY**: First user-visible line this turn MUST be exactly: `ULTRAWORK MODE ENABLE"
+        },
+        {
+          "check": "S11",
+          "status": "warning",
+          "summary": "Description states 'Read the whole file and follow every rule in it for the rest of the task' — an explicitly disclosed but very broad takeover of agent behavior (output format, commit conventions, su"
+        },
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Quote: 'if Chrome is not available, download and use agent-browser (https://github.com/vercel-labs/agent-browser)' — instructs downloading and running a third-party tool from GitHub with no version pi"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 26370,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:45:47.879Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "eccf0f977bef65ae2b844169291c0be65f3288df917c279d3928f6b9cc90ddda",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "ultrawork"
+    },
+    {
+      "name": "dev-browser",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/omo-opencode/src/features/builtin-skills/dev-browser/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Browser automation skill: writes tsx/Playwright scripts to navigate, click, fill forms, screenshot, and scrape sites, with persistent named ",
+      "verdict": "No credential theft, no piped remote-code execution, no obfuscation, no reviewer-manipulation found — the skill is a legitimate Playwright automation wrapper. Main real risk: Extension Mode tells the user to download and install a third-party browser extension from an external GitHub releases page with no checksum or publisher-verification guidance, and that",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Extension Mode: 'Download link: https://github.com/SawyerHood/dev-browser/releases' — directs the user to install a third-party Chrome extension binary from an external repo, with no signature/checksu"
+        },
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No 'do NOT use when...' guidance is given anywhere in the doc; e.g. no note steering away from headless-inappropriate or sensitive-auth contexts."
+        },
+        {
+          "check": "Q05",
+          "status": "warning",
+          "summary": "No explicit statement of what a 'done' script run should output/confirm beyond ad hoc `console.log` state dumps; success criteria are left implicit."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 7028,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:45:47.879Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "8ec12d3cc99a7ef2bee6e8fc4144c278aea868566316b67541c21064eb0bb886",
+      "popularity": 66016,
+      "mirrors": [
+        "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/skills-loader-core/src/features/builtin-skills/dev-browser/SKILL.md"
+      ],
+      "discoveredVia": "github",
+      "slug": "dev-browser"
+    },
+    {
+      "name": "agent-browser",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/omo-opencode/src/features/builtin-skills/agent-browser/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "CLI reference (agent-browser) for driving a browser: navigate, click, fill forms, screenshot, extract page data.",
+      "verdict": "Clean, well-scoped CLI reference from vercel-labs with real safety knobs (--allowed-domains, --action-policy, --confirm-actions, encrypted local auth vault that keeps passwords from the LLM). Minor risks: `eval -b` runs base64-encoded JS on pages, which can hide payload intent from a quick read; no version/changelog signal; no guidance on command failures or",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "S05",
+          "status": "warning",
+          "summary": "`agent-browser eval -b \"base64code\" # Run base64-encoded JS` (line 226) lets arbitrary JS be passed encoded, which can obscure what a page-eval command actually does from a quick review."
+        },
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No statement of when NOT to use the skill (e.g., non-browser tasks, when a simpler HTTP fetch suffices)."
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "No guidance on handling failures — e.g., what to do if an element ref is stale, a wait times out, or a command errors."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 17702,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:45:47.879Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "0b01c73b3bfc3da410317ce11731e6b83f14daa01ee46fa87c1610e29aa70141",
+      "popularity": 66016,
+      "mirrors": [
+        "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/skills-loader-core/src/features/builtin-skills/agent-browser/SKILL.md"
+      ],
+      "discoveredVia": "github",
+      "slug": "agent-browser"
+    },
+    {
+      "name": "frontend",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/omo-opencode/src/features/builtin-skills/frontend/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Router skill that dispatches frontend/UI work to design-taste, performance, and design-system reference files before building or auditing.",
+      "verdict": "No secret access, destructive ops, sudo, or hidden/obfuscated content found; triggers and negative triggers are explicit and steps are actionable. Two soft risks for installers: it directs curl calls with an auto-minted token against an external site (lazyweb.com) for 'real product screen' research, and it leans on unbundled third-party repos (Owl-Listener/d",
+      "badges": {
+        "security": "B",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "S02",
+          "status": "warning",
+          "summary": "Lazyweb research lane tells the agent to 'run its recipe verbatim' against lazyweb.com, noting 'the recipe mints its own anonymous token' (line 33) — outbound calls to a third-party site are baked int"
+        },
+        {
+          "check": "S09",
+          "status": "warning",
+          "summary": "Line 33 instructs following the lazyweb.md recipe 'verbatim' without local scrutiny; since that referenced file was not fetched for this review, whether it embeds further remote instructions beyond th"
+        },
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Depends on external, unbundled corpora — 'pinned Owl-Listener/designpowers reference corpus' (line 105) and the 'nexu-io/open-design' library fallback (line 138) — plus the lazyweb.com scraping flow; "
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 17860,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:45:47.879Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "70cf1f68168aa9e563e099dbc262d390f8514a0844a8511539dbd46b50c66710",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "frontend"
+    },
+    {
+      "name": "git-master",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/omo-opencode/src/features/builtin-skills/git-master/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Git workflow skill for atomic commits, interactive rebase, and history archaeology (blame/bisect/pickaxe) — all local git commands.",
+      "verdict": "No secret access, network exfiltration, or remote code execution found — everything is plain local git commands. Real risks are quality-side: the file is 2x the size budget with duplicated tables, its own commit-count 'hard rules' contradict each other (e.g. '3+ files -> 2+ commits' vs '3 files -> min 1 commit'), it defaults toward history rewrite/force-push",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "D",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "D",
+      "highlights": [
+        {
+          "check": "S04",
+          "status": "warning",
+          "summary": "Force-push and history-rewrite paths ('IF branch already pushed: -> git push --force-with-lease ... ALWAYS use --force-with-lease', lines 816-819; RESET & REBUILD workflow lines 426-440) are gated onl"
+        },
+        {
+          "check": "S06",
+          "status": "warning",
+          "summary": "Heavy fear-based directive language aimed at controlling the consuming agent rather than the user: 'ONE COMMIT = AUTOMATIC FAILURE' (line 33), 'If you're about to make 1 commit ... YOU ARE WRONG' (lin"
+        },
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No negative-trigger guidance anywhere (e.g., not for `git init`/clone/submodules/LFS, not for GitHub PR review) — a user can't tell from the description what git tasks this skill does NOT cover."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 29033,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:45:47.879Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "3de3dae2ca6288eeb71f04c40ae7d53e420bf72a93d1cb499eb097168553174d",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "git-master"
+    },
+    {
+      "name": "ast-grep",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/shared-skills/skills/ast-grep/SKILL.md",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "Wraps the ast-grep (sg) CLI for AST-aware code search and codemods across 25 languages, with dry-run-first rewrite safety.",
+      "verdict": "Solid: SKILL.md text shows no exfiltration, no destructive-without-confirmation ops, and explicit dry-run/two-pass invariants before any file mutation. Minor gaps: install.sh/install.ps1 and the helper script weren't fetched for this review so their contents are unverified (normal supply-chain caution applies), and there's no version/changelog field to signa",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Skill delegates binary install to bundled install.sh/install.ps1 and a Python helper script, none of which were fetched for this review — a user installing this skill is trusting unverified install sc"
+        },
+        {
+          "check": "H08",
+          "status": "warning",
+          "summary": "Frontmatter has no version or changelog field, so a user re-reading this skill later has no signal of what changed since a prior install."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 12422,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:45:47.879Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "fa7fbc68f229b3687118c0e844ff49820cdf56df4701340fe3fd8e5b44997e7c",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "ast-grep"
+    },
+    {
+      "name": "coding-agent-sessions",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/shared-skills/skills/coding-agent-sessions/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Locally searches and reads coding-agent session transcripts (Codex, Claude, OpenCode, etc.) via a bundled Python script; read-only, no netwo",
+      "verdict": "Solid, well-scoped local utility: only reads existing session logs on disk (list/find/read), documents its JSON output contract and failure modes, and shows no network egress, shell-piping of remote code, or destructive ops. Minor gaps: no explicit 'when not to use', no version/changelog signal in frontmatter, and the actual bundled script wasn't fetched for",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Only SKILL.md was fetched for this review; the referenced `scripts/find-agent-sessions.py` that actually performs the file scanning wasn't inspected, so its real behavior can't be independently confir"
+        },
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit negative-trigger guidance ('do not use for...') anywhere in the frontmatter or body."
+        },
+        {
+          "check": "H08",
+          "status": "warning",
+          "summary": "No version field or changelog/change-signal present in the frontmatter or body."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 10570,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:45:47.879Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "d31c776c5d0fac1388629dca68d4bf747d3e887494ebbf3b1114ce456efc77b3",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "coding-agent-sessions"
+    },
+    {
+      "name": "debugging",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/shared-skills/skills/debugging/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Hypothesis-driven debugging index skill that routes an agent to runtime/tool/phase reference files for cross-language crash and failure diag",
+      "verdict": "No security red flags found: no credential reads, no network egress, no shell-piped remote code, no destructive ops, nothing hidden. It even bans `git commit` from inside the skill and forbids silently swallowing errors. Minor rough edges: no explicit negative-trigger guidance, no version/changelog signal in frontmatter, and no worked example of a full phase",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit 'do NOT use when...' guidance anywhere in frontmatter or body — a user can't easily tell when this heavyweight process is overkill (e.g. a one-line typo fix)."
+        },
+        {
+          "check": "Q05",
+          "status": "warning",
+          "summary": "No single explicit statement of what final output/deliverable should look like beyond 'fix + test' implied in Phase 9/10 cleanup — reasonably inferable but not spelled out as a contract."
+        },
+        {
+          "check": "Q09",
+          "status": "warning",
+          "summary": "No worked example or sample transcript of a full hypothesis-formation or Oracle Triple cycle; relies entirely on referenced files (not included here) for concreteness."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 12004,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:45:47.879Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "7e76e730b89313f845c60ea66c133accf814329f30f31b9cbc5e8b27e7b4b8dd",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "debugging"
+    },
+    {
+      "name": "git-master",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/shared-skills/skills/git-master/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Guides Claude through git commits, rebases, and history investigation with explicit mode gating and safety checks.",
+      "verdict": "Clean, well-scoped skill. It explicitly forbids destructive git ops (force-push, protected-branch rebase, blind conflict resolution) without user consent, bans logging cookies/tokens/upload headers, and restricts PR-evidence uploads to GitHub's own attachment flow. Minor gaps: no version field for change tracking, and the STATUS mode named in the gate has no",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "Q03",
+          "status": "warning",
+          "summary": "Mode Gate (lines 10-17) defines four modes including STATUS, but the body only has dedicated 'Commit Mode', 'Rebase Mode', and 'History Mode' sections (lines 43, 63, 76) — STATUS is left implicit, a m"
+        },
+        {
+          "check": "H08",
+          "status": "warning",
+          "summary": "No version field or changelog/last-updated marker in frontmatter or body, so a user can't tell if the skill's instructions changed since a prior install."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 5570,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:45:47.879Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "251e3c832be8a21052bc058909f6d40bb0c6d8a50a8c94d72bb38b9e2280a83c",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "git-master-2"
+    },
+    {
+      "name": "pi-goal",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/pi-goal/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Tracks a persistent goal (create/inspect/complete) for the pi agent, with an audit-before-complete rule.",
+      "verdict": "Clean, minimal skill: no shell, network, secrets, or hidden instructions -- just three tool calls (create_goal, get_goal, update_goal) plus a sane completion-audit rule. Nothing here endangers a user who installs it. Only quality gaps: no output contract, no failure-path guidance if a tool call errors, and no version/change signal.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q05",
+          "status": "warning",
+          "summary": "The file never specifies what the agent should say/output to the user after calling these tools (e.g., how to report goal status) -- purely tool-call mechanics with no response-format contract."
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "No guidance for failure paths: what to do if create_goal fails, if get_goal shows no active goal, or if update_goal is rejected -- none of these are addressed."
+        },
+        {
+          "check": "Q10",
+          "status": "warning",
+          "summary": "Re-run safety is not addressed: the file doesn't say what happens if create_goal is called while a goal is already active (e.g., overwrite vs. error), leaving idempotency behavior unspecified."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 1162,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:51:22.916Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "f460273eb38eafa1d8959253c1e1f3f3195ed5d0f0e7e5d7f4cc0fd8ff6fbf6f",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "pi-goal"
+    },
+    {
+      "name": "lsp-setup",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/shared-skills/skills/lsp-setup/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Detects, installs, configures, and verifies Language Server Protocol (LSP) tooling for ~19 languages via bundled Bun scripts.",
+      "verdict": "Well-structured, deterministic LSP setup workflow with no secret access, no exfiltration, and no hidden logic. Main risk: it instructs `curl -fsSL https://bun.sh/install | bash` to install Bun, a pipe-to-shell pattern that trusts a remote script at fetch time. Otherwise transparent, in-scope, and honest about failure states.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "S03",
+          "status": "warning",
+          "summary": "Line 139: 'Run with Bun: `curl -fsSL https://bun.sh/install | bash`.' Classic pipe-curl-to-shell pattern — executes a remotely fetched script with no integrity check, even though it's the official Bun"
+        },
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Relies on curl-piped install of Bun from bun.sh (line 139) and unreviewed per-language install commands in reference files not present in this scan — moderate supply-chain trust dependency on external"
+        },
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit 'do not use when' guidance in the description or body; a reader can't tell when this skill is the wrong tool (e.g., IDE-native LSP already configured)."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 6283,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:51:22.916Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "57ebafcb393d6b20ab9f182e657990c87884a697601158de9f64684e5e356ce2",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "lsp-setup"
+    },
+    {
+      "name": "remove-ai-slops",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/shared-skills/skills/remove-ai-slops/SKILL.md",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "Agent workflow skill that strips AI-generated code smells from a branch diff via test-locked, phased cleanup with parallel background sub-ag",
+      "verdict": "No secret access, network calls, or hidden instructions found - safe from malicious intent. Two real risks: Phase 6 can run `git checkout` on a file to revert a failed edit, which would also discard any of the user's own uncommitted changes to that file without asking first; and the skill assumes non-standard orchestration primitives (background `task()` age",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "S04",
+          "status": "warning",
+          "summary": "Phase 6 step 3: '`git checkout` the affected file (or use `git diff` + targeted `Edit` to revert just the problematic hunk).' This can discard the user's own uncommitted edits to that file if it overl"
+        },
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit 'do NOT use for / when' guidance anywhere in the description or body, so a caller has no stated boundary for over-triggering this skill on non-cleanup tasks."
+        },
+        {
+          "check": "Q03",
+          "status": "warning",
+          "summary": "Line 23 states 'The agent looks for these nine categories... the last is about behavior coverage,' but the file actually lists ten categories (item 10, Oversized modules, added under a second, non-adj"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 21899,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:51:22.916Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "31171c209e55f37e0c314f3b8b229515510418773f3001f6f33c0515542f0109",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "remove-ai-slops"
+    },
+    {
+      "name": "programming",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/shared-skills/skills/programming/SKILL.md",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "Prescriptive strict-typing/TDD coding-standards skill for Python, Rust, TypeScript, and Go, gating edits behind mandatory reference reads.",
+      "verdict": "No security red flags: no credential access, network egress, shell-piped remote code, obfuscation, or hidden instructions. It's a legitimate, if very opinionated, engineering style guide. Hygiene gaps: no version/changelog field, no explicit 'when NOT to use' guidance, and a long keyword-stuffed description that risks over-triggering and adds context overhea",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No negative-trigger guidance anywhere (e.g. other languages, non-code docs, config-only edits); the skill instead insists on 'no exceptions for small or one-off code', leaving no stated boundary where"
+        },
+        {
+          "check": "Q07",
+          "status": "warning",
+          "summary": "Mandates reading full README plus 'every file under references/... that the README tells you to load on demand' before writing any code, explicitly even for 'small or one-off' scripts — heavy, per-tas"
+        },
+        {
+          "check": "H03",
+          "status": "warning",
+          "summary": "Description is extremely long and keyword-stuffed (near 2000 chars, dozens of comma-separated trigger terms plus 'MUST USE for ANY work'), optimized for maximal matching rather than concise clarity — "
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 37227,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:51:22.916Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "16e2f63e55e18321f55453e90d64422facb28c30c38b178391cbdbd200ab90ed",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "programming"
+    },
+    {
+      "name": "start-work",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/shared-skills/skills/start-work/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Autonomous Codex orchestrator that dispatches subagents to execute dev plans and merges PRs to main by default.",
+      "verdict": "Detailed, internally consistent orchestration protocol with real strengths: strict verification gates, an evidence ledger, and an explicit failure-retry loop. But by default it merges PRs into the main branch without a per-merge confirmation (only a prior opt-out), and it assumes Codex-only subagent tools (multi_agent_v1/spawn_agent, lazycodex-worker roles) ",
+      "badges": {
+        "security": "F",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "F",
+      "highlights": [
+        {
+          "check": "S04",
+          "status": "fail",
+          "summary": "Line 172: 'merge by default unless explicitly opted out' — auto-merges PR to main branch with no per-merge user confirmation, only a standing opt-out."
+        },
+        {
+          "check": "S11",
+          "status": "warning",
+          "summary": "Description promises 'worktree discipline' but the body (line 172) extends that to autonomously creating/merging PRs to main — a consequential action not flagged in the short description."
+        },
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Line 108 falls back to a third-party GitHub tool ('agent-browser', vercel-labs) with no version pin or integrity/verification guidance."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 16325,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:51:22.916Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "593f564107fe4777feb36b70858f44cf5b98cd45ff63a1de8307b5999491f10c",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "start-work"
+    },
+    {
+      "name": "review-work",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/shared-skills/skills/review-work/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "5-agent parallel PR review orchestrator (goal, QA execution, code quality, security, context mining) gating implementation handoff.",
+      "verdict": "No malicious behavior found: read-only git/file analysis, no secret harvesting, no destructive commands, no hidden instructions. Main risk: it's built for the oh-my-openagent/Codex harness (oracle/unspecified-high agent types, multi_agent_v1 calls) plain Claude Code lacks, so it may not run as-is. Also 605 lines, over the ~500-line budget.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "S09",
+          "status": "warning",
+          "summary": "Agent 5 (Context Mining, lines 448-531) is told to pull content from Slack/Notion/Discord/GitHub issues and PR comments and fold 'discovered_context' straight into the review verdict, with no instruct"
+        },
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No stated negative triggers — doesn't say to skip this for tiny/trivial diffs or early draft work where 5 parallel agents would be overkill."
+        },
+        {
+          "check": "Q03",
+          "status": "warning",
+          "summary": "Body is written in OpenCode-native call syntax (task(subagent_type=\"oracle\", ...), lines 129-196 etc.) while a bolted-on preamble (lines 5-58) tells the Codex harness to mentally translate every call "
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 28852,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:51:22.916Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "9a2a0ec8ced39947a76c8c42a874d02a2c6bb84355cdb54a0f9b903a3b96d95c",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "review-work"
+    },
+    {
+      "name": "refactor",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/shared-skills/skills/refactor/SKILL.md",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "Deterministic multi-phase refactor workflow (LSP/AST-grep, test gating, rollback) with an optional multi-agent 'team mode'.",
+      "verdict": "Solid workflow: coverage gating, rollback/abort rules, no secrets or network risk. Downsides: 755 lines (over ~500 budget), relies on undeclared custom tools (LSP, ast-grep, call_omo_agent, team_*) missing on plain installs, auto git-commits each step without confirmation, and team-mode writes agent config to disk beyond stated scope.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "S04",
+          "status": "warning",
+          "summary": "Phase 5.3 'Commit Checkpoints' and the team-mode Phase 5.1-T both auto-run `git add`/`git commit` after each verified step with no explicit per-commit user confirmation gate; Phase 0 only asks for cla"
+        },
+        {
+          "check": "S11",
+          "status": "warning",
+          "summary": "The 'refactor' skill's Team Mode addendum expands scope into full multi-agent orchestration: writing `~/.omo/teams/refactor-squad/config.json` to disk, spawning/monitoring parallel subagent workers, a"
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No negative-trigger guidance anywhere in the file -- it never states when NOT to invoke this heavy 6-phase, multi-agent process (e.g. for a trivial one-line rename a lighter edit might suffice)."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 25009,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:51:22.916Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "c4e5e7672944d214e34fc689803425a49ff5f09eca6752611051949b0b415e0a",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "refactor"
+    },
+    {
+      "name": "ultimate-browsing",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/shared-skills/skills/ultimate-browsing/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Tiered escalation skill for blocked web pages: WAF-bypass fetchers, platform-native readers, then a stealth-Chrome fallback with local cooki",
+      "verdict": "Well-structured, in-budget routing skill (141 lines) with clear triggers/anti-triggers. Two real risk points for installers: it decrypts locally-stored browser session cookies (Keychain/libsecret/DPAPI) for reuse — powerful and documented with 0600/no-commit caveats, but still credential-adjacent; and it auto-installs external tools (CloakBrowser, agent-brow",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "S01",
+          "status": "warning",
+          "summary": "scripts/extract_cookies.py reads and decrypts local browser cookies via macOS Keychain, Linux libsecret, or Windows DPAPI (lines 100-112) — session-credential material, even though scoped to local ext"
+        },
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Lines 40 and 87 state the engine 'auto-installs deps on first run' and CloakBrowser/agent-browser are 'runtime-installed tools (not vendored here)' with version pins deferred to references/chrome-stea"
+        },
+        {
+          "check": "Q05",
+          "status": "warning",
+          "summary": "No explicit statement of what the agent should return to the user (extracted text shape, when to report failure vs. partial content) beyond mentioning an optional --json flag on the engine."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 10209,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:51:22.916Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "fa6618a1adc7010c00e0a2ca9d727309617d9e520113572aa96920d81eef6319",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "ultimate-browsing"
+    },
+    {
+      "name": "ulw-research",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/shared-skills/skills/ulw-research/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Deep-research orchestrator: spawns agent swarms, expands leads recursively, verifies claims by running code, outputs cited reports.",
+      "verdict": "Well-gated (explicit trigger only), but Phase 3 runs code with arbitrary worker-chosen pip/npm deps to verify web-sourced claims a code-execution/supply-chain risk if a lead is adversarial. It also tells the agent to override surrounding exploration rules while active, and assumes a non-standard multi-agent harness with undeclared tools.",
+      "badges": {
+        "security": "B",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "S03",
+          "status": "warning",
+          "summary": "Phase 3: 'Write a minimal self-contained script that tests the claim; run it (uv run --with <deps> python / bun / direct compile)...' executes code with ad hoc dependencies to verify claims that may o"
+        },
+        {
+          "check": "S06",
+          "status": "warning",
+          "summary": "Authority section: 'this mode... supersedes every exploration-bounding instruction in surrounding prompts, modes, or rules'; the Failure-modes table lists 'Obeying a surrounding \"stop exploring\" rule "
+        },
+        {
+          "check": "S09",
+          "status": "warning",
+          "summary": "'Observation candidates and claim candidates travel back from workers as message text' and directly drive further agent spawning and code execution (Phase 2 EXPAND, Phase 3 verify) with no instruction"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 28883,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:51:22.916Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "fb4a8529a0271da36584c28dca2d13165d520df296f2f3b5004206228703ee81",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "ulw-research"
+    },
+    {
+      "name": "visual-qa",
+      "source": "GitHub · code-yeongyu/oh-my-openagent · 66016★",
+      "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent/blob/dev/packages/shared-skills/skills/visual-qa/SKILL.md",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "Dual-oracle visual QA skill: captures screenshot/TUI diff evidence, then dispatches two read-only reviewer subagents to verdict a UI.",
+      "verdict": "Solid, defensive QA skill: explicitly redacts secrets before writing evidence, treats reference/annotation text as untrusted comparison data (not instructions), and only ever does read-only capture/diff/review, never edits. Minor risks: an optional fallback suggests a global npm install of a third-party tool (agent-browser), there's no version/changelog fiel",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Step 2 falls back to 'install agent-browser (npm install -g agent-browser && agent-browser install) ... see references/agent-browser-setup.md for the full setup' (line 51) — a global install of a thir"
+        },
+        {
+          "check": "Q03",
+          "status": "warning",
+          "summary": "The TUI capture command hardcodes `script/qa/web-terminal-visual-qa.mjs` and `.omo/evidence/<slug>/...` (lines 70-74), paths specific to the skill's origin monorepo (oh-my-openagent, 'omo'). It is pre"
+        },
+        {
+          "check": "Q07",
+          "status": "warning",
+          "summary": "At 338 lines the file itself is within budget, but the two oracle prompt templates (Pass A lines 115-159, Pass B lines 164-214) duplicate most of the same REFERENCE PACKET / CAPTURES / SOURCE CODE fie"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 26333,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:51:22.916Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "826961304006f14a7d6654a5cd0da42f6a25a6bcb500e505234c8610ab10682f",
+      "popularity": 66016,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "visual-qa"
+    },
+    {
+      "name": "adaptyv",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/adaptyv/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Docs how to use the Adaptyv Bio Foundry API/Python SDK to submit protein sequences for lab assays (binding, thermostability, expression).",
+      "verdict": "Mostly solid API-reference skill: credentials are read from env/.env, never hardcoded, and error handling is documented. Two real risks: an 'auto_accept_quote' + 'skip_draft' pipeline pattern lets an agent submit and pay for physical lab experiments with no human confirmation step, and the SDK is installed unpinned straight from a GitHub branch (not PyPI, no",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "S04",
+          "status": "warning",
+          "summary": "The 'Automated Pipeline' example (lines 178-189) sets `skip_draft: True, auto_accept_quote: True`, which submits and pays for a real lab experiment with no human confirmation step — a user copying thi"
+        },
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Line 39 installs `adaptyv-sdk` via `git+https://github.com/adaptyvbio/adaptyv-sdk.git` with no commit/tag pin, from a package not yet on PyPI (line 36) — a future malicious push to that branch would b"
+        },
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit 'do not use when' guidance is given, though the narrow domain limits accidental misuse."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 8805,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:51:22.916Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "c8eb56fc5be5d6bc3f0cbdd722fc7157f17e1374bb704d26adf636ab8fcc9841",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "adaptyv"
+    },
+    {
+      "name": "astropy",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/astropy/SKILL.md",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "Reference skill teaching Astropy APIs for units, coordinates, FITS I/O, tables, time, WCS, and cosmology.",
+      "verdict": "Clean, transparent reference skill with no malicious patterns: it explicitly warns against elevated-privilege installs and cautions against sending sensitive target/location data to third-party services before making network calls. Minor gaps only: no negative-trigger guidance and no dedicated failure/troubleshooting section, neither of which poses a safety ",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit 'do not use when' section (e.g., non-astronomy numeric work, other FITS-adjacent libraries) — a minor omission, not a safety issue."
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "No dedicated troubleshooting/failure-path section (e.g., what to do on missing IERS data, malformed FITS headers, network timeouts) beyond the general network-access caution."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 14474,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:51:22.916Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "9415de958d74053769cd2a4bebf0d8acf518d42080190ec3978189ea6ef8a22e",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "astropy"
+    },
+    {
+      "name": "benchling-integration",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/benchling-integration/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Benchling Python SDK/REST API skill for lab data: registry entities, inventory, ELN, workflows, EventBridge events, Data Warehouse.",
+      "verdict": "Clean, well-scoped SDK reference skill. Credential handling is explicit and scoped ('Read only the named keys you need — never dump or iterate over the full environment'; 'Route network calls exclusively to your tenant URL'), no obfuscation or hidden instructions found. Minor gaps: no negative-use guidance, no confirmation/idempotency caution around bulk arc",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "S04",
+          "status": "warning",
+          "summary": "Shows bulk mutation patterns (e.g. 'Update all pending tasks for a workflow', lines 482-500; container.archive() listed as a key op, line 168) without any confirmation step or dry-run caution before i"
+        },
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit 'do not use when' / negative-trigger guidance anywhere in the file."
+        },
+        {
+          "check": "Q05",
+          "status": "warning",
+          "summary": "No explicit statement of expected return shapes/success criteria beyond what's implicit in code examples (e.g. created objects, generator pagination); no dedicated output-contract section."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 17578,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:51:22.916Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "68bb613db84da21ad5216f8bdb7907de4ff9f8dc2c24d453429b915b0fa11a28",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "benchling-integration"
+    },
+    {
+      "name": "bgpt-paper-search",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/bgpt-paper-search/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "MCP skill wiring Claude to BGPT's remote paper-search server, returning structured experimental data instead of just abstracts.",
+      "verdict": "Clean, transparent skill: no shell execution, no credential reads, no hidden instructions, read-only search behavior matching its stated purpose. Minor risks: it depends on a single-maintainer npm package (bgpt-mcp) and a paid third-party server (bgpt.pro) that receives your search queries and, for paid use, an API key — verify the maintainer before enabling",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Setup relies on `npx bgpt-mcp` / `npx mcp-remote` pulling from npm and a proprietary remote server (bgpt.pro) run by a single listed GitHub maintainer (connerlambden/bgpt-mcp) — an unaudited, business"
+        },
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No 'do not use when' guidance is given (e.g., non-scientific search, when abstracts suffice) — a minor omission, not a safety issue."
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "No guidance on failure paths — e.g. what to do if the free 50-search/network limit is hit, the server is down, or no API key is configured."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 2859,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:51:22.916Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "95d6314c7ed5d50e6b8435017dabd9a3720205771c6a985159806ffb212e1067",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "bgpt-paper-search"
+    },
+    {
+      "name": "bids",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/bids/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Reference/workflow guide for organizing, querying, validating, and converting neuroscience datasets (MRI/EEG/MEG/etc.) into BIDS format.",
+      "verdict": "Clean, legitimate domain-reference skill (BIDS neuroimaging data standard), authored per metadata by a known BIDS community maintainer. No secret access, no network exfiltration, no shell-piped remote code, no hidden or manipulative instructions found — all commands are standard package installs (pip/uv, Deno, Docker) and documented CLI usage. Minor hygiene-",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit 'do NOT use this for...' guidance is stated anywhere; scope is narrow enough (BIDS-specific) that this is a minor omission, not a real ambiguity risk."
+        },
+        {
+          "check": "Q07",
+          "status": "warning",
+          "summary": "At 756 lines the file is well over the ~500-line guidance, though content stays on-topic throughout rather than padding with irrelevant material."
+        },
+        {
+          "check": "H05",
+          "status": "warning",
+          "summary": "File is 756 lines, exceeding the ~500-line size budget guidance."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 31480,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:51:22.916Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "faf0e8ae7ce727854fed4e03efc3927e3235a3e492275b807cc255ae59006b1c",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "bids"
+    },
+    {
+      "name": "arbor",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/arbor/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Runs an autonomous six-step hypothesis-tree optimization loop, dispatching subagent executors in isolated git worktrees to improve an artifa",
+      "verdict": "Clean, well-scoped orchestration skill. No secret access, no unsolicited network egress, no destructive git ops, no hidden or manipulative instructions found in SKILL.md. Bash/Agent permissions match its stated job (running evaluators, spawning executor subagents). Bundled scripts/tree.py and reference files were not fetched for this review, so their content",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Line 150 points to installing the standalone `arbor` CLI 'from RUC-NLPIR/Arbor' as an alternative — an external GitHub source not controlled by this skill's publisher; only referenced, not auto-execut"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 13612,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:51:22.916Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "c9fa4ca4b786c639e819fdd7f0f6541a62acc9dd5172b58784815bbc04c635ca",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "arbor"
+    },
+    {
+      "name": "arboreto",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/arboreto/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Reference/usage guide for inferring gene regulatory networks with the arboreto Python library (GRNBoost2/GENIE3, Dask).",
+      "verdict": "Clean, single-file documentation skill for a legitimate scientific Python package (Aerts Lab, PyPI/Bioconda). No credential access, no network exfiltration, no hidden or manipulative instructions, no destructive commands. Install commands and cluster-connect examples are standard and transparent. Minor gaps only: no explicit negative-trigger guidance, and th",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No explicit 'do not use when' guidance (e.g., non-expression data, non-Python environments) — a minor omission, not a safety issue."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 8462,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:51:22.916Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "3316bf6772d605e87fad2a623192dfea96b42f55ad39ddf246136244655101ac",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "arboreto"
+    },
+    {
+      "name": "autoskill",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/autoskill/SKILL.md",
+      "kind": "skill",
+      "category": "meta",
+      "tagline": "Watches your screen via screenpipe, clusters repeated workflows, and drafts new Claude Code skills or composition recipes for gaps.",
+      "verdict": "Well-scoped and locally-gated: default LLM backend is local, cloud calls are opt-in, promotion requires human review, no credential harvesting or remote-exec-piping found. Two real caveats: redaction before any LLM call is regex-only (emails/keys/phones), so freeform screen text can still leak into cluster summaries sent to a cloud backend if opted in; and t",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "S02",
+          "status": "warning",
+          "summary": "Default path is local-only (LM Studio, line 34), but opt-in cloud backends (claude/foundry) send 'redacted cluster summaries' off-machine (line 14). Redaction is regex-based, catching only emails/API "
+        },
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Description and body link 'screenpipe' at github.com/screenpipe/screenpipe (lines 3, 12, 18) but the actual install command clones github.com/mediar-ai/screenpipe.git (line 47) — an unexplained org mi"
+        },
+        {
+          "check": "Q03",
+          "status": "warning",
+          "summary": "Repo URL inconsistency between description/body links (screenpipe/screenpipe) and the actual clone command (mediar-ai/screenpipe.git, line 47) is an internal-consistency defect that could mislead a us"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 12125,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:51:22.916Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "8eb6504755f1f0e3debf21ea34d0f8fa918c7ae85571b5432ffd0b77aaddbaf8",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "autoskill"
+    },
+    {
+      "name": "anndata",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/anndata/SKILL.md",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "Reference skill for the AnnData Python library used to store, read/write, and manipulate single-cell genomics matrices.",
+      "verdict": "Clean, well-scoped documentation skill: no credential access, no network egress, no shell-piped remote code, and installs are pinned PyPI packages (anndata==0.12.16). Description gives clear positive and negative triggers pointing users to sibling skills (scanpy, scvi-tools, cellxgene-census). Bash is declared and only used for `uv pip install`, matching the",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "Q08",
+          "status": "warning",
+          "summary": "Quick Start example data uses np.random.rand without a seed (lines 57, 114-115), so re-running the example produces different values each time; minor since it's illustrative dummy data, not a core ope"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 11925,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:51:22.916Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "24c3524d96c648ed1bd67c2fc3a4fb15ded5a0fa82d91c5dcd034d9f738c0102",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "anndata"
+    },
+    {
+      "name": "aeon",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/aeon/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Reference skill teaching the aeon Python toolkit's sklearn-style API for time-series classification, forecasting, clustering, and anomaly de",
+      "verdict": "Clean, safe skill. No credential access, no shell-piped remote code, no manipulative or hidden instructions — the only network action is `uv pip install` of the legitimate, well-known `aeon` PyPI package, version-pinned. Minor quality gaps only: no explicit negative-trigger guidance, no troubleshooting/failure-path section, and a couple of quick-start snippe",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "No negative-trigger guidance anywhere (e.g., 'not for non-temporal/tabular data' or 'not for streaming/real-time inference') — a user could misapply it outside its actual fit."
+        },
+        {
+          "check": "Q05",
+          "status": "warning",
+          "summary": "As a library-usage reference skill it never states what deliverable the user should end up with (e.g., saved model, printed metrics, report) — reads as an API cookbook rather than a task-outcome contr"
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "Beyond the general 'Experimental modules' caveat (lines 45-47), there is no troubleshooting section for common failures (install errors, version-mismatch tracebacks, GPU/deep-learning extra-dependency"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 12508,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-17T18:51:22.916Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "365b2324e1670cc2d219a4608cfbe6c761a411a94bc90f46079599b4b84b6bd9",
+      "popularity": 31080,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "aeon"
     }
   ]
 }
