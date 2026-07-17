@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import { buildIndex } from './index-build.js'
 import { lookupSkill, auditSkills, searchSkills } from './lookup.js'
+import { SkillResultSchema, AuditReportSchema } from './schema.js'
 import type { Catalog, CatalogEntry } from '../hub/schema.js'
 
 function entry(over: Partial<CatalogEntry> & { name: string; skillMdHash: string | null }): CatalogEntry {
@@ -30,6 +31,7 @@ describe('lookupSkill', () => {
   it('verified: hash matches', () => {
     const r = lookupSkill(idx, { hash: 'hash-foo', name: 'foo' })
     expect(r.status).toBe('verified')
+    expect(() => SkillResultSchema.parse(r)).not.toThrow() // shape can't drift
     if (r.status === 'verified') {
       expect(r.gradedHash).toBe('hash-foo')
       expect(r.findings.map((f) => f.check)).toEqual(['S04', 'Q03']) // fail/warning only, pass dropped
@@ -60,6 +62,7 @@ describe('auditSkills', () => {
       { name: 'foo', hash: 'other' },    // drift
       { name: 'nope', hash: 'z' },       // unknown
     ])
+    expect(() => AuditReportSchema.parse(rep)).not.toThrow()
     expect(rep.summary).toMatchObject({ total: 3, verified: 1, drifted: 1, unknown: 1 })
     expect(rep.summary.gradeCounts).toEqual({ C: 1 })
   })

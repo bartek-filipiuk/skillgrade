@@ -81,7 +81,7 @@ export function normalizeSkillMd(content: string): string {
   let s = content
   if (s.charCodeAt(0) === 0xfeff) s = s.slice(1)   // 1. strip leading BOM
   s = s.replace(/\r\n?/g, '\n')                    // 2. CRLF / CR -> LF
-  s = s.replace(/[\s﻿\xA0]+$/, '')                 // 3. rstrip trailing whitespace
+  s = s.replace(/\s+$/, '')                        // 3. rstrip trailing whitespace
   return s
 }
 export function hashSkillMd(content: string): string {
@@ -89,8 +89,8 @@ export function hashSkillMd(content: string): string {
 }
 ```
 
-Only leading BOM and *trailing* whitespace are touched — interior content (including
-interior blank lines) is left byte-for-byte intact.
+Only leading BOM and *trailing* whitespace are stripped; interior content, aside from
+line-ending normalization (step 2), is left intact.
 
 ## Trust boundary
 

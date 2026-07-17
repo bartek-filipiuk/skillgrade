@@ -9,7 +9,7 @@ export function normalizeSkillMd(content: string): string {
   let s = content
   if (s.charCodeAt(0) === 0xfeff) s = s.slice(1)
   s = s.replace(/\r\n?/g, '\n')
-  s = s.replace(/[\s﻿\xA0]+$/, '')
+  s = s.replace(/\s+$/, '')
   return s
 }
 

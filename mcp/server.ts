@@ -31,7 +31,7 @@ export function buildMcpServer(index: SkillIndex): McpServer {
   server.registerTool('audit_skills', {
     title: 'Audit a set of skills',
     description: 'Batch version of lookup_skill for a whole installed skill set. Returns a summary + per-skill results.',
-    inputSchema: { skills: z.array(z.object({ name: z.string().optional(), hash: z.string().optional() })) },
+    inputSchema: { skills: z.array(z.object({ name: z.string().optional(), hash: z.string().optional() })).max(500) },
   }, ({ skills }) => h.audit({ skills }))
 
   server.registerTool('search', {
@@ -54,13 +54,22 @@ function rateLimited(ip: string, now: number): boolean {
   return e.count > MAX_PER_WINDOW
 }
 
+// ponytail: trusts x-forwarded-for from the known front proxy (Coolify/Traefik/nginx).
+// Without this, remoteAddress is the proxy IP — one bucket for the whole world.
+function clientKey(req: import('node:http').IncomingMessage): string {
+  const xff = req.headers['x-forwarded-for']
+  const first = Array.isArray(xff) ? xff[0] : xff
+  if (first) return first.split(',')[0].trim()
+  return req.socket.remoteAddress ?? 'unknown'
+}
+
 export async function main() {
   const index = loadIndex()
   const port = Number(process.env.PORT ?? 8080)
 
   const httpServer = createServer(async (req, res) => {
     if (req.url !== '/mcp') { res.writeHead(404).end(); return }
-    const ip = (req.socket.remoteAddress ?? 'unknown')
+    const ip = clientKey(req)
     if (rateLimited(ip, Date.now())) {
       res.writeHead(429, { 'content-type': 'application/json' })
       res.end(JSON.stringify({ error: 'rate limit exceeded' }))

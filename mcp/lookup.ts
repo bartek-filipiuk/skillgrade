@@ -83,12 +83,9 @@ export function auditSkills(index: SkillIndex, skills: { name?: string; hash?: s
 export function searchSkills(index: SkillIndex, query: string): SearchHit[] {
   const q = query.toLowerCase()
   const hits: SearchHit[] = []
-  const seen = new Set<string>()
   for (const [name, group] of index.byName) {
     if (!name.toLowerCase().includes(q)) continue
     const e = group[0]
-    if (seen.has(name)) continue
-    seen.add(name)
     hits.push({ name: e.name, overall: e.overall, category: e.category, reportUrl: reportUrl(e.name) })
   }
   return hits
