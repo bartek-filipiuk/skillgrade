@@ -3,3 +3,7 @@ dist/
 *.report.json
 .env
 .coolify.env
+
+# dataset builder — local working state + fetched content (never committed)
+dataset/cache/
+dataset/candidates.json
