@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { parseRepoSearch, parseTree, githubAdapter } from './github.js'
+import { parseRepoSearch, parseTree, githubAdapter, paginateRepos, TOPIC_QUERIES } from './github.js'
 import type { Candidate } from './types.js'
 
 describe('parseRepoSearch', () => {
@@ -43,5 +43,39 @@ describe('githubAdapter.discover', () => {
     const out: Candidate[] = []
     for await (const c of githubAdapter(apiGet).discover()) out.push(c)
     expect(out.map((c) => c.repo)).toEqual(['good/repo'])
+  })
+})
+
+describe('TOPIC_QUERIES', () => {
+  it('drops the in:readme noise query and keeps topic queries', () => {
+    expect(TOPIC_QUERIES).not.toContain('claude code skills in:name,description,readme')
+    expect(TOPIC_QUERIES).toContain('topic:claude-skills')
+    expect(TOPIC_QUERIES.every((q) => q.startsWith('topic:'))).toBe(true)
+  })
+})
+
+describe('paginateRepos', () => {
+  it('follows pages until a short page and respects maxRepos', async () => {
+    const pages: Record<number, unknown> = {
+      1: { items: Array.from({ length: 100 }, (_, i) => ({ full_name: `a/r${i}`, default_branch: 'main' })) },
+      2: { items: [{ full_name: 'a/last', default_branch: 'main' }] }, // short page → stop
+    }
+    const apiGet = async (path: string) => pages[Number(new URL('http://x' + path).searchParams.get('page'))] ?? { items: [] }
+    const seen: string[] = []
+    for await (const m of paginateRepos(apiGet, 'topic:x', 1000)) seen.push(m.repo)
+    expect(seen).toHaveLength(101)
+    expect(seen[seen.length - 1]).toBe('a/last')
+  })
+})
+
+describe('githubAdapter tree timeout', () => {
+  it('skips a repo whose tree fetch exceeds treeTimeoutMs', async () => {
+    const apiGet = async (path: string) => {
+      if (path.includes('/search/repositories')) return { items: [{ full_name: 'a/slow', default_branch: 'main' }] }
+      return new Promise(() => {}) // tree call hangs forever
+    }
+    const out: unknown[] = []
+    for await (const c of githubAdapter(apiGet, { treeTimeoutMs: 20, codeSearch: false }).discover()) out.push(c)
+    expect(out).toEqual([]) // hung repo skipped, no candidates, no throw
   })
 })
