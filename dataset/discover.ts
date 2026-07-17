@@ -10,29 +10,44 @@ export interface DiscoveryOpts {
   now: string
   gradedHashes: Set<string>
   maxCandidates?: number // bound the adapter firehose so a hostile source can't drive unbounded fetches
+  concurrency?: number // bounded fetches in flight
+  saveEvery?: number // checkpoint the worklist every N survivors so a kill keeps progress
 }
 
 export async function runDiscovery(opts: DiscoveryOpts): Promise<{ ready: number; filtered: number; drifted: number }> {
+  const maxCandidates = opts.maxCandidates ?? 5000
+  const concurrency = opts.concurrency ?? 10
+  const saveEvery = opts.saveEvery ?? 200
   const fetched: FetchedCandidate[] = []
   let filtered = 0
-  const maxCandidates = opts.maxCandidates ?? 5000
-  let seen = 0
-  for await (const c of opts.adapter.discover()) {
-    if (seen >= maxCandidates) break
-    seen++
-    const content = await opts.fetchContent(c)
-    if (content === null) continue // fetch failed/refused → skip, never abort
-    const fc = hashCandidate(c, content)
-    const v = filterValid(fc)
-    if (!v.ok) {
-      filtered++
-      continue
-    }
-    fetched.push(fc)
+  let consumed = 0
+
+  // dedupe → merge into prior state → persist. Fully synchronous, so it is atomic
+  // between worker await points and safe to call mid-run.
+  const checkpoint = (): WorklistItem[] => {
+    const merged = mergeWorklist(loadState(opts.dir), dedupe(fetched, opts.now), opts.gradedHashes)
+    saveState(opts.dir, merged)
+    return merged
   }
-  const freshItems: WorklistItem[] = dedupe(fetched, opts.now)
-  const merged = mergeWorklist(loadState(opts.dir), freshItems, opts.gradedHashes)
-  saveState(opts.dir, merged)
+
+  const it = opts.adapter.discover()[Symbol.asyncIterator]()
+  async function worker(): Promise<void> {
+    for (;;) {
+      if (consumed >= maxCandidates) return
+      const { value: c, done } = await it.next() // concurrent .next() is serialized by the generator
+      if (done) return
+      consumed++
+      const content = await opts.fetchContent(c as Candidate)
+      if (content === null) continue // fetch failed/refused → skip, never abort
+      const fc = hashCandidate(c as Candidate, content)
+      if (!filterValid(fc).ok) { filtered++; continue }
+      fetched.push(fc)
+      if (fetched.length % saveEvery === 0) checkpoint() // sync → atomic; only one worker hits the exact multiple
+    }
+  }
+
+  await Promise.all(Array.from({ length: concurrency }, () => worker()))
+  const merged = checkpoint()
   return {
     ready: merged.filter((i) => i.status === 'ready').length,
     filtered,
@@ -50,6 +65,14 @@ import { hashSkillMd } from '../mcp/normalize.js'
 
 const HERE = dirname(fileURLToPath(import.meta.url))
 const CACHE = join(HERE, 'cache')
+
+// A positive finite integer from env, else undefined (→ the callee's default).
+// Guards the CLI knobs: 'abc'/'0'/'-1' would otherwise yield NaN/0 → zero workers or zero harvest reported as success.
+export function envInt(v: string | undefined): number | undefined {
+  if (v === undefined) return undefined
+  const n = Number(v)
+  return Number.isFinite(n) && n > 0 ? Math.floor(n) : undefined
+}
 
 // Read cached SKILL.md content by its normalized hash (skillMdHash). The grade step
 // reads content by the same key it grades under, keeping a single identity per skill.
@@ -97,8 +120,20 @@ async function githubApiGet(path: string): Promise<unknown> {
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const token = process.env.GITHUB_TOKEN
-  const gradedHashes = new Set<string>() // seeded by grade step; empty run = grade everything ready
-  runDiscovery({ adapter: githubAdapter(githubApiGet), fetchContent: cachedFetch(token), dir: HERE, now: new Date().toISOString(), gradedHashes })
+  const gradedHashes = new Set<string>() // seed from evaluations.json when re-scanning; empty = grade everything ready
+  const adapter = githubAdapter(githubApiGet, {
+    codeSearch: process.env.CODE_SEARCH !== '0', // default on; CODE_SEARCH=0 to disable
+    maxReposPerQuery: envInt(process.env.MAX_REPOS),
+  })
+  runDiscovery({
+    adapter,
+    fetchContent: cachedFetch(token),
+    dir: HERE,
+    now: new Date().toISOString(),
+    gradedHashes,
+    maxCandidates: envInt(process.env.MAX_CANDIDATES),
+    concurrency: envInt(process.env.CONCURRENCY),
+  })
     .then((r) => console.log(`discovery: ready=${r.ready} filtered=${r.filtered} drifted=${r.drifted}`))
     .catch((e) => { console.error(e); process.exit(1) })
 }

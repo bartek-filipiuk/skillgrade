@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { runDiscovery } from './discover.js'
+import { runDiscovery, envInt } from './discover.js'
 import { loadState } from './state.js'
 import type { Candidate, SourceAdapter } from './adapters/types.js'
 
@@ -32,9 +32,53 @@ describe('runDiscovery', () => {
     const res = await runDiscovery({
       adapter: adapter([cand('a/b'), cand('c/d'), cand('e/f')]),
       fetchContent: async () => { fetches++; return good },
-      dir, now: 'now', gradedHashes: new Set(), maxCandidates: 1,
+      dir, now: 'now', gradedHashes: new Set(), maxCandidates: 1, concurrency: 1,
     })
-    expect(fetches).toBe(1) // only the first candidate was consumed
+    expect(fetches).toBe(1) // concurrency 1 → exactly one candidate consumed (pool overshoots up to `concurrency`)
     expect(res.ready).toBe(1)
+  })
+})
+
+describe('envInt', () => {
+  it('rejects malformed/<=0 values, floors valid positives, passes through undefined', () => {
+    expect(envInt('abc')).toBeUndefined()
+    expect(envInt('0')).toBeUndefined()
+    expect(envInt('5')).toBe(5)
+    expect(envInt(undefined)).toBeUndefined()
+  })
+})
+
+const many = (n: number) => ({ name: 't', async *discover() {
+  for (let i = 0; i < n; i++) yield { sourceUrl: `https://github.com/a/r${i}/blob/main/SKILL.md`, repo: `a/r${i}`, path: 'SKILL.md', ref: 'main', stars: i, pushedAt: '' }
+} })
+const goodBody = (i: number) => `---\nname: skill-${i}\ndescription: does ${i}\n---\n# S${i}\nbody`
+
+describe('runDiscovery concurrency', () => {
+  it('never exceeds `concurrency` fetches in flight and collects all survivors', async () => {
+    const dir = mkdtempSync(join(tmpdir(), 'ds-'))
+    let inFlight = 0, maxInFlight = 0
+    const fetchContent = async (c: any) => {
+      inFlight++; maxInFlight = Math.max(maxInFlight, inFlight)
+      await new Promise((r) => setTimeout(r, 5))
+      inFlight--
+      return goodBody(Number(c.repo.split('r')[1]))
+    }
+    const res = await runDiscovery({ adapter: many(25) as any, fetchContent, dir, now: 'now', gradedHashes: new Set(), concurrency: 4 })
+    expect(maxInFlight).toBeLessThanOrEqual(4)
+    expect(res.ready).toBe(25)
+    expect(loadState(dir).filter((i) => i.status === 'ready')).toHaveLength(25)
+  })
+
+  it('checkpoints incrementally: candidates.json is populated before the run ends', async () => {
+    const dir = mkdtempSync(join(tmpdir(), 'ds-'))
+    let call = 0
+    const fetchContent = async (c: any) => {
+      call++
+      // concurrency 1 → deterministic order; by the 3rd fetch, the saveEvery=2 checkpoint must have persisted the first 2
+      if (call === 3) expect(loadState(dir).length).toBeGreaterThanOrEqual(2)
+      return goodBody(Number(c.repo.split('r')[1]))
+    }
+    await runDiscovery({ adapter: many(4) as any, fetchContent, dir, now: 'now', gradedHashes: new Set(), concurrency: 1, saveEvery: 2 })
+    expect(loadState(dir)).toHaveLength(4)
   })
 })

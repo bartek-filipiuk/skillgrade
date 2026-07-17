@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs'
+import { readFileSync, writeFileSync, existsSync, mkdirSync, renameSync } from 'node:fs'
 import { join } from 'node:path'
 import type { WorklistItem } from './dedup.js'
 
@@ -29,10 +29,18 @@ export function selectWave(items: WorklistItem[], n: number): WorklistItem[] {
 
 export function loadState(dir: string): WorklistItem[] {
   const p = join(dir, 'candidates.json')
-  return existsSync(p) ? (JSON.parse(readFileSync(p, 'utf8')) as WorklistItem[]) : []
+  if (!existsSync(p)) return []
+  try {
+    return JSON.parse(readFileSync(p, 'utf8')) as WorklistItem[]
+  } catch {
+    return [] // corrupt/truncated (e.g. killed mid-write pre-atomic-fix) → treat as no prior state, don't brick
+  }
 }
 
 export function saveState(dir: string, items: WorklistItem[]): void {
   mkdirSync(dir, { recursive: true })
-  writeFileSync(join(dir, 'candidates.json'), JSON.stringify(items, null, 2) + '\n')
+  const p = join(dir, 'candidates.json')
+  const tmp = p + '.tmp'
+  writeFileSync(tmp, JSON.stringify(items, null, 2) + '\n')
+  renameSync(tmp, p) // atomic on the same filesystem → a kill never leaves a truncated candidates.json
 }
