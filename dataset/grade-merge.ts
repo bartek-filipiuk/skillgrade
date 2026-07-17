@@ -42,7 +42,10 @@ export function mergeGraded(
   now: string,
 ): EvalInput[] {
   const rubric = loadRubric(rubricDir)
-  const byHash = new Map(evals.map((e) => [e.skillMdHash, e]))
+  // Hashless existing entries have no key to merge on — pass them through untouched
+  // rather than collapsing them all under one null key (data loss).
+  const passthrough = evals.filter((e) => !e.skillMdHash)
+  const byHash = new Map(evals.filter((e) => e.skillMdHash).map((e) => [e.skillMdHash, e]))
   for (const w of waveResults) {
     const item = items.get(w.skillMdHash)
     if (!item) continue
@@ -51,10 +54,14 @@ export function mergeGraded(
       const vs = w.verdicts.filter((v) => dim.checks.some((c) => c.id === v.check))
       badges[dim.key] = aggregate(dim.checks, vs).letter
     }
+    // Keep only schema-valid highlights: fail/warning, real check id, deduped by
+    // check, summary clamped to 1..200 chars so CatalogSchema.parse can't reject the build.
+    const seen = new Set<string>()
     const highlights = w.verdicts
-      .filter((v) => v.status === 'fail' || v.status === 'warning')
+      .filter((v) => (v.status === 'fail' || v.status === 'warning') && /^[SQH]\d{2}$/.test(v.check))
+      .filter((v) => !seen.has(v.check) && seen.add(v.check))
+      .map((v) => ({ check: v.check, status: v.status, summary: (v.note?.trim() || v.check).slice(0, 200) }))
       .slice(0, 3)
-      .map((v) => ({ check: v.check, status: v.status, summary: v.note ?? '' }))
     byHash.set(w.skillMdHash, {
       name: item.name,
       source: `GitHub · ${item.repo}${item.stars ? ` · ${item.stars}★` : ''}`,
@@ -74,5 +81,5 @@ export function mergeGraded(
       skillMdHash: w.skillMdHash,
     })
   }
-  return [...byHash.values()]
+  return [...passthrough, ...byHash.values()]
 }
