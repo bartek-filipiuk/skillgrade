@@ -86,7 +86,7 @@ export function searchSkills(index: SkillIndex, query: string): SearchHit[] {
   for (const [name, group] of index.byName) {
     if (!name.toLowerCase().includes(q)) continue
     const e = group[0]
-    hits.push({ name: e.name, overall: e.overall, category: e.category, reportUrl: reportUrl(e.name) })
+    hits.push({ name: e.name, overall: e.overall, category: e.category, tagline: e.tagline, reportUrl: reportUrl(e.name) })
   }
   return hits
 }

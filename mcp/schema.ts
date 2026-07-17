@@ -68,6 +68,7 @@ export const SearchHitSchema = z.object({
   name: z.string(),
   overall: z.string(),
   category: z.string(),
+  tagline: z.string(),
   reportUrl: z.string(),
 })
 
