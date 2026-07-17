@@ -11,7 +11,7 @@ import { readFileSync, writeFileSync } from 'node:fs'
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { runPreChecks } from '../checks/prechecks.js'
-import { CatalogSchema, TAXONOMY, overallGrade, type Catalog, type CatalogEntry } from './schema.js'
+import { CatalogSchema, TAXONOMY, overallGrade, slugify, type Catalog, type CatalogEntry } from './schema.js'
 
 const HERE = dirname(fileURLToPath(import.meta.url))
 const RUBRIC_VERSION = JSON.parse(readFileSync(join(HERE, '../rubric/skill/meta.json'), 'utf8')).version as string
@@ -33,6 +33,9 @@ interface EvalInput {
   featured?: boolean
   featuredOrder?: number
   skillMdHash?: string | null // normalized SKILL.md hash; carried from evaluations.json
+  popularity?: number
+  mirrors?: string[]
+  discoveredVia?: string | null
 }
 
 function buildEntry(e: EvalInput, evaluatedAt: string): CatalogEntry {
@@ -58,6 +61,10 @@ function buildEntry(e: EvalInput, evaluatedAt: string): CatalogEntry {
     evaluatedAt: e.evaluatedAt ?? evaluatedAt,
     evaluator: e.evaluator ?? EVALUATOR,
     skillMdHash: e.skillMdHash ?? null,
+    popularity: e.popularity ?? 0,
+    mirrors: e.mirrors ?? [],
+    discoveredVia: e.discoveredVia ?? null,
+    slug: slugify(e.name),
   }
 }
 
