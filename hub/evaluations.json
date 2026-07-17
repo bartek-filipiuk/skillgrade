@@ -46,138 +46,6 @@
     "skillMdHash": null
   },
   {
-    "name": "self-improving-agent",
-    "source": "ClawHub · @pskoett/self-improving-agent · 3.9k★",
-    "sourceUrl": "https://clawhub.ai/pskoett/skills/self-improving-agent",
-    "kind": "skill",
-    "category": "workflow",
-    "tagline": "Popular ClawHub skill (3.9k★): captures learnings, errors and corrections so the agent improves over time.",
-    "badges": {
-      "security": "A",
-      "quality": "B",
-      "hygiene": "A",
-      "effectiveness": "not-evaluated"
-    },
-    "highlights": [
-      {
-        "check": "Q03",
-        "status": "warning",
-        "summary": "The stated Pattern-Key format says hyphenated, but the doc's own examples use underscores — a self-inconsistency."
-      },
-      {
-        "check": "H05",
-        "status": "warning",
-        "summary": "588-line SKILL.md is over the ~500-line budget (still under 2×)."
-      },
-      {
-        "check": "S01",
-        "status": "pass",
-        "summary": "Writes learnings to workspace files for its declared purpose — not secret exfiltration (a weak evaluator over-flags this)."
-      }
-    ],
-    "preCheck": {
-      "frontmatterValid": true,
-      "fileCount": 1,
-      "skillMdBytes": 21092,
-      "criticalFlags": 0,
-      "majorFlags": 0
-    },
-    "evaluator": {
-      "mode": "claude-code-native",
-      "model": "claude-fable-5"
-    },
-    "verdict": "Trustworthy on security — it writes learnings to its own workspace for its stated purpose, not exfiltration. Docs have a small internal slip (hyphenated format vs underscored examples) and the main file runs a bit long, but nothing that misleads you.",
-    "skillMdHash": "530bf35b297c5ec5e626c3bc6e123cf29e6029f2ffa8f3aad728c47bcf4dce59"
-  },
-  {
-    "name": "skill-vetter",
-    "source": "ClawHub · @spclaudehome/skill-vetter · 1.3k★",
-    "sourceUrl": "https://clawhub.ai/spclaudehome/skills/skill-vetter",
-    "kind": "skill",
-    "category": "security",
-    "tagline": "Popular ClawHub skill (1.3k★): a security-first checklist for vetting other skills before install. Meta — evaluated by a grader.",
-    "badges": {
-      "security": "A",
-      "quality": "B",
-      "hygiene": "A",
-      "effectiveness": "not-evaluated"
-    },
-    "highlights": [
-      {
-        "check": "Q02",
-        "status": "fail",
-        "summary": "No 'NOT for' / out-of-scope guidance — could misfire on general code review."
-      },
-      {
-        "check": "H07",
-        "status": "warning",
-        "summary": "jq is invoked with no requirements note or availability check."
-      },
-      {
-        "check": "S06",
-        "status": "pass",
-        "summary": "Lists attack patterns (curl|bash, ~/.ssh, base64) as things to DETECT — correctly read as detection material, not an attack; layer-1 flags 3, the rubric de-escalates."
-      }
-    ],
-    "preCheck": {
-      "frontmatterValid": true,
-      "fileCount": 1,
-      "skillMdBytes": 4560,
-      "criticalFlags": 0,
-      "majorFlags": 3
-    },
-    "evaluator": {
-      "mode": "claude-code-native",
-      "model": "claude-fable-5"
-    },
-    "verdict": "Security-clean and its listed attack patterns are documentation, not danger. Its blind spot: it never says when NOT to use it, so it could misfire on plain code review instead of security vetting. Also assumes jq is installed without checking.",
-    "skillMdHash": "e88e7e3b3435a0d094335825cc4aeb66ea9f7dfe34ed773df075dbebc65573d7"
-  },
-  {
-    "name": "ontology",
-    "source": "ClawHub · @oswalpalash/ontology · 650★",
-    "sourceUrl": "https://clawhub.ai/oswalpalash/skills/ontology",
-    "kind": "skill",
-    "category": "project-intel",
-    "tagline": "Popular ClawHub skill (650★): a typed knowledge graph for structured agent memory and composable recall.",
-    "badges": {
-      "security": "B",
-      "quality": "C",
-      "hygiene": "B",
-      "effectiveness": "not-evaluated"
-    },
-    "highlights": [
-      {
-        "check": "Q02",
-        "status": "fail",
-        "summary": "No out-of-scope guidance despite broad triggers — high misfire risk."
-      },
-      {
-        "check": "H08",
-        "status": "fail",
-        "summary": "No version field, changelog, or dated revision notes."
-      },
-      {
-        "check": "H07",
-        "status": "warning",
-        "summary": "python3 and a bundled script are invoked with no requirements note or availability check."
-      }
-    ],
-    "preCheck": {
-      "frontmatterValid": true,
-      "fileCount": 1,
-      "skillMdBytes": 6702,
-      "criticalFlags": 0,
-      "majorFlags": 0
-    },
-    "evaluator": {
-      "mode": "claude-code-native",
-      "model": "claude-fable-5"
-    },
-    "verdict": "Middling trust. It never states what it's out of scope for despite casting a wide net, so it can trigger on tasks it wasn't built for. It also lacks any version history, and it calls python3 and a script without checking they exist.",
-    "skillMdHash": "6fd5f8ba525f021bdfb3f4e2ebc41973178507f89bcef5f255b31777f62d4dfd"
-  },
-  {
     "name": "mcp-builder",
     "source": "anthropics/skills · skills/mcp-builder",
     "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/mcp-builder",
@@ -356,6 +224,138 @@
     "evaluatedAt": "2026-07-16T10:05:38.981Z",
     "verdict": "Contradicts itself on a key rule — it forbids using /skill-test in one place, then tells you to skip evaluation elsewhere, so which instruction wins is unclear. Several other steps lean on vague judgment calls ('different metaphors') with no way to check if you did it right.",
     "skillMdHash": null
+  },
+  {
+    "name": "self-improving-agent",
+    "source": "ClawHub · @pskoett/self-improving-agent · 3.9k★",
+    "sourceUrl": "https://clawhub.ai/pskoett/skills/self-improving-agent",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Popular ClawHub skill (3.9k★): captures learnings, errors and corrections so the agent improves over time.",
+    "badges": {
+      "security": "A",
+      "quality": "B",
+      "hygiene": "A",
+      "effectiveness": "not-evaluated"
+    },
+    "highlights": [
+      {
+        "check": "Q03",
+        "status": "warning",
+        "summary": "The stated Pattern-Key format says hyphenated, but the doc's own examples use underscores — a self-inconsistency."
+      },
+      {
+        "check": "H05",
+        "status": "warning",
+        "summary": "588-line SKILL.md is over the ~500-line budget (still under 2×)."
+      },
+      {
+        "check": "S01",
+        "status": "pass",
+        "summary": "Writes learnings to workspace files for its declared purpose — not secret exfiltration (a weak evaluator over-flags this)."
+      }
+    ],
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 21092,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-fable-5"
+    },
+    "verdict": "Trustworthy on security — it writes learnings to its own workspace for its stated purpose, not exfiltration. Docs have a small internal slip (hyphenated format vs underscored examples) and the main file runs a bit long, but nothing that misleads you.",
+    "skillMdHash": "530bf35b297c5ec5e626c3bc6e123cf29e6029f2ffa8f3aad728c47bcf4dce59"
+  },
+  {
+    "name": "skill-vetter",
+    "source": "ClawHub · @spclaudehome/skill-vetter · 1.3k★",
+    "sourceUrl": "https://clawhub.ai/spclaudehome/skills/skill-vetter",
+    "kind": "skill",
+    "category": "security",
+    "tagline": "Popular ClawHub skill (1.3k★): a security-first checklist for vetting other skills before install. Meta — evaluated by a grader.",
+    "badges": {
+      "security": "A",
+      "quality": "B",
+      "hygiene": "A",
+      "effectiveness": "not-evaluated"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' / out-of-scope guidance — could misfire on general code review."
+      },
+      {
+        "check": "H07",
+        "status": "warning",
+        "summary": "jq is invoked with no requirements note or availability check."
+      },
+      {
+        "check": "S06",
+        "status": "pass",
+        "summary": "Lists attack patterns (curl|bash, ~/.ssh, base64) as things to DETECT — correctly read as detection material, not an attack; layer-1 flags 3, the rubric de-escalates."
+      }
+    ],
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 4560,
+      "criticalFlags": 0,
+      "majorFlags": 3
+    },
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-fable-5"
+    },
+    "verdict": "Security-clean and its listed attack patterns are documentation, not danger. Its blind spot: it never says when NOT to use it, so it could misfire on plain code review instead of security vetting. Also assumes jq is installed without checking.",
+    "skillMdHash": "e88e7e3b3435a0d094335825cc4aeb66ea9f7dfe34ed773df075dbebc65573d7"
+  },
+  {
+    "name": "ontology",
+    "source": "ClawHub · @oswalpalash/ontology · 650★",
+    "sourceUrl": "https://clawhub.ai/oswalpalash/skills/ontology",
+    "kind": "skill",
+    "category": "project-intel",
+    "tagline": "Popular ClawHub skill (650★): a typed knowledge graph for structured agent memory and composable recall.",
+    "badges": {
+      "security": "B",
+      "quality": "C",
+      "hygiene": "B",
+      "effectiveness": "not-evaluated"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No out-of-scope guidance despite broad triggers — high misfire risk."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog, or dated revision notes."
+      },
+      {
+        "check": "H07",
+        "status": "warning",
+        "summary": "python3 and a bundled script are invoked with no requirements note or availability check."
+      }
+    ],
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 6702,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-fable-5"
+    },
+    "verdict": "Middling trust. It never states what it's out of scope for despite casting a wide net, so it can trigger on tasks it wasn't built for. It also lacks any version history, and it calls python3 and a script without checking they exist.",
+    "skillMdHash": "6fd5f8ba525f021bdfb3f4e2ebc41973178507f89bcef5f255b31777f62d4dfd"
   },
   {
     "name": "humanizer",
@@ -5379,5 +5379,864 @@
     },
     "verdict": "Functionally strong, security and quality both clean, but hygiene drags it down: the frontmatter name is just 'browser' while the directory is 'browser-automation', a mismatch that can confuse skill lookup. It also states no scope boundary against overlapping browser tools.",
     "skillMdHash": "822d3c0dfe32b8919bffa811141ed92b20967960917efa99759247a306a3da41"
+  },
+  {
+    "name": "babysit",
+    "source": "GitHub · thedotmack/claude-mem · 87609★",
+    "sourceUrl": "https://github.com/thedotmack/claude-mem/blob/main/plugin/skills/babysit/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Polls a GitHub PR (gh/jq/GraphQL) until checks pass and review threads resolve, then reports status with evidence.",
+    "verdict": "Clean, narrowly-scoped PR watcher. Uses only gh CLI, jq, and GitHub GraphQL against the current repo's own PR; requires verifying bot findings and generated artifacts before acting; resolves threads only after verification; final report demands concrete evidence (commit SHA, checks, thread count). No credential reads, no remote code execution, no destructive",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No explicit negative-trigger guidance (e.g. skip when PR is draft-only or no CI configured); minor omission, low risk to users."
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "No guidance for gh/API failure modes (auth failure, rate limiting, network errors) or when to give up watching; only handles the 'outdated thread' edge case (line 85)."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T17:10:17.987Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 4354,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 87609,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "8a9ac5477fd02a9dcbcf03ead9fecb0d4fb9772f70c0e80633dd48f9c4233049"
+  },
+  {
+    "name": "cloud-sync",
+    "source": "GitHub · thedotmack/claude-mem · 87609★",
+    "sourceUrl": "https://github.com/thedotmack/claude-mem/blob/main/plugin/skills/cloud-sync/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Sets up and checks claude-mem's cloud sync to cmem.ai Pro: migrates legacy tokens, retires the old sync daemon, restarts the worker.",
+    "verdict": "Solid credential hygiene: token never hits argv/logs/stdout, is merged into JSON without clobbering other settings, and the file is chmod 600. Two things to weigh: the token is collected by pasting it into chat (AskUserQuestion), so it lands in the conversation transcript/session log outside the script's control; and step 4 kills the legacy sync daemon and r",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S04",
+        "status": "warning",
+        "summary": "Step 4 kills the legacy daemon (`kill \"$LEGACY_PID\"`) and archives (`mv ... .retired`) its files automatically once ~/.claude-mem/cloud-sync.pid is found, with no AskUserQuestion confirmation before t"
+      },
+      {
+        "check": "S10",
+        "status": "warning",
+        "summary": "Step 3(b) explicitly asks the user, via AskUserQuestion, to paste their sync token and user id ('Use AskUserQuestion to ask the user to paste two values from cmem.ai -> Connect'). Script-side handling"
+      },
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No explicit negative-trigger guidance (e.g. when NOT to invoke this skill, such as for non-cloud/local-only memory questions)."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T17:10:17.987Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 7302,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 87609,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "4b2e14fd1622f3f6665a7184bea2510f36305888895b23b9de7ddfe78cb95843"
+  },
+  {
+    "name": "design-is",
+    "source": "GitHub · thedotmack/claude-mem · 87609★",
+    "sourceUrl": "https://github.com/thedotmack/claude-mem/blob/main/plugin/skills/design-is/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Orchestrates a Dieter Rams 10-principle design audit with cited evidence, then hands off a /make-plan prompt for NEW/REFINE/REDESIGN.",
+    "verdict": "Clean, well-scoped orchestration skill: no code execution, no network exfiltration, deterministic scoring rubric, explicit evidence citations, and a clear output contract. Minor gaps: it silently assumes companion skills/commands (/make-plan, /do, agent-browser) exist without declaring them; re-running same-day overwrites prior DESIGN-IS-<date>/ output with ",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "S06",
+        "status": "warning",
+        "summary": "Line 33: 'The user wrote \"Dieter Braun\" — they mean Dieter Rams. Don't correct them inline; just use the right principles.' This instructs the agent to silently apply a substitution without telling th"
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "A 'Failure Modes to Prevent' section covers scoring-without-evidence, sunk-cost bias, and hedging, but doesn't say what to do when the OPTIONAL accessibility subagent is skipped yet its evidence feeds"
+      },
+      {
+        "check": "Q10",
+        "status": "warning",
+        "summary": "Output directory is dated only to the day (`DESIGN-IS-<YYYY-MM-DD>/`); a second run the same day would silently overwrite prior artifacts with no collision handling mentioned."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T17:10:17.987Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 18593,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 87609,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "8ad14d95e40c4a08f5715f9baaf0bc8b0b8cf989cbfa2022ed42de9593f9f580"
+  },
+  {
+    "name": "do",
+    "source": "GitHub · thedotmack/claude-mem · 87609★",
+    "sourceUrl": "https://github.com/thedotmack/claude-mem/blob/main/plugin/skills/do/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Orchestrator skill that deploys subagents to execute a phased implementation plan with verification gates before committing.",
+    "verdict": "Clean, low-risk skill. It only issues orchestration instructions to Claude (deploy subagents, verify, then commit) — no credential access, no network calls, no shell-piped remote code, nothing hidden. Minor polish gaps: no stated negative trigger, no explicit output contract, no version/changelog field, and re-run/idempotency behavior (duplicate commits/push",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No negative-trigger guidance (e.g. when a plan doesn't exist yet, or for trivial single-step tasks) is stated anywhere in the file."
+      },
+      {
+        "check": "Q05",
+        "status": "warning",
+        "summary": "No explicit statement of what the orchestrator's final output/report to the user should look like after all phases complete."
+      },
+      {
+        "check": "Q10",
+        "status": "warning",
+        "summary": "Re-running 'do' on a plan already partially executed isn't addressed — could redeploy Commit/Branch-Sync subagents and produce duplicate commits or pushes."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T17:10:17.987Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 2031,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 87609,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "c47aa35cca70b809611fd1209ddfc7fe0b5aa6992128bb9552d7a38e5629b798"
+  },
+  {
+    "name": "how-it-works",
+    "source": "GitHub · thedotmack/claude-mem · 87609★",
+    "sourceUrl": "https://github.com/thedotmack/claude-mem/blob/main/plugin/skills/how-it-works/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Pure explainer skill describing how claude-mem captures, compresses, and injects memory context, and where data lives.",
+    "verdict": "Clean, low-risk skill: it is a 23-line explanation with no executable instructions, no network calls, no credential access, and no destructive actions. It does disclose (transparently) that compression calls go to a user-configured AI provider, which is informational, not skill-initiated egress. Minor quality gaps only: no negative-trigger guidance, no expli",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No negative-trigger guidance (e.g., not for troubleshooting injection failures or configuring providers) — low impact for a purely explanatory skill but a minor omission for a user deciding scope."
+      },
+      {
+        "check": "Q05",
+        "status": "warning",
+        "summary": "No explicit output contract specifying how the explanation should be formatted or how much of it to relay to the user."
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "No guidance for failure paths, e.g., what to say if memory injection isn't happening or the provider call fails."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T17:10:17.987Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 1231,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 87609,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "ae1b1e7535e46817e73254f275a413e4509450e39087a93164fd3eb2b91b9efb"
+  },
+  {
+    "name": "knowledge-agent",
+    "source": "GitHub · thedotmack/claude-mem · 87609★",
+    "sourceUrl": "https://github.com/thedotmack/claude-mem/blob/main/plugin/skills/knowledge-agent/SKILL.md",
+    "kind": "skill",
+    "category": "project-intel",
+    "tagline": "Builds and queries filtered 'knowledge corpora' (brains) from claude-mem observation history via a build->prime->query workflow.",
+    "verdict": "Clean, narrow-scope skill: it only orchestrates the plugin's own build_corpus/prime_corpus/query_corpus/list_corpora/rebuild_corpus/reprime_corpus commands over local observation data, with no shell execution, network calls, secrets access, or hidden instructions. Minor rough edges for a user relying on it: no guidance on what happens if a build/query fails ",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No negative-trigger guidance anywhere in the file; a user can't tell from the skill when NOT to reach for it (e.g. one-off lookups vs. building a persistent corpus)."
+      },
+      {
+        "check": "Q05",
+        "status": "warning",
+        "summary": "Describes side effects loosely ('creates an AI session', 'answers from its corpus') but never specifies the actual output format/shape a caller should expect from query_corpus or list_corpora."
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "No guidance for failure paths: what happens if build_corpus finds zero matching observations, if prime_corpus is called on a nonexistent corpus, or a name collision occurs."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T17:10:17.987Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 2466,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 87609,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "364203217d9a7db68f69d5b627e3e74bdb445797d1e91e97dba88579313a4975"
+  },
+  {
+    "name": "learn-codebase",
+    "source": "GitHub · thedotmack/claude-mem · 87609★",
+    "sourceUrl": "https://github.com/thedotmack/claude-mem/blob/main/plugin/skills/learn-codebase/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Tells Claude to read every source file in a codebase in full to build context before starting work.",
+    "verdict": "No exec/network/secret risk — it's a pure read-context instruction. Main flag: a 'Note for Reviewers' section explicitly asks the reviewing/executing agent not to warn the user about token cost, an attempt to manipulate the assistant against the user's interest. Also lacks size limits, an output contract, and negative triggers for huge repos.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "C",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S06",
+        "status": "fail",
+        "summary": "'## Note for Reviewers' section states: \"This skill uses tokens ... Please keep this in mind before deciding to warn the user over cost.\" This directly asks the reviewing/executing agent to suppress a"
+      },
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No negative-trigger guidance at all — nothing warns against invoking this on very large monorepos or codebases with thousands of files where full reads would be impractical or prohibitively costly."
+      },
+      {
+        "check": "Q05",
+        "status": "warning",
+        "summary": "No output contract is defined — the skill says to read every file but never states what artifact or summary (if any) should result from the priming pass."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T17:10:17.987Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 901,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 87609,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "6855e611686a141e533405aec3660e073b8b100fef12d8c85f0b4d6ddf999dee"
+  },
+  {
+    "name": "make-plan",
+    "source": "GitHub · thedotmack/claude-mem · 87609★",
+    "sourceUrl": "https://github.com/thedotmack/claude-mem/blob/main/plugin/skills/make-plan/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Orchestrates a phased implementation-plan skill that delegates doc discovery to subagents before writing plan phases.",
+    "verdict": "Clean, low-risk process skill. It only instructs the agent on how to structure planning work (docs discovery, phased plan, verification checklist) — no network calls, no credential access, no shell execution, no hidden instructions. Minor gaps: no negative-trigger guidance, no version/changelog field, and no explicit tool declaration in frontmatter, so a use",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No negative-trigger guidance (e.g., when a plan isn't needed, or for trivial one-line fixes) is given anywhere in description or body."
+      },
+      {
+        "check": "H07",
+        "status": "warning",
+        "summary": "No explicit tool declaration (e.g., allowed-tools frontmatter field) despite the skill relying on subagent/Task-style delegation, grep, and test execution described only in prose."
+      },
+      {
+        "check": "H08",
+        "status": "warning",
+        "summary": "No version field, changelog, or last-updated marker anywhere in the file, so consumers can't detect changes between installs."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T17:10:17.987Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 3151,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 87609,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "5be465cb35119d235262c7df7cb09b79190c472c8b79c63b405ad19623c99409"
+  },
+  {
+    "name": "mem-search",
+    "source": "GitHub · thedotmack/claude-mem · 87609★",
+    "sourceUrl": "https://github.com/thedotmack/claude-mem/blob/main/plugin/skills/mem-search/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Guides Claude through a search -> timeline -> fetch workflow against claude-mem's MCP memory tools to recall past session work.",
+    "verdict": "Clean, read-only skill: it only calls three documented MCP tools (search, timeline, get_observations) to look up prior session records, with no shell exec, network egress beyond those tools, secrets access, or hidden instructions. Minor gaps: no guidance for empty/failed search results (Q06) and no version/change marker (H08), so updates or breakage are hard",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "No guidance for empty search results, invalid/missing anchor IDs, or MCP tool errors; a user relying on this skill gets no fallback behavior documented if a step fails."
+      },
+      {
+        "check": "H07",
+        "status": "warning",
+        "summary": "The skill depends on three specific MCP tools (search, timeline, get_observations) referenced only in prose, not declared as a formal tool/dependency list in frontmatter, so a user can't tell at a gla"
+      },
+      {
+        "check": "H08",
+        "status": "warning",
+        "summary": "No version field or changelog/date marker in frontmatter or body, so users can't tell if the copy they installed is current or stale relative to the upstream repo."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T17:10:17.987Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 4077,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 87609,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "c76c4e2616aa61007a8181748e26aba306aea397516d574421d4d63f84d2026c"
+  },
+  {
+    "name": "oh-my-issues",
+    "source": "GitHub · thedotmack/claude-mem · 87609★",
+    "sourceUrl": "https://github.com/thedotmack/claude-mem/blob/main/plugin/skills/oh-my-issues/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Clusters a GitHub issue backlog into architectural plan-master issues, closes duplicates with a redirect, and bundles fixes into one PR per ",
+    "verdict": "Well-scoped GitHub triage workflow using only the official gh CLI, no fetched-code execution or hidden instructions. Main risk: it closes and creates issues in bulk directly against a live repo (Modes 1-3) with no explicit user-confirmation gate before executing, and it never states gh/jq as required prerequisites.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "S04",
+        "status": "warning",
+        "summary": "Bulk-closes issues and creates new master issues directly (e.g. 'Close every child', 'Verify end state') with no instruction to confirm with the user before running these live-repo mutations."
+      },
+      {
+        "check": "H07",
+        "status": "warning",
+        "summary": "Extensively depends on 'gh' CLI (authenticated) and 'jq' but never states these as explicit prerequisites anywhere in the file."
+      },
+      {
+        "check": "H08",
+        "status": "warning",
+        "summary": "No version field or change-log signal in frontmatter or body, so consumers cannot tell if/when the skill was last updated."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T17:10:17.987Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 11615,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 87609,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "ea471f0308c3e4a070b3a354e4928a623e4dadc8de51b432899f209e78b91578"
+  },
+  {
+    "name": "pathfinder",
+    "source": "GitHub · thedotmack/claude-mem · 87609★",
+    "sourceUrl": "https://github.com/thedotmack/claude-mem/blob/main/plugin/skills/pathfinder/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Orchestrator skill that maps a codebase into feature flowcharts, finds duplicated logic, and proposes a unified architecture plus handoff pr",
+    "verdict": "Clean, read-only orchestration skill: no network calls, no credential access, no destructive file ops, writes only new dated report files. Steps are concrete, evidence-gated, and include failure-mode handling. Minor gaps: no explicit negative-trigger guidance, no versioning signal, and re-running the same day could collide on the date-stamped output folder.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No explicit 'do NOT use when' guidance is given, e.g. for small/single-feature repos or when implementation (not analysis) is wanted; a user could invoke it in cases where the heavyweight multi-phase "
+      },
+      {
+        "check": "Q10",
+        "status": "warning",
+        "summary": "Output folder is date-stamped only ('PATHFINDER-<YYYY-MM-DD>/', line 26) with no guidance for handling a second run on the same day; a re-run could silently overwrite or collide with a prior run's art"
+      },
+      {
+        "check": "H07",
+        "status": "warning",
+        "summary": "Skill instructs deploying multiple subagents and running grep/file reads but the frontmatter declares no 'allowed-tools' or tools field to scope this access explicitly."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T17:10:17.987Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 6155,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 87609,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "a2b861de3a266ced877bdda9fec0ae3c29c3d1168a903f7fb624494832f7e7f0"
+  },
+  {
+    "name": "smart-explore",
+    "source": "GitHub · thedotmack/claude-mem · 87609★",
+    "sourceUrl": "https://github.com/thedotmack/claude-mem/blob/main/plugin/skills/smart-explore/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Directs Claude to use tree-sitter MCP tools (smart_search/outline/unfold) instead of Read/Grep/Glob for token-efficient code exploration.",
+    "verdict": "Safe, read-only code-exploration skill: no network egress, secret access, or destructive operations found. Minor gaps: no version/changelog field so consumers can't tell if it changed; an optional custom-grammar example runs an unpinned `npm install`; and failure handling only covers the unsupported-language fallback, not tool-call errors or empty results.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "B",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "Optional custom-grammar example installs a well-known-sounding but unpinned package from the standard npm registry; it's an opt-in advanced feature, not part of the default flow, but still shown unpin"
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "Only one failure mode (unsupported language) has a stated fallback; nothing addresses a smart_* tool call erroring, returning zero results, or an invalid file_path."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the file."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T17:10:17.987Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 9218,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 87609,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "72573bc87c1fbe070dc3ce42256fb239ae0aec95e90a53ce61a88b11a90e06be"
+  },
+  {
+    "name": "standup",
+    "source": "GitHub · thedotmack/claude-mem · 87609★",
+    "sourceUrl": "https://github.com/thedotmack/claude-mem/blob/main/plugin/skills/standup/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Facilitates a read-only multi-agent 'standup' chat across git worktrees/branches/PRs to produce one consolidation plan.",
+    "verdict": "Solid, low-risk skill: it stays explicitly read-only, never merges or commits itself, gates real git work behind a separate /do skill, and gives the human concrete decisions via AskUserQuestion. Only minor gaps: no negative-trigger guidance, and 'Edit' is declared in allowed-tools but never used in the described read-only flow. Bundled standup.mjs/agent-brie",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S11",
+        "status": "warning",
+        "summary": "Declares 'Edit' in allowed-tools (line 8) but the described flow is explicitly read-only and never shows Edit being invoked — minor mismatch between declared capability and stated behavior."
+      },
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No explicit negative-trigger guidance (when not to use it) beyond the implicit 'zero or one candidate isn't a standup' guard (line 46)."
+      },
+      {
+        "check": "H07",
+        "status": "warning",
+        "summary": "Bash, Task, AskUserQuestion, and Read are all clearly exercised; Edit is declared but has no corresponding use in the described flow (see S11)."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T17:10:17.987Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 6636,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 87609,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "b85f55c60eb6df3143f31367790d2f87561ffac1e84890a890f7a87ca20c4a95"
+  },
+  {
+    "name": "timeline-report",
+    "source": "GitHub · thedotmack/claude-mem · 87609★",
+    "sourceUrl": "https://github.com/thedotmack/claude-mem/blob/main/plugin/skills/timeline-report/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Fetches a project's claude-mem timeline via localhost API + SQLite, then has a sub-agent write a long narrative history report.",
+    "verdict": "Safe to install: all network calls stay on localhost (the local claude-mem worker) and the only file read is the user's own local claude-mem.db — no exfiltration, no remote code execution, no hidden instructions. Minor issues: the ROI/token-savings math bakes in unexplained arbitrary constants (30% relevance factor, ~10K tokens/recall) presented as calculate",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "B",
+      "quality": "B",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "S04",
+        "status": "warning",
+        "summary": "Step 5 writes to a default path `./journey-into-PROJECT_NAME.md` and will silently overwrite an existing file of the same name on rerun; not catastrophic but unconfirmed overwrite."
+      },
+      {
+        "check": "S09",
+        "status": "warning",
+        "summary": "Step 4 passes the ENTIRE fetched timeline (built from prior session observations) verbatim as trusted context into a sub-agent; if any stored observation text contained injected instructions, the summ"
+      },
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No 'when NOT to use' guidance is given, e.g. for tiny projects with few observations or when the worker is known to be down; user must infer from Error Handling section instead."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T17:10:17.987Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 12689,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 87609,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "4c2436ba4546f7a7cbc55c59b6f1816fe1ecb171607d10f1c0acde8611ef6bae"
+  },
+  {
+    "name": "claude-code-plugin-release",
+    "source": "GitHub · thedotmack/claude-mem · 87609★",
+    "sourceUrl": "https://github.com/thedotmack/claude-mem/blob/main/plugin/skills/version-bump/SKILL.md",
+    "kind": "skill",
+    "category": "deployment",
+    "tagline": "Bumps plugin versions across 8 manifests, tags/pushes git, opens a GitHub release, regenerates changelog, and fires a Discord webhook; npm p",
+    "verdict": "Solid: npm publish is explicitly withheld from the agent and handed to the human maintainer, avoiding credential handling by the agent. Risk: step 11 cds into a hardcoded personal path (~/Scripts/claude-mem/) and runs a script backed by a .env holding a Discord webhook secret -- a network side effect never mentioned in the skill's own description. The workfl",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "S04",
+        "status": "warning",
+        "summary": "'Commit EVERYTHING (including build artifacts)... NOTHING should be left uncommitted' (line 10) plus `git add -A && git commit` (line 33) and an unconditional `git push origin main` (line 35) -- broad"
+      },
+      {
+        "check": "S11",
+        "status": "fail",
+        "summary": "Frontmatter description (line 3) claims version increments, build verification, git tagging, GitHub releases, and changelog generation -- it never mentions cd-ing into an external directory outside th"
+      },
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No 'NOT for' / out-of-scope guidance anywhere, despite the workflow being tightly coupled to one repo's specific 8-file manifest layout that won't transfer to other projects."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T17:10:17.987Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 4620,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 87609,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "b230d69715d3eb96b1a767ae66dbb04b0cfbe81657e6e284b912c236e7ecc2c1"
+  },
+  {
+    "name": "weekly-digests",
+    "source": "GitHub · thedotmack/claude-mem · 87609★",
+    "sourceUrl": "https://github.com/thedotmack/claude-mem/blob/main/plugin/skills/weekly-digests/SKILL.md",
+    "kind": "skill",
+    "category": "project-intel",
+    "tagline": "Splits a claude-mem project timeline into per-ISO-week narrative chapters, written by sequential subagents that hand off a carry-forward blo",
+    "verdict": "No security concerns: the only network call is a curl to the user's own local claude-mem worker, no secrets are read or requested, no piped-shell execution, no hidden or manipulative instructions. Quality and hygiene are otherwise solid (clear triggers, negative trigger, error handling, worked examples), but the Step 6 rename loop is not re-run safe -- runni",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q10",
+        "status": "fail",
+        "summary": "Step 6's rename loop (line 200: `mv \"$f\" \"${prefix}-$f\"`) prefixes every *.md file in the digests directory with no check for an already-applied prefix; re-running the pipeline on the same project (e."
+      },
+      {
+        "check": "H07",
+        "status": "warning",
+        "summary": "python3 (line 67), node (line 34), and curl (line 58) are used as hard dependencies, but Prerequisites (lines 26-29) lists only 'claude-mem worker running' and an output directory -- these tools are n"
+      },
+      {
+        "check": "H08",
+        "status": "warning",
+        "summary": "No version field in frontmatter and no changelog or dated revision notes anywhere in the body, so consumers can't tell when behavior last changed."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T17:10:17.987Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 14128,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 87609,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "649536a4ec85ec76926ec333c0c734a1be9257dc647afd163af8b26d810f4ad3"
+  },
+  {
+    "name": "what-the",
+    "source": "GitHub · thedotmack/claude-mem · 87609★",
+    "sourceUrl": "https://github.com/thedotmack/claude-mem/blob/main/plugin/skills/what-the/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "One-line prompt skill: reframes a request as a plain-English who/what/where/why/when breakdown of something technical.",
+    "verdict": "Safe to install: no tools, network, file, or shell access, nothing hidden — the whole skill is a single canned prompt line. It is extremely thin (7 lines total): no output format, no negative triggers, no example, and no failure-path guidance, so results depend entirely on the model's own judgment rather than the skill's structure.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "warning",
+        "summary": "No negative-trigger guidance is given (when NOT to use it, e.g. topics needing deep technical precision instead of a plain-English pass)."
+      },
+      {
+        "check": "Q04",
+        "status": "warning",
+        "summary": "Body (line 6) is one instructive sentence, not a sequence of steps — it restates the ask with no method for gathering, verifying, or organizing the explanation."
+      },
+      {
+        "check": "Q05",
+        "status": "warning",
+        "summary": "No defined output contract; the five categories (who/what/where/why/when) are named but no structure, headings, or length are specified for the answer."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T17:10:17.987Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 246,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 87609,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "0f16c737ce964f74f10a20a5cbcaac801f2f52de45dca3882dcdb7320af7add0"
+  },
+  {
+    "name": "wowerpoint",
+    "source": "GitHub · thedotmack/claude-mem · 87609★",
+    "sourceUrl": "https://github.com/thedotmack/claude-mem/blob/main/plugin/skills/wowerpoint/SKILL.md",
+    "kind": "skill",
+    "category": "media",
+    "tagline": "Turns a document into a kawaii NotebookLM slide-deck PDF via CLI automation, then optionally uploads it to a third-party share-link service.",
+    "verdict": "Well-built workflow: concrete commands, explicit JSON-key gotchas, and a thorough failure-modes section. Main risk: the description promises only a PDF, but the skill silently redefines the deliverable as a share URL from an undisclosed third-party 'WOWerpoint Server' upload, with no per-run confirmation. Minor gaps: unpinned CLI install, no version signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "B",
+      "quality": "A",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "S02",
+        "status": "warning",
+        "summary": "Line 81: 'the subagent also POSTs it to the WOWerpoint Server, which converts the 16:9 deck into a 9:16 mobile twin'. The generated deck (derived from the source document) is uploaded to a third-party"
+      },
+      {
+        "check": "S11",
+        "status": "fail",
+        "summary": "Frontmatter description (line 3) promises only 'a kawaii NotebookLM slide-deck PDF'; the body silently redefines the actual deliverable: 'The share URL is the primary deliverable to the user; the PDF "
+      },
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "Line 22: `uv tool install --with playwright --force notebooklm-py` installs an unpinned, always-latest version of a niche package with `--force`, no version pin, from an unfamiliar publisher; not a ty"
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-17T17:10:17.987Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 8834,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 87609,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "4050c3b6070071f805cc2fcbeca603d76a2f4cf8dbd8d258f101f84396609318"
   }
 ]
