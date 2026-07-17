@@ -125,3 +125,4 @@ The emphasis, walked end to end:
 - Self-serve refunds / dispute handling; usage analytics.
 - Rotate the OpenRouter key and the GitHub token (both pasted in chat earlier).
 - Optionally fold `grade_skill` results back into the public catalog (with the submitter's consent) to grow it.
+- Grade history: the `grade_log` table exists but has no writer yet — the grade-history feature is deferred to a follow-up.

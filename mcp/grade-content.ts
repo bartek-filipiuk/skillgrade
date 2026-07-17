@@ -7,10 +7,6 @@ import { aggregate } from '../src/aggregate.js'
 import { hashSkillMd } from './normalize.js'
 import type { DimensionKey, PreCheckReport } from '../src/types.js'
 
-function dimensionOf(check: string): DimensionKey {
-  return check.startsWith('S') ? 'security' : check.startsWith('Q') ? 'quality' : 'hygiene'
-}
-
 export interface GradeContentOpts {
   rubricDir: string
   model: string
@@ -48,7 +44,7 @@ export async function gradeContent(content: string, opts: GradeContentOpts) {
     badges[dimension.key] = aggregate(dimension.checks, verdicts).letter
     for (const v of verdicts) {
       if (v.status === 'fail' || v.status === 'warning') {
-        findings.push({ check: v.check, dimension: dimensionOf(v.check), status: v.status, summary: v.note ?? '' })
+        findings.push({ check: v.check, dimension: dimension.key, status: v.status, summary: v.note ?? '' })
       }
     }
   }

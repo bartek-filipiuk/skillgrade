@@ -24,10 +24,19 @@ async function postInternal(path: string, body: unknown) {
   })
 }
 
+const GRADE_TIMEOUT_MS = 30_000
+
 function gradeSkillDeps(index: SkillIndex) {
+  // A hung OpenRouter call would charge a credit and never throw, so the refund path (throw-only)
+  // never fires and the client hangs. Reject after 30s → handler catches, refunds, returns grade-failed.
+  // ponytail: the underlying LLM promise leaks in the background on timeout — acceptable for MVP.
+  const gradeContentWithTimeout = (content: string) => Promise.race([
+    gradeContent(content, { rubricDir: RUBRIC_DIR, model: 'openrouter:google/gemini-2.5-flash' }),
+    new Promise<never>((_, rej) => setTimeout(() => rej(new Error('grade timeout')), GRADE_TIMEOUT_MS)),
+  ])
   return makeGradeSkill({
     index,
-    gradeContent: (content) => gradeContent(content, { rubricDir: RUBRIC_DIR, model: 'openrouter:google/gemini-2.5-flash' }),
+    gradeContent: gradeContentWithTimeout,
     charge: async (token) => {
       const res = await postInternal('/internal/charge', { token })
       if (res.status === 401) return { ok: false as const, reason: 'invalid-token' as const }

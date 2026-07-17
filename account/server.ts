@@ -22,15 +22,40 @@ export interface AppDeps {
   webhook: { handle(raw: string, sig: string): Promise<unknown> }
 }
 
+// ponytail: fixed-window in-memory per-IP limiter for auth routes; swap for a shared store past one instance.
+const AUTH_WINDOW_MS = 60_000
+const AUTH_MAX_PER_WINDOW = 10
+export function makeRateLimiter(windowMs = AUTH_WINDOW_MS, max = AUTH_MAX_PER_WINDOW) {
+  const hits = new Map<string, { count: number; resetAt: number }>()
+  return (ip: string, now: number): boolean => {
+    const e = hits.get(ip)
+    if (!e || now > e.resetAt) { hits.set(ip, { count: 1, resetAt: now + windowMs }); return false }
+    e.count++
+    return e.count > max
+  }
+}
+// Trust x-forwarded-for's FIRST hop from the front proxy; else remoteAddress is the proxy → one bucket for the world.
+function clientIp(c: any): string {
+  const xff = c.req.header('x-forwarded-for')
+  if (xff) return xff.split(',')[0].trim()
+  return c.req.header('x-real-ip') ?? 'unknown'
+}
+
 export function buildApp(deps: AppDeps): Hono {
   const app = new Hono()
   const sessionUser = async (c: any) => (await getSignedCookie(c, deps.cookieSecret, 'session')) || null
   const setSession = (c: any, userId: string) =>
     setSignedCookie(c, 'session', userId, deps.cookieSecret, { httpOnly: true, secure: true, sameSite: 'Lax', path: '/' })
 
+  const authLimiter = makeRateLimiter()
+  const rateLimit = async (c: any, next: () => Promise<void>) => {
+    if (authLimiter(clientIp(c), Date.now())) return c.json({ error: 'too many attempts' }, 429)
+    await next()
+  }
+
   app.get('/', (c) => c.redirect('/dashboard'))
   app.get('/register', (c) => c.html(renderRegister()))
-  app.post('/register', async (c) => {
+  app.post('/register', rateLimit, async (c) => {
     const b = await c.req.parseBody()
     let userId: string
     try {
@@ -43,7 +68,7 @@ export function buildApp(deps: AppDeps): Hono {
     return c.redirect('/dashboard', 303)
   })
   app.get('/login', (c) => c.html(renderLogin()))
-  app.post('/login', async (c) => {
+  app.post('/login', rateLimit, async (c) => {
     const b = await c.req.parseBody()
     const userId = await deps.auth.login(String(b.email), String(b.password))
     if (!userId) return c.html(renderLogin('Invalid email or password'), 401)
@@ -74,8 +99,12 @@ export function buildApp(deps: AppDeps): Hono {
     try {
       await deps.webhook.handle(await c.req.text(), c.req.header('stripe-signature') ?? '')
       return c.json({ received: true })
-    } catch (e) {
-      return c.json({ error: 'bad signature' }, 400) // Stripe retries 5xx; 400 = drop malformed
+    } catch (err) {
+      // Signature failure = a normal rejection: 400, Stripe won't retry. Any OTHER error
+      // (DB/handler) must be 500 so Stripe retries and the dropped credit is visible in logs.
+      if (err instanceof Stripe.errors.StripeSignatureVerificationError) return c.json({ error: 'bad signature' }, 400)
+      console.error('[stripe webhook] handler error', err)
+      return c.json({ error: 'internal' }, 500)
     }
   })
 
@@ -96,6 +125,8 @@ export function main(): void {
   const auth = makeAuth(drizzleAuthPrimitives(db))
   const stripe = new Stripe(envOrThrow('STRIPE_SECRET_KEY'))
   const webhookSecret = envOrThrow('STRIPE_WEBHOOK_SECRET')
+  // Fail loud on start if any pack price is unset (PACKS falls back to symbolic ids otherwise — see README).
+  envOrThrow('STRIPE_PRICE_5'); envOrThrow('STRIPE_PRICE_15'); envOrThrow('STRIPE_PRICE_40')
   const baseUrl = process.env.BASE_URL ?? 'https://account.skillgrade.dev'
 
   const webhook = makeWebhook({

@@ -26,7 +26,7 @@ describe('internal routes', () => {
     expect(await res.json()).toEqual({ ok: true, remaining: 5 })
     expect(credits.charge).toHaveBeenCalledWith('user_1')
   })
-  it('returns 402 when the token is unknown', async () => {
+  it('returns 401 when the token is unknown', async () => {
     const { routes } = app()
     expect((await routes.fetch(req('/charge', { token: 'bad' }, 's3cret'))).status).toBe(401)
   })

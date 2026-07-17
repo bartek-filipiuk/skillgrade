@@ -27,6 +27,7 @@ export const creditLedger = pgTable('credit_ledger', {
   createdAt: timestamp('created_at', { withTimezone: true }).defaultNow().notNull(),
 })
 
+// reserved for grade-history follow-up (no writer yet)
 export const gradeLog = pgTable('grade_log', {
   id: uuid('id').defaultRandom().primaryKey(),
   userId: uuid('user_id').notNull().references(() => users.id),
