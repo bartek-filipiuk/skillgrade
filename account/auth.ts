@@ -33,9 +33,10 @@ export interface AuthPrimitives {
 export function makeAuth(p: AuthPrimitives) {
   return {
     async register(email: string, pw: string): Promise<string> {
-      if (await p.findUserByEmail(email)) throw new Error('email already registered')
+      const e = email.toLowerCase().trim()
+      if (await p.findUserByEmail(e)) throw new Error('email already registered')
       const { hash, salt } = hashPassword(pw)
-      return p.createUser(email.toLowerCase().trim(), hash, salt)
+      return p.createUser(e, hash, salt)
     },
     async login(email: string, pw: string): Promise<string | null> {
       const u = await p.findUserByEmail(email.toLowerCase().trim())
