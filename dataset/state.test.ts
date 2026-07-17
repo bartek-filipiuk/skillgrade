@@ -1,5 +1,8 @@
 import { describe, it, expect } from 'vitest'
-import { mergeWorklist, selectWave } from './state.js'
+import { mkdtempSync, writeFileSync } from 'node:fs'
+import { tmpdir } from 'node:os'
+import { join } from 'node:path'
+import { mergeWorklist, selectWave, loadState, saveState } from './state.js'
 import type { WorklistItem } from './dedup.js'
 
 const item = (over: Partial<WorklistItem> & { skillMdHash: string; primarySourceUrl: string }): WorklistItem => ({
@@ -24,6 +27,23 @@ describe('mergeWorklist', () => {
     const out = mergeWorklist([], [item({ skillMdHash: 'h2', primarySourceUrl: 'u2' })], new Set())
     expect(out).toHaveLength(1)
     expect(out[0].status).toBe('ready')
+  })
+})
+
+describe('saveState/loadState', () => {
+  it('round-trips a worklist', () => {
+    const dir = mkdtempSync(join(tmpdir(), 'st-'))
+    const items = [item({ skillMdHash: 'h1', primarySourceUrl: 'u1', status: 'graded' })]
+    saveState(dir, items)
+    expect(loadState(dir)).toEqual(items)
+  })
+  it('self-heals a corrupt candidates.json → [] and round-trips afterward', () => {
+    const dir = mkdtempSync(join(tmpdir(), 'st-'))
+    writeFileSync(join(dir, 'candidates.json'), '{ broken')
+    expect(loadState(dir)).toEqual([]) // truncated/corrupt → no prior state, don't brick
+    const items = [item({ skillMdHash: 'h2', primarySourceUrl: 'u2' })]
+    saveState(dir, items)
+    expect(loadState(dir)).toEqual(items)
   })
 })
 

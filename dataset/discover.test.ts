@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { mkdtempSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { runDiscovery } from './discover.js'
+import { runDiscovery, envInt } from './discover.js'
 import { loadState } from './state.js'
 import type { Candidate, SourceAdapter } from './adapters/types.js'
 
@@ -36,6 +36,15 @@ describe('runDiscovery', () => {
     })
     expect(fetches).toBe(1) // concurrency 1 → exactly one candidate consumed (pool overshoots up to `concurrency`)
     expect(res.ready).toBe(1)
+  })
+})
+
+describe('envInt', () => {
+  it('rejects malformed/<=0 values, floors valid positives, passes through undefined', () => {
+    expect(envInt('abc')).toBeUndefined()
+    expect(envInt('0')).toBeUndefined()
+    expect(envInt('5')).toBe(5)
+    expect(envInt(undefined)).toBeUndefined()
   })
 })
 

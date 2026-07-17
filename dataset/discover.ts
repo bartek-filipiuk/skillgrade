@@ -66,6 +66,14 @@ import { hashSkillMd } from '../mcp/normalize.js'
 const HERE = dirname(fileURLToPath(import.meta.url))
 const CACHE = join(HERE, 'cache')
 
+// A positive finite integer from env, else undefined (→ the callee's default).
+// Guards the CLI knobs: 'abc'/'0'/'-1' would otherwise yield NaN/0 → zero workers or zero harvest reported as success.
+export function envInt(v: string | undefined): number | undefined {
+  if (v === undefined) return undefined
+  const n = Number(v)
+  return Number.isFinite(n) && n > 0 ? Math.floor(n) : undefined
+}
+
 // Read cached SKILL.md content by its normalized hash (skillMdHash). The grade step
 // reads content by the same key it grades under, keeping a single identity per skill.
 export function readCachedContent(hash: string): string {
@@ -115,7 +123,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const gradedHashes = new Set<string>() // seed from evaluations.json when re-scanning; empty = grade everything ready
   const adapter = githubAdapter(githubApiGet, {
     codeSearch: process.env.CODE_SEARCH !== '0', // default on; CODE_SEARCH=0 to disable
-    maxReposPerQuery: process.env.MAX_REPOS ? Number(process.env.MAX_REPOS) : undefined,
+    maxReposPerQuery: envInt(process.env.MAX_REPOS),
   })
   runDiscovery({
     adapter,
@@ -123,8 +131,8 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
     dir: HERE,
     now: new Date().toISOString(),
     gradedHashes,
-    maxCandidates: process.env.MAX_CANDIDATES ? Number(process.env.MAX_CANDIDATES) : undefined,
-    concurrency: process.env.CONCURRENCY ? Number(process.env.CONCURRENCY) : undefined,
+    maxCandidates: envInt(process.env.MAX_CANDIDATES),
+    concurrency: envInt(process.env.CONCURRENCY),
   })
     .then((r) => console.log(`discovery: ready=${r.ready} filtered=${r.filtered} drifted=${r.drifted}`))
     .catch((e) => { console.error(e); process.exit(1) })
