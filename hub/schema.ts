@@ -57,6 +57,7 @@ export const CatalogEntrySchema = z.object({
   rubricVersion: z.string(),
   evaluatedAt: z.string(),
   evaluator: z.object({ mode: z.string(), model: z.string() }),
+  skillMdHash: z.string().nullable(), // normalized sha256 of SKILL.md; null when no source resolved
 })
 
 export const CatalogSchema = z.object({

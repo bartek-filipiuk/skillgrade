@@ -1,0 +1,5 @@
+# Keep the freshly-installed node_modules from the pnpm install layer; never ship
+# the host copy (wrong arch, 150M+) which COPY . . would otherwise clobber it with.
+node_modules
+.git
+*.log

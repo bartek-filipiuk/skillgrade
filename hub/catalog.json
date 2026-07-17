@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T21:33:27.692Z",
+  "generatedAt": "2026-07-17T10:33:14.879Z",
   "rubricVersion": "0.1.2",
   "taxonomy": [
     {
@@ -96,11 +96,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
-      }
+      },
+      "skillMdHash": null
     },
     {
       "name": "self-improving-agent",
@@ -142,11 +143,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
-      }
+      },
+      "skillMdHash": "530bf35b297c5ec5e626c3bc6e123cf29e6029f2ffa8f3aad728c47bcf4dce59"
     },
     {
       "name": "skill-vetter",
@@ -188,11 +190,12 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
-      }
+      },
+      "skillMdHash": "e88e7e3b3435a0d094335825cc4aeb66ea9f7dfe34ed773df075dbebc65573d7"
     },
     {
       "name": "ontology",
@@ -234,11 +237,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
-      }
+      },
+      "skillMdHash": "6fd5f8ba525f021bdfb3f4e2ebc41973178507f89bcef5f255b31777f62d4dfd"
     },
     {
       "name": "mcp-builder",
@@ -284,7 +288,8 @@
       "evaluator": {
         "mode": "cli",
         "model": "google/gemini-2.5-flash"
-      }
+      },
+      "skillMdHash": null
     },
     {
       "name": "webapp-testing",
@@ -330,7 +335,8 @@
       "evaluator": {
         "mode": "cli",
         "model": "google/gemini-2.5-flash"
-      }
+      },
+      "skillMdHash": null
     },
     {
       "name": "pdf",
@@ -376,7 +382,8 @@
       "evaluator": {
         "mode": "cli",
         "model": "google/gemini-2.5-flash"
-      }
+      },
+      "skillMdHash": null
     },
     {
       "name": "skill-creator",
@@ -422,7 +429,8 @@
       "evaluator": {
         "mode": "cli",
         "model": "google/gemini-2.5-flash"
-      }
+      },
+      "skillMdHash": null
     },
     {
       "name": "humanizer",
@@ -459,11 +467,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
-      }
+      },
+      "skillMdHash": "2f55a24c995070257e31663f142ebf6e7b996018e323ef5ebc1bc16fd553b1f5"
     },
     {
       "name": "gog",
@@ -505,11 +514,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
-      }
+      },
+      "skillMdHash": "df2f5fb6b5e8acf2a55b1c9cefa5e973a92131984ac98952afcc6c101253c6ad"
     },
     {
       "name": "weather",
@@ -551,11 +561,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
-      }
+      },
+      "skillMdHash": "319c68c82f6b78fba5d8049ca868c84f8ea5786b076ddf9c94fcc70b1fd2168e"
     },
     {
       "name": "imap-smtp-email",
@@ -597,11 +608,12 @@
         "majorFlags": 9
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
-      }
+      },
+      "skillMdHash": "4453e8457895609dde54668633e77d0402783f33c589c5115f06ef41dba748d5"
     },
     {
       "name": "superdesign",
@@ -643,11 +655,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
-      }
+      },
+      "skillMdHash": "fcb75ff9da28c9db7f7b1b523b5f42e6d7c1e9dd57c8c7d9eef290261b2da327"
     },
     {
       "name": "self-improving",
@@ -689,11 +702,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "5ecbcccac455c3f0640ec03be203fdb2fb399df72d5d8302ce7c5e2612bcb560"
     },
     {
       "name": "proactive-agent",
@@ -735,11 +749,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "400e5a207fc2394533394143857a3b06d66665ea36f421e1df2146ed4a0f4c4c"
     },
     {
       "name": "multi-search-engine",
@@ -781,11 +796,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "0c9c53c8cd821d14bb1347ae4ae1fb71a86ef137b3f5351c3c042d59b6b92c33"
     },
     {
       "name": "github",
@@ -827,11 +843,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "a6b5ff0cb1b3ffb14258528cfd281078d97edb8d951407bcae6368cb36901c1a"
     },
     {
       "name": "free-ride",
@@ -873,11 +890,12 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "9e016001b79fa853526d489911416322c00144374d0746dee01e3ab9cc3cf5a7"
     },
     {
       "name": "agent-browser-clawdbot",
@@ -919,11 +937,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "d2f956b0cb09d1709dc122273c7d706b53ceee3badc954321cd766a0f17012ed"
     },
     {
       "name": "obsidian",
@@ -965,11 +984,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "bfe823802e5da5568de85caf79b5bbe1a02e4fa64165df0c6d402c5cc6d78146"
     },
     {
       "name": "auto-updater",
@@ -1011,11 +1031,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "7574a4b55f340976a11bba556adf11cfdbbc412e003c9baf4b8eb3dd87b38267"
     },
     {
       "name": "nano-banana-pro",
@@ -1052,11 +1073,12 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "7fd001a9539349b240241a74692b6cd1c7b1eeb804017a828a5179217787cdc3"
     },
     {
       "name": "api-gateway",
@@ -1098,11 +1120,12 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "5f43204129d6c7ff150e313a04d3679210f42bd48aa47ce7ff3d6e647d1a7a5f"
     },
     {
       "name": "desktop-control",
@@ -1144,11 +1167,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "f55221908a574432362ad4b9ae01ac84e9262b3e9f0b2b5e6eccd35575a8c30b"
     },
     {
       "name": "word-docx",
@@ -1190,11 +1214,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "4e0cfe937af727d739844630b8a2fd49174be2c04e6c90f09cf1afb6824c65a6"
     },
     {
       "name": "youtube-watcher",
@@ -1236,11 +1261,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "5d3af12878dff22e0160aee4f46cd3dc03bc60f15f4f7559aa816efb61700c19"
     },
     {
       "name": "openai-whisper",
@@ -1282,11 +1308,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "405674591e73bc06230134f49e519dac45d59690cf31d381f04930f9f6ad7343"
     },
     {
       "name": "skill-creator (@chindden)",
@@ -1328,11 +1355,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "79affa03d7b1c159bc2e72cd96b06b34ee78fc9ca18f69ea33dc6cec0ea604a3"
     },
     {
       "name": "automation-workflows",
@@ -1369,11 +1397,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "2fe78777a84ab5fd0709bc998e552f2199b1b18c34a8f623c8aade09b718071f"
     },
     {
       "name": "neosoul-decision-agent",
@@ -1415,11 +1444,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "51870865d39d399f44d6b8774cdea3834198f29a8ffdd29138f8472a08dc9cdc"
     },
     {
       "name": "clawddocs",
@@ -1461,11 +1491,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "b4bf81a3ff70730168dafd3ebea6a621e8b5ae363de26ad810883e98c5015da5"
     },
     {
       "name": "admapix",
@@ -1497,11 +1528,12 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "cb8deff858b5113706ee3806db21c2925a4c6fda491609443d35486cadda4987"
     },
     {
       "name": "excel-xlsx",
@@ -1543,11 +1575,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "c2c72948d82872051771bc424d593093af97d3880faf3360d4c9df3d94e362df"
     },
     {
       "name": "nano-pdf",
@@ -1584,11 +1617,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "38fe070e5c8cfbbbf0ed8822879b631820dd946bfa607ebf04255657786823ac"
     },
     {
       "name": "notion",
@@ -1630,11 +1664,12 @@
         "majorFlags": 4
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "7778dbe7dc4c8ac7a427b885d43800d702c804c97e0aa8d4024086168ce40e02"
     },
     {
       "name": "openclaw-tavily-search",
@@ -1676,11 +1711,12 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "bde091fe471d4b3ea6080f1cc5c09fc1d2e1129e305a6b5db672d85b5a50ea62"
     },
     {
       "name": "stock-analysis",
@@ -1722,11 +1758,12 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "491148425ca3834d8d3b535c61dbe5029f81e01dae5390fc7a0f3e6638b06305"
     },
     {
       "name": "clawdhub",
@@ -1768,11 +1805,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "2fc0c141cc6ccc5ee8fb0741f29441d7ff0742ceacc23bb6d888699d7cdca129"
     },
     {
       "name": "caldav-calendar",
@@ -1814,11 +1852,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "8eb33490f305ade37c689fb47b9ced42d43cc7acffe601d7ea51fd373f1e00cc"
     },
     {
       "name": "baidu-ai-map",
@@ -1850,11 +1889,12 @@
         "majorFlags": 18
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "812c15d0eae73649eda5ad663abf1dab6f0ef4d9e1bc5c62aea63010811ce528"
     },
     {
       "name": "elite-longterm-memory",
@@ -1896,11 +1936,12 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "0c462819a00df654537e9e6041a4d097e82dca98cf43613fdcd8e8f2b3e8daf3"
     },
     {
       "name": "baidu-search",
@@ -1942,11 +1983,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "a47dd5d760c31b95d955bc9aea684b4e7daee9c72370b98336489649275aa950"
     },
     {
       "name": "mcporter",
@@ -1983,11 +2025,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "bd86c374c990a2f621f760952a8ff2868403bba5c2e85eb29a4bb39ab6b7f06d"
     },
     {
       "name": "brave-search",
@@ -2029,11 +2072,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "e51683d6403e56c09dab59ba5c80c2060c5cb090507c2df60eb2c4ca2ce87df1"
     },
     {
       "name": "markdown-converter",
@@ -2075,11 +2119,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "bb3655d76c2f0d4a16547eefa6842a7bd3eb0bee199731d496b8cac8ab622a11"
     },
     {
       "name": "answeroverflow",
@@ -2116,11 +2161,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "6afeecd246ec4a9b11fff0fa100c0e158b41095a39d21bd4c1b3de44ddfaa064"
     },
     {
       "name": "ui-ux-pro-max",
@@ -2162,11 +2208,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "b48dacd5b21da535717151e48393b42d87ddf0ccc198f5e7c65cf8277113b4ca"
     },
     {
       "name": "marketing-mode",
@@ -2208,11 +2255,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "d06ce60ce384ecde40d279db33bbcbf1c7c3a4f3cd97e9c69f006a5b4a65b791"
     },
     {
       "name": "trello",
@@ -2254,11 +2302,12 @@
         "majorFlags": 12
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "6442c4fe2ea256275879303b2e3577d9c5c4c985bfe9c38205290dea231bcac1"
     },
     {
       "name": "ecomseer",
@@ -2295,11 +2344,12 @@
         "majorFlags": 6
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "2747f3d9eeb5b851ad7e8df941476d2557c87aee85699252ee8e7237223adfd1"
     },
     {
       "name": "slack",
@@ -2341,11 +2391,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "cd638bdcecb27dba32227f449a8ca75ad52c4614caf9d43788e85d38904a5e43"
     },
     {
       "name": "n8n-workflow-automation",
@@ -2377,11 +2428,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "d101b2f02a06d048660d3d9dee0d2e484ac851a2b2b08df7857943544ecfe69c"
     },
     {
       "name": "playwright-mcp",
@@ -2423,11 +2475,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "87116d2655144ae4d1cac7d21d4985a52ad6d241d9137225d58c316d42f68e9c"
     },
     {
       "name": "stock-market-pro",
@@ -2469,11 +2522,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "115a356e2fd93deb3c74c57e1795cad5c384d9e2379ce4e2b14792f35e8721dc"
     },
     {
       "name": "powerpoint-pptx",
@@ -2515,11 +2569,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "914e1c5e94be0dab8d1ac89958fb59743f51cb3a498db96212e36d7b2a1be705"
     },
     {
       "name": "youtube-api-skill",
@@ -2561,11 +2616,12 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "dc9d7021fc6aa5a2e5833f7daf01890730705130658eff7ad183500c20efe49a"
     },
     {
       "name": "larry",
@@ -2607,11 +2663,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "17a835c9feb4390fb8b75e666a97a23bd64ce5be323607147dd5df84bf565ff7"
     },
     {
       "name": "find-skills-skill",
@@ -2653,11 +2710,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "6a456ab419a1dafd427fb88bc7cebcc9bedb238a7e5ba6f1325145ada14b195a"
     },
     {
       "name": "tickdb-market-data",
@@ -2699,11 +2757,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "6a0a9e6d8eefa68cce328ab47e78b323941d44209064923ae3a4f99ed49489e4"
     },
     {
       "name": "x-search",
@@ -2745,11 +2804,12 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "a7cf9bd27b9212bd07cab4010cec47838986eb3feb1489aa5b81c0f3bd314bb3"
     },
     {
       "name": "news-summary",
@@ -2791,11 +2851,12 @@
         "majorFlags": 2
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "a1edf397ea0c5eb2fa3922f360239b15694407a383499f16124d5546b9274f38"
     },
     {
       "name": "video-frames",
@@ -2837,11 +2898,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "595238d3d236eba4bf7e0c579a25c53fd9782722cd3f6337a8e5a57d361cd2e5"
     },
     {
       "name": "skill-finder-cn",
@@ -2883,11 +2945,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "556a8402b6774477faf79325f60634d112c2e013dccc313fbc76529e94c545a1"
     },
     {
       "name": "memory-setup",
@@ -2929,11 +2992,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "deed62c25eed578105da181860d691309eebf399bcb011a0a89e22eb343fbce1"
     },
     {
       "name": "playwright",
@@ -2975,11 +3039,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "167eea00860224f0b136e42dd827112356262441e709683ee8e22b2d063c5ca3"
     },
     {
       "name": "shop",
@@ -3016,11 +3081,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "3f86d1a7ffc349d8e7c7dbc0af2d233e8974848cc270e2aaf2b1fb28787e0092"
     },
     {
       "name": "edgeone-clawscan",
@@ -3062,11 +3128,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "46f8ec2507c2de55464e562b327494b5cfae8a50514d74df775627641ba9bf22"
     },
     {
       "name": "data-analysis",
@@ -3098,11 +3165,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "b7e2f71dc755087412d2ef65ffb60d72cd09f56dd52364ac53666118daa0f1f0"
     },
     {
       "name": "skill-compass",
@@ -3144,11 +3212,12 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "b015c34d790cc97ff2a836d68c1798a4e4233f4fdcfa3377d6dd34e374726125"
     },
     {
       "name": "meitu-skills",
@@ -3190,11 +3259,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "4ef8c2e3da2883c4fafe636303e811c02deb6408295b88c68a44c51505a1b796"
     },
     {
       "name": "liang-tavily-search",
@@ -3236,11 +3306,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "66c9539968a23300fb4f9591914b9f5a2df61cd665d036ddb9d69af16aeeeb12"
     },
     {
       "name": "moltguard",
@@ -3282,11 +3353,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "54e0045b4172f0fd83405cf365211ba9dd6bf348476f95f8faa11325b70f522a"
     },
     {
       "name": "byterover",
@@ -3328,11 +3400,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "adaea2d97d6749030a25f489b432b5c356e64274292372d35a41942ebbda37f2"
     },
     {
       "name": "marketing-skills",
@@ -3374,11 +3447,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "8f4415f9f8e29b5093416d14559c857779668b3d4f6047766e4e7e38359723e2"
     },
     {
       "name": "china-marketing-copilot",
@@ -3410,11 +3484,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "dc2783a1b4e0b603c810971e999fd0b012d5886f966005d5f91093547da222c9"
     },
     {
       "name": "model-usage",
@@ -3456,11 +3531,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "b269d818f8ad4f6a6fdff4b36aeb99db4e855bdcae4675d07e15b25f4dc3c14b"
     },
     {
       "name": "browser-use",
@@ -3502,11 +3578,12 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "e3a373fb95ac55cd76a8170c3885e4f756ff3159c2a5ab4757271f4f3a994af4"
     },
     {
       "name": "minara",
@@ -3548,11 +3625,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "fb5bf5257a585c1392f6385ed68536722d4a9a97c3be4ee2eb06458a2b11023a"
     },
     {
       "name": "qmd",
@@ -3594,11 +3672,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "e5874bde0159c64465f1d6ad8010b08e1b6ca91e96c45b784c4951585ebfc296"
     },
     {
       "name": "pdf-editor-compdf",
@@ -3640,11 +3719,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "93942f8609bf0bc22d7f327bc42a6e8356a94772aa62fad10a14fc8601976dc0"
     },
     {
       "name": "mx-stocks-screener",
@@ -3686,11 +3766,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "e138343f46be0d253a5d289548354207f87c50d765ce3955743cabb7bc05ad9e"
     },
     {
       "name": "markdown-converter-compdf",
@@ -3732,11 +3813,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "75698aaaea2a8cb449d4dca9a81cfe17b7630793b6a573e6ead92042594dc9a5"
     },
     {
       "name": "compdf-conversion-cli",
@@ -3778,11 +3860,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "c11e43c56aa102b6a743a092878f623f23b8b0993a2e6fdda474ddbd8452b0ca"
     },
     {
       "name": "web-search-plus",
@@ -3819,11 +3902,12 @@
         "majorFlags": 2
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "a0f5e7c148e6f077d92e59f5f366f43990bd1bab25d723101d26e37b90d87f77"
     },
     {
       "name": "extract-pdf-compdf",
@@ -3865,11 +3949,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "967e8e0f5986e591fe9543cbe5abef88d31a105f906fbdae8ef44568a8536c2b"
     },
     {
       "name": "akshare-stock",
@@ -3911,11 +3996,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "62d4b7bc934b0519496b800b44ec024c6f0aaa25112b9cffb2db74c91f7fb7d0"
     },
     {
       "name": "pdf-to-word-docx",
@@ -3957,11 +4043,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "b5d8fd0cb4c3aab60ac8f6afc0f8d8a84eb88eb09d2b9f944fff999398230297"
     },
     {
       "name": "market-research",
@@ -4003,11 +4090,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "87db8df64b525eb4b4f38dc5a5cda9c7fbb5e23d084463465b066ce4c5b4f795"
     },
     {
       "name": "pdf-convert-compdf",
@@ -4049,11 +4137,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "268042d3111ea95f9d3b8bbae411a8492ea07ea451ed78e357108517c72a14c0"
     },
     {
       "name": "pdf-tools-compdf",
@@ -4095,11 +4184,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "7df0df9ef3713d8a5503d2113168978bdd6b4fcd86feda4e6dfbbaa02e95a87a"
     },
     {
       "name": "capability-evolver",
@@ -4141,11 +4231,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "45cd928269b6a27e5115f5aec2854818a2dd615e867d73138f79218875b26ac5"
     },
     {
       "name": "ai-persona-os",
@@ -4187,11 +4278,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "2701523182cd134b952332fe8d92a350113ab1379049d6437358d93c5006c943"
     },
     {
       "name": "memory-manager",
@@ -4233,11 +4325,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "37776c3624d9c6fb1fa96ac042aab26b4badf38e537b9c45bae78caf603cf4f0"
     },
     {
       "name": "prompt-engineering-expert",
@@ -4279,11 +4372,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "3722fffad97704376b26572614f5bb2ab7b7327c69884c2a3487defbf73daa83"
     },
     {
       "name": "openclaw-backup",
@@ -4325,11 +4419,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "838c8b3a87ae16b75317f6d6dcce442130b176ffbca5d2a023aaf54b299226c3"
     },
     {
       "name": "deep-research-pro",
@@ -4371,11 +4466,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "63e401cd1e5f0af60aa21ae8ed703e95836bbcff2d11537ee4f2a1655cb1d5f0"
     },
     {
       "name": "video-transcript-downloader",
@@ -4417,11 +4513,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "4c983c37be8ddd649195e34519f2814eefc526de930844d5d4d1a18cbb9cbb84"
     },
     {
       "name": "stock-watcher",
@@ -4463,11 +4560,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "4d7b3616d674e7f11a79b6f491a06108f2ffcc0d7f107c4d6107f056eac494a6"
     },
     {
       "name": "ppt-generator",
@@ -4509,11 +4607,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "dc4df63ee038a3bab52a43db66a3df98fc58cbf5516b2a5dd71323775fb28aa5"
     },
     {
       "name": "peekaboo",
@@ -4555,11 +4654,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "7a92a22023c8930ad006d04015a3ae146c63b71cd0471ba4be0802962fbb381f"
     },
     {
       "name": "agent-team-orchestration",
@@ -4591,11 +4691,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "d7ceef5c16bc9e2068f12ed87a04d9fe4bc4e66e54c2b84f72dc5c9b0650dbb4"
     },
     {
       "name": "discord",
@@ -4637,11 +4738,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "23e1851e8dd122340d2d2b6e917783c0f3430c8cadc86e6c1fddd81de35be7bb"
     },
     {
       "name": "command-center",
@@ -4683,11 +4785,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "d286fbc83e21fe824a3bcf4b279b4d72edd89748d084abfc83a4d2785f222f91"
     },
     {
       "name": "remotion-video-toolkit",
@@ -4729,11 +4832,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "61b821a39857e1d389097836dfa07b5cafd8a4c53c9b93a299727863c897f650"
     },
     {
       "name": "opencode-controller",
@@ -4775,11 +4879,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "90c222564e7b274dfbad6071745ab1e0cb4a7b059be8c109a814f6c0d595e84f"
     },
     {
       "name": "clawdbot-filesystem",
@@ -4821,11 +4926,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "c36367f5492e8eec4c6e0d4a977a714786f72611f8d8ddd693aa0eaef2b07149"
     },
     {
       "name": "a-stock-analysis",
@@ -4867,11 +4973,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "a80711f5031fc698c98181af8dcffd23de6d8790c741019cabb0954b76f5dc96"
     },
     {
       "name": "gmail",
@@ -4903,11 +5010,12 @@
         "majorFlags": 2
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "f98f515396692443982188558ec1f7add1e6fc48838a6d95941bc7e1f2bef3dd"
     },
     {
       "name": "mx-finance-data",
@@ -4949,11 +5057,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "8dc00a17a57b596175fd7fb537901bd638567c0c9f4fb822bf6904344fdd69cf"
     },
     {
       "name": "blogwatcher",
@@ -4995,11 +5104,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "282d7e75a23ef9fa23f4b0d76087e180f32b573296677c8b05fcd3155241cf39"
     },
     {
       "name": "raccoon-data-analysis",
@@ -5041,11 +5151,12 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "2660d3f2a776f0a67091a3f5fae22d3788a40d49526cd565a14b4ca9e111932f"
     },
     {
       "name": "novel-generator",
@@ -5087,11 +5198,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "beab8e479882b5ea23650def750ebcafc55063418912baa119ac72054d16c0e4"
     },
     {
       "name": "agent-autonomy-kit",
@@ -5133,11 +5245,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "9aa7c7180b390aada5b12398dd455f4ebb100a5a1830e7fe63aaef613bb33894"
     },
     {
       "name": "skill-usefulness-audit",
@@ -5174,11 +5287,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "8b691e5d2f1e43cc499c15f05cc5c5a366e7a577178cf2d3b637fe2fe9f9940b"
     },
     {
       "name": "ai-business-search",
@@ -5220,11 +5334,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "6eb043ad41f715abc7d745795d0dfcc653bcc40d353a72e2ce12f253312fabbe"
     },
     {
       "name": "stock-monitor-skill",
@@ -5266,11 +5381,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "0465392cd96f01a8591074104b17b039dab285ae40fc723e255551407284d60a"
     },
     {
       "name": "productivity",
@@ -5307,11 +5423,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "47eca4104e244e1b6f7cc34bbc82841347734bf2ef72da815561abb86454263e"
     },
     {
       "name": "himalaya",
@@ -5353,11 +5470,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "17d1372853fd9440f481cbcd22bfca17676d5db2c69e13129c3f9d38a79b9f61"
     },
     {
       "name": "exa-web-search-free",
@@ -5399,11 +5517,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "4548f68ca78d5b4145f4980c263064f803ad68c0db40e48532f1672f015fa1e3"
     },
     {
       "name": "mx-macro-data",
@@ -5445,11 +5564,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "2a86e1520737b927ba488f81ace80420f894abc7ebf64df46a563dc5f4843497"
     },
     {
       "name": "getnote",
@@ -5491,11 +5611,12 @@
         "majorFlags": 2
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "e7352d128d41eb60e7fa5611aca81d0c273842e820c1d998b20931df54b83397"
     },
     {
       "name": "data-analysis-for-feishu",
@@ -5537,11 +5658,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "3e9d298296ee725fe348e1df988c6df0be6cf097e1620d7654a4ac4caa867e16"
     },
     {
       "name": "get-to-know-you",
@@ -5583,11 +5705,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "68267937c345eb08f31efbbf4a1de8df10d96b58aa3729caf33017feffbc5be2"
     },
     {
       "name": "agentmail",
@@ -5629,11 +5752,12 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "c6b8627e5dfa2d7f39774bc86020473b04f3e667d14c90cbb36d1256aaad27ff"
     },
     {
       "name": "browser-automation",
@@ -5675,11 +5799,12 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-16T21:33:27.692Z",
+      "evaluatedAt": "2026-07-17T10:33:14.879Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
-      }
+      },
+      "skillMdHash": "822d3c0dfe32b8919bffa811141ed92b20967960917efa99759247a306a3da41"
     }
   ]
 }

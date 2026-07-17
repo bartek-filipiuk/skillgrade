@@ -32,6 +32,7 @@ interface EvalInput {
   preCheck?: CatalogEntry['preCheck'] // pre-supplied facts; else runPreChecks(e.source)
   featured?: boolean
   featuredOrder?: number
+  skillMdHash?: string | null // normalized SKILL.md hash; carried from evaluations.json
 }
 
 function buildEntry(e: EvalInput, evaluatedAt: string): CatalogEntry {
@@ -56,6 +57,7 @@ function buildEntry(e: EvalInput, evaluatedAt: string): CatalogEntry {
     rubricVersion: RUBRIC_VERSION,
     evaluatedAt: e.evaluatedAt ?? evaluatedAt,
     evaluator: e.evaluator ?? EVALUATOR,
+    skillMdHash: e.skillMdHash ?? null,
   }
 }
 
