@@ -3,5 +3,5 @@
     "target": "ES2022", "module": "NodeNext", "moduleResolution": "NodeNext",
     "strict": true, "noEmit": true, "skipLibCheck": true, "types": ["node"]
   },
-  "include": ["src", "test", "checks", "hub", "scripts"]
+  "include": ["src", "test", "checks", "hub", "scripts", "account", "drizzle.config.ts"]
 }
