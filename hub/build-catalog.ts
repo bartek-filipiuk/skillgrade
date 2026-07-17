@@ -99,10 +99,17 @@ export function toShards(catalog: Catalog): Record<string, CatalogEntry> {
 }
 
 function renderPreview(catalog: Catalog, template: string): string {
-  // Escape '<' so a skill name/tagline containing "</script>" can't break out of
-  // the <script type="application/json"> block it's injected into.
-  const json = JSON.stringify(catalog).replace(/</g, '\\u003c')
-  return template.replace('/*CATALOG_JSON*/', json)
+  // The page no longer inlines the per-skill catalog (it fetches catalog-index.json
+  // + skills/<slug>.json). Only O(1) metadata is inlined so nav/footer/chips render
+  // without a round-trip. Escape '<' so no value can break out of the JSON <script>.
+  const meta = {
+    generatedAt: catalog.generatedAt,
+    rubricVersion: catalog.rubricVersion,
+    evaluator: catalog.skills[0]?.evaluator ?? EVALUATOR,
+    taxonomy: catalog.taxonomy,
+  }
+  const json = JSON.stringify(meta).replace(/</g, '\\u003c')
+  return template.replace('/*CATALOG_META_JSON*/', json)
 }
 
 // CLI entrypoint (skipped when imported by tests)
