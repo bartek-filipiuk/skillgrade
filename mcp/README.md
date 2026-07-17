@@ -55,6 +55,33 @@ Batch `lookup_skill` over an installed skill set. Returns:
 Substring match on skill name. Returns hits of `{name, overall, category, reportUrl}`.
 No hash needed — this is discovery, not verification.
 
+### `grade_skill({ content })` — paid fresh grade
+Grade a `SKILL.md` that isn't in the catalog yet. Unlike the lookup tools, this one
+**does** receive the skill content — but only in memory, for the duration of the
+grade. **Content is never stored.**
+
+- **Auth:** requires an API token from the account dashboard
+  (<https://account.skillgrade.dev>), passed as `Authorization: Bearer <token>`
+  (preferred) or the `token` arg. Missing/invalid token → `{ error: 'invalid-token' }`.
+- **Free catalog short-circuit:** the content is hashed locally; if that hash is
+  already in the graded catalog the stored grade is returned for **free** —
+  `{ charged: false, source: 'catalog', overall, badges, name, reportUrl }`. No token
+  charge, no LLM call.
+- **Paid path:** a novel skill charges **one credit**, then grades in memory →
+  `{ charged: true, remaining, overall, badges, findings, skillMdHash }`. If grading
+  throws, the credit is **refunded** and you get `{ error: 'grade-failed' }`.
+- Content over the size cap → `{ error: 'too-large', maxBytes }`; no credits → `{ error: 'no-credits' }`.
+
+## Environment (paid path)
+
+The read-only lookup tools need no env beyond `PORT`. `grade_skill` adds:
+
+| var | purpose |
+|---|---|
+| `INTERNAL_URL` | Account service origin (e.g. `https://account.skillgrade.dev`) for charge/refund. |
+| `INTERNAL_SECRET` | Shared secret sent as `x-internal-secret`; must match the Account service's `INTERNAL_SECRET`. |
+| `OPENROUTER_API_KEY` | Key for the grader model (`openrouter:google/gemini-2.5-flash`). |
+
 ### The four result statuses
 | status | meaning |
 |---|---|
@@ -98,7 +125,10 @@ line-ending normalization (step 2), is left intact.
   the agent hashes `SKILL.md` locally and sends the digest.
 - The server **executes nothing** and **fetches no user-supplied URL**. It only reads
   its own in-image catalog and returns JSON.
-- No auth, no LLM, no content submission. It's a read-only lookup over graded data.
+- The lookup tools (`lookup_skill`, `audit_skills`, `search`) are read-only over
+  graded data: no auth, no LLM, no content submission. The paid `grade_skill` tool
+  is the one exception — it takes a bearer token and grades submitted content **in
+  memory only** (never stored, never persisted after the response).
 
 ## Coolify deploy
 
