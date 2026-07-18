@@ -12,6 +12,9 @@
      runtime-free page wired to catalog.json. All skill-derived strings are
      escaped before insertion — a trust hub must not be XSS-able by a listed skill. */
   html,body{margin:0;padding:0;background:#171614;color:#ece7dc;font-family:'Instrument Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  /* Kill any residual sub-pixel horizontal scroll without breaking the sticky
+     header (overflow:hidden would; overflow-x:clip does not create a scroll container). */
+  html{overflow-x:clip}
   *{box-sizing:border-box}
   a{color:#ece7dc;text-decoration:none}
   a:hover{color:oklch(0.8 0.11 155)}
