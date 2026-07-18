@@ -46,186 +46,6 @@
     "skillMdHash": null
   },
   {
-    "name": "mcp-builder",
-    "source": "anthropics/skills · skills/mcp-builder",
-    "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/mcp-builder",
-    "kind": "skill",
-    "category": "build",
-    "tagline": "Official Anthropic skill for scaffolding MCP servers — protocol setup, tools, resources, and testing.",
-    "badges": {
-      "security": "A",
-      "quality": "A",
-      "hygiene": "A",
-      "effectiveness": "not-evaluated"
-    },
-    "highlights": [
-      {
-        "check": "H08",
-        "status": "fail",
-        "summary": "No versioning signal (version field or changelog) in frontmatter or body."
-      },
-      {
-        "check": "S12",
-        "status": "warning",
-        "summary": "The `mcp` package is pinned to a minimum version (>=1.1.0) rather than an exact version — minor supply-chain looseness."
-      },
-      {
-        "check": "S06",
-        "status": "pass",
-        "summary": "No attempt to steer the evaluator; instructions serve the skill's task only."
-      }
-    ],
-    "preCheck": {
-      "frontmatterValid": true,
-      "fileCount": 10,
-      "skillMdBytes": 9092,
-      "criticalFlags": 0,
-      "majorFlags": 0
-    },
-    "evaluator": {
-      "mode": "cli",
-      "model": "google/gemini-2.5-flash"
-    },
-    "evaluatedAt": "2026-07-16T10:05:12.802Z",
-    "verdict": "Well-built: no attempt to steer or game an evaluator, instructions stay on-task. Only real gaps are hygiene — the mcp package dependency is pinned to a minimum version rather than exact, and there's no version field or changelog to track changes.",
-    "skillMdHash": null
-  },
-  {
-    "name": "webapp-testing",
-    "source": "anthropics/skills · skills/webapp-testing",
-    "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/webapp-testing",
-    "kind": "skill",
-    "category": "workflow",
-    "tagline": "Official Anthropic skill for driving and testing web apps in a headless browser.",
-    "badges": {
-      "security": "A",
-      "quality": "C",
-      "hygiene": "A",
-      "effectiveness": "not-evaluated"
-    },
-    "highlights": [
-      {
-        "check": "Q05",
-        "status": "fail",
-        "summary": "Describes its capabilities but does not define a final deliverable format or location."
-      },
-      {
-        "check": "Q02",
-        "status": "fail",
-        "summary": "The description and body never say when NOT to use the skill — no negative triggers."
-      },
-      {
-        "check": "H08",
-        "status": "fail",
-        "summary": "No version field, changelog, or dated revision notes."
-      }
-    ],
-    "preCheck": {
-      "frontmatterValid": true,
-      "fileCount": 6,
-      "skillMdBytes": 3913,
-      "criticalFlags": 0,
-      "majorFlags": 0
-    },
-    "evaluator": {
-      "mode": "cli",
-      "model": "google/gemini-2.5-flash"
-    },
-    "evaluatedAt": "2026-07-16T10:05:21.825Z",
-    "verdict": "Mixed bag. It never says when NOT to use it and never defines what the final output should look like or where it goes, leaving results ambiguous. On the plus side, its security footprint is clean with no network or destructive risk.",
-    "skillMdHash": null
-  },
-  {
-    "name": "pdf",
-    "source": "anthropics/skills · skills/pdf",
-    "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/pdf",
-    "kind": "skill",
-    "category": "content",
-    "tagline": "Official Anthropic production skill for reading, filling, and manipulating PDF files.",
-    "badges": {
-      "security": "A",
-      "quality": "D",
-      "hygiene": "C",
-      "effectiveness": "not-evaluated"
-    },
-    "highlights": [
-      {
-        "check": "Q05",
-        "status": "fail",
-        "summary": "Describes many operations but defines no final deliverable format or location for any of them."
-      },
-      {
-        "check": "Q02",
-        "status": "fail",
-        "summary": "The description is very broad and does not specify when NOT to use the skill."
-      },
-      {
-        "check": "H02",
-        "status": "fail",
-        "summary": "The name 'pdf' does not match the directory name 'pdf-processing' the skill ships under."
-      }
-    ],
-    "preCheck": {
-      "frontmatterValid": true,
-      "fileCount": 12,
-      "skillMdBytes": 8072,
-      "criticalFlags": 0,
-      "majorFlags": 0
-    },
-    "evaluator": {
-      "mode": "cli",
-      "model": "google/gemini-2.5-flash"
-    },
-    "evaluatedAt": "2026-07-16T10:04:56.180Z",
-    "verdict": "No scope boundaries at all: the description is broad with no 'don't use this for' guidance, so it can hijack unrelated tasks. It also never defines a deliverable format or output location for any of its operations, and its name doesn't even match its own directory.",
-    "skillMdHash": null
-  },
-  {
-    "name": "skill-creator",
-    "source": "anthropics/skills · skills/skill-creator",
-    "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/skill-creator",
-    "kind": "skill",
-    "category": "meta",
-    "tagline": "Official Anthropic skill for authoring new skills — scaffolding, structure, and evaluation guidance.",
-    "badges": {
-      "security": "A",
-      "quality": "D",
-      "hygiene": "B",
-      "effectiveness": "not-evaluated"
-    },
-    "highlights": [
-      {
-        "check": "Q02",
-        "status": "fail",
-        "summary": "No 'NOT for' / exclusion / out-of-scope language anywhere in description or body."
-      },
-      {
-        "check": "H08",
-        "status": "fail",
-        "summary": "No version field, changelog section, or dated revision notes anywhere in the file."
-      },
-      {
-        "check": "Q06",
-        "status": "warning",
-        "summary": "Packaging failure is addressed, but the equally risky init_skill.py step (Step 3) has no stated failure handling."
-      }
-    ],
-    "preCheck": {
-      "frontmatterValid": true,
-      "fileCount": 18,
-      "skillMdBytes": 33168,
-      "criticalFlags": 0,
-      "majorFlags": 57
-    },
-    "evaluator": {
-      "mode": "cli",
-      "model": "google/gemini-2.5-flash"
-    },
-    "evaluatedAt": "2026-07-16T10:05:38.981Z",
-    "verdict": "Contradicts itself on a key rule — it forbids using /skill-test in one place, then tells you to skip evaluation elsewhere, so which instruction wins is unclear. Several other steps lean on vague judgment calls ('different metaphors') with no way to check if you did it right.",
-    "skillMdHash": null
-  },
-  {
     "name": "self-improving-agent",
     "source": "ClawHub · @pskoett/self-improving-agent · 3.9k★",
     "sourceUrl": "https://clawhub.ai/pskoett/skills/self-improving-agent",
@@ -9858,54 +9678,6 @@
     "skillMdHash": "98bf9d0e5adb863c93030305f30034196d5546476423cd2af47e5bc4a1d8ce41"
   },
   {
-    "name": "docx",
-    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
-    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/docx/SKILL.md",
-    "kind": "skill",
-    "category": "content",
-    "tagline": "Guides Claude to build, edit, and analyze Word .docx files via docx-js and XML unpack/edit/pack scripts, including tracked changes.",
-    "verdict": "Solid, safe skill: clear use/don't-use triggers, deterministic docx-js and XML guidance, plus validation/auto-repair steps. No secret access, network exfiltration, or destructive ops. Minor issues: file runs 592 lines (over the ~500 budget), `npm install -g docx` is unpinned (supply-chain drift risk), and repeated unpack/edit/pack runs have no guidance again",
-    "badges": {
-      "effectiveness": "not-evaluated",
-      "security": "A",
-      "quality": "A",
-      "hygiene": "A"
-    },
-    "highlights": [
-      {
-        "check": "S12",
-        "status": "warning",
-        "summary": "Line 59: `npm install -g docx` installs the third-party npm package globally with no version pin, so behavior can silently drift on new releases (supply-chain risk, though the package itself is a well"
-      },
-      {
-        "check": "Q10",
-        "status": "warning",
-        "summary": "No guidance on ID collisions (w:id for w:ins/w:del, comment ids) or repeatability if unpack→edit→pack is run multiple times against the same document; re-running edits could produce duplicate revision"
-      },
-      {
-        "check": "H05",
-        "status": "warning",
-        "summary": "File is 592 lines, moderately over the ~500-line budget, though content density (docx-js API + XML schema reference) partly justifies the length."
-      }
-    ],
-    "evaluator": {
-      "mode": "claude-code-native",
-      "model": "claude-sonnet-5"
-    },
-    "evaluatedAt": "2026-07-17T19:03:37.015Z",
-    "preCheck": {
-      "frontmatterValid": true,
-      "fileCount": 1,
-      "skillMdBytes": 20085,
-      "criticalFlags": 0,
-      "majorFlags": 0
-    },
-    "popularity": 31080,
-    "mirrors": [],
-    "discoveredVia": "github",
-    "skillMdHash": "73eaac70a6c6dbdcde3ffc0d2d56daf094870dd9c1c3169ab4715edda9f0738c"
-  },
-  {
     "name": "esm",
     "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
     "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/esm/SKILL.md",
@@ -12768,49 +12540,6 @@
     "skillMdHash": "da9f38f70975f182b83290aed5f50023b1cac5db0fe327784fa48325695fda16"
   },
   {
-    "name": "pptx",
-    "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
-    "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pptx/SKILL.md",
-    "kind": "skill",
-    "category": "content",
-    "tagline": "Reads, edits, and creates .pptx decks (markitdown/pptxgenjs/LibreOffice) with design guidance and mandatory image-based QA.",
-    "verdict": "Clean local-tooling skill: no secret access, no network egress, no shell-piped remote code, no hidden instructions. All commands are local file conversions using well-known packages (markitdown, pptxgenjs, LibreOffice, Poppler) from standard registries. The only real gap for an installer is that editing.md, pptxgenjs.md, and scripts/office/{unpack,soffice}.p",
-    "badges": {
-      "effectiveness": "not-evaluated",
-      "security": "A",
-      "quality": "A",
-      "hygiene": "A"
-    },
-    "highlights": [
-      {
-        "check": "S12",
-        "status": "warning",
-        "summary": "Skill executes bundled scripts (scripts/office/unpack.py, scripts/office/soffice.py, scripts/thumbnail.py, lines 27/30/213) and links out to editing.md/pptxgenjs.md that were not fetched in this SKILL"
-      },
-      {
-        "check": "Q02",
-        "status": "warning",
-        "summary": "No explicit 'do not use this skill for X' guidance is given anywhere in the file; scope is only defined positively."
-      }
-    ],
-    "evaluator": {
-      "mode": "claude-code-native",
-      "model": "claude-sonnet-5"
-    },
-    "evaluatedAt": "2026-07-17T19:57:23.151Z",
-    "preCheck": {
-      "frontmatterValid": true,
-      "fileCount": 1,
-      "skillMdBytes": 9157,
-      "criticalFlags": 0,
-      "majorFlags": 0
-    },
-    "popularity": 31080,
-    "mirrors": [],
-    "discoveredVia": "github",
-    "skillMdHash": "2a330c9ef520d14c05b39fe382c132b1bdf284876ab34cb49f4aeb316f3cd28c"
-  },
-  {
     "name": "pydeseq2",
     "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31080★",
     "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pydeseq2/SKILL.md",
@@ -13581,5 +13310,806 @@
     "mirrors": [],
     "discoveredVia": "github",
     "skillMdHash": "b79eaf95e067781edd71eaf698a9b3a0f32911f08ad1492816a9c7a1aa1fdde5"
+  },
+  {
+    "name": "algorithmic-art",
+    "source": "GitHub · anthropics/skills · 162254★",
+    "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/algorithmic-art/SKILL.md",
+    "kind": "skill",
+    "category": "media",
+    "tagline": "Generates a self-contained p5.js generative-art HTML artifact plus a philosophy write-up, from a fixed branded template, using seeded.",
+    "verdict": "Well-scoped p5.js art generator: clear triggers, concrete steps, template externalization, pinned CDN dependency, reproducible seeding. Weaknesses: contradicts itself on whether standalone .js files are produced, gives zero guidance for a missing template or failed CDN load, has no version/changelog signal, states no exclusions despite overlapping creative.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "S11",
+        "status": "warning",
+        "summary": "Line 97: agent must embed a reference 'without announcing itself' into the art - undisclosed in the description, in tension with its anti-copying clause."
+      },
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' or exclusion text anywhere, despite overlap with other creative skills (canvas-design, frontend-design) in the same catalog."
+      },
+      {
+        "check": "Q03",
+        "status": "fail",
+        "summary": "Line 7 lists '.js files (generative algorithms)' as an output, but line 399 says 'don't create separate .js files' - embed inline instead."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T11:17:15.359Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 19735,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 162254,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "3bc4092c09804853186524c826bc0621b940bb6122c05b84496dff95388e6eef"
+  },
+  {
+    "name": "brand-guidelines",
+    "source": "GitHub · anthropics/skills · 162254★",
+    "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/brand-guidelines/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Applies Anthropic's official brand colors and Poppins/Lora typography (with Arial/Georgia fallback) to any artifact being produced.",
+    "verdict": "Clean, minimal reference doc: fixed hex brand colors, named fonts, and explicit font fallback rules; no shell commands, network calls, or secrets so most security checks are not applicable. Weak spots: no 'NOT for' scope guidance despite a broad description, 'smart color selection based on background' is left undefined (non-deterministic across agents), and.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' or exclusion language anywhere; description says 'any sort of artifact' with no guidance on when not to apply it."
+      },
+      {
+        "check": "Q04",
+        "status": "warning",
+        "summary": "\"Smart color selection based on background\" (line 51) names no rule (contrast/luminance) for how the choice is actually made."
+      },
+      {
+        "check": "Q08",
+        "status": "warning",
+        "summary": "\"Smart color selection based on background\" (line 51) is an undecidable fork — two agents could pick different colors on the same input."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T11:17:15.359Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 2235,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 162254,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "0ef5365ce4ee2233acfb6c6fc0c3227a6944a44f8889400f5e1300611bcfb940"
+  },
+  {
+    "name": "canvas-design",
+    "source": "GitHub · anthropics/skills · 162254★",
+    "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/canvas-design/SKILL.md",
+    "kind": "skill",
+    "category": "media",
+    "tagline": "Writes a design-philosophy manifesto, then renders it as an original poster/art PDF or PNG using local or downloaded fonts.",
+    "verdict": "Safe, compact creative skill with clear triggers and a concrete deliverable (philosophy .md + .pdf/.png). No negative-trigger scoping, no declared rendering toolchain, and no failure handling for the font-download step or canvas generation — a broken run has no documented recovery. No version/changelog signal either.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' / out-of-scope language anywhere in description or body despite adjacent skills (documents, general image gen) being plausible misfires."
+      },
+      {
+        "check": "Q04",
+        "status": "warning",
+        "summary": "Font sourcing at a load-bearing step names no source, tool, or selection criteria; local ./canvas-fonts search nearby is concrete, this fallback is not."
+      },
+      {
+        "check": "Q06",
+        "status": "fail",
+        "summary": "No mention anywhere of what to do if font download fails, canvas-fonts is empty, or PDF/PNG generation errors out."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T11:17:15.359Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 11937,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 162254,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "a1f288079624402f30682753c1d43920b6664785698d21d3e7aa197450a6448b"
+  },
+  {
+    "name": "claude-api",
+    "source": "GitHub · anthropics/skills · 162254★",
+    "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/claude-api/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Reference for the Claude/Anthropic API: model IDs, pricing, auth, streaming, tool use, MCP, caching, and model migration guidance.",
+    "verdict": "Extremely thorough, internally consistent Claude API reference with strong triggers, concrete examples, and good failure-path coverage; no security red flags found. Main weaknesses are packaging: SKILL.md is ~73KB (nearly 3x budget), the frontmatter description is oversized, and there is no version/changelog signal to track changes over time.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "Vertex client install shown as an unpinned extra of the official anthropic PyPI package; well-known publisher so warning not fail."
+      },
+      {
+        "check": "Q07",
+        "status": "warning",
+        "summary": "Main file still carries ~40 dense pitfall bullets plus many full inline Quick Reference sections that parallel existing shared/*.md files."
+      },
+      {
+        "check": "H03",
+        "status": "fail",
+        "summary": "Description runs to roughly 1000+ chars across 3 dense paragraphs incl. an embedded grep command, well past the 1-5 sentence sizing guidance."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T11:17:15.359Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 73299,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 162254,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "21a54682afffb1c3280c4b548c4c8fb9fadfdf6067cf3b98a119ae364613e091"
+  },
+  {
+    "name": "doc-coauthoring",
+    "source": "GitHub · anthropics/skills · 162254★",
+    "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/doc-coauthoring/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Guides a three-stage workflow (context gathering, section-by-section drafting, reader testing) for co-authoring docs, specs, and proposals.",
+    "verdict": "Solid, safe workflow skill: clear trigger phrasing, concrete step-by-step procedure, defined output contract (artifact or named .md file), determinism via stated defaults for every fork, and graceful degradation when artifacts/sub-agents/integrations are unavailable. No security concerns found. Weak spots: no stated exclusions for when NOT to offer this.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for'/out-of-scope guidance anywhere; a broad doc-workflow trigger with no exclusions risks misfiring on trivial writing asks."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog section, or dated revision notes anywhere in the skill."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T11:17:15.359Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 15815,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 162254,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "b32381e692b3773a2c37bdce7b1adf084aaaaedfcae15e6d2d7a9f5662f2369b"
+  },
+  {
+    "name": "docx",
+    "source": "GitHub · anthropics/skills · 162254★",
+    "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/docx/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Creates, edits, and analyzes Word (.docx) documents via docx-js, direct XML editing, pandoc conversion, and LibreOffice rendering.",
+    "verdict": "Solid, safe skill: no network egress, exec, or destructive-op risk; concrete step-by-step instructions with worked XML examples for tracked changes and comments. Gaps: no version/changelog signal, an unpinned npm docx fallback install, and pandoc/soffice/pdftoppm listed as dependencies only at the very end with no upfront check or missing-tool guidance.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "Fallback installs well-known 'docx' npm package unpinned (no version), pulling whatever is latest."
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "No guidance anywhere for missing/failing pandoc, soffice, or pdftoppm; only the npm docx require-fallback path is covered."
+      },
+      {
+        "check": "H07",
+        "status": "warning",
+        "summary": "Dependencies are declared only in the final line, after pandoc/soffice/pdftoppm are already invoked earlier in the doc with no prior mention or availability check."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T11:17:15.359Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 6868,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 162254,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "2d2a9c004af60801b8218a4faa7b389170eb55f11351bdaedaf6586004614d4d"
+  },
+  {
+    "name": "frontend-design",
+    "source": "GitHub · anthropics/skills · 162254★",
+    "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Design-lead guidance for building distinctive, non-templated web UI: color/type/layout tokens, motion, copy, and a self-critique process.",
+    "verdict": "Safe, well-scoped design-guidance skill: no network calls, secrets, destructive ops, or manipulation attempts; compact single-file SKILL.md with valid frontmatter. Weaknesses: no NOT-for/exclusion guidance despite overlap with adjacent UI/artifact skills, no worked example for its required token-system format, no explicit output-contract shape/location, and.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for'/exclusion text anywhere despite overlap with idea-to-mvp, dataviz, artifact-design and other UI-adjacent skills."
+      },
+      {
+        "check": "Q05",
+        "status": "warning",
+        "summary": "Line 43 states a quality floor (responsive, keyboard focus, reduced motion) but no explicit deliverable format, file location, or required sections."
+      },
+      {
+        "check": "Q09",
+        "status": "fail",
+        "summary": "Line 33 requires a bespoke token-system format (4-6 named hex colors, 2+ type roles, ASCII wireframes, signature) with no worked example shown anywhere."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T11:17:15.359Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 8250,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 162254,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "57cf1134b36c816ac2fc52f6a194948ccee4cbe79fe780ab365b73641b2b467a"
+  },
+  {
+    "name": "internal-comms",
+    "source": "GitHub · anthropics/skills · 162254★",
+    "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/internal-comms/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Helps write internal comms (status reports, newsletters, FAQs, incident reports) by loading the matching guideline file from examples/.",
+    "verdict": "Clean, low-risk writing-assistance skill: no shell/network/credential activity, concise SKILL.md deferring formatting to on-demand reference files, clear trigger description. Weak spots: no negative-trigger scoping despite a broad catch-all case, and no version/changelog signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for'/exclusion language anywhere despite broad scope (7 comm types plus a general-comms catch-all for 'anything else')."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog, or dated revision notes anywhere in frontmatter or body."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T11:17:15.359Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 1511,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 162254,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "6c5721a4357fd5a6aacef9cf1f8cc197425a0f0d5c9e341b3449448e6d307679"
+  },
+  {
+    "name": "mcp-builder",
+    "source": "GitHub · anthropics/skills · 162254★",
+    "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/mcp-builder/SKILL.md",
+    "kind": "skill",
+    "category": "build",
+    "tagline": "Phased guide (research, implement, review/test, evaluate) for building MCP servers in TypeScript or Python.",
+    "verdict": "Well-structured, security-clean dev guide with a clear four-phase workflow, concrete commands, and good context economy via reference files. Weak spots: no negative-trigger scoping, no failure handling for build/test steps, no re-run/idempotency guidance for server scaffolding, no version/changelog signal, and MCP Inspector CLI use isn't declared upfront.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' / exclusion / out-of-scope language anywhere in description or body (line 3 description has no exclusions)."
+      },
+      {
+        "check": "Q06",
+        "status": "fail",
+        "summary": "Build/test steps like 'Run `npm run build` to verify compilation' (line 140) have no stated fallback or stop condition if the build/tests fail."
+      },
+      {
+        "check": "Q10",
+        "status": "warning",
+        "summary": "Multi-step server creation ('Create shared utilities:' line 88, tool implementation) has no guidance on re-running after a partial/prior build."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T11:17:15.359Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 9066,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 162254,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "c0bd02483acbb365fbbc2370e6b68beba048e5267398a27ceb7332f6cc29b008"
+  },
+  {
+    "name": "pdf",
+    "source": "GitHub · anthropics/skills · 162254★",
+    "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/pdf/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Reference guide for PDF operations (merge, split, extract, OCR, forms, encrypt) via pypdf, pdfplumber, reportlab and CLI tools.",
+    "verdict": "Safe, purely local document-processing reference with no network, secrets, or destructive commands — all security checks pass or are not-applicable. Quality is solid (concrete code per task, idempotent outputs, a tool-selection table) but it never states when NOT to use it and gives no failure-handling guidance for its many external tools. Hygiene is.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "pip install pytesseract pdf2image with no version pin; well-known packages so warning not fail."
+      },
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "Description covers 'anything with PDF files' with no exclusions or pointers to better-suited skills anywhere in the file."
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "Only pdftk gets an 'if available' caveat (line 219); no failure guidance for pypdf/pdfplumber/qpdf/OCR errors, bad passwords, or missing tools."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T11:17:15.359Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 8035,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 162254,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "45ae673774c27895b1f34169da0358a9db41785c91cda0fca4d4297ecb5c0160"
+  },
+  {
+    "name": "pptx",
+    "source": "GitHub · anthropics/skills · 162254★",
+    "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/pptx/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Creates, edits, and QAs PowerPoint (.pptx/.potx) files via pptxgenjs, XML surgery, and LibreOffice-based visual/schema validation.",
+    "verdict": "Thorough procedural skill: concrete commands, explicit defaults, strong QA/failure-path coverage, and re-run-safety (idempotent cleanup, overwrite warnings). Weak spots: no scope exclusions (Q02), unpinned mainstream npm/pip installs (S12, low risk), a dense ~730-char description (H03), and no version/changelog anywhere (H08).",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "npm/pip installs (pptxgenjs, react-icons, sharp, markitdown, Pillow, defusedxml, lxml) unpinned; well-known packages so warning not fail."
+      },
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' / out-of-scope language anywhere despite a very broad description covering all pptx/potx tasks."
+      },
+      {
+        "check": "Q09",
+        "status": "warning",
+        "summary": "Combo-chart valAxes/catAxes 'two entries each' requirement stated only in prose, no worked JSON example."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T11:17:15.359Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 20647,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 162254,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "244082c9c34ad51f5f9f4ff72050a374ed99c00cd252b9bda8f441aca3e02715"
+  },
+  {
+    "name": "skill-creator",
+    "source": "GitHub · anthropics/skills · 162254★",
+    "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/skill-creator/SKILL.md",
+    "kind": "skill",
+    "category": "meta",
+    "tagline": "Guides drafting, testing, benchmarking, and description-optimizing Claude Code skills through an iterative eval-and-improve loop.",
+    "verdict": "Solid, safe meta-skill: concrete steps, named output artifacts (evals.json, grading.json, benchmark.json), explicit failure-path handling across Claude Code/Claude.ai/Cowork. No security issues found. Weak on hygiene: no version/changelog signal, no stated negative triggers despite broad scope, and SKILL.md runs ~32KB with platform-specific sections kept.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for'/exclusion text anywhere despite being a broad meta-skill that could compete with other dev/testing skills."
+      },
+      {
+        "check": "Q07",
+        "status": "warning",
+        "summary": "Platform-specific Claude.ai and Cowork sections kept inline in a ~32KB SKILL.md rather than split to references, though most other bulk is externalized."
+      },
+      {
+        "check": "H05",
+        "status": "warning",
+        "summary": "SKILL.md is 485 lines / ~32.4KB, over the ~25KB soft budget though under the 2x hard ceiling."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T11:17:15.359Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 32987,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 162254,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "c08c99c48c17362743b8fc4bca846d1bab882ea6c9919771da2d4fe2dffa4609"
+  },
+  {
+    "name": "slack-gif-creator",
+    "source": "GitHub · anthropics/skills · 162254★",
+    "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/slack-gif-creator/SKILL.md",
+    "kind": "skill",
+    "category": "media",
+    "tagline": "Generates Slack-optimized animated GIFs with PIL, using bundled GIFBuilder, validator, and easing utility modules.",
+    "verdict": "Clean, safe, well-structured media skill: no network/exec/secret risk, concrete code examples, consistent Slack size/FPS/color specs. Weak spots: no out-of-scope guidance to prevent misfiring on generic GIF/image requests, no explicit handling when validation fails or PIL deps are missing, and no version/changelog signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "`pip install pillow imageio numpy` has no version pins; well-known packages from the default registry, so only a minor supply-chain gap."
+      },
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' or out-of-scope guidance anywhere, risking misfire on generic GIF/animation or non-Slack image requests."
+      },
+      {
+        "check": "Q06",
+        "status": "fail",
+        "summary": "Validator example shows only the success branch (`if is_slack_ready('my.gif'):`) with no guidance for a failed check or missing PIL/imageio deps."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T11:17:15.359Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 7841,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 162254,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "b3b4db4aeb66256e27455aad266c82ab2ce695b11e396ebd9b43bc73e334c4bd"
+  },
+  {
+    "name": "theme-factory",
+    "source": "GitHub · anthropics/skills · 162254★",
+    "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/theme-factory/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Applies one of 10 preset color/font themes, or a custom-generated one, to slides, docs, or landing pages after the user confirms a choice.",
+    "verdict": "Low-risk, well-scoped styling skill: no network, exec, secrets, or install steps; compact SKILL.md defers bulk theme specs and a showcase PDF to separate files; steps are concrete and consistent. Weak spots: description states what it does but not explicit trigger phrasing, no NOT-for scope guidance, no handling if a theme file or the showcase PDF is.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q01",
+        "status": "warning",
+        "summary": "Description explains what the skill does (theme styling) but never phrases when to invoke it, e.g. no 'use when' cue."
+      },
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' or out-of-scope language anywhere in description or body."
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "No handling for a missing theme-showcase.pdf or missing themes/ file; only the 'no theme fits' case has a fallback."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T11:17:15.359Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 3124,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 162254,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "366ee55d92407128fd5f05871d9a6135bfe6fad2146ec2652edf99fc0b0d177b"
+  },
+  {
+    "name": "web-artifacts-builder",
+    "source": "GitHub · anthropics/skills · 162254★",
+    "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/web-artifacts-builder/SKILL.md",
+    "kind": "skill",
+    "category": "build",
+    "tagline": "Scaffolds a React+Tailwind+shadcn/ui project and bundles it into a single self-contained HTML file for claude.ai artifacts.",
+    "verdict": "Focused build-tool skill: clear scope, explicit negative trigger, legitimate tooling and sensible design guidance, no security red flags. Weak spots: step 2 points to a 'Common Development Tasks' section that does not exist anywhere in the file, leaving the core develop step unguided; no failure handling for the init/bundle scripts; no version or changelog.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q04",
+        "status": "fail",
+        "summary": "Step 2 defers the core develop step to a 'Common Development Tasks' section (line 43) that does not exist anywhere in the file."
+      },
+      {
+        "check": "Q06",
+        "status": "fail",
+        "summary": "No mention anywhere of what to do if init-artifact.sh, npm/parcel installs, or bundling fail — total silence on a multi-step external-tool flow."
+      },
+      {
+        "check": "Q10",
+        "status": "warning",
+        "summary": "Bundling overwrites bundle.html safely, but re-running init-artifact.sh against an existing project directory is never addressed."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T11:17:15.359Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 3073,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 162254,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "81c5002c6643b0de7b8710b00e7a9038daa6fb9b68d59870ee6adb12da8d10f8"
+  },
+  {
+    "name": "webapp-testing",
+    "source": "GitHub · anthropics/skills · 162254★",
+    "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/webapp-testing/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Guides writing native Playwright scripts to test local web apps: screenshots, DOM inspection, server lifecycle via with_server.py.",
+    "verdict": "Solid, concrete testing skill: clear decision tree, worked examples, and deliberate context-window economy (scripts kept as black boxes). Weak spots: no scope exclusions (Q02) risking misfire against other browser-automation skills, Playwright dependency never declared or checked (H07), no version/changelog signal (H08), and only the early-inspection.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' / out-of-scope text anywhere in description or body, despite overlap risk with generic browser-automation or e2e-test skills."
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "Only the networkidle-before-inspection pitfall is addressed; server-start failure, missing Playwright, or selector-not-found are unaddressed."
+      },
+      {
+        "check": "H07",
+        "status": "fail",
+        "summary": "Scripts silently assume Playwright (and its browser binaries) are installed; no requirements section, install step, or availability check."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T11:17:15.359Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 3861,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 162254,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "51b7349e77ec63b7744a6f63647e7566a0b4d2e301121cc10e8c2113af6556a2"
+  },
+  {
+    "name": "xlsx",
+    "source": "GitHub · anthropics/skills · 162254★",
+    "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/xlsx/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Creates, edits, and analyzes Excel/CSV/TSV spreadsheets with openpyxl/pandas, enforcing formula recalculation, formatting, and.",
+    "verdict": "Strong, well-engineered skill: precise trigger and exclusion criteria, concrete commands, worked examples, detailed failure handling (recalc errors, broken external links, non-evaluating post-2007 functions), and idempotent recalculation. Weak spots: no version/changelog signal, and the pip-install fallback for openpyxl/pandas/markitdown is unpinned (low.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "B",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "Fallback `pip install` for openpyxl/pandas/markitdown (line 16) has no version pin; low risk since these are well-known packages."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog, or dated revision notes anywhere in frontmatter or body."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T11:17:15.359Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 8542,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 162254,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "ccbfa6f6ca0847ae5089b4e936e6bf2c1a9e482f25d13f3b79b8750c50b1fc41"
   }
 ]

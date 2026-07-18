@@ -32,8 +32,8 @@ describe('buildCatalog', () => {
   })
   it('carries pre-supplied pre-check facts + evaluator for public skills', () => {
     const pub = catalog.skills.find((s) => s.name === 'skill-creator')!
-    expect(pub.preCheck.skillMdBytes).toBeGreaterThan(25000) // supplied from the CLI report
-    expect(pub.evaluator.model).toBe('google/gemini-2.5-flash')
+    expect(pub.preCheck.skillMdBytes).toBeGreaterThan(25000) // supplied from the wave grade
+    expect(pub.evaluator.model).toBe('claude-sonnet-5') // re-graded natively in the Anthropic official wave
     expect(pub.sourceUrl).toContain('github.com/anthropics/skills')
   })
   it('spans a range of grades (not all identical)', () => {
