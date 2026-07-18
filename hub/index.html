@@ -166,7 +166,7 @@
 
 <!-- Only O(1) metadata is inlined; the per-skill catalog is fetched (catalog-index.json)
      and each skill's full detail is lazy-loaded from skills/<slug>.json on demand. -->
-<script id="catmeta" type="application/json">{"generatedAt":"2026-07-18T21:26:11.232Z","rubricVersion":"0.1.2","evaluator":{"mode":"claude-code-native","model":"claude-fable-5"},"taxonomy":[{"id":"code-quality","label":"Code Review & Quality","description":"Reviewing diffs, finding bugs, refactoring, enforcing standards."},{"id":"security","label":"Security & Audits","description":"Vulnerability assessment, threat modeling, pentest, trust boundaries."},{"id":"build","label":"Build & Prototyping","description":"From idea to working app, UI generation, feature scaffolding."},{"id":"deployment","label":"Deployment & Ops","description":"Shipping, hosting, infra, CI/CD, self-hosting."},{"id":"content","label":"Content & Writing","description":"Blogs, marketing, humanizing text, CVs, docs."},{"id":"media","label":"Video & Media","description":"Video pipelines, voiceover, narrative, thumbnails."},{"id":"project-intel","label":"Project Intelligence","description":"Data extraction, dashboards, project radar, reporting."},{"id":"workflow","label":"Dev Workflow & Automation","description":"Loops, browser automation, orchestration, environment setup."},{"id":"integrations","label":"Integrations & CRM","description":"External APIs, CRM, content platforms, connectors."},{"id":"meta","label":"Meta & Skill Tooling","description":"Skills about skills: protocols, trust, tooling."}]}</script>
+<script id="catmeta" type="application/json">{"generatedAt":"2026-07-18T21:29:13.611Z","rubricVersion":"0.1.2","evaluator":{"mode":"claude-code-native","model":"claude-fable-5"},"taxonomy":[{"id":"code-quality","label":"Code Review & Quality","description":"Reviewing diffs, finding bugs, refactoring, enforcing standards."},{"id":"security","label":"Security & Audits","description":"Vulnerability assessment, threat modeling, pentest, trust boundaries."},{"id":"build","label":"Build & Prototyping","description":"From idea to working app, UI generation, feature scaffolding."},{"id":"deployment","label":"Deployment & Ops","description":"Shipping, hosting, infra, CI/CD, self-hosting."},{"id":"content","label":"Content & Writing","description":"Blogs, marketing, humanizing text, CVs, docs."},{"id":"media","label":"Video & Media","description":"Video pipelines, voiceover, narrative, thumbnails."},{"id":"project-intel","label":"Project Intelligence","description":"Data extraction, dashboards, project radar, reporting."},{"id":"workflow","label":"Dev Workflow & Automation","description":"Loops, browser automation, orchestration, environment setup."},{"id":"integrations","label":"Integrations & CRM","description":"External APIs, CRM, content platforms, connectors."},{"id":"meta","label":"Meta & Skill Tooling","description":"Skills about skills: protocols, trust, tooling."}]}</script>
 <script type="module">
   // Single module: runs after the DOM is parsed, so every getElementById below is valid.
   // Imports the pure browse helpers directly — no window bridge, no script-order race.
@@ -238,7 +238,7 @@
   document.getElementById('dim-rows').innerHTML = DIMS.map(function(d,i){
     var soon = d.key==='effectiveness';
     var kcol = soon ? '#8a857b' : 'oklch(0.8 0.11 155)';
-    return '<div style="display:grid;grid-template-columns:56px 200px 1fr;gap:20px;align-items:baseline;padding:16px 0;border-top:1px solid rgba(232,226,214,0.1)'+
+    return '<div style="display:grid;grid-template-columns:56px minmax(0,200px) minmax(0,1fr);gap:20px;align-items:baseline;padding:16px 0;border-top:1px solid rgba(232,226,214,0.1)'+
       (i===DIMS.length-1?';border-bottom:1px solid rgba(232,226,214,0.1);opacity:0.55':'')+'">'+
       '<span class="mono" style="font-size:12px;color:'+kcol+'">'+d.k.charAt(0)+'&middot;&middot;</span>'+
       '<span style="font-size:15px;font-weight:600">'+d.label.charAt(0)+d.label.slice(1).toLowerCase()+
@@ -410,11 +410,11 @@
         '<div style="'+overallCircle(s.overall,64,34)+'">'+letterOf(s.overall)+'</div>'+
         '<div><div class="mono" style="font-size:10.5px;letter-spacing:0.12em;color:#8a857b">OVERALL</div>'+
         '<div style="font-size:13px;color:#9a948a;margin-top:4px">Worst of the graded dimensions — one letter never hides another.</div></div></div>'+
-      '<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px">'+dims+'</div>'+
+      '<div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px;margin-top:12px">'+dims+'</div>'+
       '<h3 class="mono" style="font-size:11px;letter-spacing:0.16em;color:#8a857b;font-weight:500;margin:36px 0 4px">EVIDENCE — CHECK VERDICTS</h3>'+
       '<div style="display:flex;flex-direction:column">'+hs+'</div>'+
       '<h3 class="mono" style="font-size:11px;letter-spacing:0.16em;color:#8a857b;font-weight:500;margin:36px 0 4px">PRE-CHECK FACTS — DETERMINISTIC LAYER</h3>'+
-      '<div style="display:grid;grid-template-columns:1fr 1fr;column-gap:24px">'+facts+'</div>'+
+      '<div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:24px">'+facts+'</div>'+
       '<h3 class="mono" style="font-size:11px;letter-spacing:0.16em;color:#8a857b;font-weight:500;margin:36px 0 4px">EVALUATION METADATA</h3>'+
       '<div style="display:flex;flex-direction:column">'+meta+'</div>';
     document.getElementById('backdrop').style.display='block';
