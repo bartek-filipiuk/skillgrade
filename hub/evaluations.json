@@ -19074,5 +19074,3842 @@
     "mirrors": [],
     "discoveredVia": "github",
     "skillMdHash": "93bb1b86f5fdd38a3942cdf0fdf87c1217d1ea10c7e525ecd52f3038e6be21a4"
+  },
+  {
+    "name": "channel-message-flows",
+    "source": "GitHub · steipete/clawdis · 383362★",
+    "sourceUrl": "https://github.com/steipete/clawdis/blob/main/.agents/skills/channel-message-flows/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Runs OpenClaw QA Lab commands to verify Telegram draft/final message delivery sequencing.",
+    "verdict": "Small, low-risk skill: two precise, well-scoped CLI invocations against the repo's own QA harness, no network egress or destructive operations. Weak spots are hygiene only — no scope-exclusion guidance and no version/changelog signal, neither a safety concern.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' or exclusion guidance anywhere in description or body."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog, or dated revision notes anywhere in the file."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 1221,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 383362,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "37dabd2783df795dd6812df7e81ec65ac215e98b5440831467bdd4ddfc81d6c5"
+  },
+  {
+    "name": "claw-score",
+    "source": "GitHub · steipete/clawdis · 383362★",
+    "sourceUrl": "https://github.com/steipete/clawdis/blob/main/.agents/skills/claw-score/SKILL.md",
+    "kind": "skill",
+    "category": "project-intel",
+    "tagline": "Audits and refreshes the OpenClaw maturity scorecard (taxonomy, scores, QA evidence) while excluding maintainer-private data.",
+    "verdict": "Thorough, safety-conscious scoring workflow with clear file ownership and a well-defined output artifact. Gaps: no failure-path guidance for validation/build steps, no example for the required dotted coverage-ID format, no exclusion guidance, and no versioning signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No exclusions or pointers to other skills for out-of-scope cases anywhere in the doc."
+      },
+      {
+        "check": "Q06",
+        "status": "fail",
+        "summary": "No guidance for schema-validation failures, pnpm command failures, or missing evidence artifacts."
+      },
+      {
+        "check": "Q09",
+        "status": "fail",
+        "summary": "Dotted namespace.behavior coverage-ID format is required but never shown with a worked example."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 7769,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 383362,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "07f2144102623408b36fc7930e3b3d5efb0800e0f14de0bd06e18ef509e0018e"
+  },
+  {
+    "name": "clawdtributor",
+    "source": "GitHub · steipete/clawdis · 383362★",
+    "sourceUrl": "https://github.com/steipete/clawdis/blob/main/.agents/skills/clawdtributor/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Triages OpenClaw contributor PRs/issues by cross-referencing a local Discord archive with live GitHub state into a risk-tagged summary.",
+    "verdict": "Well-specified triage workflow with concrete SQL/gh commands, an explicit output format with worked examples, and safeguards on bulk mutations. Main risk is hygiene: discrawl, sqlite3, perl and gh are all invoked with no upfront requirements/availability check, plus no exclusion guidance or versioning signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' scoping; only lists composable sibling skills, not exclusions."
+      },
+      {
+        "check": "H07",
+        "status": "fail",
+        "summary": "discrawl, sqlite3, gh, and perl are invoked directly with no requirements section or availability check."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field or changelog anywhere in the file."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 6370,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 383362,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "c7bd8fd37c3d6f2532b6bec6065fef03e84c68d223de272a409222394322bac4"
+  },
+  {
+    "name": "executing-plans",
+    "source": "GitHub · obra/superpowers · 256922★",
+    "sourceUrl": "https://github.com/obra/superpowers/blob/main/skills/executing-plans/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Orchestrates executing a written implementation plan task-by-task with review checkpoints and stop-and-ask failure handling.",
+    "verdict": "Clean, low-risk process skill with strong stop conditions and clear integration points to sibling skills. Weak spots: 'report when complete' has no defined output shape, re-run safety for a partially-completed plan is only implicit, and there's no versioning signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q05",
+        "status": "fail",
+        "summary": "'report when complete' is the only deliverable description; no format, location, or required sections."
+      },
+      {
+        "check": "Q10",
+        "status": "warning",
+        "summary": "No explicit skip-if-already-completed rule for a restarted run; relies implicitly on todo state."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field or changelog anywhere in the file."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 2588,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 256922,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "0a70d73892bc44f8494b1f7ccbf3c1f6d769a247a1411914dd62e86ae0ac1122"
+  },
+  {
+    "name": "finishing-a-development-branch",
+    "source": "GitHub · obra/superpowers · 256922★",
+    "sourceUrl": "https://github.com/obra/superpowers/blob/main/skills/finishing-a-development-branch/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Guides finishing a dev branch: verify tests, detect worktree state, offer merge/PR/keep/discard, and clean up safely.",
+    "verdict": "Safety-conscious workflow skill: gates destructive actions (branch delete, worktree removal) behind test verification and typed confirmation, deterministic option menus. Minor gaps: no stated out-of-scope guidance and no version/changelog signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' or out-of-scope section anywhere; multi-step git workflow with no scope guard."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog, or dated revision notes anywhere in the skill."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 6814,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 256922,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "c8861bbfe618dbb2f16a32b2513f55512fb82c3fbe1beb3ad4eb6b2463b28210"
+  },
+  {
+    "name": "receiving-code-review",
+    "source": "GitHub · obra/superpowers · 256922★",
+    "sourceUrl": "https://github.com/obra/superpowers/blob/main/skills/receiving-code-review/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Behavioral guide for responding to code review feedback with technical verification instead of reflexive agreement.",
+    "verdict": "Well-structured behavioral skill with a clear response pattern and concrete good/bad examples for pushback, verification, and acknowledgment. Minor gaps: no out-of-scope guidance, undeclared gh CLI dependency for PR replies, no versioning signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' or out-of-scope section; broad 'code review' domain with no guard against misfire on giving reviews."
+      },
+      {
+        "check": "H07",
+        "status": "warning",
+        "summary": "Uses `gh api repos/{owner}/{repo}/pulls/{pr}/comments/{id}/replies` without declaring or checking the gh CLI is installed/authenticated."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog, or dated revision notes anywhere in the skill."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 6344,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 256922,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "57ec1feefc503219f9a36867df4acf3f4fe226c8fdeac7ec71f6d1d33ec11dc4"
+  },
+  {
+    "name": "fix",
+    "source": "GitHub · facebook/react · 246561★",
+    "sourceUrl": "https://github.com/facebook/react/blob/main/.claude/skills/fix/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Runs yarn prettier and yarn linc to fix formatting and surface remaining lint issues before commit.",
+    "verdict": "Minimal, low-risk lint/format skill with concrete commands. It never checks that yarn/prettier/linc exist before running them, has no failure handling if either command errors, the final report step has no defined output shape, and there is no versioning signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "Q05",
+        "status": "fail",
+        "summary": "'Report any remaining manual fixes needed' has no defined format or shape for that report."
+      },
+      {
+        "check": "Q06",
+        "status": "fail",
+        "summary": "No handling anywhere for prettier or linc failing to run, erroring, or being missing."
+      },
+      {
+        "check": "H07",
+        "status": "fail",
+        "summary": "Invokes `yarn prettier` and the project-specific `yarn linc` with no requirements section or availability check."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 495,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 246561,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "e74b9714d1167d445e867069f059c06c1700d7d563336ef54048cec134c5a60b"
+  },
+  {
+    "name": "flags",
+    "source": "GitHub · facebook/react · 246561★",
+    "sourceUrl": "https://github.com/facebook/react/blob/main/.claude/skills/flags/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Runs yarn flags to inspect and compare feature-flag states across release channels and explains the output.",
+    "verdict": "Small, low-risk internal tooling skill with a clear options table and channel legend. Gaps: no handling if the yarn flags command fails or isn't available, and no version/changelog signal to track changes.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "Q06",
+        "status": "fail",
+        "summary": "No mention of what to do if `yarn flags` fails, errors, or the command is unavailable."
+      },
+      {
+        "check": "H07",
+        "status": "fail",
+        "summary": "Invokes the project-specific `yarn flags` command with no requirements section or availability check."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog, or dated revision notes anywhere in the skill."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 1008,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 246561,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "4e217cd6ad05cf1aa6649c89e33217186784a5ec1bac5a87c6db89ae79514263"
+  },
+  {
+    "name": "flow",
+    "source": "GitHub · facebook/react · 246561★",
+    "sourceUrl": "https://github.com/facebook/react/blob/main/.claude/skills/flow/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Runs `yarn flow` type checks against React/Flow code and reports type errors by file location.",
+    "verdict": "Small, deterministic wrapper around `yarn flow` with a sane default renderer and clear, concrete steps. No security issues found. Weak spots: no defined output shape, no failure-path guidance if yarn/flow is missing, and no version/changelog signal — low overall risk given the narrow scope.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "Q05",
+        "status": "warning",
+        "summary": "Content: '2. Report type errors with file locations' — states content but no defined format/shape for the report."
+      },
+      {
+        "check": "H07",
+        "status": "warning",
+        "summary": "Content: '1. Run `yarn flow $ARGUMENTS` (use `dom-node` if no argument)' — yarn/flow assumed present, no requirements note or check."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field or changelog anywhere in the file (line 1: '---')."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 884,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 246561,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "d2682afe70a6af8cc2779f892fcfdada48196b581ac185543e6393a0d34219d5"
+  },
+  {
+    "name": "backend-patterns",
+    "source": "GitHub · affaan-m/ecc · 230830★",
+    "sourceUrl": "https://github.com/affaan-m/ecc/blob/main/.agents/skills/backend-patterns/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Reference catalog of Node/Express/Next.js backend patterns: API design, DB, caching, auth, rate limiting, logging.",
+    "verdict": "Solid, internally consistent code-pattern reference with no security or scope issues. Main weaknesses: 598-line SKILL.md inlines 7+ full topic catalogs with no references/ split, no negative-trigger scoping despite covering the whole backend stack, and no version/changelog signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "Q01",
+        "status": "warning",
+        "summary": "Description: 'Backend architecture patterns, API design, database optimization, and server-side best practices...' names the domain but never phrases concrete 'use when' trigger situations."
+      },
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for'/out-of-scope exclusions anywhere despite the skill spanning the entire backend stack (API, DB, cache, auth, jobs, logging)."
+      },
+      {
+        "check": "Q07",
+        "status": "fail",
+        "summary": "Content: '## Caching Strategies' — one of 7+ full pattern catalogs (API, DB, caching, auth, rate limiting, jobs, logging) inlined in one 598-line file with zero references/ split."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 13825,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 230830,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "96b77844f94c052f792c95bd11db917f49fde87fa80c06b2a058f0956b9baf41"
+  },
+  {
+    "name": "benchmark-methodology",
+    "source": "GitHub · affaan-m/ecc · 230830★",
+    "sourceUrl": "https://github.com/affaan-m/ecc/blob/main/.agents/skills/benchmark-methodology/SKILL.md",
+    "kind": "skill",
+    "category": "project-intel",
+    "tagline": "Scores competitors on 9 weighted dimensions with explicit 1-5 rubrics and a strategic-tension plot for a client report.",
+    "verdict": "Well-structured competitive-scoring methodology: clear trigger, explicit rubric anchors, a worked profile-card output template, and deliberate bias-control guidance. No security concerns found. Minor gaps: no explicit fallback when a data source is inaccessible, and no version/changelog signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "Content: '1. **Competitor's own site** — positioning, voice, offer packaging, pricing' — data-collection steps never state what to do if a source is inaccessible or evidence is thin, beyond 'no score "
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field or changelog anywhere in the file (line 1: '---')."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 9681,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 230830,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "971a0377777caad0dfd02cfd84ec3e24f4130670f6c9a4c9c33a0d38ce910c9b"
+  },
+  {
+    "name": "brand-discovery",
+    "source": "GitHub · affaan-m/ecc · 230830★",
+    "sourceUrl": "https://github.com/affaan-m/ecc/blob/main/.agents/skills/brand-discovery/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Runs structured, resumable multi-session brand-identity interviews across 8 modules into a master brandbook.",
+    "verdict": "Well-designed, resumable interview skill with disk-persisted state, a clear module sequence, and careful input validation (path traversal, participant-name checks) before writes. No security issues found. Minor gaps: validation-failure recovery isn't spelled out, and there's no version/changelog signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "Content: 'hyphens (e.g. `founder-a`, `anna`); reject names containing path separators' — states what to reject but never the recovery flow when validation fails."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field or changelog anywhere in the file (line 1: '---')."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 7484,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 230830,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "c3cc4cc636a96abba3fd317b876e52924d802982ddb545169d5f1f1fd095b36e"
+  },
+  {
+    "name": "brand-voice",
+    "source": "GitHub · affaan-m/everything-claude-code · 230830★",
+    "sourceUrl": "https://github.com/affaan-m/everything-claude-code/blob/main/.agents/skills/brand-voice/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Builds a reusable brand-voice writing profile from real samples for consistent content, outreach, and social copy.",
+    "verdict": "Solid, well-structured content skill: clear source priority, collection workflow, and a hard-ban list against generic AI tropes. Weak spots: no negative-trigger/scope guard, no versioning signal, and its output format lives entirely in an unverifiable reference file with no inline example.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' / exclusion language anywhere; lists downstream skills to feed but never says when this skill shouldn't fire."
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "Sample gathering and X-source access are only conditionally framed ('when available'); no fallback defined if sources are too thin."
+      },
+      {
+        "check": "Q09",
+        "status": "warning",
+        "summary": "VOICE PROFILE output format is deferred entirely to references/voice-profile-schema.md with no inline example shown."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 3624,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 230830,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "fd063726cf839a7b8b1acdde3dd9bdd1e9caecbe7ca1ffc6b4f8b5c9870e9402"
+  },
+  {
+    "name": "bun-runtime",
+    "source": "GitHub · affaan-m/everything-claude-code · 230830★",
+    "sourceUrl": "https://github.com/affaan-m/everything-claude-code/blob/main/.agents/skills/bun-runtime/SKILL.md",
+    "kind": "skill",
+    "category": "build",
+    "tagline": "Reference guide for using Bun as a JS/TS runtime, package manager, bundler, and test runner, including Node migration and Vercel setup.",
+    "verdict": "Clean, accurate, low-risk reference skill with concrete commands and worked examples throughout, and sound default choices for tool forks. Minor gaps: the description states topic rather than an explicit trigger phrase, and there is no versioning signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q01",
+        "status": "warning",
+        "summary": "Description states what the skill covers (runtime/pkg-manager/bundler/tests) but never phrases an explicit 'use when' trigger."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog, or dated revision notes anywhere in the skill."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 2584,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 230830,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "484294a713a52cb37bbff92b12da4d509997e016ab7e58df16ad8f5c006850f3"
+  },
+  {
+    "name": "coding-standards",
+    "source": "GitHub · affaan-m/everything-claude-code · 230830★",
+    "sourceUrl": "https://github.com/affaan-m/everything-claude-code/blob/main/.agents/skills/coding-standards/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Baseline cross-project coding conventions (naming, immutability, readability, code smells) with paired good/bad code examples.",
+    "verdict": "Extensive, well-exemplified conventions doc, but its own Scope Boundaries section explicitly excludes React and API-design content, then the body immediately delivers full React Best Practices and API Design Standards sections - a direct self-contradiction. Also unversioned, and the bulky framework catalogs should be split into reference files rather than.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "D",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q01",
+        "status": "warning",
+        "summary": "Description states the topic (naming, readability, immutability, review) but doesn't phrase an explicit usage trigger for itself."
+      },
+      {
+        "check": "Q03",
+        "status": "fail",
+        "summary": "Scope Boundaries says 'Do not use this skill as primary source for React composition... or API design', yet the body has full React Best Practices and API Design Standards sections."
+      },
+      {
+        "check": "Q07",
+        "status": "fail",
+        "summary": "549-line SKILL.md inlines full React, API-design, file-organization, testing, and performance catalogs that are only sometimes needed, with no reference-file split."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 12645,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 230830,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "4a59ffd839dbd027f7bc1ba26364bf1697faf1d9db67ec7ffa0ce06eb66a297d"
+  },
+  {
+    "name": "grok",
+    "source": "GitHub · nousresearch/hermes-agent · 216693★",
+    "sourceUrl": "https://github.com/nousresearch/hermes-agent/blob/main/optional-skills/autonomous-ai-agents/grok/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Orchestration guide for delegating coding tasks (features, PRs, refactors) to the xAI Grok Build CLI via headless or interactive sessions.",
+    "verdict": "Thorough, versioned, well-exemplified orchestration doc with strong failure-mode coverage. Key risk: it offers 'curl https://x.ai/cli/install.sh | bash' as a working alternate install method rather than only npm, a piped-shell-execution pattern the rubric always fails regardless of brand. gh CLI and tmux are used repeatedly without being declared as.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "B",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "S03",
+        "status": "fail",
+        "summary": "Presents 'curl -fsSL https://x.ai/cli/install.sh | bash' as a working alternate install method, not solely as a discouraged pattern."
+      },
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "'npm install -g @xai-official/grok' is unpinned (no version) and installed globally from an unverified scope name."
+      },
+      {
+        "check": "Q01",
+        "status": "warning",
+        "summary": "Description ('Delegate coding to xAI Grok Build CLI (features, PRs)') states what it does but not an explicit trigger phrase."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 12950,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 216693,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "aea050e2973390692e1fee9f6f56ad98c6ab72ccd6e5af18fe97716bf8403880"
+  },
+  {
+    "name": "honcho",
+    "source": "GitHub · nousresearch/hermes-agent · 216693★",
+    "sourceUrl": "https://github.com/nousresearch/hermes-agent/blob/main/optional-skills/autonomous-ai-agents/honcho/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Configures and drives Honcho cross-session memory (peers, observation, dialectic reasoning, context budgets) for Hermes agent profiles.",
+    "verdict": "Thorough, deterministic reference with stated defaults, good multi-profile guidance, and a solid troubleshooting section. Weak spots: an unpinned honcho-ai dependency, no stated scope exclusions, and a dense single-file reference that could split bulky tables into on-demand docs.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "prerequisites.pip lists 'honcho-ai' with no version pin — well-known package but unpinned."
+      },
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' / exclusion guidance anywhere in description or body despite related_skills sibling (hermes-agent)."
+      },
+      {
+        "check": "Q07",
+        "status": "warning",
+        "summary": "432-line single file with large CLI/config/tool reference tables kept inline instead of split into references/."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 19523,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 216693,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "844ca2a72820bf38bfe5f364492b72fa84f02cbff6f62efa195adfb011800e65"
+  },
+  {
+    "name": "openhands",
+    "source": "GitHub · nousresearch/hermes-agent · 216693★",
+    "sourceUrl": "https://github.com/nousresearch/hermes-agent/blob/main/optional-skills/autonomous-ai-agents/openhands/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Delegates coding tasks to the OpenHands CLI in headless mode across any LiteLLM-supported model provider.",
+    "verdict": "Strong, safety-conscious reference: exact flags verified against --help, documented pitfalls, a defined JSON event output contract, and explicit exclusions pointing to sibling skills. Only real gap is an unpinned 'uv tool install openhands' version.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "`uv tool install openhands --python 3.12` has no version pin (official index, but unpinned)."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 8280,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 216693,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "e4dcb06c9f032cd35cb829906a36ca7de6619ad910308a49c4b6b5bef2df8f87"
+  },
+  {
+    "name": "n8n:conventions",
+    "source": "GitHub · n8n-io/n8n · 196929★",
+    "sourceUrl": "https://github.com/n8n-io/n8n/blob/master/.agents/skills/conventions/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Quick-reference cheat sheet of n8n coding conventions: TypeScript, Vue frontend, backend DI, testing, and database rules.",
+    "verdict": "Useful terse reference with good code examples and a sensible pointer to fuller docs, plus a thoughtful secrets-handling note. But the namespaced name breaks kebab-case naming, there is no version/changelog signal, and neither the description nor body says when NOT to use it versus the sibling lint-rule skill.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "Q01",
+        "status": "warning",
+        "summary": "Description 'Quick reference for n8n patterns. Full docs /AGENTS.md' says what it is, not concrete trigger situations."
+      },
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' guidance despite overlap with adjacent n8n:create-community-node-lint-rule skill."
+      },
+      {
+        "check": "H02",
+        "status": "fail",
+        "summary": "name: n8n:conventions — contains ':' and fails the kebab-case regex ^[a-z0-9]+(-[a-z0-9]+)*$."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 2547,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 196929,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "c48a7c3a0c652aa7e65751bba90f289b71ad1cd8d321d12468cbbd2c84cd67fd"
+  },
+  {
+    "name": "n8n:create-community-node-lint-rule",
+    "source": "GitHub · n8n-io/n8n · 196929★",
+    "sourceUrl": "https://github.com/n8n-io/n8n/blob/master/.agents/skills/create-community-node-lint-rule/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Step-by-step guide to implement, test, register, and document a new ESLint rule in the n8n community-nodes plugin.",
+    "verdict": "Concrete, example-rich procedure with a clear checklist, explicit output contract, and good context-economy (defers AST helper catalog to reference.md). Weak points: namespaced name violates kebab-case, no version/changelog signal, no explicit failure handling for the verification step, and no scope-exclusion guidance.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' guidance despite overlap with adjacent n8n:conventions skill."
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "Step 6 lists test/typecheck/build/lint verification commands with no stated action if any of them fails."
+      },
+      {
+        "check": "H02",
+        "status": "fail",
+        "summary": "name: n8n:create-community-node-lint-rule — contains ':' and fails the kebab-case regex ^[a-z0-9]+(-[a-z0-9]+)*$."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 6418,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 196929,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "0a33a7bd5ba930c26ac567055649d880117bcd3c9fb9680bbf8e0b060e7b7bc5"
+  },
+  {
+    "name": "n8n:create-instance-ai-eval",
+    "source": "GitHub · n8n-io/n8n · 196929★",
+    "sourceUrl": "https://github.com/n8n-io/n8n/blob/master/.agents/skills/create-instance-ai-eval/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Authors, calibrates, and pushes n8n Instance AI workflow eval cases (build/behaviour/credential/seeded) to LangTracer suites.",
+    "verdict": "Strong, highly actionable eval-authoring procedure with clear autonomy gates, calibration rules, and extensive failure-path/harness-limitation guidance. Weak spots: name 'n8n:create-instance-ai-eval' breaks kebab-case naming (H02), no version/changelog signal (H08), and SKILL.md runs long (690 lines/43KB) with dense inline reference material that could be.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "Q07",
+        "status": "warning",
+        "summary": "690-line SKILL.md keeps some bulk inline (harness-limitations catalog, sizing table) despite splitting case-shapes/sourcing-cases/running-evals out."
+      },
+      {
+        "check": "H02",
+        "status": "fail",
+        "summary": "name 'n8n:create-instance-ai-eval' contains a colon, violating kebab-case ^[a-z0-9]+(-[a-z0-9]+)*$."
+      },
+      {
+        "check": "H05",
+        "status": "warning",
+        "summary": "SKILL.md is 690 lines / ~43KB, above the ~500-line/25KB budget but under 2x."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 42950,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 196929,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "a6dec399ab74c8d6fd267a721cb7b84627c929f01608eca235bfe67c6f839a67"
+  },
+  {
+    "name": "add-policy",
+    "source": "GitHub · microsoft/vscode · 187639★",
+    "sourceUrl": "https://github.com/microsoft/vscode/blob/main/.github/skills/add-policy/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Guides adding, wiring, and exporting VS Code configuration policies across OS, account, and managed-settings channels.",
+    "verdict": "Thorough, actionable procedure with concrete TypeScript examples, a clear architecture map, and documented failure modes (export-data quirks, CI-only regeneration pitfalls). Two gaps: no explicit out-of-scope guidance, so it could misfire on general (non-policy) settings work (Q02 fail); and no version/changelog signal (H08 fail).",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' / out-of-scope guidance anywhere; the policy domain is broad enough (OS, account, managed-settings, extension policies) that adjacent non-policy settings work could misfire it."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog section, or dated revision notes anywhere in the file."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 21450,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 187639,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "f3a5023a10f1841795af2bb48877319781b960f76fbb5d3104f1f368cc10b8a8"
+  },
+  {
+    "name": "agent-host-e2e-tests",
+    "source": "GitHub · microsoft/vscode · 187639★",
+    "sourceUrl": "https://github.com/microsoft/vscode/blob/main/.github/skills/agent-host-e2e-tests/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Adds, records, and troubleshoots agent host end-to-end tests via a record/replay proxy for Claude/Copilot/Codex.",
+    "verdict": "Compact, precise workflow with strong non-negotiable rules, deterministic gating guidance for non-replayable behavior, and good practice around scrubbing tokens/paths from recorded fixtures before commit. Only real gap: no version/changelog signal (H08 fail). The README it points to lives outside the skill's own directory, so H04 is not-applicable rather.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog section, or dated revision notes anywhere in the file."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 5130,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 187639,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "5452ed8ff0082d8cd732c371d3dbd8c387323126bfe0e2f3f77cf586fe2b591c"
+  },
+  {
+    "name": "agent-host-logs",
+    "source": "GitHub · microsoft/vscode · 187639★",
+    "sourceUrl": "https://github.com/microsoft/vscode/blob/main/.github/skills/agent-host-logs/SKILL.md",
+    "kind": "skill",
+    "category": "project-intel",
+    "tagline": "Orients analysts to Agent Host debug log export bundles (events.jsonl, AHP logs, host/window logs) and how to correlate them.",
+    "verdict": "Compact, well-organized log-triage guide with explicit, good sensitive-data handling advice (avoid quoting secrets/tokens found in logs). Weak spots: no defined output/report shape for findings (Q05 fail, mirrors the rubric's own fail example), the extractor script's python3 dependency isn't declared or checked (H07 warning), and no version/changelog signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q05",
+        "status": "fail",
+        "summary": "\"Use this skill to orient to bundles\" / \"How to Start\" gives investigative steps but never defines a deliverable shape (report, format, or fields) for the analysis conclusions."
+      },
+      {
+        "check": "H07",
+        "status": "warning",
+        "summary": "extract.py requires python3, invoked directly with no availability check or install guidance if missing."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog section, or dated revision notes anywhere in the file."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 4115,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 187639,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "dfd1a4c61d95de205a1467de23cec478f0a4866fe0617a0d053ebc086aaf4368"
+  },
+  {
+    "name": "request-refactor-plan",
+    "source": "GitHub · mattpocock/skills · 176221★",
+    "sourceUrl": "https://github.com/mattpocock/skills/blob/main/skills/deprecated/request-refactor-plan/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Interviews the user to scope a refactor, then files the resulting plan as a GitHub issue using a fixed template.",
+    "verdict": "No security concerns. But it declares no out-of-scope cases, lets the agent skip steps with no criteria (non-deterministic), has no failure path for GitHub issue creation, can duplicate issues on rerun, and lacks tool declaration or versioning.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "D",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' or out-of-scope guidance anywhere in description or body."
+      },
+      {
+        "check": "Q06",
+        "status": "fail",
+        "summary": "Step 8 creates a GitHub issue with no stated fallback if gh/GitHub is unavailable or unauthenticated."
+      },
+      {
+        "check": "Q08",
+        "status": "fail",
+        "summary": "Line 6: 'You may skip steps if you don't consider them necessary' with no criteria — agents will diverge."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 2711,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 176221,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "6129d7a31ee4ed99b8f4a1912fa7f94a96f52ebeb38adb93cd5f8a7d26928bd6"
+  },
+  {
+    "name": "ubiquitous-language",
+    "source": "GitHub · mattpocock/skills · 176221★",
+    "sourceUrl": "https://github.com/mattpocock/skills/blob/main/skills/deprecated/ubiquitous-language/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Extracts a DDD-style ubiquitous-language glossary from the conversation and writes it to UBIQUITOUS_LANGUAGE.md.",
+    "verdict": "No security issues found. Strong output contract, worked examples, determinism, and explicit re-run handling. Weak points are purely hygiene: no stated exclusions (Q02) and no version or changelog signal (H08).",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' or exclusion guidance anywhere in description or body."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog, or dated revision notes anywhere in the file."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 4882,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 176221,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "993f634cc649252e18194b28447b5f2b66f88595b3765e89de1d61276386a9ff"
+  },
+  {
+    "name": "ask-matt",
+    "source": "GitHub · mattpocock/skills · 176221★",
+    "sourceUrl": "https://github.com/mattpocock/skills/blob/main/skills/engineering/ask-matt/SKILL.md",
+    "kind": "skill",
+    "category": "meta",
+    "tagline": "Manual router that maps a user's situation to the right skill or flow within this skills repository.",
+    "verdict": "Purely descriptive, no security risk, and internally consistent with a clearly decidable branching structure. As a meta/reference document it defines no fixed output contract and carries no version or changelog signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog, or dated revision notes anywhere in the file."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 8172,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 176221,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "33a6b946e28c3f6b563e4170dabe72e1756648b581f01cb3019b3d6017d000c0"
+  },
+  {
+    "name": "frontend-code-review",
+    "source": "GitHub · langgenius/dify · 149233★",
+    "sourceUrl": "https://github.com/langgenius/dify/blob/main/.agents/skills/frontend-code-review/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Reviews Dify frontend code (React/Next/TS) for correctness, accessibility, dify-ui usage, data boundaries, performance, and tests.",
+    "verdict": "Well-scoped, concrete review process with clear severities, output template, and good context economy via split reference files. Gaps: no fallback if the remote guidelines fetch or required local docs fail, and no versioning signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q06",
+        "status": "fail",
+        "summary": "Fetching web-interface-guidelines and reading several required local docs has no stated fallback if fetch/read fails."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog, or dated revision notes anywhere in the file."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 5639,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 149233,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "e17155de4f384d70ca5fb77634fcf6f910c18114faf25678b49b741b602c9b8f"
+  },
+  {
+    "name": "frontend-testing",
+    "source": "GitHub · langgenius/dify · 149233★",
+    "sourceUrl": "https://github.com/langgenius/dify/blob/main/.agents/skills/frontend-testing/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Guides writing, updating, and reviewing Vitest frontend tests in Dify's web/ and packages/dify-ui/ workspaces.",
+    "verdict": "Safe, tightly scoped skill with clear triggers and exclusions and no security concerns. Weak spots: the final step only says to 'report' with no defined format, the workflow never says what to do if a test or check fails, the central `vp` test CLI is used repeatedly without any requirements or availability check, and there is no version/changelog signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "Q05",
+        "status": "fail",
+        "summary": "Only deliverable stated is 'Report what behavior was verified...' — no artifact, format, or location defined."
+      },
+      {
+        "check": "Q06",
+        "status": "fail",
+        "summary": "Seven-step workflow never addresses a failing test, missing web/docs/test.md, or an unavailable `vp` CLI."
+      },
+      {
+        "check": "H07",
+        "status": "fail",
+        "summary": "The `vp` test CLI is the skill's core tool, invoked three times with no requirements section or availability check."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 1763,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 149233,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "1368dcca977f936e60537a3bb1991a7291be49fecc31971ca67ac9bdcbc12170"
+  },
+  {
+    "name": "how-to-write-component",
+    "source": "GitHub · langgenius/dify · 149233★",
+    "sourceUrl": "https://github.com/langgenius/dify/blob/main/.agents/skills/how-to-write-component/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Decision guide for React/TypeScript component architecture, state ownership, and Dify UI conventions in Dify web.",
+    "verdict": "Pure prose coding-convention guide with no commands, network calls, or security exposure. Highly actionable with explicit defaults for most forks. Gaps: no stated out-of-scope cases despite being a broad guide, one bespoke pattern (satisfies Hotkey/RawHotkey) lacks a worked example, the single 23KB file sits near the size budget with clearly separable.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for'/out-of-scope statement anywhere despite a broad description spanning many decision areas."
+      },
+      {
+        "check": "Q07",
+        "status": "warning",
+        "summary": "23KB single SKILL.md near the size budget with clearly separable topics (Jotai, Hotkeys, Queries, Overlays) kept inline, no reference files."
+      },
+      {
+        "check": "Q09",
+        "status": "warning",
+        "summary": "The 'satisfies Hotkey' / 'satisfies RawHotkey' command pattern is required but never shown as a worked code example."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 23276,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 149233,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "46c6202f37eb24bcebea495147086ba83a8fd65afb721d42d239603e3c0477f7"
+  },
+  {
+    "name": "Agent Development",
+    "source": "GitHub · anthropics/claude-code · 138169★",
+    "sourceUrl": "https://github.com/anthropics/claude-code/blob/main/plugins/plugin-dev/skills/agent-development/SKILL.md",
+    "kind": "skill",
+    "category": "meta",
+    "tagline": "Reference guide for authoring Claude Code plugin subagents: frontmatter fields, triggering examples, and system-prompt design.",
+    "verdict": "Safe documentation skill with no commands, network access, or manipulation attempts, and well-specified templates with concrete validation rules and examples. Notable defects: the frontmatter `name` is 'Agent Development' (spaces and capitals, not kebab-case), there is no out-of-scope statement distinguishing it from the sibling Command Development skill.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No exclusion/out-of-scope text anywhere; doesn't distinguish itself from the sibling Command Development skill."
+      },
+      {
+        "check": "Q06",
+        "status": "fail",
+        "summary": "No guidance for a failed agent-triggering test or errors from scripts/validate-agent.sh; happy-path only."
+      },
+      {
+        "check": "H02",
+        "status": "fail",
+        "summary": "Frontmatter `name: Agent Development` uses spaces and capital letters, not kebab-case."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 10374,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 138169,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "00c32254c2c7e743a20a7e299b7489b206fdb647b0b4a131595c7bf1db4c1438"
+  },
+  {
+    "name": "Command Development",
+    "source": "GitHub · anthropics/claude-code · 138169★",
+    "sourceUrl": "https://github.com/anthropics/claude-code/blob/main/plugins/plugin-dev/skills/command-development/SKILL.md",
+    "kind": "skill",
+    "category": "meta",
+    "tagline": "Reference guide for authoring Claude Code slash commands: frontmatter fields, dynamic arguments, file references, and bash execution.",
+    "verdict": "Safe, thorough documentation skill with an explicit Troubleshooting section covering common failure modes, no security issues, and well-exampled patterns throughout. Weaknesses: the frontmatter `name` is 'Command Development' (not kebab-case), no out-of-scope statement separating it from the sibling Agent Development skill, an unusually long run-on.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No exclusion/out-of-scope text anywhere; doesn't distinguish itself from the sibling Agent Development skill."
+      },
+      {
+        "check": "Q07",
+        "status": "warning",
+        "summary": "834-line SKILL.md still keeps many full pattern examples inline despite already delegating detail to references/*.md files."
+      },
+      {
+        "check": "H02",
+        "status": "fail",
+        "summary": "Frontmatter `name: Command Development` uses spaces and capital letters, not kebab-case."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 18771,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 138169,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "5e970fe9393ca6da139804caedfeb04d8ed186735d2950e3a44b0d1f52e0e9c5"
+  },
+  {
+    "name": "Hook Development",
+    "source": "GitHub · anthropics/claude-code · 138169★",
+    "sourceUrl": "https://github.com/anthropics/claude-code/blob/main/plugins/plugin-dev/skills/hook-development/SKILL.md",
+    "kind": "skill",
+    "category": "meta",
+    "tagline": "Reference guide for building Claude Code plugin hooks (PreToolUse, Stop, SessionStart, etc.) with prompt- and command-based patterns.",
+    "verdict": "Thorough, safe reference with concrete JSON/bash examples and a security-practices section (path traversal, quoting, sensitive-file denial). Weak spots: non-kebab-case name, no stated exclusions, SKILL.md runs ~713 lines past the size budget, and a dense 600+ char description.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' / exclusion guidance anywhere despite a broad, multi-trigger description."
+      },
+      {
+        "check": "Q07",
+        "status": "warning",
+        "summary": "Full inline examples for every hook event type live in SKILL.md even though references/ files exist for detailed patterns."
+      },
+      {
+        "check": "H02",
+        "status": "fail",
+        "summary": "name: 'Hook Development' is not kebab-case (contains a space and capital letters)."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 16220,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 138169,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "1f0723220f2c6216d9c9a906bacefe164e1921f79e7480183dc5b78c6f7850a1"
+  },
+  {
+    "name": "scope-creep-detector",
+    "source": "GitHub · shubhamsaboo/awesome-llm-apps · 123850★",
+    "sourceUrl": "https://github.com/shubhamsaboo/awesome-llm-apps/blob/main/agent_skills/scope-creep-detector/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Compares a git diff against a stated intent to flag scope creep and recommend keep/split/justify per file, fully local and read-only.",
+    "verdict": "Clean, safe skill: explicitly offline, read-only, asks before any mutating action, with clear negative triggers and decision criteria. Minor gaps: the JSON output schema has no worked example, and the python3 dependency is used without an explicit requirement/availability check.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q09",
+        "status": "fail",
+        "summary": "The JSON output schema (in_scope, likely_creep, new_deps, etc.) is described field-by-field but never shown as a worked example."
+      },
+      {
+        "check": "H07",
+        "status": "warning",
+        "summary": "python3 is invoked repeatedly (`python3 scripts/scope_creep.py ...`) with no upfront requirements note or availability check."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 5140,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 123850,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "39affe977bdd24c00866ad85f3a94602de42983983d241c4db32aa345a4c3afd"
+  },
+  {
+    "name": "chatgpt-app-builder",
+    "source": "GitHub · shubhamsaboo/awesome-llm-apps · 123850★",
+    "sourceUrl": "https://github.com/shubhamsaboo/awesome-llm-apps/blob/main/generative_ui_agents/ai-mcp-app-builder/apps/mcp-use-server/.agent/skills/chatgpt-app-builder/SKILL.md",
+    "kind": "skill",
+    "category": "build",
+    "tagline": "Deprecated ChatGPT app/widget builder for mcp-use; tells the agent to auto-install a replacement skill via npx before proceeding.",
+    "verdict": "Body still fully documents the deprecated workflow with good examples and context-split references, but contradicts its own deprecation notice, has no failure-path or negative-trigger guidance, no version/changelog signal, and the install command pulls an unpinned package from an unverified publisher.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "D",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "`npx skills install mcp-use/mcp-use --skill mcp-app-builder` pulls an unpinned package via a lesser-known 'skills' installer with no version pin."
+      },
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No scope-boundary guidance beyond the self-deprecation redirect; nothing on adjacent tasks this skill should not handle."
+      },
+      {
+        "check": "Q03",
+        "status": "fail",
+        "summary": "Frontmatter says the skill is deprecated and to install/use mcp-app-builder instead, yet the body proceeds to fully document the old workflow with no further deprecation caveat."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 3148,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 123850,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "20806b31b8e480608d04888150a7c014c44963f831228be2660f6b1e3a8f32f7"
+  },
+  {
+    "name": "mcp-apps-builder",
+    "source": "GitHub · shubhamsaboo/awesome-llm-apps · 123850★",
+    "sourceUrl": "https://github.com/shubhamsaboo/awesome-llm-apps/blob/main/generative_ui_agents/ai-mcp-app-builder/apps/mcp-use-server/.agent/skills/mcp-apps-builder/SKILL.md",
+    "kind": "skill",
+    "category": "build",
+    "tagline": "Navigation-style best-practices guide for building MCP servers (tools, resources, prompts, widgets, auth) with mcp-use.",
+    "verdict": "Well-organized router into ~20 reference files, concrete examples, and built-in rerun safety (detects existing projects before scaffolding). Weak spots: claims 'MANDATORY for ALL MCP server work' with no stated exclusions, unpinned npx scaffold command, and no version or changelog signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "`npx create-mcp-use-app my-server` scaffolds with no version pin on the installer package."
+      },
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' or exclusion guidance despite claiming to be MANDATORY for ALL MCP server work."
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "Project-type ambiguity is handled via a decision tree, but scaffold/npm failures during `npx create-mcp-use-app` are never addressed."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 12608,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 123850,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "53e8c384f910e070f43923231dfc6f60e75e3616a15862e04fdb601521c8e5f3"
+  },
+  {
+    "name": "benchmark-models",
+    "source": "GitHub · garrytan/gstack · 122576★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/benchmark-models/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Runs the same prompt through Claude, GPT, and Gemini side by side to compare speed, cost, and output quality.",
+    "verdict": "Actionable, well-gated workflow with clear stop conditions and opt-in consent for cost/telemetry actions. But its own description omits real side effects (CLAUDE.md edits with git commits, vendored-skill migration, telemetry) that live in a shared boilerplate preamble, and that ~500-line preamble is duplicated inline rather than split into a reference.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "B",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S02",
+        "status": "warning",
+        "summary": "Opt-in telemetry (duration/outcome/repo name) posted to a gstack endpoint via the shared preamble; off by default but a baked-in destination."
+      },
+      {
+        "check": "S11",
+        "status": "fail",
+        "summary": "description: 'Cross-model benchmark for gstack skills.' doesn't disclose the preamble's CLAUDE.md edits/commits, migration flow, or telemetry."
+      },
+      {
+        "check": "Q01",
+        "status": "warning",
+        "summary": "description states what it does ('Cross-model benchmark...') but no trigger phrasing; usage cues live only in the body/triggers field."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 32350,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122576,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "616d78118cbb017708cde2e57fd198c6de172ea8ecfeb641624775e2625a8919"
+  },
+  {
+    "name": "benchmark",
+    "source": "GitHub · garrytan/gstack · 122576★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/benchmark/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Performance regression detection for web pages: baselines Core Web Vitals and bundle size, flags regressions on each PR.",
+    "verdict": "Thorough and deterministic — explicit numeric regression thresholds, worked report templates, and graceful fallbacks (e.g. branch detection). Weak points: no stated exclusion from the easily-confused /benchmark-models skill, undisclosed shared side effects (CLAUDE.md edits/commits, telemetry, migration) baked into its boilerplate preamble, that preamble.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "B",
+      "quality": "C",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "S02",
+        "status": "warning",
+        "summary": "Opt-in telemetry (duration/outcome/repo name) posted to a gstack endpoint via the shared preamble; off by default but a baked-in destination."
+      },
+      {
+        "check": "S11",
+        "status": "fail",
+        "summary": "description: 'Performance regression detection using the browse daemon.' doesn't disclose the preamble's CLAUDE.md edits/commits, migration, or telemetry."
+      },
+      {
+        "check": "Q01",
+        "status": "warning",
+        "summary": "description states purpose ('Performance regression detection...') but no explicit trigger phrasing."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 35833,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122576,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "523f7a7881d6cdf0f390374b2c715cd1aa10192183856ee0690c97286eed95d8"
+  },
+  {
+    "name": "browse",
+    "source": "GitHub · garrytan/gstack · 122576★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/browse/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Persistent headless-Chromium CLI for QA testing, screenshots, form/dialog automation, and before/after page diffing.",
+    "verdict": "Exceptionally detailed and actionable, with genuinely good security design: an explicit untrusted-content firewall for scraped page text, a deny-default CDP allowlist, and safe proxy-credential handling. Weak points: no stated scope exclusions, the same undisclosed shared side effects (CLAUDE.md edits/commits, telemetry, migration) as its sibling gstack.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "B",
+      "quality": "B",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "S02",
+        "status": "warning",
+        "summary": "Opt-in telemetry (duration/outcome/repo name) posted to a gstack endpoint via the shared preamble; off by default but a baked-in destination."
+      },
+      {
+        "check": "S11",
+        "status": "fail",
+        "summary": "description: 'Fast headless browser for QA testing and site dogfooding.' doesn't disclose the preamble's CLAUDE.md edits/commits, migration, or telemetry."
+      },
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for X' statement anywhere despite very broad browser-automation scope."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 54815,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122576,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "24cd19eca8496742614e096bc6b4332e1024d5f9aff68b985b726077ef2d654c"
+  },
+  {
+    "name": "electron-chromium-upgrade",
+    "source": "GitHub · electron/electron · 122078★",
+    "sourceUrl": "https://github.com/electron/electron/blob/main/.claude/skills/electron-chromium-upgrade/SKILL.md",
+    "kind": "skill",
+    "category": "build",
+    "tagline": "Guides Electron's Chromium version-upgrade workflow: resolves patch conflicts during `e sync --3` then fixes the resulting build.",
+    "verdict": "A model of a tightly scoped skill: precise trigger condition, exhaustive failure-path handling (including named edge cases like a false 'no changes' git am state), bulk commit-format material correctly split into references/, and no security concerns of any kind. Only gap is the lack of a version field or changelog to signal when the skill itself last.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field in frontmatter and no changelog or dated revision notes anywhere in the file."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 10300,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122078,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "fce7a3d6ae5ce8634c7185f2ea7575e37df7433a1a50d23f0b9cd64aac7586c0"
+  },
+  {
+    "name": "electron-node-upgrade",
+    "source": "GitHub · electron/electron · 122078★",
+    "sourceUrl": "https://github.com/electron/electron/blob/main/.claude/skills/electron-node-upgrade/SKILL.md",
+    "kind": "skill",
+    "category": "build",
+    "tagline": "Guides Electron's Node.js version upgrade across patch fixes, builds, and test runs in three tracked phases.",
+    "verdict": "Strong, concrete, deterministic multi-phase workflow with explicit success criteria and thorough failure handling for patch conflicts, build errors, and test failures. Weak spots: no version/changelog signal, and the custom `e` build tool is used throughout without an explicit requirements or availability check.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q07",
+        "status": "warning",
+        "summary": "Phase Three's BoringSSL/V8 failure-pattern knowledge base (~65 lines) is separable reference material kept inline instead of split to references/."
+      },
+      {
+        "check": "H07",
+        "status": "warning",
+        "summary": "The niche `e` build tool and `yarn husky` are used throughout with no explicit requirements section or availability check."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field or changelog section anywhere in the skill (line 1 frontmatter)."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 20526,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122078,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "dc5a692a0dc0c9c697b3d56827afe41b07d33128feb9179e12dc04debfb33bd3"
+  },
+  {
+    "name": "design-system",
+    "source": "GitHub · nextlevelbuilder/ui-ux-pro-max-skill · 107243★",
+    "sourceUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/.claude/skills/design-system/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Defines a three-layer design-token architecture (primitive/semantic/component) and drives strategic HTML slide generation from CSV decision.",
+    "verdict": "Compact, well-structured SKILL.md with consistent naming and a clean reference-file split. It never states what to do if its node/python scripts, the Pexels/Unsplash background fetch, or validation fail, gives no negative triggers despite explicit overlap with sibling skills (brand, ui-styling, design), and never declares node/python as prerequisites.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' or exclusion text anywhere, despite an explicit 'Skill Dependencies: brand, ui-styling' overlap with sibling skills."
+      },
+      {
+        "check": "Q06",
+        "status": "fail",
+        "summary": "No failure handling anywhere for token script execution, the Pexels/Unsplash image fetch, or slide-token-validator.py failing."
+      },
+      {
+        "check": "H07",
+        "status": "fail",
+        "summary": "Invokes node (generate-tokens.cjs, validate-tokens.cjs) and python (search-slides.py, fetch-background.py) with no requirements section or availability check."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 6833,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 107243,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "411b99dc92bf388199f7c78bad8c63e05477a76aa465c8a631d8dbfa86868de5"
+  },
+  {
+    "name": "design",
+    "source": "GitHub · nextlevelbuilder/ui-ux-pro-max-skill · 107243★",
+    "sourceUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/.claude/skills/design/SKILL.md",
+    "kind": "skill",
+    "category": "media",
+    "tagline": "Orchestrates AI-driven design generation via Gemini — logos, CIP mockups, banners, icons, social photos, and slides.",
+    "verdict": "Broad orchestrator with a well-declared Python/Gemini setup and a clean reference-file split. Concerns: the frontmatter description is a 650+ char keyword-stuffed wall, one workflow step explicitly says to 'randomly invoke' one of two design tools (non-deterministic), its only failure guidance is a vague 'try to fix scripts directly', and pip installs are.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "`pip install google-genai pillow` — well-known packages from the standard registry but unpinned versions."
+      },
+      {
+        "check": "Q05",
+        "status": "warning",
+        "summary": "Output location/format is defined for Social Photos ('plans/reports/') but not for logo, CIP, banner, or icon deliverables."
+      },
+      {
+        "check": "Q06",
+        "status": "fail",
+        "summary": "Only failure guidance across the whole skill is 'IMPORTANT: When scripts fail, try to fix them directly' — no criteria, no stop-and-report option."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 12257,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 107243,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "c38c2ddf83757048ba4356a3f0c53a7d1abde671f0c4a4da3e9f8d26fd7dfb4e"
+  },
+  {
+    "name": "slides",
+    "source": "GitHub · nextlevelbuilder/ui-ux-pro-max-skill · 107243★",
+    "sourceUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/.claude/skills/slides/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Thin router for creating strategic HTML presentations with Chart.js, delegating to references/create.md.",
+    "verdict": "Minimal, clean routing skill well within its size budget with a valid frontmatter and consistent references. But it gives no output contract, no failure handling for a missing reference file or invalid subcommand, and no exclusion notes despite overlapping slide-generation logic in the sibling 'design' and 'design-system' skills.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No exclusions stated, despite overlapping slide-generation functionality with the sibling 'design' and 'design-system' skills."
+      },
+      {
+        "check": "Q05",
+        "status": "fail",
+        "summary": "No output artifact, format, or location stated anywhere in SKILL.md."
+      },
+      {
+        "check": "Q06",
+        "status": "fail",
+        "summary": "No handling described for a missing references/{subcommand}.md or an invalid subcommand."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 1137,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 107243,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "a4872d9d6df778400aad72a7b94cf22987e7c0279a239e83d6d57a9be62e2623"
+  },
+  {
+    "name": "copywriting",
+    "source": "GitHub · supabase/supabase · 106514★",
+    "sourceUrl": "https://github.com/supabase/supabase/blob/master/.claude/skills/copywriting/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Points writers to the monorepo's UI copy style guide before writing or auditing any user-facing text.",
+    "verdict": "Tiny, safe pointer skill: description clearly states when to trigger and the single instruction (read the source-of-truth doc) is unambiguous and low-risk. Gaps are minor: no negative-trigger guidance and no version/changelog signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' / exclusion guidance anywhere in description or body to prevent misfire on adjacent tasks."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog section, or dated revision notes anywhere in the file."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 469,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 106514,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "907ac27323e69c54e94c5ca71c0daa825de143fe6c1749344c064e0e97ba2b61"
+  },
+  {
+    "name": "dev-toolbar-review",
+    "source": "GitHub · supabase/supabase · 106514★",
+    "sourceUrl": "https://github.com/supabase/supabase/blob/master/.claude/skills/dev-toolbar-review/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "PR review checklist for changes to Supabase's dev toolbar, its feature-flag override cookies, and telemetry integration points.",
+    "verdict": "Well-scoped, safe review checklist with a clear trigger, explicit out-of-scope section, and concrete file/function-level checks. Two real defects: a cookie name is written inconsistently across two sections, and findings have no defined output/report shape. No versioning signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q03",
+        "status": "fail",
+        "summary": "PostHog override cookie is named `x-ph-flag-overrides` when introduced, but called `vercel-flag-overrides` in the precedence rule a few lines later."
+      },
+      {
+        "check": "Q05",
+        "status": "fail",
+        "summary": "Checklist items say what to check for but never define how/where findings should be reported (comment format, block/approve criteria)."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog, or dated revision notes present."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 5545,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 106514,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "35358232946972a06c8540e3d06e9b0de1922554c6b2355cc25a8464036d2372"
+  },
+  {
+    "name": "docs-content",
+    "source": "GitHub · supabase/supabase · 106514★",
+    "sourceUrl": "https://github.com/supabase/supabase/blob/master/.claude/skills/docs-content/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Guides authoring, editing, and validating Supabase documentation content (MDX/TOML) per house style, terminology, and navigation rules.",
+    "verdict": "Solid, low-risk authoring guide with clear sourcing hierarchy, concrete validation commands, and a worked anchor-pinning example. Gaps: no stated exclusions, no guidance if lint/build validation fails, a navigation-entry step with no duplicate check, and no version signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' / exclusion language anywhere; doesn't point away from adjacent tasks (e.g. editing generated reference source)."
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "Anchor-link breakage is explicitly handled (grep + update matches), but failures of `pnpm lint:mdx` / `pnpm build:guides-markdown` are never addressed."
+      },
+      {
+        "check": "Q10",
+        "status": "warning",
+        "summary": "Adding a page to NavigationMenu.constants.ts has no existence check described; rerunning the workflow risks a duplicate entry."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 4920,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 106514,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "74f96c3822df68548d9d463c758dcb3e72b529fa62d9dddad7ade446ca017ba1"
+  },
+  {
+    "name": "behavioral-evals",
+    "source": "GitHub · google-gemini/gemini-cli · 106050★",
+    "sourceUrl": "https://github.com/google-gemini/gemini-cli/blob/main/.gemini/skills/behavioral-evals/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Decision tree and checklist for creating, running, fixing, and promoting behavioral evals of agent decision-making.",
+    "verdict": "Well-structured decision tree with good context-splitting into reference files, but its declared 'Single Source of Truth' is a personal absolute file:// path (/Users/abhipatel/...) that cannot resolve for any other user, leaving the actual run/verify step unexecutable as written. No exclusions and no version signal either.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' / exclusion guidance anywhere in description or body."
+      },
+      {
+        "check": "Q04",
+        "status": "fail",
+        "summary": "Step 3 'Verify' defers actual run commands entirely to 'evals/README.md' via a broken personal file:// link, leaving the step unexecutable as written."
+      },
+      {
+        "check": "Q05",
+        "status": "warning",
+        "summary": "Policy values (USUALLY_PASSES/ALWAYS_PASSES) are named but the eval test artifact's file location/naming/structure is never defined."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 2492,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 106050,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "3619b80019811f0c976a094aceea87d240a5c4f51db89b68a2f38eda53010e2e"
+  },
+  {
+    "name": "ci",
+    "source": "GitHub · google-gemini/gemini-cli · 106050★",
+    "sourceUrl": "https://github.com/google-gemini/gemini-cli/blob/main/.gemini/skills/ci/SKILL.md",
+    "kind": "skill",
+    "category": "build",
+    "tagline": "Monitors GitHub Actions CI runs and automatically replicates failing tests/lint locally for fast triage.",
+    "verdict": "Concrete commands and deterministic run discovery make this usable, but it has no scope exclusions, no failure handling for its own tool chain (node script, gh, npm), no declared prerequisites, and no versioning signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' / exclusion guidance anywhere in description or body."
+      },
+      {
+        "check": "Q03",
+        "status": "warning",
+        "summary": "Duplicate '### 1.' heading used for both 'CI Replicate' and 'CI Status' workflows (lines 26, 38)."
+      },
+      {
+        "check": "Q05",
+        "status": "warning",
+        "summary": "'Structured Failure Report' referenced repeatedly but its fields/sections are never defined."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 3103,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 106050,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "329e2f73f138504e53ee9734a3a57955a1dc9cd0f555bba1b31791eb83afaaca"
+  },
+  {
+    "name": "code-reviewer",
+    "source": "GitHub · google-gemini/gemini-cli · 106050★",
+    "sourceUrl": "https://github.com/google-gemini/gemini-cli/blob/main/.gemini/skills/code-reviewer/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Guides the agent through a structured code review of local diffs or GitHub PRs with defined feedback sections.",
+    "verdict": "Clear checkout/diff steps and a defined output structure (Summary/Findings/Conclusion) make it usable; missing scope exclusions, no handling for common tool failures (checkout conflicts, missing preflight script), no declared prerequisites, and no versioning signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No exclusions / 'NOT for' guidance stated anywhere."
+      },
+      {
+        "check": "Q06",
+        "status": "fail",
+        "summary": "No failure handling for gh pr checkout conflicts, a failing/missing npm run preflight, or absent gh auth."
+      },
+      {
+        "check": "H07",
+        "status": "fail",
+        "summary": "Uses gh and a project-specific 'npm run preflight' without declaring or checking availability first."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 3183,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 106050,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "0824c1cf46e717ebd5036a5796a31fbc93cfe4962fae3a8a945a84a656d4edf6"
+  },
+  {
+    "name": "remote-browser",
+    "source": "GitHub · browser-use/browser-use · 105383★",
+    "sourceUrl": "https://github.com/browser-use/browser-use/blob/main/skills/remote-browser/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Drives a local or cloud headless browser via the browser-use CLI: navigate, click, screenshot, and tunnel dev servers.",
+    "verdict": "Strong, highly actionable reference with exact commands, sane defaults, an explicit idempotent-tunnel guarantee, and a troubleshooting section for the riskiest steps. Only gaps are missing negative-trigger scope guidance and no versioning signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' or scope-exclusion guidance anywhere in description or body."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog, or dated revisions."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 8194,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 105383,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "b502aaab64047051031ce4befe50763fdd93a7d40f8c2892db51cb36a8c888aa"
+  },
+  {
+    "name": "x402",
+    "source": "GitHub · browser-use/browser-use · 105383★",
+    "sourceUrl": "https://github.com/browser-use/browser-use/blob/main/skills/x402/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Sets up pay-per-use Browser Use Cloud access via x402 crypto payments (USDC on Base): wallet creation, funding, and a $1 test run.",
+    "verdict": "Exceptionally thorough, deterministic, failure-aware scripted flow with good secret discipline (gitignore checks, no echo-back). Dinged for offering wallet-private-key chat paste as a listed option, unpinned crypto/SDK installs, an unchecked overwrite risk when regenerating a wallet, an oversized description, and no versioning signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "B",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "S10",
+        "status": "warning",
+        "summary": "'Paste it here' lets the user paste their wallet private key into chat; mitigated by never echoing it, a .gitignore check, and a prominently offered out-of-band alternative."
+      },
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "pip/npm installs (eth-account, viem, browser-use-sdk[x402]) are unpinned; well-known packages, so warning not fail."
+      },
+      {
+        "check": "Q10",
+        "status": "warning",
+        "summary": "Path C (fresh wallet) writes BROWSER_USE_X402_PRIVATE_KEY to .env with no check for a pre-existing key, risking silent overwrite of a funded wallet on re-run."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 15066,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 105383,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "5e3d1e005e2ddef39f6bd294df787f14b93d103f07f0bcbceb093a8e71fcd271"
+  },
+  {
+    "name": "at-dispatch-v2",
+    "source": "GitHub · pytorch/pytorch · 101748★",
+    "sourceUrl": "https://github.com/pytorch/pytorch/blob/main/.claude/skills/at-dispatch-v2/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Converts PyTorch AT_DISPATCH macros to the AT_DISPATCH_V2 format in ATen C++ kernel code.",
+    "verdict": "Solid, narrow C++ refactoring skill with clear steps, worked examples, and a verification checklist. No security concerns found. Missing NOT-for scope guidance and any versioning signal; failure handling for unrecognized macro patterns is thin.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' / exclusion text anywhere despite covering many AT_DISPATCH_* variants, leaving room for misfire on adjacent macro work."
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "Only covers 'include already present' check; no guidance for macros that don't match a known pattern or edits that fail to apply."
+      },
+      {
+        "check": "Q07",
+        "status": "warning",
+        "summary": "Type group reference table and multiple pattern/edge-case catalogs are kept inline in SKILL.md rather than split into references/."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 8788,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 101748,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "441e54058d3446fdc95d8b015f03b028e09ecd619f5431a38079177b50f14528"
+  },
+  {
+    "name": "ci-metrics",
+    "source": "GitHub · pytorch/pytorch · 101748★",
+    "sourceUrl": "https://github.com/pytorch/pytorch/blob/main/.claude/skills/ci-metrics/SKILL.md",
+    "kind": "skill",
+    "category": "project-intel",
+    "tagline": "Queries PyTorch CI, GitHub Actions, Grafana, and infra metrics through a checksum-verified wrapper script.",
+    "verdict": "Well-built integration skill: declares tool requirements up front, checks gh auth, downloads a pinned/checksum-verified binary into a private cache, and uses a read-only Grafana token for its own stated purpose. No security issues found. Lacks scope exclusions and a version/changelog signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' or scope-exclusion text, despite covering a broad set of CI/infra topics (Grafana, GH Actions, HUD, runner health)."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog, or dated revision notes anywhere in the file."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 4579,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 101748,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "51034a918914c46266d4d8d4219edfe74438d979b9053b1faab0ae0856b1f105"
+  },
+  {
+    "name": "cuda-index-width",
+    "source": "GitHub · pytorch/pytorch · 101748★",
+    "sourceUrl": "https://github.com/pytorch/pytorch/blob/main/.claude/skills/cuda-index-width/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Guides choosing 32-bit vs 64-bit index math in PyTorch CUDA kernels, with fix patterns and a review checklist.",
+    "verdict": "Strong technical advisory skill with a clear decision framework, worked code examples, and no security issues. Invokes non-universal tools (nm, rg, compute-sanitizer, GNU stat) with no requirements section or availability checks; also lacks NOT-for scope guidance and any version/changelog signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' or exclusion text; skill covers a range of CUDA indexing scenarios where misfire on adjacent kernel work is plausible."
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "No guidance on what to do if the build fails or compute-sanitizer reports errors during the A/B and test steps."
+      },
+      {
+        "check": "H07",
+        "status": "fail",
+        "summary": "Invokes nm, rg, and compute-sanitizer (\"compute-sanitizer --tool memcheck --error-exitcode=99 <python> repro.py\") with no requirements section or availability check."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 6445,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 101748,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "c871e6e1bfb81cfeabe9276ec39cbc299b725d956f034e52a0ef2d2c8d6d4f6a"
+  },
+  {
+    "name": "reference-compiler-cli",
+    "source": "GitHub · angular/angular · 100578★",
+    "sourceUrl": "https://github.com/angular/angular/blob/main/.agent/skills/reference-compiler-cli/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Explains the architecture and mental model of Angular's compiler-cli (ngtsc) to orient work in that package.",
+    "verdict": "Clean, well-scoped reference document with a strong mandatory trigger and concrete, specific content (real class/file names, compilation phases); no security concerns. Its only gap is the total absence of any version or changelog signal, so consumers can't tell if it changed since they trusted it.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog, or dated revision notes anywhere in the file."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 5542,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 100578,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "7123f1060a1d08ba4d4f792dee75a69ca3ee388245cfbfff90aa040bc945d784"
+  },
+  {
+    "name": "reference-core",
+    "source": "GitHub · angular/angular · 100578★",
+    "sourceUrl": "https://github.com/angular/angular/blob/main/.agent/skills/reference-core/SKILL.md",
+    "kind": "skill",
+    "category": "project-intel",
+    "tagline": "Documents Angular core's rendering, DI, and change-detection architecture so an agent orients before editing packages/core.",
+    "verdict": "Safe, accurate reference doc with no security concerns. Gaps: no scope-exclusion guidance risking misfire on adjacent packages, a vague 'run tests via Bazel' step with no real command, and no version/changelog signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for'/exclusion text anywhere, despite a sibling skill covering an adjacent package (packages/forms/signals) that this could be confused with."
+      },
+      {
+        "check": "Q04",
+        "status": "warning",
+        "summary": "No actual test command or pass/fail criteria given, only a vague pointer to Bazel."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog section, or dated revision notes anywhere in the file."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 4770,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 100578,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "ea5fc530854fa8ee030061cc68d712408007ea8fd3a8ee99741207d54721d68b"
+  },
+  {
+    "name": "reference-signal-forms",
+    "source": "GitHub · angular/angular · 100578★",
+    "sourceUrl": "https://github.com/angular/angular/blob/main/.agent/skills/reference-signal-forms/SKILL.md",
+    "kind": "skill",
+    "category": "project-intel",
+    "tagline": "Explains the mental model of Angular's experimental signal-based Forms API for agents editing packages/forms/signals.",
+    "verdict": "Safe, coherent architecture reference with a worked usage example and an on-demand references/integration.md for deeper detail. Missing negative-trigger guidance and no version/changelog signal are the only gaps found.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for'/exclusion text anywhere, despite a sibling skill covering the adjacent packages/core directory it could be confused with."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog section, or dated revision notes anywhere in the file."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 4503,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 100578,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "3d40dd7d90c3abdf7cbecaf341c4fd1b884ca590536b8b73ceec2774cbf9bc04"
+  },
+  {
+    "name": "code-review-change-size",
+    "source": "GitHub · openai/codex · 99312★",
+    "sourceUrl": "https://github.com/openai/codex/blob/main/.codex/skills/code-review-change-size/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Sets diff-size thresholds (800 lines, 500 for complex logic) and asks for a staging plan when a review exceeds them.",
+    "verdict": "Safe, concrete numeric thresholds with no security concerns. The bare description gives no invocation trigger, the requested staging explanation has no defined output shape, and there is no version signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q01",
+        "status": "fail",
+        "summary": "States the topic, not when/for what task type to invoke it (e.g. during PR review)."
+      },
+      {
+        "check": "Q05",
+        "status": "fail",
+        "summary": "No format/shape defined for the staging explanation or where it should appear."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog, or dated revision notes anywhere."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 467,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 99312,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "ad53bfd26f09dadfcde9e1a4dfa8416d270f5e37057354caed607eb0b479b986"
+  },
+  {
+    "name": "code-review-context",
+    "source": "GitHub · openai/codex · 99312★",
+    "sourceUrl": "https://github.com/openai/codex/blob/main/.codex/skills/code-review-context/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Rules for how the Codex agent's model-visible context is built: no rewrites, bounded item sizes, 10K token cap, struct-based fragments.",
+    "verdict": "Safe, concrete numeric rules (10K token cap, 1K-token P0 threshold) with no security issues. The two-word description gives no trigger cue, no output format is defined, and rule 6's struct/trait requirement has no example.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "D",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "Q01",
+        "status": "fail",
+        "summary": "No situation or task type named — pure topic label, no trigger cue."
+      },
+      {
+        "check": "Q05",
+        "status": "fail",
+        "summary": "No output shape or location is defined for how compliance with these rules should be reported."
+      },
+      {
+        "check": "Q09",
+        "status": "fail",
+        "summary": "Non-obvious structural requirement with no example struct/trait implementation shown."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 661,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 99312,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "0af80b6388ccd525f8e78a57bf878b117cb57e2f611186f017633d3141a445bb"
+  },
+  {
+    "name": "code-review-testing",
+    "source": "GitHub · openai/codex · 99312★",
+    "sourceUrl": "https://github.com/openai/codex/blob/main/.codex/skills/code-review-testing/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Testing guidance for a Rust agent codebase: prefer integration tests, name unit tests *_tests.rs, reuse existing test helpers.",
+    "verdict": "Short, safe, internally consistent testing guidance with no security concerns. Weak dispatch signal: the description is only three words with no trigger cues or scope exclusions, and the skill carries no version/changelog signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "Q01",
+        "status": "fail",
+        "summary": "Description \"Test authoring guidance\" names the topic but gives no situations, verbs, or example phrasings for when to trigger it."
+      },
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No \"NOT for\" or exclusion text anywhere in description or body."
+      },
+      {
+        "check": "H03",
+        "status": "warning",
+        "summary": "Description is a 3-word fragment (\"Test authoring guidance\"), not even a full sentence — thin as a dispatch signal."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 604,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 99312,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "7966ef886c352f14fce13222806403ad2862a0af65feeef7a7f26ce7fdf9cb6b"
+  },
+  {
+    "name": "material-ui-tailwind",
+    "source": "GitHub · mui/material-ui · 98615★",
+    "sourceUrl": "https://github.com/mui/material-ui/blob/master/skills/material-ui-tailwind/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Guides integrating Material UI v4 with Tailwind CSS via cascade layers, slotProps className, and theme token bridges.",
+    "verdict": "Compact, well-scoped entry skill that defers bulk detail to AGENTS.md/reference.md, is versioned, and states clear trigger situations. Only real gap: no stated exclusions for when not to use it.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No \"NOT for\" or exclusion text anywhere in description or body."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 1572,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 98615,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "990cf18e1c3776f8393ac43a534b850f311c912c6ca3c97cef909a2fdb9783bd"
+  },
+  {
+    "name": "material-ui-theming",
+    "source": "GitHub · mui/material-ui · 98615★",
+    "sourceUrl": "https://github.com/mui/material-ui/blob/master/skills/material-ui-theming/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Guides Material UI theme creation and design tokens: createTheme, color schemes, CSS variables, dark mode, and TS augmentation.",
+    "verdict": "Compact, well-scoped reference skill that defers bulk detail to AGENTS.md/reference.md, is versioned, and states clear trigger situations. Only real gap: no stated exclusions for when not to use it.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No \"NOT for\" or exclusion text anywhere in description or body."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 1716,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 98615,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "41037f2584dd8ea59fe6dd7861d230a0c07b59da832cf41ca57f08a40da4bb6a"
+  },
+  {
+    "name": "playwright-test-results",
+    "source": "GitHub · microsoft/playwright · 93067★",
+    "sourceUrl": "https://github.com/microsoft/playwright/blob/main/.claude/skills/playwright-test-results/SKILL.md",
+    "kind": "skill",
+    "category": "project-intel",
+    "tagline": "Queries a DuckDB snapshot of Playwright CI results via SQL/CLI to answer flaky-test, failure-rate, and slow-test questions.",
+    "verdict": "Concrete, well-documented CI data tool; gh auth token is used legitimately for its own API calls, no unsafe patterns found. Gaps: no version/changelog, gh CLI dependency not declared upfront, no auth-failure guidance, and no stated exclusions.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No \"NOT for\" or exclusion text anywhere in description or body."
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "Covers snapshot staleness (update cmd) and artifact retention limits, but never addresses gh auth failure/unavailability."
+      },
+      {
+        "check": "H07",
+        "status": "warning",
+        "summary": "gh CLI is invoked (gh auth token, gh api) with no upfront requirements section or availability/auth check."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 8675,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 93067,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "730f39db6b360b6b0efad4555477cf7099a00011a220929db7ae354614094c59"
+  },
+  {
+    "name": "playwright-triage",
+    "source": "GitHub · microsoft/playwright · 93067★",
+    "sourceUrl": "https://github.com/microsoft/playwright/blob/main/.claude/skills/playwright-triage/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Triages Playwright GitHub bug reports: classifies issue type, reproduces across browsers/versions, and writes a self-contained regression.",
+    "verdict": "Well-structured triage flow with clear classification logic, explicit failure handling (ToT vs reported version, incomplete repro), concrete report format, and a security-aware note to skim untrusted linked repos before running them. Weak spots: no stated exclusions from other triage-like tasks, no dedup check when dropping a repro test into tests/page/ on.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "`npm install @playwright/test@next` pulls the mutable @next tag of the official package for tip-of-tree testing — unpinned by necessity."
+      },
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' / exclusion text anywhere despite overlapping adjacent tasks (fixing bugs, general debugging)."
+      },
+      {
+        "check": "Q10",
+        "status": "warning",
+        "summary": "'Drop it into the repo (`tests/page/`) and run it with `npm run ctest`' has no check for an existing file on re-triage of the same issue."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 6924,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 93067,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "8e34c0fc706eb807c069250412903691d297b32a8f852107bb0c9fd9314d0516"
+  },
+  {
+    "name": "playwright-cli",
+    "source": "GitHub · microsoft/playwright · 93067★",
+    "sourceUrl": "https://github.com/microsoft/playwright/blob/main/packages/playwright-core/src/tools/cli-client/skill/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Command reference for driving the playwright-cli browser-automation tool: navigation, input, network mocking, storage, tracing, and video.",
+    "verdict": "Thorough, example-rich command reference with a good on-demand references/ split and a clear install-fallback path. Weaknesses: description states what it does but not when to invoke it, no stated exclusions from adjacent tasks, only the CLI-missing failure case is addressed while other likely failures (stale refs, timeouts, crashes) are silent, no.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "`npm install -g @playwright/cli@latest` installs the official package but unpinned via the mutable @latest tag."
+      },
+      {
+        "check": "Q01",
+        "status": "warning",
+        "summary": "Description 'Automate browser interactions, test web pages and work with Playwright tests.' states what it does but no 'use when' phrasing or trigger examples."
+      },
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' / exclusion text anywhere despite overlapping the sibling playwright-triage skill."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 12583,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 93067,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "3c91dd0798fe7ab18b951686294a9134b21eefe32f2384597c0f536750c26d11"
+  },
+  {
+    "name": "caveman-stats",
+    "source": "GitHub · juliusbrussee/caveman · 90472★",
+    "sourceUrl": "https://github.com/juliusbrussee/caveman/blob/main/plugins/caveman/skills/caveman-stats/SKILL.md",
+    "kind": "skill",
+    "category": "meta",
+    "tagline": "Displays real Claude Code session token usage and caveman-mode savings, computed by a hook rather than the model.",
+    "verdict": "Minimal, honest delegation to a deterministic hook (hooks/caveman-stats.js) rather than model estimation — a strong design for numeric accuracy. No security, network, or destructive concerns; read-only by nature. Only gap: no version field or changelog to signal when the skill last changed.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog, or dated revision notes anywhere in the skill."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 603,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 90472,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "26b4e87015d489297a6c7308a0c9dd3cb7c0d061fe5d25f6b5313c4d40699afa"
+  },
+  {
+    "name": "caveman",
+    "source": "GitHub · juliusbrussee/caveman · 90472★",
+    "sourceUrl": "https://github.com/juliusbrussee/caveman/blob/main/plugins/caveman/skills/caveman/SKILL.md",
+    "kind": "skill",
+    "category": "meta",
+    "tagline": "Ultra-compressed 'caveman' communication mode with lite/full/ultra and classical-Chinese intensity levels, plus rules for when to drop.",
+    "verdict": "Strong, self-contained style skill: explicit persistence and exit rules, a deterministic intensity table with a stated default, worked examples per level and language, and an explicit 'Auto-Clarity' carve-out that drops compression for security warnings and irreversible actions. No network, secrets, installs, or destructive behavior. Only gap: no version.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog, or dated revision notes anywhere in the skill."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 5017,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 90472,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "5e30bb56afbd0b01bd736f2da84180e76f18db4a64de8e124525d5c8dc2e8605"
+  },
+  {
+    "name": "caveman-commit",
+    "source": "GitHub · juliusbrussee/caveman · 90472★",
+    "sourceUrl": "https://github.com/juliusbrussee/caveman/blob/main/skills/caveman-commit/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Generates terse Conventional-Commits style commit messages from a diff; never runs git itself.",
+    "verdict": "Well-scoped and safe: pure text generation, no shell execution, no file writes, clear rules and worked examples. Only gap is no versioning signal (no changelog/version field) — a minor packaging nit with no functional or security risk.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog, or dated revision notes anywhere in the file."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 2566,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 90472,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "02be92720a4673a1d976298daafbaca6caed95a263a9e41be7886903424a3571"
+  },
+  {
+    "name": "bump-dependency",
+    "source": "GitHub · home-assistant/core · 89309★",
+    "sourceUrl": "https://github.com/home-assistant/core/blob/dev/.claude/skills/bump-dependency/SKILL.md",
+    "kind": "skill",
+    "category": "build",
+    "tagline": "Step-by-step workflow to bump a Python dependency in Home Assistant core, run tests/lint, and open a PR.",
+    "verdict": "Thorough and safely gated: pinned installs, standard registries, and an explicit stop-for-user-approval step before the PR is raised. Weak spots: uv/prek/gh are relied on without an upfront availability check, re-running against the same target isn't addressed, and there's no versioning signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q10",
+        "status": "warning",
+        "summary": "Re-running for the same package/version would hit 'git checkout -b' on an existing branch name; no idempotency check, though it would fail loudly rather than corrupt state."
+      },
+      {
+        "check": "H07",
+        "status": "warning",
+        "summary": "Relies on uv, prek, and an authenticated gh CLI throughout with no upfront requirements/availability check."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog, or dated revision notes anywhere in the file."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 6251,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 89309,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "1ca1423ecf4def285dc3f71b15dbae9c940a8a61f97fe7a23848ea21ec72c303"
+  },
+  {
+    "name": "ha-integration-knowledge",
+    "source": "GitHub · home-assistant/core · 89309★",
+    "sourceUrl": "https://github.com/home-assistant/core/blob/dev/.claude/skills/ha-integration-knowledge/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Reference guide of coding conventions and quality-scale rules for building and reviewing Home Assistant integrations.",
+    "verdict": "Solid, safe reference content: concrete do/don't rules, sensible file-splitting for platform-specific detail (diagnostics, repairs). Its broad 'primary reference for any integration' claim carries no stated exclusions, and it has no version/changelog signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "Description claims to be 'your primary reference' for all integration work with no stated exclusions or pointers to more specific skills."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog, or dated revision notes anywhere in the file."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 3599,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 89309,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "92b9656c1dabff1fc1e70552bd31898f10d416024faae3524c9ba0c63369b22b"
+  },
+  {
+    "name": "ha-pr-comment-audit",
+    "source": "GitHub · home-assistant/core · 89309★",
+    "sourceUrl": "https://github.com/home-assistant/core/blob/dev/.claude/skills/ha-pr-comment-audit/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Audits a Home Assistant GitHub PR's review-comment threads and flags unaddressed feedback, console-only.",
+    "verdict": "Small and safely bounded — explicitly forbids acting on GitHub, output stays in the console. Main gaps: the comment-fetching step names no concrete command, there's no guidance for gh auth/missing-PR failures, and the gh dependency isn't declared or checked.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q04",
+        "status": "warning",
+        "summary": "\"Fetch the review comment threads for the PR (e.g. 'gh api' for review threads/comments)\" names no concrete endpoint/command for determining thread-resolution status."
+      },
+      {
+        "check": "Q06",
+        "status": "fail",
+        "summary": "No mention anywhere of what to do if gh is unauthenticated, the PR can't be resolved, or the API call fails."
+      },
+      {
+        "check": "H07",
+        "status": "warning",
+        "summary": "Entire skill depends on the gh CLI being installed and authenticated, with no upfront check or install guidance."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 982,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 89309,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "b45318ad534d168f16591322a617d77d0ee5c97d038fe1d0d0c0abc2b6cd1a1a"
+  },
+  {
+    "name": "paddleocr-doc-parsing",
+    "source": "GitHub · paddlepaddle/paddleocr · 85751★",
+    "sourceUrl": "https://github.com/paddlepaddle/paddleocr/blob/main/skills/paddleocr-doc-parsing/SKILL.md",
+    "kind": "skill",
+    "category": "media",
+    "tagline": "CLI wrapper that extracts structured Markdown/JSON (tables, formulas, layout) from PDFs and document images via the PaddleOCR doc-parsing.",
+    "verdict": "Well-documented API wrapper: concrete commands, a shown output schema, and explicit error guidance. Weak spots: no negative-trigger/exclusion text, no version or changelog signal, and the bundled paddleocr install is unpinned to a specific version.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "official uv install of well-known package but no version pin — 'latest' drift risk."
+      },
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' / exclusion text anywhere in the file, unlike the sibling text-recognition skill."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog, or dated revision notes anywhere in the skill."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 3802,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 85751,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "5ee5fb870326969b55ff7da9acc2d4c1af904b522a48107df92b5a147d1663a8"
+  },
+  {
+    "name": "paddleocr-text-recognition",
+    "source": "GitHub · paddlepaddle/paddleocr · 85751★",
+    "sourceUrl": "https://github.com/paddlepaddle/paddleocr/blob/main/skills/paddleocr-text-recognition/SKILL.md",
+    "kind": "skill",
+    "category": "media",
+    "tagline": "CLI wrapper that extracts line/box-level text (OCR) from images, screenshots, and scanned PDFs via the PaddleOCR text-recognition API.",
+    "verdict": "Clean, well-scoped skill: clear trigger terms, an explicit 'do not use for' exclusion, concrete commands, a shown output schema, and error guidance. Only real gaps are no version/changelog signal and an unpinned install of the paddleocr package.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "official uv install of well-known package but no version pin — 'latest' drift risk."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog, or dated revision notes anywhere in the skill."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 3656,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 85751,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "283c7771ea4456b96f9ec102d8336453af9e18767a084e9b3e32f0c1bdc8c8cd"
+  },
+  {
+    "name": "ponytail-audit",
+    "source": "GitHub · dietrichgebert/ponytail · 85441★",
+    "sourceUrl": "https://github.com/dietrichgebert/ponytail/blob/main/.openclaw/skills/ponytail-audit/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Whole-repo over-engineering scan that ranks deletable, stdlib-replaceable, or simplifiable code without applying any changes.",
+    "verdict": "Tight, read-only audit skill: clear tag taxonomy, a precise ranked output template, and explicit scope boundaries (correctness/security/perf routed elsewhere). Minor gaps: the output line format has no worked example, and there is no version or changelog signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q09",
+        "status": "warning",
+        "summary": "Bespoke output notation given only as a placeholder template, no filled worked example line."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog, or dated revision notes anywhere in the skill."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 1434,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 85441,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "96d5248455e5eaeddbe085953e049146ab20ea1188c33c23613f8bf565cee5e1"
+  },
+  {
+    "name": "ponytail-debt",
+    "source": "GitHub · dietrichgebert/ponytail · 85441★",
+    "sourceUrl": "https://github.com/dietrichgebert/ponytail/blob/main/.openclaw/skills/ponytail-debt/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Greps the repo for `ponytail:` shortcut-comment markers and compiles them into a ranked debt ledger with ceiling/upgrade-path per entry.",
+    "verdict": "Simple, mostly read-only ledger-builder with a clear scan step and a concrete output template. Two real defects: the stated directory exclusions (node_modules, .git, build output) aren't reflected in the actual grep command shown, and the output row format has no worked example. No version/changelog either.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q03",
+        "status": "fail",
+        "summary": "Prose on line 14 claims the scan skips node_modules/.git/build output, but the given grep command has no --exclude-dir and doesn't skip them."
+      },
+      {
+        "check": "Q09",
+        "status": "warning",
+        "summary": "Bespoke ledger row format given only as a placeholder template, no filled worked example."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog, or dated revision notes anywhere in the skill."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 1499,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 85441,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "a302574bc061cd8c2c786d802cee13d63951b2fd22b880813dc21f785d96105a"
+  },
+  {
+    "name": "ponytail-gain",
+    "source": "GitHub · dietrichgebert/ponytail · 85441★",
+    "sourceUrl": "https://github.com/dietrichgebert/ponytail/blob/main/.openclaw/skills/ponytail-gain/SKILL.md",
+    "kind": "skill",
+    "category": "meta",
+    "tagline": "Renders a static ASCII scoreboard of ponytail's benchmark code/cost/speed savings; no repo edits.",
+    "verdict": "Safe, read-only display skill with a clear honesty boundary against fabricating per-repo savings numbers. Minor gaps: no versioning signal, and the description doesn't state a concrete invocation trigger.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q01",
+        "status": "warning",
+        "summary": "Description states what it shows but not a concrete trigger phrase or situation for invocation."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field or changelog anywhere in the skill."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 1705,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 85441,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "3b3b70d410300176e4b76f8ad021bcca85bf19712b2af7d48d3f83831dd11dcc"
+  },
+  {
+    "name": "add-provider-doc",
+    "source": "GitHub · lobehub/lobe-chat · 80467★",
+    "sourceUrl": "https://github.com/lobehub/lobe-chat/blob/canary/.agents/skills/add-provider-doc/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Checklist workflow for documenting a new AI provider: usage docs, env-var docs, Docker config, .env.example, images.",
+    "verdict": "Well-structured contribution workflow with concrete file paths and templates, and correctly warns against embedding real API keys in docs. Weak on failure handling (no guidance if the reference doc or CDN upload fails) and re-run safety (Dockerfile/.env edits have no duplicate-entry guard); no version/changelog.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q06",
+        "status": "fail",
+        "summary": "No failure/fallback guidance if reference file, CDN upload, or screenshots are missing across the 5-step flow."
+      },
+      {
+        "check": "Q10",
+        "status": "fail",
+        "summary": "Dockerfile ENV addition and .env.example update have no check for an existing entry before appending."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field or changelog section."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 2170,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 80467,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "38f84fce387a40a144af010bfbb3ddb06de8c619c22a68e39932b6e2cf62e454"
+  },
+  {
+    "name": "add-setting-env",
+    "source": "GitHub · lobehub/lobe-chat · 80467★",
+    "sourceUrl": "https://github.com/lobehub/lobe-chat/blob/canary/.agents/skills/add-setting-env/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Procedure for wiring a server-side env var into user-settings defaults across env, types, server config, and store layers.",
+    "verdict": "Clear, deterministic, well-exampled workflow with a stated priority order and a full worked example (AI_IMAGE_DEFAULT_IMAGE_NUM). Minor weakness: the .env.example update step has no check against a duplicate entry on re-run; no versioning signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q10",
+        "status": "warning",
+        "summary": ".env.example update step has no check for a pre-existing entry before appending on a re-run."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field or changelog section."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 2575,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 80467,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "29e2c8e303ecbbf151bdc1a1db367a614bb67b5ceb1641a87422ed7f6aabeb52"
+  },
+  {
+    "name": "agent-runtime-hooks",
+    "source": "GitHub · lobehub/lobe-chat · 80467★",
+    "sourceUrl": "https://github.com/lobehub/lobe-chat/blob/canary/.agents/skills/agent-runtime-hooks/SKILL.md",
+    "kind": "skill",
+    "category": "project-intel",
+    "tagline": "Reference documentation for the internal agent-runtime lifecycle hook system: 16 hook types, key files, and payload shapes.",
+    "verdict": "Accurate, detailed, internally consistent reference material with concrete code examples for nearly every hook type and a clear registration flow. It lacks any scope-exclusion guidance despite covering a broad surface, and carries no versioning signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' or scope-exclusion guidance despite covering a broad 16-hook-type surface."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field or changelog section."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 6915,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 80467,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "987e5868f0771f0f47b734079e84bec21a5f5815cc4a793ba4643fb9aed50d72"
+  },
+  {
+    "name": "agent-signal",
+    "source": "GitHub · lobehub/lobehub · 80467★",
+    "sourceUrl": "https://github.com/lobehub/lobehub/blob/canary/.agents/skills/agent-signal/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Guides implementing/extending LobeHub's Agent Signal event pipeline: sources, signals, actions, policies, and async workflow handoff.",
+    "verdict": "Clean, code-focused skill with no security concerns found — no network calls, secrets, or destructive commands. Reasonably actionable with named files and a numbered workflow, but has no negative-trigger guidance, no failure-path coverage, and no versioning signal.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' / out-of-scope guidance anywhere; a technical skill this specific should point away from adjacent tasks."
+      },
+      {
+        "check": "Q06",
+        "status": "fail",
+        "summary": "No mention anywhere of what to do if a referenced file, type, or handler is missing/conflicting."
+      },
+      {
+        "check": "Q08",
+        "status": "warning",
+        "summary": "Step 1 'Decide whether the use case is synchronous or quiet background work' has no explicit decision rule of its own."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 6754,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 80467,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "9cac564889ab32ef49a08bf8bf6af40472b185dae169e1b9b4e254a2758df5c9"
+  },
+  {
+    "name": "agent-testing-bot",
+    "source": "GitHub · lobehub/lobehub · 80467★",
+    "sourceUrl": "https://github.com/lobehub/lobehub/blob/canary/.agents/skills/agent-testing-bot/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Extends the generic agent-testing skill to drive real bot chat apps (Discord/Slack/Telegram/WeChat/Lark/QQ/iMessage) on macOS via osascript.",
+    "verdict": "No security issues: no secrets, network exfiltration, or destructive commands, and it clearly scopes itself to bot-channel testing only. Well-triggered and reasonably actionable, but leans on the parent skill for failure handling and gives no concrete example invocation of its own driver script.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "Screen-recording gate is described but this file never states what to do if osascript itself fails or the app isn't running/logged in."
+      },
+      {
+        "check": "Q09",
+        "status": "warning",
+        "summary": "Driver script usage is given only as a signature `test-$PLATFORM-bot.sh $CHANNEL_OR_CONTACT $MESSAGE ...`, no concrete worked example call."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No version field, changelog, or dated revision notes anywhere in the file."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 4280,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 80467,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "bcc40d73ef203b5adf4c887987eda9cbb8bf40024e4168046f33367296910d3a"
+  },
+  {
+    "name": "agent-testing",
+    "source": "GitHub · lobehub/lobehub · 80467★",
+    "sourceUrl": "https://github.com/lobehub/lobehub/blob/canary/.agents/skills/agent-testing/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Full agentic end-to-end testing process for any project — CLI/web/Electron surfaces, evidence capture, and publishing a structured report.",
+    "verdict": "Thorough and unusually well-specified: explicit output contract, extensive failure-path and re-run-safety coverage, and no dangerous commands found. Weak spots are a missing 'when not to use this' section, an over-length description/SKILL.md, and one unpinned first-party CLI fallback (`npx @lobehub/cli@latest`).",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "B",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "'publish through `npx @lobehub/cli@latest` instead of the PATH binary' — unpinned latest, first-party but unpinned."
+      },
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "No 'NOT for' / out-of-scope section anywhere despite covering three different surfaces that could misfire on adjacent tasks."
+      },
+      {
+        "check": "Q07",
+        "status": "warning",
+        "summary": "SKILL.md is ~574 lines with several inline tables/sections (fixtures, environment matrix) that could split further despite existing reference files."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 31994,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 80467,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "b7ce2837291ad0edb0a103767090d18549faae09807f1d0e7016164861f03bc6"
+  },
+  {
+    "name": "od-contribute",
+    "source": "GitHub · nexu-io/open-design · 79442★",
+    "sourceUrl": "https://github.com/nexu-io/open-design/blob/main/.claude/skills/od-contribute/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "One-click, no-code contribution flow for Open Design: ship a Skill/Design System, translate docs, fix a typo/write a blog, or file a bug —.",
+    "verdict": "Well-guarded: refuses force-push and pushes to protected branches, gates every push on explicit user confirmation, and validates before ever pushing. Only real flag is an undisclosed rule excluding a named GitHub user from contributor outreach, plus no version signal and a thin re-run/duplicate-PR safeguard.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "S11",
+        "status": "warning",
+        "summary": "'skip GitHub user `xxiaoxiong` from any contributor lookup' — an undisclosed, targeted exclusion rule not covered by the description."
+      },
+      {
+        "check": "Q09",
+        "status": "warning",
+        "summary": "'Each line is JSON' for the i18n-gap discovery output names fields (status, english_commits_since_translation) but shows no worked example line."
+      },
+      {
+        "check": "Q10",
+        "status": "warning",
+        "summary": "Branch names include a date but nothing checks for an already-open PR/issue before creating a new one on re-run."
+      }
+    ],
+    "evaluator": {
+      "mode": "claude-code-native",
+      "model": "claude-sonnet-5"
+    },
+    "evaluatedAt": "2026-07-18T15:13:52.732Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 14038,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 79442,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "5f1f42d64326e9769e55f74eb410f7e499f3444a85634df8bb443b0d6ca83286"
   }
 ]
