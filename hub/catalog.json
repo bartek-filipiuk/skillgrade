@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T13:09:04.470Z",
+  "generatedAt": "2026-07-18T14:08:38.920Z",
   "rubricVersion": "0.1.2",
   "taxonomy": [
     {
@@ -96,7 +96,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -147,7 +147,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -198,7 +198,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -249,7 +249,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -295,7 +295,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -346,7 +346,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -397,7 +397,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -448,7 +448,7 @@
         "majorFlags": 9
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -499,7 +499,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -550,7 +550,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -601,7 +601,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -652,7 +652,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -703,7 +703,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -754,7 +754,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -805,7 +805,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -856,7 +856,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -907,7 +907,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -953,7 +953,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1004,7 +1004,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1055,7 +1055,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1106,7 +1106,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1157,7 +1157,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1208,7 +1208,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1259,7 +1259,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1305,7 +1305,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1356,7 +1356,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1407,7 +1407,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1448,7 +1448,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1499,7 +1499,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1545,7 +1545,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1596,7 +1596,7 @@
         "majorFlags": 4
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1647,7 +1647,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1698,7 +1698,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1749,7 +1749,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1800,7 +1800,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1841,7 +1841,7 @@
         "majorFlags": 18
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1892,7 +1892,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1943,7 +1943,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1989,7 +1989,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2040,7 +2040,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2091,7 +2091,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2137,7 +2137,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2188,7 +2188,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2239,7 +2239,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2290,7 +2290,7 @@
         "majorFlags": 12
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2336,7 +2336,7 @@
         "majorFlags": 6
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2387,7 +2387,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2428,7 +2428,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2479,7 +2479,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2530,7 +2530,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2581,7 +2581,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2632,7 +2632,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2683,7 +2683,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2734,7 +2734,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2785,7 +2785,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2836,7 +2836,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2887,7 +2887,7 @@
         "majorFlags": 2
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2938,7 +2938,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2989,7 +2989,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3040,7 +3040,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3091,7 +3091,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3137,7 +3137,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3188,7 +3188,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3229,7 +3229,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3280,7 +3280,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3331,7 +3331,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3382,7 +3382,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3433,7 +3433,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3484,7 +3484,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3535,7 +3535,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3576,7 +3576,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3627,7 +3627,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3678,7 +3678,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3729,7 +3729,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3780,7 +3780,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3831,7 +3831,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3882,7 +3882,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3933,7 +3933,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3984,7 +3984,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4030,7 +4030,7 @@
         "majorFlags": 2
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4081,7 +4081,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4132,7 +4132,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4183,7 +4183,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4234,7 +4234,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4285,7 +4285,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4336,7 +4336,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4387,7 +4387,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4438,7 +4438,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4489,7 +4489,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4540,7 +4540,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4591,7 +4591,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4642,7 +4642,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4693,7 +4693,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4744,7 +4744,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4795,7 +4795,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4846,7 +4846,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4887,7 +4887,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4938,7 +4938,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4989,7 +4989,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5040,7 +5040,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5091,7 +5091,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5142,7 +5142,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5193,7 +5193,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5234,7 +5234,7 @@
         "majorFlags": 2
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5285,7 +5285,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5336,7 +5336,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5387,7 +5387,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5438,7 +5438,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5489,7 +5489,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5535,7 +5535,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5586,7 +5586,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5637,7 +5637,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5683,7 +5683,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5734,7 +5734,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5785,7 +5785,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5836,7 +5836,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5887,7 +5887,7 @@
         "majorFlags": 2
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5938,7 +5938,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5989,7 +5989,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -6040,7 +6040,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -6091,7 +6091,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T13:09:04.470Z",
+      "evaluatedAt": "2026-07-18T14:08:38.920Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -17972,6 +17972,2925 @@
       "mirrors": [],
       "discoveredVia": "github",
       "slug": "add-linear"
+    },
+    {
+      "name": "agent-transcript",
+      "source": "GitHub · steipete/clawdis · 383358★",
+      "sourceUrl": "https://github.com/steipete/clawdis/blob/main/.agents/skills/agent-transcript/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Adds a redacted, local-only agent session transcript section to GitHub PR/issue bodies for OpenClaw agent workflows.",
+      "verdict": "Security-conscious: explicitly forbids network use, forbids raw log upload, drops secrets/cookies/tokens, fails closed on unresolved credentials, and always asks user consent before inserting a transcript. Mainly loses points on hygiene: no version/changelog signal, an undeclared macOS-only `open` command, an undefined 'high-confidence' threshold, and no.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' or scope-exclusion text anywhere despite the skill exposing multiple subcommands (find/render/preview/append-body/html)."
+        },
+        {
+          "check": "Q08",
+          "status": "warning",
+          "summary": "Step 3, 'If a high-confidence session is found' is never defined, leaving a load-bearing fork undecidable."
+        },
+        {
+          "check": "Q09",
+          "status": "warning",
+          "summary": "'Use a collapsed <details> section and update existing markers' names a bespoke format with no worked example of the markers."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 4048,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "31c4bc6ccc1bb60f23dd81dcc4583bdf0757888680968f7a413cd47449a705fa",
+      "popularity": 383358,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "agent-transcript"
+    },
+    {
+      "name": "autoreview",
+      "source": "GitHub · steipete/clawdis · 383358★",
+      "sourceUrl": "https://github.com/steipete/clawdis/blob/main/.agents/skills/autoreview/SKILL.md",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "Runs a bundled multi-engine (Codex/Claude/Pi) code review helper as a pre-commit/pre-ship closeout gate, with scope-freeze and release.",
+      "verdict": "Thorough, well-engineered review-gating skill: strong isolation guidance for reviewer subprocesses, explicit failure handling (oversized bundles, Sol->Terra fallback, gitcrawl repair), a defined output contract, and clean re-run semantics. Weakest spots are hygiene: a 34KB single file that could split reference tables out, no version/changelog signal.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "S11",
+          "status": "warning",
+          "summary": "Terse one-line description ('Codex default; optional Claude or Pi') undersells opt-in capabilities like credential-staged parallel test delegation and release-branch scope gating."
+        },
+        {
+          "check": "Q07",
+          "status": "fail",
+          "summary": "442-line/34KB single file inlines large reference material (models/thinking tables, env-var tables, isolation-flags table) with obvious split points into reference files."
+        },
+        {
+          "check": "H05",
+          "status": "warning",
+          "summary": "442 lines (under the 500-line soft cap) but 34KB, well over the 25KB soft budget."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 34164,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "1a532b78c6748b600f8f996b89b90bb81cbfa5d7933285ee79910a73df09760c",
+      "popularity": 383358,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "autoreview"
+    },
+    {
+      "name": "brainstorming",
+      "source": "GitHub · obra/superpowers · 256909★",
+      "sourceUrl": "https://github.com/obra/superpowers/blob/main/skills/brainstorming/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Guides collaborative dialogue to turn a raw idea into an approved design spec before any implementation begins.",
+      "verdict": "Clear, well-structured process skill: named output artifact and path, a self-review checklist, worked example prompts, and a hard gate against premature implementation. No security concerns. Main gaps: no stated non-goals despite a very broad trigger ('any creative work'), no guidance if git commit or the visual-companion server fails, and no.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' or scope-exclusion text anywhere, despite a deliberately broad trigger covering 'any creative work'."
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "User-rejection loop is well handled, but failure of git commit or of starting the visual-companion server is never addressed."
+        },
+        {
+          "check": "Q10",
+          "status": "warning",
+          "summary": "No guidance for re-running the skill on the same topic/day, e.g. a spec file already existing at the dated path."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 10393,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "dedf65d5253f0d6090364bccd15e69951d86abbdf15102fb805b51e8f15f9846",
+      "popularity": 256909,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "brainstorming"
+    },
+    {
+      "name": "dispatching-parallel-agents",
+      "source": "GitHub · obra/superpowers · 256909★",
+      "sourceUrl": "https://github.com/obra/superpowers/blob/main/skills/dispatching-parallel-agents/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Guides dispatching independent subagents in parallel to investigate/fix unrelated failures instead of working sequentially.",
+      "verdict": "Safe, well-built workflow skill: no security exposure of any kind, clear triggers and explicit negative triggers, concrete agent-prompt example and a worked real-world case. Minor gaps: the agent return format is only loosely specified ('a summary'), post-integration failure handling (full suite still red) isn't addressed, and there is no version/changelog.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q05",
+          "status": "warning",
+          "summary": "Agent output only specified as 'Summary of what you found and what you fixed' (line 112); no fields or structure defined."
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "Verification section covers spot-checking agent summaries but never addresses what to do if the full suite is still red after integration."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog section, or dated revision notes anywhere in the file."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 6618,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "3471b262796f43b48b655092ac356fcd46ab7e0d4c8fd858b595a3c2fb7fd801",
+      "popularity": 256909,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "dispatching-parallel-agents"
+    },
+    {
+      "name": "extract-errors",
+      "source": "GitHub · facebook/react · 246560★",
+      "sourceUrl": "https://github.com/facebook/react/blob/main/.claude/skills/extract-errors/SKILL.md",
+      "kind": "skill",
+      "category": "build",
+      "tagline": "Runs `yarn extract-errors` and reports on React error codes that need IDs assigned.",
+      "verdict": "Tiny, safe utility skill with zero security exposure. But it's underspecified for a 3-line procedure: the two interpretation steps ('report if needed', 'check if up to date') give no criteria for making that call, there's no defined output shape for the report, no guidance if `yarn extract-errors` isn't available or fails, and no version/changelog signal.",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q04",
+          "status": "warning",
+          "summary": "Steps 2-3 ('Report if any new errors need codes assigned', 'Check if error codes are up to date', lines 11-12) give no criteria for the decision."
+        },
+        {
+          "check": "Q05",
+          "status": "fail",
+          "summary": "'Report if any new errors need codes assigned' (line 11) has no defined output format or fields."
+        },
+        {
+          "check": "H07",
+          "status": "warning",
+          "summary": "Invokes `yarn extract-errors` (line 10) with no requirements note or availability check."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 285,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "9dda97240b61422236d72e19e58e2e98f87cd3fdb27178a2cda4df489fdcb838",
+      "popularity": 246560,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "extract-errors"
+    },
+    {
+      "name": "feature-flags",
+      "source": "GitHub · facebook/react · 246560★",
+      "sourceUrl": "https://github.com/facebook/react/blob/main/.claude/skills/feature-flags/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Reference for React's feature-flag files, @gate/gate() test gating, adding new flags, and debugging channel-specific failures.",
+      "verdict": "Well-structured, safe reference skill: no security exposure, clear triggers, worked code examples for its bespoke @gate/gate() syntax, and solid failure-path coverage for channel debugging. Gaps: no negative-trigger guidance despite covering several distinct scenarios, the /flags and /test commands are used throughout without an upfront availability check.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusions anywhere in description or body, despite covering multiple distinct scenarios (flags, gating, debugging)."
+        },
+        {
+          "check": "H07",
+          "status": "warning",
+          "summary": "Relies on custom `/flags` and `/test` commands (lines 56, 63-64, 69, 71) with no upfront declaration or availability check."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog, or dated revision notes anywhere in the file."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 2618,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "a6576adc1eb066afb33f2c764235a1b4591ebf6af33d94423946f720b375cf51",
+      "popularity": 246560,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "feature-flags"
+    },
+    {
+      "name": "agent-introspection-debugging",
+      "source": "GitHub · affaan-m/ecc · 230820★",
+      "sourceUrl": "https://github.com/affaan-m/ecc/blob/main/.agents/skills/agent-introspection-debugging/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Four-phase self-debugging workflow (capture, diagnose, recover, report) agents follow when stuck in loops or drift.",
+      "verdict": "Safe, well-structured meta workflow: no network/exec/secret risk, concrete phase templates, a failure-pattern table, and explicit negative triggers pointing to sibling skills. Weak spots are cosmetic: the description states what it does but not when (relies on the body's 'When to Activate'), and there is no version or changelog signal.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q01",
+          "status": "warning",
+          "summary": "Description states what the skill does but never says when to invoke it; trigger cues only appear in the body's 'When to Activate'."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog, or dated revision notes anywhere in the file."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 5501,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "e262b86b113fd52156181bb30b87df097a303862ff72cb46e3b64b7bd926aa0e",
+      "popularity": 230820,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "agent-introspection-debugging"
+    },
+    {
+      "name": "agent-sort",
+      "source": "GitHub · affaan-m/ecc · 230820★",
+      "sourceUrl": "https://github.com/affaan-m/ecc/blob/main/.agents/skills/agent-sort/SKILL.md",
+      "kind": "skill",
+      "category": "meta",
+      "tagline": "Sorts an ECC bundle's skills, commands, rules, and hooks into DAILY vs LIBRARY buckets for a specific repo using grep-based evidence.",
+      "verdict": "Evidence-driven classification workflow with a clearly defined output format and disclosed optional side effect (creating a library router skill). Gaps: no guidance on when NOT to use it, no handling for missing tools/files during the repo scan (rg absent, package.json missing), rg is invoked without being declared or checked, and there is no.",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / out-of-scope / pointer-to-other-skill guidance about when this skill itself should not be used."
+        },
+        {
+          "check": "Q06",
+          "status": "fail",
+          "summary": "Multi-step flow runs rg, cat package.json/pyproject.toml/etc. with no mention of what to do if a tool is missing or a file doesn't exist."
+        },
+        {
+          "check": "H07",
+          "status": "warning",
+          "summary": "Uses `rg` (ripgrep) throughout the evidence-gathering commands with no requirements note or availability check."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 5898,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "0532263be47bebd8383d16db7cd0ae1085e30d464817c4dc9eb30a9f42a902db",
+      "popularity": 230820,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "agent-sort"
+    },
+    {
+      "name": "api-design",
+      "source": "GitHub · affaan-m/everything-claude-code · 230820★",
+      "sourceUrl": "https://github.com/affaan-m/everything-claude-code/blob/main/.agents/skills/api-design/SKILL.md",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "REST API design reference covering resource naming, status codes, pagination, filtering, auth, rate limiting, and versioning with.",
+      "verdict": "Thorough, internally consistent reference doc with strong worked examples across TypeScript, Python, and Go, and clear decision tables for pagination/versioning choices. No safety concerns — pure documentation, no commands executed. Weak spots: description doesn't state trigger phrasing, no scope-exclusion guidance, three full per-language code blocks sit.",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q01",
+          "status": "warning",
+          "summary": "Description lists topics covered ('resource naming, status codes, pagination...') but never states a usage situation or trigger phrase."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' or out-of-scope section anywhere in description or body."
+        },
+        {
+          "check": "Q07",
+          "status": "warning",
+          "summary": "Full TypeScript, Python, and Go implementation examples are pasted inline (~lines 400-505) though only one language is ever relevant per task — an obvious split point into per-language reference files"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 13070,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "5f33537e3e1fe49d377fa593069443a9a5bed83184d78bb45781350a5b38b6cc",
+      "popularity": 230820,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "api-design"
+    },
+    {
+      "name": "article-writing",
+      "source": "GitHub · affaan-m/everything-claude-code · 230820★",
+      "sourceUrl": "https://github.com/affaan-m/everything-claude-code/blob/main/.agents/skills/article-writing/SKILL.md",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "Long-form writing skill (articles, guides, blog posts, newsletters) that enforces a distinctive voice and a banned-phrase/quality-gate.",
+      "verdict": "Clear, well-scoped writing skill: explicit trigger, concrete banned-pattern list, structure guidance per content type, and a quality gate before delivery. Weak points: no negative-trigger/scope-exclusion guidance so it could misfire on short-form or non-prose tasks, the final deliverable's format/location is never explicitly defined, and there is no version.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for'/exclusion text anywhere despite a broad long-form-writing scope (blog, essays, guides, newsletters)."
+        },
+        {
+          "check": "Q05",
+          "status": "warning",
+          "summary": "Quality Gate lists editorial criteria but never states the deliverable's format or location (file vs chat, sections)."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog section, or dated revision notes anywhere in the skill (frontmatter, line 1)."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 2902,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "8d474dd55639f9f5018b9a85fb0eb0079fc6b517591909e407479e2170a72185",
+      "popularity": 230820,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "article-writing"
+    },
+    {
+      "name": "antigravity-cli",
+      "source": "GitHub · nousresearch/hermes-agent · 216683★",
+      "sourceUrl": "https://github.com/nousresearch/hermes-agent/blob/main/optional-skills/autonomous-ai-agents/antigravity-cli/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Operator guide for the Antigravity CLI (agy): install, auth, plugins, sandbox settings, and using agy as a delegated coding-task backend.",
+      "verdict": "Thorough, concrete reference: real commands, an explicit pitfalls section covering the likeliest failure modes (no TTY, log locations, WSL auth quirks), and a dedicated orchestration-boundary note that limits when to reach for this tool. Only soft spot: the frontmatter description states what it does but not an explicit 'use when' trigger phrase.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "Q01",
+          "status": "warning",
+          "summary": "description (line 3) says what it does (plugins, auth, sandbox) but has no explicit 'use when' trigger phrasing."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 9463,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "f81034bfc9dcc3d1505cff2c08a6f791c5037f3d0e029343e51c807d0c529481",
+      "popularity": 216683,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "antigravity-cli"
+    },
+    {
+      "name": "blackbox",
+      "source": "GitHub · nousresearch/hermes-agent · 216683★",
+      "sourceUrl": "https://github.com/nousresearch/hermes-agent/blob/main/optional-skills/autonomous-ai-agents/blackbox/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Delegates coding tasks to the Blackbox AI multi-model CLI agent: install, configure, run one-shot/background/interactive/parallel jobs.",
+      "verdict": "Concrete, well-exampled delegation guide with sensible failure handling (prerequisite checks, session monitoring, kill-if-stuck). Gaps: the CLI install is unpinned, the PR-review flow silently depends on `gh` without declaring it, the final-report contract is left to 'summarize for the user' with no shape, there's no scope-exclusion guidance, and the.",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "`npm install -g @blackboxai/cli` (line 23) is unpinned — installs whatever npm currently resolves as latest."
+        },
+        {
+          "check": "Q01",
+          "status": "warning",
+          "summary": "description (line 3) states the function (delegate coding tasks) but has no explicit 'use when'/trigger phrasing."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' or exclusion guidance anywhere despite a general-purpose coding-delegation scope overlapping other agent CLIs."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 5411,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "be7ca1e7977346979d06e93110f08feaa29f4a7d53b498b3b908cedc881df913",
+      "popularity": 216683,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "blackbox"
+    },
+    {
+      "name": "n8n:community-pr-readiness-check",
+      "source": "GitHub · n8n-io/n8n · 196925★",
+      "sourceUrl": "https://github.com/n8n-io/n8n/blob/master/.agents/skills/community-pr-readiness-check/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Triages n8n community PRs (CLA/title/tests/cubic checks) and syncs GitHub labels plus Linear tickets.",
+      "verdict": "Well-built triage workflow: concrete steps, an explicit JSON output contract, and confirmation gates before closing PRs or cancelling tickets. Solid collision-guard and re-review handling. Weak on hygiene: no version signal, a colon in the frontmatter name breaks kebab-case, and no stated out-of-scope guidance for this repo-specific flow.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' exclusions anywhere; a complex n8n-io-repo-specific triage flow that could misfire if invoked on unrelated PRs."
+        },
+        {
+          "check": "H02",
+          "status": "fail",
+          "summary": "Frontmatter name is 'n8n:community-pr-readiness-check' — the colon breaks kebab-case (^[a-z0-9]+(-[a-z0-9]+)*$)."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog section, or dated revision notes anywhere in the skill."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 18972,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "730296be4a489a0535898d677186132feaaeb44426262a3a60b5c4963558ea89",
+      "popularity": 196925,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "n8n-community-pr-readiness-check"
+    },
+    {
+      "name": "n8n:content-design",
+      "source": "GitHub · n8n-io/n8n · 196925★",
+      "sourceUrl": "https://github.com/n8n-io/n8n/blob/master/.agents/skills/content-design/SKILL.md",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "n8n UI-copy content designer: writes, reviews, and audits button/error/tooltip/i18n text against style and terminology rules.",
+      "verdict": "Strong quality: precise Do/Don't examples for every rule, clear Write/Review/Audit modes, defined table output, and grep patterns for audits. Read-only/advisory with Edit access only — no security concerns. Hygiene gaps: a colon in the name breaks kebab-case, and there is no version or changelog signal to track drift.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' exclusions anywhere; a broad content-design persona with no stated scope limit beyond n8n UI copy."
+        },
+        {
+          "check": "H02",
+          "status": "fail",
+          "summary": "Frontmatter name is 'n8n:content-design' — the colon breaks kebab-case (^[a-z0-9]+(-[a-z0-9]+)*$)."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog, or dated revision notes anywhere in the file."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 13745,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "b2f05238af916dc448d8f2e2565e56d6be65af25c8109458664cce7809a1c24e",
+      "popularity": 196925,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "n8n-content-design"
+    },
+    {
+      "name": "karpathy-guidelines",
+      "source": "GitHub · forrestchang/andrej-karpathy-skills · 193787★",
+      "sourceUrl": "https://github.com/forrestchang/andrej-karpathy-skills/blob/main/skills/karpathy-guidelines/SKILL.md",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "General behavioral guidelines nudging LLM coding agents toward simplicity, surgical edits, and verifiable success criteria.",
+      "verdict": "Short, safe, principle-based coding guidance with no commands, network calls, or file mutation of its own — nothing security-relevant to flag. Solid actionability and worked examples. Only gaps: a soft rather than explicit scope caveat, and no version or changelog signal for tracking updates to the guidance itself.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "warning",
+          "summary": "Only a soft caveat ('For trivial tasks, use judgment') — no explicit NOT-for exclusions or pointers to other skills."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog, or dated notes; only 'license: MIT' present."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 2506,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "33deac5b92dbc4f8671aac32fe71fada55d85ab826661627aa6313683a8f5017",
+      "popularity": 193787,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "karpathy-guidelines"
+    },
+    {
+      "name": "launch",
+      "source": "GitHub · microsoft/vscode · 187640★",
+      "sourceUrl": "https://github.com/microsoft/vscode/blob/main/.agents/skills/launch/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Launches an isolated Code OSS (VS Code) dev build with unique debug ports for Playwright UI driving and dap-cli debugging.",
+      "verdict": "Detailed, actionable dev-tooling skill: concrete commands, disclosed side effects, well-scoped cleanup of its own throwaway temp dirs, and a thorough troubleshooting section. Weak spots: no versioning signal, and it points users to an unpinned third-party GitHub tool (dap-cli) for optional debugging.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Line 275: 'prompt the user to install it from https://github.com/roblourens/dap-cli' — unpinned personal-repo tool, no verification or version pin."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "Line 1: no version field in frontmatter and no changelog/dated revision notes anywhere in the file."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 23238,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "e42ac32907ab9d5ca2690c57d5dcd4efae449f45cf82892effe58afe18134a93",
+      "popularity": 187640,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "launch"
+    },
+    {
+      "name": "accessibility",
+      "source": "GitHub · microsoft/vscode · 187640★",
+      "sourceUrl": "https://github.com/microsoft/vscode/blob/main/.github/skills/accessibility/SKILL.md",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "Enforces accessibility requirements (help dialog, accessible view, verbosity setting, ARIA, keyboard nav) for new VS Code UI contributions.",
+      "verdict": "Thorough, technically precise coding-pattern guide with concrete TypeScript skeletons, a completion checklist, and clear file pointers into the target codebase; no security concerns. Weak spots: an aggressive 'apply by default even when not asked' trigger with no stated exclusions, and no versioning signal.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for'/exclusion text anywhere, despite line 9's broad 'use by default... even when accessibility is not named in the prompt.'"
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "Line 1: no version field in frontmatter and no changelog/dated revision notes anywhere in the file."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 16213,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "61dc52e490f996c4fbd2376df93c8e841c1a3bab00c5de1aba66e5ab4d560f09",
+      "popularity": 187640,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "accessibility"
+    },
+    {
+      "name": "design-an-interface",
+      "source": "GitHub · mattpocock/skills · 176203★",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/main/skills/deprecated/design-an-interface/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Spawns parallel sub-agents to generate and compare multiple radically different interface designs for a module, then helps synthesize the.",
+      "verdict": "Clean, safe, concise process skill with a clear per-agent output format and good worked examples. Gaps: no guidance if a sub-agent invocation fails or returns malformed output, the sub-agent count ('3+') and constraint set are underspecified beyond 4 agents, and there is no exclusion guidance despite a fairly broad trigger.",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "Line 3: 'Use when user wants to design an API, explore interface options, compare module shapes' — broad trigger with no NOT-for/exclusion text anywhere."
+        },
+        {
+          "check": "Q06",
+          "status": "fail",
+          "summary": "Line 26: 'Spawn 3+ sub-agents simultaneously using Task tool.' — no guidance for a failed, timed-out, or malformed sub-agent response."
+        },
+        {
+          "check": "Q08",
+          "status": "warning",
+          "summary": "Line 26: 'Spawn 3+ sub-agents' leaves the exact count undetermined, and only 4 example constraints are given for an open-ended agent count."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 3366,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "20f7b3d7256464f09100f63de4e20c1011d3dc83032906d5af113edd22467a49",
+      "popularity": 176203,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "design-an-interface"
+    },
+    {
+      "name": "qa",
+      "source": "GitHub · mattpocock/skills · 176203★",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/main/skills/deprecated/qa/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Runs an interactive QA session that clarifies bug reports, explores the codebase for context, and files structured GitHub issues.",
+      "verdict": "Solid, safe skill: clear trigger phrasing, concrete issue templates and breakdown criteria, no security issues found. Weak on robustness — no negative-trigger guidance, no handling if gh is missing/unauthenticated or if the background Explore agent fails, and gh is never declared as a dependency. No versioning signal.",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' exclusions or out-of-scope guidance anywhere in the description or body."
+        },
+        {
+          "check": "Q06",
+          "status": "fail",
+          "summary": "No guidance for `gh issue create` failing (gh missing/unauthenticated) or the background Explore agent failing."
+        },
+        {
+          "check": "H07",
+          "status": "fail",
+          "summary": "Uses `gh issue create` throughout with no requirements section or check that gh is installed/authenticated."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 4931,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "b25ef4a28da753687f82dfaeeb1ad38ddba1560c9d9a49a13be061e4dac12afe",
+      "popularity": 176203,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "qa"
+    },
+    {
+      "name": "book-translation",
+      "source": "GitHub · f/awesome-chatgpt-prompts · 165959★",
+      "sourceUrl": "https://github.com/f/awesome-chatgpt-prompts/blob/main/.windsurf/skills/book-translation/SKILL.md",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "Guides translating 'The Interactive Book of Prompting' chapters and UI strings into a new locale using the Turkish folder as a base.",
+      "verdict": "No security concerns. But the skill contradicts itself: Step 1 says copy the Turkish folder as base, yet its own commands and the later 'Recommended Workflow' section copy the English files instead — two agents following it could produce different results. Locale registration isn't re-run-safe (duplicate imports on repeat), there's no handling for a failing.",
+      "badges": {
+        "security": "A",
+        "quality": "F",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "F",
+      "highlights": [
+        {
+          "check": "Q01",
+          "status": "warning",
+          "summary": "Description states the task (translate the book) but never phrases when/how a dispatching agent should trigger it."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' or out-of-scope guidance anywhere in the description or body."
+        },
+        {
+          "check": "Q03",
+          "status": "fail",
+          "summary": "Step 1 says 'Copy Turkish Folder as Base... instead of translating from English', but its own commands copy `src/content/book/*.mdx` and `locales/en.ts` (English), and the later 'Recommended Workflow'"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 7388,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "58719764d67853d10ca0de131806255fa5f1e3e228fee79d054dd823ebaa6a20",
+      "popularity": 165959,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "book-translation"
+    },
+    {
+      "name": "widget-generator",
+      "source": "GitHub · f/awesome-chatgpt-prompts · 165959★",
+      "sourceUrl": "https://github.com/f/awesome-chatgpt-prompts/blob/main/.windsurf/skills/widget-generator/SKILL.md",
+      "kind": "skill",
+      "category": "build",
+      "tagline": "Scaffolds widget plugin files (standard or custom-render) for the prompts.chat feed and walks through registering and verifying them.",
+      "verdict": "No security issues; concrete file targets, code templates, and a useful troubleshooting table for common failures. Gaps: no negative-trigger guidance, widget registration isn't idempotent (duplicate entries on re-run), the Next.js/TypeScript dependency is assumed rather than declared, several example catalogs could move to an on-demand reference file, and.",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q01",
+          "status": "warning",
+          "summary": "Description states what the skill does (generate widget plugins) but never phrases when a dispatching agent should trigger it."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' or out-of-scope guidance anywhere in the description or body."
+        },
+        {
+          "check": "Q07",
+          "status": "warning",
+          "summary": "Positioning Examples, shouldInject Examples, and Custom Render Patterns sections are inline catalogs that could be split into an on-demand reference file, though the file stays under the hard size cei"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 9420,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "938ba1b2c21915c7b4244593ed38e390d453739518e3d9ca425540d9e0d425cc",
+      "popularity": 165959,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "widget-generator"
+    },
+    {
+      "name": "prompt-lookup",
+      "source": "GitHub · f/prompts.chat · 165959★",
+      "sourceUrl": "https://github.com/f/prompts.chat/blob/main/plugins/claude/prompts.chat/skills/prompt-lookup/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Searches, retrieves, and improves AI prompts via the prompts.chat MCP server.",
+      "verdict": "Small, focused wrapper around three prompts.chat MCP tools with concrete parameters and a clear trigger description. Weak spots: no guidance for MCP call failures (missing prompt, unavailable server), no stated exclusions so it can overlap with the sibling skill-lookup skill, and no versioning signal.",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for'/exclusion language anywhere; plausible misfire overlap with the similar skill-lookup skill is unaddressed."
+        },
+        {
+          "check": "Q06",
+          "status": "fail",
+          "summary": "No handling anywhere for search_prompts/get_prompt failures, empty results, or a not-found prompt ID."
+        },
+        {
+          "check": "Q09",
+          "status": "warning",
+          "summary": "Variable syntax `${variable}`/`${variable:default}` is named but never shown with a worked before/after fill-in example."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 2109,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "2d1d7052a4ed79e6b5b6d8edeef896fc8c12a0e17d2e0e7d4585bbb93343ccf6",
+      "popularity": 165959,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "prompt-lookup"
+    },
+    {
+      "name": "skill-lookup",
+      "source": "GitHub · f/prompts.chat · 165959★",
+      "sourceUrl": "https://github.com/f/prompts.chat/blob/main/plugins/claude/prompts.chat/skills/skill-lookup/SKILL.md",
+      "kind": "skill",
+      "category": "meta",
+      "tagline": "Searches, retrieves, and installs Claude Agent Skills from the prompts.chat registry via MCP.",
+      "verdict": "Concrete, example-backed workflow for finding and installing skills, with a defined install path and a frontmatter-readback verification step. Main concern: it saves third-party 'Helper scripts' and config files from an unverified registry straight into .claude/skills with no content-review gate, and skips exclusions and versioning.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Installs fetched 'Helper scripts' and 'Configuration files' into .claude/skills/{slug}/ from the prompts.chat registry with no publisher verification or content-review step before saving."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for'/exclusion language anywhere; overlap risk with the similar prompt-lookup skill is unaddressed."
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "'Read back SKILL.md to verify the frontmatter is intact' has no stated fallback if verification fails, and empty search_skills results aren't addressed."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 2246,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "293df40eb8b6393fef62b73fe398b41e228d598832b1befe9d580b8597205c01",
+      "popularity": 165959,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "skill-lookup"
+    },
+    {
+      "name": "template-skill",
+      "source": "GitHub · anthropics/skills · 162289★",
+      "sourceUrl": "https://github.com/anthropics/skills/blob/main/template/SKILL.md",
+      "kind": "skill",
+      "category": "meta",
+      "tagline": "Unfilled scaffold for a new Claude Code skill; contains no real instructions yet.",
+      "verdict": "This is an empty template, not a working skill: frontmatter description and body are literal placeholder text with zero triggers, steps, or output contract defined. Harmless as shipped (nothing to execute) but unusable until authored — every content-quality check that applies fails.",
+      "badges": {
+        "security": "A",
+        "quality": "F",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "F",
+      "highlights": [
+        {
+          "check": "Q01",
+          "status": "fail",
+          "summary": "description: 'Replace with description of the skill and when Claude should use it.' — placeholder text, no concrete trigger stated."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No exclusion language anywhere; body is empty apart from '# Insert instructions below'."
+        },
+        {
+          "check": "Q04",
+          "status": "fail",
+          "summary": "Body contains only the placeholder heading '# Insert instructions below' — zero actionable steps."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 140,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "8ddbe2b8a92333a00fdd5929764e485e6d0f6de28ddaeb0d16c242325cf6947c",
+      "popularity": 162289,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "template-skill"
+    },
+    {
+      "name": "backend-code-review",
+      "source": "GitHub · langgenius/dify · 149231★",
+      "sourceUrl": "https://github.com/langgenius/dify/blob/main/.agents/skills/backend-code-review/SKILL.md",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "Backend Python API code review skill (api/ dir) applying a security/performance/quality checklist and strict markdown output template.",
+      "verdict": "Well-scoped review skill: clear triggers, explicit negative scope (no frontend), and a rigorously defined output contract. Weak spots: no failure-path guidance if referenced checklist files are unavailable or the diff is empty, and no versioning/changelog to track updates.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "No guidance for missing/empty diff, unmatched checklist beyond generic fallback, or unreadable files (line 27)."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field or changelog anywhere in the skill (line 1)."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 6104,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "a032c9a81b936f6127b0ad40b97073a18119352f86c87ed371e6e81825d4b552",
+      "popularity": 149231,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "backend-code-review"
+    },
+    {
+      "name": "e2e-cucumber-playwright",
+      "source": "GitHub · langgenius/dify · 149231★",
+      "sourceUrl": "https://github.com/langgenius/dify/blob/main/.agents/skills/e2e-cucumber-playwright/SKILL.md",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "Guides writing/reviewing Dify's Cucumber+Playwright E2E tests under e2e/, with local style rules for steps, locators, and tags.",
+      "verdict": "Tightly scoped with clear in/out-of-scope boundaries, deterministic tool-preference defaults, and on-demand reference splitting. Gaps: no guidance for lint/type-check/test failures, invokes the niche vpr CLI without declaring it, and lacks a worked example of a step definition.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q06",
+          "status": "fail",
+          "summary": "Step 5 runs `vpr lint --fix --quiet` and `pnpm -C e2e type-check` (line 69) with no instruction for what to do if either fails."
+        },
+        {
+          "check": "Q09",
+          "status": "warning",
+          "summary": "Cucumber Expression syntax shown but no worked example of a full scenario/step-definition pair (lines 56-58)."
+        },
+        {
+          "check": "H07",
+          "status": "warning",
+          "summary": "`vpr lint` (line 69) is a niche/repo-specific tool invoked with no requirements section or availability check."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 5985,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "5f87d51e3aae7839a9531fb1ade731a2e1f5618765a941d086b8ef6a5fde5731",
+      "popularity": 149231,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "e2e-cucumber-playwright"
+    },
+    {
+      "name": "authoring-skills",
+      "source": "GitHub · vercel/next.js · 141006★",
+      "sourceUrl": "https://github.com/vercel/next.js/blob/canary/.agents/skills/authoring-skills/SKILL.md",
+      "kind": "skill",
+      "category": "meta",
+      "tagline": "Reference guide for authoring and structuring agent skills in .agents/skills/, covering frontmatter fields, description writing, and.",
+      "verdict": "Clear, example-rich reference doc with decidable criteria for what belongs in a skill vs AGENTS.md. Main gaps: no negative-trigger/exclusion guidance despite overlap risk with adjacent skill-authoring tools, and no version/changelog signal.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion guidance anywhere despite overlap risk with adjacent skill-authoring tools (whole doc, lines 1-117)."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field or changelog anywhere in the skill (line 1)."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 4113,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "b59ab89193f1fba53fe2709e7ed21bb16484138954aa81d9463700b16866a6e9",
+      "popularity": 141006,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "authoring-skills"
+    },
+    {
+      "name": "backport-pr",
+      "source": "GitHub · vercel/next.js · 141006★",
+      "sourceUrl": "https://github.com/vercel/next.js/blob/canary/.agents/skills/backport-pr/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Backports a merged Next.js PR from canary to an older release branch by cherry-picking and opening a draft PR.",
+      "verdict": "Solid, deterministic git/PR workflow with good failure handling (empty cherry-pick, missing merge commit fallback) and re-run safety. Weak spots: no explicit out-of-scope guidance, gh/pnpm used without declaring them as requirements, and no version or changelog signal.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' or out-of-scope text anywhere; Related Skills section names adjacent skills but doesn't state exclusions."
+        },
+        {
+          "check": "H07",
+          "status": "fail",
+          "summary": "gh (GitHub CLI) and pnpm are invoked repeatedly (e.g. 'gh pr view ...') with no requirements section or availability check."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog, or dated revision notes anywhere in frontmatter or body."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 3329,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "4a77deba41fc9a14a16f03720a22de1d543e45acc0cd68351cc5e46523dce8e7",
+      "popularity": 141006,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "backport-pr"
+    },
+    {
+      "name": "claude-opus-4-5-migration",
+      "source": "GitHub · anthropics/claude-code · 138168★",
+      "sourceUrl": "https://github.com/anthropics/claude-code/blob/main/plugins/claude-opus-4-5-migration/skills/claude-opus-4-5-migration/SKILL.md",
+      "kind": "skill",
+      "category": "meta",
+      "tagline": "Migrates Claude model strings and prompt phrasing in a codebase from Sonnet 4.0/4.5 or Opus 4.1 to Opus 4.5.",
+      "verdict": "Clear, deterministic model-string migration table with good context economy (bulky snippets split into reference files). But the effort-parameter step contradicts its own reference note (always-add vs. only-if-requested), failure paths go unaddressed, and there's no versioning signal.",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q03",
+          "status": "fail",
+          "summary": "Step 4 says always 'Add effort parameter set to high' during migration, but Reference section says use effort.md 'only if user requests it' — contradicts."
+        },
+        {
+          "check": "Q05",
+          "status": "warning",
+          "summary": "Deliverable is only 'Summarize all changes made' — no defined format, location, or required sections for the summary."
+        },
+        {
+          "check": "Q06",
+          "status": "fail",
+          "summary": "No failure-path guidance anywhere (no model strings found, ambiguous platform, header already absent) across the multi-step flow."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 4734,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "29924e91e338c9d6eb99dc43945846c4767b359f30000c0ca1fa8c563c471d69",
+      "popularity": 138168,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "claude-opus-4-5-migration"
+    },
+    {
+      "name": "Writing Hookify Rules",
+      "source": "GitHub · anthropics/claude-code · 138168★",
+      "sourceUrl": "https://github.com/anthropics/claude-code/blob/main/plugins/hookify/skills/writing-rules/SKILL.md",
+      "kind": "skill",
+      "category": "meta",
+      "tagline": "Explains hookify rule file syntax (frontmatter fields, conditions, regex patterns) for the .claude/hookify.*.local.md hook system.",
+      "verdict": "Thorough, example-rich reference with deterministic defaults, testing guidance, and a version field. Weak points: frontmatter name isn't kebab-case, no explicit out-of-scope guidance, and a duplicated 'Quick Reference' section repeats earlier material instead of being split into a references file.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' or out-of-scope text anywhere, despite plausible misfire onto other hook/config systems."
+        },
+        {
+          "check": "Q07",
+          "status": "warning",
+          "summary": "Trailing 'Quick Reference' section duplicates Event types/Field options/Operators already given earlier instead of being split into a reference file."
+        },
+        {
+          "check": "H02",
+          "status": "fail",
+          "summary": "name: Writing Hookify Rules — contains spaces and capitals, not kebab-case."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 8413,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "3f1f8d72803445288e40d57804d09f7dd7541c4257cfa34d07d51457054c3ade",
+      "popularity": 138168,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "writing-hookify-rules"
+    },
+    {
+      "name": "advisor-orchestrator-worker",
+      "source": "GitHub · shubhamsaboo/awesome-llm-apps · 123840★",
+      "sourceUrl": "https://github.com/shubhamsaboo/awesome-llm-apps/blob/main/agent_skills/advisor-orchestrator-worker/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Orchestrates a three-tier team of AI models (advisor, workers, orchestrator) through a frame/plan/delegate/verify/synthesize loop.",
+      "verdict": "Well-built orchestration skill: declared network use matches behavior, concrete bash with injection-safe worker dispatch, explicit failure/fallback paths at every stage, a defined output contract, and a stated budget. No security or quality red flags found.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 7222,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "d78a6b52912e7d2d1e9e044bff955563b1ea35d3fd7447fc17c0c369049ae5c1",
+      "popularity": 123840,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "advisor-orchestrator-worker"
+    },
+    {
+      "name": "project-graveyard",
+      "source": "GitHub · shubhamsaboo/awesome-llm-apps · 123840★",
+      "sourceUrl": "https://github.com/shubhamsaboo/awesome-llm-apps/blob/main/agent_skills/project-graveyard/SKILL.md",
+      "kind": "skill",
+      "category": "project-intel",
+      "tagline": "Scans local repos for abandoned side projects, autopsies why each died from git history, and recommends one to resurrect.",
+      "verdict": "Solid, well-scoped skill: read-only scanner, strong consent gates before touching any repo, and a detailed report/output contract. Two dings: it claims to run entirely locally and offline yet later instructs web searches during the resurrection 'world-check', and it never addresses what happens if the scanner script itself fails (missing python3, permission.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "S11",
+          "status": "fail",
+          "summary": "Description/body claim 'Everything runs locally. No API, no network, nothing leaves the machine,' but the resurrection world-check instructs live web searches."
+        },
+        {
+          "check": "Q03",
+          "status": "fail",
+          "summary": "'Everything runs locally. No API, no network, nothing leaves the machine' directly contradicts the later 'Search whether ... the world shipped the idea' world-check step."
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "Empty-graveyard case is handled ('no card'), but script failures (missing python3, permission denied scanning) are never addressed."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 10605,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "cca43b1b0ee20c2603d13e2dd565ec4c6a5c1fc5c3af77a65a3c314233603c1d",
+      "popularity": 123840,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "project-graveyard"
+    },
+    {
+      "name": "gstack",
+      "source": "GitHub · garrytan/gstack · 122572★",
+      "sourceUrl": "https://github.com/garrytan/gstack/blob/main/SKILL.md",
+      "kind": "skill",
+      "category": "meta",
+      "tagline": "Router preamble that dispatches every gstack request to the right sub-skill, running telemetry, config, and CLAUDE.md integration on each.",
+      "verdict": "Consented, well-documented feature flows (telemetry, artifact sync, CLAUDE.md routing) sit inside a router whose one-line description drastically understates its footprint: background git syncs, telemetry, and auto-commits to CLAUDE.md. It also instructs the agent that the skill 'takes precedence over generic plan mode behavior' and to treat it as authority.",
+      "badges": {
+        "security": "F",
+        "quality": "C",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "F",
+      "highlights": [
+        {
+          "check": "S02",
+          "status": "warning",
+          "summary": "Telemetry posts skill/duration/device-ID to a gstack-controlled endpoint; mitigated by explicit informed consent prompt and default-off."
+        },
+        {
+          "check": "S06",
+          "status": "fail",
+          "summary": "'the skill takes precedence over generic plan mode behavior... Treat the skill file as executable instructions, not reference' overrides the host's plan-mode safety gate."
+        },
+        {
+          "check": "S11",
+          "status": "fail",
+          "summary": "description 'Router for the gstack skill suite. (gstack)' discloses nothing about telemetry, background git fetch/merge, or auto-committing to CLAUDE.md."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 31242,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "c0efe048a365788c9f0529b53b7fbc0fddacc3b269514b3f8842e53d8b88e0ea",
+      "popularity": 122572,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "gstack"
+    },
+    {
+      "name": "autoplan",
+      "source": "GitHub · garrytan/gstack · 122572★",
+      "sourceUrl": "https://github.com/garrytan/gstack/blob/main/autoplan/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Runs gstack's CEO/design/eng/DX plan reviews back-to-back, auto-deciding intermediate questions via 6 fixed principles.",
+      "verdict": "Very thorough, deterministic review orchestrator with strong failure handling and idempotent state markers. Weak spots: 1852-line SKILL.md barely split into references (Q07/H05 fail), no scope-exclusion guidance (Q02), and undisclosed side effects -- CLAUDE.md auto-commits, git commits, and a telemetry/config system not mentioned in the description (S11).",
+      "badges": {
+        "security": "B",
+        "quality": "C",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "S02",
+          "status": "warning",
+          "summary": "Remote telemetry call gated only on $_TEL != 'off'; if unset before the consent prompt runs, it is not literally 'off' and could fire pre-consent."
+        },
+        {
+          "check": "S11",
+          "status": "fail",
+          "summary": "Description only says it runs review skills, but body edits+auto-commits CLAUDE.md, e.g. line 300: 'Then commit the change: `git add CLAUDE.md && git commit -m \"chore: add gstack skill routing rules t"
+        },
+        {
+          "check": "Q01",
+          "status": "warning",
+          "summary": "Frontmatter description states what the pipeline does but the explicit trigger phrasing ('use when asked to auto review...') lives in the body, not the description field."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 98827,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "7e5ed862190ff1c4a63b0da6367e10db4043ac333a8eb5ab4651e09fdb9b8251",
+      "popularity": 122572,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "autoplan"
+    },
+    {
+      "name": "chrome-release-cls",
+      "source": "GitHub · electron/electron · 122078★",
+      "sourceUrl": "https://github.com/electron/electron/blob/main/.claude/skills/chrome-release-cls/SKILL.md",
+      "kind": "skill",
+      "category": "security",
+      "tagline": "Given a Chrome Releases blog URL, extracts each CVE and finds the Gerrit CL that fixed it by searching a local Chromium checkout.",
+      "verdict": "Clean, well-scoped research skill: concrete steps, explicit fallbacks for misses, deterministic repo-selection rules, and a clear output contract (per-severity table plus /tmp/cve_cls.txt). Minor gaps: no declared curl/python3 requirement check and no version/changelog signal.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "H07",
+          "status": "warning",
+          "summary": "curl and python3 are invoked throughout (line 21: 'curl -sL \"$URL\" | python3 -c') with no upfront requirements section or availability check."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field and no changelog/dated revision notes anywhere in the file."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 5496,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "40a24b5a711bf506cf4fef0c871d6d674c202c9e8da8867399da7e7c984841c8",
+      "popularity": 122078,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "chrome-release-cls"
+    },
+    {
+      "name": "chrome-release-verify",
+      "source": "GitHub · electron/electron · 122078★",
+      "sourceUrl": "https://github.com/electron/electron/blob/main/.claude/skills/chrome-release-verify/SKILL.md",
+      "kind": "skill",
+      "category": "security",
+      "tagline": "End-to-end Chrome CVE backport for an Electron release branch: finds missing fixes, writes/validates cherry-pick patches, opens a PR.",
+      "verdict": "Rigorous, well-gated backport pipeline: local-first validation (sync/lint) before any push, explicit IN-TREE re-run checks, and deliberate PR-body redaction to avoid tipping off attackers before release. Minor concerns: one scoped git commit.gpgsign=false during conflict resolution, no upfront gh/e-tool check, and no version signal.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "S07",
+          "status": "warning",
+          "summary": "Line 75: 'git add <files> && git -c commit.gpgsign=false am --continue' disables commit signing, scoped to one conflict-resolution step, not global."
+        },
+        {
+          "check": "H07",
+          "status": "warning",
+          "summary": "The pipeline invokes gh, the internal `e` tool, and node script/lint.js across many steps with no upfront auth/availability check before the multi-step run begins."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field and no changelog/dated revision notes anywhere in the file."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 7497,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "ab834eda41a09b4aa5af11b2c19e05e6ca813fdc10546ebf5083885cb90f3fff",
+      "popularity": 122078,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "chrome-release-verify"
+    },
+    {
+      "name": "add-community-extension",
+      "source": "GitHub · github/spec-kit · 122067★",
+      "sourceUrl": "https://github.com/github/spec-kit/blob/main/.github/skills/add-community-extension/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Turns a GitHub extension-submission issue into a validated entry in the Spec Kit community catalog and opens a PR.",
+      "verdict": "Clear, deterministic, well-scoped process with concrete git/PR steps, a solid add-vs-update path, and consistent file targets. Main gaps: no stated behavior when a validation check fails (private repo, missing LICENSE, unchecked box), and no versioning signal.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q06",
+          "status": "fail",
+          "summary": "No guidance anywhere for validation failures (private repo, missing LICENSE/manifest, unchecked box) or issue/repo fetch errors."
+        },
+        {
+          "check": "H07",
+          "status": "warning",
+          "summary": "python3 (and implicit gh/GitHub PR access) used without any upfront requirements or availability check."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field or changelog anywhere in frontmatter or body."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 6652,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "0e324566b8fa7d407a9dadb3b863788a572c25ab3687de6d45d8902f0d3118ff",
+      "popularity": 122067,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "add-community-extension"
+    },
+    {
+      "name": "migrate-radix-to-base",
+      "source": "GitHub · shadcn/ui · 119237★",
+      "sourceUrl": "https://github.com/shadcn/ui/blob/main/skills/migrate-radix-to-base/SKILL.md",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "Migrates a React/shadcn project's Radix UI primitives to Base UI, component by component, with idempotent resume logic and structured.",
+      "verdict": "Thorough, deterministic migration playbook: distinct strategies per case (golden-pair CLI, legacy styles, transformation engine), resume-safe state detection, and an exact per-component report template. Minor gaps: no negative-trigger scope note, an unpinned @base-ui/react install, and no version/changelog signal.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "\"Install @base-ui/react alongside radix\" has no version pin (well-known package, unpinned)."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / out-of-scope note anywhere; description and body never exclude adjacent tasks or point to other skills."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field or changelog anywhere in frontmatter or body."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 9311,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "8b44b5641e1cf5c3b3d95ecd2e36c31e14862940035a81144a939336ef87765a",
+      "popularity": 119237,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "migrate-radix-to-base"
+    },
+    {
+      "name": "shadcn",
+      "source": "GitHub · shadcn/ui · 119237★",
+      "sourceUrl": "https://github.com/shadcn/ui/blob/main/skills/shadcn/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "CLI-driven rulebook and workflow for adding, updating, styling, and composing shadcn/ui components, presets, and chat UI in a project.",
+      "verdict": "Extensive, concrete ruleset with idempotency checks (checks installed components before adding) and explicit user-confirmation gates before destructive --overwrite. Gaps: no negative-trigger scope statement, unpinned CLI invocations throughout, thin failure-path guidance for external CLI calls, no version signal.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "CLI invoked unpinned as `npx shadcn@latest` / `pnpm dlx shadcn@latest` throughout; well-known tool but no version pin."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion text anywhere in description or body."
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "Many external CLI steps (info, docs, add, apply) have no stated fallback if the command errors or a registry is unreachable."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 19315,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "6cdc171889dfe307f6f7c63d8be29a561c5b16f77ac80c00772e3e15376f9418",
+      "popularity": 119237,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "shadcn"
+    },
+    {
+      "name": "banner-design",
+      "source": "GitHub · nextlevelbuilder/ui-ux-pro-max-skill · 107233★",
+      "sourceUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/.claude/skills/banner-design/SKILL.md",
+      "kind": "skill",
+      "category": "media",
+      "tagline": "Generates multi-format marketing/social banners (ads, headers, hero images, print) with AI-generated visuals and multiple art-direction.",
+      "verdict": "Well-structured workflow: explicit scope exclusion, concrete commands with defined dimensions/contrast criteria, a clear output-path/naming contract, and compact SKILL.md with bulk reference material split out. Main gap: no guidance for when any step in its long external-dependency chain (browser research, AI image generation, screenshot export) fails, so a.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q06",
+          "status": "fail",
+          "summary": "No failure handling anywhere for the browser research, AI generation, or screenshot export steps despite a long external-dependency chain."
+        },
+        {
+          "check": "H03",
+          "status": "warning",
+          "summary": "Description is a 495-char keyword/feature dump (platforms, styles, actions listed exhaustively) rather than concise informative sentences."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 8269,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "3d8d67b26169673e7b929603f836a73008b66fa5ce4d0c04a951a62ef05b3aa4",
+      "popularity": 107233,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "banner-design"
+    },
+    {
+      "name": "brand",
+      "source": "GitHub · nextlevelbuilder/ui-ux-pro-max-skill · 107233★",
+      "sourceUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/.claude/skills/brand/SKILL.md",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "Manages brand voice, visual identity, messaging, and asset/design-token consistency via a subcommand router into reference files and.",
+      "verdict": "Compact routing skill with a clean SKILL.md/references split and a coherent file-sync model (brand-guidelines.md to design-tokens.json/css). Weak on guardrails: no stated exclusions despite covering broad brand/content/asset territory, the core routing step ('Execute with remaining arguments') has no detail, no example of the doc-to-token transform, no.",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' or scope-exclusion text anywhere despite broad territory (voice, visuals, messaging, assets) that could overlap with adjacent content/design skills."
+        },
+        {
+          "check": "Q04",
+          "status": "warning",
+          "summary": "Routing step '3. Execute with remaining arguments' gives no detail on what executing means or how outcomes are decided."
+        },
+        {
+          "check": "Q06",
+          "status": "fail",
+          "summary": "No mention of what to do if any script (inject-brand-context.cjs, sync-brand-to-tokens.cjs, validate-asset.cjs) fails or errors."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 2931,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "4c03f1381f7f73478c09f390c9ce74011eee67cea3998d51bf373946e5898245",
+      "popularity": 107233,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "brand"
+    },
+    {
+      "name": "vitest",
+      "source": "GitHub · supabase/supabase · 106512★",
+      "sourceUrl": "https://github.com/supabase/supabase/blob/master/.agents/skills/vitest/SKILL.md",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "Reference index for the Vitest testing framework covering config, test/describe/expect APIs, mocking, coverage, snapshots, and advanced.",
+      "verdict": "Clean, versioned, low-risk reference skill: compact index with all bulk material split into 16 on-demand reference files, a dated versioning note, and a clear trigger description. It performs no actions and touches no network, files, or credentials. Sole gap is no stated exclusions, which matters since it broadly covers a whole framework and could overlap.",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No exclusion text anywhere despite covering a whole framework's surface (could overlap with Jest or project-specific test skills)."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 3308,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "01fc67aa3c1bd93afccd927e4d44aabb85798116c1847e6ae2a33e297c7a7dec",
+      "popularity": 106512,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "vitest"
+    },
+    {
+      "name": "clickhouse-logs-queries",
+      "source": "GitHub · supabase/supabase · 106512★",
+      "sourceUrl": "https://github.com/supabase/supabase/blob/master/.claude/skills/clickhouse-logs-queries/SKILL.md",
+      "kind": "skill",
+      "category": "project-intel",
+      "tagline": "Reference guide for writing, reviewing, and migrating ClickHouse-backed Supabase logs queries, including BigQuery-to-ClickHouse translation.",
+      "verdict": "Solid, low-risk reference skill: no network or shell commands, concrete worked SQL examples, and bulky migration/codebase material split into on-demand reference files. Weak spots are hygiene only: no stated out-of-scope note (could misfire on non-ClickHouse SQL asks) and no version or changelog signal.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for'/exclusion anywhere; nothing scopes it away from general SQL or non-ClickHouse logs tasks."
+        },
+        {
+          "check": "H03",
+          "status": "warning",
+          "summary": "Description is ~690 chars, over the ~500 char guidance, though content is substantive rather than filler."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field or changelog anywhere in the skill."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 9498,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "9219ff8731b22e22c8de32f278636723148d8057f4e807fcff3319c24ee75a01",
+      "popularity": 106512,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "clickhouse-logs-queries"
+    },
+    {
+      "name": "agent-tui",
+      "source": "GitHub · google-gemini/gemini-cli · 106050★",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/blob/main/.gemini/skills/agent-tui/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Drives terminal UI apps through a screenshot/type/press/wait loop for automated testing of CLI/TUI applications, including the Gemini CLI.",
+      "verdict": "Strong procedural design: explicit observe-decide-act-verify loop, a dedicated failure-recovery table, and an idempotent daemon-restart check. But its own install instructions pipe a GitHub-hosted script straight into `sh` unmitigated, other installs are unpinned/global, tmux is a required but undeclared dependency, and there is no version or changelog.",
+      "badges": {
+        "security": "F",
+        "quality": "A",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "F",
+      "highlights": [
+        {
+          "check": "S03",
+          "status": "fail",
+          "summary": "Recommended install pipes a remote script directly into sh with no review step."
+        },
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Alternative installs (npm i -g agent-tui, cargo install --git .../agent-tui.git) are global/unpinned with no version pin."
+        },
+        {
+          "check": "Q07",
+          "status": "warning",
+          "summary": "331-line SKILL.md keeps a philosophy essay, ASCII decision framework, anti-pattern gallery, and quick reference all inline with no split to reference files."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 12736,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "3e55ad292e2d02f8f774d63b67b3bb7dd7ff9d70243e53de925b4e6861708116",
+      "popularity": 106050,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "agent-tui"
+    },
+    {
+      "name": "async-pr-review",
+      "source": "GitHub · google-gemini/gemini-cli · 106050★",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/blob/main/.gemini/skills/async-pr-review/SKILL.md",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "Starts and checks status of a background PR review job that runs preflight checks, Gemini-powered test plans, and code review in an.",
+      "verdict": "Clear two-branch workflow (start vs. check status) with a defined final-assessment artifact set to read back. But it delegates all real work to unreviewed external scripts, never declares its gemini/git dependency, has no handling for script failure or a non-COMPLETE/IN_PROGRESS status, and doesn't address restarting a review for a PR that's already in.",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for'/exclusion anywhere; could misfire against requests for a synchronous/inline PR review."
+        },
+        {
+          "check": "Q06",
+          "status": "fail",
+          "summary": "Only STATUS: IN_PROGRESS / STATUS: COMPLETE are handled; no guidance for script failure, missing gemini/git, or any error status."
+        },
+        {
+          "check": "Q10",
+          "status": "fail",
+          "summary": "Re-running Start Review for a PR whose worktree at .gemini/tmp/async-reviews/pr-<number> already exists is never addressed."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 3561,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "1502652fdef089cddc921a3f02a4f473c7f86b552e440f4e0c148e707930fd32",
+      "popularity": 106050,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "async-pr-review"
+    },
+    {
+      "name": "cloud",
+      "source": "GitHub · browser-use/browser-use · 105379★",
+      "sourceUrl": "https://github.com/browser-use/browser-use/blob/main/skills/cloud/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Dispatch table routing Claude to Browser Use Cloud API/SDK reference docs by topic (auth, sessions, webhooks, proxies, integrations).",
+      "verdict": "Clear, well-scoped reference skill: concrete triggers, explicit negative trigger, compact SKILL.md that defers bulk content to on-demand reference files. Weak spots: no version/changelog signal, an 815-char description that reads as a feature-list wall rather than a terse dispatch signal, and unpinned SDK installs from standard registries.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "SDK installs from standard registries with no version pin; well-known packages so warning not fail."
+        },
+        {
+          "check": "H03",
+          "status": "fail",
+          "summary": "Description runs ~815 chars across lines 4-15, a feature-list wall well past the ~500-char guidance."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog section, or dated revision notes anywhere in the file."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 2698,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "665351f41e73b7c7a139838d8964abb25c53eaab2c133fc3e8a525ccbe023bb9",
+      "popularity": 105379,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "cloud"
+    },
+    {
+      "name": "open-source",
+      "source": "GitHub · browser-use/browser-use · 105379★",
+      "sourceUrl": "https://github.com/browser-use/browser-use/blob/main/skills/open-source/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Dispatch table routing Claude to browser-use open-source Python library docs by topic (Agent, Browser, Tools, MCP, monitoring).",
+      "verdict": "Same solid pattern as its cloud sibling: concrete triggers, two explicit negative triggers, compact SKILL.md deferring bulk material to on-demand references. Weak spots: no version/changelog signal, a 688-char wall-of-topics description, and an unpinned `browser-use` install from PyPI.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Well-known package installed unpinned from the standard PyPI registry."
+        },
+        {
+          "check": "H03",
+          "status": "fail",
+          "summary": "Description runs ~688 chars across lines 4-13, a feature-list wall past the ~500-char guidance."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog section, or dated revision notes anywhere in the file."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 2143,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "639e1cd2d73e06dfea8c81ad72fd95b8cf3fc7f2b745bbee74099e48bfd9abeb",
+      "popularity": 105379,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "open-source"
+    },
+    {
+      "name": "add-uint-support",
+      "source": "GitHub · pytorch/pytorch · 101746★",
+      "sourceUrl": "https://github.com/pytorch/pytorch/blob/main/.claude/skills/add-uint-support/SKILL.md",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "Step-by-step guide for adding uint16/32/64 support to PyTorch operators by editing AT_DISPATCH_V2 macros.",
+      "verdict": "Concrete, deterministic procedure: decision tree, worked before/after examples for both methods, and an explicit idempotency check that skips files already migrated. Gaps: no stated exclusions despite a closely related sibling skill (at-dispatch-v2), no handling for unreadable/missing target files, some duplicated examples that could move to a reference.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / out-of-scope text anywhere, despite an adjacent sibling skill (at-dispatch-v2) it could be confused with."
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "No guidance if the target file is missing/unreadable or an Edit fails; only semantic edge cases (already-migrated, floating-only) are covered."
+        },
+        {
+          "check": "Q07",
+          "status": "warning",
+          "summary": "Common patterns section largely re-shows the same before/after examples already given under Quick reference and Step 4, inflating the single file instead of splitting to a reference."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 9243,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "aa1619a8cd839fdaea05597965e71c60466b453e0fc78f0f5f3196b6bad4d0c7",
+      "popularity": 101746,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "add-uint-support"
+    },
+    {
+      "name": "aoti-debug",
+      "source": "GitHub · pytorch/pytorch · 101746★",
+      "sourceUrl": "https://github.com/pytorch/pytorch/blob/main/.claude/skills/aoti-debug/SKILL.md",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "Diagnoses PyTorch AOTInductor (AOTI) compile/load errors: device mismatches, segfaults, and CUDA illegal-memory-access crashes.",
+      "verdict": "Narrow, well-organized debugging guide with concrete env-var flags, clear error-pattern routing, and no internal contradictions. No security concerns of any kind. Only gap: no version field or changelog, so consumers can't tell if it changed since last trusted.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog heading, or dated revision notes anywhere in the skill."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 6776,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "4fe6aebb50c6fa86645fcc6e5f030c10942e37a71ba8207b3b2e54388019be40",
+      "popularity": 101746,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "aoti-debug"
+    },
+    {
+      "name": "fastapi",
+      "source": "GitHub · fastapi/fastapi · 100637★",
+      "sourceUrl": "https://github.com/fastapi/fastapi/blob/master/fastapi/.agents/skills/fastapi/SKILL.md",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "FastAPI coding conventions: Annotated params/deps, response models, SSE/JSON-lines streaming, frontend serving, and preferred tooling.",
+      "verdict": "Well-structured best-practices reference: concrete, code-backed rules, deterministic defaults for ambiguous forks (e.g. async/sync), and good context economy via on-demand references/*.md files. No security concerns. Missing negative triggers and any versioning signal.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' or exclusion text anywhere, despite covering many broad FastAPI/Python topics that could misfire on adjacent tasks."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog heading, or dated revision notes anywhere in the skill."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 10111,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "88977f472120d5423fa99bd7b0908d7507b292dd8939321a1616979e0575424b",
+      "popularity": 100637,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "fastapi"
+    },
+    {
+      "name": "adev-writing-guide",
+      "source": "GitHub · angular/angular · 100578★",
+      "sourceUrl": "https://github.com/angular/angular/blob/main/.agent/skills/adev-writing-guide/SKILL.md",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "Style and formatting guide for authoring Angular (adev) documentation: Google writing standards plus Angular-specific markdown/components.",
+      "verdict": "Clean, self-contained content guide with a numbered precedence order for style conflicts, concrete formatting examples throughout, and a tightly directory-scoped trigger. No security concerns. Missing negative triggers and any versioning signal.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog heading, or dated revision notes anywhere in the skill."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 6911,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "96fd2f04af96814669f3af2ad9153f46909c3be843f4716c817e58a45789f9fe",
+      "popularity": 100578,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "adev-writing-guide"
+    },
+    {
+      "name": "PR Review",
+      "source": "GitHub · angular/angular · 100578★",
+      "sourceUrl": "https://github.com/angular/angular/blob/main/.agent/skills/pr_review/SKILL.md",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "Guidelines and gh/GitHub-MCP scripts for reviewing Angular PRs locally or remotely, with a checklist and consent gate before posting.",
+      "verdict": "Well-structured, actionable review workflow with script fallbacks, duplicate-comment avoidance, and a hard consent gate before posting to PRs (resists fake 'auto-approved' bypass attempts). Weak spots: no negative-trigger scoping, non-kebab-case name field, no versioning signal, and local mode edits files beyond what the terse description implies.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "S11",
+          "status": "warning",
+          "summary": "Local mode 'apply the edits directly to the files' (uncommitted) isn't disclosed by the terse description 'Guidelines and tools for reviewing pull requests'."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / out-of-scope exclusions anywhere in the description or body."
+        },
+        {
+          "check": "H02",
+          "status": "fail",
+          "summary": "name: PR Review — spaces and capitals, fails ^[a-z0-9]+(-[a-z0-9]+)*$."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 10557,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "880c2ed65dc94e25cd676fdc2ed87822d8c2e9c62ad86b5d95267d2d60ec0034",
+      "popularity": 100578,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "pr-review"
+    },
+    {
+      "name": "babysit-pr",
+      "source": "GitHub · openai/codex · 99305★",
+      "sourceUrl": "https://github.com/openai/codex/blob/main/.codex/skills/babysit-pr/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Polls a GitHub PR's CI, reviews, and mergeability; auto-fixes branch-related CI failures and pushes until merged, closed, or blocked.",
+      "verdict": "Thorough, deterministic automation: explicit stop conditions, output contract, flaky-vs-branch failure classification, and a consent gate before replying to human reviewers. Avoids destructive git and only touches the PR's own branch. Gaps: no negative-trigger/scope exclusions and no version or changelog signal.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / out-of-scope exclusions anywhere in the description or body."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog, or dated revision notes anywhere in the file."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 16859,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "514e1f61998364e8f4f152c0c247f6cb9f58ef897cd948dc1f8ed667da306f0b",
+      "popularity": 99305,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "babysit-pr"
+    },
+    {
+      "name": "code-breaking-changes",
+      "source": "GitHub · openai/codex · 99305★",
+      "sourceUrl": "https://github.com/openai/codex/blob/main/.codex/skills/code-review-breaking-changes/SKILL.md",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "Directs a search for breaking changes across app-server APIs, CLI params, config loading, and session resuming.",
+      "verdict": "Extremely thin: a two-word description gives no trigger guidance, no concrete search commands or criteria, no defined output/deliverable, and no scope exclusions. Functionally a checklist prompt rather than an executable procedure. No security concerns — it only reads and analyzes.",
+      "badges": {
+        "security": "A",
+        "quality": "F",
+        "hygiene": "D",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "F",
+      "highlights": [
+        {
+          "check": "Q01",
+          "status": "fail",
+          "summary": "description: 'Breaking changes' — no situation, phrasing, or task type stated."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No exclusions or out-of-scope pointers anywhere; broad enough to misfire on general code review tasks."
+        },
+        {
+          "check": "Q04",
+          "status": "fail",
+          "summary": "'Search for breaking changes in external integration surfaces' names no command, tool, or criterion for what counts as breaking."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 324,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "1f88eee526bdc560eaab687ed77dd2bcf16bfb9b6abe9accfabaa1fce789c2f3",
+      "popularity": 99305,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "code-breaking-changes"
+    },
+    {
+      "name": "material-ui-nextjs",
+      "source": "GitHub · mui/material-ui · 98615★",
+      "sourceUrl": "https://github.com/mui/material-ui/blob/master/skills/material-ui-nextjs/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Guides wiring Material UI into Next.js App/Pages Router: cache providers, fonts, CSS layers, Link, URL state.",
+      "verdict": "Concise, well-scoped index skill delegating detail to AGENTS.md/reference.md; no security issues found in the visible content. Missing NOT-for exclusions risks misfiring against its near-identical sibling skill (material-ui-styling). Referenced files cannot be verified without a file inventory.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion language anywhere; overlaps with sibling skill material-ui-styling, risking misfire between them."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 2041,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "c10a0f34db574402c2a4983f160c590199d20aedde8bf76df7a4729677b260a7",
+      "popularity": 98615,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "material-ui-nextjs"
+    },
+    {
+      "name": "material-ui-styling",
+      "source": "GitHub · mui/material-ui · 98615★",
+      "sourceUrl": "https://github.com/mui/material-ui/blob/master/skills/material-ui-styling/SKILL.md",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "Helps pick the right MUI styling layer: sx prop, styled(), theme overrides, or global CSS.",
+      "verdict": "Concise, well-scoped index skill delegating detail to AGENTS.md/reference.md; no security issues found in the visible content. Missing NOT-for exclusions risks misfiring against its near-identical sibling skill (material-ui-nextjs). Referenced files cannot be verified without a file inventory.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' exclusions; overlaps with sibling skill material-ui-nextjs (SSR/wiring), risking misfire between them."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 1580,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "51ad5bc7022a268b1b7117a3b5595a21b9469b5a98ba314f9d5cab546528a05e",
+      "popularity": 98615,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "material-ui-styling"
+    },
+    {
+      "name": "playwright-dev",
+      "source": "GitHub · microsoft/playwright · 93065★",
+      "sourceUrl": "https://github.com/microsoft/playwright/blob/main/.claude/skills/playwright-dev/SKILL.md",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "Index of contributor guides for developing Playwright itself: APIs, MCP tools, CLI commands, vendor deps.",
+      "verdict": "Short, clean router into detailed contributor docs; no security issues in the visible content. Lacks NOT-for scoping given how many topics it spans, and carries no version field or changelog, so consumers can't tell if it changed since they last trusted it.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' exclusions given breadth of topics (APIs, MCP tools, CLI, vendor deps, webview, bisecting)."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog, or dated revision notes anywhere in the frontmatter or body."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 1309,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "723bef92e0d724d271658e05ff47358ba247eebde4aa4e7595aa6023395e51c8",
+      "popularity": 93065,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "playwright-dev"
+    },
+    {
+      "name": "playwright-devops",
+      "source": "GitHub · microsoft/playwright · 93065★",
+      "sourceUrl": "https://github.com/microsoft/playwright/blob/main/.claude/skills/playwright-devops/SKILL.md",
+      "kind": "skill",
+      "category": "build",
+      "tagline": "Index skill pointing to CI failure analysis and log-fetching guides for Playwright GitHub Actions workflows.",
+      "verdict": "Thin index-only SKILL.md whose two referenced files (commit-failures.md, fetch-commit-logs.sh) aren't part of this content; visible text is safe but omits output contract, failure handling, negative triggers, and versioning.",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / out-of-scope guidance anywhere in the description or body."
+        },
+        {
+          "check": "Q05",
+          "status": "fail",
+          "summary": "No format or location stated for the 'CI Commit Failure Report' deliverable."
+        },
+        {
+          "check": "Q06",
+          "status": "fail",
+          "summary": "No handling for missing gh CLI, auth failure, or absent commit logs across the two guides."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 420,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "a244766cbefe0e9084b8238e03ce092dd0c309aff97a8f657f35b6700f941ac4",
+      "popularity": 93065,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "playwright-devops"
+    },
+    {
+      "name": "cavecrew",
+      "source": "GitHub · juliusbrussee/caveman · 90467★",
+      "sourceUrl": "https://github.com/juliusbrussee/caveman/blob/main/plugins/caveman/skills/cavecrew/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Decision guide for when to delegate to caveman-compressed subagents (investigator/builder/reviewer) vs. vanilla agents.",
+      "verdict": "Well-built routing skill: explicit trigger phrases, a clear decision table with alternatives, concrete output-contract formats and examples, and an explicit 'what NOT to do' section. Only real gap is no version or changelog signal.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog, or dated revision notes anywhere in the skill."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 3904,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "560213d7856b43c9e2f9e0c8bab731d07479602763fd1c60c97cc6d3f0c3369d",
+      "popularity": 90467,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "cavecrew"
+    },
+    {
+      "name": "caveman-compress",
+      "source": "GitHub · juliusbrussee/caveman · 90467★",
+      "sourceUrl": "https://github.com/juliusbrussee/caveman/blob/main/plugins/caveman/skills/caveman-compress/SKILL.md",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "Compresses CLAUDE.md/todo/preference files into terse caveman-style text via a bundled python script, backing up the original.",
+      "verdict": "Clear triggers, concrete steps, defined output, and good retry/failure handling. But re-running on an already-compressed file overwrites the true backup with compressed content (no idempotency check), and its python3 + Claude-API dependency chain is never declared upfront.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q10",
+          "status": "fail",
+          "summary": "'Compressed version overwrites the original file' with no check for prior compression: a second run backs up already-compressed text over the real original, then re-compresses it."
+        },
+        {
+          "check": "H07",
+          "status": "fail",
+          "summary": "Runs 'python3 -m scripts' and has the script call the Claude API with no Requirements section or availability check for python3 or an API key."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog, or dated revision notes anywhere in the skill."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 4527,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T14:08:19.015Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "93bb1b86f5fdd38a3942cdf0fdf87c1217d1ea10c7e525ecd52f3038e6be21a4",
+      "popularity": 90467,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "caveman-compress"
     }
   ]
 }
