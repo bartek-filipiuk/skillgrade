@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T12:35:54.593Z",
+  "generatedAt": "2026-07-18T13:09:04.470Z",
   "rubricVersion": "0.1.2",
   "taxonomy": [
     {
@@ -96,7 +96,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -147,7 +147,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -198,7 +198,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -249,7 +249,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -295,7 +295,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -346,7 +346,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -397,7 +397,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -448,7 +448,7 @@
         "majorFlags": 9
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -499,7 +499,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-fable-5"
@@ -550,7 +550,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -601,7 +601,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -652,7 +652,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -703,7 +703,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -754,7 +754,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -805,7 +805,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -856,7 +856,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -907,7 +907,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -953,7 +953,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1004,7 +1004,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1055,7 +1055,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1106,7 +1106,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1157,7 +1157,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1208,7 +1208,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1259,7 +1259,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1305,7 +1305,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1356,7 +1356,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1407,7 +1407,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1448,7 +1448,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1499,7 +1499,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1545,7 +1545,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1596,7 +1596,7 @@
         "majorFlags": 4
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1647,7 +1647,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1698,7 +1698,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1749,7 +1749,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1800,7 +1800,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1841,7 +1841,7 @@
         "majorFlags": 18
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1892,7 +1892,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1943,7 +1943,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -1989,7 +1989,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2040,7 +2040,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2091,7 +2091,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2137,7 +2137,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2188,7 +2188,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2239,7 +2239,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2290,7 +2290,7 @@
         "majorFlags": 12
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2336,7 +2336,7 @@
         "majorFlags": 6
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2387,7 +2387,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2428,7 +2428,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2479,7 +2479,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2530,7 +2530,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2581,7 +2581,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2632,7 +2632,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2683,7 +2683,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2734,7 +2734,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2785,7 +2785,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2836,7 +2836,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2887,7 +2887,7 @@
         "majorFlags": 2
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2938,7 +2938,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -2989,7 +2989,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3040,7 +3040,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3091,7 +3091,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3137,7 +3137,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3188,7 +3188,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3229,7 +3229,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3280,7 +3280,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3331,7 +3331,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3382,7 +3382,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3433,7 +3433,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3484,7 +3484,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3535,7 +3535,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3576,7 +3576,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3627,7 +3627,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3678,7 +3678,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3729,7 +3729,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3780,7 +3780,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3831,7 +3831,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3882,7 +3882,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3933,7 +3933,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -3984,7 +3984,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4030,7 +4030,7 @@
         "majorFlags": 2
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4081,7 +4081,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4132,7 +4132,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4183,7 +4183,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4234,7 +4234,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4285,7 +4285,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4336,7 +4336,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4387,7 +4387,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4438,7 +4438,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4489,7 +4489,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4540,7 +4540,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4591,7 +4591,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4642,7 +4642,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4693,7 +4693,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4744,7 +4744,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4795,7 +4795,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4846,7 +4846,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4887,7 +4887,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4938,7 +4938,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -4989,7 +4989,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5040,7 +5040,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5091,7 +5091,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5142,7 +5142,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5193,7 +5193,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5234,7 +5234,7 @@
         "majorFlags": 2
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5285,7 +5285,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5336,7 +5336,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5387,7 +5387,7 @@
         "majorFlags": 3
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5438,7 +5438,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5489,7 +5489,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5535,7 +5535,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5586,7 +5586,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5637,7 +5637,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5683,7 +5683,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5734,7 +5734,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5785,7 +5785,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5836,7 +5836,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5887,7 +5887,7 @@
         "majorFlags": 2
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5938,7 +5938,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -5989,7 +5989,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -6040,7 +6040,7 @@
         "majorFlags": 0
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -6091,7 +6091,7 @@
         "majorFlags": 1
       },
       "rubricVersion": "0.1.2",
-      "evaluatedAt": "2026-07-18T12:35:54.593Z",
+      "evaluatedAt": "2026-07-18T13:09:04.470Z",
       "evaluator": {
         "mode": "claude-code-native",
         "model": "claude-sonnet-5"
@@ -16452,6 +16452,1526 @@
       "mirrors": [],
       "discoveredVia": "github",
       "slug": "statistical-analysis"
+    },
+    {
+      "name": "statsmodels",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31128★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/statsmodels/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Reference skill for fitting and diagnosing statistical models (OLS, GLM, discrete choice, ARIMA) in Python with statsmodels.",
+      "verdict": "Well-scoped, secure reference skill: no exfiltration/injection/destructive patterns, pinned dependency version, and reference files that genuinely exist. Minor gaps: convergence failures are flagged but not given a concrete next step, matplotlib is used in examples but never declared as a dependency, and SKILL.md runs somewhat over the size budget.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "Convergence and overdispersion issues are flagged, but the skill mostly says 'check X' without a concrete recovery step (e.g. what to do if fit() fails to converge)."
+        },
+        {
+          "check": "H05",
+          "status": "warning",
+          "summary": "SKILL.md is ~628 lines / ~20KB, over the ~500-line budget though well under 2x."
+        },
+        {
+          "check": "H07",
+          "status": "warning",
+          "summary": "matplotlib is used in several example code blocks but never listed in the compatibility/requirements field alongside statsmodels and scikit-learn."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 20359,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "c3239bbb09504226c879cf274fa2ad1f86a7a761fa0c53b949856e6867807efd",
+      "popularity": 31128,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "statsmodels"
+    },
+    {
+      "name": "statistical-power",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31128★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/statistical-power/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Sample-size/power calculations for study planning: closed-form tests plus simulation, with effect-size guidance and reporting templates.",
+      "verdict": "Solid, well-structured stats skill: concrete formulas/code, sensitivity-analysis emphasis, clear scope boundaries. Minor gaps: no install-failure guidance, a few deps unpinned, long description.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "matplotlib and pandas (and lifelines on line 41) installed unpinned, though well-known packages from the default registry."
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "Workflow's install/compute steps have no explicit stop-and-report guidance if a package is missing or a script errors; only a compatibility-pin note and a sys.path hint exist."
+        },
+        {
+          "check": "H03",
+          "status": "warning",
+          "summary": "Full description is ~915 chars, well past the ~500-char budget, though substantive rather than filler."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 14318,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "14024f777c3f10ee72740f5038db410efc4a53cd87f75d4c7fcc5e1a2e3ea15e",
+      "popularity": 31128,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "statistical-power"
+    },
+    {
+      "name": "sympy",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31128★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/sympy/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Reference guide for exact symbolic math in Python via SymPy — algebra, calculus, equation solving, linear algebra, physics, code generation.",
+      "verdict": "Clean, well-organized SymPy cookbook with no security concerns: pinned install, clear trigger/negative-trigger scope, modular reference files keep SKILL.md compact, and a troubleshooting section covers common failure modes. Output shape and re-run behavior are inherently task-dependent for a stateless reference skill, not real gaps.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 13636,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "ae240c0397362a053cd7dbbe4a37297fe7e60b5ef1320026e7107d82a19127d4",
+      "popularity": 31128,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "sympy"
+    },
+    {
+      "name": "tamarind",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31128★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/tamarind/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Wraps Tamarind Bio's REST/MCP API for cloud protein structure prediction, design, docking, and molecular-dynamics jobs.",
+      "verdict": "Well-scoped API skill: clear triggers, a concrete discover-validate-submit-poll flow, an error-code table, and batch/aggregation edge cases. Warns against a typosquat PyPI package and hardcoding the API key. Weak spots: cited reference files are unverifiable here; no re-run guidance for a colliding jobName; description is a dense 769-char tool list.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q10",
+          "status": "warning",
+          "summary": "jobName must be unique but the skill never says how to handle re-running/retrying a submission that collides with an existing jobName."
+        },
+        {
+          "check": "H03",
+          "status": "warning",
+          "summary": "Frontmatter description is 769 chars, a dense parenthetical tool-name list — well past the 'roughly one to five sentence' guidance."
+        },
+        {
+          "check": "H04",
+          "status": "fail",
+          "summary": "SKILL.md repeatedly cites references/examples.md, api_reference.md, tool_catalog.md, workflows.md ('Start here', 'has full recipes') but none were provided to confirm they exist."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 25687,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "8132506039f456ad075c785f27330e78bda7081a7d50a23ab4bbfb137f93c1bd",
+      "popularity": 31128,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "tamarind"
+    },
+    {
+      "name": "tiledbvcf",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31128★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/tiledbvcf/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Reference guide for TileDB-VCF: installing, ingesting, querying, and exporting genomic variant data, plus an optional TileDB-Cloud scaling.",
+      "verdict": "Concrete, well-declared install/ingest/query/export examples with upfront tooling requirements make this usable. Weaknesses: no scope exclusions, unpinned conda/pip installs, a self-contradictory 1-based vs 0-based coordinate example, thin failure/re-run guidance for the mutating ingest step, and a large inline TileDB-Cloud marketing section that bloats.",
+      "badges": {
+        "security": "A",
+        "quality": "D",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "D",
+      "highlights": [
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Well-known-channel packages installed with no version pins; same pattern repeats for pip install tiledb-cloud."
+        },
+        {
+          "check": "Q01",
+          "status": "warning",
+          "summary": "Thorough on WHAT the skill does but has no 'use when' framing or example trigger phrasings."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / out-of-scope / pointer-to-other-skill text anywhere in description or body."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 14552,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "433906b5210e6389ef82480f5624d243768e06706ae9eb586731d940a1024ea9",
+      "popularity": 31128,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "tiledbvcf"
+    },
+    {
+      "name": "torch-geometric",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31128★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/torch-geometric/SKILL.md",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "Reference guide for building graph neural networks with PyTorch Geometric — data structures, GNN layers, training patterns, scaling, and.",
+      "verdict": "Well-scoped, accurate PyG reference with clear trigger/negative-trigger, concrete runnable code, a pitfalls section covering real failure modes, and bulk content offloaded to reference files. No security concerns found. Only nit: base install commands are unpinned for well-known packages (warning, not risk).",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "`uv pip install torch_geometric` and `uv pip install torch` are unpinned; well-known official packages so not a fail, but no version pin given."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 18355,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "c76e4c0d39edf67cfe7648aafb72e7334096f97c5fb370e55fe1da19a9ec908a",
+      "popularity": 31128,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "torch-geometric"
+    },
+    {
+      "name": "timesfm-forecasting",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31128★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/timesfm-forecasting/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Zero-shot time-series forecasting via Google's TimesFM, with a mandatory RAM/GPU preflight check and CSV/DataFrame forecast workflows.",
+      "verdict": "Thorough ML forecasting skill: clear scope boundaries, strong preflight/failure-path coverage, and declared tooling. Weak spots: unpinned pip/uv installs of timesfm/torch (supply-chain warning), a real internal contradiction where the same quantile indices are labeled both 60/80% and 80/90% intervals in different sections (risks wrong anomaly thresholds).",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "pip/uv install timesfm[torch] and torch>=2.0.0 are unpinned from official PyPI, e.g. line 124 `pip install timesfm[torch]` — well-known but no exact version."
+        },
+        {
+          "check": "Q03",
+          "status": "fail",
+          "summary": "q[:,:,1]/q[:,:,9] are called a '90% prediction interval' (line 239-241) but the canonical table (line 291) labels index 9 as the 80% PI upper bound."
+        },
+        {
+          "check": "Q07",
+          "status": "fail",
+          "summary": "SKILL.md (783 lines) inlines full code for 3 workflows, perf tuning, and validation scripts despite existing references/ and examples/ split points."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 29999,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "fa0c396da3973a771cadf2fee9708bf12b1db1a59f6eb1499411a275b694e016",
+      "popularity": 31128,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "timesfm-forecasting"
+    },
+    {
+      "name": "torchdrug",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31128★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/torchdrug/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Reference for TorchDrug: GNN models for molecular property prediction, protein modeling, KG reasoning, generation, and retrosynthesis.",
+      "verdict": "Well-structured reference skill: clear trigger and negative-trigger description, internally consistent, concrete troubleshooting and workflows, all 8 referenced files verified present in the source repo. Minor gaps: torch is installed unpinned, and RDKit/PyTorch-Lightning appear in integration code examples with no install step declared anywhere.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "Line 47: `uv pip install torch` installs the well-known torch package with no version pin."
+        },
+        {
+          "check": "H07",
+          "status": "warning",
+          "summary": "Line 316 `from rdkit import Chem` and line 351 `import pytorch_lightning as pl` used with no install/requirements step anywhere."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 15137,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "8d05fbc0e0f9dd8892e63087b35323a1f6553111c4367cf920136d4fa451a6a3",
+      "popularity": 31128,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "torchdrug"
+    },
+    {
+      "name": "transformers",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31128★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/transformers/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Loads Hugging Face Hub models and runs pipeline inference, text generation, and Trainer fine-tuning across NLP, vision, audio, and.",
+      "verdict": "Solid library-usage skill: sharp trigger/negative-trigger description, pinned reproducible installs from the standard PyPI registry, careful HF token handling (no hardcoding, narrow scopes, env-var guidance), compact SKILL.md with bulk material split into references, and a version field. Main gap: no failure-path guidance for auth errors, missing packages.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q06",
+          "status": "fail",
+          "summary": "No guidance anywhere for auth failure, gated-model access denial, missing packages, or training/inference errors — happy-path only."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 7045,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "44671be3d9ac7ceda6a77c1a5c097d4a894a33c7ef5a457cee15caf9a99afb65",
+      "popularity": 31128,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "transformers"
+    },
+    {
+      "name": "treatment-plans",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31128★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/treatment-plans/SKILL.md",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "Generates concise LaTeX/PDF medical treatment plans (1-6 pages) with SMART goals, HIPAA guidance, and specialty-specific templates.",
+      "verdict": "Thorough clinical-writing skill with concrete SMART-goal and LaTeX examples across six specialties, but it contradicts itself on whether AI figure generation is mandatory or optional, gives no negative-trigger scope guidance, ships a 53KB monolithic SKILL.md, and never checks for LaTeX/Python tooling before invoking it.",
+      "badges": {
+        "security": "A",
+        "quality": "D",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "D",
+      "highlights": [
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "tlmgr install nejm/jama/bmj/tcolorbox/tikz etc. are unpinned; well-known official TeX Live packages but no version pins."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for'/exclusion guidance anywhere; body only says 'Prioritizes brevity and clinical actionability' with no out-of-scope pointers."
+        },
+        {
+          "check": "Q03",
+          "status": "fail",
+          "summary": "Frontmatter marks OPENROUTER_API_KEY 'required_for: optional features' but body states figure generation is 'MANDATORY: Every treatment plan MUST include at least 1 AI-generated figure'."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 52980,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "62ca1ab456f5f68068cd24d38b1ef29b174fe0c4f1f1ecb5e3b139d4d1f8f6ec",
+      "popularity": 31128,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "treatment-plans"
+    },
+    {
+      "name": "umap-learn",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31128★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/umap-learn/SKILL.md",
+      "kind": "skill",
+      "category": "code-quality",
+      "tagline": "How-to reference for UMAP-learn: embeddings, clustering prep, supervised/semi-supervised UMAP, Parametric UMAP, AlignedUMAP.",
+      "verdict": "Safe, no security red flags. Good code examples and troubleshooting coverage. Weak spots: no scope-exclusion guidance, self-contradicts on random_state (\"always set\" vs \"leave unset\"), hdbscan install unpinned, matplotlib used but never declared, and description claims DensMAP coverage the body never delivers.",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "hdbscan is a well-known PyPI package but installed without a version pin, unlike umap-learn itself."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for'/out-of-scope guidance anywhere; risk of misfiring on t-SNE/PCA/other dim-reduction requests."
+        },
+        {
+          "check": "Q03",
+          "status": "fail",
+          "summary": "Contradicted at line 443: 'Leave it unset when throughput matters more than exact repeatability.'"
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 16988,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "446c13bc03ba176a1ac51d45be744401bdbe2b10856aba96f2c9e6a7d0bb3196",
+      "popularity": 31128,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "umap-learn"
+    },
+    {
+      "name": "usfiscaldata",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31128★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/usfiscaldata/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Reference for querying the U.S. Treasury Fiscal Data REST API (debt, interest rates, FX rates, auctions, savings bonds) — free, no API key.",
+      "verdict": "Low-risk, well-structured API reference: accurate free public endpoint, concrete request examples, bulk dataset tables split into on-demand reference files, versioned. Weak spots: no stated out-of-scope guidance to prevent misfire against adjacent data skills, the pip install of requests/pandas is unpinned, and none of the examples handle HTTP errors or bad.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "requests/pandas installed unpinned from default registry; well-known packages so warning not fail."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / out-of-scope guidance anywhere in description or body to prevent misfire against other financial/data-API skills."
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "Every example calls requests.get and indexes the JSON response with no status-code check, try/except, or guidance for HTTP errors/bad params."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 6867,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "0eace56dbd0206a1a8eb28aaa5e8fd9f239af4f152e9f4e77fc3a2bf287e42e1",
+      "popularity": 31128,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "usfiscaldata"
+    },
+    {
+      "name": "vaex",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31128★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/vaex/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Reference guide for using the Vaex library to process, analyze, and visualize out-of-core tabular datasets larger than RAM in Python.",
+      "verdict": "Solid, well-scoped reference skill: clear trigger description, runnable code examples, bulky detail split into six reference files. No security issues found. Weak spots: install commands are unpinned (minor supply-chain risk), and no guidance for handling failed installs, build issues, or missing files.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "`uv pip install vaex` / vaex-core,vaex-viz,vaex-hdf5,vaex-ml are well-known PyPI packages but installed unpinned, no version constraint given."
+        },
+        {
+          "check": "Q06",
+          "status": "fail",
+          "summary": "No failure-path guidance: install/build issues (e.g. Windows annoy dep), missing files, or version mismatches lack any fallback or stop-and-report step."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 7946,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "b5fc26232e2ea47697db45c94ea96877e4943231c68c634a021f7a4fd3ee618f",
+      "popularity": 31128,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "vaex"
+    },
+    {
+      "name": "what-if-oracle",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31128★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/what-if-oracle/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Runs a structured 4-6 branch what-if scenario analysis (best/likely/worst/wildcard/contrarian/second-order) for decision-making and risk.",
+      "verdict": "Well-structured reasoning skill with clear phases, concrete templates, and worked examples; no security or file-operation risk since it is purely conversational. Weak spots: no stated exclusions so it could misfire on adjacent tasks, no default for Quick vs Deep mode selection, and its referenced scenario-templates.md file is not verifiable in the evaluated.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion guidance anywhere; the 'What This Is NOT' section (lines 166-170) covers output epistemics, not scope boundaries."
+        },
+        {
+          "check": "Q08",
+          "status": "warning",
+          "summary": "No default stated for choosing Quick vs Deep Oracle mode (lines 146-152) when the user doesn't specify one; agents could diverge."
+        },
+        {
+          "check": "H04",
+          "status": "fail",
+          "summary": "references/scenario-templates.md is referenced (lines 26, 176) but not included in the evaluated content; existence unverifiable."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 9296,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "b7ec302982fb3ea250dcc0dd953902ea20c261ceb3f0dd4733a02897c24789dc",
+      "popularity": 31128,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "what-if-oracle"
+    },
+    {
+      "name": "venue-templates",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31128★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/venue-templates/SKILL.md",
+      "kind": "skill",
+      "category": "content",
+      "tagline": "Reference catalog of LaTeX templates and formatting rules for journals, conferences, posters, and grants, with helper scripts.",
+      "verdict": "Well-organized reference covering 50+ venues with concrete worked examples and a version field. Weak spots: it points to ~20 bundled files that aren't verifiable as present, gives no guidance for LaTeX/script failures, never declares python/pdflatex as prerequisites, and has no negative-trigger scoping.",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "D",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "D",
+      "highlights": [
+        {
+          "check": "S11",
+          "status": "warning",
+          "summary": "Body/scripts call an external AI image service (generate_schematic.py, OpenRouter key) that the frontmatter description never mentions."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for'/out-of-scope language anywhere despite overlapping skills (scientific-writing, literature-review, research-grants) named in the doc."
+        },
+        {
+          "check": "Q06",
+          "status": "fail",
+          "summary": "Multi-step LaTeX compile/script workflow (e.g. 'pdflatex my_paper.tex') never addresses missing tools, script errors, or compile failures."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 23617,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "35db0563f9a11618a8d9ec5e510fe59b654c3d963a62b2a9aa9be648a532d9f8",
+      "popularity": 31128,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "venue-templates"
+    },
+    {
+      "name": "zarr-python",
+      "source": "GitHub · K-Dense-AI/scientific-agent-skills · 31128★",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/zarr-python/SKILL.md",
+      "kind": "skill",
+      "category": "workflow",
+      "tagline": "Reference guide for using Zarr-Python 3 to create, chunk, compress, and access large N-D arrays locally and in S3/GCS cloud storage.",
+      "verdict": "Solid, accurate Zarr-Python 3 reference: pinned installs, careful credential-handling guidance, and both bundled reference files resolve. Gaps: description never states a 'use when' trigger, no NOT-for/exclusions despite overlapping sibling skills (dask/xarray/h5py), and the 779-line SKILL.md runs over budget.",
+      "badges": {
+        "security": "A",
+        "quality": "C",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q01",
+          "status": "warning",
+          "summary": "Description lists capabilities (chunked arrays, S3/GCS, Dask/Xarray) but never states 'use when...' trigger phrasing."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for'/exclusions anywhere, despite real overlap with sibling xarray/dask/h5py skills referenced in the same doc."
+        },
+        {
+          "check": "Q07",
+          "status": "warning",
+          "summary": "779-line SKILL.md keeps Patterns/Issues/Performance sections inline; only API reference and v3 migration were split out."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 21835,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "6182729d59f4eb00a96fb5e13f93ccc95431c6e8bf7c5f0afe1b0bd7d84cc850",
+      "popularity": 31128,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "zarr-python"
+    },
+    {
+      "name": "add-atomic-chat-tool",
+      "source": "GitHub · nanocoai/nanoclaw · 30276★",
+      "sourceUrl": "https://github.com/nanocoai/nanoclaw/blob/main/.claude/skills/add-atomic-chat-tool/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Adds a local stdio MCP server so the container agent can call models served by the Atomic Chat desktop app over its local OpenAI-compatible.",
+      "verdict": "Solid local-model integration: concrete copy/edit steps, real error handling, idempotency check, and no unsafe network, exec, secret, or privilege patterns found. Weak spots: no versioning/changelog signal, description doesn't state trigger phrasing, and the companion source files it claims to ship couldn't be verified to exist without a file inventory.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q01",
+          "status": "warning",
+          "summary": "Description states what it adds ('Add Atomic Chat MCP server...') but never phrases when/why to invoke it — no example trigger phrasings."
+        },
+        {
+          "check": "H04",
+          "status": "warning",
+          "summary": "References bundled atomic-chat-mcp-stdio.ts, atomic-chat-env.ts and their tests as shipped in-folder, but no file inventory was available to confirm they exist."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter (lines 1-4) and no changelog or dated revision notes anywhere in the skill."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 9882,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "75df3cb787d0bf5e3e947fbf5f53f1b6d4110b4294822c8f19c8a985fa5d0f6d",
+      "popularity": 30276,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "add-atomic-chat-tool"
+    },
+    {
+      "name": "add-clidash",
+      "source": "GitHub · nanocoai/nanoclaw · 30276★",
+      "sourceUrl": "https://github.com/nanocoai/nanoclaw/blob/main/.claude/skills/add-clidash/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Installs a read-only, zero-dependency web dashboard that turns any JSON-emitting CLI (ncl, docker, kubectl) into browsable tabs and tables.",
+      "verdict": "Solid installer: read-only by construction (execFile-only, allowlisted argv, no shell), binds 127.0.0.1 by default, good troubleshooting. Weak spots: description never states when to trigger it, no config-format example, step 1's cp -R is not idempotent (nests a stale duplicate on re-run), and no version/changelog.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q01",
+          "status": "warning",
+          "summary": "description: Add clidash — a zero-dependency, read-only web dashboard that derives its tabs and tables... — states what it does, never when to invoke it."
+        },
+        {
+          "check": "Q09",
+          "status": "warning",
+          "summary": "| `clis.<name>.list` | argv template; `{resource}` is the only substitution | — no worked example of the argv template shown in the body."
+        },
+        {
+          "check": "Q10",
+          "status": "fail",
+          "summary": "cp -R .claude/skills/add-clidash/add/tools/clidash tools/clidash — re-running after tools/clidash exists nests a stale duplicate copy instead of updating; no existence check."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 6432,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "9f3c63113f690107e8fc1ee2b48042915021bbb28a6b97b50f2e187039f46a85",
+      "popularity": 30276,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "add-clidash"
+    },
+    {
+      "name": "add-deltachat",
+      "source": "GitHub · nanocoai/nanoclaw · 30276★",
+      "sourceUrl": "https://github.com/nanocoai/nanoclaw/blob/main/.claude/skills/add-deltachat/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Adds a DeltaChat (email-based, E2E-encrypted) channel adapter to a NanoClaw-style messaging bot host, with account setup and wiring steps.",
+      "verdict": "Solid, concrete integration skill: idempotent pre-flight checks, a pinned npm dependency, deterministic OS branching, worked SQL/CLI examples, and an unusually thorough troubleshooting section. No security red flags found. Weak spots: no version/changelog signal, and no 'NOT for' guidance to prevent misfiring against sibling add-<channel> skills in the same.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' or sibling-skill pointers despite being one of a family of similarly named add-<channel> skills (add-slack, add-telegram, etc.) with plausible misfire."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter and no changelog or dated revision notes anywhere in the file."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 11208,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "40db83e2567bfc2e9181a76068fb816150b029631ea3bedf5c3496c0687423fa",
+      "popularity": 30276,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "add-deltachat"
+    },
+    {
+      "name": "add-emacs",
+      "source": "GitHub · nanocoai/nanoclaw · 30276★",
+      "sourceUrl": "https://github.com/nanocoai/nanoclaw/blob/main/.claude/skills/add-emacs/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Wires Emacs as a chat channel for the NanoClaw assistant via a local HTTP bridge, copying adapter files from a branch and configuring.",
+      "verdict": "Clean and well-built integration skill: no exfiltration, no piped-shell or obfuscated payloads, all network calls are localhost-only, idempotent steps, and thorough troubleshooting/failure handling. Weak spots are packaging hygiene: no version/changelog signal, no explicit scope exclusions against sibling channel skills, an unverifiable REMOVE.md reference.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for'/out-of-scope language anywhere, despite clearly being one of a family of add-X-channel skills."
+        },
+        {
+          "check": "H04",
+          "status": "warning",
+          "summary": "Line 302 links 'See [REMOVE.md](REMOVE.md) to uninstall' but no file inventory was provided to confirm it exists."
+        },
+        {
+          "check": "H07",
+          "status": "warning",
+          "summary": "pnpm/vitest/tsx (lines 61-62, 99) are invoked with no upfront requirements/availability check, though implied by the host project."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 11215,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "6f9bc567754ce6bb811f0ebc3e904481df3a3846903a6b05e39171bc159c29c0",
+      "popularity": 30276,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "add-emacs"
+    },
+    {
+      "name": "add-gchat",
+      "source": "GitHub · nanocoai/nanoclaw · 30276★",
+      "sourceUrl": "https://github.com/nanocoai/nanoclaw/blob/main/.claude/skills/add-gchat/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Adds a Google Chat channel adapter to NanoClaw: copies code from a branch, registers it, installs a pinned dependency, builds/tests, and.",
+      "verdict": "Solid mechanics: idempotent directives, an exact-pinned dependency, a real build+test gate, and a thorough troubleshooting section. Gaps: no 'not for' guidance so it can misfire against sibling per-channel skills, no version/changelog signal, pnpm/vitest usage is never declared or checked, and the branch-copy step calls unreviewed code 'canonical' before.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "S09",
+          "status": "warning",
+          "summary": "Copies adapter code from the 'channels' branch with 'overwrite — the branch is canonical' — no review step before it's built and registered."
+        },
+        {
+          "check": "Q01",
+          "status": "warning",
+          "summary": "Description says what it does ('Add Google Chat channel integration via Chat SDK') but never states a triggering situation or phrasing."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / exclusion text anywhere, despite being one of an implied family of per-channel add-X skills (add-slack, etc.) with real misfire risk."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 6097,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "b361b7e9edc775037151b9a1079385453541ba6d6257c45ad3613bb012acfcb4",
+      "popularity": 30276,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "add-gchat"
+    },
+    {
+      "name": "add-codex",
+      "source": "GitHub · nanocoai/nanoclaw · 30276★",
+      "sourceUrl": "https://github.com/nanocoai/nanoclaw/blob/main/.claude/skills/add-codex/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Installs and wires OpenAI Codex as an alternate NanoClaw agent provider, with idempotent steps and vault-only credential handling.",
+      "verdict": "Well-scoped internal install skill: idempotent steps throughout, clear pre-flight/validate/troubleshooting coverage, vault-only auth with no secret exposure, and disclosed side effects matching its description. Weak spots: no skill-level version or changelog signal, and CLI tools like bun/tsx/ncl are invoked without an upfront requirements check.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "H07",
+          "status": "warning",
+          "summary": "bun, tsx, and the ncl CLI are invoked throughout with no requirements/availability check declared up front."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog section, or dated revision notes anywhere for the skill itself."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 7942,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "736cb1227a00c469f6d1104e12a34163b7cd60eadfae3dfadaa87260aae2e4fa",
+      "popularity": 30276,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "add-codex"
+    },
+    {
+      "name": "add-dashboard",
+      "source": "GitHub · nanocoai/nanoclaw · 30276★",
+      "sourceUrl": "https://github.com/nanocoai/nanoclaw/blob/main/.claude/skills/add-dashboard/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Installs and wires a local NanoClaw monitoring dashboard (npm package + pusher) into index.ts, .env, and the running service.",
+      "verdict": "Solid installer skill: concrete commands throughout, bundled AST-checked tests verify the wiring edit, and network traffic stays local (127.0.0.1) exactly as described — no scope mismatch or injection issues found. Weak points: the npm dependency is installed unpinned, the index.ts edit and .env append have no re-run guard (could duplicate on a second.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "S12",
+          "status": "warning",
+          "summary": "`pnpm install @nanoco/nanoclaw-dashboard` has no version pin; legitimate first-party scoped package but unpinned to latest."
+        },
+        {
+          "check": "Q10",
+          "status": "fail",
+          "summary": "Step 3 (index.ts block) and step 4 (.env vars) have no existence check; re-running would duplicate the import/call or the env lines."
+        },
+        {
+          "check": "H07",
+          "status": "warning",
+          "summary": "vitest and systemctl/launchctl are invoked in step 5 with no Requirements section or availability check."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 5357,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "ae0513d634c95b53ebfe58aac3b5b681d33cd72f42feda7c31f265069f4ac91c",
+      "popularity": 30276,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "add-dashboard"
+    },
+    {
+      "name": "add-discord",
+      "source": "GitHub · nanocoai/nanoclaw · 30276★",
+      "sourceUrl": "https://github.com/nanocoai/nanoclaw/blob/main/.claude/skills/add-discord/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Copies a Discord channel adapter from a branch, wires bot credentials via Discord's own API, and restarts the service to enable a Discord.",
+      "verdict": "Solid, idempotent, well-troubleshot integration flow with sane credential handling (secret prompt, .env, no echoing). Weak spots: description doesn't state a trigger phrase, no negative-trigger scope callout among sibling add-* skills, jq/curl used with no declared prerequisite, and no version/changelog signal.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q01",
+          "status": "warning",
+          "summary": "description 'Add Discord bot channel integration via Chat SDK.' says what it does but names no triggering phrase or situation."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for'/out-of-scope pointer anywhere, despite implied sibling channel skills (Slack, etc.) that could be confused with this one."
+        },
+        {
+          "check": "H07",
+          "status": "fail",
+          "summary": "jq/curl invoked directly ('| jq -er ...' resolving the DM channel) with no requirements section or availability check anywhere in the skill."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 8616,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "60ef4e66d9a80fe6ec3ff0cd068e257cf28dde082c1197c2d068f4b665ce2442",
+      "popularity": 30276,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "add-discord"
+    },
+    {
+      "name": "add-github",
+      "source": "GitHub · nanocoai/nanoclaw · 30276★",
+      "sourceUrl": "https://github.com/nanocoai/nanoclaw/blob/main/.claude/skills/add-github/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Adds a GitHub channel to NanoClaw via Chat SDK: copies the adapter, installs a pinned dependency, and configures PAT/webhook credentials.",
+      "verdict": "Solid integration skill: idempotent apply steps, pinned scoped dependency, least-privilege PAT, secrets never echoed, good troubleshooting. Gaps: no version/changelog, gh CLI used undeclared, description lacks explicit trigger phrasing, and ncl wiring commands lack a re-run guard.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q01",
+          "status": "warning",
+          "summary": "Description states what it does ('Add GitHub channel integration...') but has no explicit 'use when' trigger phrasing."
+        },
+        {
+          "check": "Q10",
+          "status": "warning",
+          "summary": "Apply steps are explicitly idempotent, but Wiring's `ncl messaging-groups create`/`wirings create` have no duplicate-run guard."
+        },
+        {
+          "check": "H07",
+          "status": "warning",
+          "summary": "Troubleshooting uses `gh api users/<username> --jq .id` with no prerequisite declaration or install check for the gh CLI."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 8710,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "a93e9cb9fcbd5aadd32930c74f3802488832eef57e9485c00aee50a94f36f26b",
+      "popularity": 30276,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "add-github"
+    },
+    {
+      "name": "add-gcal-tool",
+      "source": "GitHub · nanocoai/nanoclaw · 30276★",
+      "sourceUrl": "https://github.com/nanocoai/nanoclaw/blob/main/.claude/skills/add-gcal-tool/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Wires Google Calendar into NanoClaw as an MCP tool via OneCLI-managed OAuth stubs, mirroring the sibling Gmail-tool pattern.",
+      "verdict": "Solid, security-conscious infra skill: never writes real credentials (only OneCLI placeholder stubs, chmod 600), pins the MCP package version, checks re-run/idempotency at every mutating step, and has an unusually thorough failure-diagnosis table. Weak spots are purely hygiene/quality: no NOT-for scope guidance so it could misfire against sibling add-*-tool.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "A",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "A",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for'/exclusion text anywhere; sibling skills add-gmail-tool/add-github could plausibly be confused with this one."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field, changelog section, or dated revision notes anywhere in SKILL.md."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 10679,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "93b94c8813f000d8f195f491917d5accb75b405179c6d23a3cccf74ccda878f1",
+      "popularity": 30276,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "add-gcal-tool"
+    },
+    {
+      "name": "add-gmail-tool",
+      "source": "GitHub · nanocoai/nanoclaw · 30276★",
+      "sourceUrl": "https://github.com/nanocoai/nanoclaw/blob/main/.claude/skills/add-gmail-tool/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Wires a Gmail MCP server into agent containers via OneCLI-managed OAuth credential stubs, covering Dockerfile, DB-backed group config, and.",
+      "verdict": "Strong operational skill: concrete commands, named files, explicit failure-path troubleshooting, and mostly-idempotent steps. No secrets ever leave the machine — OneCLI injects real tokens out of band. Weak points: no negative-trigger scope guidance, no skill versioning/changelog, jq used unchecked, and bundled reference files (REMOVE.md, test files) can't.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "C",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "C",
+      "highlights": [
+        {
+          "check": "Q01",
+          "status": "warning",
+          "summary": "Description states what it does at length but gives no explicit trigger phrasing/situation an agent would match a user request against."
+        },
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for' / out-of-scope / pointer-to-other-skill language anywhere in description or body."
+        },
+        {
+          "check": "Q10",
+          "status": "warning",
+          "summary": "add-mount is explicitly stated idempotent, but the Phase 3 'ncl groups config add-mcp-server' registration step has no stated duplicate/idempotency check."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 14075,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "d4331793b99c517c8139d8a2a95403614e398c79b8e426cb0b6012ba0bb3e24a",
+      "popularity": 30276,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "add-gmail-tool"
+    },
+    {
+      "name": "add-karpathy-llm-wiki",
+      "source": "GitHub · nanocoai/nanoclaw · 30276★",
+      "sourceUrl": "https://github.com/nanocoai/nanoclaw/blob/main/.claude/skills/add-karpathy-llm-wiki/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Sets up a Karpathy-pattern persistent wiki (dirs, container skill, CLAUDE.md section) inside a NanoClaw group.",
+      "verdict": "No security red flags: downloads target user-chosen URLs as data, no piped-shell/exfil/privesc patterns, explicit re-run safety and a clear file/dir output contract. Weak on hygiene: no NOT-for scope guard, no version/changelog signal, and step 1 depends on a llm-wiki.md pattern file not present in the provided content. Some failure paths (registration.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "D",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "D",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for'/exclusions anywhere despite broad triggers ('wiki', 'knowledge base') that could misfire on unrelated wiki tasks."
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "Step 4 covers missing source-capability, but registration (step 2), curl downloads, and the restart step (6) have no failure guidance."
+        },
+        {
+          "check": "H04",
+          "status": "fail",
+          "summary": "Step 1: 'Read ${CLAUDE_SKILL_DIR}/llm-wiki.md ... Understand it thoroughly before proceeding' but no such file is present in the provided skill content."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 5304,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "32595e6bff4a98f84aad37300824a416eeaecb76047ec7fc17fffb1fc8dc1892",
+      "popularity": 30276,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "add-karpathy-llm-wiki"
+    },
+    {
+      "name": "add-imessage",
+      "source": "GitHub · nanocoai/nanoclaw · 30276★",
+      "sourceUrl": "https://github.com/nanocoai/nanoclaw/blob/main/.claude/skills/add-imessage/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Adds iMessage channel support to NanoClaw via a Chat SDK adapter, in local macOS or remote Photon API mode.",
+      "verdict": "Solid integrations skill: pinned dependency, idempotent steps (skip-if-present import, upsert-and-remove env script), and a thorough troubleshooting section. No security red flags in its network, credential, or FDA-permission handling. Weak spots: no 'not for' scoping against sibling add-<channel> skills, pnpm build/test steps run with no declared.",
+      "badges": {
+        "security": "A",
+        "quality": "A",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q02",
+          "status": "fail",
+          "summary": "No 'NOT for'/out-of-scope language anywhere; sibling add-<channel> skills (Slack, WhatsApp, etc. implied by the pattern) could misfire without exclusions."
+        },
+        {
+          "check": "H07",
+          "status": "warning",
+          "summary": "`pnpm run build` and `pnpm exec vitest run ...` (lines 53, 56) are invoked with no stated pnpm requirement or install check, unlike the explicit Darwin check for local mode."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter (lines 1-4) and no changelog or dated revision notes anywhere in the body."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 9313,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "a36778a4c68895ce612d2eabe3c2675d968db6b7d6a739d3d0c7f788497fceae",
+      "popularity": 30276,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "add-imessage"
+    },
+    {
+      "name": "add-macos-statusbar",
+      "source": "GitHub · nanocoai/nanoclaw · 30276★",
+      "sourceUrl": "https://github.com/nanocoai/nanoclaw/blob/main/.claude/skills/add-macos-statusbar/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Compiles and installs a native macOS menu-bar app showing NanoClaw's running status with Start/Stop/Restart controls.",
+      "verdict": "Safe, well-structured installer: deterministic steps, upfront tool checks, idempotent re-run handling, no network egress, secrets, or destructive ops. Weak spots: description lacks explicit 'use when' trigger framing, no failure handling once compile/load/verify starts, referenced files (statusbar.swift, REMOVE.md) can't be verified to exist, and there's no.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q01",
+          "status": "warning",
+          "summary": "Description states what it does but never frames when to invoke it (no 'use when'/trigger phrasing)."
+        },
+        {
+          "check": "Q06",
+          "status": "warning",
+          "summary": "Only pre-flight failures (platform, missing swiftc) are handled; no guidance if swiftc compile fails, launchctl load fails, or Phase 3 shows no PID."
+        },
+        {
+          "check": "H04",
+          "status": "warning",
+          "summary": "References ${CLAUDE_SKILL_DIR}/add/src/statusbar.swift and REMOVE.md as skill-local files; no file inventory was available to confirm they exist."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 3119,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "b7f58da1c722351b86dead376a5b4ff0d78db91841359e7982fd2b47500969b8",
+      "popularity": 30276,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "add-macos-statusbar"
+    },
+    {
+      "name": "add-linear",
+      "source": "GitHub · nanocoai/nanoclaw · 30276★",
+      "sourceUrl": "https://github.com/nanocoai/nanoclaw/blob/main/.claude/skills/add-linear/SKILL.md",
+      "kind": "skill",
+      "category": "integrations",
+      "tagline": "Adds a Linear issue-comment channel to NanoClaw via Chat SDK: copies the adapter, pins the package, sets secrets, wires the agent.",
+      "verdict": "Well-built integration skill: pinned dependency, idempotent-by-design steps, secrets kept in .env without echoing, and thorough troubleshooting coverage. Weak spots: description states what it does but not when to trigger it (Q01), the wiring 'create' commands aren't shown handling re-runs despite a blanket idempotency claim (Q10), and there's no version or.",
+      "badges": {
+        "security": "A",
+        "quality": "B",
+        "hygiene": "B",
+        "effectiveness": "not-evaluated"
+      },
+      "overall": "B",
+      "highlights": [
+        {
+          "check": "Q01",
+          "status": "warning",
+          "summary": "description says what it does ('Add Linear channel integration via Chat SDK') but never states when a user would invoke it."
+        },
+        {
+          "check": "Q10",
+          "status": "warning",
+          "summary": "`ncl messaging-groups create` / `ncl wirings create` in the wire step have no shown check for a pre-existing group/wiring, despite the skill's claim that every directive is idempotent."
+        },
+        {
+          "check": "H08",
+          "status": "fail",
+          "summary": "No version field in frontmatter, no changelog section, and no dated revision notes anywhere in the skill."
+        }
+      ],
+      "preCheck": {
+        "frontmatterValid": true,
+        "fileCount": 1,
+        "skillMdBytes": 10211,
+        "criticalFlags": 0,
+        "majorFlags": 0
+      },
+      "rubricVersion": "0.1.2",
+      "evaluatedAt": "2026-07-18T13:08:50.466Z",
+      "evaluator": {
+        "mode": "claude-code-native",
+        "model": "claude-sonnet-5"
+      },
+      "skillMdHash": "8cac29bf8cecf4195b46690e07ff76c033d41b3a082749f384243c73f441d26b",
+      "popularity": 30276,
+      "mirrors": [],
+      "discoveredVia": "github",
+      "slug": "add-linear"
     }
   ]
 }
