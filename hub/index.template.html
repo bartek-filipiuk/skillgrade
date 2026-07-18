@@ -451,6 +451,7 @@
   fetch('catalog-index.json').then(function(r){ return r.json(); }).then(function(data){
     index = Array.isArray(data) ? data : [];
     renderStats(index);
+    renderControls(); // re-render chips now that we know which collections (e.g. gstack) exist
     refresh();
   }).catch(function(){
     document.getElementById('empty').style.display = 'block';
