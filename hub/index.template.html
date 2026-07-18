@@ -256,7 +256,8 @@
     (active?'background:#ece7dc;color:#171614;border:1px solid #ece7dc;font-weight:600':'background:none;color:#c9c3b8;border:1px solid rgba(232,226,214,0.18)'); }
 
   function renderControls(){
-    var chips = [{id:'all',label:'All'}].concat(meta.taxonomy.map(function(t){return {id:t.id,label:t.label};}));
+    var collections = index.some(function(s){return s.collection==='gstack';}) ? [{id:'__gstack',label:'⚡ gstack'}] : [];
+    var chips = [{id:'all',label:'All'}].concat(collections).concat(meta.taxonomy.map(function(t){return {id:t.id,label:t.label};}));
     document.getElementById('chips').innerHTML = chips.map(function(c){
       return '<button class="chip" data-cat="'+esc(c.id)+'" style="'+chipStyle(state.category===c.id)+'">'+esc(c.label)+'</button>';
     }).join('');

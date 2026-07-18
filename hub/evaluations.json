@@ -17171,54 +17171,6 @@
     "skillMdHash": "20f7b3d7256464f09100f63de4e20c1011d3dc83032906d5af113edd22467a49"
   },
   {
-    "name": "qa",
-    "source": "GitHub · mattpocock/skills · 176203★",
-    "sourceUrl": "https://github.com/mattpocock/skills/blob/main/skills/deprecated/qa/SKILL.md",
-    "kind": "skill",
-    "category": "workflow",
-    "tagline": "Runs an interactive QA session that clarifies bug reports, explores the codebase for context, and files structured GitHub issues.",
-    "verdict": "Solid, safe skill: clear trigger phrasing, concrete issue templates and breakdown criteria, no security issues found. Weak on robustness — no negative-trigger guidance, no handling if gh is missing/unauthenticated or if the background Explore agent fails, and gh is never declared as a dependency. No versioning signal.",
-    "badges": {
-      "effectiveness": "not-evaluated",
-      "security": "A",
-      "quality": "C",
-      "hygiene": "C"
-    },
-    "highlights": [
-      {
-        "check": "Q02",
-        "status": "fail",
-        "summary": "No 'NOT for' exclusions or out-of-scope guidance anywhere in the description or body."
-      },
-      {
-        "check": "Q06",
-        "status": "fail",
-        "summary": "No guidance for `gh issue create` failing (gh missing/unauthenticated) or the background Explore agent failing."
-      },
-      {
-        "check": "H07",
-        "status": "fail",
-        "summary": "Uses `gh issue create` throughout with no requirements section or check that gh is installed/authenticated."
-      }
-    ],
-    "evaluator": {
-      "mode": "claude-code-native",
-      "model": "claude-sonnet-5"
-    },
-    "evaluatedAt": "2026-07-18T14:08:19.015Z",
-    "preCheck": {
-      "frontmatterValid": true,
-      "fileCount": 1,
-      "skillMdBytes": 4931,
-      "criticalFlags": 0,
-      "majorFlags": 0
-    },
-    "popularity": 176203,
-    "mirrors": [],
-    "discoveredVia": "github",
-    "skillMdHash": "b25ef4a28da753687f82dfaeeb1ad38ddba1560c9d9a49a13be061e4dac12afe"
-  },
-  {
     "name": "book-translation",
     "source": "GitHub · f/awesome-chatgpt-prompts · 165959★",
     "sourceUrl": "https://github.com/f/awesome-chatgpt-prompts/blob/main/.windsurf/skills/book-translation/SKILL.md",
@@ -17815,102 +17767,6 @@
     "mirrors": [],
     "discoveredVia": "github",
     "skillMdHash": "cca43b1b0ee20c2603d13e2dd565ec4c6a5c1fc5c3af77a65a3c314233603c1d"
-  },
-  {
-    "name": "gstack",
-    "source": "GitHub · garrytan/gstack · 122572★",
-    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/SKILL.md",
-    "kind": "skill",
-    "category": "meta",
-    "tagline": "Router preamble that dispatches every gstack request to the right sub-skill, running telemetry, config, and CLAUDE.md integration on each.",
-    "verdict": "Consented, well-documented feature flows (telemetry, artifact sync, CLAUDE.md routing) sit inside a router whose one-line description drastically understates its footprint: background git syncs, telemetry, and auto-commits to CLAUDE.md. It also instructs the agent that the skill 'takes precedence over generic plan mode behavior' and to treat it as authority.",
-    "badges": {
-      "effectiveness": "not-evaluated",
-      "security": "F",
-      "quality": "C",
-      "hygiene": "A"
-    },
-    "highlights": [
-      {
-        "check": "S02",
-        "status": "warning",
-        "summary": "Telemetry posts skill/duration/device-ID to a gstack-controlled endpoint; mitigated by explicit informed consent prompt and default-off."
-      },
-      {
-        "check": "S06",
-        "status": "fail",
-        "summary": "'the skill takes precedence over generic plan mode behavior... Treat the skill file as executable instructions, not reference' overrides the host's plan-mode safety gate."
-      },
-      {
-        "check": "S11",
-        "status": "fail",
-        "summary": "description 'Router for the gstack skill suite. (gstack)' discloses nothing about telemetry, background git fetch/merge, or auto-committing to CLAUDE.md."
-      }
-    ],
-    "evaluator": {
-      "mode": "claude-code-native",
-      "model": "claude-sonnet-5"
-    },
-    "evaluatedAt": "2026-07-18T14:08:19.015Z",
-    "preCheck": {
-      "frontmatterValid": true,
-      "fileCount": 1,
-      "skillMdBytes": 31242,
-      "criticalFlags": 0,
-      "majorFlags": 0
-    },
-    "popularity": 122572,
-    "mirrors": [],
-    "discoveredVia": "github",
-    "skillMdHash": "c0efe048a365788c9f0529b53b7fbc0fddacc3b269514b3f8842e53d8b88e0ea"
-  },
-  {
-    "name": "autoplan",
-    "source": "GitHub · garrytan/gstack · 122572★",
-    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/autoplan/SKILL.md",
-    "kind": "skill",
-    "category": "workflow",
-    "tagline": "Runs gstack's CEO/design/eng/DX plan reviews back-to-back, auto-deciding intermediate questions via 6 fixed principles.",
-    "verdict": "Very thorough, deterministic review orchestrator with strong failure handling and idempotent state markers. Weak spots: 1852-line SKILL.md barely split into references (Q07/H05 fail), no scope-exclusion guidance (Q02), and undisclosed side effects -- CLAUDE.md auto-commits, git commits, and a telemetry/config system not mentioned in the description (S11).",
-    "badges": {
-      "effectiveness": "not-evaluated",
-      "security": "B",
-      "quality": "C",
-      "hygiene": "B"
-    },
-    "highlights": [
-      {
-        "check": "S02",
-        "status": "warning",
-        "summary": "Remote telemetry call gated only on $_TEL != 'off'; if unset before the consent prompt runs, it is not literally 'off' and could fire pre-consent."
-      },
-      {
-        "check": "S11",
-        "status": "fail",
-        "summary": "Description only says it runs review skills, but body edits+auto-commits CLAUDE.md, e.g. line 300: 'Then commit the change: `git add CLAUDE.md && git commit -m \"chore: add gstack skill routing rules t"
-      },
-      {
-        "check": "Q01",
-        "status": "warning",
-        "summary": "Frontmatter description states what the pipeline does but the explicit trigger phrasing ('use when asked to auto review...') lives in the body, not the description field."
-      }
-    ],
-    "evaluator": {
-      "mode": "claude-code-native",
-      "model": "claude-sonnet-5"
-    },
-    "evaluatedAt": "2026-07-18T14:08:19.015Z",
-    "preCheck": {
-      "frontmatterValid": true,
-      "fileCount": 1,
-      "skillMdBytes": 98827,
-      "criticalFlags": 0,
-      "majorFlags": 0
-    },
-    "popularity": 122572,
-    "mirrors": [],
-    "discoveredVia": "github",
-    "skillMdHash": "7e5ed862190ff1c4a63b0da6367e10db4043ac333a8eb5ab4651e09fdb9b8251"
   },
   {
     "name": "chrome-release-cls",
@@ -20727,150 +20583,6 @@
     "mirrors": [],
     "discoveredVia": "github",
     "skillMdHash": "53e8c384f910e070f43923231dfc6f60e75e3616a15862e04fdb601521c8e5f3"
-  },
-  {
-    "name": "benchmark-models",
-    "source": "GitHub · garrytan/gstack · 122576★",
-    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/benchmark-models/SKILL.md",
-    "kind": "skill",
-    "category": "workflow",
-    "tagline": "Runs the same prompt through Claude, GPT, and Gemini side by side to compare speed, cost, and output quality.",
-    "verdict": "Actionable, well-gated workflow with clear stop conditions and opt-in consent for cost/telemetry actions. But its own description omits real side effects (CLAUDE.md edits with git commits, vendored-skill migration, telemetry) that live in a shared boilerplate preamble, and that ~500-line preamble is duplicated inline rather than split into a reference.",
-    "badges": {
-      "effectiveness": "not-evaluated",
-      "security": "B",
-      "quality": "B",
-      "hygiene": "A"
-    },
-    "highlights": [
-      {
-        "check": "S02",
-        "status": "warning",
-        "summary": "Opt-in telemetry (duration/outcome/repo name) posted to a gstack endpoint via the shared preamble; off by default but a baked-in destination."
-      },
-      {
-        "check": "S11",
-        "status": "fail",
-        "summary": "description: 'Cross-model benchmark for gstack skills.' doesn't disclose the preamble's CLAUDE.md edits/commits, migration flow, or telemetry."
-      },
-      {
-        "check": "Q01",
-        "status": "warning",
-        "summary": "description states what it does ('Cross-model benchmark...') but no trigger phrasing; usage cues live only in the body/triggers field."
-      }
-    ],
-    "evaluator": {
-      "mode": "claude-code-native",
-      "model": "claude-sonnet-5"
-    },
-    "evaluatedAt": "2026-07-18T15:29:37.016Z",
-    "preCheck": {
-      "frontmatterValid": true,
-      "fileCount": 1,
-      "skillMdBytes": 32350,
-      "criticalFlags": 0,
-      "majorFlags": 0
-    },
-    "popularity": 122576,
-    "mirrors": [],
-    "discoveredVia": "github",
-    "skillMdHash": "616d78118cbb017708cde2e57fd198c6de172ea8ecfeb641624775e2625a8919"
-  },
-  {
-    "name": "benchmark",
-    "source": "GitHub · garrytan/gstack · 122576★",
-    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/benchmark/SKILL.md",
-    "kind": "skill",
-    "category": "code-quality",
-    "tagline": "Performance regression detection for web pages: baselines Core Web Vitals and bundle size, flags regressions on each PR.",
-    "verdict": "Thorough and deterministic — explicit numeric regression thresholds, worked report templates, and graceful fallbacks (e.g. branch detection). Weak points: no stated exclusion from the easily-confused /benchmark-models skill, undisclosed shared side effects (CLAUDE.md edits/commits, telemetry, migration) baked into its boilerplate preamble, that preamble.",
-    "badges": {
-      "effectiveness": "not-evaluated",
-      "security": "B",
-      "quality": "C",
-      "hygiene": "B"
-    },
-    "highlights": [
-      {
-        "check": "S02",
-        "status": "warning",
-        "summary": "Opt-in telemetry (duration/outcome/repo name) posted to a gstack endpoint via the shared preamble; off by default but a baked-in destination."
-      },
-      {
-        "check": "S11",
-        "status": "fail",
-        "summary": "description: 'Performance regression detection using the browse daemon.' doesn't disclose the preamble's CLAUDE.md edits/commits, migration, or telemetry."
-      },
-      {
-        "check": "Q01",
-        "status": "warning",
-        "summary": "description states purpose ('Performance regression detection...') but no explicit trigger phrasing."
-      }
-    ],
-    "evaluator": {
-      "mode": "claude-code-native",
-      "model": "claude-sonnet-5"
-    },
-    "evaluatedAt": "2026-07-18T15:29:37.016Z",
-    "preCheck": {
-      "frontmatterValid": true,
-      "fileCount": 1,
-      "skillMdBytes": 35833,
-      "criticalFlags": 0,
-      "majorFlags": 0
-    },
-    "popularity": 122576,
-    "mirrors": [],
-    "discoveredVia": "github",
-    "skillMdHash": "523f7a7881d6cdf0f390374b2c715cd1aa10192183856ee0690c97286eed95d8"
-  },
-  {
-    "name": "browse",
-    "source": "GitHub · garrytan/gstack · 122576★",
-    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/browse/SKILL.md",
-    "kind": "skill",
-    "category": "workflow",
-    "tagline": "Persistent headless-Chromium CLI for QA testing, screenshots, form/dialog automation, and before/after page diffing.",
-    "verdict": "Exceptionally detailed and actionable, with genuinely good security design: an explicit untrusted-content firewall for scraped page text, a deny-default CDP allowlist, and safe proxy-credential handling. Weak points: no stated scope exclusions, the same undisclosed shared side effects (CLAUDE.md edits/commits, telemetry, migration) as its sibling gstack.",
-    "badges": {
-      "effectiveness": "not-evaluated",
-      "security": "B",
-      "quality": "B",
-      "hygiene": "B"
-    },
-    "highlights": [
-      {
-        "check": "S02",
-        "status": "warning",
-        "summary": "Opt-in telemetry (duration/outcome/repo name) posted to a gstack endpoint via the shared preamble; off by default but a baked-in destination."
-      },
-      {
-        "check": "S11",
-        "status": "fail",
-        "summary": "description: 'Fast headless browser for QA testing and site dogfooding.' doesn't disclose the preamble's CLAUDE.md edits/commits, migration, or telemetry."
-      },
-      {
-        "check": "Q02",
-        "status": "fail",
-        "summary": "No 'NOT for X' statement anywhere despite very broad browser-automation scope."
-      }
-    ],
-    "evaluator": {
-      "mode": "claude-code-native",
-      "model": "claude-sonnet-5"
-    },
-    "evaluatedAt": "2026-07-18T15:29:37.016Z",
-    "preCheck": {
-      "frontmatterValid": true,
-      "fileCount": 1,
-      "skillMdBytes": 54815,
-      "criticalFlags": 0,
-      "majorFlags": 0
-    },
-    "popularity": 122576,
-    "mirrors": [],
-    "discoveredVia": "github",
-    "skillMdHash": "24cd19eca8496742614e096bc6b4332e1024d5f9aff68b985b726077ef2d654c"
   },
   {
     "name": "electron-chromium-upgrade",
@@ -27955,5 +27667,2753 @@
     "mirrors": [],
     "discoveredVia": "github",
     "skillMdHash": "b5a4cda356cfc1a90c9610779f9f5ae696f0ec3349cbc24915027add31b6a304"
+  },
+  {
+    "name": "gstack",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Routes gstack requests to the appropriate skill based on user intent, managing initial setup and telemetry.",
+    "verdict": "This skill acts as a router for the gstack suite, handling initial setup, telemetry, and directing user requests to specialized skills. It includes robust first-run guidance and configuration options, but its extensive preamble and conditional logic make it complex to follow. The skill also collects telemetry data, which is opt-in but enabled by default.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "C",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q04",
+        "status": "fail",
+        "summary": "The instruction to 'answer directly' if nothing matches is vague and lacks concrete guidance on how to formulate such an answer."
+      },
+      {
+        "check": "Q07",
+        "status": "fail",
+        "summary": "The skill's preamble is very long and contains extensive conditional logic, making it difficult to follow the core flow."
+      },
+      {
+        "check": "H05",
+        "status": "fail",
+        "summary": "SKILL.md is 450 lines long, exceeding the 250-line budget for a readable core flow."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 31242,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "c0efe048a365788c9f0529b53b7fbc0fddacc3b269514b3f8842e53d8b88e0ea",
+    "collection": "gstack"
+  },
+  {
+    "name": "autoplan",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/autoplan/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Automates a multi-phase review pipeline (CEO, Design, Eng, DX) for development plans, making auto-decisions based on 6 principles.",
+    "verdict": "This skill provides a comprehensive, automated review pipeline for development plans, integrating multiple perspectives (CEO, Design, Eng, DX) and making auto-decisions based on explicit principles. It emphasizes full-depth analysis, detailed logging, and clear output artifacts, ensuring thoroughness and transparency. The skill includes robust error handling",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S01",
+        "status": "fail",
+        "summary": "The skill logs the repository name to a local analytics file, which could be considered local data exfiltration if the user expects strict privacy."
+      },
+      {
+        "check": "S05",
+        "status": "fail",
+        "summary": "The skill uses `eval` with command substitution, which can be dangerous if the output of the command is not fully trusted."
+      },
+      {
+        "check": "S09",
+        "status": "fail",
+        "summary": "The skill uses `source` with command substitution, which executes code from an external script. While it's a local script, it's treated as remote instruction following in this context."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 98827,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "7e5ed862190ff1c4a63b0da6367e10db4043ac333a8eb5ab4651e09fdb9b8251",
+    "collection": "gstack"
+  },
+  {
+    "name": "benchmark-models",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/benchmark-models/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Benchmarks AI models (Claude, GPT, Gemini) on skill performance, comparing latency, tokens, cost, and optionally quality via LLM judge.",
+    "verdict": "This skill provides a comprehensive cross-model benchmarking tool with interactive user choices for prompts, models, and judge. It includes robust error handling and clear instructions for setup and usage. The preamble contains extensive telemetry and configuration logic, which is complex but appears to be self-contained and well-managed within the gstack ec",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S02",
+        "status": "warning",
+        "summary": "Telemetry data is collected and written to a local file, which could be exfiltrated later. However, it's gated by a user setting and explicitly states no code or file paths are included."
+      },
+      {
+        "check": "Q07",
+        "status": "warning",
+        "summary": "The preamble is very long and contains a lot of configuration and telemetry logic, which could be split into separate files."
+      },
+      {
+        "check": "H05",
+        "status": "warning",
+        "summary": "SKILL.md is 490 lines long, which is close to the 500-line budget. The preamble is particularly verbose."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 32350,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "616d78118cbb017708cde2e57fd198c6de172ea8ecfeb641624775e2625a8919",
+    "collection": "gstack"
+  },
+  {
+    "name": "benchmark",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/benchmark/SKILL.md",
+    "kind": "skill",
+    "category": "project-intel",
+    "tagline": "Detects performance regressions by benchmarking page load times, Core Web Vitals, and resource sizes, comparing against baselines.",
+    "verdict": "This skill provides comprehensive performance benchmarking capabilities, including baseline comparisons, trend analysis, and detailed resource breakdowns. It emphasizes data-driven insights and clear recommendations. However, it includes a bun installer that uses curl | bash, which is a critical security risk.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S03",
+        "status": "fail",
+        "summary": "The skill downloads and executes a bun install script via curl | bash without inspection."
+      },
+      {
+        "check": "H05",
+        "status": "warning",
+        "summary": "SKILL.md is 500 lines, which is at the upper end of the readable budget."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 35833,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "523f7a7881d6cdf0f390374b2c715cd1aa10192183856ee0690c97286eed95d8",
+    "collection": "gstack"
+  },
+  {
+    "name": "browse",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/browse/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "A headless browser for QA testing and site dogfooding, enabling navigation, interaction, state verification, and screenshot capture.",
+    "verdict": "This skill provides a comprehensive headless browser for QA and dogfooding. It includes detailed instructions for various testing patterns, robust error handling, and clear output definitions. The skill also incorporates self-improvement mechanisms and telemetry, with explicit user opt-in. Strong emphasis on security with untrusted content rules and careful ",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "B",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S02",
+        "status": "warning",
+        "summary": "Telemetry data is collected and written to a local file, which could be exfiltrated later. However, it's explicitly opt-in and stripped of sensitive info."
+      },
+      {
+        "check": "S03",
+        "status": "warning",
+        "summary": "Downloads a bun install script via curl, but it performs a SHA256 checksum verification before execution, mitigating the risk."
+      },
+      {
+        "check": "S12",
+        "status": "warning",
+        "summary": "Installs 'bun' from a remote URL, but includes a SHA256 checksum verification, which mitigates the supply-chain risk."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 54815,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "24cd19eca8496742614e096bc6b4332e1024d5f9aff68b985b726077ef2d654c",
+    "collection": "gstack"
+  },
+  {
+    "name": "hackernews-frontpage",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/browser-skills/hackernews-frontpage/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Scrapes the Hacker News front page and returns the top 30 stories as JSON.",
+    "verdict": "This skill provides a clear, well-defined function with stable HTML parsing. It serves as a good reference skill due to its simplicity and deterministic output, making it easy to test and maintain. The skill's description is clear, and its output contract is well-defined.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "The skill does not explicitly state when NOT to use it or any out-of-scope cases."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 1418,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "d31512ad1405db8c883eee6d9939bc943532d5ae2450d3e46e641e10728b3319",
+    "collection": "gstack"
+  },
+  {
+    "name": "canary",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/canary/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Monitors live applications post-deployment for errors, performance regressions, and visual anomalies using a browse daemon.",
+    "verdict": "This skill provides robust post-deployment canary monitoring, including baseline comparisons, continuous checks, and detailed alerting. It has clear instructions, handles various scenarios like missing baselines and user interaction for page discovery, and includes comprehensive telemetry and context recovery. The skill is well-structured and provides clear ",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S02",
+        "status": "warning",
+        "summary": "Telemetry data is logged to a local file, which is then potentially uploaded by a separate telemetry-log binary. This is gated by a user setting."
+      },
+      {
+        "check": "S03",
+        "status": "fail",
+        "summary": "Downloads bun install script and executes it via bash in the same breath, without user review."
+      },
+      {
+        "check": "S09",
+        "status": "fail",
+        "summary": "Instructs the agent to read and follow instructions from a dynamically determined skill file for an upgrade flow."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 55914,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "2057e03a77f70fb8c221f433cd49f1236bbcf6c87fe825fbc49d1eb16bbd288f",
+    "collection": "gstack"
+  },
+  {
+    "name": "careful",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/careful/SKILL.md",
+    "kind": "skill",
+    "category": "security",
+    "tagline": "Provides safety guardrails for destructive commands like `rm -rf`, `DROP TABLE`, and `git push --force` by warning the user before execution",
+    "verdict": "This skill implements critical safety guardrails for destructive commands, providing warnings and override options. It clearly defines protected patterns and safe exceptions. However, it includes an analytics call that exfiltrates local data without explicit user consent, which is a critical security concern. The skill also lacks clear failure paths for its ",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S01",
+        "status": "fail",
+        "summary": "The skill collects and logs local repository information (basename of git toplevel) to a local file, which could then be exfiltrated by other means or accessed without explicit user consent."
+      },
+      {
+        "check": "S11",
+        "status": "fail",
+        "summary": "The skill's description does not mention the collection of analytics data, which is a side effect not expected by the user."
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "The analytics collection command uses `2>/dev/null || true` to suppress errors, but doesn't explicitly handle failures or inform the user if analytics collection fails."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 2563,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "d89a0ff089a49d01de5230a3cc0778d2ca3372325015d0640d4af1c53cb4f3d8",
+    "collection": "gstack"
+  },
+  {
+    "name": "codex",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/codex/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Wraps OpenAI Codex CLI for code review, adversarial challenge, and general consultation with session continuity.",
+    "verdict": "This skill provides a wrapper for the OpenAI Codex CLI, offering code review, adversarial challenge, and general consultation modes. It includes robust error handling, session management, and clear instructions for use. However, it has a critical security vulnerability related to telemetry, where it attempts to exfiltrate local repository names and other usa",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "D",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "S01",
+        "status": "fail",
+        "summary": "Attempts to log local repository name and other usage data to a local file, which is then potentially uploaded by telemetry."
+      },
+      {
+        "check": "S02",
+        "status": "fail",
+        "summary": "Sends telemetry data, including skill name, duration, outcome, and session ID, to a hardcoded external endpoint via `gstack-telemetry-log` if telemetry is not 'off'."
+      },
+      {
+        "check": "S03",
+        "status": "fail",
+        "summary": "Executes output from `gstack-slug` directly via `eval`, which could be a vector for arbitrary code execution if `gstack-slug` is compromised."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 88890,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "796ef62ab4f0cd08bccbd088b72c85e5b2e19b5800febfcee808ac173e1ec720",
+    "collection": "gstack"
+  },
+  {
+    "name": "context-restore",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/context-restore/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Restores a previously saved working context, allowing users to resume work across sessions or workspace handoffs.",
+    "verdict": "This skill effectively restores saved working contexts, prioritizing cross-branch compatibility for seamless handoffs. It clearly defines its scope as read-only and provides explicit instructions for handling various scenarios, including no saved contexts and user-specified context loading. The skill also includes robust preamble logic for configuration and ",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S06",
+        "status": "warning",
+        "summary": "Contains an auto-generated comment that is an instruction to a human developer, not the executing agent."
+      },
+      {
+        "check": "H05",
+        "status": "fail",
+        "summary": "SKILL.md is 1000+ lines, exceeding the recommended size budget."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 50368,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "c7b42e37aa2e65362760da0173e251aee6ffd5df3225a209404f5e1d89d8771d",
+    "collection": "gstack"
+  },
+  {
+    "name": "context-save",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/context-save/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Saves and lists working context, including git state, decisions, and remaining work, for later restoration.",
+    "verdict": "This skill provides robust context saving and listing functionality, with clear instructions and detailed handling of various scenarios like telemetry, proactive suggestions, and vendored gstack. It includes extensive self-correction and guidance for the executing agent, ensuring reliable operation. The skill's voice and principles are well-defined, promotin",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "H05",
+        "status": "warning",
+        "summary": "SKILL.md is 700 lines, exceeding the 500-line budget, though much of it is detailed protocol and guidance."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 54013,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "1d285f761b257e491400c53c526e5c7eb6affef8aff8e3d24b4317fdb005deae",
+    "collection": "gstack"
+  },
+  {
+    "name": "cso",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/cso/SKILL.md",
+    "kind": "skill",
+    "category": "security",
+    "tagline": "Chief Security Officer mode for comprehensive security audits, including secrets, supply chain, CI/CD, and OWASP Top 10.",
+    "verdict": "This skill provides a detailed framework for security audits, covering a wide range of attack surfaces and offering clear guidance on false positive filtering and active verification. It emphasizes a 'think like an attacker, report like a defender' approach and includes robust mechanisms for logging learnings and tracking trends. The skill also incorporates ",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "H04",
+        "status": "fail",
+        "summary": "The skill references `~/.claude/skills/gstack/cso/sections/audit-phases.md` but this file is not provided in the skill content."
+      },
+      {
+        "check": "H05",
+        "status": "warning",
+        "summary": "SKILL.md is 1000+ lines, exceeding the recommended budget, though it is a complex skill."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 73441,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "a1318f1d17ec92f1bd4570f79020f187d52f6665f967b13133b451c1c5a891e1",
+    "collection": "gstack"
+  },
+  {
+    "name": "design-consultation",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/design-consultation/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Design consultation: proposes a complete design system, generates font+color preview, and writes DESIGN.md.",
+    "verdict": "This skill provides a comprehensive design consultation, including competitive research and AI mockup generation. It emphasizes a conversational approach and strong design principles. However, it includes several instances of piped shell execution and potential credential harvesting through telemetry, which are critical security concerns. The skill also has ",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S01",
+        "status": "fail",
+        "summary": "Logs repository name to a local file, which could be exfiltrated later. While local, it's a step towards collecting potentially sensitive info."
+      },
+      {
+        "check": "S02",
+        "status": "fail",
+        "summary": "The telemetry section explicitly sends data to a hardcoded endpoint if telemetry is not 'off', including skill name, duration, and session ID."
+      },
+      {
+        "check": "S03",
+        "status": "fail",
+        "summary": "Downloads a script from bun.sh and pipes it to bash for execution without review."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 67799,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "d0f39526e30286b0801df4099b8de8e1aaa5d91552355ff4158f754bdaa78ca3",
+    "collection": "gstack"
+  },
+  {
+    "name": "design-html",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/design-html/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Generates production-quality Pretext-native HTML/CSS from mockups, plans, or descriptions, with a focus on dynamic layouts and user experien",
+    "verdict": "This skill is designed to generate HTML/CSS based on various inputs, incorporating advanced layout techniques and UX principles. It includes extensive preamble logic for configuration, telemetry, and session management. The skill demonstrates a strong understanding of design principles and aims for high-quality, responsive output. However, it has significant",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "A",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "S02",
+        "status": "fail",
+        "summary": "Telemetry data (skill name, timestamp, repo name) is written to a local file, which is then potentially uploaded by gstack-telemetry-log."
+      },
+      {
+        "check": "S03",
+        "status": "fail",
+        "summary": "Downloads bun install script via curl and pipes it to bash without review, then executes it."
+      },
+      {
+        "check": "S04",
+        "status": "fail",
+        "summary": "Instructs to recursively remove a directory from the git repository without explicit user confirmation."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 75534,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "492a6f525f38f391bd01ee2dcb93b54d6791851f1025330ab35d90115c611445",
+    "collection": "gstack"
+  },
+  {
+    "name": "design-review",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/design-review/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Design audit and fix skill with detailed visual and UX analysis, including AI slop detection.",
+    "verdict": "This skill provides a comprehensive design audit, fix, and verification workflow. It includes detailed checks for visual hierarchy, typography, color, spacing, interaction states, responsive design, motion, content, and specifically, AI slop patterns. The skill also incorporates a 'Goodwill Reservoir' metric to track user experience friction and offers a str",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S01",
+        "status": "fail",
+        "summary": "The skill logs the repository name, which could be sensitive, to a local analytics file. While it claims to strip it before upload, the local logging itself is a form of exfiltration from the project "
+      },
+      {
+        "check": "S02",
+        "status": "fail",
+        "summary": "The skill explicitly calls an external telemetry logging binary, which could send local data to a hardcoded external endpoint. This is confirmed by the 'Remote telemetry (opt-in, requires binary)' sec"
+      },
+      {
+        "check": "S03",
+        "status": "fail",
+        "summary": "The skill downloads an install script for 'bun' from a remote URL and then executes it via bash in the same breath, without an explicit review step."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 104315,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "f91cc8dd8999d91e6dd9c92bd7b5cfdc218884f921df25397b3766d870b32e90",
+    "collection": "gstack"
+  },
+  {
+    "name": "design-shotgun",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/design-shotgun/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Generates AI design variants, compares them, collects feedback, and iterates on visual designs.",
+    "verdict": "This skill is a complex design tool that generates and iterates on visual design variants. It has extensive preamble logic for configuration and telemetry, and a detailed feedback loop. It handles local site screenshots and persistent taste profiles. However, it has several critical security flaws, including potential for credential harvesting, obfuscated pa",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "F",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "S01",
+        "status": "fail",
+        "summary": "The skill logs the repository name, which could be sensitive, to a local file. While it claims to strip it before upload, the local logging itself is a concern."
+      },
+      {
+        "check": "S02",
+        "status": "fail",
+        "summary": "The skill collects telemetry data, including skill name, duration, outcome, and session ID, and sends it to a remote endpoint if telemetry is not 'off'. This is unsolicited network egress of local dat"
+      },
+      {
+        "check": "S04",
+        "status": "fail",
+        "summary": "The skill instructs `git rm -r .claude/skills/gstack/` which is a destructive operation on a user's project directory without explicit, informed user confirmation immediately before the step."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 71819,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "5c955cdaea21abb5fe6b25a76e869f2aa4d7536a194a724030e7feda144ca3ce",
+    "collection": "gstack"
+  },
+  {
+    "name": "devex-review",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/devex-review/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Audits developer experience (DX) by testing docs, onboarding, and CLI, producing a scorecard with evidence.",
+    "verdict": "This skill performs a live developer experience audit, testing various aspects like getting started, API ergonomics, and error messages. It includes a comprehensive preamble with various configuration and telemetry checks, and provides detailed guidance on how to conduct the audit and report findings. The skill is well-structured with clear steps and scoring",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S01",
+        "status": "fail",
+        "summary": "Logs repository name to a local file, which could be considered sensitive information depending on context."
+      },
+      {
+        "check": "S02",
+        "status": "fail",
+        "summary": "The skill logs usage data, including the repository name, to a local file. While it states 'stripped before any upload', the initial logging of local data to a file is a form of unsolicited egress if "
+      },
+      {
+        "check": "S03",
+        "status": "fail",
+        "summary": "Downloads and executes a script from the network without inspection to install bun."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 74057,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "d24bb55f6703bc4c95439c0586a9e501bc8a58c122748d1e81de8354730e9895",
+    "collection": "gstack"
+  },
+  {
+    "name": "diagram",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/diagram/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Generates diagrams from English descriptions or Mermaid source, producing editable Excalidraw files, SVG, and PNG.",
+    "verdict": "This skill provides a comprehensive diagramming solution, generating multiple formats for flexibility. It includes robust error handling and clear instructions for offline rendering. However, it contains extensive preamble code that includes telemetry, update checks, and configuration management, which could be simplified or moved to a separate setup script.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S01",
+        "status": "fail",
+        "summary": "The skill collects and logs repository names and other usage data to a local file, which could be considered sensitive information."
+      },
+      {
+        "check": "S02",
+        "status": "fail",
+        "summary": "The skill explicitly calls a telemetry logging binary, which could send local data to an external endpoint if configured."
+      },
+      {
+        "check": "S05",
+        "status": "fail",
+        "summary": "The skill uses `eval` with the output of a shell command, which can be a security risk if the command output is not fully controlled."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 52866,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "8483fa09da43657c2a917d74dd01338301bcdd1f3ec2b7f26250ce00a27b3841",
+    "collection": "gstack"
+  },
+  {
+    "name": "document-generate",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/document-generate/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Generates structured documentation for features, modules, or projects using the Diataxis framework.",
+    "verdict": "This skill provides a comprehensive framework for generating documentation, emphasizing thorough research and adherence to the Diataxis quadrants. It includes detailed templates and rules for each documentation type, promoting accuracy and discoverability. However, it contains several instances of direct shell execution of remote scripts and potential creden",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S01",
+        "status": "fail",
+        "summary": "Logs repository name to a local file, which could be exfiltrated later. While not directly sending, it collects potentially sensitive local data."
+      },
+      {
+        "check": "S02",
+        "status": "fail",
+        "summary": "Sends local data (skill name, event, branch, session ID) to a hardcoded external endpoint via gstack-timeline-log."
+      },
+      {
+        "check": "S03",
+        "status": "fail",
+        "summary": "Executes a script from a hardcoded path without inspection, potentially leading to arbitrary code execution if the script is compromised."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 62757,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "13a2ee135e5810915ab4b7b318119a12215ba729e6ed5f2879df52587a8834f7",
+    "collection": "gstack"
+  },
+  {
+    "name": "document-release",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/document-release/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Updates project documentation after code ships, cross-referencing diffs, building a Diataxis coverage map, and polishing changelog voice.",
+    "verdict": "This skill is designed to update documentation post-ship, ensuring accuracy and consistency. It includes a comprehensive preamble with various configuration checks and telemetry logging. The skill defines clear rules for when to stop and ask for user input versus when to proceed automatically, particularly around sensitive operations like version bumps and `",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S05",
+        "status": "fail",
+        "summary": "The skill uses `eval` with command substitution, which can execute arbitrary code if the output of `gstack-slug` is malicious."
+      },
+      {
+        "check": "Q07",
+        "status": "fail",
+        "summary": "SKILL.md is 600+ lines long, exceeding the recommended budget and impacting readability, despite using a section index."
+      },
+      {
+        "check": "H05",
+        "status": "fail",
+        "summary": "SKILL.md is 600+ lines long, exceeding the recommended budget of ~500 lines."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 54375,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "7c3800f1d5d408c68f34cd6f5ab87dbd9f1a0ff9b1c04d49178645a8666fa7ed",
+    "collection": "gstack"
+  },
+  {
+    "name": "freeze",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/freeze/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Restricts file edits to a specified directory for the session, blocking Edit/Write operations outside the boundary.",
+    "verdict": "This skill effectively restricts file edits to a user-defined directory, enhancing focus during debugging or scoped changes. It clearly defines its purpose, setup, and how it works, including limitations. The use of hooks for enforcement and clear instructions for activation/deactivation are strong points. It includes good versioning and clear descriptions.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 3174,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "9c64756d22eba7d6f6688bc5974febf1147bd9fd41cf2aba4112450245044752",
+    "collection": "gstack"
+  },
+  {
+    "name": "gstack-upgrade",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/gstack-upgrade/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Upgrades the 'gstack' tool, handling different installation types and user preferences for automatic updates.",
+    "verdict": "This skill manages the upgrade process for the 'gstack' tool, including detecting installation types, handling local changes, and applying migrations. It provides options for user interaction regarding updates and handles both global and vendored installations. The skill also includes logic for snoozing updates and disabling update checks. However, it uses `",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S12",
+        "status": "fail",
+        "summary": "Clones a git repository over plain HTTPS, which is susceptible to MITM attacks and lacks integrity verification."
+      },
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "The skill does not explicitly state when NOT to use it or provide exclusions."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 10793,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "c7bc125c054792a932babef611af344f4d448ae1038d312cea61405c47a84497",
+    "collection": "gstack"
+  },
+  {
+    "name": "guard",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/guard/SKILL.md",
+    "kind": "skill",
+    "category": "security",
+    "tagline": "Activates destructive command warnings and directory-scoped edit restrictions for maximum safety.",
+    "verdict": "This skill combines two safety features: warning before destructive commands and restricting edits to a specified directory. It clearly defines its purpose and how to activate/deactivate protections. However, it includes an analytics call that sends local data to an unknown destination, which is a security concern.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S02",
+        "status": "fail",
+        "summary": "The skill sends usage analytics including skill name, timestamp, and git repo name to a local file, which could then be exfiltrated by another process or skill."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 3304,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "48f866bab860c6857507bb4b0482208fe365acece000dff362822db0f8939e40",
+    "collection": "gstack"
+  },
+  {
+    "name": "health",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/health/SKILL.md",
+    "kind": "skill",
+    "category": "code-quality",
+    "tagline": "Provides a code quality dashboard by running project tools, scoring results, and tracking trends over time.",
+    "verdict": "This skill offers a comprehensive code quality dashboard, integrating various project tools to provide a composite health score and track trends. It clearly defines its purpose and output, and handles tool unavailability gracefully. However, it includes several instances of direct shell execution of fetched content, potential credential harvesting through co",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S01",
+        "status": "fail",
+        "summary": "The skill logs the repository name, which could be considered local data, to a file that is later potentially uploaded via telemetry."
+      },
+      {
+        "check": "S02",
+        "status": "fail",
+        "summary": "The skill explicitly calls a telemetry logging binary which could send local data to a hardcoded external endpoint, depending on its implementation."
+      },
+      {
+        "check": "S03",
+        "status": "fail",
+        "summary": "The skill uses `eval` on the output of a local binary, which could be a vector for piped shell execution if the binary's output is compromised."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 56951,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "93ec2439aa0b07b48ab607b55a5b62402362a09257d3de72b184ad950d5f3157",
+    "collection": "gstack"
+  },
+  {
+    "name": "investigate",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/investigate/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Systematic debugging with root cause investigation, offering structured phases for analysis, hypothesis testing, and implementation.",
+    "verdict": "This skill provides a comprehensive framework for debugging, emphasizing root cause analysis and structured problem-solving. It includes detailed guidance on each phase, from collecting symptoms to implementing and verifying fixes. The skill also incorporates features for learning from past investigations and managing scope. However, it contains several inst",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S02",
+        "status": "fail",
+        "summary": "The skill logs usage data to a local file, which is then potentially uploaded by a separate telemetry binary if enabled, indicating potential exfiltration of local data."
+      },
+      {
+        "check": "S03",
+        "status": "fail",
+        "summary": "The skill executes a local script for update checks, which could be sourced from the network if the skill itself was updated via a piped install."
+      },
+      {
+        "check": "Q07",
+        "status": "fail",
+        "summary": "The SKILL.md file is very long (over 1000 lines), containing extensive documentation and conditional logic inline, which could be split into separate reference files."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 59260,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "e916ccaf3b0d1ac0af90aa9f1292812e982093febda80ce086edd8142dd757b6",
+    "collection": "gstack"
+  },
+  {
+    "name": "ios-clean",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/ios-clean/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Removes DebugBridge SPM package and associated debug wiring from iOS apps.",
+    "verdict": "This skill provides a guided, reversible flow for removing debug instrumentation from iOS apps. It clearly defines what it removes and what it doesn't, and includes verification steps. However, it has a very large preamble with complex shell scripting that could be simplified, and it uses `eval` which is a security risk.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S05",
+        "status": "fail",
+        "summary": "Uses eval with command substitution, which can be a security risk if the output of the command is malicious."
+      },
+      {
+        "check": "Q07",
+        "status": "warning",
+        "summary": "The preamble section is very long and contains a lot of complex shell scripting that could be refactored or moved to a separate file."
+      },
+      {
+        "check": "H05",
+        "status": "fail",
+        "summary": "SKILL.md is 600+ lines, exceeding the recommended 500-line budget. Much of this is in the preamble."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 49970,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "fbae5244b02978c04a04e0cc4567d9ce25d05dada1b6e0ddd386079b3ba0dd24",
+    "collection": "gstack"
+  },
+  {
+    "name": "ios-design-review",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/ios-design-review/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Performs a visual design audit for iOS apps on real hardware, scoring against Apple HIG and best practices.",
+    "verdict": "This skill provides a detailed visual design audit for iOS apps, scoring various dimensions and offering actionable feedback. It includes robust preamble logic for telemetry, configuration, and first-run experiences. The skill is well-structured with clear instructions and defined outputs, making it a valuable tool for design quality assurance. Security-wise",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 50662,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "f1c1e5e953e2d311116f80b3f0721bf03c0d7adfb416ca71ca2f9bf7b279fc03",
+    "collection": "gstack"
+  },
+  {
+    "name": "ios-fix",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/ios-fix/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Automatically fixes iOS bugs by reproducing, locating root cause, applying fix, verifying, and adding a regression test.",
+    "verdict": "This skill automates iOS bug fixing with a comprehensive workflow including reproduction, root cause analysis, and regression testing. It includes extensive preamble logic for configuration and telemetry, and detailed instructions for handling various scenarios. However, it has significant security concerns due to potential secret exfiltration via telemetry,",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "C",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S01",
+        "status": "fail",
+        "summary": "The skill logs repository names to a local file, which could contain sensitive information, and then potentially uploads it as part of telemetry."
+      },
+      {
+        "check": "S02",
+        "status": "fail",
+        "summary": "The skill collects and potentially transmits usage data, including repository names, to an external telemetry service without explicit user consent at the point of collection, only a prompt at the sta"
+      },
+      {
+        "check": "S05",
+        "status": "fail",
+        "summary": "The skill uses `eval` with the output of an external script, which could execute arbitrary code if the script is compromised."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 49783,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "98235db64c68612d6bfb65dea321822a708d5dc0d9c1dada5c56587c43f45b10",
+    "collection": "gstack"
+  },
+  {
+    "name": "ios-qa",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/ios-qa/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Performs live-device iOS QA for SwiftUI apps by connecting to a real iPhone via USB and running a vision-driven agent loop.",
+    "verdict": "This skill provides a comprehensive framework for iOS QA, including detailed architecture, prerequisites, and operational modes. It handles session management, code generation for debugging, and vision-driven agent loops. The skill is well-structured with clear instructions and addresses various failure modes and recovery strategies. It also includes extensi",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q07",
+        "status": "warning",
+        "summary": "The SKILL.md is quite long, containing extensive preamble logic, configuration details, and operational instructions inline. While comprehensive, it could benefit from splitting some bulk material int"
+      },
+      {
+        "check": "H05",
+        "status": "warning",
+        "summary": "SKILL.md is 600 lines, exceeding the recommended 500-line budget. While it contains a lot of necessary information, some sections could potentially be moved to reference files."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 57267,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "8bb8ac90d12a71f16c170d8b6e8f8440c8bf9f46ac50334928ee7dd8fcbf72e2",
+    "collection": "gstack"
+  },
+  {
+    "name": "ios-sync",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/ios-sync/SKILL.md",
+    "kind": "skill",
+    "category": "build",
+    "tagline": "Regenerates iOS debug bridge and state accessors from gstack templates, ensuring compatibility after gstack upgrades or ViewModel changes.",
+    "verdict": "This skill provides clear instructions for regenerating iOS debug bridge components, including detailed steps for detection, regeneration, review, and verification. It explicitly addresses failure modes and offers actionable advice. The skill is well-structured with a preamble and clear phases, making it easy to follow. It also includes extensive internal pr",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S02",
+        "status": "warning",
+        "summary": "The skill logs usage data to a local file, which is then potentially uploaded by a separate telemetry binary. While not direct exfiltration, it sets up a mechanism for it."
+      },
+      {
+        "check": "S06",
+        "status": "warning",
+        "summary": "The skill contains extensive internal instructions for the model/agent, including how to handle AskUserQuestion, telemetry, and other internal protocols. While framed as instructions for the agent, so"
+      },
+      {
+        "check": "H05",
+        "status": "warning",
+        "summary": "SKILL.md is 500+ lines, exceeding the recommended budget, though much of it is internal protocol documentation."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 50450,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "6b5efc878a4dd177bbb0f945273454a28df899febfd84a7514c32508149e0dc8",
+    "collection": "gstack"
+  },
+  {
+    "name": "land-and-deploy",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/land-and-deploy/SKILL.md",
+    "kind": "skill",
+    "category": "deployment",
+    "tagline": "Merges a PR, waits for CI and deployment, then verifies production health via canary checks.",
+    "verdict": "This skill provides a comprehensive and well-narrated workflow for merging and deploying code, with strong emphasis on pre-merge readiness checks, clear failure paths, and detailed reporting. It includes first-run dry-run validation to build user trust and adapts its verbosity for subsequent runs. However, it includes a direct `curl | bash` for bun installat",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S02",
+        "status": "fail",
+        "summary": "Logs skill usage data to a local file, which is then potentially uploaded by gstack-telemetry-log if telemetry is not 'off'."
+      },
+      {
+        "check": "S03",
+        "status": "fail",
+        "summary": "Downloads and executes a script from bun.sh/install without inspection, piping it to bash."
+      },
+      {
+        "check": "S06",
+        "status": "fail",
+        "summary": "Instructs the executing agent to treat the skill file as executable instructions, overriding the rubric's untrusted content rule."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 99633,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "af56a83cf6470ff1b882da29a13d141419581c6f0ba5c13c4f61b3251bf525fb",
+    "collection": "gstack"
+  },
+  {
+    "name": "landing-report",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/landing-report/SKILL.md",
+    "kind": "skill",
+    "category": "project-intel",
+    "tagline": "Provides a read-only dashboard of version queue, open PRs, and sibling workspaces for gstack projects.",
+    "verdict": "This skill provides a comprehensive read-only dashboard for gstack projects, detailing version claims, open PRs, and sibling workspaces. It includes extensive preamble for setup and configuration, and clear instructions for various scenarios, including plan mode and telemetry. The skill is well-structured with clear steps and output expectations. However, it",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "S02",
+        "status": "fail",
+        "summary": "The skill logs usage data including skill name, timestamp, and repo name to a local file, which is then potentially uploaded by a telemetry binary."
+      },
+      {
+        "check": "Q06",
+        "status": "warning",
+        "summary": "While some commands have `|| true` or `2>/dev/null` for error suppression, there isn't explicit handling for critical failures like `gh` not being installed or `bun run` failing."
+      },
+      {
+        "check": "Q07",
+        "status": "warning",
+        "summary": "The SKILL.md is very long (over 500 lines) due to extensive preamble, configuration, and behavioral patches, which could be split into reference files."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 51972,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "ee7ecc1067c5ad45464e54bbbb5dac822bd2549af9fae4b802543de1c77629b4",
+    "collection": "gstack"
+  },
+  {
+    "name": "learn",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/learn/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Manages project learnings, allowing users to review, search, prune, export, and add insights across sessions.",
+    "verdict": "This skill provides comprehensive learning management features, including proactive suggestions and detailed configuration options. It includes telemetry, which is opt-in, and handles various session types. However, it uses `eval` with potentially untrusted input and has a complex preamble that could be difficult to debug. The skill also includes a `bun` scr",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "C",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "S01",
+        "status": "fail",
+        "summary": "The skill logs the repository name, which could be considered local data, to a file that is later potentially uploaded via telemetry."
+      },
+      {
+        "check": "S02",
+        "status": "fail",
+        "summary": "The skill explicitly sends telemetry data to an external endpoint if telemetry is not 'off', which includes skill name, duration, outcome, and session ID."
+      },
+      {
+        "check": "S03",
+        "status": "fail",
+        "summary": "The skill uses `eval` on the output of `gstack-slug`, which could be a vector for arbitrary code execution if `gstack-slug` is compromised."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 50761,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "5ad56876611896c5e18ae964dbe06b4db73a6680dc39a3324d2b818e5202b7c6",
+    "collection": "gstack"
+  },
+  {
+    "name": "make-pdf",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/make-pdf/SKILL.md",
+    "kind": "skill",
+    "category": "content",
+    "tagline": "Converts Markdown files into publication-quality PDFs with advanced layout options, watermarks, and diagram rendering.",
+    "verdict": "This skill provides comprehensive functionality for generating professional PDFs from Markdown, including detailed options for layout, branding, and handling various content types like diagrams and images. It includes clear instructions, setup guidance, and debugging tips. The skill also incorporates extensive preamble logic for telemetry, configuration, and",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S02",
+        "status": "warning",
+        "summary": "Telemetry logging to a local file, which is then potentially uploaded by another gstack component. The skill itself doesn't directly exfiltrate, but it prepares data for it."
+      },
+      {
+        "check": "S04",
+        "status": "warning",
+        "summary": "The skill includes a `git rm -r` command as part of a migration flow, which could be destructive if not handled carefully by the user. However, it's part of an explicit user-prompted action."
+      },
+      {
+        "check": "Q07",
+        "status": "warning",
+        "summary": "The preamble section is very long and contains extensive logic that could potentially be moved to a separate file or abstracted for better readability and context economy."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 36625,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "8a748801b61742e88fe2b5fbd8b9a57ba42887a450f5475e525ee33ec9d51555",
+    "collection": "gstack"
+  },
+  {
+    "name": "office-hours",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/office-hours/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Guides users through startup or builder mode brainstorming, generating design docs and offering a second AI opinion.",
+    "verdict": "This skill provides a comprehensive framework for product and design thinking, with clear guidance for different user contexts. It includes robust mechanisms for context recovery, learning capture, and cross-model validation. The detailed AskUserQuestion format ensures clear communication and decision-making. The skill's self-improvement features, like learn",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q07",
+        "status": "fail",
+        "summary": "SKILL.md is 1400+ lines, containing extensive prose and detailed instructions that could be moved to reference files."
+      },
+      {
+        "check": "H05",
+        "status": "fail",
+        "summary": "SKILL.md is 1400+ lines, exceeding the recommended size budget of ~500 lines."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 96332,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "b32ad2a08735b84d4ee35312627e55174c56b2e9e308af5b880a3434294279b7",
+    "collection": "gstack"
+  },
+  {
+    "name": "open-gstack-browser",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/open-gstack-browser/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Launches a specialized Chromium browser with an AI-controlled sidebar extension for real-time interaction and task execution.",
+    "verdict": "This skill launches a specialized browser for AI interaction, providing real-time visibility into actions. It includes robust setup and verification steps, and guides the user through using the browser's features. The skill is well-structured with clear instructions and handles potential failure paths. It also includes extensive telemetry and configuration o",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "B",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S03",
+        "status": "fail",
+        "summary": "Downloads a bun install script and pipes it to bash without review."
+      },
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "The skill does not explicitly state when NOT to use it."
+      },
+      {
+        "check": "Q07",
+        "status": "warning",
+        "summary": "SKILL.md is quite long (500+ lines) with many detailed sections that could potentially be split into reference files."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 55128,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "5e673dbdee7627075e111ccf1d912ea146f053395f7e008e1a32db1043f6a193",
+    "collection": "gstack"
+  },
+  {
+    "name": "gstack-openclaw-ceo-review",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/openclaw/skills/gstack-openclaw-ceo-review/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Provides a structured framework for conducting a 'CEO-level' review of a plan, focusing on critical analysis, scope management, and risk ide",
+    "verdict": "This skill provides a comprehensive and well-structured framework for plan review, emphasizing critical thinking and user control over scope. It clearly defines different review modes and mandates thorough evaluation of various aspects like architecture, security, and error handling. The skill explicitly states that it does not make code changes or implement",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "H02",
+        "status": "fail",
+        "summary": "The name 'gstack-openclaw-ceo-review' does not match the expected kebab-case format for the directory name 'skill-36'."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "The skill does not contain any versioning signal like a version field, changelog, or dated revision notes."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 10554,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "9580731946201a86eae429dc2f9c139a013b6d219c58e7a20afd97c3a813c1bd",
+    "collection": "gstack"
+  },
+  {
+    "name": "gstack-openclaw-investigate",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/openclaw/skills/gstack-openclaw-investigate/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "A systematic debugging workflow for root cause analysis, hypothesis testing, and verified fixes.",
+    "verdict": "This skill provides a comprehensive and well-structured debugging workflow. It emphasizes root cause analysis, hypothesis testing, and verified fixes, which are crucial for effective problem-solving. The skill clearly defines phases, outputs, and important rules, promoting a disciplined approach to debugging. It also includes practical advice like sanitizing",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "The skill describes when to use it, but does not explicitly state when NOT to use it."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "The skill does not include any versioning signal like a version field, changelog, or dated revision notes."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 5469,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "9b750be5773b56ed12b4cc1d930e56b5e795cc5aeb8cacca8e7987b098f99d5b",
+    "collection": "gstack"
+  },
+  {
+    "name": "gstack-openclaw-office-hours",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/openclaw/skills/gstack-openclaw-office-hours/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Facilitates YC-style office hours, guiding users through product idea validation and design documentation without writing code.",
+    "verdict": "This skill provides a detailed, structured framework for product idea validation and design, mimicking YC office hours. It explicitly avoids implementation, focusing solely on design documentation. The skill is highly deterministic with clear operating principles, response postures, and specific questions for different user modes. It includes robust premise ",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "H05",
+        "status": "warning",
+        "summary": "SKILL.md is 400 lines, which is close to the upper limit of the recommended budget."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "No versioning signal (version field, changelog, or dated revision notes) found in the frontmatter or body."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 16938,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "c9011135c2e2839f9a2ad75389ada7ea55595d43860f9ebd0ed1ae73294c0451",
+    "collection": "gstack"
+  },
+  {
+    "name": "gstack-openclaw-retro",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/openclaw/skills/gstack-openclaw-retro/SKILL.md",
+    "kind": "skill",
+    "category": "project-intel",
+    "tagline": "Generates a comprehensive engineering retrospective from git history, tracking trends and team contributions.",
+    "verdict": "This skill provides a detailed engineering retrospective, analyzing commit history, work patterns, and code quality metrics. It's team-aware, offering per-person insights, praise, and growth opportunities. The skill saves historical data for trend tracking and comparison, which is a strong feature. It also explicitly handles local timezones and provides clea",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "The skill does not explicitly state when NOT to use it or any out-of-scope cases."
+      },
+      {
+        "check": "H07",
+        "status": "fail",
+        "summary": "The skill uses `grep`, `wc`, and `sort` without explicitly declaring them as requirements or checking for their availability."
+      },
+      {
+        "check": "H08",
+        "status": "fail",
+        "summary": "The skill does not include a version field, changelog, or dated revision notes."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 9607,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "dbfb63cb573c52743962235dd02c9397e304bab187bbd477c7c481233a81cc86",
+    "collection": "gstack"
+  },
+  {
+    "name": "pair-agent",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/pair-agent/SKILL.md",
+    "kind": "skill",
+    "category": "integrations",
+    "tagline": "Pairs a remote AI agent with your browser, allowing the agent to browse the web using your local browser instance.",
+    "verdict": "This skill enables remote AI agents to control your browser. It includes robust setup instructions for various agents and handles both local and remote connections, including ngrok setup. The skill clearly defines access levels and provides revocation mechanisms. It also includes extensive preamble and telemetry scripts, which are well-documented.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S03",
+        "status": "fail",
+        "summary": "Downloads bun install script and pipes it to bash without inspection."
+      },
+      {
+        "check": "Q07",
+        "status": "fail",
+        "summary": "SKILL.md contains a very long preamble (over 200 lines) that could be moved to a separate reference file."
+      },
+      {
+        "check": "H05",
+        "status": "fail",
+        "summary": "SKILL.md is 700+ lines, exceeding the recommended 500-line budget."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 55948,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "6fa13dafd14eda6194d9045fbed87b2a660a60d34552534adb4c303b81c7a3f1",
+    "collection": "gstack"
+  },
+  {
+    "name": "plan-ceo-review",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/plan-ceo-review/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "CEO/founder-mode plan review, challenging premises, expanding scope, and ensuring rigor for extraordinary outcomes.",
+    "verdict": "This skill is designed for high-level strategic plan reviews, pushing for ambitious outcomes and rigorous analysis. It includes extensive pre-review system audits, mode-specific analysis for scope expansion/reduction, and a detailed AskUserQuestion format for user interaction. It also incorporates telemetry, learning mechanisms, and continuous checkpointing.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S01",
+        "status": "fail",
+        "summary": "The skill logs the repository name, which could be considered local data, to a local analytics file. While not directly exfiltrating, it collects potentially sensitive local information."
+      },
+      {
+        "check": "S02",
+        "status": "fail",
+        "summary": "The skill logs the repository name to a local analytics file, which is then potentially uploaded by `gstack-telemetry-log` if telemetry is not 'off'. This constitutes sending local data to a hardcoded"
+      },
+      {
+        "check": "S03",
+        "status": "fail",
+        "summary": "The skill uses `eval` on the output of a shell script, which is a form of piped shell execution, even if the script is local."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 88899,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "d36e5f210feafc22b301596be431e7e1eb0935ceeb922f643876dcde082c8ed9",
+    "collection": "gstack"
+  },
+  {
+    "name": "plan-design-review",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/plan-design-review/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Interactive design plan review, generating visual mockups and guiding through design principles to improve UI/UX plans.",
+    "verdict": "This skill provides a comprehensive, interactive design review process with visual mockup generation. It includes detailed design principles, usability laws, and a structured approach to identifying and fixing design gaps. The skill is highly interactive, guiding the user through decisions and feedback loops. However, it contains several instances of direct ",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S06",
+        "status": "fail",
+        "summary": "The skill explicitly instructs the agent on how to interpret the skill file, overriding default behavior."
+      },
+      {
+        "check": "H05",
+        "status": "fail",
+        "summary": "SKILL.md is 1000+ lines, exceeding the recommended 500-line budget."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 85850,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "81d823aa69e09952c3180459a4a31375a3b688ac0b60d83e0b96f69cf5fa481b",
+    "collection": "gstack"
+  },
+  {
+    "name": "plan-devex-review",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/plan-devex-review/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Interactive developer experience plan review, focusing on personas, benchmarks, and friction points to improve DX plans.",
+    "verdict": "This skill provides a comprehensive framework for developer experience plan reviews, emphasizing a structured approach with persona interrogation, competitive benchmarking, and friction point analysis. It includes detailed guidance for interactive decision-making and robust error handling. The skill's extensive preamble, while containing many shell commands,",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S01",
+        "status": "fail",
+        "summary": "The skill logs the repository name to a local file, which could be considered sensitive information if the repository name itself contains secrets or private project details."
+      },
+      {
+        "check": "Q07",
+        "status": "fail",
+        "summary": "SKILL.md is very long (over 1000 lines) and contains extensive inline documentation, including detailed protocol descriptions and examples, which could be moved to reference files."
+      },
+      {
+        "check": "H05",
+        "status": "fail",
+        "summary": "SKILL.md is 1000+ lines long, exceeding the recommended size budget for a single skill file."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 78615,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "9b2df6e735b49adb84f81a9f47b7e798be95f8d13f311cb3de5fa8126df07466",
+    "collection": "gstack"
+  },
+  {
+    "name": "plan-eng-review",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/plan-eng-review/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Reviews engineering plans and architectures, providing opinionated recommendations and interactive guidance.",
+    "verdict": "This skill is highly complex and contains numerous shell commands, including several `eval` statements and file system operations. It also includes telemetry collection and prompts for user preferences, which are handled with careful consideration for user interaction and privacy. The skill's extensive use of internal gstack binaries and configuration manage",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "A",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "S03",
+        "status": "fail",
+        "summary": "The skill uses `eval` with the output of a gstack binary, which is a form of piped shell execution, even if from a local binary."
+      },
+      {
+        "check": "S11",
+        "status": "warning",
+        "summary": "The skill can modify `CLAUDE.md` and `.gitignore`, and perform `git add`/`git commit` operations, which might exceed a user's expectation for a 'plan review' skill if not explicitly disclosed in the d"
+      },
+      {
+        "check": "Q02",
+        "status": "fail",
+        "summary": "The skill does not explicitly state when NOT to use it or provide exclusions."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 65276,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "e301837aef7e6ed8ef77c4b08921b49a08c6db496976efbce888342975d251cb",
+    "collection": "gstack"
+  },
+  {
+    "name": "plan-tune",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/plan-tune/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Manages user preferences for gstack's AskUserQuestion prompts, inspects developer psychographic profiles, and handles telemetry/artifact syn",
+    "verdict": "This skill provides extensive configuration and introspection for gstack's question tuning and developer profiling features. It includes detailed instructions for handling various scenarios, including consent, setup, preference setting, and profile inspection. The skill also incorporates telemetry and artifact synchronization, with clear mechanisms for user ",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S01",
+        "status": "fail",
+        "summary": "Logs the current repository name to a local file, which could be considered sensitive information."
+      },
+      {
+        "check": "S03",
+        "status": "fail",
+        "summary": "Executes the output of a shell script fetched from a local path, which could be a supply-chain risk if the script is compromised."
+      },
+      {
+        "check": "S12",
+        "status": "fail",
+        "summary": "The skill executes scripts from local paths like `~/.claude/skills/gstack/bin/gstack-slug`, which, while local, are part of the skill's own supply chain. If these local scripts are not properly secure"
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 71959,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "d6b5bd099bb6d8edfceb3ed2ecb577293b300c7b366c5f48784aafff0f10e127",
+    "collection": "gstack"
+  },
+  {
+    "name": "qa-only",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/qa-only/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Systematically tests web applications and produces a structured report with health score, screenshots, and repro steps, but never fixes anyt",
+    "verdict": "This skill provides a comprehensive QA testing workflow, generating detailed reports with screenshots and health scores. It explicitly avoids fixing bugs, focusing solely on reporting. The skill includes robust setup, authentication, and exploration phases, with specific guidance for various web frameworks. It also incorporates learning mechanisms from previ",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S01",
+        "status": "fail",
+        "summary": "Logs repository name to a local file, which could be exfiltrated later. While local, it's a step towards exfiltration."
+      },
+      {
+        "check": "S02",
+        "status": "fail",
+        "summary": "Sends telemetry data to an external endpoint via `gstack-telemetry-log` without explicit user consent for this specific action, even if telemetry is generally opted-in."
+      },
+      {
+        "check": "S03",
+        "status": "fail",
+        "summary": "Executes a script from a local path, but the update check itself might involve fetching and executing code, which is a common pattern for S03 violations."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 65310,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "9ad3de814959fda5a59cba780a45f9e72e07d0dd7fd97c9237332d56e6ca0cc5",
+    "collection": "gstack"
+  },
+  {
+    "name": "qa",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/qa/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "QA tests web applications, iteratively fixes bugs, and generates reports.",
+    "verdict": "This skill provides a comprehensive QA and bug-fixing workflow for web applications, including test framework bootstrapping, detailed issue documentation, and a health score rubric. It emphasizes atomic commits for fixes and includes self-regulation mechanisms. However, it has a critical vulnerability related to piping a remote script into bash for bun insta",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S02",
+        "status": "fail",
+        "summary": "The skill logs usage data including skill name, timestamp, and repo name to a local file, which is then potentially uploaded by a telemetry binary."
+      },
+      {
+        "check": "S03",
+        "status": "fail",
+        "summary": "The skill downloads a bun install script via curl and then executes it with bash without an explicit review step."
+      },
+      {
+        "check": "S12",
+        "status": "fail",
+        "summary": "The skill installs bun from a remote script without pinning the version of the installer script itself, only the target bun version. The script could change."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 82610,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "30dc3f50c6a7d3387c7c7297422d309c8eed949ec79bdbcfb7f22abde69a79dc",
+    "collection": "gstack"
+  },
+  {
+    "name": "retro",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/retro/SKILL.md",
+    "kind": "skill",
+    "category": "project-intel",
+    "tagline": "Analyzes engineering commit history, work patterns, and code quality metrics for weekly retrospectives.",
+    "verdict": "This skill provides comprehensive engineering retrospectives, including team-aware analysis and trend tracking. It has robust handling for various scenarios like global retros and comparison modes. However, it includes telemetry that is opt-out rather than opt-in, and it uses `eval` in its preamble, which can be a security risk.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S01",
+        "status": "fail",
+        "summary": "The skill logs repository name to a local analytics file, which could be considered sensitive information being exfiltrated if the file is later uploaded."
+      },
+      {
+        "check": "S02",
+        "status": "fail",
+        "summary": "The skill logs local data (repo name) to a local file, which is then potentially uploaded by a separate telemetry-log binary if telemetry is not 'off'."
+      },
+      {
+        "check": "S05",
+        "status": "fail",
+        "summary": "The skill uses `eval` to execute the output of `gstack-slug`, which can be a security risk if the output is compromised."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 91014,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "b84ca7ccacf4715a8988620e99fbd374d14219942b022189815dac33142f67aa",
+    "collection": "gstack"
+  },
+  {
+    "name": "review",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/review/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Pre-landing PR review with AI specialists and adversarial checks.",
+    "verdict": "This skill provides a comprehensive pre-landing PR review, incorporating AI specialists, adversarial checks, and a fix-first approach. It includes detailed checks for scope drift, plan completion, and integrates with external tools like Greptile. The skill is highly configurable with options for cross-project learnings and telemetry, and emphasizes clear com",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "F",
+      "hygiene": "D"
+    },
+    "highlights": [
+      {
+        "check": "S01",
+        "status": "fail",
+        "summary": "The skill logs the repository name to a local file, which could be considered local data exfiltration if the analytics directory is later synced or uploaded."
+      },
+      {
+        "check": "S02",
+        "status": "fail",
+        "summary": "The skill logs local data (repo name, timestamp, skill name) to a local file, which is then potentially uploaded by `gstack-telemetry-log` if telemetry is enabled. This is an unsolicited network egres"
+      },
+      {
+        "check": "S04",
+        "status": "fail",
+        "summary": "The skill performs `rm -f` on files in the user's home directory without explicit user confirmation for a destructive action."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 104834,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "d55591cf422745c60547be3d0166c2957a694935ccb05fe1caba6e70b9cc9b68",
+    "collection": "gstack"
+  },
+  {
+    "name": "scrape",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/scrape/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Scrapes data from web pages, with options for matching existing browser-skills or prototyping new ones.",
+    "verdict": "The skill provides clear instructions for web scraping, including handling mutating intents and offering a 'skillify' nudge. It has extensive preamble logic for configuration and telemetry, which could be simplified. The AskUserQuestion format is well-defined with detailed failure fallbacks. However, it includes a telemetry logging mechanism that sends data ",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S02",
+        "status": "fail",
+        "summary": "The skill logs usage data to a local file, which is then potentially uploaded by a telemetry binary to a hardcoded endpoint if telemetry is not 'off'."
+      },
+      {
+        "check": "Q07",
+        "status": "fail",
+        "summary": "The SKILL.md file is very long (over 800 lines), containing extensive preamble logic, configuration, and detailed instructions for AskUserQuestion, which could be split into reference files."
+      },
+      {
+        "check": "H05",
+        "status": "fail",
+        "summary": "The SKILL.md file is very long (over 800 lines), exceeding the recommended size budget of ~500 lines."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 52640,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "048de300dde94a754bc30eff10f958d2a98eb37e2eef2bfa25a62d077836bf6f",
+    "collection": "gstack"
+  },
+  {
+    "name": "setup-browser-cookies",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/setup-browser-cookies/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Imports cookies from your Chromium browser into a headless browse session for authenticated testing.",
+    "verdict": "This skill provides a clear, interactive way to import browser cookies for testing. It includes robust setup and update checks, and handles various session types. The skill's preamble is overly verbose and contains many internal diagnostics, which could be streamlined. It also includes extensive telemetry and internal configuration logic that is not directly",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "C",
+      "hygiene": "B"
+    },
+    "highlights": [
+      {
+        "check": "S02",
+        "status": "warning",
+        "summary": "Skill logs usage data to a local file, which is then potentially uploaded by a separate telemetry binary. While opt-in, the logging itself is local data egress."
+      },
+      {
+        "check": "S03",
+        "status": "fail",
+        "summary": "Downloads and executes a bun install script from the network without inspection, after verifying a checksum."
+      },
+      {
+        "check": "S06",
+        "status": "warning",
+        "summary": "Contains instructions specifically for the Claude model, including preferences and rules for interaction, which could be seen as influencing the evaluator's behavior."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 29667,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "b17b4919efed09f18cb0b3df5c1e1daade52c5e70c7002f5ecdfbf370c2d773b",
+    "collection": "gstack"
+  },
+  {
+    "name": "setup-deploy",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/setup-deploy/SKILL.md",
+    "kind": "skill",
+    "category": "deployment",
+    "tagline": "Configures deployment settings for gstack's /land-and-deploy skill, detecting platform, URL, and health checks.",
+    "verdict": "This skill aims to configure deployment settings by detecting platform details and writing them to CLAUDE.md. It includes extensive preamble logic for gstack's internal operations, telemetry, and user interaction prompts. While it attempts to handle various deployment platforms and user preferences, the sheer volume of internal logic and conditional executio",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "D",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "S04",
+        "status": "fail",
+        "summary": "The skill performs `rm -f` on files in the user's home directory without explicit user confirmation for each instance, which could lead to unintended data loss if the paths are incorrect or the user e"
+      },
+      {
+        "check": "S06",
+        "status": "fail",
+        "summary": "The skill explicitly instructs the executing agent to treat the skill file as executable instructions, overriding the standard protocol that treats skill content as data."
+      },
+      {
+        "check": "S11",
+        "status": "fail",
+        "summary": "The skill's description is 'Configure deployment settings', but its preamble includes extensive logic for gstack updates, session management, telemetry, feature discovery, writing style prompts, and v"
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 52894,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "c3586906341ed222d8b9ffcf742b2f8e7dd00885c817524fc5c1711156edde91",
+    "collection": "gstack"
+  },
+  {
+    "name": "setup-gbrain",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/setup-gbrain/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Sets up gbrain, a persistent knowledge base, for the coding agent, handling installation, configuration, and policy.",
+    "verdict": "This skill provides comprehensive setup for gbrain, including multiple configuration paths (Supabase, PGLite, remote MCP) and detailed handling of secrets, error states, and user interaction. It demonstrates strong security practices for credential handling and clear instructions for complex operations. The skill is well-structured with explicit failure path",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "H05",
+        "status": "warning",
+        "summary": "SKILL.md is 1400 lines, exceeding the 500-line budget, though it contains extensive documentation."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 89950,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "80afabd5f0a7e60dc302065d0bb3de9a4d8525acf5b6f5aca0a1a29e0ee07743",
+    "collection": "gstack"
+  },
+  {
+    "name": "ship",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/ship/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Automates the entire 'ship' workflow: detects base branch, runs tests, reviews diffs, bumps version, updates changelog, commits, pushes, and",
+    "verdict": "This skill provides a comprehensive and highly automated 'ship' workflow, covering many aspects from testing to PR creation. It includes robust checks for review readiness, version bumping, and artifact synchronization. However, it contains several instances of direct telemetry logging and configuration updates without explicit user consent, which raises pri",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S01",
+        "status": "fail",
+        "summary": "Logs skill usage data including skill name, timestamp, and repository name to a local file, which could be exfiltrated later."
+      },
+      {
+        "check": "S02",
+        "status": "fail",
+        "summary": "The skill logs local data (repo name, skill usage) to a local analytics file, which is then conditionally sent to a remote telemetry service."
+      },
+      {
+        "check": "S04",
+        "status": "warning",
+        "summary": "Instructs `git rm -r` for vendored gstack migration, which is destructive but within a specific, user-initiated context."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 80667,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "9364877107c695363bdf0934c7dd77db7f36687b31c2cb87469f97c310536b23",
+    "collection": "gstack"
+  },
+  {
+    "name": "skillify",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/skillify/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Codifies successful /scrape flows into permanent, testable browser-skills on disk for faster future execution.",
+    "verdict": "This skill is designed to codify web scraping logic into reusable browser-skills. It includes robust checks for provenance, user approval, and test validation before committing the skill to disk, ensuring reliability. It also incorporates extensive telemetry and configuration management, though some of these features involve external binaries and potential d",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "A",
+      "hygiene": "C"
+    },
+    "highlights": [
+      {
+        "check": "S01",
+        "status": "fail",
+        "summary": "Logs repository name, skill, and timestamp to a local file, which is then potentially uploaded by telemetry. While repo name is stripped before upload, the local logging of this information is a form "
+      },
+      {
+        "check": "S02",
+        "status": "fail",
+        "summary": "The skill explicitly calls `gstack-telemetry-log` which is described as 'Remote telemetry (opt-in, requires binary)' and sends data like skill, duration, outcome, and session ID to a remote endpoint i"
+      },
+      {
+        "check": "S04",
+        "status": "fail",
+        "summary": "Instructs `git rm -r` on a potentially user-managed directory (`.claude/skills/gstack/`) as part of a migration, without explicit, immediate user confirmation for this specific destructive action."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 62485,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "65ba5891804fce15e970877ad7ba51e0c901a8554c91bef2d03fd6fbf803786b",
+    "collection": "gstack"
+  },
+  {
+    "name": "spec",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/spec/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Turn vague intent into a precise, executable spec in five phases, optionally spawning an agent.",
+    "verdict": "This skill is a comprehensive workflow for spec generation, with strong emphasis on clarity, verification, and structured decision-making. It includes robust quality gates, redaction scans, and detailed instructions for handling various scenarios, including plan mode and spawned sessions. The skill's voice and process are well-defined, promoting high-quality",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "F",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "S01",
+        "status": "fail",
+        "summary": "The skill unconditionally logs skill usage data, including the repository name, to a local file without explicit user consent, even if telemetry is 'off' for remote sending. This is a form of secret e"
+      },
+      {
+        "check": "S11",
+        "status": "fail",
+        "summary": "The skill's description does not mention that it will collect and store local usage analytics, including the repository name, in a local file, regardless of the user's explicit telemetry settings. Thi"
+      },
+      {
+        "check": "Q07",
+        "status": "fail",
+        "summary": "The SKILL.md file is excessively long (over 1400 lines), containing extensive documentation, templates, and rules inline, which could be split into separate reference files for better context economy."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 126252,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "c33cfed188888e9d95e7d591c2260e542bc4babd40bf278486398e52a8fd41ce",
+    "collection": "gstack"
+  },
+  {
+    "name": "sync-gbrain",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/sync-gbrain/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Keeps gbrain current with repo code and refreshes agent search guidance in CLAUDE.md.",
+    "verdict": "This skill manages gbrain synchronization, including code indexing and call graph generation. It handles various configurations and provides detailed feedback. It includes robust error handling and clear instructions for users to resolve issues. The skill also incorporates telemetry and user preference settings, ensuring a comprehensive and adaptable workflo",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [
+      {
+        "check": "Q07",
+        "status": "fail",
+        "summary": "SKILL.md is 1000+ lines, exceeding the recommended budget for inline content."
+      },
+      {
+        "check": "H05",
+        "status": "fail",
+        "summary": "SKILL.md is 1000+ lines, exceeding the recommended budget of ~500 lines."
+      }
+    ],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 68124,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "c66ce02ae1078e4444d320f7b96aceb3669cc75a8d2a059e989322e7f51a7b17",
+    "collection": "gstack"
+  },
+  {
+    "name": "unfreeze",
+    "source": "GitHub · garrytan/gstack · 122677★",
+    "sourceUrl": "https://github.com/garrytan/gstack/blob/main/unfreeze/SKILL.md",
+    "kind": "skill",
+    "category": "workflow",
+    "tagline": "Clears the edit freeze boundary set by /freeze, allowing edits to all directories.",
+    "verdict": "This skill clears a previously set edit freeze boundary, restoring full edit access. It includes basic analytics collection and provides clear instructions for use. The skill is well-structured and transparent in its actions.",
+    "badges": {
+      "effectiveness": "not-evaluated",
+      "security": "A",
+      "quality": "A",
+      "hygiene": "A"
+    },
+    "highlights": [],
+    "evaluator": {
+      "mode": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "evaluatedAt": "2026-07-18T22:33:42.037Z",
+    "preCheck": {
+      "frontmatterValid": true,
+      "fileCount": 1,
+      "skillMdBytes": 1498,
+      "criticalFlags": 0,
+      "majorFlags": 0
+    },
+    "popularity": 122677,
+    "mirrors": [],
+    "discoveredVia": "github",
+    "skillMdHash": "3ea6546088b0bf36fa0e5e131f7f03017bfdfa4afddcc9518fcba330c61df9e6",
+    "collection": "gstack"
   }
 ]

@@ -36,6 +36,7 @@ export interface EvalInput {
   popularity?: number
   mirrors?: string[]
   discoveredVia?: string | null
+  collection?: string // curated set (e.g. 'gstack')
 }
 
 function buildEntry(e: EvalInput, evaluatedAt: string): CatalogEntry {
@@ -91,6 +92,7 @@ export function toIndex(catalog: Catalog): CatalogIndexEntry[] {
     skillMdHash: s.skillMdHash,
     featured: s.featured,
     featuredOrder: s.featuredOrder,
+    collection: s.collection,
   }))
 }
 

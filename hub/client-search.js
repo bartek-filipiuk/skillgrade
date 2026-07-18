@@ -11,7 +11,9 @@ export function filterSort(index, opts) {
   const maxRank = GRADE_ORDER[minGrade]
   let rows = index.filter(function (r) {
     if (q && !((r.name || '').toLowerCase().includes(q) || (r.tagline || '').toLowerCase().includes(q))) return false
-    if (category !== 'all' && r.category !== category) return false
+    // A '__'-prefixed pseudo-category filters by curated collection (e.g. '__gstack'); otherwise by taxonomy category.
+    if (category.slice(0, 2) === '__') { if (r.collection !== category.slice(2)) return false }
+    else if (category !== 'all' && r.category !== category) return false
     if ((GRADE_ORDER[r.overall] != null ? GRADE_ORDER[r.overall] : 9) > maxRank) return false
     return true
   })

@@ -61,6 +61,7 @@ export const CatalogEntrySchema = z.object({
   popularity: z.number().int().nonnegative().default(0),
   mirrors: z.array(z.string().url()).default([]),
   discoveredVia: z.string().nullable().default(null),
+  collection: z.string().optional(), // curated set this skill belongs to (e.g. 'gstack') — powers a menu filter
   slug: z.string().min(1),
 })
 
@@ -105,5 +106,6 @@ export const CatalogIndexEntrySchema = z.object({
   skillMdHash: z.string().nullable(),
   featured: z.boolean().optional(), // pinned to the top with a distinct frame
   featuredOrder: z.number().int().optional(), // order among featured (ascending); default large
+  collection: z.string().optional(), // curated set (e.g. 'gstack') — client filters on it
 })
 export type CatalogIndexEntry = z.infer<typeof CatalogIndexEntrySchema>
