@@ -67,6 +67,7 @@
         <a href="#browse" data-scroll="browse" style="font-size:14px;color:#c9c3b8;cursor:pointer">Browse</a>
         <a href="#mcp" data-scroll="mcp" style="font-size:14px;color:oklch(0.8 0.11 155);cursor:pointer">MCP</a>
         <a href="#methodology" data-scroll="methodology" style="font-size:14px;color:#c9c3b8;cursor:pointer">How we grade</a>
+        <a href="#algorithm" data-scroll="algorithm" style="font-size:14px;color:#c9c3b8;cursor:pointer">Algorithm</a>
         <span class="mono" id="nav-rubric" style="font-size:11px;color:#8a857b;border:1px solid rgba(232,226,214,0.14);border-radius:99px;padding:3px 10px">rubric v—</span>
       </nav>
     </div>
@@ -131,6 +132,42 @@
     </div>
   </section>
 
+  <section id="algorithm" style="margin-top:96px;border-top:1px solid rgba(232,226,214,0.08);background:#1b1a17">
+    <div class="wrap method-grid" style="padding-top:80px;padding-bottom:80px;display:grid;grid-template-columns:minmax(260px,360px) minmax(0,1fr);gap:72px">
+      <div>
+        <p class="mono" style="font-size:11px;letter-spacing:0.18em;color:oklch(0.8 0.11 155);margin:0 0 18px">THE ALGORITHM</p>
+        <h2 class="serif" style="font-size:38px;line-height:1.1;margin:0">No black box. The whole method, in the open.</h2>
+        <p style="font-size:15px;line-height:1.65;color:#9a948a;margin:20px 0 0;text-wrap:pretty">A grade you can&rsquo;t inspect isn&rsquo;t trust — it&rsquo;s a brand. So here is exactly how every letter on this site is produced: the same six steps for each skill, whoever wrote it.</p>
+      </div>
+      <div style="display:flex;flex-direction:column">
+        <div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:22px;align-items:baseline;padding:18px 0;border-top:1px solid rgba(232,226,214,0.1)">
+          <span class="serif" style="font-size:24px;color:oklch(0.8 0.11 155);line-height:1">01</span>
+          <div><p style="font-size:15.5px;font-weight:600;margin:0">Deterministic pre-checks</p><p style="font-size:13.5px;line-height:1.55;color:#8a857b;margin:6px 0 0;text-wrap:pretty">Before any model runs, code gathers hard facts — frontmatter validity, file count, size, flagged patterns. Facts, not opinions.</p></div>
+        </div>
+        <div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:22px;align-items:baseline;padding:18px 0;border-top:1px solid rgba(232,226,214,0.1)">
+          <span class="serif" style="font-size:24px;color:oklch(0.8 0.11 155);line-height:1">02</span>
+          <div><p style="font-size:15.5px;font-weight:600;margin:0">The skill is data, never instructions</p><p style="font-size:13.5px;line-height:1.55;color:#8a857b;margin:6px 0 0;text-wrap:pretty">Its <span class="mono" style="font-size:12px">SKILL.md</span> is evaluated as untrusted content, wrapped so nothing inside it can steer the grader — the exact injection-resistance we grade skills for.</p></div>
+        </div>
+        <div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:22px;align-items:baseline;padding:18px 0;border-top:1px solid rgba(232,226,214,0.1)">
+          <span class="serif" style="font-size:24px;color:oklch(0.8 0.11 155);line-height:1">03</span>
+          <div><p style="font-size:15.5px;font-weight:600;margin:0">Thirty checks, three dimensions</p><p style="font-size:13.5px;line-height:1.55;color:#8a857b;margin:6px 0 0;text-wrap:pretty">Security (12), Quality (10) and Hygiene (8), from a versioned rubric. A calibrated model rules each check <em style="font-style:italic;color:#c9c3b8">pass</em>, <em style="font-style:italic;color:#c9c3b8">fail</em>, <em style="font-style:italic;color:#c9c3b8">warning</em> or <em style="font-style:italic;color:#c9c3b8">n/a</em> — and points at the evidence.</p></div>
+        </div>
+        <div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:22px;align-items:baseline;padding:18px 0;border-top:1px solid rgba(232,226,214,0.1)">
+          <span class="serif" style="font-size:24px;color:oklch(0.8 0.11 155);line-height:1">04</span>
+          <div><p style="font-size:15.5px;font-weight:600;margin:0">Scores are computed in code</p><p style="font-size:13.5px;line-height:1.55;color:#8a857b;margin:6px 0 0;text-wrap:pretty">The model never assigns a letter. Each dimension&rsquo;s checks aggregate to A&ndash;F in code — a grade can&rsquo;t be hallucinated, argued, or nudged.</p></div>
+        </div>
+        <div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:22px;align-items:baseline;padding:18px 0;border-top:1px solid rgba(232,226,214,0.1)">
+          <span class="serif" style="font-size:24px;color:oklch(0.8 0.11 155);line-height:1">05</span>
+          <div><p style="font-size:15.5px;font-weight:600;margin:0">Overall is the worst dimension</p><p style="font-size:13.5px;line-height:1.55;color:#8a857b;margin:6px 0 0;text-wrap:pretty">One letter can never hide another. An <em style="font-style:italic;color:#c9c3b8">F</em> is a critical finding — usually security — reported as information, not punishment.</p></div>
+        </div>
+        <div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:22px;align-items:baseline;padding:18px 0;border-top:1px solid rgba(232,226,214,0.1);border-bottom:1px solid rgba(232,226,214,0.1)">
+          <span class="serif" style="font-size:24px;color:oklch(0.8 0.11 155);line-height:1">06</span>
+          <div><p style="font-size:15.5px;font-weight:600;margin:0">Calibrated, vetted graders</p><p style="font-size:13.5px;line-height:1.55;color:#8a857b;margin:6px 0 0;text-wrap:pretty">We grade with frontier models we continuously re-test — Claude Sonnet and Gemini 2.5 Flash — and disqualify any that false-positive or can be manipulated. Each skill&rsquo;s grade names the model that made it.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="browse" class="wrap" style="padding-top:80px;padding-bottom:40px">
     <div style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;flex-wrap:wrap">
       <h2 class="serif" style="font-size:38px;margin:0">Browse skills</h2>
@@ -169,7 +206,7 @@
 
 <!-- Only O(1) metadata is inlined; the per-skill catalog is fetched (catalog-index.json)
      and each skill's full detail is lazy-loaded from skills/<slug>.json on demand. -->
-<script id="catmeta" type="application/json">{"generatedAt":"2026-07-18T22:37:01.746Z","rubricVersion":"0.1.2","evaluator":{"mode":"claude-code-native","model":"claude-fable-5"},"taxonomy":[{"id":"code-quality","label":"Code Review & Quality","description":"Reviewing diffs, finding bugs, refactoring, enforcing standards."},{"id":"security","label":"Security & Audits","description":"Vulnerability assessment, threat modeling, pentest, trust boundaries."},{"id":"build","label":"Build & Prototyping","description":"From idea to working app, UI generation, feature scaffolding."},{"id":"deployment","label":"Deployment & Ops","description":"Shipping, hosting, infra, CI/CD, self-hosting."},{"id":"content","label":"Content & Writing","description":"Blogs, marketing, humanizing text, CVs, docs."},{"id":"media","label":"Video & Media","description":"Video pipelines, voiceover, narrative, thumbnails."},{"id":"project-intel","label":"Project Intelligence","description":"Data extraction, dashboards, project radar, reporting."},{"id":"workflow","label":"Dev Workflow & Automation","description":"Loops, browser automation, orchestration, environment setup."},{"id":"integrations","label":"Integrations & CRM","description":"External APIs, CRM, content platforms, connectors."},{"id":"meta","label":"Meta & Skill Tooling","description":"Skills about skills: protocols, trust, tooling."}]}</script>
+<script id="catmeta" type="application/json">{"generatedAt":"2026-07-19T08:26:14.459Z","rubricVersion":"0.1.2","evaluator":{"mode":"claude-code-native","model":"claude-fable-5"},"taxonomy":[{"id":"code-quality","label":"Code Review & Quality","description":"Reviewing diffs, finding bugs, refactoring, enforcing standards."},{"id":"security","label":"Security & Audits","description":"Vulnerability assessment, threat modeling, pentest, trust boundaries."},{"id":"build","label":"Build & Prototyping","description":"From idea to working app, UI generation, feature scaffolding."},{"id":"deployment","label":"Deployment & Ops","description":"Shipping, hosting, infra, CI/CD, self-hosting."},{"id":"content","label":"Content & Writing","description":"Blogs, marketing, humanizing text, CVs, docs."},{"id":"media","label":"Video & Media","description":"Video pipelines, voiceover, narrative, thumbnails."},{"id":"project-intel","label":"Project Intelligence","description":"Data extraction, dashboards, project radar, reporting."},{"id":"workflow","label":"Dev Workflow & Automation","description":"Loops, browser automation, orchestration, environment setup."},{"id":"integrations","label":"Integrations & CRM","description":"External APIs, CRM, content platforms, connectors."},{"id":"meta","label":"Meta & Skill Tooling","description":"Skills about skills: protocols, trust, tooling."}]}</script>
 <script type="module">
   // Single module: runs after the DOM is parsed, so every getElementById below is valid.
   // Imports the pure browse helpers directly — no window bridge, no script-order race.
