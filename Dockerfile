@@ -1,5 +1,5 @@
 # Static SkillGrade hub — nginx serving the self-contained index.html + catalog data.
-FROM nginx:alpine
+FROM nginx:1.31.9-alpine
 RUN printf 'gzip on;\ngzip_types application/json application/javascript text/css;\ngzip_min_length 1024;\n' > /etc/nginx/conf.d/gzip.conf
 COPY hub/index.html /usr/share/nginx/html/index.html
 COPY hub/client-search.js /usr/share/nginx/html/client-search.js
